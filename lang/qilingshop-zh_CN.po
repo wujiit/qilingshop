@@ -1,0 +1,10930 @@
+# Copyright (C) 2026 Qiling Dev
+# This file is distributed under the same license as the QilingShop plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: QilingShop 2.1.3\n"
+"Report-Msgid-Bugs-To: https://qiling.dev\n"
+"POT-Creation-Date: 2026-05-22 00:00:00+0000\n"
+"PO-Revision-Date: 2026-05-22 00:00:00+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Qiling Dev\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Codex\n"
+"X-Domain: qilingshop\n"
+
+msgid " 折"
+msgstr " 折"
+
+msgid "-1=不限"
+msgstr "-1=不限"
+
+msgid "— 分类管理"
+msgstr "— 分类管理"
+
+msgid "— 拼团管理"
+msgstr "— 拼团管理"
+
+msgid "— 评价管理"
+msgstr "— 评价管理"
+
+msgid "— 商城订单"
+msgstr "— 商城订单"
+
+msgid "— 商城设置"
+msgstr "— 商城设置"
+
+msgid "— 商品管理"
+msgstr "— 商品管理"
+
+msgid "— 售后退款"
+msgstr "— 售后退款"
+
+msgid "— 添加商品"
+msgstr "— 添加商品"
+
+msgid "— 优惠券"
+msgstr "— 优惠券"
+
+msgid "— 运营看板"
+msgstr "— 运营看板"
+
+msgid "— 助力活动"
+msgstr "— 助力活动"
+
+msgid "— 助力记录"
+msgstr "— 助力记录"
+
+msgid "；另有 %d 条失败未展示"
+msgstr "；另有 %d 条失败未展示"
+
+msgid "“按注册人数”是当前模式；“按首单消费人数”需被邀请用户至少完成1笔已支付订单（资源/商城/充值任一）。"
+msgstr "“按注册人数”是当前模式；“按首单消费人数”需被邀请用户至少完成1笔已支付订单（资源/商城/充值任一）。"
+
+msgid "(0=不限)"
+msgstr "(0=不限)"
+
+msgid "（查看更多内容）"
+msgstr "（查看更多内容）"
+
+msgid "[%s] 资源购买通知"
+msgstr "[%s] 资源购买通知"
+
+msgid "%d分钟前"
+msgstr "%d分钟前"
+
+msgid "%d级推广提成"
+msgstr "%d级推广提成"
+
+msgid "%d天"
+msgstr "%d天"
+
+msgid "%d天前"
+msgstr "%d天前"
+
+msgid "%d小时前"
+msgstr "%d小时前"
+
+msgid "%s权益"
+msgstr "%s权益"
+
+msgid "%s余额"
+msgstr "%s余额"
+
+msgid "%s支付"
+msgstr "%s支付"
+
+msgid "+ 使用新地址"
+msgstr "+ 使用新地址"
+
+msgid "+版本"
+msgstr "+版本"
+
+msgid "= 1元"
+msgstr "= 1元"
+
+msgid "🛒 实物商城"
+msgstr "🛒 实物商城"
+
+msgid "¥%s 以上"
+msgstr "¥%s 以上"
+
+msgid "0 表示不收取手续费"
+msgstr "0 表示不收取手续费"
+
+msgid "100=无折扣, 80=8折, 0=免费"
+msgstr "100=无折扣, 80=8折, 0=免费"
+
+msgid "1次/天"
+msgstr "1次/天"
+
+msgid "1元 = %s %s"
+msgstr "1元 = %s %s"
+
+msgid "32位密钥，在商户平台设置"
+msgstr "32位密钥，在商户平台设置"
+
+msgid "安全校验码(Key)"
+msgstr "安全校验码(Key)"
+
+msgid "安全校验失败，请刷新页面后重试。"
+msgstr "安全校验失败，请刷新页面后重试。"
+
+msgid "安全验证失败"
+msgstr "安全验证失败"
+
+msgid "按被邀请用户首单消费人数"
+msgstr "按被邀请用户首单消费人数"
+
+msgid "按充值金额百分比"
+msgstr "按充值金额百分比"
+
+msgid "按订单实付金额计算，分类规则可覆盖此比例"
+msgstr "按订单实付金额计算，分类规则可覆盖此比例"
+
+msgid "按钮文案"
+msgstr "按钮文案"
+
+msgid "按团购订单创建时间统计，追踪下单、支付、成团、完成的转化。"
+msgstr "按团购订单创建时间统计，追踪下单、支付、成团、完成的转化。"
+
+msgid "按邀请注册人数"
+msgstr "按邀请注册人数"
+
+msgid "按优惠券领取时间统计（实物商城订单），追踪领取到成交转化。"
+msgstr "按优惠券领取时间统计（实物商城订单），追踪领取到成交转化。"
+
+msgid "按助力活动发起时间统计，追踪从发起到支付完成的转化链路。"
+msgstr "按助力活动发起时间统计，追踪从发起到支付完成的转化链路。"
+
+msgid "暗黑"
+msgstr "暗黑"
+
+msgid "百分比"
+msgstr "百分比"
+
+msgid "版本值："
+msgstr "版本值："
+
+msgid "包含已购用户，非 VIP 将被拦截"
+msgstr "包含已购用户，非 VIP 将被拦截"
+
+msgid "保存"
+msgstr "保存"
+
+msgid "保存商品时发生异常，请检查填写内容后重试。"
+msgstr "保存商品时发生异常，请检查填写内容后重试。"
+
+msgid "保存设置"
+msgstr "保存设置"
+
+msgid "保存失败"
+msgstr "保存失败"
+
+msgid "保存失败，请稍后重试。"
+msgstr "保存失败，请稍后重试。"
+
+msgid "保存为收货地址"
+msgstr "保存为收货地址"
+
+msgid "保存中..."
+msgstr "保存中..."
+
+msgid "背景图片链接"
+msgstr "背景图片链接"
+
+msgid "被邀请人奖励积分"
+msgstr "被邀请人奖励积分"
+
+msgid "本年"
+msgstr "本年"
+
+msgid "本页没有待发货订单。"
+msgstr "本页没有待发货订单。"
+
+msgid "本月"
+msgstr "本月"
+
+msgid "本月订单"
+msgstr "本月订单"
+
+msgid "本月数据"
+msgstr "本月数据"
+
+msgid "本月提成"
+msgstr "本月提成"
+
+msgid "本月销售"
+msgstr "本月销售"
+
+msgid "碧海蓝天"
+msgstr "碧海蓝天"
+
+msgid "编辑"
+msgstr "编辑"
+
+msgid "编辑 VIP 等级"
+msgstr "编辑 VIP 等级"
+
+msgid "编辑返积分规则"
+msgstr "编辑返积分规则"
+
+msgid "编辑奖励规则"
+msgstr "编辑奖励规则"
+
+msgid "编辑阶梯规则"
+msgstr "编辑阶梯规则"
+
+msgid "标题"
+msgstr "标题"
+
+msgid "标题区域（启灵主题）"
+msgstr "标题区域（启灵主题）"
+
+msgid "补差价"
+msgstr "补差价"
+
+msgid "补差价升级"
+msgstr "补差价升级"
+
+msgid "补差价下载 (%s)"
+msgstr "补差价下载 (%s)"
+
+msgid "不参与VIP折扣"
+msgstr "不参与VIP折扣"
+
+msgid "不支持"
+msgstr "不支持"
+
+msgid "不支持的提现处理动作"
+msgstr "不支持的提现处理动作"
+
+msgid "不支持检测"
+msgstr "不支持检测"
+
+msgid "部分限制"
+msgstr "部分限制"
+
+msgid "部分资源VIP免费下载"
+msgstr "部分资源VIP免费下载"
+
+msgid "参考模板内容："
+msgstr "参考模板内容："
+
+msgid "参数不完整"
+msgstr "参数不完整"
+
+msgid "参数名"
+msgstr "参数名"
+
+msgid "参数值"
+msgstr "参数值"
+
+msgid "操作"
+msgstr "操作"
+
+msgid "操作成功"
+msgstr "操作成功"
+
+msgid "操作失败"
+msgstr "操作失败"
+
+msgid "操作失败，请稍后重试"
+msgstr "操作失败，请稍后重试"
+
+msgid "侧边栏"
+msgstr "侧边栏"
+
+msgid "测试模式"
+msgstr "测试模式"
+
+msgid "插件标识（plugins）"
+msgstr "插件标识（plugins）"
+
+msgid "插件设置"
+msgstr "插件设置"
+
+msgid "查看"
+msgstr "查看"
+
+msgid "查看订单"
+msgstr "查看订单"
+
+msgid "查看订单详情"
+msgstr "查看订单详情"
+
+msgid "查看购买记录"
+msgstr "查看购买记录"
+
+msgid "查看购物车"
+msgstr "查看购物车"
+
+msgid "查看明细"
+msgstr "查看明细"
+
+msgid "查看拼团管理"
+msgstr "查看拼团管理"
+
+msgid "查看优惠券管理"
+msgstr "查看优惠券管理"
+
+msgid "查看助力记录"
+msgstr "查看助力记录"
+
+msgid "查询"
+msgstr "查询"
+
+msgid "查询订单"
+msgstr "查询订单"
+
+msgid "查询结果"
+msgstr "查询结果"
+
+msgid "查询失败，请稍后重试"
+msgstr "查询失败，请稍后重试"
+
+msgid "查询中..."
+msgstr "查询中..."
+
+msgid "差价=目标等级价-当前等级价（不按剩余天数补差价）"
+msgstr "差价=目标等级价-当前等级价（不按剩余天数补差价）"
+
+msgid "差价计算"
+msgstr "差价计算"
+
+msgid "差价升级"
+msgstr "差价升级"
+
+msgid "常见问题"
+msgstr "常见问题"
+
+msgid "成交订单"
+msgstr "成交订单"
+
+msgid "成交金额"
+msgstr "成交金额"
+
+msgid "成团订单"
+msgstr "成团订单"
+
+msgid "城市"
+msgstr "城市"
+
+msgid "充%s元"
+msgstr "充%s元"
+
+msgid "充值"
+msgstr "充值"
+
+msgid "充值 %s 元"
+msgstr "充值 %s 元"
+
+msgid "充值成功"
+msgstr "充值成功"
+
+msgid "充值成功后，通常需要通知管理员对账，也应通知用户到账结果。"
+msgstr "充值成功后，通常需要通知管理员对账，也应通知用户到账结果。"
+
+msgid "充值次数"
+msgstr "充值次数"
+
+msgid "充值达到此金额时触发奖励"
+msgstr "充值达到此金额时触发奖励"
+
+msgid "充值记录"
+msgstr "充值记录"
+
+msgid "充值记录清空失败"
+msgstr "充值记录清空失败"
+
+msgid "充值记录删除成功"
+msgstr "充值记录删除成功"
+
+msgid "充值奖励规则"
+msgstr "充值奖励规则"
+
+msgid "充值金额"
+msgstr "充值金额"
+
+msgid "充值金额区间"
+msgstr "充值金额区间"
+
+msgid "充值排行前 10 名"
+msgstr "充值排行前 10 名"
+
+msgid "充值设置"
+msgstr "充值设置"
+
+msgid "充值提示"
+msgstr "充值提示"
+
+msgid "充值总额"
+msgstr "充值总额"
+
+msgid "充值总金额 (总)"
+msgstr "充值总金额 (总)"
+
+msgid "处理中..."
+msgstr "处理中..."
+
+msgid "触发密钥"
+msgstr "触发密钥"
+
+msgid "触发时延（分钟）："
+msgstr "触发时延（分钟）："
+
+msgid "创建差额单"
+msgstr "创建差额单"
+
+msgid "创建订单成功"
+msgstr "创建订单成功"
+
+msgid "创建订单失败"
+msgstr "创建订单失败"
+
+msgid "创建订单失败，积分回退失败，请联系管理员处理"
+msgstr "创建订单失败，积分回退失败，请联系管理员处理"
+
+msgid "创建订单中..."
+msgstr "创建订单中..."
+
+msgid "创建失败，请重试"
+msgstr "创建失败，请重试"
+
+msgid "创建时间"
+msgstr "创建时间"
+
+msgid "创建支付订单失败"
+msgstr "创建支付订单失败"
+
+msgid "创建中..."
+msgstr "创建中..."
+
+msgid "从您支付成功的这一刻开始计算，有效期内享受相应权益。过期后自动恢复为普通用户。"
+msgstr "从您支付成功的这一刻开始计算，有效期内享受相应权益。过期后自动恢复为普通用户。"
+
+msgid "促销价"
+msgstr "促销价"
+
+msgid "达成目标"
+msgstr "达成目标"
+
+msgid "打款金额："
+msgstr "打款金额："
+
+msgid "待发货单"
+msgstr "待发货单"
+
+msgid "待审核"
+msgstr "待审核"
+
+msgid "待审核提现记录不可删除，请先处理后再清理"
+msgstr "待审核提现记录不可删除，请先处理后再清理"
+
+msgid "待支付"
+msgstr "待支付"
+
+msgid "待支付订单召回提醒"
+msgstr "待支付订单召回提醒"
+
+msgid "单独购买 %s 折"
+msgstr "单独购买 %s 折"
+
+msgid "单独购买免费"
+msgstr "单独购买免费"
+
+msgid "当面付（扫码支付）"
+msgstr "当面付（扫码支付）"
+
+msgid "当前版本号：%s。点击刷新后，浏览器将重新加载最新的 CSS/JS 文件。"
+msgstr "当前版本号：%s。点击刷新后，浏览器将重新加载最新的 CSS/JS 文件。"
+
+msgid "当前等级"
+msgstr "当前等级"
+
+msgid "当前积分:"
+msgstr "当前积分:"
+
+msgid "当前筛选范围暂无可领取优惠券"
+msgstr "当前筛选范围暂无可领取优惠券"
+
+msgid "当前筛选范围暂无可用优惠券"
+msgstr "当前筛选范围暂无可用优惠券"
+
+msgid "当前筛选范围暂无使用记录"
+msgstr "当前筛选范围暂无使用记录"
+
+msgid "当前页面未检测到商城短代码或商城页面绑定，已跳过装修器加载以提升编辑速度。"
+msgstr "当前页面未检测到商城短代码或商城页面绑定，已跳过装修器加载以提升编辑速度。"
+
+msgid "当前余额：%s"
+msgstr "当前余额：%s"
+
+msgid "当前账号无权支付该订单"
+msgstr "当前账号无权支付该订单"
+
+msgid "当前资源仅限 VIP 用户访问"
+msgstr "当前资源仅限 VIP 用户访问"
+
+msgid "导出表格"
+msgstr "导出表格"
+
+msgid "到期"
+msgstr "到期"
+
+msgid "到期：%s"
+msgstr "到期：%s"
+
+msgid "到期后在宽限期内续费仍按原到期日叠加；超过宽限期将自动失效。"
+msgstr "到期后在宽限期内续费仍按原到期日叠加；超过宽限期将自动失效。"
+
+msgid "到期时间"
+msgstr "到期时间"
+
+msgid "到期提醒"
+msgstr "到期提醒"
+
+msgid "到期提醒与宽限期"
+msgstr "到期提醒与宽限期"
+
+msgid "登录后购买查看"
+msgstr "登录后购买查看"
+
+msgid "登录后购买下载"
+msgstr "登录后购买下载"
+
+msgid "登录后开通"
+msgstr "登录后开通"
+
+msgid "等%d件商品"
+msgstr "等%d件商品"
+
+msgid "等级"
+msgstr "等级"
+
+msgid "等级标识"
+msgstr "等级标识"
+
+msgid "等级名称"
+msgstr "等级名称"
+
+msgid "第 %d 行：订单号、物流公司和快递单号都不能为空。"
+msgstr "第 %d 行：订单号、物流公司和快递单号都不能为空。"
+
+msgid "第 %d 行：格式不完整，请按“订单号,物流公司,快递单号”填写。"
+msgstr "第 %d 行：格式不完整，请按“订单号,物流公司,快递单号”填写。"
+
+msgid "点击下载"
+msgstr "点击下载"
+
+msgid "叠加规则"
+msgstr "叠加规则"
+
+msgid "钉钉"
+msgstr "钉钉"
+
+msgid "顶部横幅区域"
+msgstr "顶部横幅区域"
+
+msgid "订单备注"
+msgstr "订单备注"
+
+msgid "订单不存在"
+msgstr "订单不存在"
+
+msgid "订单不存在或无权限"
+msgstr "订单不存在或无权限"
+
+msgid "订单不存在或已失效"
+msgstr "订单不存在或已失效"
+
+msgid "订单查询"
+msgstr "订单查询"
+
+msgid "订单查询验证"
+msgstr "订单查询验证"
+
+msgid "订单处理失败，积分回退失败，请联系管理员处理"
+msgstr "订单处理失败，积分回退失败，请联系管理员处理"
+
+msgid "订单处理失败，请联系管理员补单"
+msgstr "订单处理失败，请联系管理员补单"
+
+msgid "订单处理失败退还积分：%s"
+msgstr "订单处理失败退还积分：%s"
+
+msgid "订单创建后超过该时间仍未支付，将进入召回扫描。建议 15~60 分钟。"
+msgstr "订单创建后超过该时间仍未支付，将进入召回扫描。建议 15~60 分钟。"
+
+msgid "订单创建失败退还积分：%s"
+msgstr "订单创建失败退还积分：%s"
+
+msgid "订单发货成功"
+msgstr "订单发货成功"
+
+msgid "订单发货失败，请检查物流信息或订单状态"
+msgstr "订单发货失败，请检查物流信息或订单状态"
+
+msgid "订单返积分"
+msgstr "订单返积分"
+
+msgid "订单返积分：%s"
+msgstr "订单返积分：%s"
+
+msgid "订单管理"
+msgstr "订单管理"
+
+msgid "订单号"
+msgstr "订单号"
+
+msgid "订单号，例如 SHOP202603120001。"
+msgstr "订单号，例如 SHOP202603120001。"
+
+msgid "订单号:"
+msgstr "订单号:"
+
+msgid "订单恢复成功"
+msgstr "订单恢复成功"
+
+msgid "订单金额"
+msgstr "订单金额"
+
+msgid "订单类型"
+msgstr "订单类型"
+
+msgid "订单内容"
+msgstr "订单内容"
+
+msgid "订单取消失败，请检查订单状态"
+msgstr "订单取消失败，请检查订单状态"
+
+msgid "订单删除成功"
+msgstr "订单删除成功"
+
+msgid "订单删除失败"
+msgstr "订单删除失败"
+
+msgid "订单商品"
+msgstr "订单商品"
+
+msgid "订单收入"
+msgstr "订单收入"
+
+msgid "订单数"
+msgstr "订单数"
+
+msgid "订单完成后返积分"
+msgstr "订单完成后返积分"
+
+msgid "订单完成失败，请检查订单状态"
+msgstr "订单完成失败，请检查订单状态"
+
+msgid "订单未支付或已失效"
+msgstr "订单未支付或已失效"
+
+msgid "订单已取消"
+msgstr "订单已取消"
+
+msgid "订单已完成"
+msgstr "订单已完成"
+
+msgid "订单召回通知"
+msgstr "订单召回通知"
+
+msgid "订单状态"
+msgstr "订单状态"
+
+msgid "订单状态文案，当前固定为“已发货”。"
+msgstr "订单状态文案，当前固定为“已发货”。"
+
+msgid "订单总收入 (总)"
+msgstr "订单总收入 (总)"
+
+msgid "冻结"
+msgstr "冻结"
+
+msgid "冻结积分"
+msgstr "冻结积分"
+
+msgid "短信模板 CODE："
+msgstr "短信模板 CODE："
+
+msgid "短信通知仅在支持场景下展示，模板 CODE 需在阿里云审核通过后手动填写。"
+msgstr "短信通知仅在支持场景下展示，模板 CODE 需在阿里云审核通过后手动填写。"
+
+msgid "兑换成功"
+msgstr "兑换成功"
+
+msgid "兑换成功！"
+msgstr "兑换成功！"
+
+msgid "兑换码"
+msgstr "兑换码"
+
+msgid "兑换失败"
+msgstr "兑换失败"
+
+msgid "兑换优惠码"
+msgstr "兑换优惠码"
+
+msgid "兑换中..."
+msgstr "兑换中..."
+
+msgid "多个支付标识用半角逗号隔开，例如：alipay,wechat"
+msgstr "多个支付标识用半角逗号隔开，例如：alipay,wechat"
+
+msgid "二级提成比例"
+msgstr "二级提成比例"
+
+msgid "二维码组件未安装"
+msgstr "二维码组件未安装"
+
+msgid "发起助力"
+msgstr "发起助力"
+
+msgid "发起助力冷却(秒)"
+msgstr "发起助力冷却(秒)"
+
+msgid "返回固定 ok 文本，适合仅检查 HTTP 200 的场景。"
+msgstr "返回固定 ok 文本，适合仅检查 HTTP 200 的场景。"
+
+msgid "返积分比例"
+msgstr "返积分比例"
+
+msgid "返积分规则已保存"
+msgstr "返积分规则已保存"
+
+msgid "返积分规则已删除"
+msgstr "返积分规则已删除"
+
+msgid "飞书"
+msgstr "飞书"
+
+msgid "非必须，有则填，唤醒JSAPI/H5支付可能需要"
+msgstr "非必须，有则填，唤醒JSAPI/H5支付可能需要"
+
+msgid "非微信浏览器H5支付"
+msgstr "非微信浏览器H5支付"
+
+msgid "分类"
+msgstr "分类"
+
+msgid "分类管理"
+msgstr "分类管理"
+
+msgid "风格设置"
+msgstr "风格设置"
+
+msgid "封面"
+msgstr "封面"
+
+msgid "否"
+msgstr "否"
+
+msgid "服务端密钥（以 sk_ 开头），仅服务器可见。"
+msgstr "服务端密钥（以 sk_ 开头），仅服务器可见。"
+
+msgid "付费查看提示"
+msgstr "付费查看提示"
+
+msgid "付费内容"
+msgstr "付费内容"
+
+msgid "付费下载提示"
+msgstr "付费下载提示"
+
+msgid "付费用户"
+msgstr "付费用户"
+
+msgid "付费用户数 (总)"
+msgstr "付费用户数 (总)"
+
+msgid "付费资源"
+msgstr "付费资源"
+
+msgid "付费资源等待时间"
+msgstr "付费资源等待时间"
+
+msgid "复制地址"
+msgstr "复制地址"
+
+msgid "复制失败"
+msgstr "复制失败"
+
+msgid "复制失败，请手动复制"
+msgstr "复制失败，请手动复制"
+
+msgid "复制失败，请手动选择内容复制"
+msgstr "复制失败，请手动选择内容复制"
+
+msgid "副标题"
+msgstr "副标题"
+
+msgid "该 VIP 等级已停用"
+msgstr "该 VIP 等级已停用"
+
+msgid "该场景仅发给用户，用于提醒完成未支付订单。"
+msgstr "该场景仅发给用户，用于提醒完成未支付订单。"
+
+msgid "该订单已退款"
+msgstr "该订单已退款"
+
+msgid "该商品为虚拟商品，内容将在支付后自动发放。"
+msgstr "该商品为虚拟商品，内容将在支付后自动发放。"
+
+msgid "该资源仅限 VIP 访问"
+msgstr "该资源仅限 VIP 访问"
+
+msgid "该资源仅限 VIP 购买"
+msgstr "该资源仅限 VIP 购买"
+
+msgid "该资源仅支持人民币购买"
+msgstr "该资源仅支持人民币购买"
+
+msgid "该资源为免费资源，无需购买"
+msgstr "该资源为免费资源，无需购买"
+
+msgid "刚刚"
+msgstr "刚刚"
+
+msgid "更换商品"
+msgstr "更换商品"
+
+msgid "更新成功"
+msgstr "更新成功"
+
+msgid "更新规则"
+msgstr "更新规则"
+
+msgid "更新失败"
+msgstr "更新失败"
+
+msgid "公众号/小程序APPID"
+msgstr "公众号/小程序APPID"
+
+msgid "公众号AppSecret"
+msgstr "公众号AppSecret"
+
+msgid "功能特性"
+msgstr "功能特性"
+
+msgid "恭喜！成功升级为 %s"
+msgstr "恭喜！成功升级为 %s"
+
+msgid "共找到 %d 件商品"
+msgstr "共找到 %d 件商品"
+
+msgid "共找到 %d 件支持积分购买的商品"
+msgstr "共找到 %d 件支持积分购买的商品"
+
+msgid "购买 %s"
+msgstr "购买 %s"
+
+msgid "购买成功"
+msgstr "购买成功"
+
+msgid "购买次数"
+msgstr "购买次数"
+
+msgid "购买框风格"
+msgstr "购买框风格"
+
+msgid "购买框右上角徽章文案"
+msgstr "购买框右上角徽章文案"
+
+msgid "购买文章"
+msgstr "购买文章"
+
+msgid "购买与升级设置"
+msgstr "购买与升级设置"
+
+msgid "购买者"
+msgstr "购买者"
+
+msgid "购买资源"
+msgstr "购买资源"
+
+msgid "购买资源：%s"
+msgstr "购买资源：%s"
+
+msgid "购买资源享受专属优惠"
+msgstr "购买资源享受专属优惠"
+
+msgid "购物车"
+msgstr "购物车"
+
+msgid "购物车是空的"
+msgstr "购物车是空的"
+
+msgid "固定积分"
+msgstr "固定积分"
+
+msgid "固定积分填元数(如10表示10元换算的积分)，百分比填数字(如10表示10%%)"
+msgstr "固定积分填元数(如10表示10元换算的积分)，百分比填数字(如10表示10%%)"
+
+msgid "固定值"
+msgstr "固定值"
+
+msgid "关闭"
+msgstr "关闭"
+
+msgid "关闭购买框中的直接下载功能"
+msgstr "关闭购买框中的直接下载功能"
+
+msgid "关闭后将只保留旧版同IP邀请一次逻辑（若上方同IP限制已启用）。"
+msgstr "关闭后将只保留旧版同IP邀请一次逻辑（若上方同IP限制已启用）。"
+
+msgid "关闭后仅禁用“未支付订单召回通知”任务，不影响补单对账、自动取消、团购检查等其他任务。"
+msgstr "关闭后仅禁用“未支付订单召回通知”任务，不影响补单对账、自动取消、团购检查等其他任务。"
+
+msgid "关闭时积分永久有效，不触发过期。"
+msgstr "关闭时积分永久有效，不触发过期。"
+
+msgid "关闭直接下载"
+msgstr "关闭直接下载"
+
+msgid "管理用户"
+msgstr "管理用户"
+
+msgid "管理员尚未配置 VIP 等级，请稍后再来。"
+msgstr "管理员尚未配置 VIP 等级，请稍后再来。"
+
+msgid "管理员通知方式："
+msgstr "管理员通知方式："
+
+msgid "管理员推送通道（可多选）："
+msgstr "管理员推送通道（可多选）："
+
+msgid "规格"
+msgstr "规格"
+
+msgid "规格名称（如：颜色）"
+msgstr "规格名称（如：颜色）"
+
+msgid "规格值（如：白色）"
+msgstr "规格值（如：白色）"
+
+msgid "规则已删除"
+msgstr "规则已删除"
+
+msgid "含下载"
+msgstr "含下载"
+
+msgid "好友助力活动"
+msgstr "好友助力活动"
+
+msgid "好友助力记录"
+msgstr "好友助力记录"
+
+msgid "好友助力漏斗"
+msgstr "好友助力漏斗"
+
+msgid "好友助力中心"
+msgstr "好友助力中心"
+
+msgid "好友助力专区"
+msgstr "好友助力专区"
+
+msgid "合作者身份(Partner ID)"
+msgstr "合作者身份(Partner ID)"
+
+msgid "核心权益介绍"
+msgstr "核心权益介绍"
+
+msgid "黑金尊贵 (默认)"
+msgstr "黑金尊贵 (默认)"
+
+msgid "后台订单列表确认退款"
+msgstr "后台订单列表确认退款"
+
+msgid "虎皮椒 V3"
+msgstr "虎皮椒 V3"
+
+msgid "虎皮椒 V3（个人免签）"
+msgstr "虎皮椒 V3（个人免签）"
+
+msgid "缓存时长（秒）"
+msgstr "缓存时长（秒）"
+
+msgid "缓存已刷新！新版本号："
+msgstr "缓存已刷新！新版本号："
+
+msgid "徽章颜色"
+msgstr "徽章颜色"
+
+msgid "回答"
+msgstr "回答"
+
+msgid "回调说明："
+msgstr "回调说明："
+
+msgid "汇率"
+msgstr "汇率"
+
+msgid "会员名称设置"
+msgstr "会员名称设置"
+
+msgid "会员权益设置"
+msgstr "会员权益设置"
+
+msgid "会员权益已暂停"
+msgstr "会员权益已暂停"
+
+msgid "会员特权"
+msgstr "会员特权"
+
+msgid "会员有效期如何计算？"
+msgstr "会员有效期如何计算？"
+
+msgid "活动参数错误"
+msgstr "活动参数错误"
+
+msgid "或"
+msgstr "或"
+
+msgid "或 {points} {pointsName}"
+msgstr "或 {points} {pointsName}"
+
+msgid "或在线支付"
+msgstr "或在线支付"
+
+msgid "货币符号"
+msgstr "货币符号"
+
+msgid "获取成功"
+msgstr "获取成功"
+
+msgid "获取价格失败"
+msgstr "获取价格失败"
+
+msgid "获取下载地址失败"
+msgstr "获取下载地址失败"
+
+msgid "获取中..."
+msgstr "获取中..."
+
+msgid "积分"
+msgstr "积分"
+
+msgid "积分比例"
+msgstr "积分比例"
+
+msgid "积分充值"
+msgstr "积分充值"
+
+msgid "积分从低到高"
+msgstr "积分从低到高"
+
+msgid "积分从高到低"
+msgstr "积分从高到低"
+
+msgid "积分订单"
+msgstr "积分订单"
+
+msgid "积分过期维护已并入统一外部任务入口（不走 WP Cron）。建议每 5 分钟访问一次统一任务地址："
+msgstr "积分过期维护已并入统一外部任务入口（不走 WP Cron）。建议每 5 分钟访问一次统一任务地址："
+
+msgid "积分即将过期提醒"
+msgstr "积分即将过期提醒"
+
+msgid "积分记录"
+msgstr "积分记录"
+
+msgid "积分价"
+msgstr "积分价"
+
+msgid "积分名称"
+msgstr "积分名称"
+
+msgid "积分明细"
+msgstr "积分明细"
+
+msgid "积分批次"
+msgstr "积分批次"
+
+msgid "积分批次表不存在，请先执行插件升级（停用后启用或进入任意后台页面触发升级）。"
+msgstr "积分批次表不存在，请先执行插件升级（停用后启用或进入任意后台页面触发升级）。"
+
+msgid "积分已过期提醒"
+msgstr "积分已过期提醒"
+
+msgid "积分有效期"
+msgstr "积分有效期"
+
+msgid "积分余额不足，请先充值"
+msgstr "积分余额不足，请先充值"
+
+msgid "积分中心"
+msgstr "积分中心"
+
+msgid "基础设置"
+msgstr "基础设置"
+
+msgid "极速通道"
+msgstr "极速通道"
+
+msgid "极速下载"
+msgstr "极速下载"
+
+msgid "计算中..."
+msgstr "计算中..."
+
+msgid "加入购物车"
+msgstr "加入购物车"
+
+msgid "加载失败"
+msgstr "加载失败"
+
+msgid "加载中..."
+msgstr "加载中..."
+
+msgid "价格"
+msgstr "价格"
+
+msgid "价格(元)"
+msgstr "价格(元)"
+
+msgid "价格从低到高"
+msgstr "价格从低到高"
+
+msgid "价格从高到低"
+msgstr "价格从高到低"
+
+msgid "监控建议"
+msgstr "监控建议"
+
+msgid "检测失败"
+msgstr "检测失败"
+
+msgid "检测完成"
+msgstr "检测完成"
+
+msgid "检测有效性"
+msgstr "检测有效性"
+
+msgid "检测中..."
+msgstr "检测中..."
+
+msgid "建议 4-8 个(改变数量之后先保存)"
+msgstr "建议 4-8 个(改变数量之后先保存)"
+
+msgid "建议32位随机字符串"
+msgstr "建议32位随机字符串"
+
+msgid "建议订阅事件：CHECKOUT.ORDER.APPROVED、PAYMENT.CAPTURE.COMPLETED"
+msgstr "建议订阅事件：CHECKOUT.ORDER.APPROVED、PAYMENT.CAPTURE.COMPLETED"
+
+msgid "建议频率"
+msgstr "建议频率"
+
+msgid "将按填写的物流公司和快递单号逐行发货，只处理待发货订单。是否继续？"
+msgstr "将按填写的物流公司和快递单号逐行发货，只处理待发货订单。是否继续？"
+
+msgid "将扣除 {price} {pointsName}"
+msgstr "将扣除 {price} {pointsName}"
+
+msgid "奖励"
+msgstr "奖励"
+
+msgid "奖励规则已保存"
+msgstr "奖励规则已保存"
+
+msgid "奖励积分"
+msgstr "奖励积分"
+
+msgid "奖励积分："
+msgstr "奖励积分："
+
+msgid "奖励类型"
+msgstr "奖励类型"
+
+msgid "奖励值"
+msgstr "奖励值"
+
+msgid "交易播报"
+msgstr "交易播报"
+
+msgid "交易完成"
+msgstr "交易完成"
+
+msgid "交易用户数"
+msgstr "交易用户数"
+
+msgid "接口版本"
+msgstr "接口版本"
+
+msgid "接口顺序"
+msgstr "接口顺序"
+
+msgid "结算币种"
+msgstr "结算币种"
+
+msgid "结账"
+msgstr "结账"
+
+msgid "解锁会员专享文章、视频及隐藏内容"
+msgstr "解锁会员专享文章、视频及隐藏内容"
+
+msgid "解锁全站资源，享受尊贵特权"
+msgstr "解锁全站资源，享受尊贵特权"
+
+msgid "今日充值"
+msgstr "今日充值"
+
+msgid "今日订单"
+msgstr "今日订单"
+
+msgid "今日收入"
+msgstr "今日收入"
+
+msgid "今日数据"
+msgstr "今日数据"
+
+msgid "今日已签到"
+msgstr "今日已签到"
+
+msgid "今日已签到，明天再来吧~"
+msgstr "今日已签到，明天再来吧~"
+
+msgid "今天"
+msgstr "今天"
+
+msgid "金额"
+msgstr "金额"
+
+msgid "仅查看"
+msgstr "仅查看"
+
+msgid "仅对开启有效期后新增的积分生效。建议 30 ~ 365 天。"
+msgstr "仅对开启有效期后新增的积分生效。建议 30 ~ 365 天。"
+
+msgid "仅飞书/钉钉推送"
+msgstr "仅飞书/钉钉推送"
+
+msgid "仅扫描最近 N 天的待支付订单，降低历史数据扫描压力。"
+msgstr "仅扫描最近 N 天的待支付订单，降低历史数据扫描压力。"
+
+msgid "仅邮件"
+msgstr "仅邮件"
+
+msgid "仅在开启虚拟数据时生效。0 表示纯真实数据。"
+msgstr "仅在开启虚拟数据时生效。0 表示纯真实数据。"
+
+msgid "仅支持 Orders v2 + Webhook（已移除 SOAP/IPN）。"
+msgstr "仅支持 Orders v2 + Webhook（已移除 SOAP/IPN）。"
+
+msgid "仅支持 PayPal Checkout Orders v2 + Webhook。"
+msgstr "仅支持 PayPal Checkout Orders v2 + Webhook。"
+
+msgid "仅支持删除待支付充值单，或订单正在处理中。"
+msgstr "仅支持删除待支付充值单，或订单正在处理中。"
+
+msgid "仅支持新版RSA2签名接口。支持当面付（扫码支付）和电脑网站支付。"
+msgstr "仅支持新版RSA2签名接口。支持当面付（扫码支付）和电脑网站支付。"
+
+msgid "尽快续费以保留权益"
+msgstr "尽快续费以保留权益"
+
+msgid "禁用"
+msgstr "禁用"
+
+msgid "拒绝"
+msgstr "拒绝"
+
+msgid "拒绝后，申请金额将退还到用户的可提现余额。"
+msgstr "拒绝后，申请金额将退还到用户的可提现余额。"
+
+msgid "拒绝提现申请"
+msgstr "拒绝提现申请"
+
+msgid "拒绝原因（可选）："
+msgstr "拒绝原因（可选）："
+
+msgid "卡密信息"
+msgstr "卡密信息"
+
+msgid "开启到期提醒"
+msgstr "开启到期提醒"
+
+msgid "开启后，高等级购买金额=目标等级价-当前等级价；仅在升级更高等级时生效。"
+msgstr "开启后，高等级购买金额=目标等级价-当前等级价；仅在升级更高等级时生效。"
+
+msgid "开启后，用户注册时必须填写可用注册码（同时作用于启灵主题注册页与注册弹窗）。"
+msgstr "开启后，用户注册时必须填写可用注册码（同时作用于启灵主题注册页与注册弹窗）。"
+
+msgid "开启后才混入虚拟头像和虚拟交易内容"
+msgstr "开启后才混入虚拟头像和虚拟交易内容"
+
+msgid "开启后在到期前指定天数发送提醒邮件给用户。"
+msgstr "开启后在到期前指定天数发送提醒邮件给用户。"
+
+msgid "开启积分到期提醒"
+msgstr "开启积分到期提醒"
+
+msgid "开始发货"
+msgstr "开始发货"
+
+msgid "开通 VIP 会员"
+msgstr "开通 VIP 会员"
+
+msgid "开通%s"
+msgstr "开通%s"
+
+msgid "开通%s享受专属折扣和特权"
+msgstr "开通%s享受专属折扣和特权"
+
+msgid "开通会员"
+msgstr "开通会员"
+
+msgid "开通享受优惠"
+msgstr "开通享受优惠"
+
+msgid "开通VIP"
+msgstr "开通VIP"
+
+msgid "科技蓝"
+msgstr "科技蓝"
+
+msgid "可领取"
+msgstr "可领取"
+
+msgid "可免费下载"
+msgstr "可免费下载"
+
+msgid "可配置更多对比项(改变数量之后先保存)"
+msgstr "可配置更多对比项(改变数量之后先保存)"
+
+msgid "可选"
+msgstr "可选"
+
+msgid "可用"
+msgstr "可用"
+
+msgid "可用范围"
+msgstr "可用范围"
+
+msgid "可用积分"
+msgstr "可用积分"
+
+msgid "可在%s查看优惠券编号后填写到这里。"
+msgstr "可在%s查看优惠券编号后填写到这里。"
+
+msgid "扣费失败，请重试"
+msgstr "扣费失败，请重试"
+
+msgid "库存"
+msgstr "库存"
+
+msgid "库存 {stock} 件"
+msgstr "库存 {stock} 件"
+
+msgid "快递单号"
+msgstr "快递单号"
+
+msgid "快捷操作"
+msgstr "快捷操作"
+
+msgid "快捷充值"
+msgstr "快捷充值"
+
+msgid "快捷功能"
+msgstr "快捷功能"
+
+msgid "快捷功能 %d"
+msgstr "快捷功能 %d"
+
+msgid "快捷功能设置"
+msgstr "快捷功能设置"
+
+msgid "宽限期"
+msgstr "宽限期"
+
+msgid "宽限期天数"
+msgstr "宽限期天数"
+
+msgid "宽限至 %s"
+msgstr "宽限至 %s"
+
+msgid "来源"
+msgstr "来源"
+
+msgid "来源标识"
+msgstr "来源标识"
+
+msgid "老接口（MD5签名）"
+msgstr "老接口（MD5签名）"
+
+msgid "老接口需填写"
+msgstr "老接口需填写"
+
+msgid "老接口需填写，MD5密钥"
+msgstr "老接口需填写，MD5密钥"
+
+msgid "类型："
+msgstr "类型："
+
+msgid "累计充值"
+msgstr "累计充值"
+
+msgid "累计积分"
+msgstr "累计积分"
+
+msgid "累计金额"
+msgstr "累计金额"
+
+msgid "累计收入"
+msgstr "累计收入"
+
+msgid "累计提成"
+msgstr "累计提成"
+
+msgid "累计销售"
+msgstr "累计销售"
+
+msgid "立即充值"
+msgstr "立即充值"
+
+msgid "立即登录"
+msgstr "立即登录"
+
+msgid "立即兑换"
+msgstr "立即兑换"
+
+msgid "立即购买查看 (%s)"
+msgstr "立即购买查看 (%s)"
+
+msgid "立即购买下载 (%s)"
+msgstr "立即购买下载 (%s)"
+
+msgid "立即获取"
+msgstr "立即获取"
+
+msgid "立即加入"
+msgstr "立即加入"
+
+msgid "立即开通"
+msgstr "立即开通"
+
+msgid "立即领取"
+msgstr "立即领取"
+
+msgid "立即签到"
+msgstr "立即签到"
+
+msgid "立即升级"
+msgstr "立即升级"
+
+msgid "立即下载"
+msgstr "立即下载"
+
+msgid "立即支付 ¥{amount}"
+msgstr "立即支付 ¥{amount}"
+
+msgid "例如：充100送10"
+msgstr "例如：充100送10"
+
+msgid "连签天数倍增"
+msgstr "连签天数倍增"
+
+msgid "连续签到奖励"
+msgstr "连续签到奖励"
+
+msgid "联系人"
+msgstr "联系人"
+
+msgid "联系信息"
+msgstr "联系信息"
+
+msgid "链接"
+msgstr "链接"
+
+msgid "链接失效"
+msgstr "链接失效"
+
+msgid "链接无效"
+msgstr "链接无效"
+
+msgid "链接正常"
+msgstr "链接正常"
+
+msgid "列表设置"
+msgstr "列表设置"
+
+msgid "列数"
+msgstr "列数"
+
+msgid "领取"
+msgstr "领取"
+
+msgid "领取成功"
+msgstr "领取成功"
+
+msgid "领取失败"
+msgstr "领取失败"
+
+msgid "领取优惠券"
+msgstr "领取优惠券"
+
+msgid "领取中..."
+msgstr "领取中..."
+
+msgid "留空表示无上限，即\"大于等于最低金额\"均适用"
+msgstr "留空表示无上限，即\"大于等于最低金额\"均适用"
+
+msgid "留空则使用默认标题（如：文章标题、积分充值）。设置后所有支付订单标题将统一使用此名称，可提升部分支付通道的标题兼容性。"
+msgstr "留空则使用默认标题（如：文章标题、积分充值）。设置后所有支付订单标题将统一使用此名称，可提升部分支付通道的标题兼容性。"
+
+msgid "留空则使用默认渐变背景。建议使用深色系大图。"
+msgstr "留空则使用默认渐变背景。建议使用深色系大图。"
+
+msgid "轮播间隔（秒）"
+msgstr "轮播间隔（秒）"
+
+msgid "买家备注"
+msgstr "买家备注"
+
+msgid "满{currency}{amount}可用"
+msgstr "满{currency}{amount}可用"
+
+msgid "满%s可用"
+msgstr "满%s可用"
+
+msgid "满¥{amount}可用"
+msgstr "满¥{amount}可用"
+
+msgid "满¥%s可用"
+msgstr "满¥%s可用"
+
+msgid "满减券"
+msgstr "满减券"
+
+msgid "没有可清理的提现记录"
+msgstr "没有可清理的提现记录"
+
+msgid "没有可清理的已完成充值记录"
+msgstr "没有可清理的已完成充值记录"
+
+msgid "没有找到匹配的上架商品"
+msgstr "没有找到匹配的上架商品"
+
+msgid "每次前端拉取的播报条数。"
+msgstr "每次前端拉取的播报条数。"
+
+msgid "每个场景都拆分为「通知管理员 / 通知用户」独立开关，按业务需要单独配置。"
+msgstr "每个场景都拆分为「通知管理员 / 通知用户」独立开关，按业务需要单独配置。"
+
+msgid "每日 %d 次"
+msgstr "每日 %d 次"
+
+msgid "每日签到"
+msgstr "每日签到"
+
+msgid "每日下载 %d 次"
+msgstr "每日下载 %d 次"
+
+msgid "每日下载：%d 个资源"
+msgstr "每日下载：%d 个资源"
+
+msgid "每日下载：无限次"
+msgstr "每日下载：无限次"
+
+msgid "每日下载限制"
+msgstr "每日下载限制"
+
+msgid "每日限制"
+msgstr "每日限制"
+
+msgid "免登录购买"
+msgstr "免登录购买"
+
+msgid "免登录支付查看 %s"
+msgstr "免登录支付查看 %s"
+
+msgid "免登录支付下载 %s"
+msgstr "免登录支付下载 %s"
+
+msgid "免费"
+msgstr "免费"
+
+msgid "免费升级"
+msgstr "免费升级"
+
+msgid "免费下载"
+msgstr "免费下载"
+
+msgid "免费资源"
+msgstr "免费资源"
+
+msgid "免费资源等待时间"
+msgstr "免费资源等待时间"
+
+msgid "免运费"
+msgstr "免运费"
+
+msgid "描述"
+msgstr "描述"
+
+msgid "秒"
+msgstr "秒"
+
+msgid "名称"
+msgstr "名称"
+
+msgid "模板变量说明："
+msgstr "模板变量说明："
+
+msgid "模板文件不存在"
+msgstr "模板文件不存在"
+
+msgid "模板在阿里云短信服务中申请并审核通过后填写。"
+msgstr "模板在阿里云短信服务中申请并审核通过后填写。"
+
+msgid "模块不存在"
+msgstr "模块不存在"
+
+msgid "模块类型无效"
+msgstr "模块类型无效"
+
+msgid "默认"
+msgstr "默认"
+
+msgid "默认 usd。若填写 cny，将按人民币金额直接下单；其他币种按下方汇率换算。"
+msgstr "默认 usd。若填写 cny，将按人民币金额直接下单；其他币种按下方汇率换算。"
+
+msgid "默认：付费资源。显示在卡片左上角的提示文字。"
+msgstr "默认：付费资源。显示在卡片左上角的提示文字。"
+
+msgid "默认返回 JSON，可用于监控系统解析执行状态。"
+msgstr "默认返回 JSON，可用于监控系统解析执行状态。"
+
+msgid "默认返积分比例"
+msgstr "默认返积分比例"
+
+msgid "默认支付通道"
+msgstr "默认支付通道"
+
+msgid "默认值设置"
+msgstr "默认值设置"
+
+msgid "默认VIP折扣设置"
+msgstr "默认VIP折扣设置"
+
+msgid "内容上 + 侧边栏"
+msgstr "内容上 + 侧边栏"
+
+msgid "内容下 + 侧边栏"
+msgstr "内容下 + 侧边栏"
+
+msgid "本次购买为虚拟商品，支付成功后将自动获取商品内容。请填写联系方式用于接收商品信息。"
+msgstr "本次购买为虚拟商品，支付成功后将自动获取商品内容。请填写联系方式用于接收商品信息。"
+
+msgid "您还不是%s"
+msgstr "您还不是%s"
+
+msgid "您可以新建一个页面，填入此短代码，作为您的 VIP 会员介绍页。"
+msgstr "您可以新建一个页面，填入此短代码，作为您的 VIP 会员介绍页。"
+
+msgid "您已购买该资源，无需重复购买"
+msgstr "您已购买该资源，无需重复购买"
+
+msgid "您正在开通："
+msgstr "您正在开通："
+
+msgid "排名"
+msgstr "排名"
+
+msgid "排序"
+msgstr "排序"
+
+msgid "配置核心卖点数量，展示在横幅下方。"
+msgstr "配置核心卖点数量，展示在横幅下方。"
+
+msgid "配置指南（必读）："
+msgstr "配置指南（必读）："
+
+msgid "批次数"
+msgstr "批次数"
+
+msgid "批量操作"
+msgstr "批量操作"
+
+msgid "批量导入发货"
+msgstr "批量导入发货"
+
+msgid "批量发货完成，已发货 %d 单。"
+msgstr "批量发货完成，已发货 %d 单。"
+
+msgid "批量删除"
+msgstr "批量删除"
+
+msgid "批量设置："
+msgstr "批量设置："
+
+msgid "拼团成功通知"
+msgstr "拼团成功通知"
+
+msgid "拼团管理"
+msgstr "拼团管理"
+
+msgid "拼团漏斗"
+msgstr "拼团漏斗"
+
+msgid "拼团让利按「SKU原价/促销价 - 团购成交价」估算。"
+msgstr "拼团让利按「SKU原价/促销价 - 团购成交价」估算。"
+
+msgid "拼团失败通知"
+msgstr "拼团失败通知"
+
+msgid "拼团专区"
+msgstr "拼团专区"
+
+msgid "评价管理"
+msgstr "评价管理"
+
+msgid "普通速度"
+msgstr "普通速度"
+
+msgid "普通用户"
+msgstr "普通用户"
+
+msgid "其他设置"
+msgstr "其他设置"
+
+msgid "启灵店铺装修"
+msgstr "启灵店铺装修"
+
+msgid "启灵积分商城"
+msgstr "启灵积分商城"
+
+msgid "启灵商城"
+msgstr "启灵商城"
+
+msgid "启灵商城设置"
+msgstr "启灵商城设置"
+
+msgid "启用"
+msgstr "启用"
+
+msgid "启用 PayPal"
+msgstr "启用 PayPal"
+
+msgid "启用 Stripe 支付"
+msgstr "启用 Stripe 支付"
+
+msgid "启用（谨慎开启）"
+msgstr "启用（谨慎开启）"
+
+msgid "启用测试模式"
+msgstr "启用测试模式"
+
+msgid "启用此规则"
+msgstr "启用此规则"
+
+msgid "启用当面付，生成二维码扫码支付"
+msgstr "启用当面付，生成二维码扫码支付"
+
+msgid "启用短信通知（用户）"
+msgstr "启用短信通知（用户）"
+
+msgid "启用返积分"
+msgstr "启用返积分"
+
+msgid "启用后，购买框中的\"点击下载\"按钮将变为\"前往下载\"，点击跳转到独立下载页面。"
+msgstr "启用后，购买框中的\"点击下载\"按钮将变为\"前往下载\"，点击跳转到独立下载页面。"
+
+msgid "启用后，用户可在个人中心申请提现推广佣金"
+msgstr "启用后，用户可在个人中心申请提现推广佣金"
+
+msgid "启用虎皮椒 V3"
+msgstr "启用虎皮椒 V3"
+
+msgid "启用积分有效期与自动过期"
+msgstr "启用积分有效期与自动过期"
+
+msgid "启用交易播报"
+msgstr "启用交易播报"
+
+msgid "启用阶梯奖励"
+msgstr "启用阶梯奖励"
+
+msgid "启用每日签到"
+msgstr "启用每日签到"
+
+msgid "启用生日券"
+msgstr "启用生日券"
+
+msgid "启用提现功能"
+msgstr "启用提现功能"
+
+msgid "启用网盘有效性检测"
+msgstr "启用网盘有效性检测"
+
+msgid "启用微信支付"
+msgstr "启用微信支付"
+
+msgid "启用未支付订单召回通知任务（独立开关）"
+msgstr "启用未支付订单召回通知任务（独立开关）"
+
+msgid "启用虚拟数据"
+msgstr "启用虚拟数据"
+
+msgid "启用邀请IP风控（按阈值，不是一刀切）"
+msgstr "启用邀请IP风控（按阈值，不是一刀切）"
+
+msgid "启用易支付"
+msgstr "启用易支付"
+
+msgid "启用营销行为风控"
+msgstr "启用营销行为风控"
+
+msgid "启用支付宝"
+msgstr "启用支付宝"
+
+msgid "启用支付宝支付"
+msgstr "启用支付宝支付"
+
+msgid "启用注册码注册验证"
+msgstr "启用注册码注册验证"
+
+msgid "启用H5支付"
+msgstr "启用H5支付"
+
+msgid "启用JSAPI支付"
+msgstr "启用JSAPI支付"
+
+msgid "启用PayPal支付"
+msgstr "启用PayPal支付"
+
+msgid "签到成功"
+msgstr "签到成功"
+
+msgid "签到成功！获得 %s"
+msgstr "签到成功！获得 %s"
+
+msgid "签到功能"
+msgstr "签到功能"
+
+msgid "签到功能已关闭"
+msgstr "签到功能已关闭"
+
+msgid "签到基础积分"
+msgstr "签到基础积分"
+
+msgid "签到奖励（连续%d天）"
+msgstr "签到奖励（连续%d天）"
+
+msgid "签到失败"
+msgstr "签到失败"
+
+msgid "签到同IP每日上限"
+msgstr "签到同IP每日上限"
+
+msgid "签到中..."
+msgstr "签到中..."
+
+msgid "前端公钥（以 pk_ 开头）。"
+msgstr "前端公钥（以 pk_ 开头）。"
+
+msgid "前端将按该区间随机切换播报。"
+msgstr "前端将按该区间随机切换播报。"
+
+msgid "前往独立下载页"
+msgstr "前往独立下载页"
+
+msgid "前往下载"
+msgstr "前往下载"
+
+msgid "清除筛选"
+msgstr "清除筛选"
+
+msgid "清空全部记录"
+msgstr "清空全部记录"
+
+msgid "清空已处理记录"
+msgstr "清空已处理记录"
+
+msgid "清空已拒绝记录"
+msgstr "清空已拒绝记录"
+
+msgid "清空已完成记录"
+msgstr "清空已完成记录"
+
+msgid "清新翠绿"
+msgstr "清新翠绿"
+
+msgid "清新多彩 (默认)"
+msgstr "清新多彩 (默认)"
+
+msgid "清新简约"
+msgstr "清新简约"
+
+msgid "请部署 includes/phpqrcode/qrlib.php"
+msgstr "请部署 includes/phpqrcode/qrlib.php"
+
+msgid "请联系管理员开通此VIP等级"
+msgstr "请联系管理员开通此VIP等级"
+
+msgid "请耐心等待 {seconds} 秒"
+msgstr "请耐心等待 {seconds} 秒"
+
+msgid "请求处理中，请勿重复提交"
+msgstr "请求处理中，请勿重复提交"
+
+msgid "请求校验失败"
+msgstr "请求校验失败"
+
+msgid "请确认您已通过线下方式完成转账！"
+msgstr "请确认您已通过线下方式完成转账！"
+
+msgid "请扫码支付"
+msgstr "请扫码支付"
+
+msgid "请输入充值金额"
+msgstr "请输入充值金额"
+
+msgid "请输入订单号和手机号/邮箱"
+msgstr "请输入订单号和手机号/邮箱"
+
+msgid "请输入兑换码"
+msgstr "请输入兑换码"
+
+msgid "请输入您的称呼"
+msgstr "请输入您的称呼"
+
+msgid "请输入视频封面图片链接（可选）："
+msgstr "请输入视频封面图片链接（可选）："
+
+msgid "请输入视频链接："
+msgstr "请输入视频链接："
+
+msgid "请输入优惠码"
+msgstr "请输入优惠码"
+
+msgid "请填写联系人姓名"
+msgstr "请填写联系人姓名"
+
+msgid "请填写手机号码或邮箱地址"
+msgstr "请填写手机号码或邮箱地址"
+
+msgid "请填写完整的收货信息"
+msgstr "请填写完整的收货信息"
+
+msgid "请填写有效的分类与返积分比例"
+msgstr "请填写有效的分类与返积分比例"
+
+msgid "请填写有效的邀请人数和奖励积分"
+msgstr "请填写有效的邀请人数和奖励积分"
+
+msgid "请先登录"
+msgstr "请先登录"
+
+msgid "请先登录查看您的优惠券"
+msgstr "请先登录查看您的优惠券"
+
+msgid "请先登录订单所属账号后再支付"
+msgstr "请先登录订单所属账号后再支付"
+
+msgid "请先登录后兑换"
+msgstr "请先登录后兑换"
+
+msgid "请先勾选要操作的项目。"
+msgstr "请先勾选要操作的项目。"
+
+msgid "请先添加规格和规格值"
+msgstr "请先添加规格和规格值"
+
+msgid "请先填写订单号、物流公司和快递单号。"
+msgstr "请先填写订单号、物流公司和快递单号。"
+
+msgid "请先填写要发货的订单。"
+msgstr "请先填写要发货的订单。"
+
+msgid "请先在“售后退款”页面审核通过后再执行退款。"
+msgstr "请先在“售后退款”页面审核通过后再执行退款。"
+
+msgid "请先粘贴订单号、物流公司和快递单号。"
+msgstr "请先粘贴订单号、物流公司和快递单号。"
+
+msgid "请选择或输入充值金额"
+msgstr "请选择或输入充值金额"
+
+msgid "请选择批量操作。"
+msgstr "请选择批量操作。"
+
+msgid "请选择商品规格"
+msgstr "请选择商品规格"
+
+msgid "请选择支付方式"
+msgstr "请选择支付方式"
+
+msgid "请在 PayPal Webhook 中订阅事件：CHECKOUT.ORDER.APPROVED、PAYMENT.CAPTURE.COMPLETED。"
+msgstr "请在 PayPal Webhook 中订阅事件：CHECKOUT.ORDER.APPROVED、PAYMENT.CAPTURE.COMPLETED。"
+
+msgid "请在后台补充对比项后，这里会自动展示。"
+msgstr "请在后台补充对比项后，这里会自动展示。"
+
+msgid "区"
+msgstr "区"
+
+msgid "区县"
+msgstr "区县"
+
+msgid "取消"
+msgstr "取消"
+
+msgid "取消编辑"
+msgstr "取消编辑"
+
+msgid "去查看"
+msgstr "去查看"
+
+msgid "去充值"
+msgstr "去充值"
+
+msgid "去广告"
+msgstr "去广告"
+
+msgid "去逛逛"
+msgstr "去逛逛"
+
+msgid "去领取"
+msgstr "去领取"
+
+msgid "全部"
+msgstr "全部"
+
+msgid "全部范围"
+msgstr "全部范围"
+
+msgid "全部商品"
+msgstr "全部商品"
+
+msgid "全站固定自定义订单标题"
+msgstr "全站固定自定义订单标题"
+
+msgid "全站免费/折扣"
+msgstr "全站免费/折扣"
+
+msgid "全站通用"
+msgstr "全站通用"
+
+msgid "全站资源高速下载，通过网盘直链或本地储存"
+msgstr "全站资源高速下载，通过网盘直链或本地储存"
+
+msgid "权限不足"
+msgstr "权限不足"
+
+msgid "权益 %d"
+msgstr "权益 %d"
+
+msgid "权益对比"
+msgstr "权益对比"
+
+msgid "权益对比表"
+msgstr "权益对比表"
+
+msgid "权益对比暂未配置"
+msgstr "权益对比暂未配置"
+
+msgid "权益范围"
+msgstr "权益范围"
+
+msgid "确定"
+msgstr "确定"
+
+msgid "确定删除？"
+msgstr "确定删除？"
+
+msgid "确定删除该充值记录？"
+msgstr "确定删除该充值记录？"
+
+msgid "确定删除该提现记录？"
+msgstr "确定删除该提现记录？"
+
+msgid "确定删除该项吗？"
+msgstr "确定删除该项吗？"
+
+msgid "确定要从购物车中删除该商品吗？"
+msgstr "确定要从购物车中删除该商品吗？"
+
+msgid "确定要购买吗？"
+msgstr "确定要购买吗？"
+
+msgid "确定要清空全部充值记录吗？此操作不可恢复。"
+msgstr "确定要清空全部充值记录吗？此操作不可恢复。"
+
+msgid "确定要清空已处理的提现记录吗？此操作不可恢复。"
+msgstr "确定要清空已处理的提现记录吗？此操作不可恢复。"
+
+msgid "确定要删除该商品吗？"
+msgstr "确定要删除该商品吗？"
+
+msgid "确定要删除吗？"
+msgstr "确定要删除吗？"
+
+msgid "确定要删除选中的项目吗？"
+msgstr "确定要删除选中的项目吗？"
+
+msgid "确定要移除吗？"
+msgstr "确定要移除吗？"
+
+msgid "确定要执行此操作吗？"
+msgstr "确定要执行此操作吗？"
+
+msgid "确认"
+msgstr "确认"
+
+msgid "确认操作"
+msgstr "确认操作"
+
+msgid "确认充值"
+msgstr "确认充值"
+
+msgid "确认打款"
+msgstr "确认打款"
+
+msgid "确认订单"
+msgstr "确认订单"
+
+msgid "确认购买"
+msgstr "确认购买"
+
+msgid "确认拒绝"
+msgstr "确认拒绝"
+
+msgid "确认删除"
+msgstr "确认删除"
+
+msgid "确认选择"
+msgstr "确认选择"
+
+msgid "确认已打款"
+msgstr "确认已打款"
+
+msgid "确认支付"
+msgstr "确认支付"
+
+msgid "热门商品"
+msgstr "热门商品"
+
+msgid "热门推荐"
+msgstr "热门推荐"
+
+msgid "热销商品前 10 名"
+msgstr "热销商品前 10 名"
+
+msgid "任务"
+msgstr "任务"
+
+msgid "任务奖励到账通知"
+msgstr "任务奖励到账通知"
+
+msgid "任务中心外部触发"
+msgstr "任务中心外部触发"
+
+msgid "任务中心新手任务"
+msgstr "任务中心新手任务"
+
+msgid "日期"
+msgstr "日期"
+
+msgid "如：128G"
+msgstr "如：128G"
+
+msgid "如需在本页启用商城装修，请先插入商城短代码并保存，或在 URL 后追加参数 qls_shop_builder=1。"
+msgstr "如需在本页启用商城装修，请先插入商城短代码并保存，或在 URL 后追加参数 qls_shop_builder=1。"
+
+msgid "扫描回溯（天）："
+msgstr "扫描回溯（天）："
+
+msgid "沙盒模式"
+msgstr "沙盒模式"
+
+msgid "筛选"
+msgstr "筛选"
+
+msgid "删除"
+msgstr "删除"
+
+msgid "删除成功"
+msgstr "删除成功"
+
+msgid "删除规格"
+msgstr "删除规格"
+
+msgid "删除记录"
+msgstr "删除记录"
+
+msgid "删除失败"
+msgstr "删除失败"
+
+msgid "删除中..."
+msgstr "删除中..."
+
+msgid "删除SKU失败"
+msgstr "删除SKU失败"
+
+msgid "删除SKU失败，请稍后重试"
+msgstr "删除SKU失败，请稍后重试"
+
+msgid "商城"
+msgstr "商城"
+
+msgid "商城 -> 优惠券管理"
+msgstr "商城 -> 优惠券管理"
+
+msgid "商城订单"
+msgstr "商城订单"
+
+msgid "商城购物"
+msgstr "商城购物"
+
+msgid "商城设置"
+msgstr "商城设置"
+
+msgid "商城中心"
+msgstr "商城中心"
+
+msgid "商户 ID (pid)"
+msgstr "商户 ID (pid)"
+
+msgid "商户号(MCHID)"
+msgstr "商户号(MCHID)"
+
+msgid "商户密钥 (key)"
+msgstr "商户密钥 (key)"
+
+msgid "商户应用私钥"
+msgstr "商户应用私钥"
+
+msgid "商户支付密钥(KEY)"
+msgstr "商户支付密钥(KEY)"
+
+msgid "商品 #%d"
+msgstr "商品 #%d"
+
+msgid "商品分类导航"
+msgstr "商品分类导航"
+
+msgid "商品管理"
+msgstr "商品管理"
+
+msgid "商品加载失败，请检查网络后重试"
+msgstr "商品加载失败，请检查网络后重试"
+
+msgid "商品加载失败，请稍后重试"
+msgstr "商品加载失败，请稍后重试"
+
+msgid "商品金额"
+msgstr "商品金额"
+
+msgid "商品金额:"
+msgstr "商品金额:"
+
+msgid "商品来源"
+msgstr "商品来源"
+
+msgid "商品列表"
+msgstr "商品列表"
+
+msgid "商品名称"
+msgstr "商品名称"
+
+msgid "商品明细"
+msgstr "商品明细"
+
+msgid "商品总数"
+msgstr "商品总数"
+
+msgid "商务"
+msgstr "商务"
+
+msgid "上一页"
+msgstr "上一页"
+
+msgid "设为推荐"
+msgstr "设为推荐"
+
+msgid "设置"
+msgstr "设置"
+
+msgid "设置【业务域名】、【JS接口安全域名】、【网页授权域名】为当前网站域名"
+msgstr "设置【业务域名】、【JS接口安全域名】、【网页授权域名】为当前网站域名"
+
+msgid "设置【支付授权目录】为："
+msgstr "设置【支付授权目录】为："
+
+msgid "设置【H5支付域名】为当前网站域名"
+msgstr "设置【H5支付域名】为当前网站域名"
+
+msgid "设置对比项行数，用于展示普通用户与VIP用户的区别。支持基础排版。"
+msgstr "设置对比项行数，用于展示普通用户与VIP用户的区别。支持基础排版。"
+
+msgid "设置购买框中显示的“请先登录”提示文案"
+msgstr "设置购买框中显示的“请先登录”提示文案"
+
+msgid "设置已保存"
+msgstr "设置已保存"
+
+msgid "设置VIP会员页面展示的权益图标、标题和描述"
+msgstr "设置VIP会员页面展示的权益图标、标题和描述"
+
+msgid "申请时间"
+msgstr "申请时间"
+
+msgid "升级/续费规则说明与预览"
+msgstr "升级/续费规则说明与预览"
+
+msgid "升级按目标等级价计费（不按剩余天数补差价）"
+msgstr "升级按目标等级价计费（不按剩余天数补差价）"
+
+msgid "升级后到期"
+msgstr "升级后到期"
+
+msgid "升级后授权：下载（含查看）"
+msgstr "升级后授权：下载（含查看）"
+
+msgid "生成随机密钥"
+msgstr "生成随机密钥"
+
+msgid "生成SKU"
+msgstr "生成SKU"
+
+msgid "生日当天自动发放优惠券"
+msgstr "生日当天自动发放优惠券"
+
+msgid "生日券发放通知"
+msgstr "生日券发放通知"
+
+msgid "生日券设置"
+msgstr "生日券设置"
+
+msgid "省"
+msgstr "省"
+
+msgid "省份"
+msgstr "省份"
+
+msgid "剩余 %d 张"
+msgstr "剩余 %d 张"
+
+msgid "时间"
+msgstr "时间"
+
+msgid "时长"
+msgstr "时长"
+
+msgid "实付金额"
+msgstr "实付金额"
+
+msgid "实际到账"
+msgstr "实际到账"
+
+msgid "实物订单申请退款"
+msgstr "实物订单申请退款"
+
+msgid "实物订单已发货"
+msgstr "实物订单已发货"
+
+msgid "实物订单已付款"
+msgstr "实物订单已付款"
+
+msgid "实物订单已取消"
+msgstr "实物订单已取消"
+
+msgid "实物订单已退款"
+msgstr "实物订单已退款"
+
+msgid "实物订单已完成"
+msgstr "实物订单已完成"
+
+msgid "实物商城"
+msgstr "实物商城"
+
+msgid "使用"
+msgstr "使用"
+
+msgid "使用%s支付"
+msgstr "使用%s支付"
+
+msgid "使用此图片"
+msgstr "使用此图片"
+
+msgid "使用启灵主题阿里云短信发送。模板变量建议包含：orderNo、company、trackingNo、site、status。"
+msgstr "使用启灵主题阿里云短信发送。模板变量建议包含：orderNo、company、trackingNo、site、status。"
+
+msgid "使用半角逗号分隔，例如 7,3 表示到期前 7 天和 3 天提醒。留空则不提醒。"
+msgstr "使用半角逗号分隔，例如 7,3 表示到期前 7 天和 3 天提醒。留空则不提醒。"
+
+msgid "使用半角逗号分隔，例如 7,3,1 表示到期前 7/3/1 天提醒。"
+msgstr "使用半角逗号分隔，例如 7,3,1 表示到期前 7/3/1 天提醒。"
+
+msgid "使用VIP等级默认折扣"
+msgstr "使用VIP等级默认折扣"
+
+msgid "市"
+msgstr "市"
+
+msgid "示例：https://api.xunhupay.com/payment/do.html 或备用 https://api.dpweixin.com/payment/do.html"
+msgstr "示例：https://api.xunhupay.com/payment/do.html 或备用 https://api.dpweixin.com/payment/do.html"
+
+msgid "是"
+msgstr "是"
+
+msgid "适配主流易支付程序，默认跳转 submit.php 下单。"
+msgstr "适配主流易支付程序，默认跳转 submit.php 下单。"
+
+msgid "适用类型"
+msgstr "适用类型"
+
+msgid "收货人"
+msgstr "收货人"
+
+msgid "收货信息"
+msgstr "收货信息"
+
+msgid "收货信息已更新"
+msgstr "收货信息已更新"
+
+msgid "收款方式"
+msgstr "收款方式"
+
+msgid "收款账号"
+msgstr "收款账号"
+
+msgid "收入"
+msgstr "收入"
+
+msgid "手机端H5支付，需申请手机网站支付权限"
+msgstr "手机端H5支付，需申请手机网站支付权限"
+
+msgid "手机号"
+msgstr "手机号"
+
+msgid "手机号（可选）"
+msgstr "手机号（可选）"
+
+msgid "手机号和邮箱至少填写一项"
+msgstr "手机号和邮箱至少填写一项"
+
+msgid "手机号码"
+msgstr "手机号码"
+
+msgid "手机浏览器支付（唤醒支付应用）"
+msgstr "手机浏览器支付（唤醒支付应用）"
+
+msgid "手机网站支付（需申请权限）"
+msgstr "手机网站支付（需申请权限）"
+
+msgid "手续费"
+msgstr "手续费"
+
+msgid "首次商城下单支付"
+msgstr "首次商城下单支付"
+
+msgid "首次邀请成功"
+msgstr "首次邀请成功"
+
+msgid "首次资源购买"
+msgstr "首次资源购买"
+
+msgid "首屏轮播"
+msgstr "首屏轮播"
+
+msgid "受邀注册奖励"
+msgstr "受邀注册奖励"
+
+msgid "售后退款"
+msgstr "售后退款"
+
+msgid "授权范围：仅查看"
+msgstr "授权范围：仅查看"
+
+msgid "授权范围：下载（含查看）"
+msgstr "授权范围：下载（含查看）"
+
+msgid "输入金额"
+msgstr "输入金额"
+
+msgid "输入优惠码"
+msgstr "输入优惠码"
+
+msgid "输入表情符号（如👑）或图标类名（如 icon-vip），显示在网站顶部菜单栏。"
+msgstr "输入表情符号（如👑）或图标类名（如 icon-vip），显示在网站顶部菜单栏。"
+
+msgid "数据批量数"
+msgstr "数据批量数"
+
+msgid "数据统计"
+msgstr "数据统计"
+
+msgid "刷新前端缓存"
+msgstr "刷新前端缓存"
+
+msgid "刷新失败"
+msgstr "刷新失败"
+
+msgid "刷新中..."
+msgstr "刷新中..."
+
+msgid "说明"
+msgstr "说明"
+
+msgid "说明文字"
+msgstr "说明文字"
+
+msgid "送%s%%"
+msgstr "送%s%%"
+
+msgid "送%s%s"
+msgstr "送%s%s"
+
+msgid "搜索用户名/邮箱/来源"
+msgstr "搜索用户名/邮箱/来源"
+
+msgid "所有页面已存在"
+msgstr "所有页面已存在"
+
+msgid "套餐暂未开放"
+msgstr "套餐暂未开放"
+
+msgid "提成"
+msgstr "提成"
+
+msgid "提成比例"
+msgstr "提成比例"
+
+msgid "提成金额"
+msgstr "提成金额"
+
+msgid "提成明细"
+msgstr "提成明细"
+
+msgid "提成统计"
+msgstr "提成统计"
+
+msgid "提交订单"
+msgstr "提交订单"
+
+msgid "提交中..."
+msgstr "提交中..."
+
+msgid "提取码："
+msgstr "提取码："
+
+msgid "提示文案"
+msgstr "提示文案"
+
+msgid "提现处理失败，请稍后重试"
+msgstr "提现处理失败，请稍后重试"
+
+msgid "提现功能"
+msgstr "提现功能"
+
+msgid "提现记录"
+msgstr "提现记录"
+
+msgid "提现记录不存在"
+msgstr "提现记录不存在"
+
+msgid "提现记录不存在或已处理"
+msgstr "提现记录不存在或已处理"
+
+msgid "提现记录处理中，请稍后再试"
+msgstr "提现记录处理中，请稍后再试"
+
+msgid "提现记录处理中，请稍后重试"
+msgstr "提现记录处理中，请稍后重试"
+
+msgid "提现记录清理失败"
+msgstr "提现记录清理失败"
+
+msgid "提现记录删除成功"
+msgstr "提现记录删除成功"
+
+msgid "提现记录删除失败"
+msgstr "提现记录删除失败"
+
+msgid "提现设置"
+msgstr "提现设置"
+
+msgid "提现申请建议通知管理员及时审核，同时通知用户提交成功。"
+msgstr "提现申请建议通知管理员及时审核，同时通知用户提交成功。"
+
+msgid "提现申请已提交"
+msgstr "提现申请已提交"
+
+msgid "提现审核"
+msgstr "提现审核"
+
+msgid "提现审核拒绝"
+msgstr "提现审核拒绝"
+
+msgid "提现审核通过"
+msgstr "提现审核通过"
+
+msgid "提现手续费率"
+msgstr "提现手续费率"
+
+msgid "提醒天数"
+msgstr "提醒天数"
+
+msgid "天"
+msgstr "天"
+
+msgid "添加 VIP 等级"
+msgstr "添加 VIP 等级"
+
+msgid "添加成功"
+msgstr "添加成功"
+
+msgid "添加到商品"
+msgstr "添加到商品"
+
+msgid "添加返积分规则"
+msgstr "添加返积分规则"
+
+msgid "添加规格"
+msgstr "添加规格"
+
+msgid "添加规格值"
+msgstr "添加规格值"
+
+msgid "添加规则"
+msgstr "添加规则"
+
+msgid "添加奖励规则"
+msgstr "添加奖励规则"
+
+msgid "添加阶梯规则"
+msgstr "添加阶梯规则"
+
+msgid "添加商品"
+msgstr "添加商品"
+
+msgid "添加一项"
+msgstr "添加一项"
+
+msgid "添加值"
+msgstr "添加值"
+
+msgid "添加中..."
+msgstr "添加中..."
+
+msgid "填7表示1美元=7元人民币"
+msgstr "填7表示1美元=7元人民币"
+
+msgid "填写优惠券编号，用于生日当天自动发放（需先在优惠券管理中创建）"
+msgstr "填写优惠券编号，用于生日当天自动发放（需先在优惠券管理中创建）"
+
+msgid "填写站点根地址，系统会自动拼接 submit.php。"
+msgstr "填写站点根地址，系统会自动拼接 submit.php。"
+
+msgid "停用"
+msgstr "停用"
+
+msgid "通常情况下，支付成功后系统会自动为您开通权益，即时生效。"
+msgstr "通常情况下，支付成功后系统会自动为您开通权益，即时生效。"
+
+msgid "通过短缓存减少查询压力，提高页面性能。"
+msgstr "通过短缓存减少查询压力，提高页面性能。"
+
+msgid "通过站内通知提醒用户即将过期的可用积分。"
+msgstr "通过站内通知提醒用户即将过期的可用积分。"
+
+msgid "通知方式支持多选；若两项都不选，则任务执行时不会发送通知。"
+msgstr "通知方式支持多选；若两项都不选，则任务执行时不会发送通知。"
+
+msgid "通知管理员（邮件/推送）"
+msgstr "通知管理员（邮件/推送）"
+
+msgid "通知设置"
+msgstr "通知设置"
+
+msgid "通知用户"
+msgstr "通知用户"
+
+msgid "同 IP 也视为已购买"
+msgstr "同 IP 也视为已购买"
+
+msgid "同一订单仅发送一次召回通知（无论站内信/邮件如何组合）；历史已发送订单不会重复召回。"
+msgstr "同一订单仅发送一次召回通知（无论站内信/邮件如何组合）；历史已发送订单不会重复召回。"
+
+msgid "同一邀请人 + 同一IP 两次邀请之间最小间隔，0表示不限制。"
+msgstr "同一邀请人 + 同一IP 两次邀请之间最小间隔，0表示不限制。"
+
+msgid "同一邀请人 + 同一IP 每日最多记入邀请次数，0表示不限制。"
+msgstr "同一邀请人 + 同一IP 每日最多记入邀请次数，0表示不限制。"
+
+msgid "同一用户发起助力的最小间隔，0表示不限制。"
+msgstr "同一用户发起助力的最小间隔，0表示不限制。"
+
+msgid "同一用户连续助力最小间隔，0表示不限制。"
+msgstr "同一用户连续助力最小间隔，0表示不限制。"
+
+msgid "同一用户每小时可助力次数，0表示不限制。"
+msgstr "同一用户每小时可助力次数，0表示不限制。"
+
+msgid "同一IP每日允许成功签到的账户数，0表示不限制。"
+msgstr "同一IP每日允许成功签到的账户数，0表示不限制。"
+
+msgid "同一IP每小时可助力总次数，默认宽松；0表示不限制。"
+msgstr "同一IP每小时可助力总次数，默认宽松；0表示不限制。"
+
+msgid "同IP限制"
+msgstr "同IP限制"
+
+msgid "统计口径："
+msgstr "统计口径："
+
+msgid "统计明细 (%s 至 %s) - 按%s统计"
+msgstr "统计明细 (%s 至 %s) - 按%s统计"
+
+msgid "统一风控开关"
+msgstr "统一风控开关"
+
+msgid "统一入口会自动按任务节流：团购 5 分钟、订单/助力 10 分钟、积分/VIP/游客 1 小时、生日券 6 小时。"
+msgstr "统一入口会自动按任务节流：团购 5 分钟、订单/助力 10 分钟、积分/VIP/游客 1 小时、生日券 6 小时。"
+
+msgid "统一入口模式：建议外部监控每 %d 分钟访问一次同一个触发地址；插件内部按任务粒度节流，不会每次都全量执行。"
+msgstr "统一入口模式：建议外部监控每 %d 分钟访问一次同一个触发地址；插件内部按任务粒度节流，不会每次都全量执行。"
+
+msgid "统一通知设置"
+msgstr "统一通知设置"
+
+msgid "图标"
+msgstr "图标"
+
+msgid "图标（表情符号）"
+msgstr "图标（表情符号）"
+
+msgid "图片"
+msgstr "图片"
+
+msgid "图文内容"
+msgstr "图文内容"
+
+msgid "团购下单"
+msgstr "团购下单"
+
+msgid "团购详情"
+msgstr "团购详情"
+
+msgid "团购已结束"
+msgstr "团购已结束"
+
+msgid "团购中心"
+msgstr "团购中心"
+
+msgid "推广设置"
+msgstr "推广设置"
+
+msgid "推广系统"
+msgstr "推广系统"
+
+msgid "推广佣金到账"
+msgstr "推广佣金到账"
+
+msgid "推荐"
+msgstr "推荐"
+
+msgid "推荐工具：Uptime Kuma（自建）、cron-job.org（免费）、宝塔计划任务（服务器端）、云监控 HTTP 探测。"
+msgstr "推荐工具：Uptime Kuma（自建）、cron-job.org（免费）、宝塔计划任务（服务器端）、云监控 HTTP 探测。"
+
+msgid "推荐监控策略：超时 10~15 秒，失败重试 1 次（间隔 1 分钟），连续失败告警通知运维。"
+msgstr "推荐监控策略：超时 10~15 秒，失败重试 1 次（间隔 1 分钟），连续失败告警通知运维。"
+
+msgid "推荐监控工具：Uptime Kuma、cron-job.org、宝塔计划任务、云监控 HTTP 探测。"
+msgstr "推荐监控工具：Uptime Kuma、cron-job.org、宝塔计划任务、云监控 HTTP 探测。"
+
+msgid "推荐使用 Checkout + Webhook 模式。用户支付成功后由 Stripe Webhook 异步确认订单状态。"
+msgstr "推荐使用 Checkout + Webhook 模式。用户支付成功后由 Stripe Webhook 异步确认订单状态。"
+
+msgid "退还用户余额失败，请稍后重试"
+msgstr "退还用户余额失败，请稍后重试"
+
+msgid "退款成功"
+msgstr "退款成功"
+
+msgid "外部触发地址(JSON)"
+msgstr "外部触发地址(JSON)"
+
+msgid "外部触发地址(Plain)"
+msgstr "外部触发地址(Plain)"
+
+msgid "外部监控调用时需携带该密钥"
+msgstr "外部监控调用时需携带该密钥"
+
+msgid "外部任务清单（统一入口）"
+msgstr "外部任务清单（统一入口）"
+
+msgid "完成首次商城支付后可领取奖励"
+msgstr "完成首次商城支付后可领取奖励"
+
+msgid "完成首次资源订单后可领取奖励"
+msgstr "完成首次资源订单后可领取奖励"
+
+msgid "完整地址"
+msgstr "完整地址"
+
+msgid "网络错误"
+msgstr "网络错误"
+
+msgid "网络错误，请重试"
+msgstr "网络错误，请重试"
+
+msgid "网盘链接"
+msgstr "网盘链接"
+
+msgid "网盘链接检测"
+msgstr "网盘链接检测"
+
+msgid "微信"
+msgstr "微信"
+
+msgid "微信 AppID"
+msgstr "微信 AppID"
+
+msgid "微信 AppSecret"
+msgstr "微信 AppSecret"
+
+msgid "微信公众平台 -> 公众号设置 -> 功能设置："
+msgstr "微信公众平台 -> 公众号设置 -> 功能设置："
+
+msgid "微信内H5支付"
+msgstr "微信内H5支付"
+
+msgid "微信扫码支付"
+msgstr "微信扫码支付"
+
+msgid "微信商户平台 -> 产品中心 -> 开发配置："
+msgstr "微信商户平台 -> 产品中心 -> 开发配置："
+
+msgid "微信网关"
+msgstr "微信网关"
+
+msgid "微信支付"
+msgstr "微信支付"
+
+msgid "微信支付--开发配置，设置支付授权目录"
+msgstr "微信支付--开发配置，设置支付授权目录"
+
+msgid "微信支付（官方接口）"
+msgstr "微信支付（官方接口）"
+
+msgid "未分类"
+msgstr "未分类"
+
+msgid "未检测到“启灵推送”插件，暂不可使用飞书/钉钉推送。"
+msgstr "未检测到“启灵推送”插件，暂不可使用飞书/钉钉推送。"
+
+msgid "未开通会员"
+msgstr "未开通会员"
+
+msgid "未配置"
+msgstr "未配置"
+
+msgid "未使用"
+msgstr "未使用"
+
+msgid "未选择商品"
+msgstr "未选择商品"
+
+msgid "未找到售后申请，请先让用户提交售后并在“售后退款”页面审核。"
+msgstr "未找到售后申请，请先让用户提交售后并在“售后退款”页面审核。"
+
+msgid "未找到相关订单，请检查输入是否正确"
+msgstr "未找到相关订单，请检查输入是否正确"
+
+msgid "未找到相关商品"
+msgstr "未找到相关商品"
+
+msgid "未知"
+msgstr "未知"
+
+msgid "未知订单操作"
+msgstr "未知订单操作"
+
+msgid "位置设置"
+msgstr "位置设置"
+
+msgid "文档"
+msgstr "文档"
+
+msgid "文章内容上方"
+msgstr "文章内容上方"
+
+msgid "文章内容下方 (默认)"
+msgstr "文章内容下方 (默认)"
+
+msgid "文章资源"
+msgstr "文章资源"
+
+msgid "问题 %d"
+msgstr "问题 %d"
+
+msgid "我的订单"
+msgstr "我的订单"
+
+msgid "我的可用"
+msgstr "我的可用"
+
+msgid "我的下载"
+msgstr "我的下载"
+
+msgid "我的优惠券"
+msgstr "我的优惠券"
+
+msgid "我的助力"
+msgstr "我的助力"
+
+msgid "无"
+msgstr "无"
+
+msgid "无广告"
+msgstr "无广告"
+
+msgid "无门槛"
+msgstr "无门槛"
+
+msgid "无权操作该订单"
+msgstr "无权操作该订单"
+
+msgid "无限"
+msgstr "无限"
+
+msgid "无限下载"
+msgstr "无限下载"
+
+msgid "无限制"
+msgstr "无限制"
+
+msgid "无需补差价购买"
+msgstr "无需补差价购买"
+
+msgid "无需支付"
+msgstr "无需支付"
+
+msgid "无折扣"
+msgstr "无折扣"
+
+msgid "物流单号。"
+msgstr "物流单号。"
+
+msgid "物流公司"
+msgstr "物流公司"
+
+msgid "物流公司名称，例如 顺丰速运。"
+msgstr "物流公司名称，例如 顺丰速运。"
+
+msgid "物流信息不匹配"
+msgstr "物流信息不匹配"
+
+msgid "下单时间"
+msgstr "下单时间"
+
+msgid "下单使用"
+msgstr "下单使用"
+
+msgid "下一页"
+msgstr "下一页"
+
+msgid "下载（补差价）"
+msgstr "下载（补差价）"
+
+msgid "下载（含查看）"
+msgstr "下载（含查看）"
+
+msgid "下载地址"
+msgstr "下载地址"
+
+msgid "下载额度"
+msgstr "下载额度"
+
+msgid "下载框显示位置（侧边栏要去小工具添加）"
+msgstr "下载框显示位置（侧边栏要去小工具添加）"
+
+msgid "下载链接"
+msgstr "下载链接"
+
+msgid "下载链接："
+msgstr "下载链接："
+
+msgid "下载链接无效"
+msgstr "下载链接无效"
+
+msgid "下载设置"
+msgstr "下载设置"
+
+msgid "下载速度"
+msgstr "下载速度"
+
+msgid "下载提示"
+msgstr "下载提示"
+
+msgid "下载准备中..."
+msgstr "下载准备中..."
+
+msgid "先领券再下单，覆盖资源/VIP/积分充值/实物商城多场景优惠。"
+msgstr "先领券再下单，覆盖资源/VIP/积分充值/实物商城多场景优惠。"
+
+msgid "显示数量"
+msgstr "显示数量"
+
+msgid "显示销量数据"
+msgstr "显示销量数据"
+
+msgid "显示在独立下载页面的提示信息（购买后点击下载进入的页面）"
+msgstr "显示在独立下载页面的提示信息（购买后点击下载进入的页面）"
+
+msgid "显示在付费查看购买框中的提示信息"
+msgstr "显示在付费查看购买框中的提示信息"
+
+msgid "显示在付费下载购买框中的提示信息"
+msgstr "显示在付费下载购买框中的提示信息"
+
+msgid "显示在积分中心充值弹窗中的提示信息"
+msgstr "显示在积分中心充值弹窗中的提示信息"
+
+msgid "详细地址"
+msgstr "详细地址"
+
+msgid "享受纯净的浏览体验，告别弹窗干扰"
+msgstr "享受纯净的浏览体验，告别弹窗干扰"
+
+msgid "享受会员权益中"
+msgstr "享受会员权益中"
+
+msgid "享受优先客服支持"
+msgstr "享受优先客服支持"
+
+msgid "消费排行前 10 名"
+msgstr "消费排行前 10 名"
+
+msgid "消费总额"
+msgstr "消费总额"
+
+msgid "消耗 %s %s"
+msgstr "消耗 %s %s"
+
+msgid "销量"
+msgstr "销量"
+
+msgid "销量 %d"
+msgstr "销量 %d"
+
+msgid "销量排行"
+msgstr "销量排行"
+
+msgid "销量优先"
+msgstr "销量优先"
+
+msgid "销售额"
+msgstr "销售额"
+
+msgid "销售提成"
+msgstr "销售提成"
+
+msgid "新建文章时的默认资源价格"
+msgstr "新建文章时的默认资源价格"
+
+msgid "新建文章时的默认VIP折扣设置"
+msgstr "新建文章时的默认VIP折扣设置"
+
+msgid "新接口（RSA2签名）推荐"
+msgstr "新接口（RSA2签名）推荐"
+
+msgid "新接口与H5支付需填写"
+msgstr "新接口与H5支付需填写"
+
+msgid "新人专区"
+msgstr "新人专区"
+
+msgid "新文章默认价格"
+msgstr "新文章默认价格"
+
+msgid "新用户注册奖励"
+msgstr "新用户注册奖励"
+
+msgid "新增用户"
+msgstr "新增用户"
+
+msgid "虚拟内容"
+msgstr "虚拟内容"
+
+msgid "虚拟商品"
+msgstr "虚拟商品"
+
+msgid "虚拟商品无需收货地址"
+msgstr "虚拟商品无需收货地址"
+
+msgid "虚拟商品信息"
+msgstr "虚拟商品信息"
+
+msgid "虚拟数据占比"
+msgstr "虚拟数据占比"
+
+msgid "需要"
+msgstr "需要"
+
+msgid "续费"
+msgstr "续费"
+
+msgid "续费同等级在原到期日基础上叠加；升级从今日起计算；宽限期内续费仍按原到期日叠加"
+msgstr "续费同等级在原到期日基础上叠加；升级从今日起计算；宽限期内续费仍按原到期日叠加"
+
+msgid "选填，请先与卖家协商一致，在此处备注特殊要求"
+msgstr "选填，请先与卖家协商一致，在此处备注特殊要求"
+
+msgid "选填，用于接收电子商品"
+msgstr "选填，用于接收电子商品"
+
+msgid "选择参数名"
+msgstr "选择参数名"
+
+msgid "选择规格值图片"
+msgstr "选择规格值图片"
+
+msgid "选择您的套餐"
+msgstr "选择您的套餐"
+
+msgid "选择商品图片"
+msgstr "选择商品图片"
+
+msgid "选择视频"
+msgstr "选择视频"
+
+msgid "选择图片"
+msgstr "选择图片"
+
+msgid "选择优惠券"
+msgstr "选择优惠券"
+
+msgid "选择支付方式"
+msgstr "选择支付方式"
+
+msgid "选择VIP套餐"
+msgstr "选择VIP套餐"
+
+msgid "验证失败，请重试"
+msgstr "验证失败，请重试"
+
+msgid "验证中..."
+msgstr "验证中..."
+
+msgid "邀请 1 位好友注册后可领取奖励"
+msgstr "邀请 1 位好友注册后可领取奖励"
+
+msgid "邀请好友"
+msgstr "邀请好友"
+
+msgid "邀请好友注册奖励"
+msgstr "邀请好友注册奖励"
+
+msgid "邀请记录"
+msgstr "邀请记录"
+
+msgid "邀请奖励叠加"
+msgstr "邀请奖励叠加"
+
+msgid "邀请阶梯奖励"
+msgstr "邀请阶梯奖励"
+
+msgid "邀请阶梯奖励到账"
+msgstr "邀请阶梯奖励到账"
+
+msgid "邀请阶梯奖励规则"
+msgstr "邀请阶梯奖励规则"
+
+msgid "邀请阶梯奖励规则已保存"
+msgstr "邀请阶梯奖励规则已保存"
+
+msgid "邀请阶梯奖励规则已删除"
+msgstr "邀请阶梯奖励规则已删除"
+
+msgid "邀请人奖励积分"
+msgstr "邀请人奖励积分"
+
+msgid "邀请人数"
+msgstr "邀请人数"
+
+msgid "邀请同IP冷却(秒)"
+msgstr "邀请同IP冷却(秒)"
+
+msgid "邀请同IP每日上限"
+msgstr "邀请同IP每日上限"
+
+msgid "邀请注册成功"
+msgstr "邀请注册成功"
+
+msgid "邀请赚积分"
+msgstr "邀请赚积分"
+
+msgid "页面风格"
+msgstr "页面风格"
+
+msgid "一级提成比例"
+msgstr "一级提成比例"
+
+msgid "一键创建所有页面"
+msgstr "一键创建所有页面"
+
+msgid "一键复制"
+msgstr "一键复制"
+
+msgid "一键刷新前端资源文件缓存"
+msgstr "一键刷新前端资源文件缓存"
+
+msgid "一键应用"
+msgstr "一键应用"
+
+msgid "一行一项权益，显示在套餐卡片中。"
+msgstr "一行一项权益，显示在套餐卡片中。"
+
+msgid "仪表盘"
+msgstr "仪表盘"
+
+msgid "移除"
+msgstr "移除"
+
+msgid "已保存"
+msgstr "已保存"
+
+msgid "已创建页面：%s"
+msgstr "已创建页面：%s"
+
+msgid "已创建助力活动"
+msgstr "已创建助力活动"
+
+msgid "已打款"
+msgstr "已打款"
+
+msgid "已到期"
+msgstr "已到期"
+
+msgid "已到期（待处理）"
+msgstr "已到期（待处理）"
+
+msgid "已到期待处理"
+msgstr "已到期待处理"
+
+msgid "已复制"
+msgstr "已复制"
+
+msgid "已复制分享链接"
+msgstr "已复制分享链接"
+
+msgid "已购买"
+msgstr "已购买"
+
+msgid "已购买查看，补差价可下载"
+msgstr "已购买查看，补差价可下载"
+
+msgid "已过期"
+msgstr "已过期"
+
+msgid "已结束"
+msgstr "已结束"
+
+msgid "已拒绝"
+msgstr "已拒绝"
+
+msgid "已拒绝提现申请，金额已退还至用户余额"
+msgstr "已拒绝提现申请，金额已退还至用户余额"
+
+msgid "已开通"
+msgstr "已开通"
+
+msgid "已领取"
+msgstr "已领取"
+
+msgid "已签到"
+msgstr "已签到"
+
+msgid "已清除 %d 条已结束助力记录。进行中、待下单和待支付记录已保留。"
+msgstr "已清除 %d 条已结束助力记录。进行中、待下单和待支付记录已保留。"
+
+msgid "已清空 %d 条超过保护期的充值记录"
+msgstr "已清空 %d 条超过保护期的充值记录"
+
+msgid "已清理 %d 个超过保护期的未付款订单"
+msgstr "已清理 %d 个超过保护期的未付款订单"
+
+msgid "已清理 %d 条提现记录"
+msgstr "已清理 %d 条提现记录"
+
+msgid "已取消"
+msgstr "已取消"
+
+msgid "已确认打款，提现完成"
+msgstr "已确认打款，提现完成"
+
+msgid "已失效"
+msgstr "已失效"
+
+msgid "已使用"
+msgstr "已使用"
+
+msgid "已是会员的用户不可使用兑换码"
+msgstr "已是会员的用户不可使用兑换码"
+
+msgid "已售 %d"
+msgstr "已售 %d"
+
+msgid "已添加"
+msgstr "已添加"
+
+msgid "已退款"
+msgstr "已退款"
+
+msgid "已完成"
+msgstr "已完成"
+
+msgid "已享VIP优惠"
+msgstr "已享VIP优惠"
+
+msgid "已消耗"
+msgstr "已消耗"
+
+msgid "已选择 {count} 件商品"
+msgstr "已选择 {count} 件商品"
+
+msgid "已用完"
+msgstr "已用完"
+
+msgid "已优惠 ¥{amount}"
+msgstr "已优惠 ¥{amount}"
+
+msgid "已有进行中活动"
+msgstr "已有进行中活动"
+
+msgid "以下提示文案支持基础排版内容，可添加链接和格式化文本。"
+msgstr "以下提示文案支持基础排版内容，可添加链接和格式化文本。"
+
+msgid "异步通知地址："
+msgstr "异步通知地址："
+
+msgid "易支付"
+msgstr "易支付"
+
+msgid "易支付（聚合通道）"
+msgstr "易支付（聚合通道）"
+
+msgid "银行卡"
+msgstr "银行卡"
+
+msgid "应付总额:"
+msgstr "应付总额:"
+
+msgid "应用私钥"
+msgstr "应用私钥"
+
+msgid "营销设置"
+msgstr "营销设置"
+
+msgid "永久"
+msgstr "永久"
+
+msgid "永久积分"
+msgstr "永久积分"
+
+msgid "永久可用"
+msgstr "永久可用"
+
+msgid "永久填 999999"
+msgstr "永久填 999999"
+
+msgid "永久有效"
+msgstr "永久有效"
+
+msgid "用户"
+msgstr "用户"
+
+msgid "用户："
+msgstr "用户："
+
+msgid "用户%s"
+msgstr "用户%s"
+
+msgid "用户充值成功"
+msgstr "用户充值成功"
+
+msgid "用户充值时，根据充值金额自动赠送额外积分。这里的金额区间是\"触发奖励的条件\"，与上面的\"最小/最大充值金额\"（限制用户可充值的范围）不同。"
+msgstr "用户充值时，根据充值金额自动赠送额外积分。这里的金额区间是\"触发奖励的条件\"，与上面的\"最小/最大充值金额\"（限制用户可充值的范围）不同。"
+
+msgid "用户登录"
+msgstr "用户登录"
+
+msgid "用户购买通知\n\n用户：%s\n资源：%s\n金额：%s 元\n订单号：%s\n支付方式：%s\n时间：%s"
+msgstr "用户购买通知\n\n用户：%s\n资源：%s\n金额：%s 元\n订单号：%s\n支付方式：%s\n时间：%s"
+
+msgid "用户购买资源成功"
+msgstr "用户购买资源成功"
+
+msgid "用户管理"
+msgstr "用户管理"
+
+msgid "用户签到成功"
+msgstr "用户签到成功"
+
+msgid "用户消费排行前 10 名"
+msgstr "用户消费排行前 10 名"
+
+msgid "用户已删除"
+msgstr "用户已删除"
+
+msgid "用户ID"
+msgstr "用户ID"
+
+msgid "用户ID:%s"
+msgstr "用户ID:%s"
+
+msgid "用于官方验签，建议必填。"
+msgstr "用于官方验签，建议必填。"
+
+msgid "用于回调校验的插件标识，默认保留即可。"
+msgstr "用于回调校验的插件标识，默认保留即可。"
+
+msgid "用于接收商品信息"
+msgstr "用于接收商品信息"
+
+msgid "用于人民币金额换算到 Stripe 结算币种（例如 7 = 1 美元约 7 人民币）。"
+msgstr "用于人民币金额换算到 Stripe 结算币种（例如 7 = 1 美元约 7 人民币）。"
+
+msgid "用于验签，来自 PayPal Webhook Endpoint 的 ID（建议必填）。"
+msgstr "用于验签，来自 PayPal Webhook Endpoint 的 ID（建议必填）。"
+
+msgid "优惠码无效"
+msgstr "优惠码无效"
+
+msgid "优惠券"
+msgstr "优惠券"
+
+msgid "优惠券成本按已支付订单的优惠金额合计计算。"
+msgstr "优惠券成本按已支付订单的优惠金额合计计算。"
+
+msgid "优惠券管理"
+msgstr "优惠券管理"
+
+msgid "优惠券领取"
+msgstr "优惠券领取"
+
+msgid "优惠券漏斗"
+msgstr "优惠券漏斗"
+
+msgid "优惠券折扣:"
+msgstr "优惠券折扣:"
+
+msgid "优惠券中心"
+msgstr "优惠券中心"
+
+msgid "优惠券编号"
+msgstr "优惠券编号"
+
+msgid "优先客服"
+msgstr "优先客服"
+
+msgid "优先支持"
+msgstr "优先支持"
+
+msgid "邮件 + 飞书/钉钉推送"
+msgstr "邮件 + 飞书/钉钉推送"
+
+msgid "邮件通知"
+msgstr "邮件通知"
+
+msgid "邮件通知默认发送至站点管理员邮箱：<strong>%s</strong>。推送通知依赖“启灵推送”插件（支持飞书/钉钉多通道同时发送）。"
+msgstr "邮件通知默认发送至站点管理员邮箱：<strong>%s</strong>。推送通知依赖“启灵推送”插件（支持飞书/钉钉多通道同时发送）。"
+
+msgid "邮箱（可选）"
+msgstr "邮箱（可选）"
+
+msgid "邮箱地址"
+msgstr "邮箱地址"
+
+msgid "游客 IP 验证"
+msgstr "游客 IP 验证"
+
+msgid "游客(%s)"
+msgstr "游客(%s)"
+
+msgid "游客订单关联失败，请在当前设备完成支付"
+msgstr "游客订单关联失败，请在当前设备完成支付"
+
+msgid "游客购买请填写手机号或邮箱"
+msgstr "游客购买请填写手机号或邮箱"
+
+msgid "游客购买请填写手机号或邮箱，后续可在订单查询页查状态"
+msgstr "游客购买请填写手机号或邮箱，后续可在订单查询页查状态"
+
+msgid "游客购买有效天数"
+msgstr "游客购买有效天数"
+
+msgid "游客提示文字"
+msgstr "游客提示文字"
+
+msgid "游客提示文字设置"
+msgstr "游客提示文字设置"
+
+msgid "有冻结余额"
+msgstr "有冻结余额"
+
+msgid "有可用余额"
+msgstr "有可用余额"
+
+msgid "有效期：%d 天"
+msgstr "有效期：%d 天"
+
+msgid "有效期：永久有效"
+msgstr "有效期：永久有效"
+
+msgid "有效期天数"
+msgstr "有效期天数"
+
+msgid "有效期至"
+msgstr "有效期至"
+
+msgid "有效期至 %s"
+msgstr "有效期至 %s"
+
+msgid "有效期至：%s"
+msgstr "有效期至：%s"
+
+msgid "有效天数"
+msgstr "有效天数"
+
+msgid "有效邀请人数"
+msgstr "有效邀请人数"
+
+msgid "有效中"
+msgstr "有效中"
+
+msgid "有效助力(≥1次)"
+msgstr "有效助力(≥1次)"
+
+msgid "余额"
+msgstr "余额"
+
+msgid "余额：%s %s"
+msgstr "余额：%s %s"
+
+msgid "余额不足 (%s)"
+msgstr "余额不足 (%s)"
+
+msgid "余额不足（需要 %s %s）"
+msgstr "余额不足（需要 %s %s）"
+
+msgid "与邀请奖励叠加"
+msgstr "与邀请奖励叠加"
+
+msgid "元"
+msgstr "元"
+
+msgid "原价"
+msgstr "原价"
+
+msgid "原价(元)"
+msgstr "原价(元)"
+
+msgid "月"
+msgstr "月"
+
+msgid "月份"
+msgstr "月份"
+
+msgid "允许补差价升级到更高等级"
+msgstr "允许补差价升级到更高等级"
+
+msgid "允许用户直接付款购买资源"
+msgstr "允许用户直接付款购买资源"
+
+msgid "允许直接支付"
+msgstr "允许直接支付"
+
+msgid "运费:"
+msgstr "运费:"
+
+msgid "运营看板"
+msgstr "运营看板"
+
+msgid "再检查一下"
+msgstr "再检查一下"
+
+msgid "在 Stripe Webhook Endpoint 中复制签名密钥（以 whsec_ 开头）。"
+msgstr "在 Stripe Webhook Endpoint 中复制签名密钥（以 whsec_ 开头）。"
+
+msgid "在购买框右上角显示\"已售 xx\""
+msgstr "在购买框右上角显示\"已售 xx\""
+
+msgid "在购买框中显示\"在线检测\"按钮，支持：百度网盘、夸克网盘、天翼云盘、123云盘"
+msgstr "在购买框中显示\"在线检测\"按钮，支持：百度网盘、夸克网盘、天翼云盘、123云盘"
+
+msgid "在网站右下角显示交易滚动播报"
+msgstr "在网站右下角显示交易滚动播报"
+
+msgid "暂未配置可用推送通道，请先到「启灵推送」插件中添加并启用通道。"
+msgstr "暂未配置可用推送通道，请先到「启灵推送」插件中添加并启用通道。"
+
+msgid "暂无分类"
+msgstr "暂无分类"
+
+msgid "暂无购买数据"
+msgstr "暂无购买数据"
+
+msgid "暂无规则"
+msgstr "暂无规则"
+
+msgid "暂无记录"
+msgstr "暂无记录"
+
+msgid "暂无奖励规则，请在下方添加"
+msgstr "暂无奖励规则，请在下方添加"
+
+msgid "暂无卡密信息"
+msgstr "暂无卡密信息"
+
+msgid "暂无可复制内容"
+msgstr "暂无可复制内容"
+
+msgid "暂无可领取的优惠券"
+msgstr "暂无可领取的优惠券"
+
+msgid "暂无可用优惠券"
+msgstr "暂无可用优惠券"
+
+msgid "暂无任务清单"
+msgstr "暂无任务清单"
+
+msgid "暂无商品"
+msgstr "暂无商品"
+
+msgid "暂无商品分类"
+msgstr "暂无商品分类"
+
+msgid "暂无使用记录"
+msgstr "暂无使用记录"
+
+msgid "暂无数据"
+msgstr "暂无数据"
+
+msgid "暂无提成记录"
+msgstr "暂无提成记录"
+
+msgid "暂无提现申请"
+msgstr "暂无提现申请"
+
+msgid "暂无虚拟内容"
+msgstr "暂无虚拟内容"
+
+msgid "暂无VIP变更记录"
+msgstr "暂无VIP变更记录"
+
+msgid "展示数量"
+msgstr "展示数量"
+
+msgid "展示行数"
+msgstr "展示行数"
+
+msgid "站点名称，例如“启灵资源站”。"
+msgstr "站点名称，例如“启灵资源站”。"
+
+msgid "站内通知"
+msgstr "站内通知"
+
+msgid "召回仅针对登录用户订单；游客订单不参与召回通知。"
+msgstr "召回仅针对登录用户订单；游客订单不参与召回通知。"
+
+msgid "折扣"
+msgstr "折扣"
+
+msgid "折扣率(%)"
+msgstr "折扣率(%)"
+
+msgid "折扣券"
+msgstr "折扣券"
+
+msgid "正在查询，请稍候..."
+msgstr "正在查询，请稍候..."
+
+msgid "正在加载商品..."
+msgstr "正在加载商品..."
+
+msgid "正在为您准备资源..."
+msgstr "正在为您准备资源..."
+
+msgid "支持"
+msgstr "支持"
+
+msgid "支持的文章类型"
+msgstr "支持的文章类型"
+
+msgid "支持虎皮椒 V3 主备网关（do.html），可配置微信/支付宝两套账号。"
+msgstr "支持虎皮椒 V3 主备网关（do.html），可配置微信/支付宝两套账号。"
+
+msgid "支持积分购买"
+msgstr "支持积分购买"
+
+msgid "支持积分价商品"
+msgstr "支持积分价商品"
+
+msgid "支付"
+msgstr "支付"
+
+msgid "支付宝"
+msgstr "支付宝"
+
+msgid "支付宝 <code>alipay</code>、微信支付 <code>wechat</code>、PayPal <code>paypal</code>"
+msgstr "支付宝 <code>alipay</code>、微信支付 <code>wechat</code>、PayPal <code>paypal</code>"
+
+msgid "支付宝 AppID"
+msgstr "支付宝 AppID"
+
+msgid "支付宝 AppSecret"
+msgstr "支付宝 AppSecret"
+
+msgid "支付宝（官方接口）"
+msgstr "支付宝（官方接口）"
+
+msgid "支付宝（RSA2签名）"
+msgstr "支付宝（RSA2签名）"
+
+msgid "支付宝/微信/虎皮椒/易支付等多数通道会在“下单请求”中自动携带 notify_url，通常无需再到支付平台重复填写；若平台有固定回调地址、域名白名单或 IP 白名单要求，请按平台规则配置并与下方地址保持一致。PayPal/Stripe 仍需在平台后台配置 Webhook。"
+msgstr "支付宝/微信/虎皮椒/易支付等多数通道会在“下单请求”中自动携带 notify_url，通常无需再到支付平台重复填写；若平台有固定回调地址、域名白名单或 IP 白名单要求，请按平台规则配置并与下方地址保持一致。PayPal/Stripe 仍需在平台后台配置 Webhook。"
+
+msgid "支付宝公钥"
+msgstr "支付宝公钥"
+
+msgid "支付宝扫码"
+msgstr "支付宝扫码"
+
+msgid "支付宝扫码支付"
+msgstr "支付宝扫码支付"
+
+msgid "支付宝收款账号"
+msgstr "支付宝收款账号"
+
+msgid "支付宝网关"
+msgstr "支付宝网关"
+
+msgid "支付宝网页"
+msgstr "支付宝网页"
+
+msgid "支付宝网页支付"
+msgstr "支付宝网页支付"
+
+msgid "支付成功"
+msgstr "支付成功"
+
+msgid "支付成功跳转"
+msgstr "支付成功跳转"
+
+msgid "支付初始化失败，未获取到支付链接"
+msgstr "支付初始化失败，未获取到支付链接"
+
+msgid "支付方式"
+msgstr "支付方式"
+
+msgid "支付方式不可用"
+msgstr "支付方式不可用"
+
+msgid "支付后多久到账？"
+msgstr "支付后多久到账？"
+
+msgid "支付接口顺序"
+msgstr "支付接口顺序"
+
+msgid "支付请求失败"
+msgstr "支付请求失败"
+
+msgid "支付设置"
+msgstr "支付设置"
+
+msgid "支付设置已保存"
+msgstr "支付设置已保存"
+
+msgid "支付时间"
+msgstr "支付时间"
+
+msgid "支付授权目录："
+msgstr "支付授权目录："
+
+msgid "支付完成"
+msgstr "支付完成"
+
+msgid "执行方式建议：24 小时持续执行；任务实际执行频率以“外部任务清单”的每项建议频率为准。"
+msgstr "执行方式建议：24 小时持续执行；任务实际执行频率以“外部任务清单”的每项建议频率为准。"
+
+msgid "直接支付补差价 %s"
+msgstr "直接支付补差价 %s"
+
+msgid "直接支付查看 %s"
+msgstr "直接支付查看 %s"
+
+msgid "直接支付下载 %s"
+msgstr "直接支付下载 %s"
+
+msgid "重量"
+msgstr "重量"
+
+msgid "重量(g)"
+msgstr "重量(g)"
+
+msgid "重置"
+msgstr "重置"
+
+msgid "主标题"
+msgstr "主标题"
+
+msgid "助力成功，已减 ¥{amount}"
+msgstr "助力成功，已减 ¥{amount}"
+
+msgid "助力活动已保存"
+msgstr "助力活动已保存"
+
+msgid "助力活动已删除"
+msgstr "助力活动已删除"
+
+msgid "助力活动已下架"
+msgstr "助力活动已下架"
+
+msgid "助力活动已重新上架"
+msgstr "助力活动已重新上架"
+
+msgid "助力活动状态未变更，可能已被其他操作处理。"
+msgstr "助力活动状态未变更，可能已被其他操作处理。"
+
+msgid "助力失败"
+msgstr "助力失败"
+
+msgid "助力同用户冷却(秒)"
+msgstr "助力同用户冷却(秒)"
+
+msgid "助力同用户每小时上限"
+msgstr "助力同用户每小时上限"
+
+msgid "助力同IP每小时上限"
+msgstr "助力同IP每小时上限"
+
+msgid "助力详情"
+msgstr "助力详情"
+
+msgid "助力中..."
+msgstr "助力中..."
+
+msgid "注册奖励"
+msgstr "注册奖励"
+
+msgid "注册奖励积分"
+msgstr "注册奖励积分"
+
+msgid "注册码服务不可用"
+msgstr "注册码服务不可用"
+
+msgid "注册码管理"
+msgstr "注册码管理"
+
+msgid "注册码注册"
+msgstr "注册码注册"
+
+msgid "注意：是支付宝公钥，不是应用公钥"
+msgstr "注意：是支付宝公钥，不是应用公钥"
+
+msgid "注意不是应用公钥！"
+msgstr "注意不是应用公钥！"
+
+msgid "专属标识"
+msgstr "专属标识"
+
+msgid "专属客服"
+msgstr "专属客服"
+
+msgid "专属客服通道，问题优先响应处理"
+msgstr "专属客服通道，问题优先响应处理"
+
+msgid "专属内容"
+msgstr "专属内容"
+
+msgid "专属折扣"
+msgstr "专属折扣"
+
+msgid "专享 %s 折优惠"
+msgstr "专享 %s 折优惠"
+
+msgid "专享折扣"
+msgstr "专享折扣"
+
+msgid "状态"
+msgstr "状态"
+
+msgid "资源"
+msgstr "资源"
+
+msgid "资源 #%d"
+msgstr "资源 #%d"
+
+msgid "资源订单支付完成通知。"
+msgstr "资源订单支付完成通知。"
+
+msgid "资源购买排行"
+msgstr "资源购买排行"
+
+msgid "资源文件缓存"
+msgstr "资源文件缓存"
+
+msgid "资源下载"
+msgstr "资源下载"
+
+msgid "资源已删除"
+msgstr "资源已删除"
+
+msgid "紫韵梦幻"
+msgstr "紫韵梦幻"
+
+msgid "自定义"
+msgstr "自定义"
+
+msgid "自定义:"
+msgstr "自定义:"
+
+msgid "自定义积分中心的快捷功能入口（留空则不显示该项）。图标可使用表情符号。"
+msgstr "自定义积分中心的快捷功能入口（留空则不显示该项）。图标可使用表情符号。"
+
+msgid "自定义金额"
+msgstr "自定义金额"
+
+msgid "自定义设置"
+msgstr "自定义设置"
+
+msgid "总额"
+msgstr "总额"
+
+msgid "总计数据"
+msgstr "总计数据"
+
+msgid "总金额"
+msgstr "总金额"
+
+msgid "最大充值金额"
+msgstr "最大充值金额"
+
+msgid "最大充值金额为 %s 元"
+msgstr "最大充值金额为 %s 元"
+
+msgid "最大连签倍数"
+msgstr "最大连签倍数"
+
+msgid "最低充值金额"
+msgstr "最低充值金额"
+
+msgid "最低提现金额"
+msgstr "最低提现金额"
+
+msgid "最高充值金额"
+msgstr "最高充值金额"
+
+msgid "最近15天使用记录"
+msgstr "最近15天使用记录"
+
+msgid "最近30天"
+msgstr "最近30天"
+
+msgid "最近7天"
+msgstr "最近7天"
+
+msgid "最近使用"
+msgstr "最近使用"
+
+msgid "最受欢迎"
+msgstr "最受欢迎"
+
+msgid "最小充值金额"
+msgstr "最小充值金额"
+
+msgid "最小充值金额为 %s 元"
+msgstr "最小充值金额为 %s 元"
+
+msgid "最新上架"
+msgstr "最新上架"
+
+msgid "昨天"
+msgstr "昨天"
+
+msgid "作者"
+msgstr "作者"
+
+msgid "作者分成"
+msgstr "作者分成"
+
+msgid "作者分成比例"
+msgstr "作者分成比例"
+
+msgid "作者排行榜前 10 名"
+msgstr "作者排行榜前 10 名"
+
+msgid "作者数"
+msgstr "作者数"
+
+msgid "作者提成"
+msgstr "作者提成"
+
+msgid "作者提成到账"
+msgstr "作者提成到账"
+
+msgid "作者提成管理"
+msgstr "作者提成管理"
+
+msgid "无跳转购买"
+msgstr "无跳转购买"
+
+msgid "API 地址"
+msgstr "API 地址"
+
+msgid "App ID"
+msgstr "App ID"
+
+msgid "APPID"
+msgstr "APPID"
+
+msgid "领券中心"
+msgstr "领券中心"
+
+msgid "表情符号或图标类名"
+msgstr "表情符号或图标类名"
+
+msgid "H5支付"
+msgstr "H5支付"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "JSAPI支付需要（获取openid用）"
+msgstr "JSAPI支付需要（获取openid用）"
+
+msgid "PayPal"
+msgstr "PayPal"
+
+msgid "PayPal Developer 应用的 Client ID"
+msgstr "PayPal Developer 应用的 Client ID"
+
+msgid "PayPal Developer 应用的 Secret"
+msgstr "PayPal Developer 应用的 Secret"
+
+msgid "PayPal贝宝（官方接口）"
+msgstr "PayPal贝宝（官方接口）"
+
+msgid "Publishable Key"
+msgstr "Publishable Key"
+
+msgid "REST API Client ID"
+msgstr "REST API Client ID"
+
+msgid "REST API Secret"
+msgstr "REST API Secret"
+
+msgid "投入产出比 = （成交金额 - 助力让利）/ 助力让利"
+msgstr "投入产出比 = （成交金额 - 助力让利）/ 助力让利"
+
+msgid "RSA2私钥，不需要头尾标签"
+msgstr "RSA2私钥，不需要头尾标签"
+
+msgid "Secret Key"
+msgstr "Secret Key"
+
+msgid "SKU 不存在或已删除"
+msgstr "SKU 不存在或已删除"
+
+msgid "SKU 参数无效"
+msgstr "SKU 参数无效"
+
+msgid "SKU 删除失败"
+msgstr "SKU 删除失败"
+
+msgid "SKU 数据异常"
+msgstr "SKU 数据异常"
+
+msgid "SKU 已删除"
+msgstr "SKU 已删除"
+
+msgid "SKU编码"
+msgstr "SKU编码"
+
+msgid "Stripe"
+msgstr "Stripe"
+
+msgid "Stripe 汇率"
+msgstr "Stripe 汇率"
+
+msgid "Stripe（国际信用卡）"
+msgstr "Stripe（国际信用卡）"
+
+msgid "VIP"
+msgstr "VIP"
+
+msgid "VIP 等级"
+msgstr "VIP 等级"
+
+msgid "VIP 等级不存在"
+msgstr "VIP 等级不存在"
+
+msgid "VIP 等级管理"
+msgstr "VIP 等级管理"
+
+msgid "VIP 兑换码"
+msgstr "VIP 兑换码"
+
+msgid "VIP 会员"
+msgstr "VIP 会员"
+
+msgid "VIP 即将到期提醒"
+msgstr "VIP 即将到期提醒"
+
+msgid "VIP 开通/升级成功"
+msgstr "VIP 开通/升级成功"
+
+msgid "VIP 落地页"
+msgstr "VIP 落地页"
+
+msgid "VIP 落地页短代码："
+msgstr "VIP 落地页短代码："
+
+msgid "顶部 VIP 图标"
+msgstr "顶部 VIP 图标"
+
+msgid "VIP 已过期提醒"
+msgstr "VIP 已过期提醒"
+
+msgid "VIP 专属访问"
+msgstr "VIP 专属访问"
+
+msgid "VIP变更记录"
+msgstr "VIP变更记录"
+
+msgid "VIP等级体系"
+msgstr "VIP等级体系"
+
+msgid "VIP购买计提成"
+msgstr "VIP购买计提成"
+
+msgid "VIP会员"
+msgstr "VIP会员"
+
+msgid "VIP会员介绍"
+msgstr "VIP会员介绍"
+
+msgid "VIP会员名称"
+msgstr "VIP会员名称"
+
+msgid "VIP价"
+msgstr "VIP价"
+
+msgid "VIP免费"
+msgstr "VIP免费"
+
+msgid "VIP专属"
+msgstr "VIP专属"
+
+msgid "VIP专属访问"
+msgstr "VIP专属访问"
+
+msgid "VIP尊贵身份标识"
+msgstr "VIP尊贵身份标识"
+
+msgid "Webhook 地址："
+msgstr "Webhook 地址："
+
+msgid "Webhook ID"
+msgstr "Webhook ID"
+
+msgid "Webhook Secret"
+msgstr "Webhook Secret"
+
+msgid "Y年m月d日"
+msgstr "Y年m月d日"
+
+msgid "简体中文"
+msgstr "简体中文"
+
+msgid "跟随 WordPress 当前语言"
+msgstr "跟随 WordPress 当前语言"
+
+msgid "商城语言"
+msgstr "商城语言"
+
+msgid "只影响启灵积分商城插件固定文案，不会改变网站主题或其他插件语言。"
+msgstr "只影响启灵积分商城插件固定文案，不会改变网站主题或其他插件语言。"
+
+msgid "选购提示"
+msgstr "选购提示"
+
+msgid "多规格商品请先选择规格与版本，右侧价格和库存会实时变化。"
+msgstr "多规格商品请先选择规格与版本，右侧价格和库存会实时变化。"
+
+msgid "助力玩法"
+msgstr "助力玩法"
+
+msgid "发起活动后将助力链接分享给好友"
+msgstr "发起活动后将助力链接分享给好友"
+
+msgid "%d 位好友助力即可达标"
+msgstr "%d 位好友助力即可达标"
+
+msgid "助力完成即可解锁活动低价"
+msgstr "助力完成即可解锁活动低价"
+
+msgid "发起后 %d 小时内有效，超时自动失败"
+msgstr "发起后 %d 小时内有效，超时自动失败"
+
+msgid "查看更多助力活动"
+msgstr "查看更多助力活动"
+
+msgid "新人专项价"
+msgstr "新人专项价"
+
+msgid "新人专项"
+msgstr "新人专项"
+
+msgid "或 %s 积分"
+msgstr "或 %s 积分"
+
+msgid "当前符合新人资格，结账将自动按新人专项价结算（限购 1 件）。"
+msgstr "当前符合新人资格，结账将自动按新人专项价结算（限购 1 件）。"
+
+msgid "该商品支持新人专项价，请登录后自动判断是否可享。"
+msgstr "该商品支持新人专项价，请登录后自动判断是否可享。"
+
+msgid "该商品支持新人专项价，当前不满足新人资格。"
+msgstr "该商品支持新人专项价，当前不满足新人资格。"
+
+msgid "活动时间：%s - %s"
+msgstr "活动时间：%s - %s"
+
+msgid "活动截止：%s"
+msgstr "活动截止：%s"
+
+msgid "活动开始：%s"
+msgstr "活动开始：%s"
+
+msgid "%s人团"
+msgstr "%s人团"
+
+msgid "满%d人成团，%d小时内有效"
+msgstr "满%d人成团，%d小时内有效"
+
+msgid "拼团立省 ¥%.2f"
+msgstr "拼团立省 ¥%.2f"
+
+msgid "团购库存"
+msgstr "团购库存"
+
+msgid "件"
+msgstr "件"
+
+msgid "正在开团，差1人就成团"
+msgstr "正在开团，差1人就成团"
+
+msgid "%s的团"
+msgstr "%s的团"
+
+msgid "还差%d人"
+msgstr "还差%d人"
+
+msgid "剩余 %02d:%02d:%02d"
+msgstr "剩余 %02d:%02d:%02d"
+
+msgid "去拼团"
+msgstr "去拼团"
+
+msgid "%d人助力达标"
+msgstr "%d人助力达标"
+
+msgid "助力到低价"
+msgstr "助力到低价"
+
+msgid "好友助力"
+msgstr "好友助力"
+
+msgid "最高省 ¥%s (%d%%)"
+msgstr "最高省 ¥%s (%d%%)"
+
+msgid "库存剩余 %1$d / %2$d"
+msgstr "库存剩余 %1$d / %2$d"
+
+msgid "库存不限"
+msgstr "库存不限"
+
+msgid "活动有效期：%d小时（发起后）"
+msgstr "活动有效期：%d小时（发起后）"
+
+msgid "立即发起助力"
+msgstr "立即发起助力"
+
+msgid "登录后发起助力"
+msgstr "登录后发起助力"
+
+msgid "销量: %d"
+msgstr "销量: %d"
+
+msgid "版本"
+msgstr "版本"
+
+msgid "数量"
+msgstr "数量"
+
+msgid "库存 %d 件"
+msgstr "库存 %d 件"
+
+msgid "立即购买"
+msgstr "立即购买"
+
+msgid "运费"
+msgstr "运费"
+
+msgid "商品详情"
+msgstr "商品详情"
+
+msgid "商品参数"
+msgstr "商品参数"
+
+msgid "商品评价"
+msgstr "商品评价"
+
+msgid "暂无参数"
+msgstr "暂无参数"
+
+msgid "好评率 %d%%"
+msgstr "好评率 %d%%"
+
+msgid "好评(%d)"
+msgstr "好评(%d)"
+
+msgid "中评(%d)"
+msgstr "中评(%d)"
+
+msgid "差评(%d)"
+msgstr "差评(%d)"
+
+msgid "有图(%d)"
+msgstr "有图(%d)"
+
+msgid "好评"
+msgstr "好评"
+
+msgid "中评"
+msgstr "中评"
+
+msgid "差评"
+msgstr "差评"
+
+msgid "有图"
+msgstr "有图"
+
+msgid "加载更多"
+msgstr "加载更多"
+
+msgid "暂无评价，快来抢首评吧！"
+msgstr "暂无评价，快来抢首评吧！"
+
+msgid "暂无符合条件的评价"
+msgstr "暂无符合条件的评价"
+
+msgid "商家回复:"
+msgstr "商家回复:"
+
+msgid "购买"
+msgstr "购买"
+
+msgid "-1表示无限制"
+msgstr "-1表示无限制"
+
+msgid "— 选择要添加的模块 —"
+msgstr "— 选择要添加的模块 —"
+
+msgid "— 选择页面 —"
+msgstr "— 选择页面 —"
+
+msgid "，实际到账：¥"
+msgstr "，实际到账：¥"
+
+msgid "；物流：%1$s %2$s"
+msgstr "；物流：%1$s %2$s"
+
+msgid "；原因：%s"
+msgstr "；原因：%s"
+
+msgid "“别名”是在链接中使用的别称，通常为小写，只能包含字母、数字和连字符（-）"
+msgstr "“别名”是在链接中使用的别称，通常为小写，只能包含字母、数字和连字符（-）"
+
+msgid "\"侧边栏+轮播\"模式：轮播全宽显示，侧边栏悬浮在内容区左侧 (仿小米商城)"
+msgstr "\"侧边栏+轮播\"模式：轮播全宽显示，侧边栏悬浮在内容区左侧 (仿小米商城)"
+
+msgid "(奖励)"
+msgstr "(奖励)"
+
+msgid "(限%s张)"
+msgstr "(限%s张)"
+
+msgid "(最高¥%s)"
+msgstr "(最高¥%s)"
+
+msgid "[%s] 充值待支付提醒"
+msgstr "[%s] 充值待支付提醒"
+
+msgid "[%s] 充值通知"
+msgstr "[%s] 充值通知"
+
+msgid "[%s] 订单待支付提醒"
+msgstr "[%s] 订单待支付提醒"
+
+msgid "[%s] 积分充值通知"
+msgstr "[%s] 积分充值通知"
+
+msgid "[%s] 商城订单待支付提醒"
+msgstr "[%s] 商城订单待支付提醒"
+
+msgid "[%s] 实物订单发货通知"
+msgstr "[%s] 实物订单发货通知"
+
+msgid "[%s] 实物订单付款通知"
+msgstr "[%s] 实物订单付款通知"
+
+msgid "[%s] 实物订单取消通知"
+msgstr "[%s] 实物订单取消通知"
+
+msgid "[%s] 实物订单退款申请通知"
+msgstr "[%s] 实物订单退款申请通知"
+
+msgid "[%s] 实物订单退款通知"
+msgstr "[%s] 实物订单退款通知"
+
+msgid "[%s] 实物订单完成通知"
+msgstr "[%s] 实物订单完成通知"
+
+msgid "[%s] 提现拒绝通知"
+msgstr "[%s] 提现拒绝通知"
+
+msgid "[%s] 提现申请通知"
+msgstr "[%s] 提现申请通知"
+
+msgid "[%s] 提现通过通知"
+msgstr "[%s] 提现通过通知"
+
+msgid "[%s] 推广佣金到账通知"
+msgstr "[%s] 推广佣金到账通知"
+
+msgid "[%s] 虚拟商品发卡信息"
+msgstr "[%s] 虚拟商品发卡信息"
+
+msgid "[%s] 邀请注册通知"
+msgstr "[%s] 邀请注册通知"
+
+msgid "[%s] 业务事件通知：%s"
+msgstr "[%s] 业务事件通知：%s"
+
+msgid "[%s] 用户签到通知"
+msgstr "[%s] 用户签到通知"
+
+msgid "[%s] 作者提成到账通知"
+msgstr "[%s] 作者提成到账通知"
+
+msgid "[%s] VIP 到期提醒"
+msgstr "[%s] VIP 到期提醒"
+
+msgid "[%s] VIP 升级通知"
+msgstr "[%s] VIP 升级通知"
+
+msgid "[%s] VIP 已过期通知"
+msgstr "[%s] VIP 已过期通知"
+
+msgid "【${site}】您的订单${orderNo}已发货，物流公司：${company}，物流单号：${trackingNo}，当前状态：${status}。"
+msgstr "【${site}】您的订单${orderNo}已发货，物流公司：${company}，物流单号：${trackingNo}，当前状态：${status}。"
+
+msgid "【好友助力专区】暂无可展示活动，请先在「助力活动」中启用活动。"
+msgstr "【好友助力专区】暂无可展示活动，请先在「助力活动」中启用活动。"
+
+msgid "【拼团专区】暂无拼团商品，请在商品编辑页面开启“限时拼团”并保存。"
+msgstr "【拼团专区】暂无拼团商品，请在商品编辑页面开启“限时拼团”并保存。"
+
+msgid "【新人专区】暂无可展示商品，请先在商品编辑中开启“新人专项”并设置价格。"
+msgstr "【新人专区】暂无可展示商品，请先在商品编辑中开启“新人专项”并设置价格。"
+
+msgid "/%s人"
+msgstr "/%s人"
+
+msgid "%d/%d人"
+msgstr "%d/%d人"
+
+msgid "%d%%折扣"
+msgstr "%d%%折扣"
+
+msgid "%d人成团，人数不足自动退款"
+msgstr "%d人成团，人数不足自动退款"
+
+msgid "%d人付款"
+msgstr "%d人付款"
+
+msgid "%d人已拼"
+msgstr "%d人已拼"
+
+msgid "%d人助力"
+msgstr "%d人助力"
+
+msgid "%d天有效"
+msgstr "%d天有效"
+
+msgid "%s，奖励 %s"
+msgstr "%s，奖励 %s"
+
+msgid "%s前有效"
+msgstr "%s前有效"
+
+msgid "%s元"
+msgstr "%s元"
+
+msgid "+ 添加自定义参数"
+msgstr "+ 添加自定义参数"
+
+msgid "<strong>部分付费简码（推荐）</strong>：使用 [qls_content]内容[/qls_content]，未购买时会替换为购买框。"
+msgstr "<strong>部分付费简码（推荐）</strong>：使用 [qls_content]内容[/qls_content]，未购买时会替换为购买框。"
+
+msgid "<strong>价格设置</strong>：单位为站内积分（灵力）。设为 0 即为免费资源。"
+msgstr "<strong>价格设置</strong>：单位为站内积分（灵力）。设为 0 即为免费资源。"
+
+msgid "<strong>下载地址</strong>：支持多行输入。格式：显示名称,下载链接,提取码。"
+msgstr "<strong>下载地址</strong>：支持多行输入。格式：显示名称,下载链接,提取码。"
+
+msgid "<strong>销售模式</strong>：决定资源展示方式。“付费下载”侧重文件下载，“付费查看”侧重隐藏内容展示。"
+msgstr "<strong>销售模式</strong>：决定资源展示方式。“付费下载”侧重文件下载，“付费查看”侧重隐藏内容展示。"
+
+msgid "<strong>隐藏内容字段</strong>：仅在用户购买（或免费资源）后显示。适合放置解压密码、激活码等内容。"
+msgstr "<strong>隐藏内容字段</strong>：仅在用户购买（或免费资源）后显示。适合放置解压密码、激活码等内容。"
+
+msgid "<strong>隐藏提示简码（兼容）</strong>：使用 [qilingshop_hidden]内容[/qilingshop_hidden]，未购买时主要显示提示文案。"
+msgstr "<strong>隐藏提示简码（兼容）</strong>：使用 [qilingshop_hidden]内容[/qilingshop_hidden]，未购买时主要显示提示文案。"
+
+msgid "¥%s 发起拼团"
+msgstr "¥%s 发起拼团"
+
+msgid "0 = 免费。下载价用于“付费下载”，查看价用于“付费查看”。下载授权包含查看，查看不包含下载；两者都填写时可先购查看再补差价升级下载。"
+msgstr "0 = 免费。下载价用于“付费下载”，查看价用于“付费查看”。下载授权包含查看，查看不包含下载；两者都填写时可先购查看再补差价升级下载。"
+
+msgid "0 表示仅按最低金额达成"
+msgstr "0 表示仅按最低金额达成"
+
+msgid "10列"
+msgstr "10列"
+
+msgid "1列"
+msgstr "1列"
+
+msgid "1元 = %d %s"
+msgstr "1元 = %d %s"
+
+msgid "2列"
+msgstr "2列"
+
+msgid "3列"
+msgstr "3列"
+
+msgid "4列"
+msgstr "4列"
+
+msgid "5列"
+msgstr "5列"
+
+msgid "6列"
+msgstr "6列"
+
+msgid "8列"
+msgstr "8列"
+
+msgid "阿里云 AppCode"
+msgstr "阿里云 AppCode"
+
+msgid "安全验证失败，请在原购买设备操作或联系管理员处理"
+msgstr "安全验证失败，请在原购买设备操作或联系管理员处理"
+
+msgid "按当前券适用场景判断首单"
+msgstr "按当前券适用场景判断首单"
+
+msgid "按等级自定义"
+msgstr "按等级自定义"
+
+msgid "按钮1 链接"
+msgstr "按钮1 链接"
+
+msgid "按钮1 文字"
+msgstr "按钮1 文字"
+
+msgid "按钮1 样式"
+msgstr "按钮1 样式"
+
+msgid "按钮2 链接"
+msgstr "按钮2 链接"
+
+msgid "按钮2 文字 (可选)"
+msgstr "按钮2 文字 (可选)"
+
+msgid "按钮文案(登录)"
+msgstr "按钮文案(登录)"
+
+msgid "按钮文案(游客)"
+msgstr "按钮文案(游客)"
+
+msgid "按全站任意消费判断首单"
+msgstr "按全站任意消费判断首单"
+
+msgid "按销量"
+msgstr "按销量"
+
+msgid "按重量计费"
+msgstr "按重量计费"
+
+msgid "百分比折扣"
+msgstr "百分比折扣"
+
+msgid "帮TA助力"
+msgstr "帮TA助力"
+
+msgid "包邮"
+msgstr "包邮"
+
+msgid "保存标签"
+msgstr "保存标签"
+
+msgid "保存参数"
+msgstr "保存参数"
+
+msgid "保存成功"
+msgstr "保存成功"
+
+msgid "保存分类"
+msgstr "保存分类"
+
+msgid "保存服务展示"
+msgstr "保存服务展示"
+
+msgid "保存规则"
+msgstr "保存规则"
+
+msgid "保存配置"
+msgstr "保存配置"
+
+msgid "保存评价设置"
+msgstr "保存评价设置"
+
+msgid "保存评价失败"
+msgstr "保存评价失败"
+
+msgid "保存商品"
+msgstr "保存商品"
+
+msgid "保存商品时将自动导入卡密到库存。已导入的卡密不会重复添加。"
+msgstr "保存商品时将自动导入卡密到库存。已导入的卡密不会重复添加。"
+
+msgid "保存失败，请稍后重试"
+msgstr "保存失败，请稍后重试"
+
+msgid "保存页面设置"
+msgstr "保存页面设置"
+
+msgid "保存优惠券"
+msgstr "保存优惠券"
+
+msgid "保存装修"
+msgstr "保存装修"
+
+msgid "备注"
+msgstr "备注"
+
+msgid "备注：%s"
+msgstr "备注：%s"
+
+msgid "备注（可选）"
+msgstr "备注（可选）"
+
+msgid "背景图片"
+msgstr "背景图片"
+
+msgid "背景颜色"
+msgstr "背景颜色"
+
+msgid "被邀请用户"
+msgstr "被邀请用户"
+
+msgid "本次过期：可用 %1$s，冻结 %2$s。"
+msgstr "本次过期：可用 %1$s，冻结 %2$s。"
+
+msgid "本期奖励"
+msgstr "本期奖励"
+
+msgid "本邮件包含敏感信息，请勿转发给他人。"
+msgstr "本邮件包含敏感信息，请勿转发给他人。"
+
+msgid "本邮件由系统自动发送，请勿直接回复。"
+msgstr "本邮件由系统自动发送，请勿直接回复。"
+
+msgid "边框卡片"
+msgstr "边框卡片"
+
+msgid "编辑参数模板"
+msgstr "编辑参数模板"
+
+msgid "编辑分类"
+msgstr "编辑分类"
+
+msgid "编辑服务标签"
+msgstr "编辑服务标签"
+
+msgid "编辑回复"
+msgstr "编辑回复"
+
+msgid "编辑快递公司"
+msgstr "编辑快递公司"
+
+msgid "编辑商品"
+msgstr "编辑商品"
+
+msgid "编辑收货地址"
+msgstr "编辑收货地址"
+
+msgid "编辑运费规则"
+msgstr "编辑运费规则"
+
+msgid "编辑助力活动"
+msgstr "编辑助力活动"
+
+msgid "变动"
+msgstr "变动"
+
+msgid "标记已发货"
+msgstr "标记已发货"
+
+msgid "标签名称"
+msgstr "标签名称"
+
+msgid "标题:"
+msgstr "标题:"
+
+msgid "标题关键词"
+msgstr "标题关键词"
+
+msgid "标题样式"
+msgstr "标题样式"
+
+msgid "别名"
+msgstr "别名"
+
+msgid "播放设置"
+msgstr "播放设置"
+
+msgid "驳回"
+msgstr "驳回"
+
+msgid "驳回原因（可选）"
+msgstr "驳回原因（可选）"
+
+msgid "不可与VIP折扣叠加（自动取更优价格）"
+msgstr "不可与VIP折扣叠加（自动取更优价格）"
+
+msgid "不能给自己助力"
+msgstr "不能给自己助力"
+
+msgid "不启用"
+msgstr "不启用"
+
+msgid "不显示"
+msgstr "不显示"
+
+msgid "不限制"
+msgstr "不限制"
+
+msgid "不支持的操作"
+msgstr "不支持的操作"
+
+msgid "不支持检测此网盘类型"
+msgstr "不支持检测此网盘类型"
+
+msgid "布局模式"
+msgstr "布局模式"
+
+msgid "布局设置"
+msgstr "布局设置"
+
+msgid "布局样式"
+msgstr "布局样式"
+
+msgid "部分商品库存不足"
+msgstr "部分商品库存不足"
+
+msgid "参加更多"
+msgstr "参加更多"
+
+msgid "参数错误"
+msgstr "参数错误"
+
+msgid "参数名称"
+msgstr "参数名称"
+
+msgid "参数模板"
+msgstr "参数模板"
+
+msgid "参数模板列表"
+msgstr "参数模板列表"
+
+msgid "参数模板已保存"
+msgstr "参数模板已保存"
+
+msgid "参数模板已删除"
+msgstr "参数模板已删除"
+
+msgid "参团成功，等待成团"
+msgstr "参团成功，等待成团"
+
+msgid "参团处理中，请勿重复提交"
+msgstr "参团处理中，请勿重复提交"
+
+msgid "参团失败，请重试"
+msgstr "参团失败，请重试"
+
+msgid "参团失败，已退款"
+msgstr "参团失败，已退款"
+
+msgid "参团失败：%s"
+msgstr "参团失败：%s"
+
+msgid "操作成功！"
+msgstr "操作成功！"
+
+msgid "操作成功。"
+msgstr "操作成功。"
+
+msgid "操作过于频繁，请稍后再发起助力"
+msgstr "操作过于频繁，请稍后再发起助力"
+
+msgid "操作过于频繁，请稍后再助力"
+msgstr "操作过于频繁，请稍后再助力"
+
+msgid "操作区域"
+msgstr "操作区域"
+
+msgid "操作失败，请检查余额/冻结余额是否充足"
+msgstr "操作失败，请检查余额/冻结余额是否充足"
+
+msgid "操作失败，请稍后重试。"
+msgstr "操作失败，请稍后重试。"
+
+msgid "操作未生效，当前拼团状态已变化"
+msgstr "操作未生效，当前拼团状态已变化"
+
+msgid "侧边栏叠加轮播"
+msgstr "侧边栏叠加轮播"
+
+msgid "侧栏菜单来源"
+msgstr "侧栏菜单来源"
+
+msgid "查看更多"
+msgstr "查看更多"
+
+msgid "查看更多链接"
+msgstr "查看更多链接"
+
+msgid "查看价"
+msgstr "查看价"
+
+msgid "查看价（%s）"
+msgstr "查看价（%s）"
+
+msgid "查看价格"
+msgstr "查看价格"
+
+msgid "查看商品"
+msgstr "查看商品"
+
+msgid "查看完整记录"
+msgstr "查看完整记录"
+
+msgid "查看我的助力"
+msgstr "查看我的助力"
+
+msgid "查看物流"
+msgstr "查看物流"
+
+msgid "查看详情"
+msgstr "查看详情"
+
+msgid "查看已导入的卡密"
+msgstr "查看已导入的卡密"
+
+msgid "查询过于频繁，请稍后重试"
+msgstr "查询过于频繁，请稍后重试"
+
+msgid "差"
+msgstr "差"
+
+msgid "场景"
+msgstr "场景"
+
+msgid "超出库存数量"
+msgstr "超出库存数量"
+
+msgid "超过时限后无法再评价"
+msgstr "超过时限后无法再评价"
+
+msgid "超时未支付订单自动取消并恢复库存（订单巡检任务）。"
+msgstr "超时未支付订单自动取消并恢复库存（订单巡检任务）。"
+
+msgid "撤销申请"
+msgstr "撤销申请"
+
+msgid "成功"
+msgstr "成功"
+
+msgid "成功邀请 1 位好友注册即可领取奖励"
+msgstr "成功邀请 1 位好友注册即可领取奖励"
+
+msgid "成交用户"
+msgstr "成交用户"
+
+msgid "成团成功"
+msgstr "成团成功"
+
+msgid "成团率"
+msgstr "成团率"
+
+msgid "成团人数"
+msgstr "成团人数"
+
+msgid "成团时限"
+msgstr "成团时限"
+
+msgid "充值 ¥%s - ¥%s"
+msgstr "充值 ¥%s - ¥%s"
+
+msgid "充值 ¥%s 以上"
+msgstr "充值 ¥%s 以上"
+
+msgid "充值处理中，请勿重复提交"
+msgstr "充值处理中，请勿重复提交"
+
+msgid "充值待支付提醒"
+msgstr "充值待支付提醒"
+
+msgid "充值订单不存在"
+msgstr "充值订单不存在"
+
+msgid "充值奖励"
+msgstr "充值奖励"
+
+msgid "充值金额：%s 元，到账积分：%s。"
+msgstr "充值金额：%s 元，到账积分：%s。"
+
+msgid "充值失败，请稍后重试"
+msgstr "充值失败，请稍后重试"
+
+msgid "充值用户"
+msgstr "充值用户"
+
+msgid "处理"
+msgstr "处理"
+
+msgid "创建 PayPal 订单失败"
+msgstr "创建 PayPal 订单失败"
+
+msgid "创建差额支付订单：%s"
+msgstr "创建差额支付订单：%s"
+
+msgid "创建后读取助力单失败"
+msgstr "创建后读取助力单失败"
+
+msgid "创建活动"
+msgstr "创建活动"
+
+msgid "创建页面并添加对应的短代码即可使用相关功能："
+msgstr "创建页面并添加对应的短代码即可使用相关功能："
+
+msgid "创建支付订单失败，请重试"
+msgstr "创建支付订单失败，请重试"
+
+msgid "创建助力活动失败"
+msgstr "创建助力活动失败"
+
+msgid "创建助力活动失败，请稍后重试"
+msgstr "创建助力活动失败，请稍后重试"
+
+msgid "纯文字标签"
+msgstr "纯文字标签"
+
+msgid "此内容仅限 VIP 查看"
+msgstr "此内容仅限 VIP 查看"
+
+msgid "此内容需付费后查看"
+msgstr "此内容需付费后查看"
+
+msgid "此券仅限%s首单用户使用"
+msgstr "此券仅限%s首单用户使用"
+
+msgid "此券仅限全站首单用户使用"
+msgstr "此券仅限全站首单用户使用"
+
+msgid "此优惠券不适用于当前商品"
+msgstr "此优惠券不适用于当前商品"
+
+msgid "此优惠券不适用于当前商品分类"
+msgstr "此优惠券不适用于当前商品分类"
+
+msgid "此优惠券仅限%s使用"
+msgstr "此优惠券仅限%s使用"
+
+msgid "次/人"
+msgstr "次/人"
+
+msgid "从商品库选择"
+msgstr "从商品库选择"
+
+msgid "从商品库选择一个上架商品作为助力商品"
+msgstr "从商品库选择一个上架商品作为助力商品"
+
+msgid "从左侧拖拽组件到此处"
+msgstr "从左侧拖拽组件到此处"
+
+msgid "达到此人数即成团，最少2人"
+msgstr "达到此人数即成团，最少2人"
+
+msgid "代码"
+msgstr "代码"
+
+msgid "带图额外奖励"
+msgstr "带图额外奖励"
+
+msgid "带下划线"
+msgstr "带下划线"
+
+msgid "待发放"
+msgstr "待发放"
+
+msgid "待发货"
+msgstr "待发货"
+
+msgid "待发货订单"
+msgstr "待发货订单"
+
+msgid "待付款"
+msgstr "待付款"
+
+msgid "待付款订单"
+msgstr "待付款订单"
+
+msgid "待结算"
+msgstr "待结算"
+
+msgid "待解锁"
+msgstr "待解锁"
+
+msgid "待评价"
+msgstr "待评价"
+
+msgid "待收货"
+msgstr "待收货"
+
+msgid "待完成"
+msgstr "待完成"
+
+msgid "待支付订单已清理：资源订单 %d 笔，充值订单 %d 笔。"
+msgstr "待支付订单已清理：资源订单 %d 笔，充值订单 %d 笔。"
+
+msgid "待支付金额"
+msgstr "待支付金额"
+
+msgid "单次助力减额"
+msgstr "单次助力减额"
+
+msgid "单个助力活动详情页，支持邀请好友助力"
+msgstr "单个助力活动详情页，支持邀请好友助力"
+
+msgid "单号:"
+msgstr "单号:"
+
+msgid "单价"
+msgstr "单价"
+
+msgid "单量"
+msgstr "单量"
+
+msgid "单码可用次数"
+msgstr "单码可用次数"
+
+msgid "单用户可参与此商品团购的次数，0表示不限制"
+msgstr "单用户可参与此商品团购的次数，0表示不限制"
+
+msgid "当前场景"
+msgstr "当前场景"
+
+msgid "当前到手价"
+msgstr "当前到手价"
+
+msgid "当前订单无需积分抵扣"
+msgstr "当前订单无需积分抵扣"
+
+msgid "当前订单状态无法申请退款"
+msgstr "当前订单状态无法申请退款"
+
+msgid "当前活动仍有用户参与中，暂不可删除。请等待活动流程结束后再删除。"
+msgstr "当前活动仍有用户参与中，暂不可删除。请等待活动流程结束后再删除。"
+
+msgid "当前活动商品 %d 件"
+msgstr "当前活动商品 %d 件"
+
+msgid "当前金额"
+msgstr "当前金额"
+
+msgid "当前筛选：%s（%d）"
+msgstr "当前筛选：%s（%d）"
+
+msgid "当前商品不支持积分支付"
+msgstr "当前商品不支持积分支付"
+
+msgid "当前团购专用地址仅保留用于兼容旧监控，非必填。新部署请只用统一入口。"
+msgstr "当前团购专用地址仅保留用于兼容旧监控，非必填。新部署请只用统一入口。"
+
+msgid "当前为永久有效"
+msgstr "当前为永久有效"
+
+msgid "当前已勾选："
+msgstr "当前已勾选："
+
+msgid "当前易支付通道未实现查单"
+msgstr "当前易支付通道未实现查单"
+
+msgid "当前余额："
+msgstr "当前余额："
+
+msgid "当前暂无可参与的新人专项商品。"
+msgstr "当前暂无可参与的新人专项商品。"
+
+msgid "当前账号不满足新人专项资格"
+msgstr "当前账号不满足新人专项资格"
+
+msgid "当前助力单无法继续助力"
+msgstr "当前助力单无法继续助力"
+
+msgid "当前状态不可创建支付订单"
+msgstr "当前状态不可创建支付订单"
+
+msgid "当前状态无法撤销"
+msgstr "当前状态无法撤销"
+
+msgid "当前状态无法审核"
+msgstr "当前状态无法审核"
+
+msgid "当前状态无法退款"
+msgstr "当前状态无法退款"
+
+msgid "当前状态无需操作"
+msgstr "当前状态无需操作"
+
+msgid "当前资源列表仍在兼容旧识别方式。建议先重建资源标记，后续批量页将不再扫描文章内容字段。"
+msgstr "当前资源列表仍在兼容旧识别方式。建议先重建资源标记，后续批量页将不再扫描文章内容字段。"
+
+msgid "当前IP签到过于频繁，请稍后再试"
+msgstr "当前IP签到过于频繁，请稍后再试"
+
+msgid "当前IP邀请过于频繁，请稍后再试"
+msgstr "当前IP邀请过于频繁，请稍后再试"
+
+msgid "当前IP助力过于频繁，请稍后再试"
+msgstr "当前IP助力过于频繁，请稍后再试"
+
+msgid "当前VIP"
+msgstr "当前VIP"
+
+msgid "当前VIP等级不可领取此优惠券"
+msgstr "当前VIP等级不可领取此优惠券"
+
+msgid "当前VIP等级不可使用此优惠券"
+msgstr "当前VIP等级不可使用此优惠券"
+
+msgid "当有用户购买您的资源时，您将获得销售额的 <strong>%s%%</strong> 作为提成，提成将自动计入您的可提现余额。"
+msgstr "当有用户购买您的资源时，您将获得销售额的 <strong>%s%%</strong> 作为提成，提成将自动计入您的可提现余额。"
+
+msgid "导出待发货单"
+msgstr "导出待发货单"
+
+msgid "到账积分"
+msgstr "到账积分"
+
+msgid "到账金额"
+msgstr "到账金额"
+
+msgid "地址保存处理中，请稍后重试"
+msgstr "地址保存处理中，请稍后重试"
+
+msgid "地址保存处理中，请勿重复提交"
+msgstr "地址保存处理中，请勿重复提交"
+
+msgid "地址保存失败，请稍后重试"
+msgstr "地址保存失败，请稍后重试"
+
+msgid "地址不存在"
+msgstr "地址不存在"
+
+msgid "地址处理中，请勿重复提交"
+msgstr "地址处理中，请勿重复提交"
+
+msgid "地址管理"
+msgstr "地址管理"
+
+msgid "登录参团"
+msgstr "登录参团"
+
+msgid "登录查看任务"
+msgstr "登录查看任务"
+
+msgid "登录购买"
+msgstr "登录购买"
+
+msgid "登录后参与"
+msgstr "登录后参与"
+
+msgid "登录后发起"
+msgstr "登录后发起"
+
+msgid "登录后可参与新人价"
+msgstr "登录后可参与新人价"
+
+msgid "登录后助力"
+msgstr "登录后助力"
+
+msgid "登录用户"
+msgstr "登录用户"
+
+msgid "等 %d 件商品"
+msgstr "等 %d 件商品"
+
+msgid "等待商家发货"
+msgstr "等待商家发货"
+
+msgid "等待生日"
+msgstr "等待生日"
+
+msgid "等级不存在"
+msgstr "等级不存在"
+
+msgid "低价达成"
+msgstr "低价达成"
+
+msgid "低库存阈值"
+msgstr "低库存阈值"
+
+msgid "第 %1$d 行：订单 %2$s 不存在。"
+msgstr "第 %1$d 行：订单 %2$s 不存在。"
+
+msgid "第 %1$d 行：订单 %2$s 不需要物流发货。"
+msgstr "第 %1$d 行：订单 %2$s 不需要物流发货。"
+
+msgid "第 %1$d 行：订单 %2$s 当前为“%3$s”，不是待发货状态。"
+msgstr "第 %1$d 行：订单 %2$s 当前为“%3$s”，不是待发货状态。"
+
+msgid "第 %1$d 行：订单 %2$s 发货失败，%3$s"
+msgstr "第 %1$d 行：订单 %2$s 发货失败，%3$s"
+
+msgid "第 %1$d 行：订单 %2$s 发货失败，请检查订单状态。"
+msgstr "第 %1$d 行：订单 %2$s 发货失败，请检查订单状态。"
+
+msgid "第一张图片为商品封面，支持添加多张图片和视频。建议使用 1:1 比例（推荐 1200×1200px，至少 800×800px），可获得最佳展示效果。"
+msgstr "第一张图片为商品封面，支持添加多张图片和视频。建议使用 1:1 比例（推荐 1200×1200px，至少 800×800px），可获得最佳展示效果。"
+
+msgid "点击上方按钮添加模块进行装修"
+msgstr "点击上方按钮添加模块进行装修"
+
+msgid "点赞成功"
+msgstr "点赞成功"
+
+msgid "店铺装修"
+msgstr "店铺装修"
+
+msgid "调整积分"
+msgstr "调整积分"
+
+msgid "调整完成后，请点击页面右上角的 <b>更新</b> 按钮保存修改。"
+msgstr "调整完成后，请点击页面右上角的 <b>更新</b> 按钮保存修改。"
+
+msgid "叠加策略"
+msgstr "叠加策略"
+
+msgid "顶部购物车图标"
+msgstr "顶部购物车图标"
+
+msgid "订单"
+msgstr "订单"
+
+msgid "订单参数错误"
+msgstr "订单参数错误"
+
+msgid "订单查询(游客)"
+msgstr "订单查询(游客)"
+
+msgid "订单创建成功"
+msgstr "订单创建成功"
+
+msgid "订单创建成功，但读取订单失败"
+msgstr "订单创建成功，但读取订单失败"
+
+msgid "订单创建成功，但游客订单关联失败，请在当前设备完成支付或联系管理员处理"
+msgstr "订单创建成功，但游客订单关联失败，请在当前设备完成支付或联系管理员处理"
+
+msgid "订单创建失败，积分回退失败，请联系管理员处理"
+msgstr "订单创建失败，积分回退失败，请联系管理员处理"
+
+msgid "订单待支付提醒"
+msgstr "订单待支付提醒"
+
+msgid "订单发货"
+msgstr "订单发货"
+
+msgid "订单号,物流公司,快递单号"
+msgstr "订单号,物流公司,快递单号"
+
+msgid "订单号：%1$s；金额：¥%2$s。"
+msgstr "订单号：%1$s；金额：¥%2$s。"
+
+msgid "订单号：%1$s%2$s。"
+msgstr "订单号：%1$s%2$s。"
+
+msgid "订单号：%s"
+msgstr "订单号：%s"
+
+msgid "订单号：%s，感谢您的购买。"
+msgstr "订单号：%s，感谢您的购买。"
+
+msgid "订单号：%s，退款已处理完成。"
+msgstr "订单号：%s，退款已处理完成。"
+
+msgid "订单号或联系方式不匹配"
+msgstr "订单号或联系方式不匹配"
+
+msgid "订单号无效"
+msgstr "订单号无效"
+
+msgid "订单恢复失败，请稍后重试"
+msgstr "订单恢复失败，请稍后重试"
+
+msgid "订单金额(元)"
+msgstr "订单金额(元)"
+
+msgid "订单金额无效"
+msgstr "订单金额无效"
+
+msgid "订单金额校验失败"
+msgstr "订单金额校验失败"
+
+msgid "订单金额需满%s元才能使用此优惠券"
+msgstr "订单金额需满%s元才能使用此优惠券"
+
+msgid "订单金额异常"
+msgstr "订单金额异常"
+
+msgid "订单量"
+msgstr "订单量"
+
+msgid "订单取消，活动库存继续保留"
+msgstr "订单取消，活动库存继续保留"
+
+msgid "订单取消，库存锁已释放"
+msgstr "订单取消，库存锁已释放"
+
+msgid "订单取消退还：%s"
+msgstr "订单取消退还：%s"
+
+msgid "订单删除退还：%s"
+msgstr "订单删除退还：%s"
+
+msgid "订单商品写入失败"
+msgstr "订单商品写入失败"
+
+msgid "订单申请退款"
+msgstr "订单申请退款"
+
+msgid "订单退款：%s"
+msgstr "订单退款：%s"
+
+msgid "订单未完成，无法评价"
+msgstr "订单未完成，无法评价"
+
+msgid "订单详情"
+msgstr "订单详情"
+
+msgid "订单项不存在"
+msgstr "订单项不存在"
+
+msgid "订单项ID无效"
+msgstr "订单项ID无效"
+
+msgid "订单信息不存在"
+msgstr "订单信息不存在"
+
+msgid "订单已发货"
+msgstr "订单已发货"
+
+msgid "订单已付款"
+msgstr "订单已付款"
+
+msgid "订单已删除"
+msgstr "订单已删除"
+
+msgid "订单已退款"
+msgstr "订单已退款"
+
+msgid "订单支付"
+msgstr "订单支付"
+
+msgid "订单支付成功"
+msgstr "订单支付成功"
+
+msgid "订单状态:"
+msgstr "订单状态:"
+
+msgid "订单状态筛选"
+msgstr "订单状态筛选"
+
+msgid "订单状态异常"
+msgstr "订单状态异常"
+
+msgid "订单自动完成失败，请稍后重试"
+msgstr "订单自动完成失败，请稍后重试"
+
+msgid "订单总额:"
+msgstr "订单总额:"
+
+msgid "订单ID无效"
+msgstr "订单ID无效"
+
+msgid "动作"
+msgstr "动作"
+
+msgid "半角逗号、中文逗号或制表符都可以。物流公司和快递单号不能为空，复制表格时首行表头会自动跳过。"
+msgstr "半角逗号、中文逗号或制表符都可以。物流公司和快递单号不能为空，复制表格时首行表头会自动跳过。"
+
+msgid "短代码"
+msgstr "短代码"
+
+msgid "兑换处理中，请勿重复提交"
+msgstr "兑换处理中，请勿重复提交"
+
+msgid "兑换服务不可用"
+msgstr "兑换服务不可用"
+
+msgid "兑换码不存在"
+msgstr "兑换码不存在"
+
+msgid "兑换码对应等级不可用"
+msgstr "兑换码对应等级不可用"
+
+msgid "兑换码列表"
+msgstr "兑换码列表"
+
+msgid "兑换码已过期"
+msgstr "兑换码已过期"
+
+msgid "兑换码已禁用"
+msgstr "兑换码已禁用"
+
+msgid "兑换码已使用"
+msgstr "兑换码已使用"
+
+msgid "兑换失败，请稍后重试"
+msgstr "兑换失败，请稍后重试"
+
+msgid "多个标签请用半角逗号分隔，例如：正版授权,永久更新"
+msgstr "多个标签请用半角逗号分隔，例如：正版授权,永久更新"
+
+msgid "多个关键词用半角逗号分隔"
+msgstr "多个关键词用半角逗号分隔"
+
+msgid "多个ID用逗号分隔，留空表示全部"
+msgstr "多个ID用逗号分隔，留空表示全部"
+
+msgid "多个ID用逗号分隔，如: 1,2,3"
+msgstr "多个ID用逗号分隔，如: 1,2,3"
+
+msgid "多人拼团，享超低价格"
+msgstr "多人拼团，享超低价格"
+
+msgid "额外送 %s%%"
+msgstr "额外送 %s%%"
+
+msgid "二级"
+msgstr "二级"
+
+msgid "二级下线消费，您可获得 %s%% 佣金"
+msgstr "二级下线消费，您可获得 %s%% 佣金"
+
+msgid "二维码"
+msgstr "二维码"
+
+msgid "二维码已过期"
+msgstr "二维码已过期"
+
+msgid "发布"
+msgstr "发布"
+
+msgid "发布新商品时默认勾选"
+msgstr "发布新商品时默认勾选"
+
+msgid "发放奖励失败，请稍后重试。"
+msgstr "发放奖励失败，请稍后重试。"
+
+msgid "发放时间"
+msgstr "发放时间"
+
+msgid "发放时间：%s"
+msgstr "发放时间：%s"
+
+msgid "发放总量"
+msgstr "发放总量"
+
+msgid "发货"
+msgstr "发货"
+
+msgid "发货时间:"
+msgstr "发货时间:"
+
+msgid "发起活动后分享给好友助力，金额递减，达成后支付差额即可下单。"
+msgstr "发起活动后分享给好友助力，金额递减，达成后支付差额即可下单。"
+
+msgid "发起人"
+msgstr "发起人"
+
+msgid "返回列表"
+msgstr "返回列表"
+
+msgid "返回商城"
+msgstr "返回商城"
+
+msgid "返回文章"
+msgstr "返回文章"
+
+msgid "返回助力大厅"
+msgstr "返回助力大厅"
+
+msgid "非常差"
+msgstr "非常差"
+
+msgid "非常好"
+msgstr "非常好"
+
+msgid "分"
+msgstr "分"
+
+msgid "分类列表"
+msgstr "分类列表"
+
+msgid "分类名称"
+msgstr "分类名称"
+
+msgid "分类目录和标签不同，它可以有层级关系"
+msgstr "分类目录和标签不同，它可以有层级关系"
+
+msgid "分类图片"
+msgstr "分类图片"
+
+msgid "分类编号或商品编号，多个编号用半角逗号分隔"
+msgstr "分类编号或商品编号，多个编号用半角逗号分隔"
+
+msgid "分类编号列表"
+msgstr "分类编号列表"
+
+msgid "分类链接前缀"
+msgstr "分类链接前缀"
+
+msgid "分享链接"
+msgstr "分享链接"
+
+msgid "分享码"
+msgstr "分享码"
+
+msgid "服务标签"
+msgstr "服务标签"
+
+msgid "服务标签列表"
+msgstr "服务标签列表"
+
+msgid "服务标签已保存"
+msgstr "服务标签已保存"
+
+msgid "服务标签已删除"
+msgstr "服务标签已删除"
+
+msgid "服务项配置"
+msgstr "服务项配置"
+
+msgid "服务展示"
+msgstr "服务展示"
+
+msgid "服务展示设置已保存"
+msgstr "服务展示设置已保存"
+
+msgid "父分类"
+msgstr "父分类"
+
+msgid "付费查看"
+msgstr "付费查看"
+
+msgid "付费查看使用该价格，仅查看不含下载；两价都填可补差价升级下载"
+msgstr "付费查看使用该价格，仅查看不含下载；两价都填可补差价升级下载"
+
+msgid "付费下载"
+msgstr "付费下载"
+
+msgid "付费下载：用户购买后可查看下载链接；付费查看：用户购买后可查看隐藏内容"
+msgstr "付费下载：用户购买后可查看下载链接；付费查看：用户购买后可查看隐藏内容"
+
+msgid "付费下载使用该价格，下载授权包含查看"
+msgstr "付费下载使用该价格，下载授权包含查看"
+
+msgid "付款时扣减"
+msgstr "付款时扣减"
+
+msgid "复制"
+msgstr "复制"
+
+msgid "复制链接"
+msgstr "复制链接"
+
+msgid "复制内容"
+msgstr "复制内容"
+
+msgid "复制以下兑换码"
+msgstr "复制以下兑换码"
+
+msgid "副标题/描述"
+msgstr "副标题/描述"
+
+msgid "该订单当前无法取消"
+msgstr "该订单当前无法取消"
+
+msgid "该订单当前无法确认收货"
+msgstr "该订单当前无法确认收货"
+
+msgid "该订单已绑定其他拼团"
+msgstr "该订单已绑定其他拼团"
+
+msgid "该订单已有售后申请"
+msgstr "该订单已有售后申请"
+
+msgid "该分类下暂无商品"
+msgstr "该分类下暂无商品"
+
+msgid "该分类下暂无支持积分购买的商品"
+msgstr "该分类下暂无支持积分购买的商品"
+
+msgid "该任务奖励未配置。"
+msgstr "该任务奖励未配置。"
+
+msgid "该任务奖励已领取，无需重复操作。"
+msgstr "该任务奖励已领取，无需重复操作。"
+
+msgid "该任务未启用。"
+msgstr "该任务未启用。"
+
+msgid "该商品加入新人专题并使用新人专享价"
+msgstr "该商品加入新人专题并使用新人专享价"
+
+msgid "该商品未开启团购"
+msgstr "该商品未开启团购"
+
+msgid "该商品已评价"
+msgstr "该商品已评价"
+
+msgid "该团购已结束或被删除"
+msgstr "该团购已结束或被删除"
+
+msgid "该团为平台授权为成功，商家即将发货"
+msgstr "该团为平台授权为成功，商家即将发货"
+
+msgid "该团已成功，商家即将发货"
+msgstr "该团已成功，商家即将发货"
+
+msgid "该团已过期"
+msgstr "该团已过期"
+
+msgid "该团已结束"
+msgstr "该团已结束"
+
+msgid "该团已满员"
+msgstr "该团已满员"
+
+msgid "该虚拟内容暂不支持结构化展示，可直接复制内容。"
+msgstr "该虚拟内容暂不支持结构化展示，可直接复制内容。"
+
+msgid "该助力单已存在已支付订单，无需重复创建"
+msgstr "该助力单已存在已支付订单，无需重复创建"
+
+msgid "该助力已达到最低价"
+msgstr "该助力已达到最低价"
+
+msgid "该资源价格异常"
+msgstr "该资源价格异常"
+
+msgid "该资源仅限 VIP 访问，游客不可购买"
+msgstr "该资源仅限 VIP 访问，游客不可购买"
+
+msgid "该资源仅限 VIP 购买，游客不可购买"
+msgstr "该资源仅限 VIP 购买，游客不可购买"
+
+msgid "该资源仅限 VIP 下载"
+msgstr "该资源仅限 VIP 下载"
+
+msgid "该资源仅支持积分购买"
+msgstr "该资源仅支持积分购买"
+
+msgid "改为收费下载"
+msgstr "改为收费下载"
+
+msgid "概览"
+msgstr "概览"
+
+msgid "刚刚充值了 %s 元"
+msgstr "刚刚充值了 %s 元"
+
+msgid "刚刚购买了商品：%s"
+msgstr "刚刚购买了商品：%s"
+
+msgid "刚刚购买了资源：%s"
+msgstr "刚刚购买了资源：%s"
+
+msgid "刚刚开通了 %s"
+msgstr "刚刚开通了 %s"
+
+msgid "个人中心"
+msgstr "个人中心"
+
+msgid "更多按钮文案"
+msgstr "更多按钮文案"
+
+msgid "更多助力"
+msgstr "更多助力"
+
+msgid "更新订单失败"
+msgstr "更新订单失败"
+
+msgid "更新活动"
+msgstr "更新活动"
+
+msgid "更新时间"
+msgstr "更新时间"
+
+msgid "更新助力活动失败"
+msgstr "更新助力活动失败"
+
+msgid "更新助力数据失败"
+msgstr "更新助力数据失败"
+
+msgid "公开展示（需登录领取）"
+msgstr "公开展示（需登录领取）"
+
+msgid "公司代码"
+msgstr "公司代码"
+
+msgid "公司名称"
+msgstr "公司名称"
+
+msgid "恭喜！您参与的「%s」拼团已成功，商家即将安排发货。"
+msgstr "恭喜！您参与的「%s」拼团已成功，商家即将安排发货。"
+
+msgid "共 %d 个可下载订单"
+msgstr "共 %d 个可下载订单"
+
+msgid "共 %d 项"
+msgstr "共 %d 项"
+
+msgid "共 %d 页"
+msgstr "共 %d 页"
+
+msgid "贡献佣金"
+msgstr "贡献佣金"
+
+msgid "勾选后仅这些VIP等级可使用，留空表示不限制"
+msgstr "勾选后仅这些VIP等级可使用，留空表示不限制"
+
+msgid "勾选后评价无需人工审核直接显示；不勾选则需要管理员手动审核"
+msgstr "勾选后评价无需人工审核直接显示；不勾选则需要管理员手动审核"
+
+msgid "勾选后网站顶部将不再显示购物车图标"
+msgstr "勾选后网站顶部将不再显示购物车图标"
+
+msgid "勾选允许领取此优惠券的VIP等级，不勾选则所有VIP用户都可领取"
+msgstr "勾选允许领取此优惠券的VIP等级，不勾选则所有VIP用户都可领取"
+
+msgid "购买按钮"
+msgstr "购买按钮"
+
+msgid "购买并获取 AppCode。"
+msgstr "购买并获取 AppCode。"
+
+msgid "购买成功，但游客订单关联失败，请在当前设备使用或联系管理员处理"
+msgstr "购买成功，但游客订单关联失败，请在当前设备使用或联系管理员处理"
+
+msgid "购买后显示的额外内容，可填写密码、教程说明等"
+msgstr "购买后显示的额外内容，可填写密码、教程说明等"
+
+msgid "购买后显示的额外内容（支持基础排版）"
+msgstr "购买后显示的额外内容（支持基础排版）"
+
+msgid "购买后用户将看到此内容，如教程链接、使用说明等"
+msgstr "购买后用户将看到此内容，如教程链接、使用说明等"
+
+msgid "购买失败，请稍后重试"
+msgstr "购买失败，请稍后重试"
+
+msgid "购买文字"
+msgstr "购买文字"
+
+msgid "购买限制"
+msgstr "购买限制"
+
+msgid "购买用户"
+msgstr "购买用户"
+
+msgid "购买VIP"
+msgstr "购买VIP"
+
+msgid "购物车处理中，请稍后重试"
+msgstr "购物车处理中，请稍后重试"
+
+msgid "购物车清空失败，请稍后重试"
+msgstr "购物车清空失败，请稍后重试"
+
+msgid "购物车图标"
+msgstr "购物车图标"
+
+msgid "购物车为空"
+msgstr "购物车为空"
+
+msgid "购物车项不存在"
+msgstr "购物车项不存在"
+
+msgid "购物车页面，展示已添加的商品"
+msgstr "购物车页面，展示已添加的商品"
+
+msgid "购物车已有新人专项商品，仅允许购买1件"
+msgstr "购物车已有新人专项商品，仅允许购买1件"
+
+msgid "购物车中有 %d 件商品已失效"
+msgstr "购物车中有 %d 件商品已失效"
+
+msgid "固定金额"
+msgstr "固定金额"
+
+msgid "固定日期范围"
+msgstr "固定日期范围"
+
+msgid "固定为 1 次（一次性兑换码）"
+msgstr "固定为 1 次（一次性兑换码）"
+
+msgid "固定运费"
+msgstr "固定运费"
+
+msgid "关闭后，该文章前台不显示付费资源内容，也不加载积分资源相关前端文件。"
+msgstr "关闭后，该文章前台不显示付费资源内容，也不加载积分资源相关前端文件。"
+
+msgid "关闭后前台不显示评价入口和评价列表"
+msgstr "关闭后前台不显示评价入口和评价列表"
+
+msgid "关键词"
+msgstr "关键词"
+
+msgid "关联页面"
+msgstr "关联页面"
+
+msgid "管理"
+msgstr "管理"
+
+msgid "管理分类"
+msgstr "管理分类"
+
+msgid "管理上架状态、库存、价格和小程序展示标签。"
+msgstr "管理上架状态、库存、价格和小程序展示标签。"
+
+msgid "管理员备注"
+msgstr "管理员备注"
+
+msgid "管理员操作"
+msgstr "管理员操作"
+
+msgid "管理员调整"
+msgstr "管理员调整"
+
+msgid "管理员冻结积分"
+msgstr "管理员冻结积分"
+
+msgid "管理员解冻积分"
+msgstr "管理员解冻积分"
+
+msgid "管理员扣除"
+msgstr "管理员扣除"
+
+msgid "规格："
+msgstr "规格："
+
+msgid "规格不存在"
+msgstr "规格不存在"
+
+msgid "规则名称"
+msgstr "规则名称"
+
+msgid "过期检查完成"
+msgstr "过期检查完成"
+
+msgid "过期前等级"
+msgstr "过期前等级"
+
+msgid "过期时间"
+msgstr "过期时间"
+
+msgid "还差 %d 人"
+msgstr "还差 %d 人"
+
+msgid "还差 %d 人成团"
+msgstr "还差 %d 人成团"
+
+msgid "还没有订单"
+msgstr "还没有订单"
+
+msgid "还没有好友助力，快去分享吧"
+msgstr "还没有好友助力，快去分享吧"
+
+msgid "还没有商品"
+msgstr "还没有商品"
+
+msgid "还没有选择商品"
+msgstr "还没有选择商品"
+
+msgid "还没有助力记录"
+msgstr "还没有助力记录"
+
+msgid "还在拼团中"
+msgstr "还在拼团中"
+
+msgid "含运费"
+msgstr "含运费"
+
+msgid "好"
+msgstr "好"
+
+msgid "好友消费时，您可获得 %s%% 佣金"
+msgstr "好友消费时，您可获得 %s%% 佣金"
+
+msgid "好友助力成功"
+msgstr "好友助力成功"
+
+msgid "好友助力大厅"
+msgstr "好友助力大厅"
+
+msgid "好友助力过期检查与订单对账"
+msgstr "好友助力过期检查与订单对账"
+
+msgid "好友注册后可获得 %s %s奖励"
+msgstr "好友注册后可获得 %s %s奖励"
+
+msgid "合计:"
+msgstr "合计:"
+
+msgid "横向滚动"
+msgstr "横向滚动"
+
+msgid "横向滑动 (适合移动端)"
+msgstr "横向滑动 (适合移动端)"
+
+msgid "横向列表"
+msgstr "横向列表"
+
+msgid "虎皮椒 V3 未配置，请联系管理员"
+msgstr "虎皮椒 V3 未配置，请联系管理员"
+
+msgid "虎皮椒返回签名校验失败"
+msgstr "虎皮椒返回签名校验失败"
+
+msgid "虎皮椒返回数据异常"
+msgstr "虎皮椒返回数据异常"
+
+msgid "虎皮椒请求失败："
+msgstr "虎皮椒请求失败："
+
+msgid "虎皮椒微信支付"
+msgstr "虎皮椒微信支付"
+
+msgid "虎皮椒支付宝支付"
+msgstr "虎皮椒支付宝支付"
+
+msgid "环比转化"
+msgstr "环比转化"
+
+msgid "换个关键词或清除筛选再试试。"
+msgstr "换个关键词或清除筛选再试试。"
+
+msgid "恢复"
+msgstr "恢复"
+
+msgid "回复"
+msgstr "回复"
+
+msgid "回复成功"
+msgstr "回复成功"
+
+msgid "回复评价"
+msgstr "回复评价"
+
+msgid "会生成订单号模板，请再填写物流公司和快递单号。"
+msgstr "会生成订单号模板，请再填写物流公司和快递单号。"
+
+msgid "会员开通"
+msgstr "会员开通"
+
+msgid "活动"
+msgstr "活动"
+
+msgid "活动/商品"
+msgstr "活动/商品"
+
+msgid "活动不存在"
+msgstr "活动不存在"
+
+msgid "活动处理中，请稍后再试"
+msgstr "活动处理中，请稍后再试"
+
+msgid "活动处理中，请稍后重试"
+msgstr "活动处理中，请稍后重试"
+
+msgid "活动处理中，请稍后重试。"
+msgstr "活动处理中，请稍后重试。"
+
+msgid "活动到期自动下架、助力单过期处理、待支付对账与库存锁回收。"
+msgstr "活动到期自动下架、助力单过期处理、待支付对账与库存锁回收。"
+
+msgid "活动结束"
+msgstr "活动结束"
+
+msgid "活动开始"
+msgstr "活动开始"
+
+msgid "活动库存不足，不能重新上架"
+msgstr "活动库存不足，不能重新上架"
+
+msgid "活动库存不足，暂时无法发起助力"
+msgstr "活动库存不足，暂时无法发起助力"
+
+msgid "活动列表"
+msgstr "活动列表"
+
+msgid "活动名称"
+msgstr "活动名称"
+
+msgid "活动时间"
+msgstr "活动时间"
+
+msgid "活动推荐"
+msgstr "活动推荐"
+
+msgid "活动未开始或已结束"
+msgstr "活动未开始或已结束"
+
+msgid "活动已到期，请先填写新的结束时间"
+msgstr "活动已到期，请先填写新的结束时间"
+
+msgid "活动有效期：%d小时"
+msgstr "活动有效期：%d小时"
+
+msgid "活动ID列表"
+msgstr "活动ID列表"
+
+msgid "获得 %s，连续签到 %d 天。"
+msgstr "获得 %s，连续签到 %d 天。"
+
+msgid "获得积分"
+msgstr "获得积分"
+
+msgid "获得积分:"
+msgstr "获得积分:"
+
+msgid "获取 PayPal Access Token 失败"
+msgstr "获取 PayPal Access Token 失败"
+
+msgid "获取更多"
+msgstr "获取更多"
+
+msgid "获取OpenID失败：%s"
+msgstr "获取OpenID失败：%s"
+
+msgid "积分 = 1 元"
+msgstr "积分 = 1 元"
+
+msgid "积分不足"
+msgstr "积分不足"
+
+msgid "积分充值成功"
+msgstr "积分充值成功"
+
+msgid "积分充值通知"
+msgstr "积分充值通知"
+
+msgid "积分到期失效（可用 %s，冻结 %s）"
+msgstr "积分到期失效（可用 %s，冻结 %s）"
+
+msgid "积分抵扣超出订单可抵扣上限"
+msgstr "积分抵扣超出订单可抵扣上限"
+
+msgid "积分冻结"
+msgstr "积分冻结"
+
+msgid "积分兑换比例"
+msgstr "积分兑换比例"
+
+msgid "积分过期"
+msgstr "积分过期"
+
+msgid "积分即将过期"
+msgstr "积分即将过期"
+
+msgid "积分价 %1$s %2$s"
+msgstr "积分价 %1$s %2$s"
+
+msgid "积分奖励"
+msgstr "积分奖励"
+
+msgid "积分解冻"
+msgstr "积分解冻"
+
+msgid "积分扣除失败"
+msgstr "积分扣除失败"
+
+msgid "积分流水"
+msgstr "积分流水"
+
+msgid "积分流水记录"
+msgstr "积分流水记录"
+
+msgid "积分数量"
+msgstr "积分数量"
+
+msgid "积分已冻结"
+msgstr "积分已冻结"
+
+msgid "积分已过期"
+msgstr "积分已过期"
+
+msgid "积分已解冻"
+msgstr "积分已解冻"
+
+msgid "积分余额"
+msgstr "积分余额"
+
+msgid "积分支付"
+msgstr "积分支付"
+
+msgid "积分支付未开启"
+msgstr "积分支付未开启"
+
+msgid "积分转可提现余额"
+msgstr "积分转可提现余额"
+
+msgid "基本设置"
+msgstr "基本设置"
+
+msgid "基本信息"
+msgstr "基本信息"
+
+msgid "基础信息"
+msgstr "基础信息"
+
+msgid "基础运费"
+msgstr "基础运费"
+
+msgid "计费类型"
+msgstr "计费类型"
+
+msgid "记录"
+msgstr "记录"
+
+msgid "记录删除成功"
+msgstr "记录删除成功"
+
+msgid "记录删除失败"
+msgstr "记录删除失败"
+
+msgid "记录删除失败，预占中的日志需等待流程结束或超时后再清理"
+msgstr "记录删除失败，预占中的日志需等待流程结束或超时后再清理"
+
+msgid "继承等级默认折扣"
+msgstr "继承等级默认折扣"
+
+msgid "继续购物"
+msgstr "继续购物"
+
+msgid "继续支付"
+msgstr "继续支付"
+
+msgid "加载失败，请重试"
+msgstr "加载失败，请重试"
+
+msgid "价格操作（单位：%s）"
+msgstr "价格操作（单位：%s）"
+
+msgid "价格进度"
+msgstr "价格进度"
+
+msgid "价格区间"
+msgstr "价格区间"
+
+msgid "间距设置"
+msgstr "间距设置"
+
+msgid "监控策略建议：HTTP 超时 10~15 秒，失败重试 1 次（1 分钟后），连续失败再告警。"
+msgstr "监控策略建议：HTTP 超时 10~15 秒，失败重试 1 次（1 分钟后），连续失败再告警。"
+
+msgid "检测次数过多，请稍后再试"
+msgstr "检测次数过多，请稍后再试"
+
+msgid "检测方法不存在"
+msgstr "检测方法不存在"
+
+msgid "检测功能未启用"
+msgstr "检测功能未启用"
+
+msgid "检测过于频繁，请稍后再试"
+msgstr "检测过于频繁，请稍后再试"
+
+msgid "检查过期团购并触发退款到可提现余额（团购退款任务）。"
+msgstr "检查过期团购并触发退款到可提现余额（团购退款任务）。"
+
+msgid "简短的商品卖点描述"
+msgstr "简短的商品卖点描述"
+
+msgid "建议尺寸: 1920x800 或更大"
+msgstr "建议尺寸: 1920x800 或更大"
+
+msgid "建议尺寸: 750x600，不设置则使用PC图"
+msgstr "建议尺寸: 750x600，不设置则使用PC图"
+
+msgid "建议设置为 24 或 48 小时，超时后自动判定为助力失败。"
+msgstr "建议设置为 24 或 48 小时，超时后自动判定为助力失败。"
+
+msgid "建议优先使用“插件设置 -> 基础设置 -> 任务中心外部触发”中的统一入口（建议每 5 分钟访问一次）。"
+msgstr "建议优先使用“插件设置 -> 基础设置 -> 任务中心外部触发”中的统一入口（建议每 5 分钟访问一次）。"
+
+msgid "将按填写的新结束时间重新上架。是否继续？"
+msgstr "将按填写的新结束时间重新上架。是否继续？"
+
+msgid "将清除已完成、已过期、已取消、已退款的助力记录和日志；进行中、已达成待下单、待支付记录会保留。确认继续吗？"
+msgstr "将清除已完成、已过期、已取消、已退款的助力记录和日志；进行中、已达成待下单、待支付记录会保留。确认继续吗？"
+
+msgid "奖励 %s"
+msgstr "奖励 %s"
+
+msgid "奖励可叠加"
+msgstr "奖励可叠加"
+
+msgid "交付类型"
+msgstr "交付类型"
+
+msgid "交易用户"
+msgstr "交易用户"
+
+msgid "角标显示"
+msgstr "角标显示"
+
+msgid "阶段"
+msgstr "阶段"
+
+msgid "阶梯奖励"
+msgstr "阶梯奖励"
+
+msgid "阶梯奖励以当前规则为准"
+msgstr "阶梯奖励以当前规则为准"
+
+msgid "接口配置"
+msgstr "接口配置"
+
+msgid "结果"
+msgstr "结果"
+
+msgid "结束日期"
+msgstr "结束日期"
+
+msgid "结账处理中，请勿重复提交"
+msgstr "结账处理中，请勿重复提交"
+
+msgid "结账页面"
+msgstr "结账页面"
+
+msgid "解冻"
+msgstr "解冻"
+
+msgid "解散并退款"
+msgstr "解散并退款"
+
+msgid "解散退款"
+msgstr "解散退款"
+
+msgid "今日 VIP 下载次数已用完"
+msgstr "今日 VIP 下载次数已用完"
+
+msgid "今日发放"
+msgstr "今日发放"
+
+msgid "金额 (元)"
+msgstr "金额 (元)"
+
+msgid "金额(元)"
+msgstr "金额(元)"
+
+msgid "金额变化"
+msgstr "金额变化"
+
+msgid "仅当需要兼容旧监控地址时再填写该 Key；新部署建议只配置统一入口。"
+msgstr "仅当需要兼容旧监控地址时再填写该 Key；新部署建议只配置统一入口。"
+
+msgid "仅对新人首单资格用户生效，结算时由后端强制校验。"
+msgstr "仅对新人首单资格用户生效，结算时由后端强制校验。"
+
+msgid "仅购买用户可评价"
+msgstr "仅购买用户可评价"
+
+msgid "仅手动模式有效，逗号分隔"
+msgstr "仅手动模式有效，逗号分隔"
+
+msgid "仅手动模式有效，用逗号分隔，如: 1,2,3"
+msgstr "仅手动模式有效，用逗号分隔，如: 1,2,3"
+
+msgid "仅下载"
+msgstr "仅下载"
+
+msgid "仅限访问"
+msgstr "仅限访问"
+
+msgid "仅限购买"
+msgstr "仅限购买"
+
+msgid "仅限购买：只限制新购买，已购用户仍可访问。仅限访问：强约束，已购用户也会被拦截。"
+msgstr "仅限购买：只限制新购买，已购用户仍可访问。仅限访问：强约束，已购用户也会被拦截。"
+
+msgid "仅允许首单用户使用（仅登录用户）"
+msgstr "仅允许首单用户使用（仅登录用户）"
+
+msgid "仅在\"侧边栏+轮播\"模式下有效"
+msgstr "仅在\"侧边栏+轮播\"模式下有效"
+
+msgid "仅支持删除待支付订单，或订单正在处理中。"
+msgstr "仅支持删除待支付订单，或订单正在处理中。"
+
+msgid "仅支持游客订单查询。账号订单请登录后到个人中心查看。"
+msgstr "仅支持游客订单查询。账号订单请登录后到个人中心查看。"
+
+msgid "近%d天将过期"
+msgstr "近%d天将过期"
+
+msgid "进度"
+msgstr "进度"
+
+msgid "进度实时更新"
+msgstr "进度实时更新"
+
+msgid "进行中活动"
+msgstr "进行中活动"
+
+msgid "精选商品可享新人专属价，活动商品仅限购 1 件，且退款后资格不恢复。"
+msgstr "精选商品可享新人专属价，活动商品仅限购 1 件，且退款后资格不恢复。"
+
+msgid "精选团购活动正在筹备中，先逛逛商城吧"
+msgstr "精选团购活动正在筹备中，先逛逛商城吧"
+
+msgid "精选资源"
+msgstr "精选资源"
+
+msgid "居中"
+msgstr "居中"
+
+msgid "居中自适应"
+msgstr "居中自适应"
+
+msgid "拒绝原因"
+msgstr "拒绝原因"
+
+msgid "拒绝原因："
+msgstr "拒绝原因："
+
+msgid "卡号"
+msgstr "卡号"
+
+msgid "卡号 %1$d：%2$s"
+msgstr "卡号 %1$d：%2$s"
+
+msgid "卡号卡密"
+msgstr "卡号卡密"
+
+msgid "卡密"
+msgstr "卡密"
+
+msgid "卡密 %1$d：%2$s"
+msgstr "卡密 %1$d：%2$s"
+
+msgid "卡密库存不足"
+msgstr "卡密库存不足"
+
+msgid "卡密内容"
+msgstr "卡密内容"
+
+msgid "卡密信息:"
+msgstr "卡密信息:"
+
+msgid "卡片背景色"
+msgstr "卡片背景色"
+
+msgid "卡片间距"
+msgstr "卡片间距"
+
+msgid "卡片模式 (图片背景)"
+msgstr "卡片模式 (图片背景)"
+
+msgid "卡片网格"
+msgstr "卡片网格"
+
+msgid "卡片样式"
+msgstr "卡片样式"
+
+msgid "卡片圆角"
+msgstr "卡片圆角"
+
+msgid "开启"
+msgstr "开启"
+
+msgid "开启（推荐）"
+msgstr "开启（推荐）"
+
+msgid "开启后，符合首单资格的用户可按新人专项价购买，且仅限购 1 件。退款后资格不会恢复。"
+msgstr "开启后，符合首单资格的用户可按新人专项价购买，且仅限购 1 件。退款后资格不会恢复。"
+
+msgid "开启后，其他用户需要付费才能查看或下载此资源"
+msgstr "开启后，其他用户需要付费才能查看或下载此资源"
+
+msgid "开启后会在领取和下单两处校验；且该券自动按“每人限领 1 张”处理。"
+msgstr "开启后会在领取和下单两处校验；且该券自动按“每人限领 1 张”处理。"
+
+msgid "开启后未登录用户可加入购物车并提交订单，支付后可通过订单查询页查单"
+msgstr "开启后未登录用户可加入购物车并提交订单，支付后可通过订单查询页查单"
+
+msgid "开启后支持多人拼团购买"
+msgstr "开启后支持多人拼团购买"
+
+msgid "开启评价功能"
+msgstr "开启评价功能"
+
+msgid "开启团购"
+msgstr "开启团购"
+
+msgid "开通/续费"
+msgstr "开通/续费"
+
+msgid "开团后多少小时内需成团，超时自动退款"
+msgstr "开团后多少小时内需成团，超时自动退款"
+
+msgid "开团失败，已退款"
+msgstr "开团失败，已退款"
+
+msgid "开团时间"
+msgstr "开团时间"
+
+msgid "可多选。默认勾选“商城首页底部”。"
+msgstr "可多选。默认勾选“商城首页底部”。"
+
+msgid "可获得"
+msgstr "可获得"
+
+msgid "可获得 %s%% 销售提成"
+msgstr "可获得 %s%% 销售提成"
+
+msgid "可领取的VIP等级"
+msgstr "可领取的VIP等级"
+
+msgid "可清除 %d 条"
+msgstr "可清除 %d 条"
+
+msgid "可清理超时订单"
+msgstr "可清理超时订单"
+
+msgid "可使用的VIP等级"
+msgstr "可使用的VIP等级"
+
+msgid "可视化"
+msgstr "可视化"
+
+msgid "可提现余额"
+msgstr "可提现余额"
+
+msgid "可提现余额：¥%s"
+msgstr "可提现余额：¥%s"
+
+msgid "可提现余额不足"
+msgstr "可提现余额不足"
+
+msgid "可提现余额不足，最低提现金额为 ¥%s"
+msgstr "可提现余额不足，最低提现金额为 ¥%s"
+
+msgid "可选，用于物流查询接口"
+msgstr "可选，用于物流查询接口"
+
+msgid "可以换个关键词，或清除状态筛选后再查看。"
+msgstr "可以换个关键词，或清除状态筛选后再查看。"
+
+msgid "可以先导出待发货单，填好物流公司和快递单号后，把前三列复制到这里。"
+msgstr "可以先导出待发货单，填好物流公司和快递单号后，把前三列复制到这里。"
+
+msgid "可用短代码"
+msgstr "可用短代码"
+
+msgid "可用库存："
+msgstr "可用库存："
+
+msgid "可指定分类和数量展示商品列表，可用于任意页面"
+msgstr "可指定分类和数量展示商品列表，可用于任意页面"
+
+msgid "克"
+msgstr "克"
+
+msgid "扣除"
+msgstr "扣除"
+
+msgid "库存(总/锁/售/可用)"
+msgstr "库存(总/锁/售/可用)"
+
+msgid "库存不足"
+msgstr "库存不足"
+
+msgid "库存低于此值时显示警告"
+msgstr "库存低于此值时显示警告"
+
+msgid "库存扣减失败"
+msgstr "库存扣减失败"
+
+msgid "库存扣减时机"
+msgstr "库存扣减时机"
+
+msgid "库存剩余 %d / %d"
+msgstr "库存剩余 %d / %d"
+
+msgid "库存实时扣减"
+msgstr "库存实时扣减"
+
+msgid "快递公司列表"
+msgstr "快递公司列表"
+
+msgid "快递公司已保存"
+msgstr "快递公司已保存"
+
+msgid "快递公司已删除"
+msgstr "快递公司已删除"
+
+msgid "快递物流"
+msgstr "快递物流"
+
+msgid "快捷操作（无需价格）"
+msgstr "快捷操作（无需价格）"
+
+msgid "快速添加："
+msgstr "快速添加："
+
+msgid "来源：%s；佣金：¥%s。"
+msgstr "来源：%s；佣金：¥%s。"
+
+msgid "来源参数"
+msgstr "来源参数"
+
+msgid "来源用户"
+msgstr "来源用户"
+
+msgid "类型"
+msgstr "类型"
+
+msgid "累计订单"
+msgstr "累计订单"
+
+msgid "累计数据"
+msgstr "累计数据"
+
+msgid "累计邀请 %d 人"
+msgstr "累计邀请 %d 人"
+
+msgid "累计佣金"
+msgstr "累计佣金"
+
+msgid "累计有效邀请（首单消费）%d 人"
+msgstr "累计有效邀请（首单消费）%d 人"
+
+msgid "立即参团"
+msgstr "立即参团"
+
+msgid "立即去支付"
+msgstr "立即去支付"
+
+msgid "立即助力"
+msgstr "立即助力"
+
+msgid "立减 ¥%s"
+msgstr "立减 ¥%s"
+
+msgid "例如 12px"
+msgstr "例如 12px"
+
+msgid "例如 14px"
+msgstr "例如 14px"
+
+msgid "例如 20px"
+msgstr "例如 20px"
+
+msgid "例如 40px, 3rem"
+msgstr "例如 40px, 3rem"
+
+msgid "例如: #f5f5f5, transparent"
+msgstr "例如: #f5f5f5, transparent"
+
+msgid "例如: 0, 20px, -60px (负值可覆盖上方元素)"
+msgstr "例如: 0, 20px, -60px (负值可覆盖上方元素)"
+
+msgid "例如: 0, 30px"
+msgstr "例如: 0, 30px"
+
+msgid "例如: 300px, 40vh"
+msgstr "例如: 300px, 40vh"
+
+msgid "例如: 30px, 2rem"
+msgstr "例如: 30px, 2rem"
+
+msgid "例如：1.00"
+msgstr "例如：1.00"
+
+msgid "例如：14px"
+msgstr "例如：14px"
+
+msgid "例如：16px"
+msgstr "例如：16px"
+
+msgid "例如：20px"
+msgstr "例如：20px"
+
+msgid "例如：SHOP202603051234ABCD"
+msgstr "例如：SHOP202603051234ABCD"
+
+msgid "连续天数"
+msgstr "连续天数"
+
+msgid "联系电话"
+msgstr "联系电话"
+
+msgid "联系电话:"
+msgstr "联系电话:"
+
+msgid "联系邮箱"
+msgstr "联系邮箱"
+
+msgid "联系邮箱：%s"
+msgstr "联系邮箱：%s"
+
+msgid "链接不能为空或失效"
+msgstr "链接不能为空或失效"
+
+msgid "链接地址"
+msgstr "链接地址"
+
+msgid "链接可能有效"
+msgstr "链接可能有效"
+
+msgid "链接已失效"
+msgstr "链接已失效"
+
+msgid "链接正常（需提取码）"
+msgstr "链接正常（需提取码）"
+
+msgid "电脑端列数"
+msgstr "电脑端列数"
+
+msgid "领取/使用"
+msgstr "领取/使用"
+
+msgid "领取成功，奖励已到账。"
+msgstr "领取成功，奖励已到账。"
+
+msgid "领取后%d天"
+msgstr "领取后%d天"
+
+msgid "领取后%d天有效"
+msgstr "领取后%d天有效"
+
+msgid "领取后N天有效"
+msgstr "领取后N天有效"
+
+msgid "领取奖励"
+msgstr "领取奖励"
+
+msgid "领取权限"
+msgstr "领取权限"
+
+msgid "领取设置"
+msgstr "领取设置"
+
+msgid "领取失败，请稍后重试"
+msgstr "领取失败，请稍后重试"
+
+msgid "领取数量更新失败"
+msgstr "领取数量更新失败"
+
+msgid "留空表示不启用"
+msgstr "留空表示不启用"
+
+msgid "留空表示永不过期"
+msgstr "留空表示永不过期"
+
+msgid "留空表示长期有效"
+msgstr "留空表示长期有效"
+
+msgid "留空或 0 表示使用等级默认时长"
+msgstr "留空或 0 表示使用等级默认时长"
+
+msgid "留空使用等级默认时长"
+msgstr "留空使用等级默认时长"
+
+msgid "留空使用默认图标"
+msgstr "留空使用默认图标"
+
+msgid "留空则使用该等级默认折扣率"
+msgstr "留空则使用该等级默认折扣率"
+
+msgid "留空自动获取[qls_all_products]页面"
+msgstr "留空自动获取[qls_all_products]页面"
+
+msgid "留空自动生成"
+msgstr "留空自动生成"
+
+msgid "轮播内容"
+msgstr "轮播内容"
+
+msgid "轮播项管理"
+msgstr "轮播项管理"
+
+msgid "买家"
+msgstr "买家"
+
+msgid "买家备注:"
+msgstr "买家备注:"
+
+msgid "满¥%s包邮"
+msgstr "满¥%s包邮"
+
+msgid "满额包邮"
+msgstr "满额包邮"
+
+msgid "没有可清理的记录"
+msgstr "没有可清理的记录"
+
+msgid "没有权限"
+msgstr "没有权限"
+
+msgid "没有找到匹配的订单"
+msgstr "没有找到匹配的订单"
+
+msgid "没有找到匹配的拼团"
+msgstr "没有找到匹配的拼团"
+
+msgid "没有找到匹配的商品"
+msgstr "没有找到匹配的商品"
+
+msgid "每 1 小时"
+msgstr "每 1 小时"
+
+msgid "每 10 分钟"
+msgstr "每 10 分钟"
+
+msgid "每 5 分钟"
+msgstr "每 5 分钟"
+
+msgid "每 6 小时"
+msgstr "每 6 小时"
+
+msgid "每人限领"
+msgstr "每人限领"
+
+msgid "每日统计明细 (%1$s 至 %2$s)"
+msgstr "每日统计明细 (%1$s 至 %2$s)"
+
+msgid "每条评价最多上传"
+msgstr "每条评价最多上传"
+
+msgid "每项包含：图标图片URL、标题、描述。全部留空的行不会保存。"
+msgstr "每项包含：图标图片URL、标题、描述。全部留空的行不会保存。"
+
+msgid "每行一单，按下面格式填写："
+msgstr "每行一单，按下面格式填写："
+
+msgid "每行一个，格式：名称,链接,提取码"
+msgstr "每行一个，格式：名称,链接,提取码"
+
+msgid "每行一个，格式：名称,链接,提取码 或 链接,提取码 或 仅链接"
+msgstr "每行一个，格式：名称,链接,提取码 或 链接,提取码 或 仅链接"
+
+msgid "每行一个下载链接，支持格式：<code>名称,链接,提取码</code> 或 <code>链接,提取码</code> 或 <code>仅链接</code>"
+msgstr "每行一个下载链接，支持格式：<code>名称,链接,提取码</code> 或 <code>链接,提取码</code> 或 <code>仅链接</code>"
+
+msgid "每行一条，支持格式：\n卡号\n卡号----卡密\n卡号,卡密"
+msgstr "每行一条，支持格式：\n卡号\n卡号----卡密\n卡号,卡密"
+
+msgid "每页"
+msgstr "每页"
+
+msgid "免费下载大部分资源"
+msgstr "免费下载大部分资源"
+
+msgid "面包屑"
+msgstr "面包屑"
+
+msgid "描述会作为页面搜索摘要使用"
+msgstr "描述会作为页面搜索摘要使用"
+
+msgid "模块背景色"
+msgstr "模块背景色"
+
+msgid "模块标题"
+msgstr "模块标题"
+
+msgid "模块加载失败，请稍后重试。"
+msgstr "模块加载失败，请稍后重试。"
+
+msgid "模块内边距"
+msgstr "模块内边距"
+
+msgid "模块圆角"
+msgstr "模块圆角"
+
+msgid "默认 (左对齐)"
+msgstr "默认 (左对齐)"
+
+msgid "默认 10"
+msgstr "默认 10"
+
+msgid "默认 5000 (5秒)"
+msgstr "默认 5000 (5秒)"
+
+msgid "默认: 全部商品"
+msgstr "默认: 全部商品"
+
+msgid "默认规格"
+msgstr "默认规格"
+
+msgid "默认清理不包含“预占中”记录；如需清理，请先筛选“预占中”状态后执行。"
+msgstr "默认清理不包含“预占中”记录；如需清理，请先筛选“预占中”状态后执行。"
+
+msgid "默认收货地址"
+msgstr "默认收货地址"
+
+msgid "默认为“参加更多”"
+msgstr "默认为“参加更多”"
+
+msgid "默认为“获取更多”"
+msgstr "默认为“获取更多”"
+
+msgid "默认显示"
+msgstr "默认显示"
+
+msgid "目标助力人数"
+msgstr "目标助力人数"
+
+msgid "内边距"
+msgstr "内边距"
+
+msgid "内容设置"
+msgstr "内容设置"
+
+msgid "内容最少字数"
+msgstr "内容最少字数"
+
+msgid "当前可享新人专属价"
+msgstr "当前可享新人专属价"
+
+msgid "当前不满足新人资格"
+msgstr "当前不满足新人资格"
+
+msgid "已参与该商品助力，当前助力未结束，请完成后再发起新的助力"
+msgstr "已参与该商品助力，当前助力未结束，请完成后再发起新的助力"
+
+msgid "已助力过该活动"
+msgstr "已助力过该活动"
+
+msgid "任务“%s”已领取，获得 %s。"
+msgstr "任务“%s”已领取，获得 %s。"
+
+msgid "已有新人专项订单待处理，暂不可重复使用新人价"
+msgstr "已有新人专项订单待处理，暂不可重复使用新人价"
+
+msgid "匿名"
+msgstr "匿名"
+
+msgid "匿名好友"
+msgstr "匿名好友"
+
+msgid "匿名评价"
+msgstr "匿名评价"
+
+msgid "匿名用户"
+msgstr "匿名用户"
+
+msgid "您参与的「%s」拼团未能在规定时间内成团，已自动取消。退款金额 ¥%.2f 已退回您的可提现余额。"
+msgstr "您参与的「%s」拼团未能在规定时间内成团，已自动取消。退款金额 ¥%.2f 已退回您的可提现余额。"
+
+msgid "您的 VIP 将于 %s 到期，剩余 %d 天。"
+msgstr "您的 VIP 将于 %s 到期，剩余 %d 天。"
+
+msgid "您的 VIP 已过期。"
+msgstr "您的 VIP 已过期。"
+
+msgid "您的 VIP 已于 %s 过期。"
+msgstr "您的 VIP 已于 %s 过期。"
+
+msgid "您的%s（订单号：%s）尚未支付，待支付金额：¥%s。"
+msgstr "您的%s（订单号：%s）尚未支付，待支付金额：¥%s。"
+
+msgid "您的充值订单（订单号：%s）尚未支付，待支付金额：¥%s。"
+msgstr "您的充值订单（订单号：%s）尚未支付，待支付金额：¥%s。"
+
+msgid "您的订单已完成发卡，以下是本次发放的卡号卡密，请妥善保管并尽快使用。"
+msgstr "您的订单已完成发卡，以下是本次发放的卡号卡密，请妥善保管并尽快使用。"
+
+msgid "您的商城订单（订单号：%s）尚未支付，待支付金额：¥%s。"
+msgstr "您的商城订单（订单号：%s）尚未支付，待支付金额：¥%s。"
+
+msgid "您的专属邀请码"
+msgstr "您的专属邀请码"
+
+msgid "您无权访问此资源"
+msgstr "您无权访问此资源"
+
+msgid "您邀请的用户 %s 已成功注册。"
+msgstr "您邀请的用户 %s 已成功注册。"
+
+msgid "您已参与此团"
+msgstr "您已参与此团"
+
+msgid "您已达到该商品的参团上限"
+msgstr "您已达到该商品的参团上限"
+
+msgid "您已点赞过"
+msgstr "您已点赞过"
+
+msgid "您已是会员，暂不支持使用兑换码"
+msgstr "您已是会员，暂不支持使用兑换码"
+
+msgid "您有 %1$s 积分将在 %2$s 过期（剩余 %3$d 天），请尽快使用。"
+msgstr "您有 %1$s 积分将在 %2$s 过期（剩余 %3$d 天），请尽快使用。"
+
+msgid "您有一笔订单仍待支付，请尽快完成支付。"
+msgstr "您有一笔订单仍待支付，请尽快完成支付。"
+
+msgid "您有一条新的会员通知，请查看以下详情。"
+msgstr "您有一条新的会员通知，请查看以下详情。"
+
+msgid "配送中订单"
+msgstr "配送中订单"
+
+msgid "批量操作完成：成功 %1$d 篇，跳过 %2$d 篇。"
+msgstr "批量操作完成：成功 %1$d 篇，跳过 %2$d 篇。"
+
+msgid "批量导入卡密"
+msgstr "批量导入卡密"
+
+msgid "批量改为免费"
+msgstr "批量改为免费"
+
+msgid "批量改为收费（下载）"
+msgstr "批量改为收费（下载）"
+
+msgid "批量关闭积分付费资源"
+msgstr "批量关闭积分付费资源"
+
+msgid "批量关闭资源"
+msgstr "批量关闭资源"
+
+msgid "批量启用积分付费资源"
+msgstr "批量启用积分付费资源"
+
+msgid "批量启用资源"
+msgstr "批量启用资源"
+
+msgid "批量设置查看价"
+msgstr "批量设置查看价"
+
+msgid "批量设置下载价"
+msgstr "批量设置下载价"
+
+msgid "批量设置下载价/查看价（同价）"
+msgstr "批量设置下载价/查看价（同价）"
+
+msgid "批量设置销售模式：付费查看"
+msgstr "批量设置销售模式：付费查看"
+
+msgid "批量设置销售模式：付费下载"
+msgstr "批量设置销售模式：付费下载"
+
+msgid "批量生成兑换码"
+msgstr "批量生成兑换码"
+
+msgid "批量生成注册码"
+msgstr "批量生成注册码"
+
+msgid "拼团不存在，已退款"
+msgstr "拼团不存在，已退款"
+
+msgid "拼团成功"
+msgstr "拼团成功"
+
+msgid "拼团成功，等待发货"
+msgstr "拼团成功，等待发货"
+
+msgid "拼团成功！"
+msgstr "拼团成功！"
+
+msgid "拼团成功后，商家会尽快安排发货"
+msgstr "拼团成功后，商家会尽快安排发货"
+
+msgid "拼团规则"
+msgstr "拼团规则"
+
+msgid "拼团失败"
+msgstr "拼团失败"
+
+msgid "拼团失败自动退款（团ID: %d）"
+msgstr "拼团失败自动退款（团ID: %d）"
+
+msgid "拼团退款"
+msgstr "拼团退款"
+
+msgid "拼团详情页，支持分享链接"
+msgstr "拼团详情页，支持分享链接"
+
+msgid "拼团展示"
+msgstr "拼团展示"
+
+msgid "拼团中"
+msgstr "拼团中"
+
+msgid "拼团状态筛选"
+msgstr "拼团状态筛选"
+
+msgid "评分"
+msgstr "评分"
+
+msgid "评分必须在1-5之间"
+msgstr "评分必须在1-5之间"
+
+msgid "评价功能已关闭"
+msgstr "评价功能已关闭"
+
+msgid "评价奖励积分"
+msgstr "评价奖励积分"
+
+msgid "评价可获得 %d 积分，带图额外 +%d 积分"
+msgstr "评价可获得 %d 积分，带图额外 +%d 积分"
+
+msgid "评价内容"
+msgstr "评价内容"
+
+msgid "评价内容至少%d个字"
+msgstr "评价内容至少%d个字"
+
+msgid "评价内容至少%d字"
+msgstr "评价内容至少%d字"
+
+msgid "评价筛选"
+msgstr "评价筛选"
+
+msgid "评价设置"
+msgstr "评价设置"
+
+msgid "评价设置已保存"
+msgstr "评价设置已保存"
+
+msgid "评价时限"
+msgstr "评价时限"
+
+msgid "评价提交成功"
+msgstr "评价提交成功"
+
+msgid "评价提交成功，等待审核"
+msgstr "评价提交成功，等待审核"
+
+msgid "评价条件"
+msgstr "评价条件"
+
+msgid "评价已删除"
+msgstr "评价已删除"
+
+msgid "评价已通过审核"
+msgstr "评价已通过审核"
+
+msgid "评价已隐藏"
+msgstr "评价已隐藏"
+
+msgid "评价状态更新失败"
+msgstr "评价状态更新失败"
+
+msgid "评价ID无效"
+msgstr "评价ID无效"
+
+msgid "普通"
+msgstr "普通"
+
+msgid "普通会员"
+msgstr "普通会员"
+
+msgid "启动支付宝应用支付"
+msgstr "启动支付宝应用支付"
+
+msgid "启灵商城 - 资源设置"
+msgstr "启灵商城 - 资源设置"
+
+msgid "启灵商城 - 资源下载框"
+msgstr "启灵商城 - 资源下载框"
+
+msgid "启用此优惠券"
+msgstr "启用此优惠券"
+
+msgid "启用积分付费资源"
+msgstr "启用积分付费资源"
+
+msgid "启用商城"
+msgstr "启用商城"
+
+msgid "启用商品评价"
+msgstr "启用商品评价"
+
+msgid "启用实物商城功能"
+msgstr "启用实物商城功能"
+
+msgid "启用新人专项"
+msgstr "启用新人专项"
+
+msgid "启用状态"
+msgstr "启用状态"
+
+msgid "启用资源出售"
+msgstr "启用资源出售"
+
+msgid "起始金额"
+msgstr "起始金额"
+
+msgid "签到"
+msgstr "签到"
+
+msgid "签到奖励"
+msgstr "签到奖励"
+
+msgid "签到奖励发放失败，请稍后重试"
+msgstr "签到奖励发放失败，请稍后重试"
+
+msgid "签到失败，请稍后重试"
+msgstr "签到失败，请稍后重试"
+
+msgid "前台展示"
+msgstr "前台展示"
+
+msgid "前缀"
+msgstr "前缀"
+
+msgid "浅色 (白字)"
+msgstr "浅色 (白字)"
+
+msgid "切换间隔 (ms)"
+msgstr "切换间隔 (ms)"
+
+msgid "清除已结束记录"
+msgstr "清除已结束记录"
+
+msgid "清空当前筛选记录"
+msgstr "清空当前筛选记录"
+
+msgid "清理待支付订单"
+msgstr "清理待支付订单"
+
+msgid "清理失败，请稍后重试"
+msgstr "清理失败，请稍后重试"
+
+msgid "请<a href=\"%s\">登录</a>订单所属账号后查看"
+msgstr "请<a href=\"%s\">登录</a>订单所属账号后查看"
+
+msgid "请<a href=\"%s\">登录</a>后查看订单"
+msgstr "请<a href=\"%s\">登录</a>后查看订单"
+
+msgid "请<a href=\"%s\">登录</a>后查看个人中心"
+msgstr "请<a href=\"%s\">登录</a>后查看个人中心"
+
+msgid "请<a href=\"%s\">登录</a>后查看下载内容"
+msgstr "请<a href=\"%s\">登录</a>后查看下载内容"
+
+msgid "请<a href=\"%s\">登录</a>后查看助力记录"
+msgstr "请<a href=\"%s\">登录</a>后查看助力记录"
+
+msgid "请<a href=\"%s\">登录</a>后继续结账"
+msgstr "请<a href=\"%s\">登录</a>后继续结账"
+
+msgid "请点击画布中的组件进行设置"
+msgstr "请点击画布中的组件进行设置"
+
+msgid "请点击要执行的批量操作按钮"
+msgstr "请点击要执行的批量操作按钮"
+
+msgid "请求过于频繁，请稍后重试"
+msgstr "请求过于频繁，请稍后重试"
+
+msgid "请求已过期，请刷新页面后重试。"
+msgstr "请求已过期，请刷新页面后重试。"
+
+msgid "请使用微信扫一扫支付"
+msgstr "请使用微信扫一扫支付"
+
+msgid "请使用支付宝扫码支付"
+msgstr "请使用支付宝扫码支付"
+
+msgid "请使用支付宝扫一扫支付"
+msgstr "请使用支付宝扫一扫支付"
+
+msgid "请输入大于等于 0 的有效价格"
+msgstr "请输入大于等于 0 的有效价格"
+
+msgid "请输入订单号"
+msgstr "请输入订单号"
+
+msgid "请输入购买时填写的手机号或邮箱"
+msgstr "请输入购买时填写的手机号或邮箱"
+
+msgid "请输入评价内容（至少%d字）"
+msgstr "请输入评价内容（至少%d字）"
+
+msgid "请输入有效的手机号"
+msgstr "请输入有效的手机号"
+
+msgid "请输入有效的提现金额"
+msgstr "请输入有效的提现金额"
+
+msgid "请输入有效的用户ID和VIP等级"
+msgstr "请输入有效的用户ID和VIP等级"
+
+msgid "请输入有效的邮箱"
+msgstr "请输入有效的邮箱"
+
+msgid "请输入真实姓名"
+msgstr "请输入真实姓名"
+
+msgid "请输入正确的订单号"
+msgstr "请输入正确的订单号"
+
+msgid "请输入注册码"
+msgstr "请输入注册码"
+
+msgid "请填写省/市/区及详细地址，例如：北京市朝阳区建国路88号"
+msgstr "请填写省/市/区及详细地址，例如：北京市朝阳区建国路88号"
+
+msgid "请填写退款原因（可选）"
+msgstr "请填写退款原因（可选）"
+
+msgid "请填写完整的收款信息"
+msgstr "请填写完整的收款信息"
+
+msgid "请填写完整信息"
+msgstr "请填写完整信息"
+
+msgid "请先<a href=\"%s\">登录</a>"
+msgstr "请先<a href=\"%s\">登录</a>"
+
+msgid "请先登录后继续结账"
+msgstr "请先登录后继续结账"
+
+msgid "请先登录后使用积分"
+msgstr "请先登录后使用积分"
+
+msgid "请先登录后使用积分支付"
+msgstr "请先登录后使用积分支付"
+
+msgid "请先登录后使用优惠券"
+msgstr "请先登录后使用优惠券"
+
+msgid "请先登录后再领取"
+msgstr "请先登录后再领取"
+
+msgid "请先登录后再领取任务奖励。"
+msgstr "请先登录后再领取任务奖励。"
+
+msgid "请先勾选要操作的商品。"
+msgstr "请先勾选要操作的商品。"
+
+msgid "请先勾选要操作的资源文章"
+msgstr "请先勾选要操作的资源文章"
+
+msgid "请先选择一个助力商品。"
+msgstr "请先选择一个助力商品。"
+
+msgid "请选择"
+msgstr "请选择"
+
+msgid "请选择 VIP 等级"
+msgstr "请选择 VIP 等级"
+
+msgid "请选择等级"
+msgstr "请选择等级"
+
+msgid "请选择可用的支付方式"
+msgstr "请选择可用的支付方式"
+
+msgid "请选择收货地址"
+msgstr "请选择收货地址"
+
+msgid "请选择图片"
+msgstr "请选择图片"
+
+msgid "请选择助力商品"
+msgstr "请选择助力商品"
+
+msgid "请在后台添加轮播图"
+msgstr "请在后台添加轮播图"
+
+msgid "取消订单"
+msgstr "取消订单"
+
+msgid "取消失败"
+msgstr "取消失败"
+
+msgid "取消原因"
+msgstr "取消原因"
+
+msgid "取消置顶"
+msgstr "取消置顶"
+
+msgid "去发货"
+msgstr "去发货"
+
+msgid "去付款"
+msgstr "去付款"
+
+msgid "去购买资源"
+msgstr "去购买资源"
+
+msgid "去结算"
+msgstr "去结算"
+
+msgid "去评价"
+msgstr "去评价"
+
+msgid "去商城看看"
+msgstr "去商城看看"
+
+msgid "去商城下单"
+msgstr "去商城下单"
+
+msgid "去售后处理"
+msgstr "去售后处理"
+
+msgid "去团购中心"
+msgstr "去团购中心"
+
+msgid "去完善生日"
+msgstr "去完善生日"
+
+msgid "去享新人价"
+msgstr "去享新人价"
+
+msgid "去邀请好友"
+msgstr "去邀请好友"
+
+msgid "去支付"
+msgstr "去支付"
+
+msgid "去装修"
+msgstr "去装修"
+
+msgid "全部订单"
+msgstr "全部订单"
+
+msgid "全部分类"
+msgstr "全部分类"
+
+msgid "全部类型"
+msgstr "全部类型"
+
+msgid "全部免费"
+msgstr "全部免费"
+
+msgid "全部商品分类"
+msgstr "全部商品分类"
+
+msgid "全部商品分类页面"
+msgstr "全部商品分类页面"
+
+msgid "全部商品入口"
+msgstr "全部商品入口"
+
+msgid "全部用户"
+msgstr "全部用户"
+
+msgid "全部助力活动"
+msgstr "全部助力活动"
+
+msgid "全部状态"
+msgstr "全部状态"
+
+msgid "全场包邮"
+msgstr "全场包邮"
+
+msgid "全场通用"
+msgstr "全场通用"
+
+msgid "全屏/盒模型轮播大图，支持视频、按钮、侧边栏导航"
+msgstr "全屏/盒模型轮播大图，支持视频、按钮、侧边栏导航"
+
+msgid "缺少必填字段: %s"
+msgstr "缺少必填字段: %s"
+
+msgid "确定将该活动切换为下架中吗？下架后前台大厅将不再显示，但已参与用户流程不受影响。"
+msgstr "确定将该活动切换为下架中吗？下架后前台大厅将不再显示，但已参与用户流程不受影响。"
+
+msgid "确定删除此订单？"
+msgstr "确定删除此订单？"
+
+msgid "确定删除此模块吗？"
+msgstr "确定删除此模块吗？"
+
+msgid "确定删除此项吗？"
+msgstr "确定删除此项吗？"
+
+msgid "确定删除此优惠券？"
+msgstr "确定删除此优惠券？"
+
+msgid "确定删除该兑换码？"
+msgstr "确定删除该兑换码？"
+
+msgid "确定删除该条记录？"
+msgstr "确定删除该条记录？"
+
+msgid "确定删除该注册码？"
+msgstr "确定删除该注册码？"
+
+msgid "确定删除所有待支付订单？"
+msgstr "确定删除所有待支付订单？"
+
+msgid "确定要撤销该售后申请吗？"
+msgstr "确定要撤销该售后申请吗？"
+
+msgid "确定要将该拼团直接标记为成团成功吗？"
+msgstr "确定要将该拼团直接标记为成团成功吗？"
+
+msgid "确定要解散此团并触发退款处理吗？该操作会影响已参与用户。"
+msgstr "确定要解散此团并触发退款处理吗？该操作会影响已参与用户。"
+
+msgid "确定要清空当前日志记录吗？此操作不可恢复。"
+msgstr "确定要清空当前日志记录吗？此操作不可恢复。"
+
+msgid "确定要清理所有未付款订单吗？此操作无法撤销。"
+msgstr "确定要清理所有未付款订单吗？此操作无法撤销。"
+
+msgid "确定要取消该订单吗？取消后无法恢复。"
+msgstr "确定要取消该订单吗？取消后无法恢复。"
+
+msgid "确定要删除此收货地址吗？此操作无法撤销。"
+msgstr "确定要删除此收货地址吗？此操作无法撤销。"
+
+msgid "确定要删除选中的商品吗？删除后不可恢复。"
+msgstr "确定要删除选中的商品吗？删除后不可恢复。"
+
+msgid "确定要删除这条评价吗？"
+msgstr "确定要删除这条评价吗？"
+
+msgid "确定已收到商品吗？确认后订单将完成。"
+msgstr "确定已收到商品吗？确认后订单将完成。"
+
+msgid "确定执行以下批量操作吗："
+msgstr "确定执行以下批量操作吗："
+
+msgid "确定重新上架该活动吗？"
+msgstr "确定重新上架该活动吗？"
+
+msgid "确认标记"
+msgstr "确认标记"
+
+msgid "确认成团"
+msgstr "确认成团"
+
+msgid "确认发货"
+msgstr "确认发货"
+
+msgid "确认该拼团关联订单已完成发货处理吗？"
+msgstr "确认该拼团关联订单已完成发货处理吗？"
+
+msgid "确认解散"
+msgstr "确认解散"
+
+msgid "确认清除"
+msgstr "确认清除"
+
+msgid "确认上架"
+msgstr "确认上架"
+
+msgid "确认收货"
+msgstr "确认收货"
+
+msgid "确认退款"
+msgstr "确认退款"
+
+msgid "确认退款并退回可提现余额？"
+msgstr "确认退款并退回可提现余额？"
+
+msgid "确认下架"
+msgstr "确认下架"
+
+msgid "确认赠送"
+msgstr "确认赠送"
+
+msgid "让利成本"
+msgstr "让利成本"
+
+msgid "热销活动"
+msgstr "热销活动"
+
+msgid "热销商品前 5 名"
+msgstr "热销商品前 5 名"
+
+msgid "人"
+msgstr "人"
+
+msgid "人数进度"
+msgstr "人数进度"
+
+msgid "人团"
+msgstr "人团"
+
+msgid "任务不存在或暂不可领取。"
+msgstr "任务不存在或暂不可领取。"
+
+msgid "任务积分变动"
+msgstr "任务积分变动"
+
+msgid "任务积分转换回滚"
+msgstr "任务积分转换回滚"
+
+msgid "任务积分转余额（扣减）"
+msgstr "任务积分转余额（扣减）"
+
+msgid "任务积分转余额（入账）"
+msgstr "任务积分转余额（入账）"
+
+msgid "任务奖励：%s"
+msgstr "任务奖励：%s"
+
+msgid "任务奖励（首次商城下单支付）"
+msgstr "任务奖励（首次商城下单支付）"
+
+msgid "任务奖励（首次邀请成功）"
+msgstr "任务奖励（首次邀请成功）"
+
+msgid "任务奖励（首次资源购买）"
+msgstr "任务奖励（首次资源购买）"
+
+msgid "任务奖励发放"
+msgstr "任务奖励发放"
+
+msgid "任务奖励回滚"
+msgstr "任务奖励回滚"
+
+msgid "任务奖励已到账"
+msgstr "任务奖励已到账"
+
+msgid "任务尚未完成，暂不可领取。"
+msgstr "任务尚未完成，暂不可领取。"
+
+msgid "任务退款"
+msgstr "任务退款"
+
+msgid "任务退款回滚"
+msgstr "任务退款回滚"
+
+msgid "任务托管"
+msgstr "任务托管"
+
+msgid "任务中心"
+msgstr "任务中心"
+
+msgid "仍可按商品原价正常购买"
+msgstr "仍可按商品原价正常购买"
+
+msgid "仍可按原价正常购买商品"
+msgstr "仍可按原价正常购买商品"
+
+msgid "日志"
+msgstr "日志"
+
+msgid "如：★ 4.8 (128条评价)"
+msgstr "如：★ 4.8 (128条评价)"
+
+msgid "如：7天无理由退货"
+msgstr "如：7天无理由退货"
+
+msgid "如：品牌、型号、尺寸"
+msgstr "如：品牌、型号、尺寸"
+
+msgid "如：顺丰速运"
+msgstr "如：顺丰速运"
+
+msgid "如：正品保障"
+msgstr "如：正品保障"
+
+msgid "如：正品保障，品质担保"
+msgstr "如：正品保障，品质担保"
+
+msgid "如：abc123"
+msgstr "如：abc123"
+
+msgid "如：https://example.com/icon.png"
+msgstr "如：https://example.com/icon.png"
+
+msgid "如：SF"
+msgstr "如：SF"
+
+msgid "若按钮无法点击，请复制邮件中的支付链接到浏览器打开。"
+msgstr "若按钮无法点击，请复制邮件中的支付链接到浏览器打开。"
+
+msgid "扫描待支付订单并触发召回通知（站内/邮件，仅登录用户订单）。仅在后台开启“订单召回通知”后执行。"
+msgstr "扫描待支付订单并触发召回通知（站内/邮件，仅登录用户订单）。仅在后台开启“订单召回通知”后执行。"
+
+msgid "扫描已支付但未完成到账的订单并自动补偿，避免扫码成功后积分/VIP/资源未到账。"
+msgstr "扫描已支付但未完成到账的订单并自动补偿，避免扫码成功后积分/VIP/资源未到账。"
+
+msgid "删除后不可恢复。系统会先校验是否还有用户参与中，有进行中活动将禁止删除。"
+msgstr "删除后不可恢复。系统会先校验是否还有用户参与中，有进行中活动将禁止删除。"
+
+msgid "删除活动"
+msgstr "删除活动"
+
+msgid "删除失败，请稍后重试"
+msgstr "删除失败，请稍后重试"
+
+msgid "删除失败，请稍后重试。"
+msgstr "删除失败，请稍后重试。"
+
+msgid "删除失败，注册码仍有关联的预占注册流程，请等待流程结束或超时后再删除"
+msgstr "删除失败，注册码仍有关联的预占注册流程，请等待流程结束或超时后再删除"
+
+msgid "删除SKU失败，请刷新页面后重试"
+msgstr "删除SKU失败，请刷新页面后重试"
+
+msgid "商城订单不存在"
+msgstr "商城订单不存在"
+
+msgid "商城订单待支付提醒"
+msgstr "商城订单待支付提醒"
+
+msgid "商城订单返积分：%s"
+msgstr "商城订单返积分：%s"
+
+msgid "商城订单失败退回积分：%s"
+msgstr "商城订单失败退回积分：%s"
+
+msgid "商城分类"
+msgstr "商城分类"
+
+msgid "商城购物：%s"
+msgstr "商城购物：%s"
+
+msgid "商城名称"
+msgstr "商城名称"
+
+msgid "商城商品"
+msgstr "商城商品"
+
+msgid "商城首页"
+msgstr "商城首页"
+
+msgid "商城首页底部"
+msgstr "商城首页底部"
+
+msgid "商城首页尚未配置装修模块"
+msgstr "商城首页尚未配置装修模块"
+
+msgid "商城未支付订单自动取消"
+msgstr "商城未支付订单自动取消"
+
+msgid "商品"
+msgstr "商品"
+
+msgid "商品标题"
+msgstr "商品标题"
+
+msgid "商品不存在或未上架"
+msgstr "商品不存在或未上架"
+
+msgid "商品不存在或已下架"
+msgstr "商品不存在或已下架"
+
+msgid "商品分类"
+msgstr "商品分类"
+
+msgid "商品规格"
+msgstr "商品规格"
+
+msgid "商品规格不存在"
+msgstr "商品规格不存在"
+
+msgid "商品件数:"
+msgstr "商品件数:"
+
+msgid "商品卡片显示评分"
+msgstr "商品卡片显示评分"
+
+msgid "商品库存不足"
+msgstr "商品库存不足"
+
+msgid "商品类型"
+msgstr "商品类型"
+
+msgid "商品内容:"
+msgstr "商品内容:"
+
+msgid "商品评价奖励"
+msgstr "商品评价奖励"
+
+msgid "商品数"
+msgstr "商品数"
+
+msgid "商品特色"
+msgstr "商品特色"
+
+msgid "商品图片/视频"
+msgstr "商品图片/视频"
+
+msgid "商品详情页底部"
+msgstr "商品详情页底部"
+
+msgid "商品详情页链接前缀，如：shop/product"
+msgstr "商品详情页链接前缀，如：shop/product"
+
+msgid "商品信息"
+msgstr "商品信息"
+
+msgid "商品已保存"
+msgstr "商品已保存"
+
+msgid "商品已删除"
+msgstr "商品已删除"
+
+msgid "商品已下架"
+msgstr "商品已下架"
+
+msgid "商品状态筛选"
+msgstr "商品状态筛选"
+
+msgid "商品编号列表"
+msgstr "商品编号列表"
+
+msgid "商品编号无效"
+msgstr "商品编号无效"
+
+msgid "商品链接前缀"
+msgstr "商品链接前缀"
+
+msgid "上传失败"
+msgstr "上传失败"
+
+msgid "上传图片"
+msgstr "上传图片"
+
+msgid "上传图片的评价额外奖励"
+msgstr "上传图片的评价额外奖励"
+
+msgid "上浮"
+msgstr "上浮"
+
+msgid "上架"
+msgstr "上架"
+
+msgid "上架活动"
+msgstr "上架活动"
+
+msgid "上架中"
+msgstr "上架中"
+
+msgid "上间距"
+msgstr "上间距"
+
+msgid "设为付费查看模式"
+msgstr "设为付费查看模式"
+
+msgid "设为付费下载模式"
+msgstr "设为付费下载模式"
+
+msgid "设为默认"
+msgstr "设为默认"
+
+msgid "设为默认地址"
+msgstr "设为默认地址"
+
+msgid "设为热门商品"
+msgstr "设为热门商品"
+
+msgid "设置多人拼团优惠价格，吸引更多用户参与"
+msgstr "设置多人拼团优惠价格，吸引更多用户参与"
+
+msgid "设置规格（如颜色）、规格值（如白色）、版本值（如128G），规格值可上传图片"
+msgstr "设置规格（如颜色）、规格值（如白色）、版本值（如128G），规格值可上传图片"
+
+msgid "设置商品的品牌、型号、尺寸等参数信息。点击预设参数名可快速添加。"
+msgstr "设置商品的品牌、型号、尺寸等参数信息。点击预设参数名可快速添加。"
+
+msgid "设置团购优惠价格"
+msgstr "设置团购优惠价格"
+
+msgid "申请金额"
+msgstr "申请金额"
+
+msgid "申请金额：¥%s；手续费：¥%s；预计到账：¥%s。"
+msgstr "申请金额：¥%s；手续费：¥%s；预计到账：¥%s。"
+
+msgid "申请失败，请稍后重试"
+msgstr "申请失败，请稍后重试"
+
+msgid "申请售后"
+msgstr "申请售后"
+
+msgid "申请售后/退款"
+msgstr "申请售后/退款"
+
+msgid "申请提现"
+msgstr "申请提现"
+
+msgid "深色 (黑字)"
+msgstr "深色 (黑字)"
+
+msgid "审核备注（可选）"
+msgstr "审核备注（可选）"
+
+msgid "审核驳回"
+msgstr "审核驳回"
+
+msgid "审核方式"
+msgstr "审核方式"
+
+msgid "审核通过"
+msgstr "审核通过"
+
+msgid "审核中"
+msgstr "审核中"
+
+msgid "升级失败，请重试"
+msgstr "升级失败，请重试"
+
+msgid "升级时间"
+msgstr "升级时间"
+
+msgid "升级VIP"
+msgstr "升级VIP"
+
+msgid "生成兑换码"
+msgstr "生成兑换码"
+
+msgid "生成数量"
+msgstr "生成数量"
+
+msgid "生成注册码"
+msgstr "生成注册码"
+
+msgid "生成SKU组合"
+msgstr "生成SKU组合"
+
+msgid "生日当天自动发券，支持重复调用去重（低频营销任务）。"
+msgstr "生日当天自动发券，支持重复调用去重（低频营销任务）。"
+
+msgid "生日礼遇"
+msgstr "生日礼遇"
+
+msgid "生日券"
+msgstr "生日券"
+
+msgid "生日券发放任务"
+msgstr "生日券发放任务"
+
+msgid "生日券已发放"
+msgstr "生日券已发放"
+
+msgid "省%s%%"
+msgstr "省%s%%"
+
+msgid "剩余"
+msgstr "剩余"
+
+msgid "剩余时间"
+msgstr "剩余时间"
+
+msgid "剩余时间："
+msgstr "剩余时间："
+
+msgid "剩余天数"
+msgstr "剩余天数"
+
+msgid "失败"
+msgstr "失败"
+
+msgid "十六进制颜色值"
+msgstr "十六进制颜色值"
+
+msgid "实付款:"
+msgstr "实付款:"
+
+msgid "实物订单发货通知"
+msgstr "实物订单发货通知"
+
+msgid "实物订单付款通知"
+msgstr "实物订单付款通知"
+
+msgid "实物订单取消通知"
+msgstr "实物订单取消通知"
+
+msgid "实物订单退款申请通知"
+msgstr "实物订单退款申请通知"
+
+msgid "实物订单退款通知"
+msgstr "实物订单退款通知"
+
+msgid "实物订单完成通知"
+msgstr "实物订单完成通知"
+
+msgid "实物商城订单"
+msgstr "实物商城订单"
+
+msgid "实物商品"
+msgstr "实物商品"
+
+msgid "实心"
+msgstr "实心"
+
+msgid "使用 Dashicons 类名，如：dashicons dashicons-yes"
+msgstr "使用 Dashicons 类名，如：dashicons dashicons-yes"
+
+msgid "使用场景"
+msgstr "使用场景"
+
+msgid "使用记录"
+msgstr "使用记录"
+
+msgid "使用默认规则"
+msgstr "使用默认规则"
+
+msgid "使用说明"
+msgstr "使用说明"
+
+msgid "使用条件"
+msgstr "使用条件"
+
+msgid "示例：百度网盘,https://pan.baidu.com/xxx,abc1"
+msgstr "示例：百度网盘,https://pan.baidu.com/xxx,abc1"
+
+msgid "事件"
+msgstr "事件"
+
+msgid "视频链接（可选）"
+msgstr "视频链接（可选）"
+
+msgid "适合从表格或快递助手复制物流信息，系统会逐行校验，只处理待发货订单。"
+msgstr "适合从表格或快递助手复制物流信息，系统会逐行校验，只处理待发货订单。"
+
+msgid "适用范围"
+msgstr "适用范围"
+
+msgid "收货地址"
+msgstr "收货地址"
+
+msgid "收货地址管理"
+msgstr "收货地址管理"
+
+msgid "收货后"
+msgstr "收货后"
+
+msgid "收货人:"
+msgstr "收货人:"
+
+msgid "收款人姓名"
+msgstr "收款人姓名"
+
+msgid "手动成团"
+msgstr "手动成团"
+
+msgid "手动模式有效，逗号分隔，例如：12,35,68"
+msgstr "手动模式有效，逗号分隔，例如：12,35,68"
+
+msgid "手动模式有效，逗号分隔，例如：3,8,12"
+msgstr "手动模式有效，逗号分隔，例如：3,8,12"
+
+msgid "手动指定活动ID"
+msgstr "手动指定活动ID"
+
+msgid "手动指定商品"
+msgstr "手动指定商品"
+
+msgid "手动指定优惠券编号"
+msgstr "手动指定优惠券编号"
+
+msgid "手动指定ID"
+msgstr "手动指定ID"
+
+msgid "手机号格式不正确"
+msgstr "手机号格式不正确"
+
+msgid "手机号或邮箱"
+msgstr "手机号或邮箱"
+
+msgid "手续费：%s%%"
+msgstr "手续费：%s%%"
+
+msgid "手续费：¥"
+msgstr "手续费：¥"
+
+msgid "手续费：¥%s"
+msgstr "手续费：¥%s"
+
+msgid "首次完成资源购买后可领取奖励"
+msgstr "首次完成资源购买后可领取奖励"
+
+msgid "首次在商城完成支付后可领取奖励"
+msgstr "首次在商城完成支付后可领取奖励"
+
+msgid "首单判断范围"
+msgstr "首单判断范围"
+
+msgid "首个商城支付订单将自动按新人价结算"
+msgstr "首个商城支付订单将自动按新人价结算"
+
+msgid "首重"
+msgstr "首重"
+
+msgid "首重%sg ¥%s，续重每%sg ¥%s"
+msgstr "首重%sg ¥%s，续重每%sg ¥%s"
+
+msgid "售后记录不存在"
+msgstr "售后记录不存在"
+
+msgid "售后日志写入失败"
+msgstr "售后日志写入失败"
+
+msgid "售后状态:"
+msgstr "售后状态:"
+
+msgid "售后状态更新失败"
+msgstr "售后状态更新失败"
+
+msgid "售罄"
+msgstr "售罄"
+
+msgid "授权"
+msgstr "授权"
+
+msgid "输入查看价"
+msgstr "输入查看价"
+
+msgid "输入订单号和购买时填写的手机号或邮箱，可查询游客订单状态。"
+msgstr "输入订单号和购买时填写的手机号或邮箱，可查询游客订单状态。"
+
+msgid "输入关键词按回车添加..."
+msgstr "输入关键词按回车添加..."
+
+msgid "输入回复内容..."
+msgstr "输入回复内容..."
+
+msgid "输入特色标签并按回车添加，如：年度旗舰、超长续航、好评如潮"
+msgstr "输入特色标签并按回车添加，如：年度旗舰、超长续航、好评如潮"
+
+msgid "输入统一价格"
+msgstr "输入统一价格"
+
+msgid "输入下载价"
+msgstr "输入下载价"
+
+msgid "输入用户ID"
+msgstr "输入用户ID"
+
+msgid "输入表情符号（🛒）或图标类名（如 icon-cart）"
+msgstr "输入表情符号（🛒）或图标类名（如 icon-cart）"
+
+msgid "数据来源"
+msgstr "数据来源"
+
+msgid "数量："
+msgstr "数量："
+
+msgid "数字越小越靠前"
+msgstr "数字越小越靠前"
+
+msgid "水平滚动"
+msgstr "水平滚动"
+
+msgid "私钥格式错误"
+msgstr "私钥格式错误"
+
+msgid "私钥格式错误，请检查支付宝配置"
+msgstr "私钥格式错误，请检查支付宝配置"
+
+msgid "送 %s %s"
+msgstr "送 %s %s"
+
+msgid "搜索"
+msgstr "搜索"
+
+msgid "搜索订单号、收货人、手机号..."
+msgstr "搜索订单号、收货人、手机号..."
+
+msgid "搜索订单号..."
+msgstr "搜索订单号..."
+
+msgid "搜索兑换码/用户"
+msgstr "搜索兑换码/用户"
+
+msgid "搜索分享码/活动/商品"
+msgstr "搜索分享码/活动/商品"
+
+msgid "搜索活动名或商品"
+msgstr "搜索活动名或商品"
+
+msgid "搜索结果"
+msgstr "搜索结果"
+
+msgid "搜索评价内容..."
+msgstr "搜索评价内容..."
+
+msgid "搜索商品..."
+msgstr "搜索商品..."
+
+msgid "搜索商品名称，点选商品后会自动带回活动表单。"
+msgstr "搜索商品名称，点选商品后会自动带回活动表单。"
+
+msgid "搜索商品名称..."
+msgstr "搜索商品名称..."
+
+msgid "搜索拼团编号、商品编号、商品名..."
+msgstr "搜索拼团编号、商品编号、商品名..."
+
+msgid "搜索用户(用户名/邮箱/昵称)..."
+msgstr "搜索用户(用户名/邮箱/昵称)..."
+
+msgid "搜索优惠券名称或码..."
+msgstr "搜索优惠券名称或码..."
+
+msgid "搜索注册码/用户"
+msgstr "搜索注册码/用户"
+
+msgid "缩放"
+msgstr "缩放"
+
+msgid "所有商品"
+msgstr "所有商品"
+
+msgid "所在地区:"
+msgstr "所在地区:"
+
+msgid "特定场景"
+msgstr "特定场景"
+
+msgid "提交回复"
+msgstr "提交回复"
+
+msgid "提交评价"
+msgstr "提交评价"
+
+msgid "提交评价后奖励的基础积分，设为0表示不奖励"
+msgstr "提交评价后奖励的基础积分，设为0表示不奖励"
+
+msgid "提交申请"
+msgstr "提交申请"
+
+msgid "提交失败"
+msgstr "提交失败"
+
+msgid "提交失败，请重试"
+msgstr "提交失败，请重试"
+
+msgid "提取码:"
+msgstr "提取码:"
+
+msgid "提取码：%s"
+msgstr "提取码：%s"
+
+msgid "提取码（选填）"
+msgstr "提取码（选填）"
+
+msgid "提取码已复制"
+msgstr "提取码已复制"
+
+msgid "提示"
+msgstr "提示"
+
+msgid "提现"
+msgstr "提现"
+
+msgid "提现单号"
+msgstr "提现单号"
+
+msgid "提现功能未启用"
+msgstr "提现功能未启用"
+
+msgid "提现管理"
+msgstr "提现管理"
+
+msgid "提现金额"
+msgstr "提现金额"
+
+msgid "提现金额：¥%s 已退回至您的可提现余额。"
+msgstr "提现金额：¥%s 已退回至您的可提现余额。"
+
+msgid "提现金额：¥%s；到账金额：¥%s。"
+msgstr "提现金额：¥%s；到账金额：¥%s。"
+
+msgid "提现拒绝通知"
+msgstr "提现拒绝通知"
+
+msgid "提现申请通知"
+msgstr "提现申请通知"
+
+msgid "提现申请已提交，请等待审核"
+msgstr "提现申请已提交，请等待审核"
+
+msgid "提现通过通知"
+msgstr "提现通过通知"
+
+msgid "提现未通过"
+msgstr "提现未通过"
+
+msgid "提现已打款"
+msgstr "提现已打款"
+
+msgid "体验VIP"
+msgstr "体验VIP"
+
+msgid "天后自动确认收货"
+msgstr "天后自动确认收货"
+
+msgid "天内可评价"
+msgstr "天内可评价"
+
+msgid "添加参数模板"
+msgstr "添加参数模板"
+
+msgid "添加分类"
+msgstr "添加分类"
+
+msgid "添加服务标签"
+msgstr "添加服务标签"
+
+msgid "添加购物车失败，请稍后重试"
+msgstr "添加购物车失败，请稍后重试"
+
+msgid "添加快递公司"
+msgstr "添加快递公司"
+
+msgid "添加模块"
+msgstr "添加模块"
+
+msgid "添加视频"
+msgstr "添加视频"
+
+msgid "添加图片"
+msgstr "添加图片"
+
+msgid "添加优惠券"
+msgstr "添加优惠券"
+
+msgid "添加运费规则"
+msgstr "添加运费规则"
+
+msgid "填 \"auto\" 自动生成，“none” 不显示，或填具体URL"
+msgstr "填 \"auto\" 自动生成，“none” 不显示，或填具体URL"
+
+msgid "填 0 使用商品规格库存"
+msgstr "填 0 使用商品规格库存"
+
+msgid "填 0 自动取商品最低价"
+msgstr "填 0 自动取商品最低价"
+
+msgid "填入本页待发货订单号"
+msgstr "填入本页待发货订单号"
+
+msgid "填写收货地址并提交订单"
+msgstr "填写收货地址并提交订单"
+
+msgid "通过"
+msgstr "通过"
+
+msgid "通栏全宽"
+msgstr "通栏全宽"
+
+msgid "通知标题"
+msgstr "通知标题"
+
+msgid "通知内容"
+msgstr "通知内容"
+
+msgid "统计范围：仅一级邀请"
+msgstr "统计范围：仅一级邀请"
+
+msgid "统计明细 (%1$s 至 %2$s)"
+msgstr "统计明细 (%1$s 至 %2$s)"
+
+msgid "统计周期：%1$s（%2$s 至 %3$s）"
+msgstr "统计周期：%1$s（%2$s 至 %3$s）"
+
+msgid "统一入口："
+msgstr "统一入口："
+
+msgid "统一执行 VIP 到期、游客清理、积分提醒与积分过期处理。"
+msgstr "统一执行 VIP 到期、游客清理、积分提醒与积分过期处理。"
+
+msgid "投稿资源并设置价格，当有用户购买时即可获得提成"
+msgstr "投稿资源并设置价格，当有用户购买时即可获得提成"
+
+msgid "透明"
+msgstr "透明"
+
+msgid "图标 + 文字"
+msgstr "图标 + 文字"
+
+msgid "图标尺寸"
+msgstr "图标尺寸"
+
+msgid "图标类名"
+msgstr "图标类名"
+
+msgid "图标链接"
+msgstr "图标链接"
+
+msgid "图片大小不能超过 2MB"
+msgstr "图片大小不能超过 2MB"
+
+msgid "图片格式不匹配"
+msgstr "图片格式不匹配"
+
+msgid "图片上限"
+msgstr "图片上限"
+
+msgid "团购"
+msgstr "团购"
+
+msgid "团购不存在"
+msgstr "团购不存在"
+
+msgid "团购订单暂不支持售后退款"
+msgstr "团购订单暂不支持售后退款"
+
+msgid "团购过期检查与失败退款"
+msgstr "团购过期检查与失败退款"
+
+msgid "团购活动已结束"
+msgstr "团购活动已结束"
+
+msgid "团购活动已结束，已退款"
+msgstr "团购活动已结束，已退款"
+
+msgid "团购价"
+msgstr "团购价"
+
+msgid "团购价格"
+msgstr "团购价格"
+
+msgid "团购价格不可使用优惠券"
+msgstr "团购价格不可使用优惠券"
+
+msgid "团购价应低于商品售价，以吸引用户参团"
+msgstr "团购价应低于商品售价，以吸引用户参团"
+
+msgid "团购兼容 Key（旧监控）"
+msgstr "团购兼容 Key（旧监控）"
+
+msgid "团购监控完整地址："
+msgstr "团购监控完整地址："
+
+msgid "团购库存不足"
+msgstr "团购库存不足"
+
+msgid "团购商品列表，展示所有开启团购的商品"
+msgstr "团购商品列表，展示所有开启团购的商品"
+
+msgid "团购设置"
+msgstr "团购设置"
+
+msgid "团购已解散，退款已处理"
+msgstr "团购已解散，退款已处理"
+
+msgid "团长"
+msgstr "团长"
+
+msgid "团ID"
+msgstr "团ID"
+
+msgid "推广收益"
+msgstr "推广收益"
+
+msgid "推广收益："
+msgstr "推广收益："
+
+msgid "推广佣金"
+msgstr "推广佣金"
+
+msgid "推广佣金到账通知"
+msgstr "推广佣金到账通知"
+
+msgid "退出登录"
+msgstr "退出登录"
+
+msgid "退款"
+msgstr "退款"
+
+msgid "退款备注（可选）"
+msgstr "退款备注（可选）"
+
+msgid "退款处理中，请稍后刷新"
+msgstr "退款处理中，请稍后刷新"
+
+msgid "退款回补库存"
+msgstr "退款回补库存"
+
+msgid "退款申请已提交"
+msgstr "退款申请已提交"
+
+msgid "退款失败，请稍后重试"
+msgstr "退款失败，请稍后重试"
+
+msgid "退款完成，助力库存已回补"
+msgstr "退款完成，助力库存已回补"
+
+msgid "退款完成（活动配置为不回补库存）"
+msgstr "退款完成（活动配置为不回补库存）"
+
+msgid "退款原因"
+msgstr "退款原因"
+
+msgid "退款中"
+msgstr "退款中"
+
+msgid "拖拽可排序，第一个为封面图"
+msgstr "拖拽可排序，第一个为封面图"
+
+msgid "外观设置"
+msgstr "外观设置"
+
+msgid "完成进度"
+msgstr "完成进度"
+
+msgid "完成任务即可领取奖励，更多任务将陆续上线。"
+msgstr "完成任务即可领取奖励，更多任务将陆续上线。"
+
+msgid "网格布局"
+msgstr "网格布局"
+
+msgid "网络错误，请稍后重试。"
+msgstr "网络错误，请稍后重试。"
+
+msgid "网络请求失败"
+msgstr "网络请求失败"
+
+msgid "网站顶部不显示购物车图标"
+msgstr "网站顶部不显示购物车图标"
+
+msgid "微信安全支付"
+msgstr "微信安全支付"
+
+msgid "微信支付接口调用失败：%s"
+msgstr "微信支付接口调用失败：%s"
+
+msgid "微信支付未配置，请联系管理员"
+msgstr "微信支付未配置，请联系管理员"
+
+msgid "未命名商品"
+msgstr "未命名商品"
+
+msgid "未能在规定时间内成团，已自动退款"
+msgstr "未能在规定时间内成团，已自动退款"
+
+msgid "未配置阿里云 AppCode"
+msgstr "未配置阿里云 AppCode"
+
+msgid "未配置奖励"
+msgstr "未配置奖励"
+
+msgid "未配置生日券"
+msgstr "未配置生日券"
+
+msgid "未配置召回通知方式"
+msgstr "未配置召回通知方式"
+
+msgid "未启用"
+msgstr "未启用"
+
+msgid "未启用H5支付"
+msgstr "未启用H5支付"
+
+msgid "未启用JSAPI支付"
+msgstr "未启用JSAPI支付"
+
+msgid "未设置生日"
+msgstr "未设置生日"
+
+msgid "未生成订单号"
+msgstr "未生成订单号"
+
+msgid "未生成任何兑换码，请确认等级设置"
+msgstr "未生成任何兑换码，请确认等级设置"
+
+msgid "未生成任何注册码，请重试"
+msgstr "未生成任何注册码，请重试"
+
+msgid "未完成"
+msgstr "未完成"
+
+msgid "未找到 PayPal 捕获记录"
+msgstr "未找到 PayPal 捕获记录"
+
+msgid "未找到可用商品规格"
+msgstr "未找到可用商品规格"
+
+msgid "未支付订单召回通知（可选）"
+msgstr "未支付订单召回通知（可选）"
+
+msgid "未知错误"
+msgstr "未知错误"
+
+msgid "未知网盘"
+msgstr "未知网盘"
+
+msgid "未知状态"
+msgstr "未知状态"
+
+msgid "文件扩展名不合法"
+msgstr "文件扩展名不合法"
+
+msgid "文章类型"
+msgstr "文章类型"
+
+msgid "文字大小"
+msgstr "文字大小"
+
+msgid "文字配色"
+msgstr "文字配色"
+
+msgid "文字位置"
+msgstr "文字位置"
+
+msgid "文字颜色"
+msgstr "文字颜色"
+
+msgid "我的参团信息"
+msgstr "我的参团信息"
+
+msgid "我的拼团"
+msgstr "我的拼团"
+
+msgid "我的拼团记录"
+msgstr "我的拼团记录"
+
+msgid "我的评价"
+msgstr "我的评价"
+
+msgid "我的邀请链接"
+msgstr "我的邀请链接"
+
+msgid "我的最近助力"
+msgstr "我的最近助力"
+
+msgid "无（顶级分类）"
+msgstr "无（顶级分类）"
+
+msgid "无法领取"
+msgstr "无法领取"
+
+msgid "无权操作"
+msgstr "无权操作"
+
+msgid "无权操作该售后申请"
+msgstr "无权操作该售后申请"
+
+msgid "无权操作该助力单"
+msgstr "无权操作该助力单"
+
+msgid "无权查看此订单"
+msgstr "无权查看此订单"
+
+msgid "无效的图片文件"
+msgstr "无效的图片文件"
+
+msgid "无效的下载请求"
+msgstr "无效的下载请求"
+
+msgid "无效用户"
+msgstr "无效用户"
+
+msgid "无需关联"
+msgstr "无需关联"
+
+msgid "物流单号"
+msgstr "物流单号"
+
+msgid "物流单号："
+msgstr "物流单号："
+
+msgid "物流单号为空"
+msgstr "物流单号为空"
+
+msgid "物流公司："
+msgstr "物流公司："
+
+msgid "物流配置已保存"
+msgstr "物流配置已保存"
+
+msgid "物流详情"
+msgstr "物流详情"
+
+msgid "物流信息"
+msgstr "物流信息"
+
+msgid "物流状态:"
+msgstr "物流状态:"
+
+msgid "系统超时自动取消"
+msgstr "系统超时自动取消"
+
+msgid "系统巡检：待支付订单已取消"
+msgstr "系统巡检：待支付订单已取消"
+
+msgid "下单失败"
+msgstr "下单失败"
+
+msgid "下单时间:"
+msgstr "下单时间:"
+
+msgid "下单时将自动按新人价结算"
+msgstr "下单时将自动按新人价结算"
+
+msgid "下单时扣减"
+msgstr "下单时扣减"
+
+msgid "下架"
+msgstr "下架"
+
+msgid "下架活动"
+msgstr "下架活动"
+
+msgid "下架中"
+msgstr "下架中"
+
+msgid "下间距"
+msgstr "下间距"
+
+msgid "下载+查看"
+msgstr "下载+查看"
+
+msgid "下载价"
+msgstr "下载价"
+
+msgid "下载价（%s）"
+msgstr "下载价（%s）"
+
+msgid "下载价/查看价同价"
+msgstr "下载价/查看价同价"
+
+msgid "下载价格"
+msgstr "下载价格"
+
+msgid "下载链接:"
+msgstr "下载链接:"
+
+msgid "下载链接：%s"
+msgstr "下载链接：%s"
+
+msgid "下载链接已过期，请刷新页面重试"
+msgstr "下载链接已过期，请刷新页面重试"
+
+msgid "下载链接已失效"
+msgstr "下载链接已失效"
+
+msgid "下载用户"
+msgstr "下载用户"
+
+msgid "先添加第一个商品，再设置价格、库存和小程序展示。"
+msgstr "先添加第一个商品，再设置价格、库存和小程序展示。"
+
+msgid "先在下方勾选资源，再点击对应按钮执行。"
+msgstr "先在下方勾选资源，再点击对应按钮执行。"
+
+msgid "显示"
+msgstr "显示"
+
+msgid "显示“参加更多”"
+msgstr "显示“参加更多”"
+
+msgid "显示“查看更多”"
+msgstr "显示“查看更多”"
+
+msgid "显示“更多助力”"
+msgstr "显示“更多助力”"
+
+msgid "显示“获取更多”"
+msgstr "显示“获取更多”"
+
+msgid "显示按钮"
+msgstr "显示按钮"
+
+msgid "显示操作按钮"
+msgstr "显示操作按钮"
+
+msgid "显示价格"
+msgstr "显示价格"
+
+msgid "显示库存进度"
+msgstr "显示库存进度"
+
+msgid "显示描述"
+msgstr "显示描述"
+
+msgid "显示模式"
+msgstr "显示模式"
+
+msgid "显示全部商品"
+msgstr "显示全部商品"
+
+msgid "显示商城首页，包含分类导航和商品列表"
+msgstr "显示商城首页，包含分类导航和商品列表"
+
+msgid "显示商品副标题"
+msgstr "显示商品副标题"
+
+msgid "显示设置"
+msgstr "显示设置"
+
+msgid "显示使用条件"
+msgstr "显示使用条件"
+
+msgid "显示数量限制"
+msgstr "显示数量限制"
+
+msgid "显示所有可领取的优惠券列表"
+msgstr "显示所有可领取的优惠券列表"
+
+msgid "显示位置"
+msgstr "显示位置"
+
+msgid "显示销量"
+msgstr "显示销量"
+
+msgid "显示已拼进度"
+msgstr "显示已拼进度"
+
+msgid "显示有效期"
+msgstr "显示有效期"
+
+msgid "显示与样式"
+msgstr "显示与样式"
+
+msgid "显示在模块顶部的标题"
+msgstr "显示在模块顶部的标题"
+
+msgid "显示助力按钮"
+msgstr "显示助力按钮"
+
+msgid "显示助力规则"
+msgstr "显示助力规则"
+
+msgid "显示资格提示栏"
+msgstr "显示资格提示栏"
+
+msgid "线框"
+msgstr "线框"
+
+msgid "限购 1 件"
+msgstr "限购 1 件"
+
+msgid "限时福利"
+msgstr "限时福利"
+
+msgid "限时活动"
+msgstr "限时活动"
+
+msgid "限时拼团"
+msgstr "限时拼团"
+
+msgid "限时助力"
+msgstr "限时助力"
+
+msgid "限首个商城支付订单"
+msgstr "限首个商城支付订单"
+
+msgid "详细地址:"
+msgstr "详细地址:"
+
+msgid "享受专属折扣"
+msgstr "享受专属折扣"
+
+msgid "消费类型"
+msgstr "消费类型"
+
+msgid "销售额分类占比"
+msgstr "销售额分类占比"
+
+msgid "销售模式"
+msgstr "销售模式"
+
+msgid "销售趋势 (%s 至 %s) - 按%s统计"
+msgstr "销售趋势 (%s 至 %s) - 按%s统计"
+
+msgid "销售提成到账"
+msgstr "销售提成到账"
+
+msgid "销售提成说明"
+msgstr "销售提成说明"
+
+msgid "小程序："
+msgstr "小程序："
+
+msgid "小程序装修标识"
+msgstr "小程序装修标识"
+
+msgid "小计"
+msgstr "小计"
+
+msgid "小时"
+msgstr "小时"
+
+msgid "小时未付款自动取消"
+msgstr "小时未付款自动取消"
+
+msgid "新的结束时间必须晚于当前时间"
+msgstr "新的结束时间必须晚于当前时间"
+
+msgid "新等级"
+msgstr "新等级"
+
+msgid "新等级：%s；有效期至：%s。"
+msgstr "新等级：%s；有效期至：%s。"
+
+msgid "新订单产生后会出现在这里，待发货订单会优先提醒。"
+msgstr "新订单产生后会出现在这里，待发货订单会优先提醒。"
+
+msgid "新人价"
+msgstr "新人价"
+
+msgid "新人商品"
+msgstr "新人商品"
+
+msgid "新人首单券"
+msgstr "新人首单券"
+
+msgid "新人首单专享活动"
+msgstr "新人首单专享活动"
+
+msgid "新人专享"
+msgstr "新人专享"
+
+msgid "新人专享价"
+msgstr "新人专享价"
+
+msgid "新人专项活动"
+msgstr "新人专项活动"
+
+msgid "新人专项商品仅限购1件"
+msgstr "新人专项商品仅限购1件"
+
+msgid "新人专项商品请先登录后购买"
+msgstr "新人专项商品请先登录后购买"
+
+msgid "新商品默认使用此规则"
+msgstr "新商品默认使用此规则"
+
+msgid "新增地址"
+msgstr "新增地址"
+
+msgid "新增一项"
+msgstr "新增一项"
+
+msgid "新增助力活动"
+msgstr "新增助力活动"
+
+msgid "修改"
+msgstr "修改"
+
+msgid "虚拟内容发放中，请稍后刷新查看。"
+msgstr "虚拟内容发放中，请稍后刷新查看。"
+
+msgid "虚拟内容发放中，请稍后刷新查询。"
+msgstr "虚拟内容发放中，请稍后刷新查询。"
+
+msgid "虚拟商品发卡信息"
+msgstr "虚拟商品发卡信息"
+
+msgid "虚拟商品设置"
+msgstr "虚拟商品设置"
+
+msgid "虚拟商品无需发货，支付后自动完成订单"
+msgstr "虚拟商品无需发货，支付后自动完成订单"
+
+msgid "虚拟资源订单"
+msgstr "虚拟资源订单"
+
+msgid "需满%.2f元可用"
+msgstr "需满%.2f元可用"
+
+msgid "需要售后跟进"
+msgstr "需要售后跟进"
+
+msgid "需要VIP%s及以上才能领取"
+msgstr "需要VIP%s及以上才能领取"
+
+msgid "续重费用"
+msgstr "续重费用"
+
+msgid "悬停效果"
+msgstr "悬停效果"
+
+msgid "选填，留空自动生成"
+msgstr "选填，留空自动生成"
+
+msgid "选择分类"
+msgstr "选择分类"
+
+msgid "选择助力商品"
+msgstr "选择助力商品"
+
+msgid "样式设置"
+msgstr "样式设置"
+
+msgid "邀请成功"
+msgstr "邀请成功"
+
+msgid "邀请规则"
+msgstr "邀请规则"
+
+msgid "邀请好友参团"
+msgstr "邀请好友参团"
+
+msgid "邀请好友注册，您可获得 %s %s奖励"
+msgstr "邀请好友注册，您可获得 %s %s奖励"
+
+msgid "邀请即减价"
+msgstr "邀请即减价"
+
+msgid "邀请奖励"
+msgstr "邀请奖励"
+
+msgid "邀请阶梯奖励：%s"
+msgstr "邀请阶梯奖励：%s"
+
+msgid "邀请链接"
+msgstr "邀请链接"
+
+msgid "邀请明细"
+msgstr "邀请明细"
+
+msgid "邀请参与 %s 的拼团，仅需 ¥%s"
+msgstr "邀请参与 %s 的拼团，仅需 ¥%s"
+
+msgid "邀请人"
+msgstr "邀请人"
+
+msgid "邀请人数："
+msgstr "邀请人数："
+
+msgid "邀请注册通知"
+msgstr "邀请注册通知"
+
+msgid "业务事件通知"
+msgstr "业务事件通知"
+
+msgid "页面"
+msgstr "页面"
+
+msgid "页面配置"
+msgstr "页面配置"
+
+msgid "一般"
+msgstr "一般"
+
+msgid "一级"
+msgstr "一级"
+
+msgid "一键清理未付款"
+msgstr "一键清理未付款"
+
+msgid "移动端高度"
+msgstr "移动端高度"
+
+msgid "移动端列数"
+msgstr "移动端列数"
+
+msgid "移动端图片 (可选)"
+msgstr "移动端图片 (可选)"
+
+msgid "已驳回"
+msgstr "已驳回"
+
+msgid "已超过%d天评价期限"
+msgstr "已超过%d天评价期限"
+
+msgid "已撤回"
+msgstr "已撤回"
+
+msgid "已撤销"
+msgstr "已撤销"
+
+msgid "已撤销退款申请"
+msgstr "已撤销退款申请"
+
+msgid "已存在待支付订单"
+msgstr "已存在待支付订单"
+
+msgid "已达到领取上限"
+msgstr "已达到领取上限"
+
+msgid "已冻结 %s 积分，冻结期间不可用于消费。"
+msgstr "已冻结 %s 积分，冻结期间不可用于消费。"
+
+msgid "已发放"
+msgstr "已发放"
+
+msgid "已发货"
+msgstr "已发货"
+
+msgid "已付款"
+msgstr "已付款"
+
+msgid "已更新"
+msgstr "已更新"
+
+msgid "已关闭"
+msgstr "已关闭"
+
+msgid "已过期，等待系统处理"
+msgstr "已过期，等待系统处理"
+
+msgid "已回滚"
+msgstr "已回滚"
+
+msgid "已解冻 %s 积分，当前可正常使用。"
+msgstr "已解冻 %s 积分，当前可正常使用。"
+
+msgid "已砍掉"
+msgstr "已砍掉"
+
+msgid "已评价"
+msgstr "已评价"
+
+msgid "已启用"
+msgstr "已启用"
+
+msgid "已抢%d件"
+msgstr "已抢%d件"
+
+msgid "已清理 %d 条记录"
+msgstr "已清理 %d 条记录"
+
+msgid "已确认收货"
+msgstr "已确认收货"
+
+msgid "已删除"
+msgstr "已删除"
+
+msgid "已上架"
+msgstr "已上架"
+
+msgid "已生成 %d/%d 个兑换码"
+msgstr "已生成 %d/%d 个兑换码"
+
+msgid "已生成 %d/%d 个注册码"
+msgstr "已生成 %d/%d 个注册码"
+
+msgid "已是会员，无法使用兑换码"
+msgstr "已是会员，无法使用兑换码"
+
+msgid "已售"
+msgstr "已售"
+
+msgid "已提现"
+msgstr "已提现"
+
+msgid "已添加到购物车"
+msgstr "已添加到购物车"
+
+msgid "已通过"
+msgstr "已通过"
+
+msgid "已退款至余额"
+msgstr "已退款至余额"
+
+msgid "已下架"
+msgstr "已下架"
+
+msgid "已移除"
+msgstr "已移除"
+
+msgid "已隐藏"
+msgstr "已隐藏"
+
+msgid "已助力 %d 人"
+msgstr "已助力 %d 人"
+
+msgid "以下是您的虚拟商品卡密信息，请妥善保管："
+msgstr "以下是您的虚拟商品卡密信息，请妥善保管："
+
+msgid "易支付未配置，请联系管理员"
+msgstr "易支付未配置，请联系管理员"
+
+msgid "阴影卡片"
+msgstr "阴影卡片"
+
+msgid "阴影增强"
+msgstr "阴影增强"
+
+msgid "隐藏"
+msgstr "隐藏"
+
+msgid "隐藏内容"
+msgstr "隐藏内容"
+
+msgid "隐藏内容（可选）"
+msgstr "隐藏内容（可选）"
+
+msgid "应用"
+msgstr "应用"
+
+msgid "营销任务"
+msgstr "营销任务"
+
+msgid "佣金金额"
+msgstr "佣金金额"
+
+msgid "佣金明细"
+msgstr "佣金明细"
+
+msgid "永不过期"
+msgstr "永不过期"
+
+msgid "用户 %s 充值了 %s 元\n订单号：%s\n到账积分：%s\n充值时间：%s"
+msgstr "用户 %s 充值了 %s 元\n订单号：%s\n到账积分：%s\n充值时间：%s"
+
+msgid "用户不存在"
+msgstr "用户不存在"
+
+msgid "用户参与的拼团记录(默认已集成到商城中心)"
+msgstr "用户参与的拼团记录(默认已集成到商城中心)"
+
+msgid "用户查看虚拟商品订单并快速复制下载内容"
+msgstr "用户查看虚拟商品订单并快速复制下载内容"
+
+msgid "用户查看自己的订单列表(有商城中心就可以不用)"
+msgstr "用户查看自己的订单列表(有商城中心就可以不用)"
+
+msgid "用户查看自己的助力记录"
+msgstr "用户查看自己的助力记录"
+
+msgid "用户撤销申请"
+msgstr "用户撤销申请"
+
+msgid "用户发起拼团后会显示在这里。"
+msgstr "用户发起拼团后会显示在这里。"
+
+msgid "用户个人中心，包含订单、消费、地址管理"
+msgstr "用户个人中心，包含订单、消费、地址管理"
+
+msgid "用户购买后显示的额外内容，支持基础排版"
+msgstr "用户购买后显示的额外内容，支持基础排版"
+
+msgid "用户签到通知"
+msgstr "用户签到通知"
+
+msgid "用户取消"
+msgstr "用户取消"
+
+msgid "用户信息不存在"
+msgstr "用户信息不存在"
+
+msgid "用户已删除 (ID:%d)"
+msgstr "用户已删除 (ID:%d)"
+
+msgid "用于查询物流轨迹。请前往"
+msgstr "用于查询物流轨迹。请前往"
+
+msgid "优惠"
+msgstr "优惠"
+
+msgid "优惠金额和按钮的主色调"
+msgstr "优惠金额和按钮的主色调"
+
+msgid "优惠类型"
+msgstr "优惠类型"
+
+msgid "优惠码"
+msgstr "优惠码"
+
+msgid "优惠码不存在"
+msgstr "优惠码不存在"
+
+msgid "优惠券不存在"
+msgstr "优惠券不存在"
+
+msgid "优惠券不适用于此类订单"
+msgstr "优惠券不适用于此类订单"
+
+msgid "优惠券不适用于当前分类"
+msgstr "优惠券不适用于当前分类"
+
+msgid "优惠券不适用于当前商品"
+msgstr "优惠券不适用于当前商品"
+
+msgid "优惠券还未开始发放"
+msgstr "优惠券还未开始发放"
+
+msgid "优惠券名称"
+msgstr "优惠券名称"
+
+msgid "优惠券无效或不属于当前账户"
+msgstr "优惠券无效或不属于当前账户"
+
+msgid "优惠券已过期"
+msgstr "优惠券已过期"
+
+msgid "优惠券已禁用"
+msgstr "优惠券已禁用"
+
+msgid "优惠券已领完"
+msgstr "优惠券已领完"
+
+msgid "优惠券已使用"
+msgstr "优惠券已使用"
+
+msgid "优惠券已使用或已过期"
+msgstr "优惠券已使用或已过期"
+
+msgid "优惠券编号列表"
+msgstr "优惠券编号列表"
+
+msgid "优惠设置"
+msgstr "优惠设置"
+
+msgid "优惠数值"
+msgstr "优惠数值"
+
+msgid "优先处理"
+msgstr "优先处理"
+
+msgid "优先处理待发货、退款中和异常订单，支持按订单号、收货人、手机号搜索。"
+msgstr "优先处理待发货、退款中和异常订单，支持按订单号、收货人、手机号搜索。"
+
+msgid "邮箱"
+msgstr "邮箱"
+
+msgid "邮箱：%s"
+msgstr "邮箱：%s"
+
+msgid "游客"
+msgstr "游客"
+
+msgid "游客输入订单号+手机号/邮箱查询订单状态，实物商城游客支付成功后默认跳转此页"
+msgstr "游客输入订单号+手机号/邮箱查询订单状态，实物商城游客支付成功后默认跳转此页"
+
+msgid "有"
+msgstr "有"
+
+msgid "有 %1$d 行未处理：%2$s"
+msgstr "有 %1$d 行未处理：%2$s"
+
+msgid "有效期"
+msgstr "有效期"
+
+msgid "有效期 %d 小时"
+msgstr "有效期 %d 小时"
+
+msgid "有效期类型"
+msgstr "有效期类型"
+
+msgid "有效期设置"
+msgstr "有效期设置"
+
+msgid "有效期限"
+msgstr "有效期限"
+
+msgid "右对齐"
+msgstr "右对齐"
+
+msgid "预计到账"
+msgstr "预计到账"
+
+msgid "预设常用的商品参数名称，如品牌、型号、尺寸、内存、版本等"
+msgstr "预设常用的商品参数名称，如品牌、型号、尺寸、内存、版本等"
+
+msgid "预占中"
+msgstr "预占中"
+
+msgid "元 或 %"
+msgstr "元 或 %"
+
+msgid "元（0表示无门槛）"
+msgstr "元（0表示无门槛）"
+
+msgid "元（百分比折扣时限定，0表示不限）"
+msgstr "元（百分比折扣时限定，0表示不限）"
+
+msgid "元/每%s克"
+msgstr "元/每%s克"
+
+msgid "原等级"
+msgstr "原等级"
+
+msgid "原价 %s %s"
+msgstr "原价 %s %s"
+
+msgid "原价 ¥%s"
+msgstr "原价 ¥%s"
+
+msgid "原因"
+msgstr "原因"
+
+msgid "原因：%s"
+msgstr "原因：%s"
+
+msgid "允许使用积分支付"
+msgstr "允许使用积分支付"
+
+msgid "允许游客下单"
+msgstr "允许游客下单"
+
+msgid "运费 ¥%s"
+msgstr "运费 ¥%s"
+
+msgid "运费规则"
+msgstr "运费规则"
+
+msgid "运费规则列表"
+msgstr "运费规则列表"
+
+msgid "运费规则已保存"
+msgstr "运费规则已保存"
+
+msgid "运费规则已删除"
+msgstr "运费规则已删除"
+
+msgid "再次购买"
+msgstr "再次购买"
+
+msgid "在侧边栏显示资源购买/下载框。只有当文章包含付费资源或下载链接时才会显示。"
+msgstr "在侧边栏显示资源购买/下载框。只有当文章包含付费资源或下载链接时才会显示。"
+
+msgid "在前台显示商品销量"
+msgstr "在前台显示商品销量"
+
+msgid "在商品列表卡片上显示评分和评价数"
+msgstr "在商品列表卡片上显示评分和评价数"
+
+msgid "在售商品"
+msgstr "在售商品"
+
+msgid "在线支付"
+msgstr "在线支付"
+
+msgid "在优惠券中心显示"
+msgstr "在优惠券中心显示"
+
+msgid "暂无参数模板，请添加常用的商品参数名称"
+msgstr "暂无参数模板，请添加常用的商品参数名称"
+
+msgid "暂无订单"
+msgstr "暂无订单"
+
+msgid "暂无订单记录"
+msgstr "暂无订单记录"
+
+msgid "暂无分类数据"
+msgstr "暂无分类数据"
+
+msgid "暂无服务标签"
+msgstr "暂无服务标签"
+
+msgid "暂无符合条件的资源文章"
+msgstr "暂无符合条件的资源文章"
+
+msgid "暂无积分记录"
+msgstr "暂无积分记录"
+
+msgid "暂无可参与的助力活动"
+msgstr "暂无可参与的助力活动"
+
+msgid "暂无可提现余额，推广获得佣金后可在此提现"
+msgstr "暂无可提现余额，推广获得佣金后可在此提现"
+
+msgid "暂无可下载的虚拟商品订单"
+msgstr "暂无可下载的虚拟商品订单"
+
+msgid "暂无可用的 VIP 等级，请先在“VIP 等级”中配置。"
+msgstr "暂无可用的 VIP 等级，请先在“VIP 等级”中配置。"
+
+msgid "暂无可用的VIP等级"
+msgstr "暂无可用的VIP等级"
+
+msgid "暂无可展示的助力活动，可先前往<a href=\"%s\">我的助力</a>查看"
+msgstr "暂无可展示的助力活动，可先前往<a href=\"%s\">我的助力</a>查看"
+
+msgid "暂无快递公司"
+msgstr "暂无快递公司"
+
+msgid "暂无拼团记录"
+msgstr "暂无拼团记录"
+
+msgid "暂无评价记录"
+msgstr "暂无评价记录"
+
+msgid "暂无评价数据"
+msgstr "暂无评价数据"
+
+msgid "暂无任务"
+msgstr "暂无任务"
+
+msgid "暂无日志"
+msgstr "暂无日志"
+
+msgid "暂无商品明细"
+msgstr "暂无商品明细"
+
+msgid "暂无收货地址"
+msgstr "暂无收货地址"
+
+msgid "暂无提现记录"
+msgstr "暂无提现记录"
+
+msgid "暂无图片"
+msgstr "暂无图片"
+
+msgid "暂无图文内容"
+msgstr "暂无图文内容"
+
+msgid "暂无团购商品"
+msgstr "暂无团购商品"
+
+msgid "暂无物流轨迹"
+msgstr "暂无物流轨迹"
+
+msgid "暂无相关商品"
+msgstr "暂无相关商品"
+
+msgid "暂无邀请记录，快去分享邀请链接吧！"
+msgstr "暂无邀请记录，快去分享邀请链接吧！"
+
+msgid "暂无佣金记录"
+msgstr "暂无佣金记录"
+
+msgid "暂无用户数据"
+msgstr "暂无用户数据"
+
+msgid "暂无优惠券"
+msgstr "暂无优惠券"
+
+msgid "暂无运费规则"
+msgstr "暂无运费规则"
+
+msgid "暂无助力活动"
+msgstr "暂无助力活动"
+
+msgid "暂无助力记录"
+msgstr "暂无助力记录"
+
+msgid "暂无VIP等级，请先在VIP设置中创建等级"
+msgstr "暂无VIP等级，请先在VIP设置中创建等级"
+
+msgid "增加"
+msgstr "增加"
+
+msgid "赠送 VIP"
+msgstr "赠送 VIP"
+
+msgid "赠送成功"
+msgstr "赠送成功"
+
+msgid "赠送失败，请重试"
+msgstr "赠送失败，请重试"
+
+msgid "赠送天数"
+msgstr "赠送天数"
+
+msgid "展示风格"
+msgstr "展示风格"
+
+msgid "展示好友助力活动，支持价格递减和库存进度"
+msgstr "展示好友助力活动，支持价格递减和库存进度"
+
+msgid "展示开启新人专项价的商品，支持首单专享引流"
+msgstr "展示开启新人专项价的商品，支持首单专享引流"
+
+msgid "展示可领取的优惠券，支持自动/手动选择"
+msgstr "展示可领取的优惠券，支持自动/手动选择"
+
+msgid "展示商城商品列表，支持按分类、热门、最新等方式筛选"
+msgstr "展示商城商品列表，支持按分类、热门、最新等方式筛选"
+
+msgid "展示商品分类导航，支持图标/文字/卡片等多种风格"
+msgstr "展示商品分类导航，支持图标/文字/卡片等多种风格"
+
+msgid "展示位置"
+msgstr "展示位置"
+
+msgid "展示限时拼团商品，支持进度条和价格对比"
+msgstr "展示限时拼团商品，支持进度条和价格对比"
+
+msgid "展示新人专属商品，新用户可享专项低价"
+msgstr "展示新人专属商品，新用户可享专项低价"
+
+msgid "站内通知场景未开启，且未启用邮件通知，召回任务已跳过。"
+msgstr "站内通知场景未开启，且未启用邮件通知，召回任务已跳过。"
+
+msgid "张"
+msgstr "张"
+
+msgid "张图片"
+msgstr "张图片"
+
+msgid "长期有效"
+msgstr "长期有效"
+
+msgid "折扣(%)"
+msgstr "折扣(%)"
+
+msgid "这将是它在站点上显示的名字"
+msgstr "这将是它在站点上显示的名字"
+
+msgid "这些参数会在添加商品时作为快速选择项出现"
+msgstr "这些参数会在添加商品时作为快速选择项出现"
+
+msgid "整块链接 (无按钮时使用)"
+msgstr "整块链接 (无按钮时使用)"
+
+msgid "支持 px 或 vh，例如: 500px, 80vh, 100vh"
+msgstr "支持 px 或 vh，例如: 500px, 80vh, 100vh"
+
+msgid "支出"
+msgstr "支出"
+
+msgid "支付宝/微信号/银行卡号"
+msgstr "支付宝/微信号/银行卡号"
+
+msgid "支付宝当面付创建失败：%s"
+msgstr "支付宝当面付创建失败：%s"
+
+msgid "支付宝接口调用失败"
+msgstr "支付宝接口调用失败"
+
+msgid "支付宝未配置，请联系管理员"
+msgstr "支付宝未配置，请联系管理员"
+
+msgid "支付宝支付 - %s"
+msgstr "支付宝支付 - %s"
+
+msgid "支付宝支付初始化失败"
+msgstr "支付宝支付初始化失败"
+
+msgid "支付补单对账（充值/资源/VIP/商城）"
+msgstr "支付补单对账（充值/资源/VIP/商城）"
+
+msgid "支付差额"
+msgstr "支付差额"
+
+msgid "支付成功，助力库存已核销"
+msgstr "支付成功，助力库存已核销"
+
+msgid "支付初始化失败"
+msgstr "支付初始化失败"
+
+msgid "支付处理模块未加载"
+msgstr "支付处理模块未加载"
+
+msgid "支付倒计时："
+msgstr "支付倒计时："
+
+msgid "支付订单"
+msgstr "支付订单"
+
+msgid "支付订单创建成功"
+msgstr "支付订单创建成功"
+
+msgid "支付二维码"
+msgstr "支付二维码"
+
+msgid "支付方式:"
+msgstr "支付方式:"
+
+msgid "支付服务不可用"
+msgstr "支付服务不可用"
+
+msgid "支付取消"
+msgstr "支付取消"
+
+msgid "支付入口"
+msgstr "支付入口"
+
+msgid "支付失败："
+msgstr "支付失败："
+
+msgid "支付时间:"
+msgstr "支付时间:"
+
+msgid "支付完成后请等待5秒左右"
+msgstr "支付完成后请等待5秒左右"
+
+msgid "支付网关不受支持"
+msgstr "支付网关不受支持"
+
+msgid "支付网关类不存在"
+msgstr "支付网关类不存在"
+
+msgid "支付网关未返回可本地生成二维码的数据"
+msgstr "支付网关未返回可本地生成二维码的数据"
+
+msgid "支付网关文件不存在"
+msgstr "支付网关文件不存在"
+
+msgid "支付召回的用户通知开关已关闭，任务已跳过。"
+msgstr "支付召回的用户通知开关已关闭，任务已跳过。"
+
+msgid "执行人"
+msgstr "执行人"
+
+msgid "只有购买用户才能评价"
+msgstr "只有购买用户才能评价"
+
+msgid "只支持 JPG、PNG 格式图片"
+msgstr "只支持 JPG、PNG 格式图片"
+
+msgid "指定分类"
+msgstr "指定分类"
+
+msgid "指定分类编号"
+msgstr "指定分类编号"
+
+msgid "指定商品/文章"
+msgstr "指定商品/文章"
+
+msgid "至"
+msgstr "至"
+
+msgid "至 %s"
+msgstr "至 %s"
+
+msgid "置顶"
+msgstr "置顶"
+
+msgid "重建资源标记"
+msgstr "重建资源标记"
+
+msgid "重新上架"
+msgstr "重新上架"
+
+msgid "重新上架失败，请稍后重试"
+msgstr "重新上架失败，请稍后重试"
+
+msgid "主题色"
+msgstr "主题色"
+
+msgid "助力成功"
+msgstr "助力成功"
+
+msgid "助力单不存在"
+msgstr "助力单不存在"
+
+msgid "助力单状态已变化，请刷新后重试"
+msgstr "助力单状态已变化，请刷新后重试"
+
+msgid "助力活动不存在或已失效"
+msgstr "助力活动不存在或已失效"
+
+msgid "助力活动不可用"
+msgstr "助力活动不可用"
+
+msgid "助力活动超时过期"
+msgstr "助力活动超时过期"
+
+msgid "助力活动过期，自动取消待支付订单"
+msgstr "助力活动过期，自动取消待支付订单"
+
+msgid "助力活动库存不足"
+msgstr "助力活动库存不足"
+
+msgid "助力活动列表页，用户可发起助力活动"
+msgstr "助力活动列表页，用户可发起助力活动"
+
+msgid "助力活动筛选"
+msgstr "助力活动筛选"
+
+msgid "助力活动已创建"
+msgstr "助力活动已创建"
+
+msgid "助力活动已过期"
+msgstr "助力活动已过期"
+
+msgid "助力记录"
+msgstr "助力记录"
+
+msgid "助力记录筛选"
+msgstr "助力记录筛选"
+
+msgid "助力减额"
+msgstr "助力减额"
+
+msgid "助力进度"
+msgstr "助力进度"
+
+msgid "助力库存"
+msgstr "助力库存"
+
+msgid "助力库存必须大于 0"
+msgstr "助力库存必须大于 0"
+
+msgid "助力人数"
+msgstr "助力人数"
+
+msgid "助力日志 #%d"
+msgstr "助力日志 #%d"
+
+msgid "助力商品"
+msgstr "助力商品"
+
+msgid "助力省钱"
+msgstr "助力省钱"
+
+msgid "助力有效期"
+msgstr "助力有效期"
+
+msgid "助力展示"
+msgstr "助力展示"
+
+msgid "助力中"
+msgstr "助力中"
+
+msgid "注册码"
+msgstr "注册码"
+
+msgid "注册码不存在"
+msgstr "注册码不存在"
+
+msgid "注册码列表"
+msgstr "注册码列表"
+
+msgid "注册码使用次数已用完"
+msgstr "注册码使用次数已用完"
+
+msgid "注册码使用失败，请重试"
+msgstr "注册码使用失败，请重试"
+
+msgid "注册码校验失败"
+msgstr "注册码校验失败"
+
+msgid "注册码验证通过，注册成功"
+msgstr "注册码验证通过，注册成功"
+
+msgid "注册码已过期"
+msgstr "注册码已过期"
+
+msgid "注册码已禁用"
+msgstr "注册码已禁用"
+
+msgid "注册码预占失败，请重试"
+msgstr "注册码预占失败，请重试"
+
+msgid "注册码预占用成功"
+msgstr "注册码预占用成功"
+
+msgid "注册失败，注册码已回滚"
+msgstr "注册失败，注册码已回滚"
+
+msgid "注册时间"
+msgstr "注册时间"
+
+msgid "生日快乐，生日券已到账！"
+msgstr "生日快乐，生日券已到账！"
+
+msgid "专属拼团链接已复制！"
+msgstr "专属拼团链接已复制！"
+
+msgid "转盘抽奖"
+msgstr "转盘抽奖"
+
+msgid "状态："
+msgstr "状态："
+
+msgid "状态设置"
+msgstr "状态设置"
+
+msgid "资源：%s；订单号：%s；金额：%s 元。"
+msgstr "资源：%s；订单号：%s；金额：%s 元。"
+
+msgid "资源：%s；提成：¥%s。"
+msgstr "资源：%s；提成：¥%s。"
+
+msgid "资源标记重建完成，本次共同步 %d 篇文章。"
+msgstr "资源标记重建完成，本次共同步 %d 篇文章。"
+
+msgid "资源不存在"
+msgstr "资源不存在"
+
+msgid "资源出售设置"
+msgstr "资源出售设置"
+
+msgid "资源订单"
+msgstr "资源订单"
+
+msgid "资源分类（文章分类）"
+msgstr "资源分类（文章分类）"
+
+msgid "资源购买"
+msgstr "资源购买"
+
+msgid "资源购买成功"
+msgstr "资源购买成功"
+
+msgid "资源购买通知"
+msgstr "资源购买通知"
+
+msgid "资源价格"
+msgstr "资源价格"
+
+msgid "资源开关"
+msgstr "资源开关"
+
+msgid "资源列表加载失败，请稍后重试或联系站点管理员。"
+msgstr "资源列表加载失败，请稍后重试或联系站点管理员。"
+
+msgid "资源下载未启用"
+msgstr "资源下载未启用"
+
+msgid "资源销售提成：%s"
+msgstr "资源销售提成：%s"
+
+msgid "字"
+msgstr "字"
+
+msgid "自定义顶部菜单购物车图标。支持表情符号或图标类名，留空显示默认图标。"
+msgstr "自定义顶部菜单购物车图标。支持表情符号或图标类名，留空显示默认图标。"
+
+msgid "自定义内容"
+msgstr "自定义内容"
+
+msgid "自定义折扣"
+msgstr "自定义折扣"
+
+msgid "自动 (热/新/折)"
+msgstr "自动 (热/新/折)"
+
+msgid "自动播放"
+msgstr "自动播放"
+
+msgid "自动获取 (一级分类)"
+msgstr "自动获取 (一级分类)"
+
+msgid "自动获取可领取优惠券"
+msgstr "自动获取可领取优惠券"
+
+msgid "自动获取启用活动"
+msgstr "自动获取启用活动"
+
+msgid "自动获取新人商品"
+msgstr "自动获取新人商品"
+
+msgid "自动获取最新拼团"
+msgstr "自动获取最新拼团"
+
+msgid "自动取消订单"
+msgstr "自动取消订单"
+
+msgid "自动确认收货"
+msgstr "自动确认收货"
+
+msgid "自动审核通过"
+msgstr "自动审核通过"
+
+msgid "总次数"
+msgstr "总次数"
+
+msgid "总订单"
+msgstr "总订单"
+
+msgid "总拼团数"
+msgstr "总拼团数"
+
+msgid "总体转化"
+msgstr "总体转化"
+
+msgid "总消费"
+msgstr "总消费"
+
+msgid "总用户数：%d"
+msgstr "总用户数：%d"
+
+msgid "组件库"
+msgstr "组件库"
+
+msgid "组件设置"
+msgstr "组件设置"
+
+msgid "最低 %s 元"
+msgstr "最低 %s 元"
+
+msgid "最低 ¥%s"
+msgstr "最低 ¥%s"
+
+msgid "最低到手价"
+msgstr "最低到手价"
+
+msgid "最低等级"
+msgstr "最低等级"
+
+msgid "最低价：¥%s"
+msgstr "最低价：¥%s"
+
+msgid "最低价不能高于起始价"
+msgstr "最低价不能高于起始价"
+
+msgid "最低金额"
+msgstr "最低金额"
+
+msgid "最低可到 ¥%s"
+msgstr "最低可到 ¥%s"
+
+msgid "最低提现金额：¥%s"
+msgstr "最低提现金额：¥%s"
+
+msgid "最低提现金额为￥%s"
+msgstr "最低提现金额为￥%s"
+
+msgid "最低消费"
+msgstr "最低消费"
+
+msgid "最多上传%d张图片"
+msgstr "最多上传%d张图片"
+
+msgid "最多上传%d张图片，单张不超过2MB，仅支持JPG/PNG格式"
+msgstr "最多上传%d张图片，单张不超过2MB，仅支持JPG/PNG格式"
+
+msgid "最多显示多少张优惠券"
+msgstr "最多显示多少张优惠券"
+
+msgid "最高可省"
+msgstr "最高可省"
+
+msgid "最高省 ¥%1$s (%2$d%%)"
+msgstr "最高省 ¥%1$s (%2$d%%)"
+
+msgid "最高优惠"
+msgstr "最高优惠"
+
+msgid "最后面"
+msgstr "最后面"
+
+msgid "最近到期日"
+msgstr "最近到期日"
+
+msgid "最前面"
+msgstr "最前面"
+
+msgid "左对齐"
+msgstr "左对齐"
+
+msgid "作者提成到账通知"
+msgstr "作者提成到账通知"
+
+msgid "作者佣金"
+msgstr "作者佣金"
+
+msgid "H5下单失败：%s"
+msgstr "H5下单失败：%s"
+
+msgid "H5支付请求失败"
+msgstr "H5支付请求失败"
+
+msgid "热卖"
+msgstr "热卖"
+
+msgid "https://..."
+msgstr "https://..."
+
+msgid "IP"
+msgstr "IP"
+
+msgid "JSAPI下单失败：%s"
+msgstr "JSAPI下单失败：%s"
+
+msgid "JSAPI支付请求失败"
+msgstr "JSAPI支付请求失败"
+
+msgid "MP4格式，设置后优先显示视频"
+msgstr "MP4格式，设置后优先显示视频"
+
+msgid "NEW"
+msgstr "NEW"
+
+msgid "PayPal 捕获失败"
+msgstr "PayPal 捕获失败"
+
+msgid "PayPal 捕获数据不完整"
+msgstr "PayPal 捕获数据不完整"
+
+msgid "PayPal 订单号为空"
+msgstr "PayPal 订单号为空"
+
+msgid "PayPal 回调参数缺失"
+msgstr "PayPal 回调参数缺失"
+
+msgid "PayPal 接口请求失败"
+msgstr "PayPal 接口请求失败"
+
+msgid "PayPal 未返回可用支付链接"
+msgstr "PayPal 未返回可用支付链接"
+
+msgid "PayPal 支付参数无效"
+msgstr "PayPal 支付参数无效"
+
+msgid "PayPal 支付金额无效"
+msgstr "PayPal 支付金额无效"
+
+msgid "PayPal 支付网关未加载"
+msgstr "PayPal 支付网关未加载"
+
+msgid "PayPal Client ID / Secret 未配置"
+msgstr "PayPal Client ID / Secret 未配置"
+
+msgid "电脑端高度"
+msgstr "电脑端高度"
+
+msgid "QLS202604160001,顺丰速运,SF123456789\nQLS202604160002,圆通速递,YT987654321"
+msgstr "QLS202604160001,顺丰速运,SF123456789\nQLS202604160002,圆通速递,YT987654321"
+
+msgid "ROI"
+msgstr "ROI"
+
+msgid "搜索关键词"
+msgstr "搜索关键词"
+
+msgid "SKU 删除失败，请重试"
+msgstr "SKU 删除失败，请重试"
+
+msgid "SKU管理"
+msgstr "SKU管理"
+
+msgid "Stripe 接口请求失败"
+msgstr "Stripe 接口请求失败"
+
+msgid "Stripe 未返回可跳转地址"
+msgstr "Stripe 未返回可跳转地址"
+
+msgid "Stripe 支付参数无效"
+msgstr "Stripe 支付参数无效"
+
+msgid "Stripe 支付初始化失败"
+msgstr "Stripe 支付初始化失败"
+
+msgid "Stripe 支付金额无效"
+msgstr "Stripe 支付金额无效"
+
+msgid "Stripe Secret Key 未配置"
+msgstr "Stripe Secret Key 未配置"
+
+msgid "task runner is locked"
+msgstr "task runner is locked"
+
+msgid "链接别名"
+msgstr "链接别名"
+
+msgid "VIP 到期检查 / 游客清理 / 积分过期维护"
+msgstr "VIP 到期检查 / 游客清理 / 积分过期维护"
+
+msgid "VIP 到期提醒通知"
+msgstr "VIP 到期提醒通知"
+
+msgid "VIP 等级不可用"
+msgstr "VIP 等级不可用"
+
+msgid "VIP 兑换码管理"
+msgstr "VIP 兑换码管理"
+
+msgid "VIP 即将到期"
+msgstr "VIP 即将到期"
+
+msgid "VIP 权益设置"
+msgstr "VIP 权益设置"
+
+msgid "VIP 升级通知"
+msgstr "VIP 升级通知"
+
+msgid "VIP 已过期"
+msgstr "VIP 已过期"
+
+msgid "VIP 已过期通知"
+msgstr "VIP 已过期通知"
+
+msgid "VIP等级"
+msgstr "VIP等级"
+
+msgid "VIP等级不存在"
+msgstr "VIP等级不存在"
+
+msgid "VIP订单"
+msgstr "VIP订单"
+
+msgid "VIP开通成功"
+msgstr "VIP开通成功"
+
+msgid "VIP开通失败，积分回退失败，请联系管理员处理"
+msgstr "VIP开通失败，积分回退失败，请联系管理员处理"
+
+msgid "VIP开通失败，请稍后重试"
+msgstr "VIP开通失败，请稍后重试"
+
+msgid "VIP开通失败退还积分：%s"
+msgstr "VIP开通失败退还积分：%s"
+
+msgid "VIP免费优先于折扣。"
+msgstr "VIP免费优先于折扣。"
+
+msgid "VIP用户"
+msgstr "VIP用户"
+
+msgid "VIP折扣"
+msgstr "VIP折扣"
+
+msgid "VIP最低等级"
+msgstr "VIP最低等级"
+
+msgid "WP默认注册流程使用成功"
+msgstr "WP默认注册流程使用成功"
+
+msgid "WP默认注册流程预占用"
+msgstr "WP默认注册流程预占用"
+
+msgid "WP默认注册失败，注册码已回滚"
+msgstr "WP默认注册失败，注册码已回滚"
+
+msgid "SKU价格"
+msgstr "SKU价格"
+
+msgid "SKU库存"
+msgstr "SKU库存"
+
+msgid "不修改"
+msgstr "不修改"
+
+msgid "不修改价格"
+msgstr "不修改价格"
+
+msgid "不修改分类"
+msgstr "不修改分类"
+
+msgid "不修改库存"
+msgstr "不修改库存"
+
+msgid "不修改排序"
+msgstr "不修改排序"
+
+msgid "不修改服务标签"
+msgstr "不修改服务标签"
+
+msgid "不修改运费规则"
+msgstr "不修改运费规则"
+
+msgid "仅影响实物商品，虚拟商品会自动跳过。"
+msgstr "仅影响实物商品，虚拟商品会自动跳过。"
+
+msgid "会修改所选商品的所有 SKU 原价，并自动同步商品价格区间。"
+msgstr "会修改所选商品的所有 SKU 原价，并自动同步商品价格区间。"
+
+msgid "会修改所选商品的所有 SKU 库存，并自动同步商品总库存。"
+msgstr "会修改所选商品的所有 SKU 库存，并自动同步商品总库存。"
+
+msgid "关闭新人专项价"
+msgstr "关闭新人专项价"
+
+msgid "减少库存"
+msgstr "减少库存"
+
+msgid "减少排序值"
+msgstr "减少排序值"
+
+msgid "只会修改已设置的字段，选择“不修改”的字段会保持原样。价格和库存会应用到所选商品的全部 SKU。"
+msgstr "只会修改已设置的字段，选择“不修改”的字段会保持原样。价格和库存会应用到所选商品的全部 SKU。"
+
+msgid "商品状态"
+msgstr "商品状态"
+
+msgid "增加库存"
+msgstr "增加库存"
+
+msgid "增加排序值"
+msgstr "增加排序值"
+
+msgid "将更新已选中的 {count} 件商品，未填写或选择“不修改”的字段会保持原样。是否继续？"
+msgstr "将更新已选中的 {count} 件商品，未填写或选择“不修改”的字段会保持原样。是否继续？"
+
+msgid "已上架 %d 件商品。"
+msgstr "已上架 %d 件商品。"
+
+msgid "已下架 %d 件商品。"
+msgstr "已下架 %d 件商品。"
+
+msgid "已删除 %d 件商品。"
+msgstr "已删除 %d 件商品。"
+
+msgid "已批量编辑 %d 件商品。"
+msgstr "已批量编辑 %d 件商品。"
+
+msgid "库存数量"
+msgstr "库存数量"
+
+msgid "开启并设置价格"
+msgstr "开启并设置价格"
+
+msgid "开始批量编辑"
+msgstr "开始批量编辑"
+
+msgid "批量编辑"
+msgstr "批量编辑"
+
+msgid "批量编辑商品"
+msgstr "批量编辑商品"
+
+msgid "按百分比减少"
+msgstr "按百分比减少"
+
+msgid "按百分比增加"
+msgstr "按百分比增加"
+
+msgid "按金额减少"
+msgstr "按金额减少"
+
+msgid "按金额增加"
+msgstr "按金额增加"
+
+msgid "排序值"
+msgstr "排序值"
+
+msgid "替换为所选标签"
+msgstr "替换为所选标签"
+
+msgid "未知批量操作。"
+msgstr "未知批量操作。"
+
+msgid "没有可更新的字段，商品未修改。"
+msgstr "没有可更新的字段，商品未修改。"
+
+msgid "移除所选标签"
+msgstr "移除所选标签"
+
+msgid "统一设为"
+msgstr "统一设为"
+
+msgid "设为未分类"
+msgstr "设为未分类"
+
+msgid "请先选择要操作的商品。"
+msgstr "请先选择要操作的商品。"
+
+msgid "请至少设置一个要批量修改的字段。"
+msgstr "请至少设置一个要批量修改的字段。"
+
+msgid "追加所选标签"
+msgstr "追加所选标签"
+
+msgid "选择“替换为所选标签”且不勾选任何标签时，会清空商品服务标签。"
+msgstr "选择“替换为所选标签”且不勾选任何标签时，会清空商品服务标签。"
+
+msgid "金额或百分比"
+msgstr "金额或百分比"
+
+msgid "%1$s（可用 %2$d / 已售 %3$d）"
+msgstr "%1$s（可用 %2$d / 已售 %3$d）"
+
+msgid "SKU"
+msgstr "SKU"
+
+msgid "SKU #%d"
+msgstr "SKU #%d"
+
+msgid "— 卡密管理"
+msgstr "— 卡密管理"
+
+msgid "例如 VIP-"
+msgstr "例如 VIP-"
+
+msgid "入库商品 / SKU"
+msgstr "入库商品 / SKU"
+
+msgid "全部 SKU"
+msgstr "全部 SKU"
+
+msgid "全部卡密商品"
+msgstr "全部卡密商品"
+
+msgid "共 %s 条卡密记录"
+msgstr "共 %s 条卡密记录"
+
+msgid "关联订单"
+msgstr "关联订单"
+
+msgid "卡号前缀"
+msgstr "卡号前缀"
+
+msgid "卡号随机位数"
+msgstr "卡号随机位数"
+
+msgid "卡密管理"
+msgstr "卡密管理"
+
+msgid "卡密随机位数"
+msgstr "卡密随机位数"
+
+msgid "售出时间"
+msgstr "售出时间"
+
+msgid "导入卡密"
+msgstr "导入卡密"
+
+msgid "导入完成：成功 %1$d 条，重复 %2$d 条，失败 %3$d 条。"
+msgstr "导入完成：成功 %1$d 条，重复 %2$d 条，失败 %3$d 条。"
+
+msgid "已售出"
+msgstr "已售出"
+
+msgid "总卡密"
+msgstr "总卡密"
+
+msgid "暂无卡密记录。"
+msgstr "暂无卡密记录。"
+
+msgid "未售出"
+msgstr "未售出"
+
+msgid "未知操作，请刷新页面后重试。"
+msgstr "未知操作，请刷新页面后重试。"
+
+msgid "未解析到有效卡密，请检查每行格式。"
+msgstr "未解析到有效卡密，请检查每行格式。"
+
+msgid "添加卡密商品"
+msgstr "添加卡密商品"
+
+msgid "生成卡密"
+msgstr "生成卡密"
+
+msgid "生成完成：成功 %1$d 条，重复 %2$d 条，失败 %3$d 条。"
+msgstr "生成完成：成功 %1$d 条，重复 %2$d 条，失败 %3$d 条。"
+
+msgid "生成数量需在 1 到 1000 之间。"
+msgstr "生成数量需在 1 到 1000 之间。"
+
+msgid "用于自动发卡库存预置；生成后只入库，不会主动发送给用户。"
+msgstr "用于自动发卡库存预置；生成后只入库，不会主动发送给用户。"
+
+msgid "自动生成卡密"
+msgstr "自动生成卡密"
+
+msgid "请先选择卡密虚拟商品和对应 SKU。"
+msgstr "请先选择卡密虚拟商品和对应 SKU。"
+
+msgid "请输入要导入的卡密。"
+msgstr "请输入要导入的卡密。"
+
+msgid "请选择卡密商品和 SKU"
+msgstr "请选择卡密商品和 SKU"
+
+msgid "还没有可管理的卡密商品。请先创建虚拟商品，并将交付类型设为“卡号卡密”。"
+msgstr "还没有可管理的卡密商品。请先创建虚拟商品，并将交付类型设为“卡号卡密”。"
+
+msgid "适合已有卡号卡密清单的场景，同一商品 SKU 下重复卡号会自动跳过。"
+msgstr "适合已有卡号卡密清单的场景，同一商品 SKU 下重复卡号会自动跳过。"
+
+msgid "集中管理虚拟商品卡密库存，支持按商品和 SKU 入库、生成与查询。"
+msgstr "集中管理虚拟商品卡密库存，支持按商品和 SKU 入库、生成与查询。"
+
+msgid "默认SKU"
+msgstr "默认SKU"
+
+msgid "每行一条，支持：\n卡号\n卡号----卡密\n卡号,卡密\n卡号\t卡密"
+msgstr "每行一条，支持：\n卡号\n卡号----卡密\n卡号,卡密\n卡号\t卡密"
+
+msgid "买家已退货"
+msgstr "买家已退货"
+
+msgid "已收货待退款"
+msgstr "已收货待退款"
+
+msgid "申请信息"
+msgstr "申请信息"
+
+msgid "退货信息"
+msgstr "退货信息"
+
+msgid "退货退款"
+msgstr "退货退款"
+
+msgid "仅退款"
+msgstr "仅退款"
+
+msgid "原因："
+msgstr "原因："
+
+msgid "未填写"
+msgstr "未填写"
+
+msgid "图片凭证："
+msgstr "图片凭证："
+
+msgid "售后凭证"
+msgstr "售后凭证"
+
+msgid "无图片凭证"
+msgstr "无图片凭证"
+
+msgid "退货地址："
+msgstr "退货地址："
+
+msgid "待审核通过后填写"
+msgstr "待审核通过后填写"
+
+msgid "退货物流："
+msgstr "退货物流："
+
+msgid "单号："
+msgstr "单号："
+
+msgid "买家退货时间："
+msgstr "买家退货时间："
+
+msgid "确认收货时间："
+msgstr "确认收货时间："
+
+msgid "虚拟商品无需退货物流"
+msgstr "虚拟商品无需退货物流"
+
+msgid "审核时间："
+msgstr "审核时间："
+
+msgid "退款时间："
+msgstr "退款时间："
+
+msgid "备注："
+msgstr "备注："
+
+msgid "退货地址（必填）"
+msgstr "退货地址（必填）"
+
+msgid "确定执行最终退款吗？"
+msgstr "确定执行最终退款吗？"
+
+msgid "最终退款"
+msgstr "最终退款"
+
+msgid "等待买家填写退货物流"
+msgstr "等待买家填写退货物流"
+
+msgid "确认已收到买家退货吗？"
+msgstr "确认已收到买家退货吗？"
+
+msgid "收货备注（可选）"
+msgstr "收货备注（可选）"
+
+msgid "请填写退货物流公司和单号"
+msgstr "请填写退货物流公司和单号"
+
+msgid "虚拟商品退款无需填写退货物流"
+msgstr "虚拟商品退款无需填写退货物流"
+
+msgid "当前状态无法填写退货物流"
+msgstr "当前状态无法填写退货物流"
+
+msgid "退货物流提交失败，请稍后重试"
+msgstr "退货物流提交失败，请稍后重试"
+
+msgid "买家已退货：%1$s %2$s"
+msgstr "买家已退货：%1$s %2$s"
+
+msgid "虚拟商品无需确认退货收货"
+msgstr "虚拟商品无需确认退货收货"
+
+msgid "当前状态无法确认收货"
+msgstr "当前状态无法确认收货"
+
+msgid "确认收货失败，请稍后重试"
+msgstr "确认收货失败，请稍后重试"
+
+msgid "管理员确认收到退货"
+msgstr "管理员确认收到退货"
+
+msgid "实物退货需确认收货后再退款"
+msgstr "实物退货需确认收货后再退款"
+
+msgid "待买家退货"
+msgstr "待买家退货"
+
+msgid "待退款"
+msgstr "待退款"
+
+msgid "请填写退货地址"
+msgstr "请填写退货地址"
+
+msgid "退货物流已提交"
+msgstr "退货物流已提交"
+
+msgid "售后原因:"
+msgstr "售后原因:"
+
+msgid "退货地址:"
+msgstr "退货地址:"
+
+msgid "退货物流:"
+msgstr "退货物流:"
+
+msgid "填写退货物流"
+msgstr "填写退货物流"
+
+msgid "请填写退货/退款原因"
+msgstr "请填写退货/退款原因"
+
+msgid "图片凭证（可选，最多6张）"
+msgstr "图片凭证（可选，最多6张）"
+
+msgid "请按商家提供的退货地址寄回商品后填写物流信息。"
+msgstr "请按商家提供的退货地址寄回商品后填写物流信息。"
+
+msgid "提交物流"
+msgstr "提交物流"
+
+msgid "最多上传6张图片"
+msgstr "最多上传6张图片"
+
+msgid "图片上传中..."
+msgstr "图片上传中..."
+
+msgid "图片上传中，请稍候"
+msgstr "图片上传中，请稍候"
+
+msgid "营销中心"
+msgstr "营销中心"
+
+msgid "— 营销中心"
+msgstr "— 营销中心"
+
+msgid "营销总览"
+msgstr "营销总览"
+
+msgid "营销页面"
+msgstr "营销页面"
+
+msgid "统一管理优惠券、新人专区、生日券和营销页面入口。拼团和好友助力保留在独立菜单，不纳入营销中心。"
+msgstr "统一管理优惠券、新人专区、生日券和营销页面入口。拼团和好友助力保留在独立菜单，不纳入营销中心。"
+
+msgid "启用 / 全部优惠券，用于领券中心、订单抵扣、生日券等场景。"
+msgstr "启用 / 全部优惠券，用于领券中心、订单抵扣、生日券等场景。"
+
+msgid "管理优惠券"
+msgstr "管理优惠券"
+
+msgid "已开启新人专项价的商品数量，适合首单转化和新客拉新。"
+msgstr "已开启新人专项价的商品数量，适合首单转化和新客拉新。"
+
+msgid "查看新人商品"
+msgstr "查看新人商品"
+
+msgid "会员生日当天自动发放指定优惠券，需要任务中心定时触发。"
+msgstr "会员生日当天自动发放指定优惠券，需要任务中心定时触发。"
+
+msgid "设置生日券"
+msgstr "设置生日券"
+
+msgid "已配置"
+msgstr "已配置"
+
+msgid "待完善"
+msgstr "待完善"
+
+msgid "集中配置优惠券中心和新人专区页面，方便前台导航和装修模块跳转。"
+msgstr "集中配置优惠券中心和新人专区页面，方便前台导航和装修模块跳转。"
+
+msgid "配置页面入口"
+msgstr "配置页面入口"
+
+msgid "最近新人专项商品"
+msgstr "最近新人专项商品"
+
+msgid "暂无新人专项商品。可以在商品编辑页开启“新人专项”并设置新人专享价。"
+msgstr "暂无新人专项商品。可以在商品编辑页开启“新人专项”并设置新人专享价。"
+
+msgid "新人专区基于商品级“新人专项价”运行。开启后，符合首单资格的用户可按新人价购买，且仅限购 1 件。"
+msgstr "新人专区基于商品级“新人专项价”运行。开启后，符合首单资格的用户可按新人价购买，且仅限购 1 件。"
+
+msgid "添加新人商品"
+msgstr "添加新人商品"
+
+msgid "去商品列表批量设置"
+msgstr "去商品列表批量设置"
+
+msgid "配置新人专区页面"
+msgstr "配置新人专区页面"
+
+msgid "暂无新人专项商品"
+msgstr "暂无新人专项商品"
+
+msgid "生日券由任务中心低频检查并自动发放，同一年同一张券只发一次。"
+msgstr "生日券由任务中心低频检查并自动发放，同一年同一张券只发一次。"
+
+msgid "生日优惠券"
+msgstr "生日优惠券"
+
+msgid "不指定"
+msgstr "不指定"
+
+msgid "需先创建并启用优惠券。若这里没有可选项，请先到“优惠券”标签页创建。"
+msgstr "需先创建并启用优惠券。若这里没有可选项，请先到“优惠券”标签页创建。"
+
+msgid "创建优惠券"
+msgstr "创建优惠券"
+
+msgid "这里只配置营销相关前台页面。拼团中心、助力中心仍在商城设置或对应独立菜单中维护。"
+msgstr "这里只配置营销相关前台页面。拼团中心、助力中心仍在商城设置或对应独立菜单中维护。"
+
+msgid "用途"
+msgstr "用途"
+
+msgid "绑定页面"
+msgstr "绑定页面"
+
+msgid "显示可领取优惠券列表"
+msgstr "显示可领取优惠券列表"
+
+msgid "展示开启新人专项价的商品"
+msgstr "展示开启新人专项价的商品"
+
+msgid "查看全部商城页面配置"
+msgstr "查看全部商城页面配置"
+
+msgid "商城 -> 营销中心 -> 优惠券"
+msgstr "商城 -> 营销中心 -> 优惠券"
+
+msgid "请先选择售后订单"
+msgstr "请先选择售后订单"
+
+msgid "图片上传失败，请重试"
+msgstr "图片上传失败，请重试"
+
+msgid "每个订单最多上传6张售后凭证"
+msgstr "每个订单最多上传6张售后凭证"
+
+msgid "该订单已存在售后申请"
+msgstr "该订单已存在售后申请"
+
+msgid "该订单暂不能上传售后凭证"
+msgstr "该订单暂不能上传售后凭证"
+
+msgid "（当前已停用）"
+msgstr "（当前已停用）"
+
+msgid "English"
+msgstr "English"
+
+msgid "启用发票功能"
+msgstr "启用发票功能"
+
+msgid "允许用户在商城订单中申请发票，并在商城中心管理常用发票信息"
+msgstr "允许用户在商城订单中申请发票，并在商城中心管理常用发票信息"
+
+msgid "关闭后前台隐藏发票申请入口和发票信息管理入口；已提交的发票记录仍可在后台发票管理中处理。"
+msgstr "关闭后前台隐藏发票申请入口和发票信息管理入口；已提交的发票记录仍可在后台发票管理中处理。"
+
+msgid "发票信息已保存"
+msgstr "发票信息已保存"
+
+msgid "发票信息已删除"
+msgstr "发票信息已删除"
+
+msgid "默认发票信息已更新"
+msgstr "默认发票信息已更新"
+
+msgid "发票抬头不存在"
+msgstr "发票抬头不存在"
+
+msgid "发票抬头删除失败"
+msgstr "发票抬头删除失败"
+
+msgid "默认发票抬头设置失败"
+msgstr "默认发票抬头设置失败"
+
+msgid "发票信息"
+msgstr "发票信息"
+
+msgid "发票信息管理"
+msgstr "发票信息管理"
+
+msgid "新增发票信息"
+msgstr "新增发票信息"
+
+msgid "暂无发票信息"
+msgstr "暂无发票信息"
+
+msgid "编辑发票信息"
+msgstr "编辑发票信息"
+
+msgid "开户信息:"
+msgstr "开户信息:"
+
+msgid "注册地址:"
+msgstr "注册地址:"
+
+msgid "开户银行"
+msgstr "开户银行"
+
+msgid "银行账号"
+msgstr "银行账号"
+
+msgid "注册地址"
+msgstr "注册地址"
+
+msgid "注册电话"
+msgstr "注册电话"
+
+msgid "设为默认发票信息"
+msgstr "设为默认发票信息"
+
+msgid "保存发票信息"
+msgstr "保存发票信息"
+
+msgid "常用发票信息"
+msgstr "常用发票信息"
+
+msgid "手动填写"
+msgstr "手动填写"
+
+msgid "确定删除该发票信息吗？"
+msgstr "确定删除该发票信息吗？"
+
+msgid "— 发票管理"
+msgstr "— 发票管理"
+
+msgid "个人抬头"
+msgstr "个人抬头"
+
+msgid "企业抬头"
+msgstr "企业抬头"
+
+msgid "企业抬头必填"
+msgstr "企业抬头必填"
+
+msgid "企业抬头请填写税号"
+msgstr "企业抬头请填写税号"
+
+msgid "企业税号"
+msgstr "企业税号"
+
+msgid "发票代码"
+msgstr "发票代码"
+
+msgid "发票功能暂未开启"
+msgstr "发票功能暂未开启"
+
+msgid "发票号码"
+msgstr "发票号码"
+
+msgid "发票号码:"
+msgstr "发票号码:"
+
+msgid "发票抬头"
+msgstr "发票抬头"
+
+msgid "发票抬头保存失败"
+msgstr "发票抬头保存失败"
+
+msgid "发票数据表不存在"
+msgstr "发票数据表不存在"
+
+msgid "发票状态:"
+msgstr "发票状态:"
+
+msgid "发票申请不存在"
+msgstr "发票申请不存在"
+
+msgid "发票申请保存失败"
+msgstr "发票申请保存失败"
+
+msgid "发票申请已提交"
+msgstr "发票申请已提交"
+
+msgid "发票申请提交失败"
+msgstr "发票申请提交失败"
+
+msgid "发票管理"
+msgstr "发票管理"
+
+msgid "发票类型"
+msgstr "发票类型"
+
+msgid "发票详情"
+msgstr "发票详情"
+
+msgid "处理备注"
+msgstr "处理备注"
+
+msgid "处理备注:"
+msgstr "处理备注:"
+
+msgid "处理时间"
+msgstr "处理时间"
+
+msgid "当前发票状态不可取消"
+msgstr "当前发票状态不可取消"
+
+msgid "当前发票状态不可开票"
+msgstr "当前发票状态不可开票"
+
+msgid "当前发票状态不可驳回"
+msgstr "当前发票状态不可驳回"
+
+msgid "当前订单状态暂不能申请发票"
+msgstr "当前订单状态暂不能申请发票"
+
+msgid "待开票"
+msgstr "待开票"
+
+msgid "打开电子发票"
+msgstr "打开电子发票"
+
+msgid "抬头"
+msgstr "抬头"
+
+msgid "接收方式"
+msgstr "接收方式"
+
+msgid "接收邮箱"
+msgstr "接收邮箱"
+
+msgid "提交后商家会在后台审核并开具发票，开票结果会显示在当前订单中。"
+msgstr "提交后商家会在后台审核并开具发票，开票结果会显示在当前订单中。"
+
+msgid "撤销发票"
+msgstr "撤销发票"
+
+msgid "无权操作该发票"
+msgstr "无权操作该发票"
+
+msgid "普通发票"
+msgstr "普通发票"
+
+msgid "查看发票"
+msgstr "查看发票"
+
+msgid "注册电话:"
+msgstr "注册电话:"
+
+msgid "用于接收电子发票，可选"
+msgstr "用于接收电子发票，可选"
+
+msgid "申请发票"
+msgstr "申请发票"
+
+msgid "电子普通发票"
+msgstr "电子普通发票"
+
+msgid "确定要撤销该发票申请吗？撤销后可以重新申请。"
+msgstr "确定要撤销该发票申请吗？撤销后可以重新申请。"
+
+msgid "税号:"
+msgstr "税号:"
+
+msgid "纸质普通发票"
+msgstr "纸质普通发票"
+
+msgid "该订单已有发票申请"
+msgstr "该订单已有发票申请"
+
+msgid "请先选择订单"
+msgstr "请先选择订单"
+
+msgid "请填写发票抬头"
+msgstr "请填写发票抬头"
+
+msgid "请输入发票抬头"
+msgstr "请输入发票抬头"
+
+msgid "邮箱:"
+msgstr "邮箱:"
+
+msgid "手机:"
+msgstr "手机:"
+
+msgid "重新申请发票"
+msgstr "重新申请发票"
+
+msgid "增值税专用发票"
+msgstr "增值税专用发票"
