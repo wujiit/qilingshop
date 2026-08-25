@@ -1,0 +1,2016 @@
+/**
+ * QilingShop Admin CSS
+ */
+
+/* Dashboard */
+.qilingshop-admin .stat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.qilingshop-admin .stat-card {
+    background: #f8fafc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px 30px;
+    min-width: 180px;
+    text-align: center;
+}
+
+.qilingshop-admin .stat-value {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e3a5f;
+    margin-bottom: 5px;
+}
+
+.qilingshop-admin .stat-label {
+    color: #3c434a;
+    font-size: 14px;
+}
+
+.qilingshop-admin .quick-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.qilingshop-admin .dashboard-section {
+    margin-bottom: 30px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.qilingshop-admin .dashboard-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form Table */
+.qilingshop-form .form-table th {
+    width: 150px;
+    padding: 15px 10px;
+}
+
+.qilingshop-form input[type="text"],
+.qilingshop-form input[type="number"],
+.qilingshop-form input[type="password"],
+.qilingshop-form select {
+    min-width: 200px;
+}
+
+.qilingshop-form textarea {
+    min-width: 500px;
+}
+
+/* Metabox */
+.qilingshop-metabox .form-table th {
+    width: 120px;
+    vertical-align: top;
+    padding: 15px 10px;
+}
+
+.qilingshop-metabox textarea {
+    font-family: monospace;
+}
+
+/* Nav Tabs */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+/* Virtual Resource Admin Theme (non-shop pages) */
+body.qilingshop-admin-shell .qilingshop-admin-page {
+    max-width: 1420px;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > h1 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .subsubsub {
+    float: none;
+    margin: 0 0 14px;
+    padding: 8px 12px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .subsubsub li {
+    float: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .subsubsub li:last-child {
+    margin-right: 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .subsubsub a {
+    color: #334155;
+    text-decoration: none;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .subsubsub a.current {
+    color: var(--qls-admin-primary);
+    font-weight: 600;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page > .wp-list-table,
+body.qilingshop-admin-shell .qilingshop-admin-page > .qls-ui-table,
+body.qilingshop-admin-shell .qilingshop-admin-page > .form-table,
+body.qilingshop-admin-shell .qilingshop-admin-page > .qls-ui-form-table {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page:not(.qilingshop-settings-page) > form {
+    margin: 0 0 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page:not(.qilingshop-settings-page) > form > h2,
+body.qilingshop-admin-shell .qilingshop-admin-page:not(.qilingshop-settings-page) > form > h3 {
+    margin-top: 0;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page:not(.qilingshop-settings-page) > form > .submit {
+    margin: 0;
+    padding-top: 12px;
+}
+
+/* Orders page: tabs + action button on one row */
+body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar {
+    margin: 0 0 10px;
+    padding: 8px 12px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar > .subsubsub {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    flex: 1;
+}
+
+body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar > .qls-admin-orders-actions-form {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar > .qls-admin-orders-actions-form .button {
+    margin: 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-table {
+    margin-top: 0;
+}
+
+@media (max-width: 782px) {
+    body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 10px;
+    }
+
+    body.qilingshop-admin-shell .qilingshop-orders-page > .qls-admin-orders-toolbar > .qls-admin-orders-actions-form {
+        justify-content: flex-start;
+    }
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page code {
+    padding: 2px 8px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #0f2945;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page .button-link.delete-link,
+body.qilingshop-admin-shell .qilingshop-admin-page .button-link-delete {
+    color: var(--qls-admin-danger);
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page .button-link.delete-link:hover,
+body.qilingshop-admin-shell .qilingshop-admin-page .button-link-delete:hover {
+    color: #9f1239;
+}
+
+/* Shared */
+.qilingshop-admin-page .qls-admin-text-right {
+    text-align: right;
+}
+
+.qilingshop-admin-page .qls-admin-inline-icon {
+    line-height: 28px;
+}
+
+/* Resource Bulk */
+.qilingshop-admin-page .qls-admin-resource-filter-form {
+    margin-bottom: 16px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-filter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: flex-end;
+}
+
+.qilingshop-admin-page .qls-admin-resource-actions-panel {
+    padding: 12px;
+    margin: 0 0 12px;
+    background: #f8fafc;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-actions-title {
+    margin: 0 0 10px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-actions-desc {
+    margin: 0 0 10px;
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-admin-resource-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 12px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-action-card {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.qilingshop-admin-page .qls-admin-resource-action-card-title {
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-price-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.qilingshop-admin-page .qls-admin-resource-price-row:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-check {
+    width: 38px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-id {
+    width: 80px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-type {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-sale {
+    width: 110px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-price {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-switch,
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-link {
+    width: 90px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-table .qls-admin-resource-col-time {
+    width: 160px;
+}
+
+.qilingshop-admin-page .qls-admin-resource-post-status {
+    color: #50575e;
+}
+
+.qilingshop-admin-page .qls-admin-resource-pagination {
+    margin-top: 12px;
+}
+
+/* Statistics */
+.qilingshop-admin-page .qls-filter-bar {
+    margin-bottom: 20px;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccd0d4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.qilingshop-admin-page .qls-quick-filters {
+    display: flex;
+    gap: 5px;
+}
+
+.qilingshop-admin-page .qls-quick-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #3c434a;
+    background: #f7f7f7;
+    font-size: 13px;
+}
+
+.qilingshop-admin-page .qls-quick-btn:hover {
+    background: #eee;
+    border-color: #3c434a;
+    color: #1d2327;
+}
+
+.qilingshop-admin-page .qls-quick-btn.active {
+    background: #e45f16;
+    color: #fff;
+    border-color: #e45f16;
+}
+
+.qilingshop-admin-page .qls-date-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.qilingshop-admin-page .qls-admin-stats-custom-label {
+    color: #3c434a;
+    font-size: 13px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-overview {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card {
+    background: #f8fafc;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 150px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card-label {
+    color: #3c434a;
+    font-size: 14px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card-value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card-value-users {
+    color: #1f2937;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card-value-income {
+    color: #00a32a;
+}
+
+.qilingshop-admin-page .qls-admin-stats-card-value-recharge {
+    color: #ff6600;
+}
+
+.qilingshop-admin-page .qls-admin-stats-chart-panel {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-chart-canvas {
+    max-height: 400px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-ranks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.qilingshop-admin-page .qls-admin-stats-rank-card {
+    flex: 1;
+    min-width: 300px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d4;
+}
+
+.qilingshop-admin-page .qls-admin-stats-rank-title {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-admin-page .qls-admin-resource-filter-grid,
+    .qilingshop-admin-page .qls-admin-stats-actions,
+    .qilingshop-admin-page .qls-date-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qilingshop-admin-page .qls-admin-resource-filter-grid input[type="search"],
+    .qilingshop-admin-page .qls-admin-resource-filter-grid select,
+    .qilingshop-admin-page .qls-admin-resource-filter-grid button,
+    .qilingshop-admin-page .qls-date-inputs input,
+    .qilingshop-admin-page .qls-date-inputs button,
+    .qilingshop-admin-page .qls-admin-stats-actions > a.button {
+        width: 100%;
+    }
+
+    .qilingshop-admin-page .qls-admin-resource-price-row {
+        grid-template-columns: 1fr;
+    }
+
+    .qilingshop-admin-page .qls-admin-stats-card,
+    .qilingshop-admin-page .qls-admin-stats-rank-card {
+        min-width: 100%;
+    }
+}
+
+/* Users */
+.qilingshop-admin-page .qls-gift-vip-box {
+    margin: 16px 0;
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #ccd0d4;
+    border-radius: 6px;
+}
+
+.qilingshop-admin-page .qls-gift-vip-box h2 {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.qilingshop-admin-page .qls-gift-vip-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    align-items: flex-end;
+}
+
+.qilingshop-admin-page .qls-gift-vip-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.qilingshop-admin-page .qls-gift-vip-form input,
+.qilingshop-admin-page .qls-gift-vip-form select {
+    min-width: 200px;
+    padding: 6px 8px;
+}
+
+.qilingshop-admin-page .qls-gift-vip-form button {
+    margin-top: 2px;
+}
+
+.qilingshop-admin-page .qilingshop-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.qilingshop-admin-page .qilingshop-modal {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.qilingshop-admin-page .qilingshop-modal.large-modal {
+    width: 600px;
+    max-width: 90%;
+}
+
+.qilingshop-admin-page .qilingshop-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid #d6e1ef;
+    background: #f3f7fc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: #4d647d;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.qilingshop-admin-page .qilingshop-modal-close:hover {
+    border-color: #0f766e;
+    background: #e8f8f5;
+    color: #0f766e;
+}
+
+.qilingshop-admin-page .qilingshop-modal h3 {
+    margin-top: 0;
+}
+
+.qilingshop-admin-page .qilingshop-modal-footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.qilingshop-admin-page #points-log-content {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.qilingshop-admin-page .points-log-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qilingshop-admin-page .points-log-table th,
+.qilingshop-admin-page .points-log-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
+
+.qilingshop-admin-page .points-log-table th {
+    font-weight: 700;
+    background: #f9f9f9;
+}
+
+.qilingshop-admin-page .log-income {
+    color: #28a745;
+}
+
+.qilingshop-admin-page .log-expense {
+    color: #dc3545;
+}
+
+.qilingshop-admin-page .qls-user-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 15px;
+    flex-wrap: wrap;
+}
+
+.qilingshop-admin-page .qls-user-filters label {
+    font-weight: 600;
+}
+
+.qilingshop-admin-page .qls-user-filters select {
+    min-width: 140px;
+}
+
+.qilingshop-admin-page .qls-user-counts {
+    color: #3c434a;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.qilingshop-admin-page .qls-user-counts .sep {
+    margin: 0 6px;
+    color: #ccc;
+}
+
+.qilingshop-admin-page .qls-user-modal-input {
+    width: 100%;
+}
+
+.qilingshop-admin-page .qls-user-log-loading,
+.qilingshop-admin-page .qls-user-log-empty {
+    text-align: center;
+}
+
+.qilingshop-admin-page .qls-user-log-error {
+    color: #dc3545;
+    text-align: center;
+}
+
+.qilingshop-admin-page .qls-user-spinner-inline {
+    float: none;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-admin-page .qls-gift-vip-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qilingshop-admin-page .qls-gift-vip-form input,
+    .qilingshop-admin-page .qls-gift-vip-form select,
+    .qilingshop-admin-page .qls-gift-vip-form button,
+    .qilingshop-admin-page .qls-user-filters select,
+    .qilingshop-admin-page .qls-user-filters button {
+        width: 100%;
+    }
+}
+
+/* Core Admin Extensions */
+.qilingshop-admin-page .qls-admin-col-rank {
+    width: 60px;
+}
+
+.qilingshop-admin-page .qls-admin-col-purchase {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-admin-col-amount,
+.qilingshop-admin-page .qls-admin-col-points {
+    width: 140px;
+}
+
+.qilingshop-admin-page .qls-admin-task-url {
+    max-width: 560px;
+}
+
+.qilingshop-admin-page .qls-inline-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 760px;
+}
+
+.qilingshop-admin-page .qls-inline-actions .regular-text {
+    flex: 1 1 auto;
+    min-width: 260px;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-admin-page .qls-inline-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    .qilingshop-admin-page .qls-inline-actions .regular-text,
+    .qilingshop-admin-page .qls-inline-actions .button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.qilingshop-admin-page .qls-admin-muted-text {
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-admin-empty-row {
+    text-align: center;
+    padding: 20px;
+}
+
+.qilingshop-admin-page .qls-admin-amount-positive,
+.qilingshop-admin-page .qls-admin-amount-positive-text {
+    color: #28a745;
+}
+
+.qilingshop-admin-page .qls-admin-note-danger {
+    color: #dc3545;
+}
+
+.qilingshop-admin-page .qls-admin-status-success {
+    color: #28a745;
+}
+
+.qilingshop-admin-page .qls-admin-status-danger {
+    color: #dc3545;
+}
+
+.qilingshop-admin-page .qls-admin-modal-hidden {
+    display: none;
+}
+
+.qilingshop-admin-page .qls-admin-alert-danger {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.qilingshop-admin-page .qls-admin-textarea-full {
+    width: 100%;
+}
+
+.qilingshop-admin-page .qls-admin-btn-danger {
+    background: #dc3545;
+    border-color: #dc3545;
+}
+
+.qilingshop-admin-page .qls-admin-subtitle-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.qilingshop-admin-page .qls-admin-link-plain {
+    text-decoration: none;
+}
+
+.qilingshop-admin-page .qls-admin-vip-level-name {
+    font-weight: 600;
+}
+
+/* Settings */
+.qilingshop-admin-page .qls-cache-status {
+    margin-left: 10px;
+    display: none;
+}
+
+.qilingshop-admin-page .qls-status-text-success {
+    color: green;
+}
+
+.qilingshop-admin-page .qls-status-text-error {
+    color: red;
+}
+
+.qilingshop-admin-page .qls-status-text-muted {
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-section-divider {
+    margin: 30px 0;
+}
+
+.qilingshop-admin-page .qls-settings-section-title {
+    margin-top: 30px;
+}
+
+.qilingshop-admin-page .qls-settings-subtitle {
+    margin-top: 12px;
+}
+
+.qilingshop-admin-page .qls-settings-stack-10 {
+    margin-top: 10px;
+}
+
+.qilingshop-admin-page .qls-settings-stack-8 {
+    margin-top: 8px;
+}
+
+.qilingshop-admin-page .qls-settings-label-gap {
+    margin-right: 14px;
+}
+
+.qilingshop-admin-page .qls-settings-label-gap-sm {
+    margin-right: 8px;
+}
+
+.qilingshop-admin-page .qls-settings-task-table {
+    max-width: 960px;
+}
+
+.qilingshop-admin-page .qls-settings-col-task {
+    width: 280px;
+}
+
+.qilingshop-admin-page .qls-settings-col-interval {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-settings-rules-table {
+    margin-top: 15px;
+}
+
+.qilingshop-admin-page .qls-settings-form-panel {
+    background: #f8fafc;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.qilingshop-admin-page .qls-settings-form-panel-soft {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.qilingshop-admin-page .qls-settings-form-title {
+    margin-top: 0;
+}
+
+.qilingshop-admin-page .qls-settings-hidden {
+    display: none;
+}
+
+.qilingshop-admin-page .qls-settings-points-row {
+    margin-top: 8px;
+}
+
+.qilingshop-admin-page .qls-settings-empty-muted {
+    text-align: center;
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-settings-input-120 {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-settings-input-90 {
+    width: 90px;
+}
+
+.qilingshop-admin-page .qls-settings-input-80 {
+    width: 80px;
+}
+
+.qilingshop-admin-page .qls-settings-input-50 {
+    width: 50px;
+}
+
+.qilingshop-admin-page .qls-settings-input-300 {
+    width: 300px;
+}
+
+.qilingshop-admin-page .qls-settings-input-full {
+    width: 100%;
+}
+
+.qilingshop-admin-page .qls-settings-table-no-margin {
+    margin-top: 0;
+}
+
+.qilingshop-admin-page .qls-settings-link-danger {
+    color: #a00;
+}
+
+.qilingshop-admin-page .qls-settings-link-danger:hover {
+    color: #7a0014;
+}
+
+.qilingshop-admin-page .qls-settings-guide-text {
+    margin-top: 10px;
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-settings-margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.qilingshop-admin-page .qls-settings-inline-tip {
+    margin-left: 10px;
+}
+
+.qilingshop-admin-page .qls-description-muted-tight {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-notify-scene-card {
+    margin: 16px 0;
+    padding: 18px 20px;
+    border: 1px solid var(--qls-admin-border, #dce3ed);
+    border-radius: var(--qls-admin-radius-md, 12px);
+    background: #ffffff;
+    box-shadow: var(--qls-admin-shadow, 0 4px 16px rgba(15, 23, 42, 0.06));
+}
+
+.qilingshop-admin-page .qls-notify-scene-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--qls-admin-text, #0f172a);
+    margin-bottom: 6px;
+}
+
+.qilingshop-admin-page .qls-notify-scene-subtitle {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--qls-admin-text, #0f172a);
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
+.qilingshop-admin-page .qls-notify-switch-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.qilingshop-admin-page .qls-notify-switch-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--qls-admin-text, #0f172a);
+    cursor: pointer;
+}
+
+.qilingshop-admin-page .qls-notify-switch-label input[type="checkbox"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.qilingshop-admin-page .qls-notify-channel-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--qls-admin-text, #0f172a);
+    cursor: pointer;
+}
+
+/* 自定义标签页 */
+.qilingshop-admin-page .qls-settings-group {
+    margin-bottom: 30px;
+}
+
+.qilingshop-admin-page .qls-settings-group h3 {
+    font-size: 16px;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.qilingshop-admin-page .qls-inline-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.qilingshop-admin-page .qls-inline-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.qilingshop-admin-page .qls-inline-field label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #1d2327;
+}
+
+.qilingshop-admin-page .qls-inline-field input,
+.qilingshop-admin-page .qls-inline-field select,
+.qilingshop-admin-page .qls-inline-field textarea {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.qilingshop-admin-page .qls-item-card {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.qilingshop-admin-page .qls-item-card h4 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #3c434a;
+}
+
+/* VIP 落地页标签页 */
+.qilingshop-admin-page .qls-settings-group-vip {
+    margin-bottom: 30px;
+    background: #f8fafc;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.qilingshop-admin-page .qls-settings-group-vip h3 {
+    font-size: 1.1em;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.qilingshop-admin-page .qls-settings-group-vip h3 span {
+    margin-right: 10px;
+}
+
+.qilingshop-admin-page .qls-vip-shortcode-tip {
+    background: #f8fafc;
+    padding: 10px;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.qilingshop-admin-page .qls-field-row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.qilingshop-admin-page .qls-field-row label {
+    width: 120px;
+    font-weight: 500;
+}
+
+.qilingshop-admin-page .qls-field-row input[type="text"],
+.qilingshop-admin-page .qls-field-row textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.qilingshop-admin-page .qls-field-row-column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.qilingshop-admin-page .qls-field-row-label-inline {
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.qilingshop-admin-page .qls-field-row-top-gap {
+    margin-top: 10px;
+}
+
+.qilingshop-admin-page .qls-field-row-no-margin {
+    margin-bottom: 0;
+}
+
+.qilingshop-admin-page .qls-settings-textarea-resize {
+    width: 100%;
+    resize: vertical;
+}
+
+.qilingshop-admin-page .qls-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.qilingshop-admin-page .qls-card {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.qilingshop-admin-page .qls-card-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #3c434a;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.qilingshop-admin-page .qls-vip-compare-table {
+    border: 1px solid #e5e5e5;
+}
+
+.qilingshop-admin-page .qls-vip-compare-cell {
+    padding: 10px;
+}
+
+.qilingshop-admin-page .qls-vip-faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-admin-page .qls-inline-fields,
+    .qilingshop-admin-page .qls-cols-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .qilingshop-admin-page .qls-field-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .qilingshop-admin-page .qls-field-row label {
+        width: auto;
+        margin-bottom: 6px;
+    }
+
+    .qilingshop-admin-page .qls-settings-inline-tip {
+        margin-left: 0;
+        margin-top: 6px;
+    }
+
+    .qilingshop-admin-page .qls-notify-channel-label {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+/* Points Assets */
+.qilingshop-admin-page .qls-admin-points-overview {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0 16px;
+}
+
+.qilingshop-admin-page .qls-admin-points-card {
+    background: #f8fafc;
+    border: 1px solid #ccd0d4;
+    padding: 10px 12px;
+    min-width: 150px;
+    border-radius: 6px;
+}
+
+.qilingshop-admin-page .qls-admin-points-card-label {
+    color: #3c434a;
+}
+
+.qilingshop-admin-page .qls-admin-points-filter-form {
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.qilingshop-admin-page .qls-admin-input-id {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-admin-input-search {
+    width: 220px;
+}
+
+.qilingshop-admin-page .qls-admin-input-source {
+    width: 140px;
+}
+
+.qilingshop-admin-page .qls-admin-points-col-id {
+    width: 70px;
+}
+
+.qilingshop-admin-page .qls-admin-points-col-user,
+.qilingshop-admin-page .qls-admin-points-col-source {
+    width: 180px;
+}
+
+.qilingshop-admin-page .qls-admin-points-col-money {
+    width: 90px;
+}
+
+.qilingshop-admin-page .qls-admin-points-col-time {
+    width: 140px;
+}
+
+.qilingshop-admin-page .qls-admin-points-col-status {
+    width: 120px;
+}
+
+.qilingshop-admin-page .qls-admin-points-status {
+    font-weight: 600;
+}
+
+.qilingshop-admin-page .qls-admin-points-status-permanent {
+    color: #1f2937;
+}
+
+.qilingshop-admin-page .qls-admin-points-status-expired-pending {
+    color: #d63638;
+}
+
+.qilingshop-admin-page .qls-admin-points-status-expired,
+.qilingshop-admin-page .qls-admin-points-status-empty {
+    color: #8c8f94;
+}
+
+.qilingshop-admin-page .qls-admin-points-status-active {
+    color: #00a32a;
+}
+
+/* Withdrawals */
+.qilingshop-admin-page .qls-admin-withdrawals-table {
+    margin-top: 15px;
+}
+
+.qilingshop-admin-page .qls-admin-withdrawals-col-actions {
+    width: 180px;
+}
+
+.qilingshop-admin-page .qls-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.qilingshop-admin-page .qls-status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.qilingshop-admin-page .qls-status-badge.completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.qilingshop-admin-page .qls-status-badge.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.qilingshop-admin-page .qls-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+
+.qilingshop-admin-page .qls-modal-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 8px;
+    z-index: 100000;
+    min-width: 400px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.qilingshop-admin-page .qls-modal-dialog h3 {
+    margin: 0 0 15px;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-admin-page .qls-admin-points-filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qilingshop-admin-page .qls-admin-points-filter-form input,
+    .qilingshop-admin-page .qls-admin-points-filter-form select,
+    .qilingshop-admin-page .qls-admin-points-filter-form .button {
+        width: 100%;
+    }
+
+    .qilingshop-admin-page .qls-modal-dialog {
+        min-width: 0;
+        width: calc(100% - 24px);
+        max-width: 520px;
+        padding: 18px;
+    }
+}
+
+/* Plugin Settings Page */
+body.qilingshop-admin-shell .qilingshop-settings-page {
+    max-width: 1380px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page > h1 {
+    margin: 0 0 14px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > h2,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > h3,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-section-title,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-subtitle {
+    margin: 4px 0 0;
+    padding-left: 12px;
+    border-left: 4px solid var(--qls-admin-primary);
+    color: var(--qls-admin-text);
+    line-height: 1.35;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > h2,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-section-title {
+    font-size: 20px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > h3,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-subtitle {
+    font-size: 16px;
+    border-left-width: 3px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .form-table,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-ui-form-table {
+    margin-top: 0;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    overflow: hidden;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .wp-list-table,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-rules-table,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-settings-task-table,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-vip-compare-table {
+    margin-top: 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > p.description,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-vip-shortcode-tip {
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: #f8fafc;
+    color: #3c434a;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > p:not(.description) {
+    margin: 0;
+    color: #3c434a;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > p.qls-payment-endpoint {
+    padding: 8px 14px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > p code {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #0f2945;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > p.qls-payment-endpoint code {
+    white-space: normal;
+    word-break: break-all;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-tab-content > .qls-vip-shortcode-tip {
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-section-divider {
+    border: 0;
+    border-top: 1px dashed var(--qls-admin-border-strong);
+    margin: 2px 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-inline-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 760px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-inline-actions .regular-text {
+    flex: 1 1 auto;
+    min-width: 260px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel-soft,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group-vip,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-notify-scene-card {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel,
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel-soft {
+    padding: 16px 18px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group {
+    padding: 18px;
+    margin-bottom: 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group h3 {
+    border-bottom-color: var(--qls-admin-border);
+    margin-bottom: 14px;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group-vip {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-notify-scene-card {
+    padding: 12px 14px;
+    background: #f8fafc;
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-submit {
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-submit .button-primary {
+    min-width: 148px;
+}
+
+@media screen and (max-width: 782px) {
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-inline-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-inline-actions .regular-text,
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-inline-actions .button {
+        width: 100%;
+        min-width: 0;
+    }
+
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel,
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-form-panel-soft,
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group,
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-group-vip,
+    body.qilingshop-admin-shell .qilingshop-settings-page .qls-settings-submit {
+        padding: 14px;
+    }
+}
+
+/* Backend Theme v4: Virtual-Resource Admin */
+body.qilingshop-admin-shell.qilingshop-vr-admin {
+    --qls-admin-bg: #eef2f8;
+    --qls-admin-surface: #f8fafc;
+    --qls-admin-surface-soft: #e9eef6;
+    --qls-admin-border: #c6d2e2;
+    --qls-admin-border-strong: #9fb2cb;
+    --qls-admin-text: #14263b;
+    --qls-admin-muted: #2c4563;
+    --qls-admin-primary: #e45f16;
+    --qls-admin-primary-hover: #c64f10;
+    --qls-admin-primary-soft: #ffe9dd;
+    --qls-admin-shadow: 0 8px 20px rgba(20, 38, 59, 0.10);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page {
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .button-link {
+    color: var(--qls-admin-primary);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .button-link:hover {
+    color: var(--qls-admin-primary-hover);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.page-title-action,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.page-title-action:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.page-title-action:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn:visited {
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button.button-primary,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button.button-primary:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button.button-primary:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button.button-primary:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.button.button-primary:focus,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn-primary,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn-primary:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn-primary:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn-primary:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.qls-ui-btn-primary:focus {
+    color: #ffffff;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-quick-btn.active,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-quick-btn.active:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-quick-btn.active:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-quick-btn.active:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-quick-btn.active:focus {
+    color: #ffffff;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .description,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page p.description,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-text-muted,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-text-subtle,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-text-gray,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-status-text-muted,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-muted-text,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-guide-text,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-description-muted-tight {
+    color: #3c434a;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-resource-actions-panel,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-resource-fallback,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-points-card,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-user-filters,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-user-cards,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-gift-vip-panel,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-form-panel,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-group,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-submit,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-tab-content {
+    background: #f8fafc;
+    border-color: var(--qls-admin-border);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-resource-action-card,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-resource-form-grid,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-vip-level-card,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-user-card,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-user-count-box,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-settings-inline-box,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-vip-shortcode-tip,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-notify-scene-card {
+    background: var(--qls-admin-surface-soft);
+    border-color: var(--qls-admin-border);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page > .subsubsub {
+    background: #f8fafc;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .subsubsub a,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .subsubsub a:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .subsubsub a:visited {
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .subsubsub a.current,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .subsubsub a:hover {
+    color: #ffffff;
+    background: var(--qls-admin-primary);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab-wrapper,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page nav.nav-tab-wrapper,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-tabs {
+    background: #f8fafc;
+    border-color: var(--qls-admin-border);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab:link,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab:focus {
+    background: #f8fafc;
+    border-color: var(--qls-admin-border-strong);
+    color: var(--qls-admin-text);
+    box-shadow: none;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab:active,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab.nav-tab-active,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab.nav-tab-active:hover,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab.nav-tab-active:visited,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .nav-tab-active {
+    background: var(--qls-admin-primary);
+    border-color: var(--qls-admin-primary);
+    color: #ffffff;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .wp-list-table thead th,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .wp-list-table tfoot th,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-table thead th,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-table tfoot th,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page table.widefat thead th,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page table.widefat tfoot th {
+    background: #2f4f73;
+    color: #ffffff;
+    border-bottom-color: #243f5c;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .wp-list-table tbody td,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-table tbody td,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page table.widefat tbody td {
+    color: var(--qls-admin-text);
+    border-bottom-color: #d8e1ee;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .wp-list-table.striped > tbody > :nth-child(odd),
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-table.striped > tbody > :nth-child(odd),
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page table.widefat.striped > tbody > :nth-child(odd) {
+    background: #f3f6fb;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .wp-list-table tbody tr:hover td,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-ui-table tbody tr:hover td,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page table.widefat tbody tr:hover td {
+    background: #e8eff8;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .qls-admin-link-danger,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page .button-link-delete,
+body.qilingshop-admin-shell #wpbody-content .qilingshop-admin-page a.submitdelete {
+    color: #b42345;
+}
+.qls-growth-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.qls-admin-card {
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid #dcdcde;
+    background: #fff;
+}
+
+.qls-growth-form > p > label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.qls-growth-level-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.qls-growth-overview {
+    margin-top: 18px;
+}
+
+.qls-growth-overview-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+}
+
+.qls-growth-overview-hero h2 {
+    margin: 0 0 6px;
+}
+
+.qls-growth-overview-hero p {
+    margin: 0;
+    color: #475569;
+}
+
+.qls-growth-status {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.qls-growth-status.is-on {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.qls-growth-status.is-off {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.qls-growth-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.qls-growth-stat-card {
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.qls-growth-stat-card strong {
+    display: block;
+    font-size: 24px;
+    color: #0f172a;
+}
+
+.qls-growth-stat-card span {
+    color: #64748b;
+}
+
+.qls-inline-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 2px 0;
+}
+
+.qls-growth-adjust-form input[type="text"] {
+    width: 140px;
+}
+
+.qls-growth-search {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.qls-growth-config-box {
+    margin: 14px 0;
+    padding: 12px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+}
+
+.qls-growth-config-box h3 {
+    margin: 0 0 10px;
+}
+
+.qls-growth-config-field label {
+    display: grid;
+    gap: 6px;
+}
+
+.qls-growth-config-field .description {
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .qls-growth-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin {
+    max-width: 1320px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .nav-tab-wrapper {
+    margin: 14px 0 18px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-admin-card {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    padding: 20px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-admin-card h2 {
+    margin-top: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form {
+    display: grid;
+    gap: 14px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form p {
+    margin: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form label {
+    color: var(--qls-admin-text);
+    font-weight: 700;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form label > input:not([type="checkbox"]):not([type="radio"]),
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form label > select,
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-form label > textarea,
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-config-field input,
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-config-field textarea {
+    margin-top: 6px;
+    max-width: 100%;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter {
+    margin: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields {
+    display: grid;
+    grid-template-columns:
+        minmax(240px, 1.35fr)
+        minmax(150px, 0.8fr)
+        minmax(110px, 0.55fr)
+        minmax(200px, 1.1fr)
+        minmax(150px, 0.75fr)
+        minmax(150px, 0.75fr)
+        minmax(96px, 0.45fr);
+    gap: 14px;
+    align-items: end;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields p {
+    min-width: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields label {
+    display: grid;
+    gap: 6px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields label > input:not([type="checkbox"]):not([type="radio"]),
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields label > select {
+    width: 100%;
+    min-height: 38px;
+    margin-top: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-type-switch {
+    align-items: center;
+    margin: 14px 0 16px;
+    padding: 12px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-sm);
+    background: var(--qls-admin-surface-soft);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-config-box {
+    border-color: var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-sm);
+    background: var(--qls-admin-surface-soft);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-config-field {
+    margin: 0 0 12px;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-config-field:last-child {
+    margin-bottom: 0;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-stat-card {
+    border-color: var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .wp-list-table,
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin table.widefat {
+    border-radius: var(--qls-admin-radius-md);
+    overflow: hidden;
+}
+
+body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-inline-form {
+    vertical-align: middle;
+}
+
+@media (max-width: 1280px) {
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-field-user,
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-field-keyword {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 782px) {
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-search {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-filter-fields {
+        grid-template-columns: 1fr;
+    }
+
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-field-user,
+    body.qilingshop-admin-shell #wpbody-content .qls-growth-admin .qls-growth-log-field-keyword {
+        grid-column: auto;
+    }
+}

@@ -1,0 +1,276 @@
+/**
+ * 拼团模块样式表
+ * 
+ * @package QilingShop
+ * @since   2.1.0
+ */
+
+/* 模块容器 */
+.qls-module-group {
+    background-color: var(--qls-grp-bg, #fff0e6);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+/* 模块头部 */
+.qls-module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.qls-module-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qls-grp-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--qls-grp-primary, #ff4400);
+}
+
+.qls-module-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--qls-grp-primary, #ff4400);
+    background: rgba(255, 68, 0, 0.08);
+    /* Using primary color with opacity */
+    padding: 6px 14px;
+    border-radius: 99px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-left: auto;
+}
+
+.qls-module-more:hover {
+    background: var(--qls-grp-primary, #ff4400);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 68, 0, 0.25);
+}
+
+/* 网格布局 */
+.qls-group-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--qls-grp-cols, 4), 1fr);
+    gap: 16px;
+}
+
+/* 卡片样式 */
+.qls-group-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.qls-group-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 图片区域 */
+.qls-grp-thumb {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.qls-grp-thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.qls-group-card:hover .qls-grp-thumb img {
+    transform: scale(1.05);
+}
+
+/* 拼团角标 (图标+文字) */
+.qls-grp-badge-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px 10px 4px 6px;
+    border-radius: 99px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.qls-grp-badge-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--qls-grp-primary, #ff4400);
+    line-height: 1;
+}
+
+/* 内容区域 */
+.qls-grp-info {
+    padding: 12px;
+}
+
+.qls-grp-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    height: 42px;
+    /* 2 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.qls-grp-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.qls-grp-title a:hover {
+    color: var(--qls-grp-primary, #ff4400);
+}
+
+/* 进度条 */
+.qls-grp-progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.qls-grp-progress-track {
+    flex: 1;
+    height: 6px;
+    background: #ffe0d1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.qls-grp-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff8e53, #ff4400);
+    border-radius: 3px;
+}
+
+.qls-grp-sales {
+    font-size: 11px;
+    color: #999;
+    white-space: nowrap;
+}
+
+/* 底部价格与按钮 */
+.qls-grp-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.qls-grp-price-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.qls-grp-price {
+    color: var(--qls-grp-primary, #ff4400);
+    font-weight: 800;
+    line-height: 1;
+}
+
+.qls-grp-price .symbol {
+    font-size: 12px;
+}
+
+.qls-grp-price .num {
+    font-size: 20px;
+}
+
+.qls-grp-original {
+    font-size: 11px;
+    color: #bbb;
+    text-decoration: line-through;
+    margin-top: 2px;
+}
+
+.qls-grp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: linear-gradient(135deg, #ff6b6b, #ff4400);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 99px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 68, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.qls-grp-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 68, 0, 0.35);
+    color: #fff;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+    .qls-group-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-group-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .qls-module-group {
+        padding: 15px 12px;
+        border-radius: 0;
+    }
+
+    .qls-grp-title {
+        font-size: 13px;
+        height: 36px;
+    }
+
+    .qls-grp-price .num {
+        font-size: 18px;
+    }
+
+    .qls-grp-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}

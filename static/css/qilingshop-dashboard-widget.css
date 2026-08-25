@@ -1,0 +1,80 @@
+/* WordPress 仪表盘中的启灵商城概览 */
+#qilingshop_dashboard_widget .inside {
+    margin: 0;
+    padding: 0;
+}
+
+.qls-dashboard-widget {
+    color: #1d2327;
+}
+
+.qls-dashboard-widget-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.qls-dashboard-widget-stat {
+    min-width: 0;
+    padding: 16px 14px;
+    border-right: 1px solid #f0f0f1;
+}
+
+.qls-dashboard-widget-stat:last-child {
+    border-right: 0;
+}
+
+.qls-dashboard-widget-label {
+    display: block;
+    margin-bottom: 7px;
+    color: #646970;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.qls-dashboard-widget-stat strong {
+    display: block;
+    color: #1d2327;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.qls-dashboard-widget-stat.is-warning strong {
+    color: #b45309;
+}
+
+.qls-dashboard-widget-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 14px;
+    border-top: 1px solid #f0f0f1;
+    color: #646970;
+    font-size: 12px;
+}
+
+.qls-dashboard-widget-footer a {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 782px) {
+    .qls-dashboard-widget-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qls-dashboard-widget-stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .qls-dashboard-widget-stat:nth-child(-n + 2) {
+        border-bottom: 1px solid #f0f0f1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .qls-dashboard-widget-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

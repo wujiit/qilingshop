@@ -1,0 +1,255 @@
+/*
+ * QilingShop Shop New User Styles
+ * Extracted from shop-modern.css for page-level loading
+ */
+/* ===== 新人专项 ===== */
+.qls-product-new-user-flag {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #9a3412;
+    background: #ffedd5;
+    border: 1px solid #fdba74;
+}
+
+.qls-product-new-user-flag.active {
+    color: #ffffff;
+    background: linear-gradient(135deg, #f97316, #fb7185);
+    border-color: transparent;
+}
+
+.qls-product-new-user-tip {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #9a3412;
+}
+
+.qls-new-user-zone-page .qls-new-user-hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fff7ed 0%, #fff1f2 100%);
+    border: 1px solid #fed7aa;
+}
+
+.qls-new-user-zone-page .qls-new-user-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #9a3412;
+    background: #ffedd5;
+}
+
+.qls-new-user-zone-page .qls-new-user-hero h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.qls-new-user-zone-page .qls-new-user-hero p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.qls-new-user-zone-page .qls-new-user-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #7c2d12;
+}
+
+.qls-new-user-zone-page .qls-new-user-hero-status {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    min-height: 150px;
+    padding: 18px 18px 16px;
+    border-radius: 16px;
+    border: 1px solid #fed7aa;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 247, 237, 0.92) 100%);
+    box-shadow: 0 14px 30px rgba(249, 115, 22, 0.14);
+}
+
+.qls-new-user-zone-page .qls-new-user-hero-status::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 52px;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #f97316, #ef4444);
+}
+
+.qls-new-user-zone-page .qls-status-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.qls-new-user-zone-page .qls-status-pill.need-login {
+    color: #b45309;
+    background: #fff7ed;
+    border-color: #fdba74;
+}
+
+.qls-new-user-zone-page .qls-status-pill.can-join {
+    color: #166534;
+    background: #ecfdf3;
+    border-color: #86efac;
+}
+
+.qls-new-user-zone-page .qls-status-pill.used {
+    color: #6b7280;
+    background: #f3f4f6;
+    border-color: #d1d5db;
+}
+
+.qls-new-user-zone-page .qls-status-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 11px 20px;
+    min-width: 124px;
+    border-radius: 12px;
+    border: 1px solid rgba(251, 146, 60, 0.95);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 46%, #ef4444 100%);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.32);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.qls-new-user-zone-page .qls-status-action:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: brightness(1.03) saturate(1.05);
+    box-shadow: 0 14px 24px rgba(249, 115, 22, 0.38);
+    transform: translateY(-1px);
+}
+
+.qls-new-user-zone-page .qls-status-action:active {
+    transform: translateY(0);
+}
+
+.qls-new-user-zone-page .qls-status-tip {
+    display: block;
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.qls-new-user-zone-page .qls-new-user-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.qls-new-user-zone-page .qls-new-user-card {
+    border: 1px solid #ffe4e6;
+}
+
+.qls-new-user-zone-page .qls-new-user-card:hover {
+    border-color: #fb7185;
+}
+
+.qls-new-user-zone-page .qls-new-user-corner {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #fff;
+    background: linear-gradient(135deg, #f97316, #fb7185);
+}
+
+.qls-new-user-zone-page .qls-new-user-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.qls-new-user-zone-page .qls-new-user-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ef4444;
+    line-height: 1;
+}
+
+.qls-new-user-zone-page .qls-new-user-origin {
+    color: #9ca3af;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.qls-new-user-zone-page .qls-new-user-limit {
+    color: #9a3412;
+}
+
+.qls-new-user-zone-page .qls-new-user-pagination {
+    margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+    .qls-new-user-zone-page .qls-new-user-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-new-user-zone-page .qls-new-user-hero {
+        grid-template-columns: 1fr;
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .qls-new-user-zone-page .qls-new-user-hero h1 {
+        font-size: 22px;
+    }
+
+    .qls-new-user-zone-page .qls-new-user-hero-status {
+        min-height: auto;
+        padding: 14px 14px 12px;
+    }
+
+    .qls-new-user-zone-page .qls-status-action {
+        width: 100%;
+    }
+
+    .qls-new-user-zone-page .qls-new-user-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    .qls-new-user-zone-page .qls-new-user-grid {
+        grid-template-columns: 1fr;
+    }
+}

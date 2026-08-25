@@ -1,0 +1,12 @@
+/**
+ * QilingShop frontend-builder public styles.
+ *
+ * This file is intentionally a small aggregation layer for builder preview mode.
+ */
+@import url("./shop-variables.css");
+@import url("./shop-modern.css");
+@import url("./shop-decoration.css");
+@import url("./module-category-nav.css");
+@import url("./module-group.css");
+@import url("./module-assist.css");
+@import url("./module-new-user-zone.css");

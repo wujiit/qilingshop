@@ -1,0 +1,490 @@
+/**
+ * Qiling Shop Decoration Builder Styles
+ * v2 — Polished, modern WordPress builder UI
+ * Scoped to #qls_shop_decoration_box to avoid Admin Bar / WP menu conflicts
+ */
+
+/* ============================================================
+   0. Base Reset
+   ============================================================ */
+#qls_shop_decoration_box {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+#qls_shop_decoration_box *,
+#qls_shop_decoration_box *::before,
+#qls_shop_decoration_box *::after {
+    box-sizing: border-box;
+}
+
+#qls_shop_decoration_box .inside {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+}
+
+/* Ensure sticky toolbar works — WP postbox overflow must not clip */
+#qls_shop_decoration_box.postbox {
+    overflow: visible !important;
+}
+
+/* ============================================================
+   1. Builder Wrapper
+   ============================================================ */
+.qls-dsm-wrap {
+    background: #f8f9fb;
+    border-top: 1px solid #e2e4e7;
+    position: relative;
+    min-height: 260px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   2. Toolbar — 组件按钮条
+   ============================================================ */
+#qls_shop_decoration_box .qls-dsm-toolbar {
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    border-bottom: 1px solid #e2e4e7;
+    padding: 14px 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    z-index: 100;
+    transition: box-shadow 0.2s ease;
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 14px;
+    border: 1px solid #e5622a;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f5520a 100%);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(245, 82, 10, 0.2);
+    line-height: 1.4;
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.2s ease;
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn:hover {
+    background: linear-gradient(135deg, #ff7d4d 0%, #e84a08 100%);
+    border-color: #d4470a;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(245, 82, 10, 0.3);
+    transform: translateY(-1px);
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn:hover .dashicons {
+    color: #ffffff;
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+#qls_shop_decoration_box .qls-dsm-add-btn.is-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* ============================================================
+   3. Module List Container
+   ============================================================ */
+.qls-dsm-list,
+#qls-dsm-list {
+    padding: 12px 16px 16px;
+    min-height: 160px;
+}
+
+/* Empty tip */
+.qls-dsm-empty-tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    color: #98a2b3;
+    font-size: 14px;
+    border: 2px dashed #d0d5dd;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: 4px 0;
+    text-align: center;
+    user-select: none;
+}
+
+/* 排序占位 */
+.qls-dsm-list .ui-state-highlight,
+#qls-dsm-list .ui-state-highlight {
+    height: 54px;
+    background: #e8f0fe;
+    border: 2px dashed #2271b1;
+    border-radius: 10px;
+    margin: 6px 0;
+    visibility: visible !important;
+}
+
+/* ============================================================
+   4. Module Item — 单个模块卡片
+   ============================================================ */
+.qls-dsm-item {
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+    margin: 6px 0;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
+}
+
+.qls-dsm-item:hover {
+    border-color: #d0d5dd;
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.08), 0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+/* Header */
+.qls-dsm-item-header {
+    padding: 0 16px;
+    height: 52px;
+    background: #ffffff;
+    border-bottom: 1px solid transparent;
+    cursor: move;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.qls-dsm-item-header:hover {
+    background: #fafbfc;
+}
+
+.qls-dsm-item.open .qls-dsm-item-header {
+    background: #ffffff;
+    border-bottom-color: #e4e7ec;
+}
+
+/* Handle */
+.qls-dsm-item-header .qls-dsm-handle {
+    cursor: move;
+    color: #c0c5cc;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    transition: color 0.15s ease;
+}
+
+.qls-dsm-item:hover .qls-dsm-handle {
+    color: #98a2b3;
+}
+
+/* Title */
+.qls-dsm-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1d2939;
+    flex: 1;
+    line-height: 1.4;
+}
+
+/* 切换与移除 */
+.qls-dsm-toggle {
+    cursor: pointer;
+    color: #98a2b3;
+    padding: 4px;
+    transition: color 0.15s ease, transform 0.25s ease;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.qls-dsm-item.open .qls-dsm-toggle {
+    transform: rotate(180deg);
+}
+
+.qls-dsm-toggle:hover {
+    color: #667085;
+}
+
+.qls-dsm-remove {
+    cursor: pointer;
+    color: #b0b7c3;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qls-dsm-remove:hover {
+    color: #d63638;
+    background: rgba(214, 54, 56, 0.08);
+}
+
+.qls-dsm-remove .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* ============================================================
+   5. Content Area — 展开后的设置区
+   ============================================================ */
+.qls-dsm-content {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #eaecf0;
+    background: #ffffff;
+    animation: qlsDsmFadeIn 0.2s ease;
+}
+
+@keyframes qlsDsmFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.qls-dsm-item.open .qls-dsm-content {
+    display: block;
+}
+
+/* Setting Group */
+.qls-setting-group {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.qls-setting-group:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.qls-setting-group-title,
+.qls-setting-group h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #344054;
+    margin: 0 0 14px 0;
+    padding: 0 0 8px 0;
+    border-bottom: 2px solid #2271b1;
+    display: inline-block;
+}
+
+/* ============================================================
+   6. Field Styles
+   ============================================================ */
+.qls-dsm-field {
+    margin-bottom: 16px;
+}
+
+.qls-dsm-field:last-child {
+    margin-bottom: 0;
+}
+
+.qls-dsm-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 12.5px;
+    color: #344054;
+    letter-spacing: 0.01em;
+}
+
+.qls-dsm-field input[type="text"],
+.qls-dsm-field input[type="number"],
+.qls-dsm-field input[type="email"],
+.qls-dsm-field select,
+.qls-dsm-field textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #1d2939;
+    background: #ffffff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    line-height: 1.5;
+    outline: none;
+}
+
+.qls-dsm-field input[type="text"]:focus,
+.qls-dsm-field input[type="number"]:focus,
+.qls-dsm-field input[type="email"]:focus,
+.qls-dsm-field select:focus,
+.qls-dsm-field textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 3px rgba(34, 113, 177, 0.12);
+}
+
+.qls-dsm-field .description,
+.qls-dsm-field p.description {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #667085;
+    line-height: 1.5;
+}
+
+/* Image Uploader */
+.qls-image-uploader {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.qls-image-uploader input {
+    flex: 1;
+}
+
+.qls-image-uploader .qls-upload-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    border-radius: 8px !important;
+}
+
+/* ============================================================
+   7. 重复项样式：轮播项管理等
+   ============================================================ */
+.qls-dsm-repeater {
+    border: 1px solid #e4e7ec;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.qls-dsm-repeater-list {
+    min-height: 10px;
+}
+
+.qls-dsm-repeater-item {
+    background: #f9fafb;
+    border: 1px solid #e4e7ec;
+    padding: 16px 16px 12px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 8px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.qls-dsm-repeater-item:hover {
+    border-color: #d0d5dd;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.05);
+}
+
+.qls-dsm-repeater-item:last-child {
+    margin-bottom: 10px;
+}
+
+/* 重复项移除按钮 */
+.qls-dsm-repeater-remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    color: #b0b7c3;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid #e4e7ec;
+    z-index: 5;
+    font-size: 16px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.qls-dsm-repeater-remove:hover {
+    background: #fef3f2;
+    color: #d63638;
+    border-color: #fda29b;
+    box-shadow: 0 1px 3px rgba(214, 54, 56, 0.12);
+}
+
+/* 重复项添加按钮 */
+.qls-dsm-add-repeater-btn {
+    width: 100%;
+    background: #ffffff;
+    border: 1px dashed #2271b1;
+    color: #2271b1;
+    padding: 10px 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.qls-dsm-add-repeater-btn .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.qls-dsm-add-repeater-btn:hover {
+    background: #f0f6ff;
+    border-color: #135e96;
+    color: #135e96;
+    box-shadow: 0 1px 3px rgba(34, 113, 177, 0.1);
+}
+
+/* ============================================================
+   8. Save Hint
+   ============================================================ */
+.qls-save-hint {
+    text-align: center;
+    padding: 10px 16px 14px;
+    color: #667085;
+    font-size: 12.5px;
+    background: #f8f9fb;
+    border-top: 1px solid #e4e7ec;
+    margin: 0;
+}
+
+.qls-save-hint b {
+    color: #2271b1;
+}
+
+/* ============================================================
+   9. Builder Skip Note (当页面不包含商城短代码时)
+   ============================================================ */
+.qls-builder-skip-note {
+    color: #667085;
+    font-size: 13px;
+    margin: 4px 0 2px;
+}
+
+.qls-builder-skip-tip {
+    color: #98a2b3;
+    font-size: 12px;
+    margin: 2px 0 4px;
+}

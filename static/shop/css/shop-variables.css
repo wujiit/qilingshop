@@ -1,0 +1,71 @@
+:root {
+    /* 主题色 - 动态读取主题变量或使用默认值 (Blue Theme) */
+    --qls-primary: var(--primary-color, #3b82f6);
+    --qls-primary-hover: var(--primary-color-hover, #2563eb);
+    --qls-secondary: #06b6d4;
+    
+    /* 文本色 */
+    --qls-text-main: #1f1f1f;
+    --qls-text-secondary: #8c8c8c;
+    --qls-text-light: #bfbfbf;
+    --qls-text-white: #ffffff;
+    
+    /* 背景色 */
+    --qls-bg-body: #f5f7fa;
+    --qls-bg-white: #ffffff;
+    --qls-bg-light: #fafafa;
+    --qls-bg-hover: #f5f5f5;
+    
+    /* 边框色 */
+    --qls-border-color: #f0f0f0;
+    --qls-border-light: #f5f5f5;
+    
+    /* 圆角 */
+    --qls-radius-sm: 4px;
+    --qls-radius-md: 8px;
+    --qls-radius-lg: 12px;
+    --qls-radius-xl: 16px;
+    
+    /* 阴影 */
+    --qls-shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --qls-shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --qls-shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+    
+    /* 间距 */
+    --qls-spacing-xs: 4px;
+    --qls-spacing-sm: 8px;
+    --qls-spacing-md: 16px;
+    --qls-spacing-lg: 24px;
+    --qls-spacing-xl: 32px;
+
+    /* 宽度 */
+    --qls-container-width: 1400px;
+}
+
+/* 暗黑模式适配 */
+body.dark, 
+.mode-dark {
+    --qls-text-main: #e6e6e6;
+    --qls-text-secondary: #a6a6a6;
+    --qls-text-light: #666666;
+    
+    --qls-bg-body: #141414;
+    --qls-bg-white: #1f1f1f;
+    --qls-bg-light: #262626;
+    --qls-bg-hover: #2a2a2a;
+    
+    --qls-border-color: #303030;
+    --qls-border-light: #2a2a2a;
+    
+    --qls-shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
+    --qls-shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --qls-shadow-lg: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    :root {
+        --qls-spacing-lg: 16px;
+        --qls-spacing-xl: 20px;
+    }
+}

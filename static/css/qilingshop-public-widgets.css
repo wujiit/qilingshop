@@ -1,0 +1,3194 @@
+/**
+ * 启灵商城前台样式（小工具、侧边栏与标题模块）
+ * Split from qilingshop-public.css for on-demand loading.
+ */
+
+/* ==========================================================================
+   下载侧边栏样式
+   Namespace: qls-download-sidebar-re-
+   ========================================================================== */
+/* ==========================================================================
+   QLS Download/Purchase Box - Fresh Style (Namespace: qls-download-sidebar-re-)
+   ========================================================================== */
+
+/* Wrapper - Clean White & Soft Shadow */
+.qls-download-sidebar-re-wrap {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 168, 255, 0.08);
+    /* Soft blue shadow */
+    overflow: hidden;
+    /* margin: 16px 0; */
+    border: 1px solid #e1f5fe;
+    /* Very light blue border */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    position: relative;
+}
+
+/* Header - Fresh Gradient */
+.qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    /* Ocean Blue/Cyan */
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    min-height: 40px;
+}
+
+.qls-download-sidebar-re-wrap.qls-download-sidebar-re-download-box .qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    /* Fresh Green */
+}
+
+.qls-download-sidebar-re-badge {
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-user-discount-tag {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    padding: 3px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.qls-download-sidebar-re-header-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 10px;
+    border-radius: 16px;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.qls-download-sidebar-re-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Body */
+.qls-download-sidebar-re-body {
+    padding: 16px;
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    /* Subtle off-white gradient */
+    background: #fff;
+    /* or just white */
+}
+
+/* Price Area */
+.qls-download-sidebar-re-price-area {
+    text-align: center;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qls-download-sidebar-re-price-label {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.qls-download-sidebar-re-price-val {
+    font-size: 30px;
+    font-weight: 800;
+    /* Fresh Orange/Coral for contrast against blue/green, or nice Blue */
+    color: #ff7f50;
+    line-height: 1;
+    font-family: inherit;
+    letter-spacing: -1px;
+}
+
+/* VIP Grid - Blue/Green/Cyan Theme */
+.qls-download-sidebar-re-vip-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+.qls-download-sidebar-re-vip-item {
+    border-radius: 10px;
+    padding: 10px 8px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Card 1: Fresh Green */
+.qls-download-sidebar-re-vip-item:nth-child(1) {
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+}
+
+/* Card 2: Sky Blue */
+.qls-download-sidebar-re-vip-item:nth-child(2) {
+    background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+}
+
+/* Card 3: Deep Ocean */
+.qls-download-sidebar-re-vip-item:nth-child(3) {
+    background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+}
+
+/* 卡片 4：薄荷色 */
+.qls-download-sidebar-re-vip-item:nth-child(4) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.qls-download-sidebar-re-vip-name {
+    font-size: 12px;
+    margin-bottom: 4px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    font-weight: 700;
+    opacity: 0.95;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.qls-download-sidebar-re-vip-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.qls-download-sidebar-re-vip-icon {
+    display: block;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.qls-download-sidebar-re-vip-name-text {
+    display: block;
+    line-height: 1.4;
+}
+
+.qls-download-sidebar-re-vip-price {
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Tips & Pancheck */
+.qls-download-sidebar-re-tips {
+    background: #e1f3d8;
+    /* Very light green */
+    color: #4caf50;
+    /* Green text */
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    border: 1px solid #cce5c4;
+}
+
+.qls-download-sidebar-re-pancheck {
+    margin-bottom: 12px;
+    border: 1px dashed #b2ebf2;
+    /* Light cyan dashed border */
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: #f0fcfd;
+    /* Very light cyan bg */
+}
+
+.qls-download-sidebar-re-pancheck-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.qls-download-sidebar-re-pancheck-item:last-child {
+    margin-bottom: 0;
+}
+
+.qls-download-sidebar-re-pancheck-name {
+    color: #0097e6;
+    font-weight: 600;
+}
+
+.qls-download-sidebar-re-pancheck-btn {
+    border: 1px solid #009efd;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 0.2s;
+    color: #009efd;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.qls-download-sidebar-re-pancheck-btn:hover {
+    background: #009efd;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 158, 253, 0.2);
+}
+
+/* Actions - Flex Layout */
+.qls-download-sidebar-re-actions {
+    margin-top: 10px;
+}
+
+.qls-download-sidebar-re-btn-group {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    align-items: center !important;
+}
+
+.qls-download-sidebar-re-btn-buy,
+.qls-download-sidebar-re-btn-pay,
+.qls-download-sidebar-re-btn-login,
+.qls-download-sidebar-re-btn-vip,
+.qls-download-sidebar-re-btn-recharge {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none;
+    padding: 0 10px !important;
+    border-radius: 50px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qls-download-sidebar-re-btn-buy:not(.disabled):hover,
+.qls-download-sidebar-re-btn-pay:hover,
+.qls-download-sidebar-re-btn-login:hover,
+.qls-download-sidebar-re-btn-vip:hover,
+.qls-download-sidebar-re-btn-recharge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+}
+
+.qls-download-sidebar-re-btn-buy:active,
+.qls-download-sidebar-re-btn-pay:active,
+.qls-download-sidebar-re-btn-login:active,
+.qls-download-sidebar-re-btn-vip:active,
+.qls-download-sidebar-re-btn-recharge:active {
+    transform: translateY(0) scale(0.98);
+}
+
+
+
+.qls-download-sidebar-re-btn-vip:hover,
+.qls-download-sidebar-re-btn-recharge:hover {
+    color: #fff;
+}
+
+/* Button Colors - The "Fresh" Set */
+
+/* Buy (Forest Emerald) */
+.qls-download-sidebar-re-btn-buy {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+}
+
+/* 支付按钮：纯净宝蓝 */
+.qls-download-sidebar-re-btn-pay {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Login (Ocean Sky) */
+.qls-download-sidebar-re-btn-login {
+    background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.qls-download-sidebar-re-btn-login:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+}
+
+/* VIP (Royal Amber Gold) */
+.qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+}
+
+/* Recharge (Ocean Teal) */
+.qls-download-sidebar-re-btn-recharge {
+    background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.qls-download-sidebar-re-btn-buy.disabled {
+    background: #f1f5f9;
+    color: #94a3b8;
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Balance Row */
+.qls-download-sidebar-re-balance-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* Download Box Specifics */
+.qls-download-sidebar-re-download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.qls-download-sidebar-re-download-item {
+    background: #f0fcfd;
+    /* Light cyan */
+    border: 1px solid #b2ebf2;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.qls-download-sidebar-re-download-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 158, 253, 0.08);
+    background: #fff;
+    border-color: #009efd;
+}
+
+.qls-download-sidebar-re-download-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+.qls-download-sidebar-re-download-code {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.qls-download-sidebar-re-download-code code {
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #009efd;
+    border: 1px solid #b2ebf2;
+    margin-left: 6px;
+    cursor: pointer;
+    font-family: 'Menlo', 'Monaco', monospace;
+    font-weight: bold;
+}
+
+.qls-download-sidebar-re-download-go-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border: 0;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
+}
+
+.qls-download-sidebar-re-download-go-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-footer {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.qls-download-sidebar-re-link-page-main {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: #e0f7fa;
+    /* Light cyan */
+    color: #00bcd4;
+    /* Cyan text */
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 12px;
+    border: 1px solid #b2ebf2;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.qls-download-sidebar-re-link-page-main:hover {
+    background: #00bcd4;
+    color: #fff;
+    border-color: #00bcd4;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+}
+
+.qls-download-sidebar-re-link-page-main .sub-text {
+    font-size: 11px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-left: 5px;
+}
+
+.qls-download-sidebar-re-link-page-main .arr {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .qls-download-sidebar-re-header {
+        padding: 10px 12px;
+    }
+
+    .qls-download-sidebar-re-body {
+        padding: 14px;
+    }
+
+    .qls-download-sidebar-re-vip-grid {
+        gap: 5px;
+    }
+
+    .qls-download-sidebar-re-vip-item {
+        min-width: 45%;
+        flex: 1 1 45%;
+    }
+
+    .qls-download-sidebar-re-btn-group {
+        gap: 10px;
+    }
+
+    .qls-download-sidebar-re-btn-buy,
+    .qls-download-sidebar-re-btn-pay,
+    .qls-download-sidebar-re-btn-login,
+    .qls-download-sidebar-re-btn-vip,
+    .qls-download-sidebar-re-btn-recharge {
+        flex: 1 1 45%;
+        min-width: unset;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .qls-download-sidebar-re-pancheck-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .qls-download-sidebar-re-pancheck-btn {
+        align-self: flex-start;
+    }
+
+    .qls-download-sidebar-re-download-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .qls-download-sidebar-re-download-go-btn {
+        text-align: center;
+    }
+}
+
+/* ========================================
+   Service Tags (Below Buttons)
+   ======================================== */
+.qls-download-sidebar-re-service-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #e5e7eb;
+}
+
+.qls-service-tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #4b5563;
+    /* Gray-600 */
+}
+
+.qls-service-tag .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    background: #d1fae5;
+    /* Green-100 */
+    color: #059669;
+    /* Green-600 */
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* ========================================
+   Violet Style Overrides (Purple / Modern SaaS)
+   ======================================== */
+.qls-download-sidebar-re-wrap.style-violet {
+    background: #fff;
+    border: 1px solid #f3e8ff;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.12);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    /* Violet to Pink */
+    padding: 10px 14px;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-badge {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-user-discount-tag {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+/* Body */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-body {
+    background: linear-gradient(to bottom, #fff 0%, #faf5ff 100%);
+    padding: 16px;
+}
+
+/* Price */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-price-val {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #7c3aed;
+    /* 兜底 */
+}
+
+/* VIP Grid */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-vip-item {
+    background: #fff;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.05);
+    color: #4c1d95;
+    transition: all 0.3s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+    border-color: #d8b4fe;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-vip-name {
+    color: #6b21a8;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-vip-price {
+    color: #7c3aed;
+}
+
+/* Buttons */
+/* Buy Button (Points) - Softer look */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-buy {
+    background: #f3e8ff;
+    color: #7c3aed;
+    box-shadow: none;
+    border: 1px solid #d8b4fe;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-buy:hover {
+    background: #e9d5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-pay {
+    background: #fff;
+    color: #7c3aed;
+    border: 1px solid #ddd6fe;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-pay:hover {
+    border-color: #8b5cf6;
+    background: #f5f3ff;
+    color: #6d28d9;
+}
+
+/* VIP Button - Stronger look */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+    border: none;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(139, 92, 246, 0.4);
+    filter: brightness(110%);
+}
+
+/* Download List */
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-download-item {
+    background: #fff;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 2px 6px rgba(139, 92, 246, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-download-item:hover {
+    border-color: #d8b4fe;
+    box-shadow: 0 6px 15px rgba(139, 92, 246, 0.1);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-download-go-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-download-code code {
+    color: #7c3aed;
+    background: #f3e8ff;
+    border: 1px solid #e9d5ff;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-violet .qls-download-sidebar-re-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Blue Ocean Style Overrides (Modern Blue / Tech)
+   ======================================== */
+.qls-download-sidebar-re-wrap.style-blue_ocean {
+    background: #fff;
+    border: 1px solid #e0f2fe;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    /* Sky to Blue */
+    padding: 10px 14px;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Body */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-body {
+    background: linear-gradient(to bottom, #fff 0%, #f0f9ff 100%);
+    padding: 16px;
+}
+
+/* Price */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-price-val {
+    color: #0284c7;
+    font-weight: 800;
+}
+
+/* VIP Grid */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-vip-item {
+    background: #fff;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.05);
+    color: #0369a1;
+    transition: all 0.2s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.15);
+    border-color: #7dd3fc;
+    background: #f0f9ff;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-vip-name {
+    color: #0c4a6e;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-vip-price {
+    color: #0284c7;
+}
+
+/* Buttons */
+/* Buy Button - Soft Blue */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-buy {
+    background: #e0f2fe;
+    color: #0369a1;
+    box-shadow: none;
+    border: 1px solid #bae6fd;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-buy:hover {
+    background: #bae6fd;
+    color: #0c4a6e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-pay {
+    background: #fff;
+    color: #0284c7;
+    border: 1px solid #7dd3fc;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-pay:hover {
+    background: #f0f9ff;
+    border-color: #0ea5e9;
+}
+
+/* VIP Button - Strong Gradient */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    filter: brightness(108%);
+}
+
+/* Download List */
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-download-item {
+    background: #fff;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 2px 4px rgba(14, 165, 233, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-download-item:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.1);
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-download-go-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-download-code code {
+    color: #0284c7;
+    background: #e0f2fe;
+    border: 1px solid #bae6fd;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-blue_ocean .qls-download-sidebar-re-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Emerald Style Overrides (Fresh Green / Nature)
+   ======================================== */
+.qls-download-sidebar-re-wrap.style-emerald {
+    background: #fff;
+    border: 1px solid #ecfdf5;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    /* Emerald */
+    padding: 10px 14px;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Body */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-body {
+    background: linear-gradient(to bottom, #fff 0%, #f0fdf4 100%);
+    padding: 6px;
+}
+
+/* Price */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-price-val {
+    color: #059669;
+    font-weight: 800;
+}
+
+/* VIP Grid */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-vip-item {
+    background: #fff;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.05);
+    color: #047857;
+    transition: all 0.2s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+    border-color: #6ee7b7;
+    background: #ecfdf5;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-vip-name {
+    color: #064e3b;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-vip-price {
+    color: #059669;
+}
+
+/* Buttons */
+/* Buy Button - Soft Green */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-buy {
+    background: #d1fae5;
+    color: #059669;
+    box-shadow: none;
+    border: 1px solid #a7f3d0;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-buy:hover {
+    background: #a7f3d0;
+    color: #064e3b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-pay {
+    background: #fff;
+    color: #059669;
+    border: 1px solid #6ee7b7;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-pay:hover {
+    background: #ecfdf5;
+    border-color: #10b981;
+}
+
+/* VIP Button - Strong Gradient */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(5, 150, 105, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(5, 150, 105, 0.4);
+    filter: brightness(108%);
+}
+
+/* Download List */
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-download-item {
+    background: #fff;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-download-item:hover {
+    border-color: #34d399;
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.1);
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-download-go-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 4px 10px rgba(5, 150, 105, 0.2);
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-download-code code {
+    color: #059669;
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-emerald .qls-download-sidebar-re-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red {
+    background: #fff;
+    border: 1px solid #fee2e2;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(248, 113, 113, 0.12);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-header {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+    padding: 10px 14px;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-body {
+    background: linear-gradient(to bottom, #fff 0%, #fff7ed 100%);
+    padding: 6px;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-price-val {
+    color: #ef4444;
+    font-weight: 800;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-vip-item {
+    background: #fff;
+    border: 1px solid #fecaca;
+    box-shadow: 0 4px 10px rgba(248, 113, 113, 0.08);
+    color: #b91c1c;
+    transition: all 0.2s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(248, 113, 113, 0.18);
+    border-color: #fca5a5;
+    background: #fff1f2;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-vip-name {
+    color: #9f1239;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-vip-price {
+    color: #ef4444;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-buy {
+    background: #ffe4e6;
+    color: #ef4444;
+    box-shadow: none;
+    border: 1px solid #fecdd3;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-buy:hover {
+    background: #fecdd3;
+    color: #be123c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(248, 113, 113, 0.15);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-pay {
+    background: #fff;
+    color: #ef4444;
+    border: 1px solid #fda4af;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-pay:hover {
+    background: #fff1f2;
+    border-color: #f87171;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(248, 113, 113, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(248, 113, 113, 0.4);
+    filter: brightness(108%);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-download-item {
+    background: #fff;
+    border: 1px solid #fecaca;
+    box-shadow: 0 2px 4px rgba(248, 113, 113, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-download-item:hover {
+    border-color: #fca5a5;
+    box-shadow: 0 6px 15px rgba(248, 113, 113, 0.1);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-download-go-btn {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+    box-shadow: 0 4px 10px rgba(248, 113, 113, 0.2);
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-download-code code {
+    color: #ef4444;
+    background: #ffe4e6;
+    border: 1px solid #fecdd3;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-marketing_red .qls-download-sidebar-re-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Business Style Overrides (SaaS / Tech)
+   ======================================== */
+.qls-download-sidebar-re-wrap.style-business {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    /* Softer shadow */
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    /* More rounded */
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-header {
+    background: #1e293b;
+    /* Slate 800 */
+    padding: 10px 14px;
+    /* Consistent padding */
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-badge {
+    opacity: 1;
+    color: #fff;
+    font-weight: 700;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-badge.success {
+    background: rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-user-discount-tag,
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-sales {
+    background: rgba(255, 255, 255, 0.1);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Body */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-body {
+    background: #fff;
+    padding: 16px;
+}
+
+/* VIP Grid - Clean */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-vip-item {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background: #f8fafc;
+    /* Slate-50 */
+    color: #334155;
+    transition: all 0.2s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-vip-item:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-vip-name {
+    color: #475569;
+    font-weight: 600;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-vip-price {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* Download List */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-download-item {
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 0;
+    /* Reset margin */
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-download-item:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-download-go-btn {
+    background: #0f172a;
+    /* Dark Slate */
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-download-go-btn:hover {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-header-link {
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-header-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   Gallery Style Overrides (Dark / Material)
+   ======================================== */
+.qls-download-sidebar-re-wrap.style-gallery {
+    background: #18181b !important;
+    /* Zinc-900 */
+    border: 1px solid #27272a;
+    /* Zinc-800 */
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    color: #e4e4e7;
+    /* Zinc-200 */
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-header {
+    background: #18181b;
+    /* Match bg */
+    padding: 10px 14px;
+    /* Consistent padding */
+    border-bottom: 1px solid #27272a;
+    min-height: auto;
+    /* Reset min-height */
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-badge {
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    /* Pink to Purple */
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-badge.success {
+    background: linear-gradient(to right, #10b981, #059669);
+    /* Green Gradient */
+    color: #fff;
+    border: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-sales,
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-user-discount-tag {
+    color: #a1a1aa;
+    /* Zinc-400 */
+    font-size: 12px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+}
+
+/* Body Spacing & Background Fix */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-body {
+    padding: 16px;
+    background: #18181b !important;
+}
+
+/* Price Area */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-price-val {
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    color: #22d3ee;
+    /* 兜底 */
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-price-label {
+    color: #71717a;
+}
+
+/* VIP Grid - Dark Cards */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-vip-grid {
+    gap: 5px;
+    /* Consistent gap */
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-vip-item {
+    background: #27272a;
+    /* Zinc-800 */
+    border: 1px solid #3f3f46;
+    /* Zinc-700 */
+    border-radius: 8px;
+    color: #e4e4e7;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-vip-item:hover {
+    background: #3f3f46;
+    border-color: #52525b;
+    transform: translateY(-2px);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-vip-name {
+    color: #a1a1aa;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-vip-price {
+    color: #fff;
+}
+
+/* Buttons - Neon / Gradient */
+/* Buy Button - Dark with Border */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-buy {
+    background: transparent;
+    border: 1px solid #52525b;
+    color: #e4e4e7;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-buy:hover {
+    border-color: #22d3ee;
+    color: #fff;
+    background: rgba(34, 211, 238, 0.12);
+    transform: translateY(-2px);
+}
+
+/* VIP Button - Neon Gradient */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Add border for pop */
+    color: #fff;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+    /* Glow effect */
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
+    /* Stronger glow */
+    filter: brightness(120%);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-pay {
+    background: #27272a;
+    /* Zinc-800 */
+    color: #e4e4e7;
+    border: 1px solid #3f3f46;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-pay:hover {
+    background: #3f3f46;
+    border-color: #52525b;
+}
+
+/* Secondary Buttons */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-login {
+    border: 1px solid #3f3f46;
+    color: #a1a1aa;
+    background: transparent;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-login:hover {
+    border-color: #22d3ee;
+    color: #fff;
+    background: rgba(34, 211, 238, 0.12);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-recharge {
+    background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 16px rgba(34, 211, 238, 0.35);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-btn-recharge:hover {
+    filter: brightness(110%);
+    box-shadow: 0 10px 22px rgba(34, 211, 238, 0.45);
+}
+
+/* Service Tags - Dark */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-service-tags {
+    border-top: 1px solid #27272a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-service-tag {
+    color: #71717a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-service-tag .icon {
+    background: #27272a;
+    color: #a1a1aa;
+}
+
+/* Download State (Purchased) */
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-item {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-item:hover {
+    border-color: #3f3f46;
+    background: #27272a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-name {
+    color: #e4e4e7;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-code {
+    color: #a1a1aa;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-code code {
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    color: #22d3ee;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-go-btn {
+    background: #27272a;
+    color: #fff;
+    border: 1px solid #3f3f46;
+    border-radius: 16px;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-download-go-btn:hover {
+    border-color: #22d3ee;
+    color: #22d3ee;
+    background: transparent;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-header-link {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.12);
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .qls-download-sidebar-re-header-link:hover {
+    background: rgba(56, 189, 248, 0.2);
+}
+
+/* Pancheck - Dark */
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-section {
+    background: #18181b;
+    border: 1px dashed #27272a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-header {
+    border-bottom: 1px solid #27272a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-title {
+    color: #a1a1aa;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-item {
+    background: #18181b;
+    border: 1px solid #27272a;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-item:hover {
+    border-color: #3f3f46;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-name {
+    color: #d4d4d8;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-btn {
+    background: transparent;
+    border: 1px solid #3f3f46;
+    color: #a1a1aa;
+}
+
+.qls-download-sidebar-re-wrap.style-gallery .pancheck-btn:hover {
+    border-color: #22d3ee;
+    color: #22d3ee;
+}
+
+/* Business Buttons */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-buy,
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-pay,
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-vip,
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-recharge,
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-login {
+    border-radius: 8px;
+    /* Soft Square */
+    font-weight: 600;
+    box-shadow: none;
+    /* Flat */
+    height: 38px;
+    /* Slightly smaller */
+}
+
+/* Buy - Outline Dark */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-buy {
+    background: #fff;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-buy:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+}
+
+/* Pay - Dark Slate */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-pay {
+    background: #334155;
+    /* Slate-700 */
+    color: #fff;
+    border: none;
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-pay:hover {
+    background: #1e293b;
+    /* Slate-800 */
+}
+
+/* VIP - Strong Black */
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-vip {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    /* Strong Gradient */
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.4);
+    /* Stronger shadow */
+}
+
+.qls-download-sidebar-re-wrap.style-business .qls-download-sidebar-re-btn-vip:hover {
+    background: linear-gradient(135deg, #020617 0%, #1e293b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.5);
+}
+
+/* Service Tags - Business */
+.qls-download-sidebar-re-wrap.style-business .qls-service-tag .icon {
+    background: #f1f5f9;
+    /* Slate-100 */
+    color: #64748b;
+    /* Slate-500 */
+
+}
+
+/* ========================================
+   Title Header Style Overrides (qls-download-title-hd-)
+   Adding support for all styles in title location
+   ======================================== */
+
+/* 1. Violet Style Overrides (Purple / Modern SaaS) */
+.qls-download-title-hd-wrap.style-violet {
+    background: #fff;
+    border: 1px solid #f3e8ff;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.12);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-header {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-badge {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-sales,
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-user-discount-tag {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-body {
+    background: linear-gradient(to bottom, #fff 0%, #faf5ff 100%);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-price-val {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #7c3aed;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-vip-item {
+    background: #fff;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.05);
+    color: #4c1d95;
+    transition: all 0.3s ease;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-vip-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+    border-color: #d8b4fe;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-vip-name {
+    color: #6b21a8;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-vip-price {
+    color: #7c3aed;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-buy {
+    background: #f3e8ff;
+    color: #7c3aed;
+    box-shadow: none;
+    border: 1px solid #d8b4fe;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-buy:hover {
+    background: #e9d5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-pay {
+    background: #fff;
+    color: #7c3aed;
+    border: 1px solid #ddd6fe;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-pay:hover {
+    border-color: #8b5cf6;
+    background: #f5f3ff;
+    color: #6d28d9;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+    border: none;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(139, 92, 246, 0.4);
+    filter: brightness(110%);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-download-item {
+    background: #fff;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 2px 6px rgba(139, 92, 246, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-download-item:hover {
+    border-color: #d8b4fe;
+    box-shadow: 0 6px 15px rgba(139, 92, 246, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-download-go-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-download-code code {
+    color: #7c3aed;
+    background: #f3e8ff;
+    border: 1px solid #e9d5ff;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-violet .qls-download-title-hd-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 2. Blue Ocean Style Overrides (Modern Blue / Tech) */
+.qls-download-title-hd-wrap.style-blue_ocean {
+    background: #fff;
+    border: 1px solid #e0f2fe;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-header {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-sales,
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-body {
+    background: linear-gradient(to bottom, #fff 0%, #f0f9ff 100%);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-price-val {
+    color: #0284c7;
+    font-weight: 800;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-vip-item {
+    background: #fff;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.05);
+    color: #0369a1;
+    transition: all 0.2s ease;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.15);
+    border-color: #7dd3fc;
+    background: #f0f9ff;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-vip-name {
+    color: #0c4a6e;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-vip-price {
+    color: #0284c7;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-buy {
+    background: #e0f2fe;
+    color: #0369a1;
+    box-shadow: none;
+    border: 1px solid #bae6fd;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-buy:hover {
+    background: #bae6fd;
+    color: #0c4a6e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-pay {
+    background: #fff;
+    color: #0284c7;
+    border: 1px solid #7dd3fc;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-pay:hover {
+    background: #f0f9ff;
+    border-color: #0ea5e9;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    filter: brightness(108%);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-download-item {
+    background: #fff;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 2px 4px rgba(14, 165, 233, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-download-item:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-download-go-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-download-code code {
+    color: #0284c7;
+    background: #e0f2fe;
+    border: 1px solid #bae6fd;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-blue_ocean .qls-download-title-hd-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 3. Emerald Style Overrides (Fresh Green / Nature) */
+.qls-download-title-hd-wrap.style-emerald {
+    background: #fff;
+    border: 1px solid #ecfdf5;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-sales,
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-body {
+    background: linear-gradient(to bottom, #fff 0%, #f0fdf4 100%);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-price-val {
+    color: #059669;
+    font-weight: 800;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-vip-item {
+    background: #fff;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.05);
+    color: #047857;
+    transition: all 0.2s ease;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+    border-color: #6ee7b7;
+    background: #ecfdf5;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-vip-name {
+    color: #064e3b;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-vip-price {
+    color: #059669;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-buy {
+    background: #d1fae5;
+    color: #059669;
+    box-shadow: none;
+    border: 1px solid #a7f3d0;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-buy:hover {
+    background: #a7f3d0;
+    color: #064e3b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-pay {
+    background: #fff;
+    color: #059669;
+    border: 1px solid #6ee7b7;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-pay:hover {
+    background: #ecfdf5;
+    border-color: #10b981;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(5, 150, 105, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(5, 150, 105, 0.4);
+    filter: brightness(108%);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-download-item {
+    background: #fff;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-download-item:hover {
+    border-color: #34d399;
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-download-go-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 4px 10px rgba(5, 150, 105, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-download-code code {
+    color: #059669;
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-emerald .qls-download-title-hd-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 4. Marketing Red Style Overrides */
+.qls-download-title-hd-wrap.style-marketing_red {
+    background: #fff;
+    border: 1px solid #fee2e2;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(248, 113, 113, 0.12);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-header {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-badge {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-badge.success {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-sales,
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-user-discount-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-body {
+    background: linear-gradient(to bottom, #fff 0%, #fff7ed 100%);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-price-val {
+    color: #ef4444;
+    font-weight: 800;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-vip-item {
+    background: #fff;
+    border: 1px solid #fecaca;
+    box-shadow: 0 4px 10px rgba(248, 113, 113, 0.08);
+    color: #b91c1c;
+    transition: all 0.2s ease;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-vip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(248, 113, 113, 0.18);
+    border-color: #fca5a5;
+    background: #fff1f2;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-vip-name {
+    color: #9f1239;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-vip-price {
+    color: #ef4444;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-buy {
+    background: #ffe4e6;
+    color: #ef4444;
+    box-shadow: none;
+    border: 1px solid #fecdd3;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-buy:hover {
+    background: #fecdd3;
+    color: #be123c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(248, 113, 113, 0.15);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-pay {
+    background: #fff;
+    color: #ef4444;
+    border: 1px solid #fda4af;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-pay:hover {
+    background: #fff1f2;
+    border-color: #f87171;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(248, 113, 113, 0.3);
+    border: none;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(248, 113, 113, 0.4);
+    filter: brightness(108%);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-download-item {
+    background: #fff;
+    border: 1px solid #fecaca;
+    box-shadow: 0 2px 4px rgba(248, 113, 113, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-download-item:hover {
+    border-color: #fca5a5;
+    box-shadow: 0 6px 15px rgba(248, 113, 113, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-download-go-btn {
+    background: linear-gradient(135deg, #f87171 0%, #fb923c 100%);
+    box-shadow: 0 4px 10px rgba(248, 113, 113, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-download-code code {
+    color: #ef4444;
+    background: #ffe4e6;
+    border: 1px solid #fecdd3;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-header-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-marketing_red .qls-download-title-hd-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 5. Business Style Overrides (SaaS / Tech) */
+.qls-download-title-hd-wrap.style-business {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-header {
+    background: #1e293b;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-badge {
+    opacity: 1;
+    color: #fff;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-badge.success {
+    background: rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-user-discount-tag,
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-sales {
+    background: rgba(255, 255, 255, 0.1);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-body {
+    background: #fff;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-vip-item {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background: #f8fafc;
+    color: #334155;
+    transition: all 0.2s ease;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-vip-item:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-vip-name {
+    color: #475569;
+    font-weight: 600;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-vip-price {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-download-item {
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-download-item:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-download-go-btn {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-download-go-btn:hover {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-header-link {
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-header-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-buy,
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-pay,
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-vip,
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-recharge,
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-login {
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: none;
+    height: 28px;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-buy {
+    background: #fff;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-buy:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-pay {
+    background: #334155;
+    color: #fff;
+    border: none;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-pay:hover {
+    background: #1e293b;
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.4);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-download-title-hd-btn-vip:hover {
+    background: linear-gradient(135deg, #020617 0%, #1e293b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.5);
+}
+
+.qls-download-title-hd-wrap.style-business .qls-service-tag .icon {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* 6. Gallery Style Overrides (Dark / Material) */
+.qls-download-title-hd-wrap.style-gallery {
+    background: #18181b !important;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    color: #e4e4e7;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-header {
+    background: #18181b;
+    border-bottom: 1px solid #27272a;
+    min-height: auto;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-badge {
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-badge.success {
+    background: linear-gradient(to right, #10b981, #059669);
+    color: #fff;
+    border: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-sales,
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-user-discount-tag {
+    color: #a1a1aa;
+    font-size: 13px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-body {
+    background: #18181b !important;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-price-val {
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    color: #22d3ee;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-price-label {
+    color: #71717a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-vip-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-vip-item {
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    border-radius: 8px;
+    color: #e4e4e7;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-vip-item:hover {
+    background: #3f3f46;
+    border-color: #52525b;
+    transform: translateY(-2px);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-vip-name {
+    color: #a1a1aa;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-vip-price {
+    color: #fff;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-buy {
+    background: transparent;
+    border: 1px solid #52525b;
+    color: #e4e4e7;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-buy:hover {
+    border-color: #22d3ee;
+    color: #fff;
+    background: rgba(34, 211, 238, 0.12);
+    transform: translateY(-2px);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-vip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
+    filter: brightness(120%);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-pay {
+    background: #27272a;
+    color: #e4e4e7;
+    border: 1px solid #3f3f46;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-pay:hover {
+    background: #3f3f46;
+    border-color: #52525b;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-login {
+    border: 1px solid #3f3f46;
+    color: #a1a1aa;
+    background: transparent;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-login:hover {
+    border-color: #22d3ee;
+    color: #fff;
+    background: rgba(34, 211, 238, 0.12);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-recharge {
+    background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 16px rgba(34, 211, 238, 0.35);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-btn-recharge:hover {
+    filter: brightness(110%);
+    box-shadow: 0 10px 22px rgba(34, 211, 238, 0.45);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-service-tags {
+    border-top: 1px solid #27272a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-service-tag {
+    color: #71717a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-service-tag .icon {
+    background: #27272a;
+    color: #a1a1aa;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-item {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-item:hover {
+    border-color: #3f3f46;
+    background: #27272a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-name {
+    color: #e4e4e7;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-code {
+    color: #a1a1aa;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-code code {
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    color: #22d3ee;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-go-btn {
+    background: #27272a;
+    color: #fff;
+    border: 1px solid #3f3f46;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-download-go-btn:hover {
+    border-color: #22d3ee;
+    color: #22d3ee;
+    background: transparent;
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-header-link {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.12);
+}
+
+.qls-download-title-hd-wrap.style-gallery .qls-download-title-hd-header-link:hover {
+    background: rgba(56, 189, 248, 0.2);
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-section {
+    background: #18181b;
+    border: 1px dashed #27272a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-header {
+    border-bottom: 1px solid #27272a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-title {
+    color: #a1a1aa;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-item {
+    background: #18181b;
+    border: 1px solid #27272a;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-item:hover {
+    border-color: #3f3f46;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-name {
+    color: #d4d4d8;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-btn {
+    background: transparent;
+    border: 1px solid #3f3f46;
+    color: #a1a1aa;
+}
+
+.qls-download-title-hd-wrap.style-gallery .pancheck-btn:hover {
+    border-color: #22d3ee;
+    color: #22d3ee;
+}
+
+/* ========================================
+   Title Header BASE Styles (qls-download-title-hd-)
+   Aggressively Compact Version
+   ======================================== */
+
+/* Wrapper */
+.qls-download-title-hd-wrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+    border: 1px solid #e1f5fe;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    position: relative;
+    font-size: 12px;
+}
+
+/* Header */
+.qls-download-title-hd-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    min-height: 28px;
+}
+
+.qls-download-title-hd-wrap.qls-download-title-hd-download-box .qls-download-title-hd-header {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.qls-download-title-hd-badge {
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.qls-download-title-hd-sales,
+.qls-download-title-hd-user-discount-tag {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.qls-download-title-hd-header-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.qls-download-title-hd-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Body */
+.qls-download-title-hd-body {
+    padding: 8px 10px;
+    background: #fff;
+}
+
+/* Price Area */
+.qls-download-title-hd-price-area {
+    text-align: center;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.qls-download-title-hd-price-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.qls-download-title-hd-price-val {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff7f50;
+    line-height: 1;
+}
+
+/* VIP Grid - Horizontal Items */
+.qls-download-title-hd-vip-grid {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.qls-download-title-hd-vip-item {
+    flex: 0 1 auto;
+    /* Don't force stretch */
+    border-radius: 6px;
+    padding: 4px 8px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    /* Horizontal */
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* Card gradients */
+.qls-download-title-hd-vip-item:nth-child(1) {
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+}
+
+.qls-download-title-hd-vip-item:nth-child(2) {
+    background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+}
+
+.qls-download-title-hd-vip-item:nth-child(3) {
+    background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+}
+
+.qls-download-title-hd-vip-item:nth-child(4) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.qls-download-title-hd-vip-name {
+    font-size: 11px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.qls-download-title-hd-vip-price {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Tips & Pancheck */
+.qls-download-title-hd-tips {
+    background: #e1f3d8;
+    color: #4caf50;
+    padding: 8px 10px;
+    /* Slightly larger padding */
+    border-radius: 6px;
+    font-size: 12px;
+    /* Standard small size */
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border: 1px solid #cce5c4;
+}
+
+.qls-download-title-hd-pancheck {
+    margin-bottom: 10px;
+    border: 1px dashed #b2ebf2;
+    border-radius: 6px;
+    padding: 10px;
+    /* Increased padding */
+    background: #f0fcfd;
+}
+
+.qls-download-title-hd-pancheck-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 12px;
+    /* Increased from 11px */
+}
+
+.qls-download-title-hd-pancheck-item:last-child {
+    margin-bottom: 0;
+}
+
+.qls-download-title-hd-pancheck-name {
+    color: #0097e6;
+    font-weight: 600;
+}
+
+.qls-download-title-hd-pancheck-btn {
+    border: 1px solid #009efd;
+    background: #fff;
+    padding: 3px 10px;
+    /* Larger clickable area */
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 11px;
+    color: #009efd;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.qls-download-title-hd-pancheck-btn:hover {
+    background: #009efd;
+    color: #fff;
+}
+
+/* Actions */
+.qls-download-title-hd-actions {
+    margin-top: 8px;
+}
+
+.qls-download-title-hd-btn-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+.qls-download-title-hd-btn-buy,
+.qls-download-title-hd-btn-pay,
+.qls-download-title-hd-btn-login,
+.qls-download-title-hd-btn-vip,
+.qls-download-title-hd-btn-recharge {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none;
+    padding: 0 14px !important;
+    border-radius: 50px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1 1 auto !important;
+    min-width: 100px !important;
+    max-width: 180px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.qls-download-title-hd-btn-buy:not(.disabled):hover,
+.qls-download-title-hd-btn-pay:hover,
+.qls-download-title-hd-btn-login:hover,
+.qls-download-title-hd-btn-vip:hover,
+.qls-download-title-hd-btn-recharge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.qls-download-title-hd-btn-buy:active,
+.qls-download-title-hd-btn-pay:active,
+.qls-download-title-hd-btn-login:active,
+.qls-download-title-hd-btn-vip:active,
+.qls-download-title-hd-btn-recharge:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.qls-download-title-hd-btn-vip:hover,
+.qls-download-title-hd-btn-recharge:hover {
+    color: #fff;
+}
+
+/* Themes for buttons */
+.qls-download-title-hd-btn-buy {
+    background: linear-gradient(135deg, #42e695 0%, #3bb2b8 100%);
+}
+
+.qls-download-title-hd-btn-pay {
+    background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+}
+
+.qls-download-title-hd-btn-login {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.qls-download-title-hd-btn-login:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+}
+
+.qls-download-title-hd-btn-vip {
+    background: linear-gradient(135deg, #4481eb 0%, #04befe 100%);
+}
+
+.qls-download-title-hd-btn-recharge {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.qls-download-title-hd-btn-buy.disabled {
+    background: linear-gradient(135deg, #e0e0e0 0%, #cfcfcf 100%);
+    color: #999;
+}
+
+/* Balance Row */
+.qls-download-title-hd-balance-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: #7f8c8d;
+}
+
+/* Service Tags - Single Line */
+.qls-download-title-hd-service-tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    font-size: 11px;
+    /* Small text */
+    color: #6c757d;
+}
+
+.qls-download-title-hd-service-tags .qls-service-tag {
+    display: inline-flex;
+    align-items: center;
+}
+
+.qls-download-title-hd-service-tags .icon {
+    color: #28a745;
+    /* Checkmark color */
+    margin-right: 2px;
+}
+
+/* Download Box Specifics */
+.qls-download-title-hd-download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.qls-download-title-hd-download-item {
+    background: #f0fcfd;
+    border: 1px solid #b2ebf2;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qls-download-title-hd-download-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 12px;
+}
+
+.qls-download-title-hd-download-code {
+    font-size: 11px;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+}
+
+.qls-download-title-hd-download-code code {
+    background: #fff;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: #009efd;
+    border: 1px solid #b2ebf2;
+    margin-left: 4px;
+}
+
+.qls-download-title-hd-download-go-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border: 0;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.qls-download-title-hd-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.qls-download-title-hd-link-page-main {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    background: #e0f7fa;
+    color: #00bcd4;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 11px;
+    border: 1px solid #b2ebf2;
+}
+
+@media (max-width: 600px) {
+
+    .qls-download-title-hd-btn-buy,
+    .qls-download-title-hd-btn-pay,
+    .qls-download-title-hd-btn-login,
+    .qls-download-title-hd-btn-vip,
+    .qls-download-title-hd-btn-recharge {
+        flex: 1 1 45%;
+    }
+}
+
+/* QiLing theme dark mode: virtual resource sidebar/title boxes */
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-wrap, .qls-download-title-hd-wrap) {
+    background: var(--dm-bg-card, var(--qiling-dark-surface, #1e293b)) !important;
+    border-color: rgba(148, 163, 184, 0.22) !important;
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.28) !important;
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0)) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-body, .qls-download-title-hd-body),
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-wrap.style-violet,
+    .qls-download-sidebar-re-wrap.style-blue_ocean,
+    .qls-download-sidebar-re-wrap.style-emerald,
+    .qls-download-sidebar-re-wrap.style-marketing_red,
+    .qls-download-sidebar-re-wrap.style-business,
+    .qls-download-sidebar-re-wrap.style-gallery,
+    .qls-download-title-hd-wrap.style-violet,
+    .qls-download-title-hd-wrap.style-blue_ocean,
+    .qls-download-title-hd-wrap.style-emerald,
+    .qls-download-title-hd-wrap.style-marketing_red,
+    .qls-download-title-hd-wrap.style-business,
+    .qls-download-title-hd-wrap.style-gallery
+) :is(.qls-download-sidebar-re-body, .qls-download-title-hd-body) {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.46) 100%) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-download-item, .qls-download-title-hd-download-item),
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-wrap.style-violet,
+    .qls-download-sidebar-re-wrap.style-blue_ocean,
+    .qls-download-sidebar-re-wrap.style-emerald,
+    .qls-download-sidebar-re-wrap.style-marketing_red,
+    .qls-download-sidebar-re-wrap.style-business,
+    .qls-download-sidebar-re-wrap.style-gallery,
+    .qls-download-title-hd-wrap.style-violet,
+    .qls-download-title-hd-wrap.style-blue_ocean,
+    .qls-download-title-hd-wrap.style-emerald,
+    .qls-download-title-hd-wrap.style-marketing_red,
+    .qls-download-title-hd-wrap.style-business,
+    .qls-download-title-hd-wrap.style-gallery
+) :is(.qls-download-sidebar-re-download-item, .qls-download-title-hd-download-item) {
+    background: rgba(15, 23, 42, 0.48) !important;
+    border-color: rgba(56, 189, 248, 0.24) !important;
+    box-shadow: none !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-download-item, .qls-download-title-hd-download-item):hover,
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-wrap.style-violet,
+    .qls-download-sidebar-re-wrap.style-blue_ocean,
+    .qls-download-sidebar-re-wrap.style-emerald,
+    .qls-download-sidebar-re-wrap.style-marketing_red,
+    .qls-download-sidebar-re-wrap.style-business,
+    .qls-download-sidebar-re-wrap.style-gallery,
+    .qls-download-title-hd-wrap.style-violet,
+    .qls-download-title-hd-wrap.style-blue_ocean,
+    .qls-download-title-hd-wrap.style-emerald,
+    .qls-download-title-hd-wrap.style-marketing_red,
+    .qls-download-title-hd-wrap.style-business,
+    .qls-download-title-hd-wrap.style-gallery
+) :is(.qls-download-sidebar-re-download-item, .qls-download-title-hd-download-item):hover {
+    background: rgba(30, 41, 59, 0.86) !important;
+    border-color: rgba(56, 189, 248, 0.5) !important;
+    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.14) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-download-name,
+    .qls-download-title-hd-download-name,
+    .qls-download-sidebar-re-login-text,
+    .qls-download-title-hd-login-text,
+    .qls-download-sidebar-re-vip-only-title,
+    .qls-download-title-hd-vip-only-title
+) {
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0)) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-price-label,
+    .qls-download-title-hd-price-label,
+    .qls-download-sidebar-re-balance-row,
+    .qls-download-title-hd-balance-row,
+    .qls-download-sidebar-re-download-code,
+    .qls-download-title-hd-download-code,
+    .qls-download-sidebar-re-service-tags,
+    .qls-download-title-hd-service-tags,
+    .qls-download-sidebar-re-service-tags .qls-service-tag,
+    .qls-download-title-hd-service-tags .qls-service-tag,
+    .qls-download-sidebar-re-vip-only-desc,
+    .qls-download-title-hd-vip-only-desc
+) {
+    color: var(--dm-text-muted, var(--qiling-dark-text-muted, #94a3b8)) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-download-code code, .qls-download-title-hd-download-code code) {
+    background: rgba(15, 23, 42, 0.72) !important;
+    border-color: rgba(56, 189, 248, 0.28) !important;
+    color: #67e8f9 !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-link-page-main, .qls-download-title-hd-link-page-main) {
+    background: rgba(6, 182, 212, 0.12) !important;
+    border-color: rgba(56, 189, 248, 0.32) !important;
+    color: #67e8f9 !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-link-page-main, .qls-download-title-hd-link-page-main):hover {
+    background: #0891b2 !important;
+    border-color: #22d3ee !important;
+    color: #fff !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-tips,
+    .qls-download-title-hd-tips,
+    .qls-download-sidebar-re-pancheck,
+    .qls-download-title-hd-pancheck
+) {
+    background: rgba(16, 185, 129, 0.1) !important;
+    border-color: rgba(45, 212, 191, 0.26) !important;
+    color: #86efac !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-pancheck-name, .qls-download-title-hd-pancheck-name) {
+    color: #67e8f9 !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-pancheck-btn, .qls-download-title-hd-pancheck-btn) {
+    background: rgba(15, 23, 42, 0.68) !important;
+    border-color: rgba(56, 189, 248, 0.4) !important;
+    color: #67e8f9 !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-pancheck-btn, .qls-download-title-hd-pancheck-btn):hover {
+    background: #0891b2 !important;
+    border-color: #22d3ee !important;
+    color: #fff !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-scope-tag, .qls-download-title-hd-scope-tag) {
+    background: rgba(148, 163, 184, 0.14) !important;
+    border-color: rgba(148, 163, 184, 0.26) !important;
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0)) !important;
+    box-shadow: none !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-scope-tag.is-view, .qls-download-title-hd-scope-tag.is-view) {
+    background: rgba(59, 130, 246, 0.16) !important;
+    border-color: rgba(96, 165, 250, 0.34) !important;
+    color: #93c5fd !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-scope-tag.is-download, .qls-download-title-hd-scope-tag.is-download) {
+    background: rgba(16, 185, 129, 0.16) !important;
+    border-color: rgba(52, 211, 153, 0.34) !important;
+    color: #86efac !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-scope-tag.is-upgrade, .qls-download-title-hd-scope-tag.is-upgrade) {
+    background: rgba(245, 158, 11, 0.16) !important;
+    border-color: rgba(251, 191, 36, 0.34) !important;
+    color: #fcd34d !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-vip-only-panel, .qls-download-title-hd-vip-only-panel),
+:is(html.dark-mode, [data-theme="dark"]) :is(.qls-download-sidebar-re-vip-only-access .qls-download-sidebar-re-body, .qls-download-title-hd-vip-only-access .qls-download-title-hd-body) {
+    background: rgba(15, 23, 42, 0.72) !important;
+    border-color: rgba(96, 165, 250, 0.28) !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-wrap.style-violet,
+    .qls-download-sidebar-re-wrap.style-blue_ocean,
+    .qls-download-sidebar-re-wrap.style-emerald,
+    .qls-download-sidebar-re-wrap.style-marketing_red,
+    .qls-download-sidebar-re-wrap.style-business,
+    .qls-download-sidebar-re-wrap.style-gallery,
+    .qls-download-title-hd-wrap.style-violet,
+    .qls-download-title-hd-wrap.style-blue_ocean,
+    .qls-download-title-hd-wrap.style-emerald,
+    .qls-download-title-hd-wrap.style-marketing_red,
+    .qls-download-title-hd-wrap.style-business,
+    .qls-download-title-hd-wrap.style-gallery
+) :is(.qls-download-sidebar-re-vip-item, .qls-download-title-hd-vip-item) {
+    background: rgba(15, 23, 42, 0.48) !important;
+    border-color: rgba(148, 163, 184, 0.24) !important;
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0)) !important;
+    box-shadow: none !important;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(
+    .qls-download-sidebar-re-wrap.style-violet,
+    .qls-download-sidebar-re-wrap.style-blue_ocean,
+    .qls-download-sidebar-re-wrap.style-emerald,
+    .qls-download-sidebar-re-wrap.style-marketing_red,
+    .qls-download-sidebar-re-wrap.style-business,
+    .qls-download-sidebar-re-wrap.style-gallery,
+    .qls-download-title-hd-wrap.style-violet,
+    .qls-download-title-hd-wrap.style-blue_ocean,
+    .qls-download-title-hd-wrap.style-emerald,
+    .qls-download-title-hd-wrap.style-marketing_red,
+    .qls-download-title-hd-wrap.style-business,
+    .qls-download-title-hd-wrap.style-gallery
+) :is(
+    .qls-download-sidebar-re-vip-name,
+    .qls-download-sidebar-re-vip-price,
+    .qls-download-title-hd-vip-name,
+    .qls-download-title-hd-vip-price
+) {
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0)) !important;
+}

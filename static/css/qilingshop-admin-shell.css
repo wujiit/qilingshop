@@ -1,0 +1,596 @@
+/**
+ * QilingShop Admin Shell
+ *
+ * Scoped admin design system to avoid relying on WordPress default visual style.
+ * Only applies when body has "qilingshop-admin-shell".
+ */
+
+body.qilingshop-admin-shell {
+    --qls-admin-bg: #f0f4f9;
+    --qls-admin-surface: #ffffff;
+    --qls-admin-surface-soft: #f8fafc;
+    --qls-admin-border: #dce3ed;
+    --qls-admin-border-strong: #cbd5e1;
+    --qls-admin-text: #0f172a;
+    --qls-admin-muted: #64748b;
+    --qls-admin-primary: #e45f16;
+    --qls-admin-primary-hover: #c64f10;
+    --qls-admin-primary-soft: #fff3ec;
+    --qls-admin-danger: #e11d48;
+    --qls-admin-radius-sm: 8px;
+    --qls-admin-radius-md: 12px;
+    --qls-admin-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+body.qilingshop-admin-shell #wpcontent {
+    background: var(--qls-admin-bg);
+}
+
+body.qilingshop-admin-shell #wpbody-content {
+    padding-bottom: 32px;
+}
+
+body.qilingshop-admin-shell .qilingshop-admin-page,
+body.qilingshop-admin-shell .postbox,
+body.qilingshop-admin-shell .wp-list-table,
+body.qilingshop-admin-shell table.widefat {
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell input::placeholder,
+body.qilingshop-admin-shell textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+body.qilingshop-admin-shell a,
+body.qilingshop-admin-shell .button-link,
+body.qilingshop-admin-shell .button-link:visited {
+    color: var(--qls-admin-primary);
+}
+
+body.qilingshop-admin-shell a:hover,
+body.qilingshop-admin-shell .button-link:hover {
+    color: var(--qls-admin-primary-hover);
+}
+
+body.qilingshop-admin-shell .wrap,
+body.qilingshop-admin-shell .qilingshop-admin-page {
+    margin-top: 18px;
+}
+
+body.qilingshop-admin-shell .wrap > h1,
+body.qilingshop-admin-shell .wrap > h2,
+body.qilingshop-admin-shell .wrap .wp-heading-inline,
+body.qilingshop-admin-shell .qilingshop-admin-page > h1,
+body.qilingshop-admin-shell .qilingshop-admin-page > h2,
+body.qilingshop-admin-shell .qilingshop-admin-page .wp-heading-inline {
+    color: var(--qls-admin-text);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+body.qilingshop-admin-shell .description,
+body.qilingshop-admin-shell p.description {
+    color: var(--qls-admin-muted);
+}
+
+body.qilingshop-admin-shell .dashboard-section,
+body.qilingshop-admin-shell .qls-form-section,
+body.qilingshop-admin-shell .qls-ops-panel,
+body.qilingshop-admin-shell .qls-settings-content,
+body.qilingshop-admin-shell .qls-stat-card,
+body.qilingshop-admin-shell .qls-ops-filter,
+body.qilingshop-admin-shell .qls-ops-roi,
+body.qilingshop-admin-shell .qls-ops-kpi-card,
+body.qilingshop-admin-shell .postbox,
+body.qilingshop-admin-shell .notice,
+body.qilingshop-admin-shell .updated,
+body.qilingshop-admin-shell .error {
+    border-radius: var(--qls-admin-radius-md);
+}
+
+body.qilingshop-admin-shell .dashboard-section,
+body.qilingshop-admin-shell .qls-form-section,
+body.qilingshop-admin-shell .qls-settings-content,
+body.qilingshop-admin-shell .postbox {
+    border: 1px solid var(--qls-admin-border);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .dashboard-section h2,
+body.qilingshop-admin-shell .qls-form-section h2,
+body.qilingshop-admin-shell .qls-form-section h3 {
+    color: var(--qls-admin-text);
+    border-color: var(--qls-admin-border);
+}
+
+body.qilingshop-admin-shell .button,
+body.qilingshop-admin-shell button.button,
+body.qilingshop-admin-shell input[type="submit"],
+body.qilingshop-admin-shell .page-title-action,
+body.qilingshop-admin-shell .qls-ui-btn {
+    border-radius: var(--qls-admin-radius-sm);
+    border: 1px solid var(--qls-admin-border-strong);
+    background: var(--qls-admin-surface);
+    color: var(--qls-admin-text);
+    min-height: 36px;
+    line-height: 34px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+body.qilingshop-admin-shell .button:hover,
+body.qilingshop-admin-shell button.button:hover,
+body.qilingshop-admin-shell input[type="submit"]:hover,
+body.qilingshop-admin-shell .page-title-action:hover,
+body.qilingshop-admin-shell .qls-ui-btn:hover {
+    border-color: var(--qls-admin-primary);
+    color: var(--qls-admin-primary);
+    background: var(--qls-admin-primary-soft);
+    box-shadow: 0 2px 4px rgba(228, 95, 22, 0.1);
+}
+
+body.qilingshop-admin-shell .button.button-primary,
+body.qilingshop-admin-shell button.button.button-primary,
+body.qilingshop-admin-shell input[type="submit"].button-primary,
+body.qilingshop-admin-shell .wp-core-ui .button-primary,
+body.qilingshop-admin-shell .qls-ui-btn-primary {
+    background: var(--qls-admin-primary);
+    border-color: var(--qls-admin-primary);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(228, 95, 22, 0.25);
+}
+
+body.qilingshop-admin-shell .button.button-primary:hover,
+body.qilingshop-admin-shell button.button.button-primary:hover,
+body.qilingshop-admin-shell input[type="submit"].button-primary:hover,
+body.qilingshop-admin-shell .wp-core-ui .button-primary:hover,
+body.qilingshop-admin-shell .qls-ui-btn-primary:hover {
+    background: var(--qls-admin-primary-hover);
+    border-color: var(--qls-admin-primary-hover);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(228, 95, 22, 0.35);
+    transform: translateY(-1px);
+}
+
+body.qilingshop-admin-shell .button.button-link-delete,
+body.qilingshop-admin-shell a.submitdelete,
+body.qilingshop-admin-shell .qls-ui-btn-danger,
+body.qilingshop-admin-shell .qls-remove-sku,
+body.qilingshop-admin-shell .qls-remove-param,
+body.qilingshop-admin-shell .qls-remove-value {
+    color: var(--qls-admin-danger);
+}
+
+body.qilingshop-admin-shell .button.button-link-delete:hover,
+body.qilingshop-admin-shell a.submitdelete:hover,
+body.qilingshop-admin-shell .qls-ui-btn-danger:hover {
+    color: #9f1239;
+}
+
+body.qilingshop-admin-shell .qls-admin-link-danger {
+    color: var(--qls-admin-danger);
+}
+
+body.qilingshop-admin-shell .qls-admin-link-danger:hover {
+    color: #9f1239;
+}
+
+body.qilingshop-admin-shell .qls-admin-orders-actions-form {
+    float: right;
+    margin-top: 10px;
+}
+
+body.qilingshop-admin-shell .qls-admin-orders-table {
+    margin-top: 45px;
+}
+
+body.qilingshop-admin-shell .qls-admin-bulk-panel {
+    margin: 16px 0;
+    padding: 16px;
+    background: var(--qls-admin-surface);
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qls-admin-bulk-panel-title {
+    margin: 0 0 12px;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .qls-admin-filter-form {
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+body.qilingshop-admin-shell .nav-tab-wrapper,
+body.qilingshop-admin-shell nav.nav-tab-wrapper,
+body.qilingshop-admin-shell .qls-ui-tabs {
+    margin: 0 0 20px;
+    padding: 8px 12px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+body.qilingshop-admin-shell .nav-tab {
+    float: none;
+    margin: 0;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-sm);
+    background: #ffffff;
+    color: var(--qls-admin-text);
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.3;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+body.qilingshop-admin-shell .nav-tab:hover {
+    color: var(--qls-admin-primary);
+    background: var(--qls-admin-primary-soft);
+    border-color: var(--qls-admin-primary);
+}
+
+body.qilingshop-admin-shell .nav-tab.nav-tab-active,
+body.qilingshop-admin-shell .nav-tab.nav-tab-active:hover,
+body.qilingshop-admin-shell .nav-tab-active {
+    background: var(--qls-admin-primary);
+    border-color: var(--qls-admin-primary);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(228, 95, 22, 0.25);
+}
+
+body.qilingshop-admin-shell .form-table,
+body.qilingshop-admin-shell .qls-ui-form-table {
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body.qilingshop-admin-shell .form-table th,
+body.qilingshop-admin-shell .form-table td,
+body.qilingshop-admin-shell .qls-ui-form-table th,
+body.qilingshop-admin-shell .qls-ui-form-table td {
+    border-bottom: 1px solid #edf1f6;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    vertical-align: top;
+}
+
+body.qilingshop-admin-shell .form-table th,
+body.qilingshop-admin-shell .qls-ui-form-table th {
+    color: var(--qls-admin-text);
+    font-weight: 600;
+    font-size: 13.5px;
+    width: 180px;
+    padding-left: 0;
+    padding-right: 16px;
+    line-height: 1.5;
+}
+
+body.qilingshop-admin-shell .form-table td,
+body.qilingshop-admin-shell .qls-ui-form-table td {
+    color: var(--qls-admin-text);
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+body.qilingshop-admin-shell .form-table tr:last-child th,
+body.qilingshop-admin-shell .form-table tr:last-child td,
+body.qilingshop-admin-shell .qls-ui-form-table tr:last-child th,
+body.qilingshop-admin-shell .qls-ui-form-table tr:last-child td {
+    border-bottom: none;
+}
+
+body.qilingshop-admin-shell input[type="text"],
+body.qilingshop-admin-shell input[type="number"],
+body.qilingshop-admin-shell input[type="password"],
+body.qilingshop-admin-shell input[type="search"],
+body.qilingshop-admin-shell input[type="url"],
+body.qilingshop-admin-shell input[type="date"],
+body.qilingshop-admin-shell input[type="datetime-local"],
+body.qilingshop-admin-shell input[type="email"],
+body.qilingshop-admin-shell select,
+body.qilingshop-admin-shell textarea,
+body.qilingshop-admin-shell .widefat,
+body.qilingshop-admin-shell .regular-text,
+body.qilingshop-admin-shell .large-text {
+    border: 1px solid var(--qls-admin-border-strong);
+    border-radius: var(--qls-admin-radius-sm);
+    background: #ffffff;
+    color: var(--qls-admin-text);
+    box-shadow: none;
+    font-size: 13.5px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.qilingshop-admin-shell input[type="text"],
+body.qilingshop-admin-shell input[type="number"],
+body.qilingshop-admin-shell input[type="password"],
+body.qilingshop-admin-shell input[type="search"],
+body.qilingshop-admin-shell input[type="url"],
+body.qilingshop-admin-shell input[type="date"],
+body.qilingshop-admin-shell input[type="datetime-local"],
+body.qilingshop-admin-shell input[type="email"],
+body.qilingshop-admin-shell select {
+    min-height: 38px;
+    line-height: 1.4;
+    padding: 6px 12px;
+}
+
+body.qilingshop-admin-shell textarea {
+    min-height: 90px;
+    padding: 10px 12px;
+    line-height: 1.55;
+}
+
+body.qilingshop-admin-shell input[type="text"]:focus,
+body.qilingshop-admin-shell input[type="number"]:focus,
+body.qilingshop-admin-shell input[type="password"]:focus,
+body.qilingshop-admin-shell input[type="search"]:focus,
+body.qilingshop-admin-shell input[type="url"]:focus,
+body.qilingshop-admin-shell input[type="date"]:focus,
+body.qilingshop-admin-shell input[type="datetime-local"]:focus,
+body.qilingshop-admin-shell input[type="email"]:focus,
+body.qilingshop-admin-shell select:focus,
+body.qilingshop-admin-shell textarea:focus {
+    border-color: var(--qls-admin-primary);
+    box-shadow: 0 0 0 3px rgba(228, 95, 22, 0.15);
+    outline: none;
+}
+
+body.qilingshop-admin-shell .form-table label,
+body.qilingshop-admin-shell .qls-ui-form-table label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    color: var(--qls-admin-text);
+    cursor: pointer;
+}
+
+body.qilingshop-admin-shell .form-table input[type="checkbox"],
+body.qilingshop-admin-shell .form-table input[type="radio"],
+body.qilingshop-admin-shell .qls-ui-form-table input[type="checkbox"],
+body.qilingshop-admin-shell .qls-ui-form-table input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--qls-admin-border-strong);
+    background: #ffffff;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+body.qilingshop-admin-shell .form-table input[type="radio"],
+body.qilingshop-admin-shell .qls-ui-form-table input[type="radio"] {
+    border-radius: 50%;
+}
+
+body.qilingshop-admin-shell .form-table input[type="checkbox"]:checked,
+body.qilingshop-admin-shell .qls-ui-form-table input[type="checkbox"]:checked,
+body.qilingshop-admin-shell .form-table input[type="radio"]:checked,
+body.qilingshop-admin-shell .qls-ui-form-table input[type="radio"]:checked {
+    background: var(--qls-admin-primary);
+    border-color: var(--qls-admin-primary);
+}
+
+body.qilingshop-admin-shell .wp-list-table,
+body.qilingshop-admin-shell table.widefat,
+body.qilingshop-admin-shell .qls-ui-table {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .wp-list-table thead th,
+body.qilingshop-admin-shell .wp-list-table tfoot th,
+body.qilingshop-admin-shell table.widefat thead th,
+body.qilingshop-admin-shell table.widefat tfoot th,
+body.qilingshop-admin-shell .qls-ui-table thead th,
+body.qilingshop-admin-shell .qls-ui-table tfoot th {
+    background: #2f4f73;
+    color: #ffffff;
+    border-bottom: 1px solid #243f5c;
+    font-weight: 600;
+}
+
+body.qilingshop-admin-shell .wp-list-table tbody td,
+body.qilingshop-admin-shell table.widefat tbody td,
+body.qilingshop-admin-shell .qls-ui-table tbody td {
+    border-bottom: 1px solid #d8e1ee;
+    vertical-align: middle;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-admin-shell .wp-list-table tbody tr:last-child td,
+body.qilingshop-admin-shell table.widefat tbody tr:last-child td,
+body.qilingshop-admin-shell .qls-ui-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+body.qilingshop-admin-shell .wp-list-table.striped > tbody > :nth-child(odd),
+body.qilingshop-admin-shell .widefat.striped > tbody > :nth-child(odd),
+body.qilingshop-admin-shell .qls-ui-table.striped > tbody > :nth-child(odd),
+body.qilingshop-admin-shell ul.striped > :nth-child(odd),
+body.qilingshop-admin-shell .alternate {
+    background: #f3f6fb;
+}
+
+body.qilingshop-admin-shell .wp-list-table tbody tr:hover td,
+body.qilingshop-admin-shell table.widefat tbody tr:hover td,
+body.qilingshop-admin-shell .qls-ui-table tbody tr:hover td {
+    background: #e8eff8;
+}
+
+body.qilingshop-admin-shell .status-badge,
+body.qilingshop-admin-shell .qls-badge,
+body.qilingshop-admin-shell .badge {
+    border-radius: 999px;
+    padding: 3px 10px;
+}
+
+body.qilingshop-admin-shell .tablenav,
+body.qilingshop-admin-shell .tablenav.top,
+body.qilingshop-admin-shell .tablenav.bottom {
+    margin: 10px 0;
+}
+
+body.qilingshop-admin-shell .tablenav-pages .current-page,
+body.qilingshop-admin-shell .tablenav-pages a {
+    border-radius: 6px;
+}
+
+body.qilingshop-admin-shell .notice,
+body.qilingshop-admin-shell .updated,
+body.qilingshop-admin-shell .error {
+    border: 1px solid var(--qls-admin-border);
+    border-left: 4px solid var(--qls-admin-primary);
+    background: var(--qls-admin-surface);
+    color: var(--qls-admin-text);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .notice.notice-error,
+body.qilingshop-admin-shell .error {
+    border-left-color: var(--qls-admin-danger);
+}
+
+body.qilingshop-admin-shell .qls-admin-message {
+    margin: 12px 0 16px;
+    padding: 10px 14px;
+    border: 1px solid var(--qls-admin-border);
+    border-left: 4px solid var(--qls-admin-primary);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    color: var(--qls-admin-text);
+    box-shadow: var(--qls-admin-shadow);
+}
+
+body.qilingshop-admin-shell .qls-admin-message p {
+    margin: 0;
+}
+
+body.qilingshop-admin-shell .qls-admin-message-error {
+    border-left-color: var(--qls-admin-danger);
+}
+
+body.qilingshop-admin-shell .qls-modal-content {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: 14px;
+}
+
+body.qilingshop-admin-shell .qls-media-preview,
+body.qilingshop-admin-shell .qls-gallery-item,
+body.qilingshop-admin-shell .qls-value-image-preview {
+    border-color: var(--qls-admin-border-strong);
+}
+
+body.qilingshop-admin-shell .qls-attribute-row,
+body.qilingshop-admin-shell .qls-attr-value-row,
+body.qilingshop-admin-shell .qls-ops-filter,
+body.qilingshop-admin-shell .qls-ops-roi,
+body.qilingshop-admin-shell .qls-ops-kpi-card {
+    border-color: var(--qls-admin-border);
+}
+
+body.qilingshop-admin-shell .qls-ops-period-btn {
+    border-color: var(--qls-admin-border-strong);
+    color: var(--qls-admin-text);
+    border-radius: var(--qls-admin-radius-sm);
+}
+
+body.qilingshop-admin-shell .qls-ops-period-btn:hover,
+body.qilingshop-admin-shell .qls-ops-period-btn.is-active {
+    border-color: var(--qls-admin-primary);
+    background: var(--qls-admin-primary-soft);
+    color: var(--qls-admin-primary);
+}
+
+body.qilingshop-admin-shell .qls-ops-progress {
+    background: #d7e3f2;
+}
+
+body.qilingshop-admin-shell .qls-ops-progress > span {
+    background: linear-gradient(90deg, #f08a4b, #e45f16);
+}
+
+@media screen and (max-width: 782px) {
+    body.qilingshop-admin-shell .form-table th,
+    body.qilingshop-admin-shell .form-table td,
+    body.qilingshop-admin-shell .qls-ui-form-table th,
+    body.qilingshop-admin-shell .qls-ui-form-table td {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    body.qilingshop-admin-shell .button,
+    body.qilingshop-admin-shell button.button,
+    body.qilingshop-admin-shell input[type="submit"],
+    body.qilingshop-admin-shell .qls-ui-btn {
+        min-height: 38px;
+        line-height: 36px;
+    }
+
+    body.qilingshop-admin-shell .nav-tab-wrapper,
+    body.qilingshop-admin-shell nav.nav-tab-wrapper,
+    body.qilingshop-admin-shell .qls-ui-tabs {
+        padding: 6px;
+        gap: 6px;
+    }
+
+    body.qilingshop-admin-shell .nav-tab {
+        width: calc(50% - 6px);
+        text-align: center;
+        justify-content: center;
+    }
+
+    body.qilingshop-admin-shell .qls-admin-orders-actions-form {
+        float: none;
+        margin: 10px 0;
+    }
+
+    body.qilingshop-admin-shell .qls-admin-orders-table {
+        margin-top: 12px;
+    }
+
+    body.qilingshop-admin-shell .qls-admin-filter-form {
+        align-items: stretch;
+    }
+
+    body.qilingshop-admin-shell .qls-admin-filter-form input[type="search"],
+    body.qilingshop-admin-shell .qls-admin-filter-form select,
+    body.qilingshop-admin-shell .qls-admin-filter-form button {
+        width: 100%;
+    }
+}

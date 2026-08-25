@@ -1,0 +1,776 @@
+/*
+ * 启灵积分商城领券中心样式
+ * Migrated from templates/shop/coupon-center.php inline style
+ */
+
+.qls-coupon-center {
+    --cc-primary: #ff4d2d;
+    --cc-primary-soft: #ffe7df;
+    --cc-accent: #ff6a3d;
+    --cc-accent-soft: #ffe7df;
+    --cc-text: #111827;
+    --cc-muted: #6b7280;
+    --cc-border: #e5e7eb;
+    --cc-card: #ffffff;
+    --cc-bg: #f3f6fb;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px 20px 36px;
+    color: var(--cc-text);
+}
+
+.qls-coupon-center * {
+    box-sizing: border-box;
+}
+
+.qls-cc-hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 24px;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #ff7a18 0%, #ff4d2d 55%, #ff3d00 100%);
+    color: #fff;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.qls-cc-hero::after {
+    content: '';
+    position: absolute;
+    right: -90px;
+    top: -80px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.qls-cc-hero-main {
+    position: relative;
+    z-index: 1;
+}
+
+.qls-cc-eyebrow {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.qls-cc-hero h2 {
+    margin: 10px 0 6px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.qls-cc-hero p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.qls-cc-stats {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    min-width: 360px;
+}
+
+.qls-cc-stat {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.qls-cc-stat .label {
+    font-size: 12px;
+    opacity: 0.86;
+}
+
+.qls-cc-stat strong {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.qls-cc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    border: 1px solid var(--cc-border);
+    border-radius: 14px;
+    background: var(--cc-card);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    margin-bottom: 14px;
+}
+
+.qls-cc-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.qls-cc-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qls-cc-input input {
+    width: 240px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+.qls-cc-input input:focus {
+    outline: none;
+    border-color: var(--cc-primary);
+    box-shadow: 0 0 0 3px rgba(255, 77, 45, 0.16);
+}
+
+.qls-coupon-center .qls-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.qls-coupon-center .qls-btn:hover {
+    transform: translateY(-1px);
+}
+
+.qls-coupon-center .qls-btn-primary {
+    background: linear-gradient(120deg, #ff7a18 0%, #ff4d2d 100%);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(255, 77, 45, 0.26);
+}
+
+.qls-coupon-center .qls-btn-primary:hover {
+    box-shadow: 0 12px 22px rgba(255, 77, 45, 0.32);
+}
+
+.qls-coupon-center .qls-btn-claim {
+    background: linear-gradient(120deg, #ff6a3d 0%, #ff8c38 100%);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(255, 106, 61, 0.3);
+}
+
+.qls-coupon-center .qls-btn-claim:hover {
+    box-shadow: 0 12px 22px rgba(255, 106, 61, 0.34);
+}
+
+.qls-coupon-center .qls-btn-disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.qls-coupon-center .qls-btn-disabled:hover {
+    transform: none;
+}
+
+.qls-coupon-center .qls-btn-outline {
+    background: #fff;
+    color: var(--cc-primary);
+    border: 1px solid rgba(255, 77, 45, 0.28);
+}
+
+.qls-coupon-center .qls-btn-outline:hover {
+    background: var(--cc-primary-soft);
+}
+
+.qls-cc-tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.qls-scope-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: -4px 0 16px;
+}
+
+.qls-scope-filter-label {
+    font-size: 13px;
+    color: var(--cc-muted);
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.qls-scope-chip {
+    border: 1px solid var(--cc-border);
+    background: #fff;
+    color: #475569;
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.qls-scope-chip:hover {
+    border-color: #ffb799;
+    color: #d9480f;
+}
+
+.qls-scope-chip.active {
+    color: #fff;
+    border-color: transparent;
+    background: linear-gradient(120deg, #ff7a18 0%, #ff4d2d 100%);
+    box-shadow: 0 6px 14px rgba(255, 77, 45, 0.2);
+}
+
+.qls-cc-tab {
+    border: 1px solid var(--cc-border);
+    background: #fff;
+    color: var(--cc-muted);
+    border-radius: 999px;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.qls-cc-tab.active {
+    color: #fff;
+    border-color: transparent;
+    background: linear-gradient(120deg, #ff7a18 0%, #ff4d2d 100%);
+    box-shadow: 0 8px 16px rgba(255, 77, 45, 0.24);
+}
+
+.qls-cc-panel {
+    display: none;
+}
+
+.qls-cc-panel.active {
+    display: block;
+}
+
+.qls-coupon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 14px;
+}
+
+.qls-coupon-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 138px 1fr;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--cc-card);
+    border: 1px solid #dbe2ea;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qls-coupon-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+}
+
+.qls-coupon-card.claimed {
+    opacity: 0.72;
+    filter: grayscale(0.2);
+}
+
+.qls-coupon-card::before,
+.qls-coupon-card::after {
+    content: '';
+    position: absolute;
+    left: 138px;
+    width: 14px;
+    height: 14px;
+    background: var(--cc-bg);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.qls-coupon-card::before {
+    top: -7px;
+}
+
+.qls-coupon-card::after {
+    bottom: -7px;
+}
+
+.qls-coupon-left {
+    background: linear-gradient(140deg, #ff6a3d 0%, #ff8c38 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 12px;
+    text-align: center;
+}
+
+.qls-coupon-card.my-coupon .qls-coupon-left {
+    background: linear-gradient(140deg, #ff9f1c 0%, #ff7a18 100%);
+}
+
+.qls-coupon-value {
+    display: flex;
+    align-items: baseline;
+    line-height: 1;
+}
+
+.qls-cv-symbol {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.qls-cv-number {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.qls-coupon-condition {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.qls-coupon-right {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qls-coupon-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.qls-coupon-scope {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin-bottom: 7px;
+    background: #fff0e8;
+    color: #c2410c;
+}
+
+.qls-scope-all {
+    background: #e8f7ee;
+    color: #047857;
+}
+
+.qls-scope-resource {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.qls-scope-recharge {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.qls-scope-vip {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.qls-scope-shop {
+    background: #ffe7df;
+    color: #c2410c;
+}
+
+.qls-coupon-time {
+    font-size: 12px;
+    color: var(--cc-muted);
+    margin-bottom: 10px;
+}
+
+.qls-coupon-code code {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 7px;
+    border: 1px dashed #cbd5e1;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 12px;
+}
+
+.qls-coupon-action .qls-btn {
+    min-width: 88px;
+    padding: 8px 14px;
+    font-size: 13px;
+}
+
+.qls-coupon-stock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    color: #64748b;
+    background: #f1f5f9;
+    border-radius: 999px;
+    padding: 3px 8px;
+}
+
+.qls-my-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.qls-my-tab {
+    border: 1px solid var(--cc-border);
+    background: #fff;
+    color: var(--cc-muted);
+    border-radius: 999px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.qls-my-tab.active {
+    background: #111827;
+    border-color: #111827;
+    color: #fff;
+}
+
+.qls-used-section {
+    margin-top: 18px;
+}
+
+.qls-used-title {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 700;
+}
+
+.qls-used-empty {
+    padding: 30px 20px;
+}
+
+.qls-used-empty .dashicons {
+    font-size: 44px;
+    width: 44px;
+    height: 44px;
+    color: #cbd5e1;
+}
+
+.qls-usage-list {
+    border: 1px solid var(--cc-border);
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.qls-usage-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 13px 14px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.qls-usage-item:last-child {
+    border-bottom: none;
+}
+
+.qls-usage-item:hover {
+    background: #f8fafc;
+}
+
+.qls-usage-coupon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 170px;
+}
+
+.qls-usage-value {
+    background: linear-gradient(140deg, #ff6a3d 0%, #ff8c38 100%);
+    color: #fff;
+    padding: 4px 9px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qls-usage-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.qls-usage-order {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.qls-usage-type {
+    font-size: 12px;
+    display: inline-flex;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.qls-usage-no {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.qls-usage-detail {
+    min-width: 112px;
+    text-align: right;
+}
+
+.qls-usage-discount {
+    display: block;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.qls-usage-time {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.qls-cc-empty {
+    text-align: center;
+    padding: 48px 20px;
+    border-radius: 14px;
+    border: 1px dashed var(--cc-border);
+    background: #fff;
+    color: #94a3b8;
+}
+
+.qls-cc-empty .dashicons {
+    font-size: 44px;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+.qls-cc-empty p {
+    margin: 0 0 14px;
+    font-size: 14px;
+}
+
+.qls-filter-empty {
+    margin-top: 12px;
+    padding: 24px 18px;
+}
+
+.qls-cc-toast {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.96);
+    z-index: 10090;
+    max-width: min(88vw, 430px);
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    background: rgba(17, 24, 39, 0.94);
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.28);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.qls-cc-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.qls-cc-toast.success {
+    background: rgba(5, 150, 105, 0.96);
+}
+
+.qls-cc-toast.error {
+    background: rgba(220, 38, 38, 0.96);
+}
+
+.qls-cc-toast.warning {
+    background: rgba(217, 119, 6, 0.96);
+}
+
+@media (max-width: 1024px) {
+    .qls-coupon-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-coupon-center {
+        padding: 18px 14px 26px;
+    }
+
+    .qls-cc-hero {
+        flex-direction: column;
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+
+    .qls-cc-hero h2 {
+        font-size: 23px;
+    }
+
+    .qls-cc-stats {
+        min-width: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .qls-cc-header {
+        padding: 12px;
+    }
+
+    .qls-cc-header h3 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .qls-scope-filter-label {
+        width: 100%;
+        margin: 0 0 2px;
+    }
+
+    .qls-cc-input {
+        width: 100%;
+    }
+
+    .qls-cc-input input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .qls-coupon-card {
+        grid-template-columns: 112px 1fr;
+    }
+
+    .qls-coupon-card::before,
+    .qls-coupon-card::after {
+        left: 112px;
+    }
+
+    .qls-cv-number {
+        font-size: 30px;
+    }
+
+    .qls-coupon-right {
+        padding: 12px;
+    }
+
+    .qls-coupon-name {
+        font-size: 15px;
+    }
+
+    .qls-usage-item {
+        flex-wrap: wrap;
+    }
+
+    .qls-usage-coupon {
+        min-width: 0;
+    }
+
+    .qls-usage-order,
+    .qls-usage-detail {
+        width: 100%;
+    }
+
+    .qls-usage-detail {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 520px) {
+    .qls-cc-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-coupon-card {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-coupon-card::before,
+    .qls-coupon-card::after {
+        display: none;
+    }
+
+    .qls-coupon-left {
+        padding: 16px 12px;
+    }
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-center {
+    --cc-text: #e5e7eb;
+    --cc-muted: #9ca3af;
+    --cc-border: #374151;
+    --cc-card: #111827;
+    --cc-bg: #0b1220;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-cc-header,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-card,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-usage-list,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-cc-empty {
+    box-shadow: none;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-code code,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-stock,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-center .qls-btn-outline {
+    background: #1f2937;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-scope-chip {
+    background: #1f2937;
+    border-color: #334155;
+    color: #cbd5e1;
+}

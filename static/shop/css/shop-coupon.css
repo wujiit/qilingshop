@@ -1,0 +1,405 @@
+/*
+ * QilingShop Coupon Styles
+ * Extracted from shop-modern.css for page-level loading
+ */
+/* =========================================
+   Coupon Section Styles
+   ========================================= */
+
+/* Coupon Section in Checkout */
+.qls-coupon-section {
+    background: var(--qls-card-bg);
+    border-radius: var(--qls-radius);
+    padding: 24px;
+    border: 1px solid var(--qls-border);
+    margin-top: 20px;
+}
+
+.qls-coupon-input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.qls-coupon-input-row input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid var(--qls-border);
+    border-radius: var(--qls-radius-sm);
+    font-size: 0.95rem;
+    background: var(--qls-input-bg);
+    transition: all 0.2s;
+}
+
+.qls-coupon-input-row input:focus {
+    border-color: var(--qls-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.qls-btn-outline {
+    background: transparent;
+    border: 1px solid var(--qls-primary);
+    color: var(--qls-primary);
+    padding: 12px 24px;
+    border-radius: var(--qls-radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.qls-btn-outline:hover {
+    background: var(--qls-primary);
+    color: #fff;
+}
+
+/* 优惠券切换按钮 */
+.qls-coupon-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 1px solid #fcd34d;
+    border-radius: var(--qls-radius-sm);
+    color: #92400e;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    justify-content: center;
+}
+
+.qls-coupon-toggle:hover {
+    background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+    transform: translateY(-1px);
+}
+
+.qls-coupon-toggle .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.qls-coupon-count {
+    background: #dc2626;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+/* Applied Coupon Tag */
+.qls-coupon-applied {
+    margin-top: 12px;
+}
+
+.qls-applied-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border: 1px solid #86efac;
+    border-radius: var(--qls-radius-sm);
+    color: #166534;
+}
+
+.qls-applied-tag .coupon-name {
+    font-weight: 600;
+}
+
+.qls-applied-tag .coupon-discount {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.qls-remove-coupon {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+}
+
+.qls-remove-coupon:hover {
+    color: #dc2626;
+}
+
+/* Coupon Modal */
+.qls-coupon-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.qls-coupon-modal-content {
+    background: var(--qls-card-bg);
+    border-radius: var(--qls-radius);
+    width: 100%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.qls-coupon-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--qls-border);
+}
+
+.qls-coupon-modal .modal-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.qls-coupon-modal .modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--qls-text-muted);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.qls-coupon-modal .modal-close:hover {
+    color: var(--qls-danger);
+}
+
+.qls-coupon-modal .modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.qls-coupon-modal .loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--qls-text-muted);
+}
+
+/* Coupon Card in Modal */
+.qls-modal-coupon-card {
+    display: flex;
+    border: 1px solid var(--qls-border);
+    border-radius: var(--qls-radius-sm);
+    overflow: hidden;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.qls-modal-coupon-card:hover {
+    border-color: var(--qls-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qls-modal-coupon-card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.qls-modal-coupon-card .coupon-left {
+    width: 100px;
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 8px;
+}
+
+.qls-modal-coupon-card .coupon-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.qls-modal-coupon-card .coupon-condition {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.qls-modal-coupon-card .coupon-right {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qls-modal-coupon-card .coupon-name {
+    font-weight: 600;
+    color: var(--qls-text);
+    margin-bottom: 4px;
+}
+
+.qls-modal-coupon-card .coupon-expire {
+    font-size: 0.8rem;
+    color: var(--qls-text-muted);
+}
+
+.qls-modal-coupon-card .coupon-discount-preview {
+    font-size: 0.85rem;
+    color: var(--qls-danger);
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+/* Discount Row in Summary */
+.qls-coupon-discount-row {
+    color: var(--qls-success);
+}
+
+.qls-coupon-discount-row .discount-amount {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* Dark Mode Overrides for Coupon */
+html.dark-mode .qls-coupon-toggle {
+    background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+    border-color: #a16207;
+    color: #fef3c7;
+}
+
+html.dark-mode .qls-applied-tag {
+    background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+    border-color: #22c55e;
+    color: #dcfce7;
+}
+
+html.dark-mode .qls-modal-coupon-card {
+    border-color: var(--qls-border);
+    background: var(--qls-card-bg);
+}
+
+html.dark-mode .qls-modal-coupon-card .coupon-name {
+    color: var(--qls-text);
+}
+
+/* =========================================
+   Checkout Confirm Modal (Migrated from template)
+   ========================================= */
+.qls-confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qls-confirm-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    animation: qlsFadeIn 0.2s ease;
+}
+
+.qls-confirm-dialog {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 360px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: qlsConfirmPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes qlsConfirmPop {
+    from { opacity: 0; transform: scale(0.9) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes qlsFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.qls-confirm-icon {
+    margin-bottom: 15px;
+}
+
+.qls-confirm-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+}
+
+.qls-confirm-message {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin: 0 0 25px 0;
+    line-height: 1.5;
+}
+
+.qls-confirm-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.qls-confirm-cancel,
+.qls-confirm-ok {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.qls-confirm-cancel {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.qls-confirm-cancel:hover {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.qls-confirm-ok {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+}
+
+.qls-confirm-ok:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+
+/* ==========================================

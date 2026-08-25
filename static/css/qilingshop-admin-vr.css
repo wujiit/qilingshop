@@ -1,0 +1,925 @@
+/**
+ * QilingShop virtual-resource admin skin
+ * Scope: pages wrapped with .qilingshop-vr-page only.
+ */
+
+body.qilingshop-vr-admin {
+    --qvr-bg: #eef2f8;
+    --qvr-surface: #ffffff;
+    --qvr-surface-soft: #e9eef6;
+    --qvr-border: #c6d2e2;
+    --qvr-border-strong: #9fb2cb;
+    --qvr-text: #14263b;
+    --qvr-muted: #2c4563;
+    --qvr-primary: #e45f16;
+    --qvr-primary-hover: #c64f10;
+    --qvr-primary-soft: #ffe9dd;
+    --qvr-danger: #be123c;
+    --qvr-success: #1f8f56;
+    --qvr-radius-sm: 8px;
+    --qvr-radius-md: 12px;
+    --qvr-shadow: 0 8px 20px rgba(20, 38, 59, 0.10);
+}
+
+body.qilingshop-vr-admin #wpcontent {
+    background: radial-gradient(circle at right top, #f7fafe 0, var(--qvr-bg) 54%);
+}
+
+body.qilingshop-vr-admin #wpbody-content {
+    padding-bottom: 28px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page input::placeholder,
+.qilingshop-vr-page input::placeholder,
+body.qilingshop-vr-admin .qilingshop-vr-page textarea::placeholder,
+.qilingshop-vr-page textarea::placeholder {
+    color: #516985;
+    opacity: 1;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page a,
+body.qilingshop-vr-admin .qilingshop-vr-page .button-link,
+.qilingshop-vr-page a,
+.qilingshop-vr-page .button-link {
+    color: var(--qvr-primary);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page a:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page .button-link:hover,
+.qilingshop-vr-page a:hover,
+.qilingshop-vr-page .button-link:hover {
+    color: var(--qvr-primary-hover);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page,
+.qilingshop-vr-page {
+    margin-top: 18px;
+    max-width: 1460px;
+    padding: 18px 20px;
+    border: 1px solid var(--qvr-border);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffffff 0, #fcfdff 100%);
+    box-shadow: var(--qvr-shadow);
+    color: var(--qvr-text);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page > h1,
+body.qilingshop-vr-admin .qilingshop-vr-page > .wp-heading-inline,
+body.qilingshop-vr-admin .qilingshop-vr-page > h2,
+.qilingshop-vr-page > h1,
+.qilingshop-vr-page > .wp-heading-inline,
+.qilingshop-vr-page > h2 {
+    margin: 0 0 14px;
+    color: var(--qvr-text);
+    letter-spacing: 0.01em;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page > h1,
+body.qilingshop-vr-admin .qilingshop-vr-page > .wp-heading-inline,
+.qilingshop-vr-page > h1,
+.qilingshop-vr-page > .wp-heading-inline {
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page > h2,
+.qilingshop-vr-page > h2 {
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .description,
+body.qilingshop-vr-admin .qilingshop-vr-page p.description,
+.qilingshop-vr-page .description,
+.qilingshop-vr-page p.description {
+    color: var(--qvr-muted);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .notice,
+.qilingshop-vr-page .notice {
+    margin: 0 0 14px;
+    border: 1px solid var(--qvr-border);
+    border-left-width: 4px;
+    border-radius: var(--qvr-radius-md);
+    background: #f5f8fd;
+    box-shadow: none;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .subsubsub,
+.qilingshop-vr-page .subsubsub {
+    float: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .subsubsub li,
+.qilingshop-vr-page .subsubsub li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .subsubsub a,
+.qilingshop-vr-page .subsubsub a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--qvr-border);
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--qvr-text);
+    padding: 6px 12px;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .subsubsub a.current,
+body.qilingshop-vr-admin .qilingshop-vr-page .subsubsub a:hover,
+.qilingshop-vr-page .subsubsub a.current,
+.qilingshop-vr-page .subsubsub a:hover {
+    border-color: var(--qvr-primary);
+    background: var(--qvr-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .nav-tab-wrapper,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-tabs,
+.qilingshop-vr-page .nav-tab-wrapper,
+.qilingshop-vr-page .qls-ui-tabs {
+    margin: 0 0 14px;
+    padding: 8px;
+    border: 1px solid var(--qvr-border);
+    border-radius: var(--qvr-radius-md);
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .nav-tab,
+.qilingshop-vr-page .nav-tab {
+    float: none;
+    margin: 0;
+    padding: 8px 14px;
+    border: 1px solid var(--qvr-border-strong);
+    border-radius: var(--qvr-radius-sm);
+    background: #ffffff;
+    color: var(--qvr-text);
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .nav-tab:hover,
+.qilingshop-vr-page .nav-tab:hover {
+    border-color: var(--qvr-primary);
+    background: var(--qvr-primary-soft);
+    color: var(--qvr-primary);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .nav-tab.nav-tab-active,
+body.qilingshop-vr-admin .qilingshop-vr-page .nav-tab.nav-tab-active:hover,
+.qilingshop-vr-page .nav-tab.nav-tab-active,
+.qilingshop-vr-page .nav-tab.nav-tab-active:hover {
+    border-color: var(--qvr-primary);
+    background: var(--qvr-primary);
+    color: #ffffff;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .button,
+body.qilingshop-vr-admin .qilingshop-vr-page button.button,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="submit"],
+.qilingshop-vr-page .button,
+.qilingshop-vr-page button.button,
+.qilingshop-vr-page input[type="submit"] {
+    min-height: 34px;
+    line-height: 32px;
+    border-radius: var(--qvr-radius-sm);
+    border-color: var(--qvr-border-strong);
+    color: var(--qvr-text);
+    background: #fff;
+    box-shadow: none;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .button:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page button.button:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="submit"]:hover,
+.qilingshop-vr-page .button:hover,
+.qilingshop-vr-page button.button:hover,
+.qilingshop-vr-page input[type="submit"]:hover {
+    border-color: var(--qvr-primary);
+    color: var(--qvr-primary);
+    background: var(--qvr-primary-soft);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .button.button-primary,
+body.qilingshop-vr-admin .qilingshop-vr-page button.button.button-primary,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="submit"].button-primary,
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-core-ui .button-primary,
+.qilingshop-vr-page .button.button-primary,
+.qilingshop-vr-page button.button.button-primary,
+.qilingshop-vr-page input[type="submit"].button-primary,
+.qilingshop-vr-page .wp-core-ui .button-primary {
+    border-color: var(--qvr-primary);
+    color: #fff;
+    background: var(--qvr-primary);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .button.button-primary:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page button.button.button-primary:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="submit"].button-primary:hover,
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-core-ui .button-primary:hover,
+.qilingshop-vr-page .button.button-primary:hover,
+.qilingshop-vr-page button.button.button-primary:hover,
+.qilingshop-vr-page input[type="submit"].button-primary:hover,
+.qilingshop-vr-page .wp-core-ui .button-primary:hover {
+    border-color: var(--qvr-primary-hover);
+    color: #fff;
+    background: var(--qvr-primary-hover);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .button-link-delete,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-link-danger,
+.qilingshop-vr-page .button-link-delete,
+.qilingshop-vr-page .qls-admin-link-danger {
+    color: var(--qvr-danger);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="text"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="number"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="password"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="search"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="url"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="date"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="datetime-local"],
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="email"],
+body.qilingshop-vr-admin .qilingshop-vr-page select,
+body.qilingshop-vr-admin .qilingshop-vr-page textarea,
+.qilingshop-vr-page input[type="text"],
+.qilingshop-vr-page input[type="number"],
+.qilingshop-vr-page input[type="password"],
+.qilingshop-vr-page input[type="search"],
+.qilingshop-vr-page input[type="url"],
+.qilingshop-vr-page input[type="date"],
+.qilingshop-vr-page input[type="datetime-local"],
+.qilingshop-vr-page input[type="email"],
+.qilingshop-vr-page select,
+.qilingshop-vr-page textarea {
+    border-color: var(--qvr-border-strong);
+    border-radius: var(--qvr-radius-sm);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="text"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="number"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="password"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="search"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="url"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="date"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="datetime-local"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page input[type="email"]:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page select:focus,
+body.qilingshop-vr-admin .qilingshop-vr-page textarea:focus,
+.qilingshop-vr-page input[type="text"]:focus,
+.qilingshop-vr-page input[type="number"]:focus,
+.qilingshop-vr-page input[type="password"]:focus,
+.qilingshop-vr-page input[type="search"]:focus,
+.qilingshop-vr-page input[type="url"]:focus,
+.qilingshop-vr-page input[type="date"]:focus,
+.qilingshop-vr-page input[type="datetime-local"]:focus,
+.qilingshop-vr-page input[type="email"]:focus,
+.qilingshop-vr-page select:focus,
+.qilingshop-vr-page textarea:focus {
+    border-color: var(--qvr-primary);
+    box-shadow: 0 0 0 1px var(--qvr-primary);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .search-box,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-user-filters,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-filter-form,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-record-actions,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-points-filter-form,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-date-inputs,
+.qilingshop-vr-page .search-box,
+.qilingshop-vr-page .qls-user-filters,
+.qilingshop-vr-page .qls-admin-filter-form,
+.qilingshop-vr-page .qls-admin-record-actions,
+.qilingshop-vr-page .qls-admin-points-filter-form,
+.qilingshop-vr-page .qls-date-inputs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 12px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .search-box,
+.qilingshop-vr-page .search-box {
+    float: none;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-record-actions,
+.qilingshop-vr-page .qls-admin-record-actions {
+    margin-top: -4px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-record-actions-note,
+.qilingshop-vr-page .qls-admin-record-actions-note {
+    margin-top: -6px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-inline-action,
+.qilingshop-vr-page .qls-admin-inline-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-record-actions.qls-admin-inline-action,
+.qilingshop-vr-page .qls-admin-record-actions.qls-admin-inline-action {
+    display: flex;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-inline-action .button-link,
+.qilingshop-vr-page .qls-admin-inline-action .button-link {
+    min-height: 0;
+    line-height: 1.4;
+    padding: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-inline-action .button-link:hover,
+.qilingshop-vr-page .qls-admin-inline-action .button-link:hover {
+    background: transparent;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .search-box input[type="search"],
+.qilingshop-vr-page .search-box input[type="search"] {
+    min-width: 260px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .dashboard-section,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-gift-vip-box,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-bulk-panel,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-resource-actions-panel,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-filter-bar,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-stats-card,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-stats-chart-panel,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-stats-rank-card,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form-panel,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-submit,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-points-card,
+.qilingshop-vr-page .dashboard-section,
+.qilingshop-vr-page .qls-gift-vip-box,
+.qilingshop-vr-page .qls-admin-bulk-panel,
+.qilingshop-vr-page .qls-admin-resource-actions-panel,
+.qilingshop-vr-page .qls-filter-bar,
+.qilingshop-vr-page .qls-admin-stats-card,
+.qilingshop-vr-page .qls-admin-stats-chart-panel,
+.qilingshop-vr-page .qls-admin-stats-rank-card,
+.qilingshop-vr-page .qls-settings-form-panel,
+.qilingshop-vr-page .qls-settings-group,
+.qilingshop-vr-page .qls-settings-group-vip,
+.qilingshop-vr-page .qls-settings-submit,
+.qilingshop-vr-page .qls-admin-points-card {
+    border: 1px solid var(--qvr-border);
+    border-radius: var(--qvr-radius-md);
+    background: var(--qvr-surface);
+    box-shadow: var(--qvr-shadow);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .stat-cards,
+.qilingshop-vr-page .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .stat-card,
+.qilingshop-vr-page .stat-card {
+    min-width: 0;
+    border: 1px solid var(--qvr-border);
+    border-radius: var(--qvr-radius-md);
+    background: linear-gradient(180deg, #fff 0, #f9fcff 100%);
+    box-shadow: none;
+    padding: 16px 18px;
+    text-align: left;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .stat-value,
+.qilingshop-vr-page .stat-value {
+    color: #102a43;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-list-table,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-table,
+body.qilingshop-vr-admin .qilingshop-vr-page table.widefat,
+.qilingshop-vr-page .wp-list-table,
+.qilingshop-vr-page .qls-ui-table,
+.qilingshop-vr-page table.widefat {
+    margin-top: 0;
+    border: 1px solid var(--qvr-border);
+    border-radius: var(--qvr-radius-md);
+    background: var(--qvr-surface);
+    box-shadow: var(--qvr-shadow);
+    overflow: hidden;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-list-table thead th,
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-list-table tfoot th,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-table thead th,
+body.qilingshop-vr-admin .qilingshop-vr-page table.widefat thead th,
+.qilingshop-vr-page .wp-list-table thead th,
+.qilingshop-vr-page .wp-list-table tfoot th,
+.qilingshop-vr-page .qls-ui-table thead th,
+.qilingshop-vr-page table.widefat thead th {
+    border-bottom: 1px solid #243f5c;
+    color: #ffffff;
+    font-weight: 700;
+    background: #2f4f73;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-list-table tbody td,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-table tbody td,
+body.qilingshop-vr-admin .qilingshop-vr-page table.widefat tbody td,
+.qilingshop-vr-page .wp-list-table tbody td,
+.qilingshop-vr-page .qls-ui-table tbody td,
+.qilingshop-vr-page table.widefat tbody td {
+    border-bottom: 1px solid #eaf0f6;
+    background: #fff;
+    vertical-align: middle;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .wp-list-table tbody tr:hover td,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-table tbody tr:hover td,
+body.qilingshop-vr-admin .qilingshop-vr-page table.widefat tbody tr:hover td,
+.qilingshop-vr-page .wp-list-table tbody tr:hover td,
+.qilingshop-vr-page .qls-ui-table tbody tr:hover td,
+.qilingshop-vr-page table.widefat tbody tr:hover td {
+    background: #f8fcff;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .tablenav,
+body.qilingshop-vr-admin .qilingshop-vr-page .tablenav.top,
+body.qilingshop-vr-admin .qilingshop-vr-page .tablenav.bottom,
+.qilingshop-vr-page .tablenav,
+.qilingshop-vr-page .tablenav.top,
+.qilingshop-vr-page .tablenav.bottom {
+    margin: 12px 0 0;
+    padding-top: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-orders-actions-form,
+.qilingshop-vr-page .qls-admin-orders-actions-form {
+    float: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 12px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-orders-table,
+.qilingshop-vr-page .qls-admin-orders-table {
+    margin-top: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-quick-btn.active,
+.qilingshop-vr-page .qls-quick-btn.active {
+    border-color: var(--qvr-primary);
+    background: var(--qvr-primary);
+    color: #fff;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-amount-positive,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-amount-positive-text,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-status-success,
+.qilingshop-vr-page .qls-admin-amount-positive,
+.qilingshop-vr-page .qls-admin-amount-positive-text,
+.qilingshop-vr-page .qls-admin-status-success {
+    color: var(--qvr-success);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-status-danger,
+.qilingshop-vr-page .qls-admin-status-danger {
+    color: var(--qvr-danger);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form,
+.qilingshop-vr-page .qls-settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-tab-content,
+.qilingshop-vr-page .qls-settings-tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form-panel,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form-panel-soft,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-submit,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-notify-scene-card,
+.qilingshop-vr-page .qls-settings-form-panel,
+.qilingshop-vr-page .qls-settings-form-panel-soft,
+.qilingshop-vr-page .qls-settings-group,
+.qilingshop-vr-page .qls-settings-group-vip,
+.qilingshop-vr-page .qls-settings-submit,
+.qilingshop-vr-page .qls-notify-scene-card {
+    padding: 16px 18px;
+    margin: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group h3,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip h3,
+.qilingshop-vr-page .qls-settings-group h3,
+.qilingshop-vr-page .qls-settings-group-vip h3 {
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--qvr-border);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--qvr-text);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-notify-switch-group,
+.qilingshop-vr-page .qls-notify-switch-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-notify-switch-label,
+.qilingshop-vr-page .qls-notify-switch-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    color: var(--qvr-text);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-notify-switch-label input[type="checkbox"],
+.qilingshop-vr-page .qls-notify-switch-label input[type="checkbox"] {
+    margin: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip h3 span,
+.qilingshop-vr-page .qls-settings-group-vip h3 span {
+    margin-right: 8px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-vip-shortcode-tip,
+.qilingshop-vr-page .qls-vip-shortcode-tip {
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--qvr-border);
+    border-left-width: 4px;
+    border-radius: var(--qvr-radius-md);
+    background: #f8fcff;
+    color: var(--qvr-text);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-table-no-margin,
+.qilingshop-vr-page .qls-settings-table-no-margin {
+    margin: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table,
+.qilingshop-vr-page .form-table,
+.qilingshop-vr-page .qls-ui-form-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table th,
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table td,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table th,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table td,
+.qilingshop-vr-page .form-table th,
+.qilingshop-vr-page .form-table td,
+.qilingshop-vr-page .qls-ui-form-table th,
+.qilingshop-vr-page .qls-ui-form-table td {
+    padding: 12px 6px;
+    border-bottom: 1px solid #e8eff7;
+    vertical-align: top;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table tr:last-child th,
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table tr:last-child td,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table tr:last-child th,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table tr:last-child td,
+.qilingshop-vr-page .form-table tr:last-child th,
+.qilingshop-vr-page .form-table tr:last-child td,
+.qilingshop-vr-page .qls-ui-form-table tr:last-child th,
+.qilingshop-vr-page .qls-ui-form-table tr:last-child td {
+    border-bottom: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table th,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table th,
+.qilingshop-vr-page .form-table th,
+.qilingshop-vr-page .qls-ui-form-table th {
+    width: 190px;
+    color: var(--qvr-text);
+    font-weight: 700;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table td label,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table td label,
+.qilingshop-vr-page .form-table td label,
+.qilingshop-vr-page .qls-ui-form-table td label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2e3c4d;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .form-table p.description,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table p.description,
+.qilingshop-vr-page .form-table p.description,
+.qilingshop-vr-page .qls-ui-form-table p.description {
+    margin: 8px 0 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .regular-text,
+body.qilingshop-vr-admin .qilingshop-vr-page input.regular-text,
+.qilingshop-vr-page .regular-text,
+.qilingshop-vr-page input.regular-text {
+    width: min(460px, 100%);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .large-text,
+body.qilingshop-vr-admin .qilingshop-vr-page input.large-text,
+body.qilingshop-vr-admin .qilingshop-vr-page textarea.large-text,
+.qilingshop-vr-page .large-text,
+.qilingshop-vr-page input.large-text,
+.qilingshop-vr-page textarea.large-text {
+    width: min(760px, 100%);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-user-modal-input,
+.qilingshop-vr-page .qls-user-modal-input {
+    width: 100%;
+    max-width: 100%;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-input-120,
+.qilingshop-vr-page .qls-settings-input-120 {
+    width: 120px;
+    max-width: 100%;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-input-300,
+.qilingshop-vr-page .qls-settings-input-300 {
+    width: 300px;
+    max-width: 100%;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-input-full,
+.qilingshop-vr-page .qls-settings-input-full {
+    width: 100%;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-inline-tip,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-guide-text,
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-empty-muted,
+.qilingshop-vr-page .qls-settings-inline-tip,
+.qilingshop-vr-page .qls-settings-guide-text,
+.qilingshop-vr-page .qls-settings-empty-muted {
+    color: var(--qvr-muted);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row,
+.qilingshop-vr-page .qls-field-row {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row > label,
+.qilingshop-vr-page .qls-field-row > label {
+    width: 120px;
+    font-weight: 600;
+    color: var(--qvr-text);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row-column,
+.qilingshop-vr-page .qls-field-row-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row-label-inline,
+.qilingshop-vr-page .qls-field-row-label-inline {
+    width: auto;
+    margin: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row-top-gap,
+.qilingshop-vr-page .qls-field-row-top-gap {
+    margin-top: 10px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row-no-margin,
+.qilingshop-vr-page .qls-field-row-no-margin {
+    margin-bottom: 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-overlay,
+.qilingshop-vr-page .qilingshop-modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(15, 23, 42, 0.56);
+    z-index: 99999;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal,
+.qilingshop-vr-page .qilingshop-modal {
+    position: relative;
+    width: min(440px, 100%);
+    max-height: calc(100vh - 56px);
+    overflow: auto;
+    border: 1px solid var(--qvr-border);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.28);
+    padding: 20px 20px 16px;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal.large-modal,
+.qilingshop-vr-page .qilingshop-modal.large-modal {
+    width: min(920px, 100%);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-close,
+.qilingshop-vr-page .qilingshop-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid var(--qvr-border);
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--qvr-muted);
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-close:hover,
+.qilingshop-vr-page .qilingshop-modal-close:hover {
+    border-color: var(--qvr-primary);
+    background: var(--qvr-primary-soft);
+    color: var(--qvr-primary);
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal h3,
+.qilingshop-vr-page .qilingshop-modal h3 {
+    margin: 0 30px 14px 0;
+}
+
+body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-footer,
+.qilingshop-vr-page .qilingshop-modal-footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+@media screen and (max-width: 782px) {
+    body.qilingshop-vr-admin .qilingshop-vr-page,
+    .qilingshop-vr-page {
+        padding: 14px;
+        margin-right: 10px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .search-box input[type="search"],
+    body.qilingshop-vr-admin .qilingshop-vr-page .search-box .button,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-user-filters > *,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-filter-form > *:not(input[type="hidden"]),
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-points-filter-form > *:not(input[type="hidden"]),
+    .qilingshop-vr-page .search-box input[type="search"],
+    .qilingshop-vr-page .search-box .button,
+    .qilingshop-vr-page .qls-user-filters > *,
+    .qilingshop-vr-page .qls-admin-filter-form > *:not(input[type="hidden"]),
+    .qilingshop-vr-page .qls-admin-points-filter-form > *:not(input[type="hidden"]) {
+        width: 100%;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-user-filters,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-filter-form,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-points-filter-form,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-date-inputs,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-admin-orders-actions-form,
+    .qilingshop-vr-page .qls-user-filters,
+    .qilingshop-vr-page .qls-admin-filter-form,
+    .qilingshop-vr-page .qls-admin-points-filter-form,
+    .qilingshop-vr-page .qls-date-inputs,
+    .qilingshop-vr-page .qls-admin-orders-actions-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page > h1,
+    body.qilingshop-vr-admin .qilingshop-vr-page > .wp-heading-inline,
+    .qilingshop-vr-page > h1,
+    .qilingshop-vr-page > .wp-heading-inline {
+        font-size: 24px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form-panel,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-form-panel-soft,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-submit,
+    .qilingshop-vr-page .qls-settings-form-panel,
+    .qilingshop-vr-page .qls-settings-form-panel-soft,
+    .qilingshop-vr-page .qls-settings-group,
+    .qilingshop-vr-page .qls-settings-group-vip,
+    .qilingshop-vr-page .qls-settings-submit {
+        padding: 14px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group h3,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-settings-group-vip h3,
+    .qilingshop-vr-page .qls-settings-group h3,
+    .qilingshop-vr-page .qls-settings-group-vip h3 {
+        font-size: 18px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .form-table th,
+    body.qilingshop-vr-admin .qilingshop-vr-page .form-table td,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table th,
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-ui-form-table td,
+    .qilingshop-vr-page .form-table th,
+    .qilingshop-vr-page .form-table td,
+    .qilingshop-vr-page .qls-ui-form-table th,
+    .qilingshop-vr-page .qls-ui-form-table td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row,
+    .qilingshop-vr-page .qls-field-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qls-field-row > label,
+    .qilingshop-vr-page .qls-field-row > label {
+        width: 100%;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-overlay,
+    .qilingshop-vr-page .qilingshop-modal-overlay {
+        padding: 10px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal,
+    .qilingshop-vr-page .qilingshop-modal {
+        width: 100%;
+        max-height: calc(100vh - 20px);
+        padding: 16px 14px 12px;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-footer,
+    .qilingshop-vr-page .qilingshop-modal-footer {
+        justify-content: stretch;
+    }
+
+    body.qilingshop-vr-admin .qilingshop-vr-page .qilingshop-modal-footer .button,
+    .qilingshop-vr-page .qilingshop-modal-footer .button {
+        flex: 1 1 auto;
+        width: 100%;
+        text-align: center;
+    }
+}

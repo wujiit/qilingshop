@@ -1,0 +1,1551 @@
+/**
+ * QilingShop Public CSS (Shop/Common Module)
+ * Split from qilingshop-public.css for on-demand loading.
+ */
+
+/**
+ * QilingShop Public CSS
+ */
+
+:root {
+    --qls-public-primary: var(--color-primary, #2563eb);
+    --qls-public-secondary: var(--qls-secondary, #0ea5e9);
+    --qls-public-accent-violet: #4f46e5;
+    --qls-public-gradient-brand: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+    --qls-public-gradient-info: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+    --qls-public-gradient-success: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+    --qls-public-gradient-buy: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    --qls-public-gradient-pay: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    --qls-public-gradient-vip: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+}
+
+/* Wrapper - Clean White & Soft Shadow */
+.qls-download-content-tb-wrap {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+    margin: 20px 0;
+    border: 1px solid #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    position: relative;
+}
+
+/* Header - Fresh Gradient */
+.qls-download-content-tb-header {
+    background: var(--qls-public-gradient-info);
+    /* Ocean Blue/Cyan */
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    min-height: 48px;
+}
+
+.qls-download-content-tb-wrap.qls-download-content-tb-download-box .qls-download-content-tb-header {
+    background: var(--qls-public-gradient-success);
+    /* Fresh Green */
+}
+
+.qls-download-content-tb-badge {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.qls-download-content-tb-sales,
+.qls-download-content-tb-user-discount-tag {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.qls-download-content-tb-header-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.qls-download-content-tb-header-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+/* VIP Only Access Notice */
+.qls-download-content-tb-vip-only-access .qls-download-content-tb-header,
+.qls-download-sidebar-re-vip-only-access .qls-download-sidebar-re-header,
+.qls-download-title-hd-vip-only-access .qls-download-title-hd-header {
+    background: var(--qls-public-gradient-brand);
+}
+
+.qls-download-content-tb-vip-only-access .qls-download-content-tb-body,
+.qls-download-sidebar-re-vip-only-access .qls-download-sidebar-re-body,
+.qls-download-title-hd-vip-only-access .qls-download-title-hd-body {
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, #f8fafc 100%);
+}
+
+.qls-download-content-tb-vip-only-panel,
+.qls-download-sidebar-re-vip-only-panel,
+.qls-download-title-hd-vip-only-panel {
+    background: #ffffff;
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.10);
+    border-radius: 16px;
+    padding: 20px 22px;
+    text-align: center;
+}
+
+.qls-download-content-tb-vip-only-badge,
+.qls-download-sidebar-re-vip-only-badge,
+.qls-download-title-hd-vip-only-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--qls-public-gradient-brand);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+    margin: 0 auto 12px;
+}
+
+.qls-download-content-tb-vip-only-badge-icon,
+.qls-download-sidebar-re-vip-only-badge-icon,
+.qls-download-title-hd-vip-only-badge-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 12px;
+    line-height: 1;
+}
+
+.qls-download-content-tb-vip-only-title,
+.qls-download-sidebar-re-vip-only-title,
+.qls-download-title-hd-vip-only-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark, #0f172a);
+    margin-bottom: 6px;
+}
+
+.qls-download-content-tb-vip-only-desc,
+.qls-download-sidebar-re-vip-only-desc,
+.qls-download-title-hd-vip-only-desc {
+    font-size: 13px;
+    color: var(--color-gray-600, #64748b);
+    margin-bottom: 14px;
+}
+
+.qls-download-content-tb-vip-only-actions .qls-download-content-tb-btn-vip,
+.qls-download-sidebar-re-vip-only-actions .qls-download-sidebar-re-btn-vip,
+.qls-download-title-hd-vip-only-actions .qls-download-title-hd-btn-vip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: var(--qls-public-gradient-brand);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.28);
+}
+
+/* Body */
+.qls-download-content-tb-body {
+    padding: 20px;
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    /* Subtle off-white gradient */
+    background: #f0fcfd;
+    /* or just white */
+}
+
+/* Price Area */
+.qls-download-content-tb-price-area {
+    text-align: center;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qls-download-content-tb-price-label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+.qls-download-content-tb-price-val {
+    font-size: 36px;
+    font-weight: 800;
+    /* Fresh Orange/Coral for contrast against blue/green, or nice Blue */
+    color: #ff7f50;
+    line-height: 1;
+    font-family: inherit;
+    letter-spacing: -1px;
+}
+
+/* Scope Tag (View/Download/Upgrade) */
+.qls-download-content-tb-scope-tag,
+.qls-download-sidebar-re-scope-tag,
+.qls-download-title-hd-scope-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    background: #fff;
+    color: #475569;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.qls-download-content-tb-scope-tag.is-view,
+.qls-download-sidebar-re-scope-tag.is-view,
+.qls-download-title-hd-scope-tag.is-view {
+    background: rgba(59, 130, 246, 0.12);
+    color: #1d4ed8;
+    border-color: rgba(59, 130, 246, 0.28);
+}
+
+.qls-download-content-tb-scope-tag.is-download,
+.qls-download-sidebar-re-scope-tag.is-download,
+.qls-download-title-hd-scope-tag.is-download {
+    background: rgba(16, 185, 129, 0.12);
+    color: #047857;
+    border-color: rgba(16, 185, 129, 0.28);
+}
+
+.qls-download-content-tb-scope-tag.is-upgrade,
+.qls-download-sidebar-re-scope-tag.is-upgrade,
+.qls-download-title-hd-scope-tag.is-upgrade {
+    background: rgba(245, 158, 11, 0.15);
+    color: #b45309;
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+
+.qls-download-content-tb-wrap [class*="qls-download-content-tb-btn-"].is-loading,
+.qls-download-sidebar-re-wrap [class*="qls-download-sidebar-re-btn-"].is-loading,
+.qls-download-title-hd-wrap [class*="qls-download-title-hd-btn-"].is-loading,
+.btn-buy-vip.is-loading,
+.btn-recharge.is-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.qls-download-content-tb-wrap [class*="qls-download-content-tb-btn-"].is-loading::after,
+.qls-download-sidebar-re-wrap [class*="qls-download-sidebar-re-btn-"].is-loading::after,
+.qls-download-title-hd-wrap [class*="qls-download-title-hd-btn-"].is-loading::after,
+.btn-buy-vip.is-loading::after,
+.btn-recharge.is-loading::after {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.42);
+    border-top-color: #fff;
+    animation: qls-public-btn-spin .75s linear infinite;
+}
+
+@keyframes qls-public-btn-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* User Center */
+.qilingshop-user-center {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.qilingshop-user-center .user-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.qilingshop-user-center .user-avatar img {
+    border-radius: 50%;
+}
+
+.qilingshop-user-center .user-info h3 {
+    margin: 0 0 10px;
+}
+
+.qilingshop-user-center .vip-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.qilingshop-user-center .vip-expires {
+    color: #999;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.qilingshop-user-center .user-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.qilingshop-user-center .stat-item {
+    text-align: center;
+}
+
+.qilingshop-user-center .stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.qilingshop-user-center .stat-label {
+    color: #666;
+    font-size: 13px;
+}
+
+.qilingshop-user-center .user-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.qilingshop-user-center .btn-primary,
+.qilingshop-user-center .btn-secondary,
+.qilingshop-user-center .btn-checkin {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.qilingshop-user-center .btn-primary {
+    background: #667eea;
+    color: #fff;
+}
+
+.qilingshop-user-center .btn-secondary {
+    background: #f39c12;
+    color: #fff;
+}
+
+.qilingshop-user-center .btn-checkin {
+    background: #27ae60;
+    color: #fff;
+}
+
+.qilingshop-user-center .btn-checkin.checked {
+    background: #95a5a6;
+}
+
+.qilingshop-user-center .user-invite input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* VIP Page */
+.qilingshop-vip-page .vip-levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.qilingshop-vip-page .vip-level-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    min-width: 220px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.qilingshop-vip-page .vip-level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.qilingshop-vip-page .vip-level-card.current {
+    border-color: #667eea;
+    background: #f8f9ff;
+}
+
+.qilingshop-vip-page .vip-level-card h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.qilingshop-vip-page .level-price .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.qilingshop-vip-page .level-price .original {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.qilingshop-vip-page .level-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.qilingshop-vip-page .level-features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    color: #555;
+}
+
+.qilingshop-vip-page .level-features li:before {
+    content: '✓';
+    color: #27ae60;
+    margin-right: 10px;
+}
+
+.qilingshop-vip-page .btn-buy-vip {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Recharge */
+.qilingshop-recharge {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.qilingshop-recharge .recharge-tips {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.qilingshop-recharge .recharge-form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+.qilingshop-recharge input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.qilingshop-recharge .quick-amounts {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.qilingshop-recharge .quick-amounts button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.qilingshop-recharge .quick-amounts button:hover {
+    background: #667eea;
+    color: #fff;
+    border-color: #667eea;
+}
+
+.qilingshop-recharge .points-preview {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.qilingshop-recharge .points-preview span {
+    color: #e74c3c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.qilingshop-recharge .payment-methods label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.qilingshop-recharge .btn-recharge {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Placeholders */
+.qilingshop-hidden-placeholder,
+.qilingshop-vip-placeholder {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #856404;
+    margin: 20px 0;
+}
+
+/* Hidden Content */
+.qilingshop-hidden-content {
+    background: #e8f6f3;
+    border: 1px solid #48c9b0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) :is(.qilingshop-hidden-placeholder, .qilingshop-vip-placeholder) {
+    background: rgba(245, 158, 11, 0.12);
+    border-color: rgba(251, 191, 36, 0.34);
+    color: #fcd34d;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-hidden-content {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(45, 212, 191, 0.26);
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-hidden-content a {
+    color: #67e8f9;
+}
+
+/* Orders Table */
+.qilingshop-orders .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qilingshop-orders .orders-table th,
+.qilingshop-orders .orders-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.qilingshop-orders .orders-table th {
+    background: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Guest Order Query */
+.qls-order-query-page {
+    padding: 22px 0 38px;
+}
+
+.qls-order-query-page .qilingshop-order-query {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    background: var(--qls-card-bg, #fff);
+    border: 1px solid #dce8e2;
+    border-radius: 8px;
+    box-shadow: 0 18px 40px rgba(17, 24, 39, 0.07);
+    overflow: hidden;
+    padding: 0;
+}
+
+.qls-order-query-page .qilingshop-order-query::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: #047857;
+}
+
+.qilingshop-order-query * {
+    box-sizing: border-box;
+}
+
+.qilingshop-order-query-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 22px;
+    margin: 0;
+    padding: 24px;
+    border-bottom: 1px solid #dce8e2;
+    background: #f7faf8;
+}
+
+.qilingshop-order-query-header > div:first-child {
+    min-width: 0;
+}
+
+.qilingshop-order-query-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qilingshop-order-query-header h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.24;
+    color: var(--qls-text, #111827);
+}
+
+.qilingshop-order-query-header p {
+    max-width: 620px;
+    margin: 9px 0 0;
+    color: var(--qls-text-secondary, #4b5563);
+    line-height: 1.7;
+}
+
+.qilingshop-order-query-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    min-width: 180px;
+}
+
+.qilingshop-order-query-pills span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border: 1px solid #d8e3dd;
+    border-radius: 8px;
+    background: #fff;
+    color: #4b6358;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qilingshop-order-query-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: end;
+    padding: 22px 24px 0;
+}
+
+.qilingshop-order-query-form.has-query-password {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr) auto;
+}
+
+.qilingshop-order-query-field label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--qls-text, #111827);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.qilingshop-order-query-field input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #cfdbd5;
+    border-radius: 8px;
+    padding: 0 13px;
+    font-size: 14px;
+    background: #f8fbf9;
+    color: var(--qls-text, #111827);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.qilingshop-order-query-field input:focus {
+    outline: none;
+    border-color: #047857;
+    box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.14);
+}
+
+.qilingshop-order-query-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    min-height: 44px;
+    border-radius: 8px;
+    padding: 0 22px;
+    background: #047857;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 132px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.qilingshop-order-query-submit:hover:not(:disabled) {
+    background: #065f46;
+    box-shadow: 0 8px 18px rgba(4, 120, 87, 0.18);
+}
+
+.qilingshop-order-query-submit:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+.qilingshop-order-query-note {
+    margin: 16px 24px 0;
+    padding: 11px 13px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: var(--qls-text-secondary, #4b5563);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.qilingshop-order-query-result {
+    margin-top: 0;
+    padding: 18px 24px 24px;
+}
+
+.qilingshop-order-query-list {
+    display: grid;
+    gap: 14px;
+}
+
+.qilingshop-order-query-loading,
+.qilingshop-order-query-message {
+    border-radius: 8px;
+    padding: 13px 14px;
+    font-size: 14px;
+}
+
+.qilingshop-order-query-loading {
+    border: 1px solid #bfdbfe;
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.qilingshop-order-query-result.is-error .qilingshop-order-query-message {
+    background: #fff1f2;
+    color: #b42318;
+    border: 1px solid #fecdd3;
+}
+
+.qilingshop-order-query-card {
+    background: #f8fbf9;
+    border: 1px solid #dce8e2;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.qilingshop-order-query-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--qls-text, #111827);
+}
+
+.qilingshop-order-query-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.qilingshop-order-query-grid-item {
+    background: var(--qls-card-bg, #fff);
+    border: 1px solid #e0e7e3;
+    border-radius: 8px;
+    padding: 11px;
+}
+
+.qilingshop-order-query-key {
+    display: block;
+    font-size: 12px;
+    color: var(--qls-text-secondary, #4b5563);
+    margin-bottom: 4px;
+}
+
+.qilingshop-order-query-val {
+    color: var(--qls-text, #111827);
+    font-weight: 600;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+.qilingshop-order-query-virtual {
+    margin-top: 14px;
+    border: 1px solid #cfe7da;
+    border-radius: 8px;
+    background: #fff;
+    padding: 12px;
+}
+
+.qilingshop-order-query-virtual-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--qls-text, #111827);
+    margin-bottom: 10px;
+}
+
+.qilingshop-order-query-virtual-item + .qilingshop-order-query-virtual-item {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--qls-border, #e5e7eb);
+}
+
+.qilingshop-order-query-virtual-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.qilingshop-order-query-virtual-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.qilingshop-order-query-virtual-name {
+    font-size: 13px;
+    color: var(--qls-text, #111827);
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.qilingshop-order-query-virtual-type {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 8px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.qilingshop-order-query-copy {
+    border: 1px solid #047857;
+    background: #fff;
+    color: #047857;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: all .2s ease;
+    white-space: nowrap;
+}
+
+.qilingshop-order-query-copy:hover {
+    background: #ecfdf5;
+}
+
+.qilingshop-order-query-copy.is-copied {
+    border-color: #059669;
+    color: #059669;
+    background: rgba(5, 150, 105, 0.1);
+}
+
+.qilingshop-order-query-virtual-pre {
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: #101828;
+    border: 1px solid #1f2937;
+    color: #f8fafc;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.qilingshop-order-query-virtual-empty {
+    font-size: 12px;
+    color: var(--qls-text-secondary, #4b5563);
+}
+
+.qilingshop-order-query-actions {
+    margin-top: 14px;
+}
+
+.qilingshop-order-query-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid #047857;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #047857;
+    background: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.qilingshop-order-query-link:hover {
+    color: #065f46;
+    background: #ecfdf5;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qls-order-query-page .qilingshop-order-query {
+    background: var(--dm-bg-card, var(--qiling-dark-surface, #1e293b));
+    border-color: rgba(148, 163, 184, 0.22);
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.28);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-header {
+    background: rgba(15, 23, 42, 0.42);
+    border-bottom-color: rgba(148, 163, 184, 0.22);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-header h3,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-card-title,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-field label,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-val,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-virtual-title,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-virtual-name {
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-header p,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-key,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-note,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-virtual-empty {
+    color: var(--dm-text-muted, var(--qiling-dark-text-muted, #94a3b8));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-pills span,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-note,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-grid-item,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-virtual {
+    background: rgba(15, 23, 42, 0.48);
+    border-color: rgba(148, 163, 184, 0.22);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-pills span {
+    color: #a7f3d0;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-field input {
+    background: rgba(15, 23, 42, 0.62);
+    border-color: rgba(148, 163, 184, 0.28);
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-eyebrow,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-virtual-type {
+    background: rgba(16, 185, 129, 0.14);
+    color: #6ee7b7;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-card {
+    background: rgba(15, 23, 42, 0.3);
+    border-color: rgba(148, 163, 184, 0.22);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-copy,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-link {
+    background: rgba(15, 23, 42, 0.5);
+    border-color: rgba(45, 212, 191, 0.46);
+    color: #6ee7b7;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-copy:hover,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-order-query-link:hover {
+    background: rgba(16, 185, 129, 0.12);
+    color: #a7f3d0;
+}
+
+@media (max-width: 980px) {
+    .qilingshop-order-query-form,
+    .qilingshop-order-query-form.has-query-password {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qilingshop-order-query-submit {
+        width: 100%;
+    }
+}
+
+/* Checkin Button */
+.qilingshop-checkin-btn {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.qilingshop-checkin-btn.checked {
+    background: #95a5a6;
+    cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qilingshop-user-center .user-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .qilingshop-user-center .user-actions {
+        flex-direction: column;
+    }
+
+    .qilingshop-vip-page .vip-levels {
+        flex-direction: column;
+    }
+
+    .qilingshop-vip-page .vip-level-card {
+        min-width: auto;
+    }
+
+    .qls-order-query-page .qilingshop-order-query {
+        border-radius: 8px;
+    }
+
+    .qilingshop-order-query-header {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .qilingshop-order-query-pills {
+        justify-content: flex-start;
+        min-width: 0;
+    }
+
+    .qilingshop-order-query-form,
+    .qilingshop-order-query-form.has-query-password {
+        grid-template-columns: 1fr;
+        padding: 18px 18px 0;
+    }
+
+    .qilingshop-order-query-submit {
+        width: 100%;
+    }
+
+    .qilingshop-order-query-note {
+        margin: 14px 18px 0;
+    }
+
+    .qilingshop-order-query-result {
+        padding: 16px 18px 18px;
+    }
+
+    .qilingshop-order-query-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qilingshop-order-query-virtual-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .qilingshop-order-query-copy {
+        align-self: flex-start;
+    }
+
+
+}
+
+
+/* Payment Icons */
+.qls-payment-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+/* ========================================
+   独立下载页面样式 (Download Page)
+   ======================================== */
+.qilingshop-download-page {
+    max-width: 920px;
+    margin: 48px auto 64px;
+    padding: 0 24px;
+}
+
+.download-page-container {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+    padding: 36px 40px 40px;
+}
+
+.download-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.download-page-title {
+    font-size: 1.625rem;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.back-to-post {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    color: #475569;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.back-to-post:hover {
+    color: #0f766e;
+    background: #f0fdfa;
+    border-color: #99f6e4;
+}
+
+.download-tips-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin-bottom: 28px;
+    font-size: 0.9375rem;
+    color: #1e3a8a;
+    line-height: 1.7;
+}
+
+.download-tips-box a {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+.download-section,
+.hidden-content-section {
+    margin-bottom: 30px;
+}
+
+.download-section h3,
+.hidden-content-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 14px;
+}
+
+.section-icon {
+    font-size: 1.25rem;
+}
+
+.download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 76px;
+    padding: 15px 16px 15px 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #14b8a6;
+    border-radius: 6px;
+    gap: 20px;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.download-item:hover {
+    background: #fff;
+    border-color: #99f6e4;
+    border-left-color: #0f766e;
+    box-shadow: 0 7px 20px rgba(15, 118, 110, 0.08);
+}
+
+.download-item-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 7px;
+}
+
+.download-name {
+    overflow-wrap: anywhere;
+    font-size: 0.9375rem;
+    font-weight: 650;
+    color: #111827;
+}
+
+.download-code {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.8125rem;
+    color: #64748b;
+}
+
+.download-code code {
+    background: #fff;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #be123c;
+    cursor: pointer;
+    border: 1px dashed #fda4af;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 118px;
+    min-height: 42px;
+    padding: 9px 16px;
+    background: #0f766e;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 650;
+    transition: background 0.2s, box-shadow 0.2s;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #115e59;
+    box-shadow: 0 5px 14px rgba(15, 118, 110, 0.22);
+    color: #fff;
+}
+
+.download-btn.disabled {
+    background: #e2e8f0;
+    color: #64748b;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.btn-icon {
+    font-size: 1rem;
+}
+
+.hidden-content {
+    overflow-wrap: anywhere;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px 22px;
+    color: #334155;
+    line-height: 1.75;
+}
+
+@media (max-width: 640px) {
+    .qilingshop-download-page {
+        margin: 24px auto 40px;
+        padding: 0 14px;
+    }
+
+    .download-page-container {
+        padding: 24px 18px 26px;
+    }
+
+    .download-page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+    }
+
+    .download-page-title {
+        font-size: 1.375rem;
+    }
+
+    .back-to-post {
+        min-height: 42px;
+    }
+
+    .download-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   网盘链接检测区域 (Pancheck Section)
+   ======================================== */
+.pancheck-section {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.pancheck-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.pancheck-icon {
+    font-size: 18px;
+}
+
+.pancheck-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.pancheck-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pancheck-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.pancheck-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.pancheck-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.pancheck-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.pancheck-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+}
+
+.pancheck-btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.pancheck-btn.pancheck-valid {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.pancheck-btn.pancheck-invalid {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.pancheck-unsupported {
+    font-size: 12px;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .pancheck-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .pancheck-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* QiLing theme dark mode: virtual resource independent download page */
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page {
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-page-container {
+    background: var(--dm-bg-card, var(--qiling-dark-surface, #1e293b));
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.28);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-page-header {
+    border-bottom-color: rgba(148, 163, 184, 0.22);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-page-title,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page :is(.download-section h3, .hidden-content-section h3),
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-name,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-login-text {
+    color: var(--dm-text, var(--qiling-dark-text, #e2e8f0));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .back-to-post,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-code,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .hidden-content {
+    color: var(--dm-text-muted, var(--qiling-dark-text-muted, #94a3b8));
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .back-to-post:hover {
+    color: #67e8f9;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-tips-box {
+    background: rgba(14, 165, 233, 0.12);
+    border-color: rgba(56, 189, 248, 0.3);
+    color: #93c5fd;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-tips-box a {
+    color: #67e8f9;
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-item,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .hidden-content,
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-login-only {
+    background: rgba(15, 23, 42, 0.48);
+    border-color: rgba(56, 189, 248, 0.24);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-item:hover {
+    background: rgba(30, 41, 59, 0.86);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.14);
+}
+
+:is(html.dark-mode, [data-theme="dark"]) .qilingshop-download-page .download-code code {
+    background: rgba(15, 23, 42, 0.72);
+    border-color: rgba(56, 189, 248, 0.28);
+    color: #67e8f9;
+}

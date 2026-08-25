@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Category placeholder</title>
+  <desc id="desc">Default category icon for QilingShop.</desc>
+  <rect width="160" height="160" rx="32" fill="#eef2ff"/>
+  <circle cx="52" cy="56" r="18" fill="#3b82f6"/>
+  <circle cx="108" cy="56" r="18" fill="#06b6d4"/>
+  <circle cx="52" cy="108" r="18" fill="#10b981"/>
+  <rect x="91" y="91" width="34" height="34" rx="8" fill="#f59e0b"/>
+</svg>

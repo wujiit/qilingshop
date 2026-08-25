@@ -1,0 +1,358 @@
+/**
+ * QilingShop Resource Metabox Styles
+ */
+
+.qilingshop-metabox .qls-metabox-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.qilingshop-metabox .qls-metabox-flex-row-end {
+    align-items: center;
+}
+
+.qilingshop-metabox .qls-metabox-inline-field {
+    margin-left: 6px;
+}
+
+.qilingshop-metabox .qls-metabox-inline-number {
+    width: 120px;
+}
+
+.qilingshop-metabox .qls-metabox-input-100 {
+    width: 100px;
+}
+
+.qilingshop-metabox .qls-metabox-textarea-full {
+    display: block;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.qilingshop-metabox .qls-download-format-help {
+    margin-top: 8px;
+    max-width: 760px;
+}
+
+.qilingshop-metabox .qls-download-format-help summary {
+    display: inline-block;
+    color: #2271b1;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.qilingshop-metabox .qls-download-format-help summary:hover {
+    color: #135e96;
+}
+
+.qls-download-format-help-list {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f6f7f7;
+    border-left: 3px solid #2271b1;
+}
+
+.qls-download-format-help-list p {
+    margin: 5px 0;
+}
+
+.qls-download-format-help-list code {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.qilingshop-metabox .qls-metabox-discount-percent-wrap {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.qilingshop-metabox .qls-metabox-level-discounts {
+    margin-top: 10px;
+}
+
+.qilingshop-metabox .qls-metabox-level-table {
+    max-width: 520px;
+}
+
+.qilingshop-metabox .qls-metabox-mt-6 {
+    margin-top: 6px;
+}
+
+.qilingshop-metabox .qls-metabox-mt-8 {
+    margin-top: 8px;
+}
+
+.qilingshop-metabox .qls-metabox-mt-10 {
+    margin-top: 10px;
+}
+
+.qilingshop-metabox .qls-metabox-hidden {
+    display: none;
+}
+
+.qilingshop-usage-guide.qls-metabox-usage-guide {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+
+.qls-metabox-usage-title {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.qls-metabox-usage-list {
+    list-style-type: decimal;
+    margin: 0 0 0 1.5em;
+    color: #3c434a;
+}
+
+.qls-metabox-usage-item {
+    margin-bottom: 5px;
+}
+
+.qls-metabox-usage-item-last {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 782px) {
+    .qilingshop-metabox .qls-metabox-flex-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .qilingshop-metabox .qls-metabox-inline-field {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .qilingshop-metabox .qls-metabox-inline-number,
+    .qilingshop-metabox .qls-metabox-input-100 {
+        width: 100%;
+    }
+
+    .qilingshop-metabox .qls-metabox-discount-percent-wrap {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+body.qilingshop-resource-editor {
+    --qls-admin-bg: #f0f4f9;
+    --qls-admin-surface: #ffffff;
+    --qls-admin-surface-soft: #f8fafc;
+    --qls-admin-border: #dce3ed;
+    --qls-admin-border-strong: #cbd5e1;
+    --qls-admin-text: #0f172a;
+    --qls-admin-muted: #64748b;
+    --qls-admin-radius-sm: 8px;
+    --qls-admin-radius-md: 12px;
+    --qls-admin-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+/* Admin Shell Harmonization */
+body.qilingshop-resource-editor #qilingshop_resource.postbox {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    overflow: hidden;
+}
+
+body.qilingshop-resource-editor #qilingshop_resource .postbox-header {
+    border-bottom: 1px solid var(--qls-admin-border);
+    background: linear-gradient(180deg, #f8fafc 0%, var(--qls-admin-surface-soft) 100%);
+}
+
+body.qilingshop-resource-editor #qilingshop_resource .hndle {
+    font-weight: 700;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-resource-editor #qilingshop_resource .inside {
+    margin: 0;
+    padding: 14px 18px 18px;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox.form-table,
+body.qilingshop-resource-editor .qilingshop-metabox.qls-ui-form-table {
+    margin-top: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox.form-table th,
+body.qilingshop-resource-editor .qilingshop-metabox.qls-ui-form-table th {
+    width: 170px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: var(--qls-admin-text);
+    font-weight: 600;
+    vertical-align: top;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox.form-table td,
+body.qilingshop-resource-editor .qilingshop-metabox.qls-ui-form-table td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox tr:last-child th,
+body.qilingshop-resource-editor .qilingshop-metabox tr:last-child td {
+    border-bottom: none;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox .qls-metabox-flex-row > label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-sm);
+    background: #fbfdff;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox .qls-metabox-inline-field {
+    margin-left: 0;
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox .description {
+    color: var(--qls-admin-muted);
+}
+
+body.qilingshop-resource-editor .qilingshop-metabox .qls-metabox-level-table {
+    max-width: 680px;
+}
+
+body.qilingshop-resource-editor .qilingshop-usage-guide.qls-metabox-usage-guide {
+    margin-top: 18px;
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-sm);
+    background: linear-gradient(180deg, #f8fafc 0%, var(--qls-admin-surface-soft) 100%);
+    padding: 14px 16px;
+}
+
+body.qilingshop-resource-editor .qilingshop-usage-guide .qls-metabox-usage-title {
+    margin: 0 0 8px;
+    color: var(--qls-admin-text);
+}
+
+body.qilingshop-resource-editor .qilingshop-usage-guide .qls-metabox-usage-list {
+    margin: 0 0 0 1.4em;
+    color: var(--qls-admin-muted);
+}
+
+@media screen and (max-width: 960px) {
+    body.qilingshop-resource-editor #qilingshop_resource .inside {
+        padding: 12px 14px 14px;
+    }
+
+    body.qilingshop-resource-editor .qilingshop-metabox .qls-metabox-flex-row > label {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Resource Editor Page (Classic Editor Shell) */
+body.qilingshop-resource-editor #wpbody-content {
+    padding-bottom: 40px;
+}
+
+body.qilingshop-resource-editor #poststuff {
+    margin-top: 14px;
+}
+
+body.qilingshop-resource-editor #titlediv,
+body.qilingshop-resource-editor #postdivrich,
+body.qilingshop-resource-editor #postexcerpt {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    overflow: hidden;
+}
+
+body.qilingshop-resource-editor #titlediv #title,
+body.qilingshop-resource-editor #titlediv input[type="text"] {
+    border: 0;
+    box-shadow: none;
+    min-height: 48px;
+    font-size: 18px;
+    padding: 12px 14px;
+}
+
+body.qilingshop-resource-editor .postbox,
+body.qilingshop-resource-editor .stuffbox {
+    border: 1px solid var(--qls-admin-border);
+    border-radius: var(--qls-admin-radius-md);
+    background: var(--qls-admin-surface);
+    box-shadow: var(--qls-admin-shadow);
+    overflow: hidden;
+}
+
+body.qilingshop-resource-editor .postbox .postbox-header,
+body.qilingshop-resource-editor .stuffbox .stuffbox-header,
+body.qilingshop-resource-editor .postbox > h2,
+body.qilingshop-resource-editor .stuffbox > h2 {
+    border-bottom: 1px solid var(--qls-admin-border);
+    background: linear-gradient(180deg, #f8fafc 0%, var(--qls-admin-surface-soft) 100%);
+}
+
+body.qilingshop-resource-editor .postbox .inside,
+body.qilingshop-resource-editor .stuffbox .inside {
+    padding: 12px 14px;
+}
+
+body.qilingshop-resource-editor #post-status-info,
+body.qilingshop-resource-editor #minor-publishing-actions,
+body.qilingshop-resource-editor #major-publishing-actions {
+    border-color: var(--qls-admin-border);
+    background: var(--qls-admin-surface-soft);
+}
+
+body.qilingshop-resource-editor #minor-publishing-actions,
+body.qilingshop-resource-editor #major-publishing-actions {
+    padding: 10px 12px;
+}
+
+body.qilingshop-resource-editor #submitdiv .inside {
+    margin: 0;
+    padding: 0;
+}
+
+body.qilingshop-resource-editor #submitdiv .misc-pub-section {
+    border-top-color: var(--qls-admin-border);
+    color: var(--qls-admin-muted);
+}
+
+body.qilingshop-resource-editor #submitdiv #publishing-action {
+    float: none;
+    text-align: left;
+    margin-top: 8px;
+}
+
+body.qilingshop-resource-editor #submitdiv #publishing-action .button-primary {
+    width: 100%;
+    min-height: 40px;
+}
+
+body.qilingshop-resource-editor #post-body.columns-2 #postbox-container-1,
+body.qilingshop-resource-editor #post-body.columns-2 #postbox-container-2 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    body.qilingshop-resource-editor #post-body.columns-2 #postbox-container-1 {
+        width: 300px;
+    }
+
+    body.qilingshop-resource-editor #post-body.columns-2 #postbox-container-2 {
+        margin-right: 316px;
+    }
+}

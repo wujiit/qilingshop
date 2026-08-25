@@ -1,0 +1,74 @@
+/**
+ * Minimal local Swiper-compatible fallback used by QilingShop.
+ */
+.swiper,
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.35s ease;
+}
+.swiper-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    border-radius: 999px;
+    background: rgba(17, 24, 39, 0.32);
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+.swiper-button-prev {
+    left: 14px;
+}
+.swiper-button-next {
+    right: 14px;
+}
+.swiper-button-prev::after {
+    content: "<";
+    font-size: 24px;
+    line-height: 1;
+}
+.swiper-button-next::after {
+    content: ">";
+    font-size: 24px;
+    line-height: 1;
+}
+.swiper-pagination {
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+    width: 24px;
+    background: #fff;
+}

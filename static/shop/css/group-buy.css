@@ -1,0 +1,1578 @@
+/**
+ * 团购功能样式
+ * 
+ * @package QilingShop
+ * @since   2.1.0
+ */
+
+/* =============================================
+   团购中心
+   ============================================= */
+
+
+.qls-group-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 32px 24px;
+    background: linear-gradient(-45deg, #ff6b35, #f7931e, #ff8c42, #e65a24);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.3);
+}
+
+.qls-group-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* My Groups Button */
+.qls-btn-my-groups {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 13px 30px;
+    background: linear-gradient(135deg, #fff 0%, #fff7ed 100%);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    color: #c2410c;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.qls-btn-my-groups .dashicons {
+    color: #ea580c;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.qls-btn-my-groups:hover {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border-color: #fff;
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.18);
+    color: #9a3412;
+}
+
+.qls-btn-my-groups::after {
+    content: '>';
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.qls-group-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qls-group-icon {
+    font-size: 32px;
+}
+
+.qls-group-desc {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+
+.qls-empty-state {
+    background: #fff;
+    border: 1px dashed #e5e7eb;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.qls-empty-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.qls-empty-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #1f2937;
+}
+
+.qls-empty-desc {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 16px;
+}
+
+.qls-empty-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.qls-group-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.qls-group-product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.qls-group-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.qls-group-product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.qls-group-product-image {
+    position: relative;
+    padding-top: 100%;
+    background: #f8f9fa;
+}
+
+.qls-group-product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qls-group-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.qls-group-discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.qls-group-product-info {
+    padding: 15px;
+}
+
+.qls-group-product-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #333;
+}
+
+.qls-group-price-box {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.qls-group-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.qls-group-original {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.qls-group-stats {
+    font-size: 13px;
+    color: #666;
+}
+
+.qls-group-action {
+    padding: 0 15px 15px;
+}
+
+.qls-btn-group {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.qls-btn-group:hover {
+    background: linear-gradient(135deg, #e65a24 0%, #e6850d 100%);
+    color: #fff;
+}
+
+/* =============================================
+   团详情页
+   ============================================= */
+/* Unique Structure for Group Detail Page */
+/* .qls-group-detail-root styles removed to use theme structure */
+
+.qls-group-detail-container {
+    max-width: 1200px;
+    /* Matching var(--qls-container-width) */
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.qls-group-detail-breadcrumb {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.qls-group-detail-breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.qls-group-detail-breadcrumb a:hover {
+    color: #ff6b35;
+}
+
+.qls-group-detail-breadcrumb .sep {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+.qls-group-detail-breadcrumb .current {
+    color: #333;
+    font-weight: 500;
+}
+
+html.dark-mode .qls-group-detail-breadcrumb .current {
+    color: #fff;
+}
+
+.qls-group-detail-wrapper {
+    background: transparent;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.qls-group-status-header {
+    text-align: center;
+    padding: 24px 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.qls-group-status-0 {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+}
+
+.qls-group-status-1 {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: #fff;
+}
+
+.qls-group-status-2 {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.qls-group-status-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.qls-group-status-text {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.qls-group-status-desc {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.qls-group-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    display: inline-flex;
+}
+
+.qls-countdown-label {
+    font-size: 14px;
+}
+
+.qls-countdown-time {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.qls-group-members-section {
+    background: var(--qls-card-bg);
+    border-radius: var(--qls-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--qls-shadow-sm);
+    border: 1px solid var(--qls-border);
+}
+
+.qls-group-progress {
+    margin-bottom: 20px;
+}
+
+.qls-group-progress-text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.qls-group-progress-bar {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.qls-group-progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.qls-group-members-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.qls-group-member {
+    position: relative;
+    width: 56px;
+    height: 56px;
+}
+
+.qls-group-member.is-leader .qls-member-avatar {
+    border: 3px solid #ff6b35;
+}
+
+.qls-member-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+}
+
+.qls-leader-badge {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 8px;
+    background: #ff6b35;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.qls-group-member.empty {
+    background: #f5f5f5;
+    border-radius: 50%;
+    border: 2px dashed #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qls-member-placeholder {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.qls-group-product-section {
+    background: var(--qls-card-bg);
+    border-radius: var(--qls-radius);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--qls-border);
+    box-shadow: var(--qls-shadow-sm);
+}
+
+.qls-group-product-detail {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.qls-group-product-detail .qls-group-product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding-top: 0;
+}
+
+.qls-group-product-detail .qls-group-product-image img {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+.qls-group-product-detail .qls-group-product-info {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qls-group-product-detail .qls-product-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.qls-price-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qls-group-label {
+    padding: 2px 8px;
+    background: #fff3e0;
+    color: #ff6b35;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.qls-group-actions {
+    margin-bottom: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.qls-btn-lg {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.qls-btn-primary {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    border: none;
+}
+
+.qls-btn-primary:hover {
+    background: linear-gradient(135deg, #e65a24 0%, #e6850d 100%);
+}
+
+.qls-btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+}
+
+.qls-btn-share {
+    background: #25d366;
+    color: #fff;
+    border: none;
+    margin-top: 0;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.qls-already-joined {
+    text-align: center;
+    padding: 15px;
+    background: #e8f5e9;
+    color: #27ae60;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.qls-already-joined .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.qls-group-rules {
+    background: var(--qls-card-bg);
+    border-radius: var(--qls-radius);
+    padding: 20px;
+    border: 1px solid var(--qls-border);
+    box-shadow: var(--qls-shadow-sm);
+}
+
+.qls-group-empty {
+    display: grid;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.qls-group-empty-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 24px;
+    border: 1px solid #eef2f7;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    text-align: center;
+}
+
+.qls-group-empty-icon {
+    font-size: 52px;
+    margin-bottom: 12px;
+}
+
+.qls-group-empty-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+.qls-group-empty-desc {
+    color: #6b7280;
+    margin: 0 0 20px;
+}
+
+.qls-group-empty-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.qls-group-empty-actions .qls-btn-lg {
+    width: auto;
+    min-width: 160px;
+}
+
+.qls-group-empty-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.qls-group-empty-tip {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.qls-group-empty-tip .tip-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+.qls-group-empty-tip .tip-desc {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.qls-group-rules h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.qls-group-rules ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =============================================
+   我的拼团
+   ============================================= */
+.qls-my-groups {
+    padding: 20px 0;
+}
+
+.qls-section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    color: #333;
+}
+
+.qls-group-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.qls-group-tabs .qls-tab {
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.qls-group-tabs .qls-tab:hover,
+.qls-group-tabs .qls-tab.active {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff !important;
+}
+
+.qls-group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.qls-group-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qls-group-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+}
+
+.qls-group-item-status {
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.qls-leader-tag {
+    padding: 3px 10px;
+    background: #fff3e0;
+    color: #ff6b35;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.qls-group-item-time {
+    margin-left: auto;
+    color: #999;
+}
+
+.qls-group-item-body {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    gap: 15px;
+}
+
+.qls-group-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.qls-group-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qls-group-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qls-group-item-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qls-group-item-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+.qls-group-item-progress {
+    font-size: 13px;
+    color: #666;
+}
+
+.qls-group-item-arrow {
+    color: #ccc;
+}
+
+.qls-group-item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+}
+
+.qls-countdown-mini {
+    font-size: 13px;
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.qls-success-text {
+    font-size: 13px;
+    color: #27ae60;
+}
+
+.qls-failed-text {
+    font-size: 13px;
+    color: #999;
+}
+
+.qls-expired {
+    font-size: 13px;
+    color: #999;
+}
+
+.qls-btn-small {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+/* =============================================
+   通用
+   ============================================= */
+.qls-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.qls-empty-state p {
+    margin: 15px 0 20px;
+    font-size: 16px;
+}
+
+.qls-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.qls-pagination .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 4px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.qls-pagination .page-numbers:hover,
+.qls-pagination .page-numbers.current {
+    background: #ff6b35;
+    border-color: #ff6b35;
+    color: #fff;
+}
+
+/* =============================================
+   商品详情页团购区域
+   ============================================= */
+.qls-product-group-section {
+    margin: 15px 0;
+    padding: 15px;
+    background: linear-gradient(135deg, #fff5f0 0%, #fff 100%);
+    border: 2px solid #ff6b35;
+    border-radius: 12px;
+}
+
+.qls-product-group-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.qls-product-group-tag {
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.qls-product-group-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.qls-product-group-stock {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.qls-product-group-stock-value {
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+.qls-product-group-stock-status {
+    margin-left: 8px;
+    color: #909399;
+}
+
+.qls-product-group-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.qls-product-group-original {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.qls-product-groups-list {
+    margin-top: 10px;
+}
+
+.qls-product-groups-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.qls-product-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.qls-product-group-leader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qls-product-group-leader img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.qls-product-group-info {
+    text-align: right;
+}
+
+.qls-product-group-remain {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-bottom: 3px;
+}
+
+.qls-product-group-time {
+    font-size: 11px;
+    color: #999;
+}
+
+.qls-join-btn {
+    padding: 6px 16px;
+    background: #ff6b35;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qls-join-btn:hover {
+    background: #e65a24;
+}
+
+.qls-join-btn[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.qls-start-group-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qls-start-group-btn:hover {
+    background: linear-gradient(135deg, #e65a24 0%, #e6850d 100%);
+}
+
+.qls-start-group-btn[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* =============================================
+   商品详情页左侧助力玩法引导
+   ============================================= */
+.qls-product-single-page .qls-gallery-assist-guide {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #ffe1c8;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #fffaf4 0%, #fff 100%);
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-title {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c75118;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-list li {
+    position: relative;
+    padding-left: 12px;
+    margin: 0 0 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #7a5a44;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-list li:last-child {
+    margin-bottom: 0;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.58em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ff7a31;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #d9480f;
+    text-decoration: none;
+}
+
+.qls-product-single-page .qls-gallery-assist-guide-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 993px) {
+    .qls-product-single-page .qls-product-detail.is-assist-product .qls-product-gallery {
+        position: sticky;
+        top: 92px;
+        align-self: flex-start;
+        z-index: 2;
+    }
+
+    body.admin-bar .qls-product-single-page .qls-product-detail.is-assist-product .qls-product-gallery {
+        top: 124px;
+    }
+}
+
+/* =============================================
+   商品详情页助力区域
+   ============================================= */
+.qls-product-assist-section {
+    margin: 12px 0 10px;
+    padding: 12px 14px;
+    background: linear-gradient(180deg, #fffaf5 0%, #fff 100%);
+    border: 1px solid #ffd4b3;
+    border-radius: 10px;
+}
+
+.qls-product-assist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.qls-product-assist-tag {
+    padding: 3px 10px;
+    background: linear-gradient(135deg, #ff8a3d 0%, #ff5a2d 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.qls-product-assist-rule {
+    color: #8f4a18;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.qls-product-assist-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.qls-product-assist-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d9480f;
+    line-height: 1.2;
+}
+
+.qls-product-assist-original {
+    font-size: 14px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.qls-product-assist-save {
+    padding: 2px 8px;
+    background: #fff3e8;
+    color: #ea580c;
+    font-size: 12px;
+    border-radius: 999px;
+}
+
+.qls-product-assist-stock {
+    margin-bottom: 8px;
+}
+
+.qls-product-assist-stock-text {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.qls-product-assist-stock-track {
+    height: 6px;
+    border-radius: 999px;
+    background: #ffe2cc;
+    overflow: hidden;
+}
+
+.qls-product-assist-stock-track span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff8a3d 0%, #ff5a2d 100%);
+}
+
+.qls-product-assist-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.qls-product-assist-meta span {
+    display: block;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #7b5b45;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.qls-product-assist-meta .qls-product-assist-time {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qls-start-assist-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    background: linear-gradient(135deg, #ff8a3d 0%, #ff5a2d 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qls-start-assist-btn:hover {
+    color: #fff;
+    filter: brightness(0.96);
+}
+
+.qls-start-assist-btn[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.qls-product-assist-link {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #d9480f;
+    text-align: right;
+    text-decoration: none;
+}
+
+.qls-product-assist-link:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   响应式
+   ============================================= */
+@media (max-width: 768px) {
+    .qls-product-single-page .qls-gallery-assist-guide {
+        margin-top: 8px;
+        padding: 10px;
+    }
+
+    .qls-product-single-page .qls-gallery-assist-guide-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .qls-product-assist-price {
+        font-size: 20px;
+    }
+
+    .qls-product-assist-meta {
+        gap: 3px;
+    }
+
+    .qls-product-assist-meta span {
+        line-height: 1.35;
+    }
+
+    .qls-group-header {
+        padding: 20px;
+    }
+
+    .qls-group-title {
+        font-size: 22px;
+    }
+
+    .qls-btn-my-groups {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 18px;
+        font-size: 15px;
+        border-radius: 24px;
+    }
+
+    .qls-group-products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .qls-group-product-info {
+        padding: 10px;
+    }
+
+    .qls-group-product-title {
+        font-size: 13px;
+    }
+
+    .qls-group-price {
+        font-size: 16px;
+    }
+
+    .qls-group-detail-page {
+        padding: 0;
+    }
+
+    .qls-group-status-header {
+        padding: 20px 15px;
+    }
+
+    .qls-group-status-icon {
+        font-size: 36px;
+    }
+
+    .qls-group-status-text {
+        font-size: 18px;
+    }
+
+    .qls-group-members-list {
+        gap: 10px;
+    }
+
+    .qls-group-member {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qls-group-products {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-group-tabs {
+        gap: 8px;
+    }
+
+    .qls-tab {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+/* =============================================
+   用户参团信息
+   ============================================= */
+.qls-my-participation {
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.qls-my-participation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff6b35, #f7931e);
+}
+
+.qls-my-participation-title {
+    margin: 0 0 16px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qls-participation-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px dashed #e5e7eb;
+}
+
+.qls-participation-info {
+    flex: 1;
+}
+
+.qls-participation-row {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #4b5563;
+}
+
+.qls-participation-row:last-child {
+    margin-bottom: 0;
+}
+
+.qls-participation-label {
+    color: #9ca3af;
+    width: 60px;
+}
+
+.qls-participation-value {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* =============================================
+   拼团记录
+   ============================================= */
+.qls-group-history-section {
+    margin-top: 40px;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 30px;
+}
+
+.qls-history-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1f2937;
+    padding-left: 12px;
+    border-left: 4px solid #ff6b35;
+    line-height: 1;
+}
+
+.qls-history-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.qls-history-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #f3f4f6;
+    border-radius: 12px;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    /* Ensure links don't have underline */
+}
+
+.qls-history-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: #ffdecb;
+}
+
+.qls-history-thumb {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f9fafb;
+}
+
+.qls-history-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qls-history-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qls-history-product-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qls-history-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.qls-history-price {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.qls-history-status {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.qls-history-status.warning {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.qls-history-status.success {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.qls-history-status.danger {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+@media (max-width: 640px) {
+    .qls-history-list {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-participation-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .qls-participation-content .text-right {
+        width: 100%;
+        text-align: right;
+        padding-top: 12px;
+        border-top: 1px dashed #e5e7eb;
+    }
+}

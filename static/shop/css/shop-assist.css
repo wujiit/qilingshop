@@ -1,0 +1,705 @@
+/*
+ * QilingShop Shop Assist Styles
+ * Extracted from shop-modern.css for page-level loading
+ */
+/* ==========================================
+   Assist
+========================================== */
+.qls-assist-center-page,
+.qls-assist-detail-page-wrapper {
+    padding: 0 0 40px;
+}
+
+.qls-assist-center-shell,
+.qls-assist-detail-shell {
+    background: transparent;
+}
+
+.qls-assist-header {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff5a2d 0%, #ff7d1a 48%, #ff9f1c 100%);
+    border: 0;
+    border-radius: 22px;
+    box-shadow: 0 18px 34px rgba(255, 90, 45, 0.28);
+    color: #fff;
+    text-align: left;
+    padding: 28px 26px;
+    margin-bottom: 24px;
+}
+
+.qls-assist-header::before {
+    content: '';
+    position: absolute;
+    right: -70px;
+    top: -70px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.qls-assist-header::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+    width: 160px;
+    height: 100px;
+    border-radius: 80px;
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.qls-assist-header .qls-group-title {
+    position: relative;
+    z-index: 2;
+    justify-content: flex-start;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.qls-assist-header .qls-group-desc {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 680px;
+    font-size: 15px;
+}
+
+.qls-assist-hero-tags {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.qls-assist-hero-tags span {
+    display: inline-flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.qls-assist-hero-stats {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.hero-stat-item {
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 14px;
+    padding: 12px 14px;
+    backdrop-filter: blur(2px);
+}
+
+.hero-stat-item strong {
+    display: block;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.hero-stat-item span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.qls-assist-hall-actions {
+    position: relative;
+    z-index: 2;
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.qls-assist-hall-actions .qls-btn-primary {
+    min-width: 190px;
+    background: linear-gradient(135deg, #ffd166 0%, #ff9f1c 100%);
+    color: #7c2d12 !important;
+    box-shadow: 0 12px 22px rgba(255, 159, 28, 0.35);
+}
+
+.qls-assist-hall-actions .qls-btn-primary:hover {
+    color: #7c2d12 !important;
+    filter: brightness(1.03);
+}
+
+.qls-section-header .qls-assist-hall-actions {
+    margin-top: 0;
+}
+
+.qls-assist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.qls-assist-grid > .qls-orders-empty {
+    grid-column: 1 / -1;
+}
+
+.qls-assist-activity-card {
+    position: relative;
+    background: var(--qls-card-bg);
+    border: 1px solid #ffd5c0;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.09);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qls-assist-activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 32px rgba(255, 90, 45, 0.2);
+}
+
+.qls-assist-card-corner {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #ff5a2d 0%, #ff7d1a 100%);
+    box-shadow: 0 8px 18px rgba(255, 90, 45, 0.34);
+}
+
+.assist-card-head {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.assist-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: rgba(255, 90, 45, 0.1);
+    color: #b93816;
+    border: 1px solid rgba(255, 90, 45, 0.24);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.assist-tag-hot {
+    background: rgba(255, 159, 28, 0.18);
+    color: #9a3412;
+    border-color: rgba(255, 159, 28, 0.34);
+}
+
+.qls-assist-activity-card .assist-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: var(--qls-text);
+    min-height: 48px;
+}
+
+.qls-assist-activity-card .assist-product {
+    margin: 0;
+    color: var(--qls-text-muted);
+    font-size: 13px;
+    min-height: 20px;
+}
+
+.qls-assist-activity-card .assist-product-cover {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ffe0cc;
+    background: #fff7ed;
+}
+
+.qls-assist-activity-card .assist-product-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.assist-price-block {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.assist-origin-price {
+    font-size: 13px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.assist-final-price {
+    margin-top: 2px;
+    font-size: 30px;
+    line-height: 1.05;
+    font-weight: 800;
+    color: #ea580c;
+    letter-spacing: -0.02em;
+}
+
+.assist-save-price {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #c2410c;
+    font-weight: 600;
+}
+
+.assist-stock-box {
+    margin-top: 2px;
+}
+
+.assist-stock-text {
+    font-size: 12px;
+    color: var(--qls-text-secondary);
+}
+
+.assist-stock-track {
+    margin-top: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #ffe4d1;
+    overflow: hidden;
+}
+
+.assist-stock-track span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff5a2d 0%, #ff9f1c 100%);
+}
+
+.qls-assist-activity-card .assist-meta {
+    display: flex;
+    gap: 8px;
+    color: #9a3412;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.qls-assist-recent-header,
+.qls-assist-log-header {
+    margin-top: 24px;
+}
+
+.qls-assist-table-wrap {
+    background: var(--qls-card-bg);
+    border: 1px solid var(--qls-border);
+    border-radius: 14px;
+    box-shadow: var(--qls-shadow-sm);
+    overflow: hidden;
+}
+
+.qls-assist-detail-main {
+    padding: 0;
+}
+
+.qls-assist-detail-banner {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 16px;
+    background: linear-gradient(135deg, #ff5a2d 0%, #ff7d1a 56%, #ff9f1c 100%);
+    border: 0;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 16px 34px rgba(255, 90, 45, 0.28);
+}
+
+.assist-detail-banner-main h2 {
+    margin: 10px 0 6px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.assist-detail-banner-main p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.qls-assist-detail-status {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.assist-price-showcase {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.assist-price-showcase-left,
+.assist-price-save {
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 12px;
+    padding: 10px 12px;
+}
+
+.assist-price-showcase-left {
+    min-width: 230px;
+}
+
+.assist-price-label {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.assist-price-showcase-left strong {
+    display: block;
+    margin-top: 3px;
+    font-size: 34px;
+    line-height: 1.05;
+    color: #fff;
+}
+
+.assist-price-original {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.assist-price-save span {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.assist-price-save strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 24px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.assist-detail-banner-cover img {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.16);
+}
+
+.qls-assist-detail-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.qls-assist-detail-highlights span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    border-radius: 12px;
+    border: 1px solid #fed7aa;
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    color: #9a3412;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.qls-assist-progress-card {
+    margin-top: 14px;
+    background: var(--qls-card-bg);
+    border: 1px solid #ffd5c0;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.assist-progress-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assist-progress-title {
+    font-size: 13px;
+    color: var(--qls-text-secondary);
+    font-weight: 600;
+}
+
+.assist-progress-value {
+    font-size: 13px;
+    color: #ea580c;
+    font-weight: 700;
+}
+
+.assist-progress-track {
+    margin-top: 6px;
+    height: 7px;
+    border-radius: 999px;
+    background: #ffe4d1;
+    overflow: hidden;
+}
+
+.assist-progress-track span {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff5a2d 0%, #ff9f1c 100%);
+}
+
+.assist-progress-meta {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--qls-text-secondary);
+}
+
+.assist-progress-meta strong {
+    color: var(--qls-text);
+}
+
+.qls-assist-share-box {
+    margin-top: 16px;
+    background: var(--qls-card-bg);
+    border: 1px solid var(--qls-border);
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: var(--qls-shadow-sm);
+}
+
+.qls-assist-share-box label {
+    display: block;
+    color: var(--qls-text-secondary);
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.assist-share-row {
+    display: flex;
+    gap: 10px;
+}
+
+.assist-share-row input {
+    flex: 1;
+    border: 1px solid var(--qls-border);
+    background: var(--qls-input-bg);
+}
+
+.assist-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.assist-actions .qls-btn-primary {
+    background: linear-gradient(135deg, #ff5a2d 0%, #ff9f1c 100%);
+    color: #fff !important;
+    min-width: 170px;
+    box-shadow: 0 12px 22px rgba(255, 90, 45, 0.3);
+}
+
+.qls-assist-helpers {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    border: 1px solid var(--qls-border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--qls-card-bg);
+    box-shadow: var(--qls-shadow-sm);
+}
+
+.assist-helper-item {
+    display: grid;
+    grid-template-columns: 1fr 130px 180px;
+    gap: 12px;
+    align-items: center;
+    padding: 13px 14px;
+    border-top: 1px solid var(--qls-divider);
+    font-size: 13px;
+}
+
+.assist-helper-item:first-child {
+    border-top: none;
+}
+
+.assist-helper-item.empty {
+    display: block;
+    color: #6b7280;
+}
+
+.helper-amount {
+    color: #ea580c;
+    font-weight: 700;
+}
+
+.helper-time {
+    color: var(--qls-text-muted);
+    font-size: 12px;
+}
+
+.qls-assist-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--qls-card-bg);
+    border: 1px solid var(--qls-border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.qls-assist-table th,
+.qls-assist-table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid var(--qls-divider);
+    text-align: left;
+    font-size: 13px;
+}
+
+.qls-assist-table thead th {
+    background: #fff7ed;
+    color: #9a3412;
+    font-weight: 600;
+}
+
+.qls-assist-table tr:last-child td {
+    border-bottom: none;
+}
+
+.qls-assist-table td a {
+    color: #ea580c;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .qls-assist-header .qls-group-title {
+        font-size: 24px;
+    }
+
+    .qls-assist-hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qls-assist-detail-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qls-assist-detail-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .assist-detail-banner-cover img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    body.qls-shop-fullscreen .qls-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .qls-assist-center-page,
+    .qls-assist-detail-page-wrapper {
+        padding: 0 0 24px;
+    }
+
+    .qls-assist-header {
+        padding: 18px 14px;
+        border-radius: 14px;
+    }
+
+    .qls-assist-header .qls-group-title {
+        font-size: 21px;
+    }
+
+    .qls-assist-hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-assist-hero-tags {
+        gap: 6px;
+    }
+
+    .qls-assist-hero-tags span {
+        height: 26px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .qls-assist-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .assist-price-showcase-left,
+    .assist-price-save {
+        width: 100%;
+    }
+
+    .assist-helper-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .qls-assist-detail-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .assist-share-row {
+        flex-direction: column;
+    }
+
+    .qls-assist-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

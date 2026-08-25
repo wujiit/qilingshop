@@ -1,0 +1,290 @@
+/**
+ * 新人专区装修模块样式
+ *
+ * @package QilingShop
+ * @since   2.2.0
+ */
+
+.qls-module-new-user-zone {
+    background: var(--qls-nuz-bg, #fff6f2);
+    padding: var(--qls-nuz-padding, 20px);
+    border-radius: var(--qls-nuz-radius, 14px);
+    margin-bottom: 20px;
+}
+
+.qls-new-user-zone-module-header {
+    margin-bottom: 14px;
+}
+
+.qls-new-user-zone-module-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2733;
+}
+
+.qls-new-user-zone-module-more {
+    color: var(--qls-nuz-primary, #ff4d2d);
+    background: rgba(255, 77, 45, 0.08);
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-weight: 600;
+}
+
+.qls-new-user-zone-module-more:hover {
+    color: #fff;
+    background: var(--qls-nuz-primary, #ff4d2d);
+}
+
+.qls-new-user-zone-module-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: -2px 0 14px;
+}
+
+.qls-new-user-zone-module-status .status-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qls-new-user-zone-module-status .status-pill.need-login {
+    background: #fff1ea;
+    color: #d9480f;
+}
+
+.qls-new-user-zone-module-status .status-pill.can-join {
+    background: #e8f8ee;
+    color: #15803d;
+}
+
+.qls-new-user-zone-module-status .status-pill.used {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.qls-new-user-zone-module-status .status-tip {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.qls-new-user-zone-module-status .status-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 77, 45, 0.24);
+    color: var(--qls-nuz-primary, #ff4d2d);
+    background: #fff;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.qls-new-user-zone-module-status .status-action:hover {
+    background: var(--qls-nuz-primary, #ff4d2d);
+    color: #fff;
+}
+
+.qls-new-user-zone-module-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--qls-nuz-cols, 4), minmax(0, 1fr));
+    gap: var(--qls-nuz-gap, 16px);
+}
+
+.qls-module-new-user-zone--style-scroll .qls-new-user-zone-module-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(250px, 280px);
+    overflow-x: auto;
+    padding-bottom: 8px;
+    overscroll-behavior-x: contain;
+}
+
+.qls-module-new-user-zone--style-scroll .qls-new-user-zone-module-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.qls-module-new-user-zone--style-scroll .qls-new-user-zone-module-grid::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 999px;
+}
+
+.qls-new-user-zone-module-card {
+    background: var(--qls-nuz-card-bg, #fff);
+    border: 1px solid #ffe0d1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.qls-new-user-zone-module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.qls-new-user-zone-module-thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 68%;
+    background: linear-gradient(135deg, #fff2ea, #ffe5d6);
+}
+
+.qls-new-user-zone-module-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qls-new-user-zone-module-empty {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.qls-new-user-zone-module-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #ff8743, var(--qls-nuz-primary, #ff4d2d));
+}
+
+.qls-new-user-zone-module-body {
+    padding: 14px;
+}
+
+.qls-new-user-zone-module-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.qls-new-user-zone-module-name a {
+    color: #202935;
+    text-decoration: none;
+}
+
+.qls-new-user-zone-module-name a:hover {
+    color: var(--qls-nuz-primary, #ff4d2d);
+}
+
+.qls-new-user-zone-module-subtitle {
+    margin: 6px 0 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #64748b;
+    min-height: 19px;
+}
+
+.qls-new-user-zone-module-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.qls-new-user-zone-module-price .new-user-price {
+    font-size: 26px;
+    line-height: 1.1;
+    color: var(--qls-nuz-primary, #ff4d2d);
+    font-weight: 800;
+}
+
+.qls-new-user-zone-module-price .origin-price {
+    font-size: 13px;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.qls-new-user-zone-module-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: #687482;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.qls-new-user-zone-module-btn {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff8e52, var(--qls-nuz-primary, #ff4d2d));
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.qls-new-user-zone-module-btn:hover {
+    color: #fff;
+    filter: brightness(1.03);
+    transform: translateY(-1px);
+}
+
+.qls-new-user-zone-module-btn.is-login {
+    background: #fff;
+    color: var(--qls-nuz-primary, #ff4d2d);
+    border: 1px solid rgba(255, 77, 45, 0.24);
+}
+
+.qls-new-user-zone-module-btn.is-login:hover {
+    background: rgba(255, 77, 45, 0.08);
+}
+
+@media (max-width: 1024px) {
+    .qls-new-user-zone-module-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-module-new-user-zone {
+        padding: 14px 12px;
+        border-radius: 0;
+    }
+
+    .qls-new-user-zone-module-title {
+        font-size: 20px;
+    }
+
+    .qls-new-user-zone-module-grid {
+        grid-template-columns: repeat(var(--qls-nuz-cols-mobile, 2), minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .qls-new-user-zone-module-price .new-user-price {
+        font-size: 22px;
+    }
+}
+

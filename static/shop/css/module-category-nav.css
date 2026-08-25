@@ -1,0 +1,843 @@
+/**
+ * Category Navigation Module Styles
+ */
+
+.qls-module-category-nav {
+    margin-top: var(--qls-nav-mt, 20px);
+    margin-bottom: var(--qls-nav-mb, 20px);
+    background-color: var(--qls-nav-bg, #ffffff);
+    padding: var(--qls-nav-pd, 20px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    /* Subtle premium shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.qls-module-category-nav:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+.qls-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--qls-nav-cols-pc, 5), 1fr);
+    gap: var(--qls-nav-gap-y, 16px) var(--qls-nav-gap-x, 16px);
+    justify-items: center;
+    /* Crucial: Centers items in their columns instead of stretching */
+}
+
+/*
+   For Icon and Text styles in PC mode, user wants them compact and neighboring ("next to each other").
+   Grid with fixed 1fr columns forces them apart. We switch to Flexbox flow for these styles.
+*/
+.qls-module-category-nav--style-icon .qls-nav-grid,
+.qls-module-category-nav--style-text .qls-nav-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* Flow from start */
+    gap: var(--qls-nav-gap-y, 16px) var(--qls-nav-gap-x, 16px);
+}
+
+.qls-module-category-nav--style-icon .qls-nav-item,
+.qls-module-category-nav--style-text .qls-nav-item {
+    margin: 0 !important;
+    /* Reset auto margin from previous fix */
+}
+
+.qls-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--qls-nav-text-color, #333);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 12px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    /* Allow shrink */
+    max-width: 100%;
+}
+
+/* Hover Effect: Subtle background lift */
+.qls-nav-item:hover {
+    transform: translateY(-2px);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.qls-nav-icon {
+    /* Slightly reduced default relative to container to look more proportionate */
+    width: var(--qls-nav-icon-size, 32px);
+    height: var(--qls-nav-icon-size, 32px);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.qls-nav-item:hover .qls-nav-icon {
+    transform: scale(1.1);
+}
+
+.qls-nav-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Remove forced circle for icon style unless specified, usually categorization icons are irregular shapes */
+    /* border-radius: 50%; */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+}
+
+.qls-nav-text {
+    font-size: var(--qls-nav-font-size, 15px);
+    font-weight: 500;
+    /* Bolder text */
+    line-height: 1.4;
+    color: var(--qls-nav-text-color, #333);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+/* =========================================
+   Style: Icon (Icon + Text)
+   PC: Row (Left Icon, Right Text) - Compact & Balanced
+   ========================================= */
+.qls-module-category-nav--style-icon .qls-nav-item {
+    display: inline-flex;
+    /* Strictly inline */
+    flex-direction: row;
+    gap: 8px;
+    /* Tighter gap */
+    align-items: center;
+    justify-content: center;
+
+    /* Layout & Sizing */
+    width: fit-content !important;
+    /* Force adapt to content */
+    max-width: 100%;
+    margin: 0 auto;
+    /* Center in the grid cell */
+    justify-self: center;
+    /* Grid alignment constraint */
+
+    /* Visuals */
+    background: transparent;
+    border: 1px solid transparent;
+    /* invisible border */
+    border-radius: 50px;
+    /* Pill */
+    padding: 6px 16px 6px 6px;
+    /* Optimized padding */
+    box-sizing: border-box;
+}
+
+/* Align icon circle */
+.qls-module-category-nav--style-icon .qls-nav-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: #f0f2f5;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pill Hover */
+.qls-module-category-nav--style-icon .qls-nav-item:hover {
+    background: #fff;
+    border-color: #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.qls-module-category-nav--style-icon .qls-nav-item:hover .qls-nav-icon {
+    background: #e6e8eb;
+}
+
+/* Fix text cut-off */
+.qls-module-category-nav--style-icon .qls-nav-text {
+    flex: 0 1 auto;
+    /* Do not grow, allow shrink */
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+/* Override Icon Size for this style defaults if not set */
+/* This rule is now redundant as the specific icon size is defined above */
+/* .qls-module-category-nav--style-icon .qls-nav-icon {
+    width: var(--qls-nav-icon-size, 32px);
+    height: var(--qls-nav-icon-size, 32px);
+} */
+
+/* =========================================
+   Style: Text (Pill / Tag)
+   ========================================= */
+.qls-module-category-nav--style-text .qls-nav-item {
+    background: #f0f2f5;
+    border-radius: 99px;
+    padding: 8px 20px;
+    text-align: center;
+    justify-content: center;
+
+    width: fit-content !important;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.qls-module-category-nav--style-text .qls-nav-item:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.qls-module-category-nav--style-text .qls-nav-text {
+    font-size: 14px;
+}
+
+/* =========================================
+   Style: Card (Image Background)
+   ========================================= */
+.qls-module-category-nav--style-card .qls-nav-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    width: 100% !important;
+    /* Cards MUST fill grid cell */
+    border-radius: 12px;
+}
+
+.qls-module-category-nav--style-card .qls-nav-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.qls-module-category-nav--style-card .qls-nav-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.qls-module-category-nav--style-card .qls-nav-icon img {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.qls-module-category-nav--style-card .qls-nav-item:hover .qls-nav-icon img {
+    transform: scale(1.1);
+}
+
+.qls-module-category-nav--style-card .qls-nav-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   Responsive (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+    .qls-module-category-nav {
+        padding: 15px 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 0;
+        /* Full edge on mobile sometimes looks better, but keeping radius small */
+    }
+
+    .qls-nav-grid {
+        grid-template-columns: repeat(var(--qls-nav-cols-m, 5), 1fr);
+        gap: 15px 10px;
+        /* Tighter gap */
+    }
+
+    /* Icon Style overrides for Mobile */
+    .qls-module-category-nav--style-icon .qls-nav-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+        background: transparent;
+        /* Remove card look on mobile for cleaner grid */
+        padding: 0;
+        border: none;
+        width: 100%;
+        /* On mobile, fill column for stacking */
+        min-width: 0;
+    }
+
+    .qls-module-category-nav--style-icon .qls-nav-item:hover {
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .qls-module-category-nav--style-icon .qls-nav-icon {
+        width: 44px;
+        /* Fixed visually pleasing size for mobile icons */
+        height: 44px;
+        margin-bottom: 4px;
+        /* background: #f8f8f8; Optional circle bg */
+        /* border-radius: 12px;*/
+        /* padding: 8px; */
+    }
+
+    .qls-module-category-nav--style-icon .qls-nav-icon img {
+        border-radius: 0;
+    }
+
+    .qls-module-category-nav--style-icon .qls-nav-text {
+        font-size: 12px;
+        /* Smaller text */
+        font-weight: 400;
+        white-space: normal;
+        /* Allow wrap on mobile */
+        line-height: 1.3;
+        color: #333;
+    }
+}
+
+/* =========================================
+   Coupon Module Styles
+   优惠券模块样式 - 商城首页装修
+   @since 2.1.0
+   ========================================= */
+
+.qls-module-coupon {
+    margin-top: var(--qls-cpn-mt, 20px);
+    margin-bottom: var(--qls-cpn-mb, 20px);
+    padding: var(--qls-cpn-pd, 10px);
+    background: var(--qls-cpn-bg, #ffffff);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Grid 布局 */
+.qls-coupon-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--qls-cpn-cols-pc, 4), 1fr);
+    gap: var(--qls-cpn-gap, 16px);
+}
+
+/* 水平滚动风格 */
+.qls-module-coupon--style-scroll .qls-coupon-grid {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    margin-bottom: -8px;
+}
+
+.qls-module-coupon--style-scroll .qls-cpn-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+}
+
+.qls-module-coupon--style-scroll .qls-coupon-grid::-webkit-scrollbar {
+    height: 4px;
+}
+
+.qls-module-coupon--style-scroll .qls-coupon-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.qls-module-coupon--style-scroll .qls-coupon-grid::-webkit-scrollbar-thumb {
+    background: var(--qls-cpn-primary, #ff6b6b);
+    border-radius: 4px;
+}
+
+/* 列表风格 */
+.qls-module-coupon--style-list .qls-coupon-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+/* =========================================
+   优惠券卡片 - 营销风格 (京东/淘宝风)
+   ========================================= */
+.qls-cpn-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    border: none;
+    border-radius: var(--qls-cpn-radius, 12px);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.35);
+}
+
+/* 装饰光效 */
+.qls-cpn-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* 锯齿装饰边 */
+.qls-cpn-card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    background:
+        radial-gradient(circle at 6px 0, transparent 6px, var(--qls-cpn-bg, #fff) 6px) repeat-x;
+    background-size: 12px 8px;
+    background-position: 0 0;
+}
+
+.qls-cpn-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(255, 107, 107, 0.45);
+}
+
+.qls-cpn-card--claimed {
+    background: linear-gradient(135deg, #999 0%, #bbb 100%);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 头部: 金额 + 基本信息 */
+.qls-cpn-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 16px 6px;
+    gap: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Module Header */
+.qls-module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    /* Pull up slightly to reduce top whitespace */
+}
+
+.qls-module-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.qls-module-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--qls-cpn-primary, #ff6b6b);
+    background: rgba(255, 107, 107, 0.08);
+    padding: 6px 14px;
+    border-radius: 99px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-left: auto;
+    /* Force right align if needed, though flex space-between handles it */
+}
+
+.qls-module-more:hover {
+    background: var(--qls-cpn-primary, #ff6b6b);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.25);
+}
+
+/* 优惠金额 - 白色醒目 */
+.qls-cpn-value {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+    min-width: 80px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+
+.qls-cpn-amount {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.qls-cpn-unit {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* 优惠券信息 */
+.qls-cpn-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qls-cpn-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.qls-cpn-condition {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 99px;
+    display: inline-block;
+}
+
+/* 中部: 额外信息 */
+.qls-cpn-body {
+    padding: 2px 16px 6px;
+    min-height: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-cpn-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.qls-cpn-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.qls-cpn-scope {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 99px;
+}
+
+.qls-cpn-validity {
+    opacity: 0.9;
+}
+
+/* 底部: 居中按钮 */
+.qls-cpn-footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 16px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-cpn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ff6b6b;
+    background: #fff;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+}
+
+.qls-cpn-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    background: #fff5f5;
+}
+
+.qls-cpn-btn:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.qls-cpn-btn--loading {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.qls-cpn-btn--claimed {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    box-shadow: none;
+    cursor: default;
+}
+
+.qls-cpn-btn--disabled {
+    background: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   响应式适配
+   ========================================= */
+@media (max-width: 1024px) {
+    .qls-coupon-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-module-coupon {
+        padding: 14px 12px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(255, 122, 24, 0.08) 0%, rgba(255, 77, 45, 0.12) 100%);
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .qls-module-header {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .qls-module-title {
+        font-size: 1.05rem;
+    }
+
+    .qls-module-more {
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(255, 107, 107, 0.12);
+    }
+
+    .qls-coupon-grid {
+        grid-template-columns: repeat(var(--qls-cpn-cols-m, 2), 1fr);
+        gap: 10px;
+    }
+
+    .qls-cpn-card {
+        flex-direction: column;
+        background: linear-gradient(135deg, var(--qls-cpn-primary, #ff6b6b) 0%, #ff8e53 100%);
+        border: none;
+        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.28);
+    }
+
+    .qls-cpn-card::before {
+        top: -40%;
+        right: -45%;
+        left: auto;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.22) 0%, transparent 68%);
+        opacity: 1;
+    }
+
+    .qls-cpn-card::after {
+        display: none;
+    }
+
+    .qls-cpn-card:hover {
+        transform: none;
+        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.28);
+    }
+
+    .qls-cpn-header {
+        padding: 12px 12px 8px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .qls-cpn-value {
+        min-width: 72px;
+        padding: 6px 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.36);
+        border-radius: 10px;
+        backdrop-filter: none;
+    }
+
+    .qls-cpn-amount {
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .qls-cpn-unit {
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .qls-cpn-name {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 4px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .qls-cpn-condition {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.96);
+        background: rgba(255, 255, 255, 0.2);
+        padding: 2px 8px;
+    }
+
+    .qls-cpn-body {
+        padding: 0 12px 8px;
+        min-height: 0;
+    }
+
+    .qls-cpn-desc {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.88);
+        margin-bottom: 4px;
+    }
+
+    .qls-cpn-meta {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.84);
+        gap: 6px;
+    }
+
+    .qls-cpn-scope {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 2px 8px;
+        border-radius: 999px;
+    }
+
+    .qls-cpn-footer {
+        padding: 0 12px 12px;
+        justify-content: flex-end;
+    }
+
+    .qls-cpn-btn {
+        max-width: none;
+        height: 36px;
+        font-size: 13px;
+        color: var(--qls-cpn-primary, #ff6b6b);
+        background: #fff;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .qls-cpn-btn:hover:not(:disabled) {
+        transform: none;
+        background: #fff5f5;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .qls-cpn-btn:active:not(:disabled) {
+        transform: none;
+    }
+
+    .qls-cpn-btn--claimed {
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        box-shadow: none;
+    }
+
+    .qls-cpn-btn--disabled {
+        background: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 0.94);
+        box-shadow: none;
+    }
+
+    /* 滚动风格移动端 */
+    .qls-module-coupon--style-scroll .qls-cpn-card {
+        flex: 0 0 min(240px, 78vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .qls-module-coupon {
+        padding: 12px 10px;
+        border-radius: 12px;
+    }
+
+    .qls-coupon-grid {
+        grid-template-columns: repeat(var(--qls-cpn-cols-m, 1), 1fr);
+        gap: 8px;
+    }
+
+    .qls-cpn-header {
+        padding: 10px 10px 6px;
+    }
+
+    .qls-cpn-value {
+        min-width: 66px;
+        padding: 6px 8px;
+    }
+
+    .qls-cpn-amount {
+        font-size: 21px;
+    }
+
+    .qls-cpn-name {
+        font-size: 13px;
+    }
+
+    .qls-cpn-body {
+        padding: 0 10px 8px;
+    }
+
+    .qls-cpn-desc {
+        display: none;
+    }
+
+    .qls-cpn-footer {
+        padding: 0 10px 10px;
+    }
+
+    .qls-cpn-btn {
+        font-size: 12px;
+        height: 34px;
+    }
+
+    .qls-module-coupon--style-scroll .qls-cpn-card {
+        flex: 0 0 min(220px, 84vw);
+    }
+}

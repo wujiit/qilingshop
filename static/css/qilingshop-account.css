@@ -1,0 +1,3240 @@
+/**
+ * QilingShop 个人中心样式
+ * 用于启灵主题个人中心的积分商城相关标签页
+ *
+ * @package QilingShop
+ */
+
+/* ============================================
+   通用变量和基础样式
+   ============================================ */
+:root {
+    --qls-primary: #2563eb;
+    --qls-primary-dark: #1d4ed8;
+    --qls-accent-end: #0ea5e9;
+    --qls-accent-shadow: rgba(37, 99, 235, 0.18);
+    --qls-accent-soft: #eff6ff;
+    --qls-accent-softer: #f0f9ff;
+    --qls-accent-border: #bfdbfe;
+    --qls-accent-text: #1d4ed8;
+    --qls-vip-start: #fffbeb;
+    --qls-vip-end: #fef3c7;
+    --qls-panel-start: rgba(255, 255, 255, 0.98);
+    --qls-panel-end: rgba(248, 250, 252, 0.94);
+    --qls-success: #10b981;
+    --qls-warning: #f59e0b;
+    --qls-danger: #ef4444;
+    --qls-gray-50: #f8fafc;
+    --qls-gray-100: #f1f5f9;
+    --qls-gray-200: #e2e8f0;
+    --qls-gray-300: #cbd5e1;
+    --qls-gray-400: #94a3b8;
+    --qls-gray-500: #64748b;
+    --qls-gray-600: #475569;
+    --qls-gray-700: #334155;
+    --qls-gray-800: #1e293b;
+    --qls-radius: 12px;
+    --qls-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    --qls-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.qls-account-skin-business {
+    --qls-primary: #1e293b;
+    --qls-primary-dark: #0f172a;
+    --qls-accent-end: #334155;
+    --qls-accent-shadow: rgba(15, 23, 42, 0.16);
+    --qls-accent-soft: #f1f5f9;
+    --qls-accent-softer: #f8fafc;
+    --qls-accent-border: #cbd5e1;
+    --qls-accent-text: #0f172a;
+    --qls-vip-start: #f8fafc;
+    --qls-vip-end: #e2e8f0;
+    --qls-panel-start: rgba(250, 252, 253, 0.98);
+    --qls-panel-end: rgba(241, 245, 249, 0.94);
+    --qls-gray-50: #f8fafc;
+    --qls-gray-100: #f1f5f9;
+    --qls-gray-200: #e2e8f0;
+}
+
+.qls-account-skin-coral {
+    --qls-primary: #ea580c;
+    --qls-primary-dark: #c2410c;
+    --qls-accent-end: #f59e0b;
+    --qls-accent-shadow: rgba(234, 88, 12, 0.20);
+    --qls-accent-soft: #fff7ed;
+    --qls-accent-softer: #fffbeb;
+    --qls-accent-border: #fed7aa;
+    --qls-accent-text: #9a3412;
+    --qls-vip-start: #fffbeb;
+    --qls-vip-end: #fed7aa;
+    --qls-panel-start: rgba(255, 255, 255, 0.98);
+    --qls-panel-end: rgba(255, 247, 237, 0.94);
+    --qls-gray-50: #fffaf5;
+    --qls-gray-100: #ffedd5;
+    --qls-gray-200: #fed7aa;
+}
+
+.qls-account-skin-emerald {
+    --qls-primary: #059669;
+    --qls-primary-dark: #047857;
+    --qls-accent-end: #0d9488;
+    --qls-accent-shadow: rgba(5, 150, 105, 0.20);
+    --qls-accent-soft: #ecfdf5;
+    --qls-accent-softer: #f0fdf4;
+    --qls-accent-border: #a7f3d0;
+    --qls-accent-text: #065f46;
+    --qls-vip-start: #f0fdf4;
+    --qls-vip-end: #bbf7d0;
+    --qls-panel-start: rgba(255, 255, 255, 0.98);
+    --qls-panel-end: rgba(236, 253, 245, 0.94);
+    --qls-gray-50: #f4fdf8;
+    --qls-gray-100: #d1fae5;
+    --qls-gray-200: #a7f3d0;
+}
+
+.qls-account-section {
+    max-width: 100%;
+}
+
+.qls-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--qls-gray-800);
+    margin: 0 0 24px 0;
+}
+
+.qls-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* ============================================
+   按钮样式
+   ============================================ */
+.qls-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.qls-btn-primary {
+    background: linear-gradient(135deg, var(--qls-primary) 0%, var(--qls-accent-end) 100%);
+    color: #fff;
+}
+
+.qls-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--qls-accent-shadow);
+    color: #fff;
+}
+
+.qls-btn-outline {
+    background: #fff;
+    color: var(--qls-gray-700);
+    border: 1px solid var(--qls-gray-200);
+}
+
+.qls-btn-outline:hover {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-300);
+}
+
+.qls-btn-sm {
+    padding: 6px 12px;
+    font-size: 0.8125rem;
+}
+
+.qls-btn-block {
+    width: 100%;
+}
+
+/* ============================================
+   积分余额卡片
+   ============================================ */
+.qls-balance-card {
+    background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+    color: #fff !important;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.20);
+    position: relative;
+    overflow: hidden;
+}
+
+.qls-account-skin-business .qls-balance-card {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.qls-account-skin-coral .qls-balance-card {
+    background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.22);
+}
+
+.qls-account-skin-emerald .qls-balance-card {
+    background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+    box-shadow: 0 10px 30px rgba(5, 150, 105, 0.22);
+}
+
+.qls-balance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.qls-balance-header h3 {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    opacity: 0.95;
+    letter-spacing: 0.2px;
+}
+
+.qls-filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.qls-filter-pill {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-600);
+    font-size: 0.8125rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.qls-filter-pill:hover {
+    background: var(--qls-gray-200);
+    color: var(--qls-gray-700);
+}
+
+.qls-filter-pill.active {
+    background: var(--qls-primary);
+    color: #fff;
+}
+
+.qls-vip-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.qls-balance-amount {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.qls-balance-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: #ffffff !important;
+}
+
+.qls-balance-unit {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-left: 6px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+    color: #ffffff !important;
+}
+
+.qls-balance-ratio-tag {
+    font-size: 0.8125rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-left: 12px;
+    font-weight: 500;
+    align-self: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff !important;
+}
+
+.qls-balance-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.qls-balance-actions .qls-btn {
+    flex: 1;
+}
+
+.qls-balance-actions .qls-btn-outline {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qls-balance-actions .qls-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.28);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qls-balance-actions .qls-btn-primary {
+    background: #ffffff;
+    color: var(--qls-primary-dark) !important;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qls-balance-actions .qls-btn-primary:hover {
+    background: #f8fafc;
+    color: var(--qls-primary-dark) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* ============================================
+   快捷功能
+   ============================================ */
+.qls-quick-actions h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--qls-gray-800);
+    margin: 0 0 16px 0;
+}
+
+.qls-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.qls-action-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.qls-action-item:hover {
+    background: var(--qls-gray-100);
+    transform: translateY(-2px);
+}
+
+.qls-action-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.qls-action-icon .qls-icon,
+.qls-action-icon .qs-icon,
+.qls-action-icon .qls-icon-html > svg,
+.qls-action-icon .qls-icon-html > img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    font-size: inherit;
+    line-height: 1;
+    fill: currentColor;
+}
+
+.qls-action-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qls-action-title {
+    display: block;
+    font-weight: 500;
+    color: var(--qls-gray-800);
+    margin-bottom: 4px;
+}
+
+.qls-action-status {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+}
+
+.qls-action-status.signed {
+    color: var(--qls-success);
+}
+
+.qls-action-status.vip {
+    color: var(--qls-warning);
+}
+
+/* ============================================
+   VIP 相关
+   ============================================ */
+.qls-vip-status-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: var(--qls-radius);
+    margin-bottom: 24px;
+}
+
+.qls-vip-status-card.is-vip {
+    background: linear-gradient(135deg, var(--qls-vip-start) 0%, var(--qls-vip-end) 100%);
+}
+
+.qls-vip-status-card.not-vip {
+    background: var(--qls-gray-100);
+}
+
+.qls-vip-icon {
+    font-size: 2.5rem;
+}
+
+.qls-vip-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 1.125rem;
+    color: var(--qls-gray-800);
+}
+
+.qls-vip-info p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+}
+
+.qls-vip-discount {
+    color: var(--qls-warning) !important;
+    font-weight: 500;
+}
+
+.qls-vip-identity-card {
+    margin: 18px 0 24px;
+    border-radius: 16px;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, var(--qls-panel-start), var(--qls-panel-end));
+    border: 1px solid var(--qls-gray-200);
+    position: relative;
+    overflow: hidden;
+}
+
+.qls-vip-identity-card::after {
+    content: '';
+    position: absolute;
+    right: -60px;
+    top: -40px;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, var(--vip-color) 0%, transparent 70%);
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.qls-vip-identity-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.qls-vip-identity-badge {
+    background: var(--vip-color);
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.qls-vip-identity-status {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--qls-gray-800);
+}
+
+.qls-vip-identity-note {
+    font-size: 0.8rem;
+    color: var(--qls-gray-500);
+    margin-top: 2px;
+}
+
+.qls-vip-identity-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.qls-vip-identity-item span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    margin-bottom: 4px;
+}
+
+.qls-vip-identity-item strong {
+    font-size: 0.95rem;
+    color: var(--qls-gray-800);
+}
+
+.qls-vip-identity-item em {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--qls-gray-400);
+    margin-top: 2px;
+}
+
+.qls-growth-vip-panel {
+    margin: 18px 0 24px;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--qls-panel-start), var(--qls-panel-end));
+    position: relative;
+    overflow: hidden;
+}
+
+.qls-growth-vip-panel::after {
+    content: '';
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--growth-color) 0%, transparent 70%);
+    opacity: 0.16;
+    pointer-events: none;
+}
+
+.qls-growth-vip-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-growth-vip-kicker {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--growth-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.qls-growth-vip-head h4 {
+    margin: 8px 0 4px;
+    color: var(--qls-gray-800);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.qls-growth-vip-head p {
+    margin: 0;
+    color: var(--qls-gray-500);
+    font-size: 0.875rem;
+}
+
+.qls-growth-vip-score {
+    min-width: 120px;
+    text-align: right;
+}
+
+.qls-growth-vip-score strong {
+    display: block;
+    color: var(--qls-gray-800);
+    font-size: 1.65rem;
+    line-height: 1;
+}
+
+.qls-growth-vip-score span {
+    display: block;
+    margin-top: 4px;
+    color: var(--qls-gray-500);
+    font-size: 0.78rem;
+}
+
+.qls-growth-vip-progress {
+    height: 8px;
+    margin: 18px 0 14px;
+    border-radius: 999px;
+    background: var(--qls-gray-100);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-growth-vip-progress span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--growth-color), #f59e0b);
+}
+
+.qls-growth-vip-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-growth-vip-meta div {
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 12px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.qls-growth-vip-meta span,
+.qls-growth-vip-effective>span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--qls-gray-500);
+    font-size: 0.75rem;
+}
+
+.qls-growth-vip-meta strong {
+    color: var(--qls-gray-800);
+    font-size: 0.95rem;
+}
+
+.qls-growth-vip-effective {
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.qls-growth-vip-effective ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.qls-growth-vip-effective li {
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #fff7ed;
+    color: #9a3412;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.qls-growth-vip-levels {
+    margin-bottom: 24px;
+}
+
+.qls-growth-vip-levels h4,
+.qls-growth-vip-rules h4,
+.qls-growth-vip-logs h4 {
+    margin: 0 0 12px;
+    color: var(--qls-gray-800);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.qls-growth-vip-level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.qls-growth-vip-level-card {
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.qls-growth-vip-level-card.is-reached {
+    border-color: rgba(34, 197, 94, 0.35);
+    background: #f0fdf4;
+}
+
+.qls-growth-vip-level-card.is-active {
+    border-color: var(--growth-level-color);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.qls-growth-vip-level-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.qls-growth-vip-level-title span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--growth-level-color);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.qls-growth-vip-level-title em {
+    color: var(--growth-level-color);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.qls-growth-vip-level-card p {
+    margin: 0 0 8px;
+    color: var(--qls-gray-600);
+    font-size: 0.8rem;
+}
+
+.qls-growth-vip-level-desc {
+    margin-bottom: 8px;
+    color: var(--qls-gray-500);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.qls-growth-vip-benefit-list {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.qls-growth-vip-benefit-list li {
+    position: relative;
+    padding-left: 14px;
+    color: var(--qls-gray-700);
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+
+.qls-growth-vip-benefit-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--growth-level-color);
+}
+
+.qls-growth-vip-empty {
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: var(--qls-gray-50);
+    color: var(--qls-gray-500);
+    font-size: 0.82rem;
+}
+
+.qls-growth-vip-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.qls-growth-vip-rules,
+.qls-growth-vip-logs {
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 14px;
+    padding: 16px;
+    background: #fff;
+}
+
+.qls-growth-vip-rule-list,
+.qls-growth-vip-log-list {
+    display: grid;
+    gap: 10px;
+}
+
+.qls-growth-vip-rule-item,
+.qls-growth-vip-log-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--qls-gray-100);
+}
+
+.qls-growth-vip-rule-item:last-child,
+.qls-growth-vip-log-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.qls-growth-vip-rule-item span {
+    color: var(--qls-gray-500);
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.qls-growth-vip-rule-item strong {
+    color: var(--qls-gray-800);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.qls-growth-vip-rule-item em {
+    min-width: 0;
+    color: var(--qls-gray-600);
+    font-size: 0.8rem;
+    font-style: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qls-growth-vip-log-item>div {
+    display: grid;
+    gap: 3px;
+    min-width: 0;
+}
+
+.qls-growth-vip-log-item strong {
+    color: var(--qls-gray-800);
+    font-size: 0.86rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qls-growth-vip-log-item span {
+    color: var(--qls-gray-500);
+    font-size: 0.75rem;
+}
+
+.qls-growth-vip-log-item em {
+    font-style: normal;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.qls-growth-vip-log-item em.is-plus {
+    color: var(--qls-success);
+}
+
+.qls-growth-vip-log-item em.is-minus {
+    color: var(--qls-danger);
+}
+
+.qls-vip-tier-list {
+    margin-bottom: 24px;
+}
+
+.qls-vip-tier-list h4 {
+    margin-bottom: 12px;
+}
+
+.qls-vip-tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.qls-vip-tier-item {
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qls-vip-tier-item.active {
+    border-color: var(--qls-primary);
+    box-shadow: 0 8px 20px var(--qls-accent-shadow);
+}
+
+.qls-vip-tier-badge {
+    display: inline-flex;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--tier-color);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.qls-vip-tier-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--qls-gray-600);
+}
+
+.qls-vip-redeem-card {
+    border: 1px dashed var(--qls-gray-200);
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+}
+
+.qls-vip-redeem-title {
+    font-weight: 600;
+    color: var(--qls-gray-800);
+    margin-bottom: 10px;
+}
+
+.qls-vip-redeem-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.qls-vip-redeem-form input {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px 12px;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.qls-vip-redeem-tip {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    margin-top: 8px;
+}
+
+.qls-vip-log {
+    margin-top: 24px;
+}
+
+.qls-vip-log h4 {
+    margin-bottom: 12px;
+}
+
+.qls-vip-benefits {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.qls-vip-benefits h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.qls-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.qls-benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 12px;
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+}
+
+.qls-benefit-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.qls-benefit-icon.qls-icon,
+.qls-benefit-icon.qs-icon,
+.qls-benefit-icon.qls-icon-html > svg,
+.qls-benefit-icon.qls-icon-html > img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    fill: currentColor;
+}
+
+.qls-benefit-title {
+    font-weight: 500;
+    color: var(--qls-gray-800);
+    margin-bottom: 4px;
+}
+
+.qls-benefit-desc {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+}
+
+.qls-vip-plans h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.qls-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.qls-plan-card {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--qls-gray-200);
+    border-radius: var(--qls-radius);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.qls-plan-card:hover {
+    border-color: var(--qls-primary);
+    box-shadow: var(--qls-shadow-lg);
+}
+
+.qls-plan-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--qls-warning);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.qls-plan-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--qls-gray-800);
+}
+
+.qls-plan-duration {
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+    margin: 0 0 12px 0;
+}
+
+.qls-plan-price {
+    margin-bottom: 8px;
+}
+
+.qls-price-currency {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.qls-price-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--qls-primary);
+}
+
+.qls-price-origin {
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+    text-decoration: line-through;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.qls-plan-upgrade-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--qls-primary);
+    background: var(--qls-accent-soft);
+    border: 1px solid var(--qls-accent-border);
+    padding: 3px 8px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+}
+
+.qls-price-unit {
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+}
+
+.qls-plan-discount {
+    font-size: 0.75rem;
+    color: var(--qls-success);
+    margin-bottom: 12px;
+}
+
+/* ============================================
+   表格样式
+   ============================================ */
+.qls-orders-table-wrapper,
+.qls-invites-table-wrapper {
+    background: #fff;
+    border-radius: var(--qls-radius);
+    border: 1px solid var(--qls-gray-200);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.qls-orders-table,
+.qls-invites-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qls-orders-table th,
+.qls-invites-table th {
+    background: var(--qls-gray-50);
+    padding: 12px 16px;
+    font-weight: 500;
+    color: var(--qls-gray-600);
+    text-align: left;
+    font-size: 0.8125rem;
+    border-bottom: 1px solid var(--qls-gray-200);
+}
+
+.qls-orders-table td,
+.qls-invites-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--qls-gray-100);
+    font-size: 0.875rem;
+    color: var(--qls-gray-700);
+}
+
+.qls-orders-table tr:last-child td,
+.qls-invites-table tr:last-child td {
+    border-bottom: none;
+}
+
+.qls-order-no code {
+    font-size: 0.75rem;
+    background: var(--qls-gray-100);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.qls-order-sub {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    margin-top: 4px;
+}
+
+/* ============================================
+   积分订单（个人中心）专属优化
+   ============================================ */
+.qls-orders-section .qls-section-title {
+    margin-bottom: 16px;
+}
+
+.qls-orders-section .qls-filter-bar {
+    margin-bottom: 18px;
+}
+
+.qls-orders-section .qls-orders-table-wrapper {
+    border-radius: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+
+.qls-orders-section .qls-orders-table {
+    min-width: 1080px;
+}
+
+.qls-orders-section .qls-orders-table th {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--qls-gray-700);
+    white-space: nowrap;
+    padding: 13px 14px;
+}
+
+.qls-orders-section .qls-orders-table td {
+    padding: 14px;
+    vertical-align: middle;
+    line-height: 1.55;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(1),
+.qls-orders-section .qls-orders-table td:nth-child(1) {
+    min-width: 240px;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(2),
+.qls-orders-section .qls-orders-table td:nth-child(2) {
+    min-width: 88px;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(3),
+.qls-orders-section .qls-orders-table td:nth-child(3) {
+    min-width: 180px;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(4),
+.qls-orders-section .qls-orders-table td:nth-child(4) {
+    min-width: 130px;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(5),
+.qls-orders-section .qls-orders-table td:nth-child(5) {
+    min-width: 110px;
+}
+
+.qls-orders-section .qls-orders-table th:nth-child(6),
+.qls-orders-section .qls-orders-table td:nth-child(6),
+.qls-orders-section .qls-orders-table th:nth-child(7),
+.qls-orders-section .qls-orders-table td:nth-child(7),
+.qls-orders-section .qls-orders-table th:nth-child(8),
+.qls-orders-section .qls-orders-table td:nth-child(8),
+.qls-orders-section .qls-orders-table th:nth-child(9),
+.qls-orders-section .qls-orders-table td:nth-child(9) {
+    white-space: nowrap;
+}
+
+.qls-orders-section .qls-order-no code {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.qls-orders-section .qls-order-title a {
+    color: var(--qls-primary);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.qls-orders-section .qls-order-title a:hover {
+    text-decoration: underline;
+}
+
+.qls-orders-section .qls-order-type-tag,
+.qls-orders-section .qls-status-badge {
+    white-space: nowrap;
+}
+
+.qls-orders-section .qls-order-type-tag {
+    min-width: 56px;
+    justify-content: center;
+}
+
+.qls-orders-section .qls-status-badge {
+    min-width: 66px;
+    text-align: center;
+}
+
+.qls-orders-section .qls-order-actions .qls-btn {
+    min-width: 74px;
+    white-space: nowrap;
+    padding: 7px 14px;
+}
+
+.qls-orders-section .qls-order-actions .qls-text-muted {
+    white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+    .qls-orders-section .qls-orders-table {
+        min-width: 920px;
+    }
+
+    .qls-orders-section .qls-orders-table th,
+    .qls-orders-section .qls-orders-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .qls-orders-section .qls-order-actions .qls-btn {
+        min-width: 68px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .qls-orders-section .qls-orders-table {
+        min-width: 860px;
+    }
+
+    .qls-orders-section .qls-order-no code {
+        font-size: 11px;
+    }
+}
+
+.qls-order-type-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-600);
+}
+
+.qls-order-type-resource {
+    background: var(--qls-accent-soft);
+    color: var(--qls-accent-text);
+}
+
+.qls-order-type-vip {
+    background: rgba(245, 158, 11, 0.15);
+    color: #b45309;
+}
+
+.qls-amount-main {
+    font-weight: 600;
+    color: var(--qls-gray-800);
+}
+
+.qls-amount-sub {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    margin-top: 2px;
+}
+
+.qls-amount-discount {
+    color: var(--qls-danger);
+}
+
+.qls-status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.qls-status-badge.pending {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.qls-status-badge.paid {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.qls-status-badge.cancelled {
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-500);
+}
+
+.qls-status-badge.refunded {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* ============================================
+   邀请卡片
+   ============================================ */
+.qls-invite-card {
+    background: linear-gradient(135deg, var(--qls-gray-50) 0%, var(--qls-gray-100) 100%);
+    border-radius: var(--qls-radius);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.qls-invite-code-section,
+.qls-invite-link-section {
+    margin-bottom: 16px;
+}
+
+.qls-invite-code-section:last-child,
+.qls-invite-link-section:last-child {
+    margin-bottom: 0;
+}
+
+.qls-invite-card label {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+    margin-bottom: 8px;
+}
+
+.qls-invite-code,
+.qls-invite-link {
+    display: flex;
+    gap: 8px;
+}
+
+.qls-invite-code code {
+    flex: 1;
+    padding: 12px 16px;
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--qls-primary);
+}
+
+.qls-invite-link input {
+    flex: 1;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--qls-gray-700);
+}
+
+.qls-copy-btn {
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.qls-copy-btn:hover {
+    background: var(--qls-gray-50);
+}
+
+.qls-invite-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.qls-stat-item {
+    text-align: center;
+    padding: 16px;
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+}
+
+.qls-stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--qls-primary);
+    margin-bottom: 4px;
+}
+
+.qls-stat-label {
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+}
+
+.qls-invite-rules {
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.qls-invite-rules h4 {
+    font-size: 0.9375rem;
+    margin: 0 0 12px 0;
+}
+
+.qls-invite-rules ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.qls-invite-rules li {
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+    margin-bottom: 6px;
+}
+
+.qls-invite-tiers {
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.qls-invite-tiers h4 {
+    font-size: 0.9375rem;
+    margin: 0 0 12px 0;
+}
+
+.qls-invite-tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.qls-invite-tier {
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: var(--qls-radius);
+    padding: 12px;
+}
+
+.qls-invite-tier.is-reached {
+    border-color: var(--qls-primary);
+    box-shadow: 0 6px 18px rgba(43, 116, 255, 0.12);
+}
+
+.qls-invite-tier-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--qls-gray-700);
+}
+
+.qls-invite-tier-bonus {
+    margin-top: 4px;
+    font-weight: 600;
+    color: var(--qls-primary);
+}
+
+.qls-invite-tier-status {
+    margin-top: 8px;
+    font-size: 0.75rem;
+}
+
+.qls-invite-tier-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--qls-primary);
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.qls-invite-tier-muted {
+    color: var(--qls-gray-500);
+}
+
+.qls-invite-list h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.qls-invitee-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qls-invitee-info img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* ============================================
+   佣金明细
+   ============================================ */
+.qls-commission-log {
+    margin-top: 32px;
+}
+
+.qls-commission-log h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.qls-commissions-table-wrapper {
+    background: #fff;
+    border-radius: var(--qls-radius);
+    border: 1px solid var(--qls-gray-200);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.qls-commissions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qls-commissions-table th {
+    background: var(--qls-gray-50);
+    padding: 12px 16px;
+    font-weight: 500;
+    color: var(--qls-gray-600);
+    text-align: left;
+    font-size: 0.8125rem;
+    border-bottom: 1px solid var(--qls-gray-200);
+}
+
+.qls-commissions-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--qls-gray-100);
+    font-size: 0.875rem;
+    color: var(--qls-gray-700);
+}
+
+.qls-commissions-table tr:last-child td {
+    border-bottom: none;
+}
+
+.qls-from-user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qls-from-user-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.qls-source-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--qls-gray-100);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--qls-gray-600);
+    margin-right: 4px;
+}
+
+.qls-level-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.6875rem;
+    font-weight: 500;
+}
+
+.qls-level-tag.level-1 {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.qls-level-tag.level-2 {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.qls-amount {
+    font-weight: 600;
+    color: var(--qls-success);
+}
+
+/* ============================================
+   积分记录
+   ============================================ */
+.qls-balance-info {
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+}
+
+.qls-balance-highlight {
+    font-weight: 700;
+    color: var(--qls-primary);
+    font-size: 1.125rem;
+}
+
+.qls-points-overview {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.qls-points-overview-item {
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.qls-po-full {
+    grid-column: span 2;
+}
+
+.qls-po-label {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+}
+
+.qls-po-value {
+    font-size: 0.95rem;
+    color: var(--qls-gray-800);
+    font-weight: 600;
+}
+
+.qls-growth-header-stat {
+    min-width: 180px;
+    padding: 12px 14px;
+    border: 1px solid var(--qls-accent-shadow);
+    border-radius: 16px;
+    background:
+        radial-gradient(circle at 18% 0%, rgba(6, 182, 212, 0.16), transparent 42%),
+        linear-gradient(135deg, var(--qls-accent-soft), #fff);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.qls-growth-header-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    margin-top: 6px;
+    padding: 0 9px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
+}
+
+.qls-growth-header-progress {
+    display: block;
+    height: 7px;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.22);
+    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.qls-growth-header-progress i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--qls-primary), var(--qls-accent-end));
+    box-shadow: 0 0 18px var(--qls-accent-shadow);
+}
+
+.qls-po-warning {
+    color: var(--qls-warning);
+}
+
+.qls-points-list {
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: var(--qls-radius);
+    overflow: hidden;
+}
+
+.qls-points-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--qls-gray-100);
+}
+
+.qls-points-item:last-child {
+    border-bottom: none;
+}
+
+.qls-points-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.qls-points-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qls-points-title {
+    font-weight: 500;
+    color: var(--qls-gray-800);
+    margin-bottom: 2px;
+}
+
+.qls-points-desc {
+    font-size: 0.8125rem;
+    color: var(--qls-gray-500);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qls-points-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    color: var(--qls-gray-400);
+    margin-top: 2px;
+}
+
+.qls-points-source {
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-500);
+}
+
+.qls-points-time {
+    font-size: 0.75rem;
+    color: var(--qls-gray-400);
+    margin-top: 4px;
+}
+
+.qls-amount-unit {
+    font-size: 12px;
+    color: var(--qls-gray-400);
+    margin-left: 2px;
+}
+
+.qls-points-amount {
+    font-weight: 600;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.qls-points-amount.plus {
+    color: var(--qls-success);
+}
+
+.qls-points-amount.minus {
+    color: var(--qls-danger);
+}
+
+/* ============================================
+   分页
+   ============================================ */
+.qls-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.qls-page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.qls-page-link:hover,
+.qls-page-link.active {
+    background: var(--qls-primary);
+    border-color: var(--qls-primary);
+    color: #fff;
+}
+
+.qls-page-dots {
+    color: var(--qls-gray-400);
+}
+
+/* ============================================
+   空状态
+   ============================================ */
+.qls-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--qls-gray-50);
+    border-radius: var(--qls-radius);
+    border: 1px dashed var(--qls-gray-200);
+}
+
+.qls-empty-state.qls-empty-sm {
+    padding: 40px 20px;
+}
+
+.qls-empty-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.qls-empty-state p {
+    color: var(--qls-gray-500);
+    margin: 0;
+}
+
+/* ============================================
+   弹窗
+   ============================================ */
+.qls-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.qls-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.qls-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: var(--qls-radius);
+    overflow: hidden;
+    animation: qls-modal-in 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes qls-modal-in {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.qls-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--qls-gray-200);
+}
+
+.qls-modal-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.qls-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--qls-gray-400);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.qls-modal-close:hover {
+    color: var(--qls-gray-600);
+}
+
+.qls-modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+/* VIP 支付信息较多，使用更舒适的宽度；充值弹窗继续使用通用宽度。 */
+#qls-vip-modal .qls-modal-content {
+    max-width: 680px;
+}
+
+.qls-modal-footer {
+    padding: 16px 20px;
+    border-top: 1px solid var(--qls-gray-200);
+}
+
+/* 套餐选择 */
+.qls-package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.qls-package-item {
+    padding: 16px 12px;
+    background: var(--qls-gray-50);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.qls-package-item:hover {
+    background: var(--qls-gray-100);
+}
+
+.qls-package-item.selected {
+    border-color: var(--qls-primary);
+    background: var(--qls-accent-soft);
+}
+
+.qls-package-points {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--qls-gray-800);
+}
+
+.qls-package-unit {
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    margin-bottom: 4px;
+}
+
+.qls-package-price {
+    font-size: 0.875rem;
+    color: var(--qls-primary);
+    font-weight: 500;
+}
+
+.qls-custom-amount {
+    margin-bottom: 20px;
+}
+
+.qls-custom-amount label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+    margin-bottom: 8px;
+}
+
+.qls-input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--qls-gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.qls-input-prefix {
+    padding: 0 12px;
+    color: var(--qls-gray-500);
+    background: var(--qls-gray-50);
+    border-right: 1px solid var(--qls-gray-200);
+}
+
+.qls-input-group input {
+    flex: 1;
+    border: none;
+    padding: 10px 12px;
+    font-size: 0.9375rem;
+    outline: none;
+}
+
+.qls-payment-methods {
+    margin-bottom: 0;
+}
+
+.qls-payment-methods label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--qls-gray-600);
+    margin-bottom: 8px;
+}
+
+.qls-payment-options {
+    display: flex;
+    gap: 10px;
+}
+
+.qls-payment-option {
+    flex: 1;
+    cursor: pointer;
+}
+
+.qls-payment-option input {
+    display: none;
+}
+
+.qls-payment-label {
+    display: block;
+    padding: 12px;
+    background: var(--qls-gray-50);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.qls-payment-option input:checked+.qls-payment-label {
+    border-color: var(--qls-primary);
+    background: var(--qls-accent-soft);
+}
+
+.qls-payment-balance {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--qls-gray-500);
+}
+
+.qls-payment-balance-inline {
+    margin-left: 24px;
+}
+
+.qls-payment-divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 13px;
+    color: var(--qls-gray-500);
+}
+
+.qls-vip-modal-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.qls-vip-modal-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--qls-gray-800);
+}
+
+.qls-vip-modal-price {
+    font-size: 24px;
+    color: var(--qls-accent-text);
+    font-weight: 700;
+}
+
+.qls-vip-modal-note {
+    font-size: 13px;
+    color: var(--qls-gray-500);
+    margin-top: 4px;
+}
+
+.qls-vip-modal-points-price {
+    font-size: 14px;
+    color: var(--qls-gray-500);
+    margin-top: 5px;
+}
+
+.qls-vip-rule-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+}
+
+.qls-vip-rule-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--qls-gray-700);
+    margin-bottom: 8px;
+}
+
+.qls-vip-rule-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--qls-gray-600);
+}
+
+.qls-vip-rule-list li {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.qls-vip-rule-label {
+    min-width: 72px;
+    color: var(--qls-gray-500);
+    flex-shrink: 0;
+}
+
+.qls-text-muted {
+    color: var(--qls-gray-400);
+}
+
+/* ============================================
+   轻提示（Toast）
+   ============================================ */
+.qls-toast {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.96);
+    max-width: min(90vw, 420px);
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    z-index: 10050;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(15, 23, 42, 0.92);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.32);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.qls-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.qls-toast.success {
+    background: rgba(5, 150, 105, 0.95);
+}
+
+.qls-toast.error {
+    background: rgba(220, 38, 38, 0.95);
+}
+
+.qls-toast.warning {
+    background: rgba(217, 119, 6, 0.95);
+}
+
+/* ============================================
+   响应式
+   ============================================ */
+@media (max-width: 768px) {
+    .qls-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qls-invite-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qls-orders-table-wrapper,
+    .qls-invites-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .qls-orders-table,
+    .qls-invites-table {
+        min-width: 600px;
+    }
+
+    .qls-package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qls-recharge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   快捷充值按钮
+   ============================================ */
+.qls-quick-recharge {
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, var(--qls-accent-softer) 0%, var(--qls-accent-soft) 100%);
+    border-radius: var(--qls-radius);
+    padding: 20px;
+    border: 1px solid var(--qls-accent-border);
+}
+
+.qls-quick-recharge h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--qls-accent-text);
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qls-quick-recharge h4::before {
+    content: '🎁';
+    font-size: 1.25rem;
+}
+
+.qls-recharge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+.qls-recharge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 10px;
+    background: linear-gradient(180deg, #ffffff 0%, var(--qls-accent-softer) 100%);
+    border: 2px solid var(--qls-accent-border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.qls-recharge-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--qls-primary), var(--qls-accent-end), var(--qls-primary));
+}
+
+.qls-recharge-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--qls-accent-shadow);
+    border-color: var(--qls-primary);
+    background: linear-gradient(180deg, #ffffff 0%, var(--qls-accent-soft) 100%);
+}
+
+.qls-recharge-amount {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--qls-gray-800);
+    margin-bottom: 4px;
+}
+
+.qls-recharge-bonus {
+    font-size: 0.75rem;
+    color: var(--qls-accent-text);
+    font-weight: 500;
+}
+
+/* ============================================
+   提示文案框
+   ============================================ */
+.qls-tips-box {
+    background: linear-gradient(135deg, var(--qls-accent-softer) 0%, var(--qls-accent-soft) 100%);
+    border: 1px solid var(--qls-accent-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+    color: var(--qls-accent-text);
+    line-height: 1.5;
+}
+
+.qls-tips-box a {
+    color: var(--qls-primary-dark);
+    text-decoration: underline;
+}
+
+/* ============================================
+   支付图标
+   ============================================ */
+.qls-payment-label img.qls-payment-icon,
+img.qls-payment-icon {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    border-radius: 50%;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: #fff;
+    padding: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* ============================================
+   VIP 套餐新特性
+   ============================================ */
+.qls-plan-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+    padding: 12px 0;
+    border-top: 1px dashed var(--qls-gray-200);
+    border-bottom: 1px dashed var(--qls-gray-200);
+    text-align: left;
+}
+
+.qls-plan-feature {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.8125rem;
+    color: var(--qls-gray-600);
+    line-height: 1.4;
+}
+
+.qls-plan-feature:last-child {
+    margin-bottom: 0;
+}
+
+.qls-plan-feature .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1;
+    background: var(--qls-gray-100);
+    border-radius: 50%;
+    color: var(--qls-primary);
+    flex-shrink: 0;
+    margin-right: 8px;
+    /* 添加间距 */
+    position: relative;
+    /* 微调位置 */
+    top: -1px;
+}
+
+.qls-plan-desc {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: var(--qls-gray-500);
+    line-height: 1.4;
+}
+
+/* ============================================
+   暗黑模式适配
+   ============================================ */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) {
+    --qls-primary: #3b82f6;
+    --qls-primary-dark: #2563eb;
+    --qls-gray-50: #1f2937;
+    /* gray-800 */
+    --qls-gray-100: #111827;
+    /* gray-900 */
+    --qls-gray-200: #374151;
+    /* gray-700 */
+    --qls-gray-300: #4b5563;
+    /* gray-600 */
+    --qls-gray-400: #6b7280;
+    /* gray-500 */
+    --qls-gray-500: #9ca3af;
+    /* gray-400 */
+    --qls-gray-600: #d1d5db;
+    /* gray-300 */
+    --qls-gray-700: #e5e7eb;
+    /* gray-200 */
+    --qls-gray-800: #f3f4f6;
+    /* gray-100 */
+
+    --qls-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --qls-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-account-skin {
+    --qls-gray-50: #1f2937;
+    --qls-gray-100: #111827;
+    --qls-gray-200: #374151;
+    --qls-gray-300: #4b5563;
+    --qls-gray-400: #6b7280;
+    --qls-gray-500: #9ca3af;
+    --qls-gray-600: #d1d5db;
+    --qls-gray-700: #e5e7eb;
+    --qls-gray-800: #f3f4f6;
+    --qls-accent-soft: rgba(255, 255, 255, 0.08);
+    --qls-accent-softer: rgba(255, 255, 255, 0.04);
+}
+
+/* 暗黑模式下的具体样式调整 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-account-section {
+    color: var(--qls-gray-600);
+}
+
+/* 卡片背景调整 (灰色背景改为深色) */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-action-item,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-benefit-item,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-stat-item,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-rules,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-tiers,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-empty-state,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-status-card.not-vip {
+    background: var(--qls-gray-50);
+    /* 这里的gray-50实际已通过变量重定义为深灰色 #1f2937 */
+    border: 1px solid var(--qls-gray-100);
+}
+
+/* 白色背景元素调整为更深色 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-plan-card,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-list,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-orders-table-wrapper,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invites-table-wrapper,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-tier,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-modal-content,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-page-link,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-code code,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-link input,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-copy-btn {
+    background: var(--qls-gray-100);
+    /* #111827 */
+    border-color: var(--qls-gray-200);
+    /* #374151 */
+}
+
+/* 边框颜色调整 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-orders-table th,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-orders-table td,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invites-table th,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invites-table td,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-item {
+    border-bottom-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-orders-table th,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invites-table th {
+    background: var(--qls-gray-50);
+}
+
+/* 文字颜色修正 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-section-title,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-modal-header h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-quick-actions h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-info h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-benefits h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-plans h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-invite-list h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-benefit-title,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-action-title,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-plan-name,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-title {
+    color: var(--qls-gray-800);
+    /* 实际上是原来的亮色 #f3f4f6 */
+}
+
+/* 按钮调整 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-btn-outline {
+    background: transparent;
+    border-color: var(--qls-gray-300);
+    color: var(--qls-gray-600);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-btn-outline:hover {
+    background: var(--qls-gray-200);
+    color: var(--qls-gray-800);
+}
+
+/* 支付选项 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-payment-label {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-payment-option input:checked+.qls-payment-label {
+    background: var(--qls-accent-soft);
+    border-color: var(--qls-primary);
+}
+
+/* 快捷充值按钮 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-recharge-item {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-recharge-item:hover {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-primary);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-recharge-amount {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-recharge-bonus {
+    color: var(--qls-primary);
+}
+
+/* VIP特性虚线 */
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-plan-features {
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-plan-feature .feature-icon {
+    background: var(--qls-accent-soft);
+    /* primary colour with opacity */
+    color: var(--qls-primary);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-payment-balance,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-payment-divider,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-amount-unit,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-text-muted {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-input-group {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-input-prefix {
+    background: var(--qls-gray-50);
+    border-right-color: var(--qls-gray-200);
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-input-group input {
+    background: transparent;
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-quick-recharge {
+    background: linear-gradient(135deg, var(--qls-accent-softer) 0%, var(--qls-accent-soft) 100%);
+    border-color: var(--qls-accent-border);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-quick-recharge h4 {
+    color: var(--qls-primary);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-tips-box {
+    background: linear-gradient(135deg, var(--qls-accent-softer) 0%, var(--qls-accent-soft) 100%);
+    border-color: var(--qls-accent-border);
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-tips-box a {
+    color: var(--qls-primary);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-modal-name {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-modal-points-price {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-rule-box {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-rule-title {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-rule-list {
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-rule-label {
+    color: var(--qls-gray-600);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-filter-pill {
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-600);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-filter-pill:hover {
+    background: var(--qls-gray-200);
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-filter-pill.active {
+    background: var(--qls-primary);
+    color: #fff;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-meta {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-source {
+    background: var(--qls-gray-100);
+    color: var(--qls-gray-600);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-points-overview-item {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-po-label {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-po-value {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-identity-card {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-identity-status {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-identity-note {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-identity-item strong {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-tier-item {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-redeem-card {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-vip-redeem-form input {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-panel {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.78), rgba(17, 24, 39, 0.72));
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-meta div,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-level-card,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-rules,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-logs {
+    background: var(--qls-gray-100);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-head h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-score strong,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-meta strong,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-levels h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-rules h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-logs h4,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-rule-item strong,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-log-item strong {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-level-card.is-reached {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-effective li {
+    background: rgba(249, 115, 22, 0.16);
+    color: #fdba74;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-growth-vip-empty {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-payment-label img.qls-payment-icon,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) img.qls-payment-icon {
+    background: var(--qls-gray-50);
+    box-shadow: none;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-trigger {
+    background: linear-gradient(135deg, var(--qls-accent-softer) 0%, var(--qls-accent-soft) 100%);
+    border-color: var(--qls-accent-border);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-trigger:hover {
+    border-color: var(--qls-primary);
+    background: var(--qls-accent-soft);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-trigger .qls-coupon-text,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-trigger .dashicons {
+    color: var(--qls-primary);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-trigger .qls-coupon-selected {
+    color: #fda4af;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-applied {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.16) 0%, rgba(190, 24, 93, 0.14) 100%);
+    border-color: rgba(251, 113, 133, 0.35);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-applied .coupon-name {
+    color: var(--qls-gray-700);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-applied .coupon-discount {
+    color: #fda4af;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-applied .qls-remove-coupon {
+    color: var(--qls-gray-500);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-applied .qls-remove-coupon:hover {
+    color: #fecdd3;
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-content {
+    background: var(--qls-gray-100);
+    border: 1px solid var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-header,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-footer {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-header h4 {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-item {
+    background: var(--qls-gray-50);
+    border-color: var(--qls-gray-200);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-item:hover {
+    border-color: rgba(96, 165, 250, 0.6);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-item .coupon-info .name {
+    color: var(--qls-gray-800);
+}
+
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-item .coupon-info .condition,
+:is(.dark, .dark-mode, html.dark-mode, body.dark-mode, [data-theme='dark']) .qls-coupon-picker-item .coupon-info .coupon-reason {
+    color: var(--qls-gray-500);
+}
+
+/* ============================================
+   移动端响应式 (Max Width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* 基础布局 */
+    .qls-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .qls-section-header .qls-btn {
+        width: 100%;
+    }
+
+    /* 积分卡片 */
+    .qls-balance-card {
+        padding: 20px;
+    }
+
+    .qls-balance-amount {
+        flex-wrap: wrap;
+    }
+
+    .qls-balance-value {
+        font-size: 2rem;
+    }
+
+    .qls-balance-actions {
+        /* 保持一行但紧凑，或者换行 */
+        gap: 8px;
+    }
+
+    .qls-balance-actions .qls-btn {
+        padding: 8px 12px;
+        font-size: 0.8125rem;
+    }
+
+    /* Grid 布局调整 */
+    .qls-recharge-grid,
+    .qls-benefits-grid,
+    .qls-invite-stats {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2列 */
+        gap: 8px;
+    }
+
+    .qls-actions-grid {
+        grid-template-columns: 1fr;
+        /* 1列列表式 */
+    }
+
+    .qls-plans-grid {
+        grid-template-columns: 1fr;
+        /* 1列垂直堆叠 */
+    }
+
+    /* VIP 状态卡片 */
+    .qls-vip-status-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .qls-vip-icon {
+        margin-bottom: 8px;
+    }
+
+    /* 表格横向滚动 */
+    .qls-orders-table-wrapper,
+    .qls-invites-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .qls-orders-table,
+    .qls-invites-table {
+        min-width: 600px;
+        /* 保证最小宽度不挤压 */
+    }
+
+    /* 弹窗适配 */
+    .qls-modal-content {
+        width: 90%;
+        max-height: 85vh;
+        margin: 0 5%;
+    }
+
+    #qls-vip-modal .qls-modal-content {
+        max-width: 95%;
+    }
+
+    .qls-payment-options {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .qls-payment-option {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    /* 邀请卡片 */
+    .qls-invite-code,
+    .qls-invite-link {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qls-invite-code code,
+    .qls-invite-link input {
+        width: 100%;
+        box-sizing: border-box;
+        /* 确保padding不撑大 */
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .qls-copy-btn {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   超小屏幕优化 (Max Width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .qls-recharge-grid {
+        grid-template-columns: 1fr;
+        /* 超小屏1列 */
+    }
+
+    .qls-balance-value {
+        font-size: 1.75rem;
+    }
+}
+
+/* ============================================
+   深度移动端适配 & 布局保护 (Mobile Fixes)
+   ============================================ */
+@media (max-width: 991px) {
+
+    /* 确保容器不溢出 */
+    .qls-account-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        /* 防止子元素撑开页面 */
+    }
+
+    .qls-account-section * {
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .qls-points-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qls-po-full {
+        grid-column: span 2;
+    }
+
+    /* 强制重置 Grid 间距，防止过宽 */
+    .qls-recharge-grid,
+    .qls-actions-grid,
+    .qls-benefits-grid,
+    .qls-invite-stats,
+    .qls-plans-grid {
+        gap: 8px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* 积分余额卡片适配 */
+    .qls-balance-card {
+        padding: 16px !important;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* 充值按钮内部布局优化 */
+    .qls-recharge-item {
+        padding: 12px 8px !important;
+        min-height: auto;
+    }
+
+    .qls-recharge-amount {
+        font-size: 0.9375rem !important;
+        /* 15px */
+    }
+
+    .qls-recharge-bonus {
+        font-size: 0.75rem !important;
+        /* 12px */
+    }
+
+    /* 充值弹窗全屏适配 */
+    .qls-modal-content {
+        width: 95% !important;
+        max-width: 95% !important;
+        margin: 10px auto !important;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    /* 修复 VIP 特性列表过长问题 */
+    .qls-plan-features {
+        padding: 8px 0;
+    }
+
+    .qls-growth-vip-panel {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .qls-growth-vip-head {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .qls-growth-vip-score {
+        min-width: 0;
+        text-align: left;
+    }
+
+    .qls-growth-vip-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .qls-growth-vip-level-grid,
+    .qls-growth-vip-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .qls-growth-vip-rule-item {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .qls-growth-vip-rule-item em {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* 超小屏强制单列，防止内容显示不全 */
+    .qls-recharge-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .qls-invite-stats {
+        grid-template-columns: 1fr 1fr;
+        /* 保持2列但缩小字号 */
+    }
+
+    .qls-stat-value {
+        font-size: 1.25rem !important;
+    }
+
+    /* 按钮组堆叠 */
+    .qls-balance-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .qls-balance-actions .qls-btn {
+        width: 100%;
+    }
+
+    .qls-growth-vip-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   账户表格移动端卡片化（订单/邀请/VIP记录）
+   ============================================ */
+@media (max-width: 768px) {
+    .qls-orders-section .qls-orders-table-wrapper,
+    .qls-invites-table-wrapper,
+    .qls-vip-log .qls-orders-table-wrapper {
+        overflow: visible !important;
+    }
+
+    .qls-orders-section .qls-orders-table,
+    .qls-invites-table,
+    .qls-vip-log-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+
+    .qls-orders-section .qls-orders-table thead,
+    .qls-invites-table thead,
+    .qls-vip-log-table thead {
+        display: none;
+    }
+
+    .qls-orders-section .qls-orders-table tbody,
+    .qls-invites-table tbody,
+    .qls-vip-log-table tbody {
+        display: block;
+    }
+
+    .qls-orders-section .qls-orders-table tr,
+    .qls-invites-table tr,
+    .qls-vip-log-table tr {
+        display: block;
+        padding: 10px 12px;
+        border: 1px solid var(--qls-gray-200, #e5e7eb);
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+
+    .qls-orders-section .qls-orders-table td,
+    .qls-invites-table td,
+    .qls-vip-log-table td {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        width: 100%;
+        padding: 8px 0 !important;
+        border: 0;
+        border-bottom: 1px dashed var(--qls-gray-200, #e5e7eb);
+        white-space: normal !important;
+        word-break: break-word;
+    }
+
+    .qls-orders-section .qls-orders-table td:last-child,
+    .qls-invites-table td:last-child,
+    .qls-vip-log-table td:last-child {
+        border-bottom: 0;
+    }
+
+    .qls-orders-section .qls-orders-table td::before,
+    .qls-invites-table td::before,
+    .qls-vip-log-table td::before {
+        content: attr(data-label);
+        flex: 0 0 84px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: var(--qls-gray-500, #6b7280);
+    }
+
+    .qls-orders-section .qls-order-no code,
+    .qls-orders-section .qls-order-sub,
+    .qls-vip-log-table td:last-child {
+        word-break: break-all;
+    }
+
+    .qls-orders-section .qls-order-actions {
+        align-items: center;
+    }
+
+    .qls-orders-section .qls-order-actions .qls-btn,
+    .qls-orders-section .qls-order-actions .qls-text-muted {
+        margin-left: auto;
+        min-width: 0;
+    }
+}
