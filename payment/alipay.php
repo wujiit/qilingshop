@@ -164,8 +164,20 @@ if ($order_type === 'recharge') {
     }
 }
 
-// 支持在同一入口切换支付宝支付方式：f2f（扫码）/page（网页）
+// 支持在同一入口切换支付宝支付方式：f2f（扫码）/page（网页）/wap（手机网站支付）
 $pay_method = isset($_GET['method']) ? sanitize_key((string) wp_unslash($_GET['method'])) : '';
+$alipay_f2f_enabled = (bool) get_option('qilingshop_alipay_f2fpay', true);
+$alipay_h5_enabled = (bool) get_option('qilingshop_alipay_h5');
+$is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+
+// 当开启手机支付且处于手机浏览器环境时，优先调用手机网站支付（WAP）
+if ($alipay_h5_enabled && $is_mobile) {
+    $pay_method = 'wap';
+} elseif (!$alipay_f2f_enabled && $pay_method !== 'wap') {
+    // 未开启当面付时，自动走常规电脑网站支付 (page)
+    $pay_method = 'page';
+}
+
 if ($pay_method === 'page' || $pay_method === 'wap') {
     $pay_order_type = 'order';
     if ($order_type === 'recharge') {

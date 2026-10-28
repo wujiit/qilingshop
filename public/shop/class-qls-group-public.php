@@ -244,9 +244,7 @@ class QLS_Group_Public {
         return in_array($payment_method, $allowed, true) ? $payment_method : '';
     }
 
-    // =========================================================================
     // 短代码
-    // =========================================================================
 
     /**
      * 团购中心短代码
@@ -363,9 +361,7 @@ class QLS_Group_Public {
         return ob_get_clean();
     }
 
-    // =========================================================================
-    // AJAX Handlers
-    // =========================================================================
+    // AJAX 处理
 
     /**
      * AJAX: 创建团购订单（发起拼团）
@@ -738,7 +734,7 @@ class QLS_Group_Public {
                 wp_send_json_error(['message' => __('订单自动完成失败，请稍后重试', 'qilingshop')]);
             }
             
-            // Re-fetch order to get the group_id assigned during mark_paid (handle_group_order_paid)
+            // 重新读取订单获取绑定的团购 ID during mark_paid (handle_group_order_paid)
             $order = qls_shop_order()->get_by_order_no($order_no);
             $redirect = '';
             

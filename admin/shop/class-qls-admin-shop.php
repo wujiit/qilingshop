@@ -186,7 +186,7 @@ class QLS_Admin_Shop {
     }
 
     /**
-     * 渲染装修 Meta Box (Builder Mode)
+     * 渲染装修模块设置
      */
     public function render_decoration_meta_box($post) {
         if ($post instanceof WP_Post && $this->is_virtual_home_decoration_blocked((int) $post->ID)) {
@@ -721,12 +721,12 @@ class QLS_Admin_Shop {
                                             <div class="qls-dsm-repeater-list">
                                                 <?php 
                                                 $items = is_array($val) ? $val : [];
-                                                if (empty($items)) $items = []; // Start empty or with defaults? 
-                                                // If template, items should be empty logic or handled by JS. 
-                                                // Actually for PHP render, we iterate.
+                                                if (empty($items)) $items = [];  
+                                                 
                                                 
-                                                // Use a counter for repeater items to ensure unique keys/names?
-                                                // Actually, we can use simple indexing if PHP handles array_values.
+                                                
+                                                
+                                                
                                                 
                                                 foreach ($items as $r_idx => $r_val): 
                                                     // 渲染重复项
@@ -789,9 +789,7 @@ class QLS_Admin_Shop {
         <div class="qls-dsm-repeater-item">
             <span class="qls-dsm-repeater-remove dashicons dashicons-no-alt"></span>
             <?php foreach ($fields as $sub_key => $sub_field): 
-                // e.g. qls_modules[0][settings][slides][0][image]
-                // But JS add needs to handle index placeholder.
-                // For server-side render:
+                // 表单字段名称拼接
                 $name_attr = "qls_modules[{$module_idx}][settings][{$field_key}][{$item_idx}][{$sub_key}]";
                 $val = $values[$sub_key] ?? ($sub_field['default'] ?? '');
             ?>
@@ -825,7 +823,7 @@ class QLS_Admin_Shop {
     }
 
     /**
-     * 保存装修 Meta Data (Modified for PHP array submission)
+     * 保存装修模块数据
      */
     public function save_decoration_meta($post_id) {
         // Check verify nonce
@@ -839,7 +837,7 @@ class QLS_Admin_Shop {
         // Permissions check
         if (!current_user_can('edit_page', $post_id)) return;
 
-        // Save Data (Direct PHP Array from form)
+        // 保存模块设置项
         $sanitized = [];
         if (isset($_POST['qls_modules']) && is_array($_POST['qls_modules'])) {
             $modules = array_values($_POST['qls_modules']);
@@ -3353,17 +3351,16 @@ class QLS_Admin_Shop {
                 ];
             $order->refund_record = isset($refund_map[$order_id]) ? $refund_map[$order_id] : null;
         }
-        unset($order); // Fix: Break the reference to avoid corruption in subsequent loops
+        unset($order); // 取消引用，避免后续循环污染
 
         $order_user_map = $this->get_admin_order_user_map($orders);
 
         // Count total orders
         if ($needs_dedup) {
-            // For All view, count unique order_nos
-            // Use logical equivalent of the main query for count
+            // 使用 DISTINCT 统计唯一订单号
             $total_sql = "SELECT COUNT(DISTINCT order_no) FROM {$table_orders}";
             if (!empty($where_clauses)) {
-                // Approximate count with filters - strict subquery count would be better but COUNT(DISTINCT) is good proxy
+                // 统计唯一订单号总数
                  // 关键词命中重复记录时，使用 DISTINCT 保持计数唯一。
                  $total_sql = "SELECT COUNT(DISTINCT order_no) FROM {$table_orders} WHERE 1=1";
                  if (!empty($where_clauses)) {
@@ -5962,12 +5959,12 @@ class QLS_Admin_Shop {
             $order->shipment_summary = qls_shipment()->get_order_shipment_summary((int) $order->id);
         }
 
-        // Fetch Logistics Trace if shipped and info exists
+        // 发货后查询物流轨迹
         if ($order->status >= 2 && !empty($order->shipping_company) && !empty($order->tracking_no)) {
             if (!class_exists('QLS_Shop_Logistics')) {
                 require_once QILINGSHOP_PATH . 'includes/shop/class-qls-shop-logistics.php';
             }
-            // Need phone for authenticating some couriers (SF, YTO, etc)
+            // 部分物流服务商核验收件人手机号 (SF, YTO, etc)
             $trace = qls_shop_logistics()->get_trace($order->shipping_company, $order->tracking_no, $order->receiver_phone);
             
             if (is_wp_error($trace)) {
@@ -5981,7 +5978,7 @@ class QLS_Admin_Shop {
     }
 
     /**
-     * AJAX Update Receiver Info
+     * AJAX: 更新收货人信息
      */
     public function ajax_update_receiver_info() {
         check_ajax_referer('qls_shop_admin', 'nonce');
@@ -6125,9 +6122,7 @@ class QLS_Admin_Shop {
             return $media;
         }
 
-    // =========================================================================
     // 拼团管理功能
-    // =========================================================================
 
     /**
      * 渲染拼团管理页面

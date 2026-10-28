@@ -25,7 +25,7 @@ class QilingShop_Public {
         // VIP 落地页全屏模板支持
         add_filter('template_include', [$this, 'load_vip_template']);
         
-        // ========== 邀请系统 ==========
+    // 邀请系统（推广）
         // 捕获邀请参数并存入 Cookie
         add_action('init', [$this, 'qilingshop_capture_invite_code'], 5);
         // 用户注册时建立邀请关系
@@ -304,7 +304,12 @@ class QilingShop_Public {
 
                     if ($gateway_key === 'alipay') {
                         $alipay_f2f_enabled = (bool) get_option('qilingshop_alipay_f2fpay');
-                        if ($alipay_f2f_enabled) {
+                        $alipay_h5_enabled = (bool) get_option('qilingshop_alipay_h5');
+                        $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+
+                        if ($is_mobile && $alipay_h5_enabled) {
+                            $gateway_labels['alipay'] = !empty($gateway_conf['name']) ? $gateway_conf['name'] : __('支付宝', 'qilingshop');
+                        } elseif ($alipay_f2f_enabled) {
                             $gateway_labels['alipay_qr'] = __('支付宝扫码支付', 'qilingshop');
                             $gateway_labels['alipay_page'] = __('支付宝网页支付', 'qilingshop');
                         } else {
@@ -867,7 +872,7 @@ class QilingShop_Public {
             }
         }
 
-        $price_info = $resource->get_price($post_id, $user_id, $context); // Re-fetch to be safe/clean
+        $price_info = $resource->get_price($post_id, $user_id, $context); // 重新读取以获取最新数据
         if ($upgrade_from === 'view') {
             $view_price = $resource->get_price($post_id, $user_id, 'view');
             $price_info['points'] = max(0, $price_info['points'] - $view_price['points']);
@@ -1314,7 +1319,7 @@ class QilingShop_Public {
         return ob_get_clean();
     }
 
-    // ========== 邀请系统方法 ==========
+    // 邀请系统（推广）
     
     /**
      * 捕获邀请参数并存入 Cookie

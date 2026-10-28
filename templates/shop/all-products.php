@@ -20,7 +20,7 @@ if (empty($current_sort)) {
 $points_param = isset($_GET['points']) ? strtolower(trim(sanitize_text_field(wp_unslash($_GET['points'])))) : '';
 $points_only = (isset($points_only) && !empty($points_only)) || in_array($points_param, ['1', 'yes', 'true', 'on'], true);
 
-// 获取当前分类 (Fixed logic to check query var first)
+// 获取当前分类（优先从 Query Var 读取）
 $current_cat_slug = get_query_var('qls_category');
 if (empty($current_cat_slug) && isset($_GET['category'])) {
     $current_cat_slug = sanitize_text_field($_GET['category']);

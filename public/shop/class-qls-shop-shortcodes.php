@@ -185,7 +185,7 @@ class QLS_Shop_Shortcodes {
             'points_only' => '',
         ], $atts);
 
-        // 获取筛选参数 (From Query Vars first, then GET)
+        // 获取筛选参数（优先从 Query Vars 读取，缺省时读取 GET 参数）
         $qb_sort = get_query_var('qls_sort');
         $sort = $qb_sort ? $qb_sort : (isset($_GET['sort']) ? sanitize_text_field($_GET['sort']) : 'latest');
         

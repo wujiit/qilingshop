@@ -48,8 +48,18 @@ class QilingShop_Payment_Alipay {
 
         // 判断支付场景
         $method = $params['method'] ?? '';
-        
+        $h5 = (bool) get_option('qilingshop_alipay_h5', false);
+        $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+
+        // 开启手机支付且处于手机浏览器环境时，优先调用手机网站支付（WAP）
+        if ($h5 && $is_mobile) {
+            return $this->create_h5_pay($order_no, $amount, $subject, $return_url);
+        }
+
         if ($method === 'f2f') {
+            if (!$f2fpay) {
+                return $this->create_page_pay($order_no, $amount, $subject, $return_url);
+            }
             return $this->create_f2fpay($order_no, $amount, $subject, $return_url);
         } elseif ($method === 'page') {
             return $this->create_page_pay($order_no, $amount, $subject, $return_url);
@@ -192,6 +202,9 @@ class QilingShop_Payment_Alipay {
         ];
 
         $params['sign'] = $this->generate_sign($params);
+        if (empty($params['sign'])) {
+            return ['success' => false, 'message' => __('支付宝签名失败，请检查 RSA2 私钥配置', 'qilingshop')];
+        }
 
         $pay_url = $this->gateway . '?' . http_build_query($params);
 

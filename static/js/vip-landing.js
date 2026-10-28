@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
         return i18n[key] || fallback || key;
     }
 
-    // Reset coupon state
+    // 重置优惠券状态
     function resetCouponState() {
         window.vipLandingSelectedCoupon = null;
         $('#qls-vip-coupon-claim-id').val('');
@@ -39,15 +39,15 @@ jQuery(document).ready(function ($) {
         var ruleCalc = btn.data('rule-calc') || '';
         var ruleStack = btn.data('rule-stack') || '';
 
-        // Reset coupon when opening modal
+        // 打开弹窗时重置优惠券
         resetCouponState();
 
         if (currentPrice >= 0) {
-            // Update Modal Content
+            // 更新弹窗内容
             $('#qls-vip-name').text(levelName);
             $('#qls-vip-price').text(currentPrice > 0 ? (config.currencySymbol + currentPrice) : text('free', '免费'));
 
-            // Calculate Points Price
+            // 计算积分价格
             var pointsPrice = Math.ceil(currentPrice * config.pointsRatio);
             var orText = text('or', 'or');
             $('#qls-vip-points-price').text(currentPrice > 0 ? (orText + ' ' + pointsPrice + ' ' + config.pointsName) : text('noPayment', '无需支付'));
@@ -88,12 +88,12 @@ jQuery(document).ready(function ($) {
                 balanceInput.prop('disabled', true);
                 balanceText.html('<span style="color:red;font-size:12px;">' + i18n.balanceInsufficient.replace('%s', pointsPrice).replace('%s', config.pointsName) + '</span>');
 
-                // Select first available option
+                // 默认选中首个可用选项
                 var firstAvailable = $('input[name="vip_payment_method"]:not(:disabled)').first();
                 if (firstAvailable.length) {
                     firstAvailable.prop('checked', true);
                 } else {
-                    // No payment method available
+                    // 无可用支付方式
                     balanceInput.prop('checked', false);
                 }
             } else {
@@ -103,7 +103,7 @@ jQuery(document).ready(function ($) {
                 balanceText.html('(' + balanceLabel + ': ' + config.user余额 + ')');
                 // balanceText.empty(); // Or clear it if cleaner
 
-                // Select points by default if available
+                // 默认选中积分支付
                 balanceInput.prop('checked', true);
             }
 

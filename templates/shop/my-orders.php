@@ -675,7 +675,7 @@ qls_shop_public()->get_shop_header(__('我的订单', 'qilingshop'));
 <style>
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-/* Virtual Content Styles */
+/* 虚拟内容样式 */
 .qls-virtual-content-box {
     background: linear-gradient(135deg, #f0f9ff 0%, #e8f5e9 100%);
     border: 1px solid #c8e6c9;
@@ -1033,7 +1033,7 @@ qls_shop_public()->get_shop_header(__('我的订单', 'qilingshop'));
     box-shadow: 0 0 0 1px #38bdf8;
 }
 
-/* Frontend Timeline Styles */
+/* 前端时间线样式 */
 .qls-f-timeline { margin: 10px 0; padding-left: 10px; }
 .qls-f-timeline-item { position: relative; padding-left: 25px; padding-bottom: 25px; border-left: 2px solid #eee; }
 .qls-f-timeline-item:last-child { border-left: 2px solid transparent; }
@@ -2009,7 +2009,7 @@ jQuery(document).ready(function($) {
     font-size: 12px;
 }
 
-/* ==================== 响应式适配 ==================== */
+/* 响应式适配 */
 @media (max-width: 768px) {
     /* 评价弹窗响应式 */
     #qls-review-modal .qls-modal-content,

@@ -416,6 +416,13 @@ class QilingShop_Points {
             return false;
         }
 
+        // 确保用户商城积分账户已存在（防止旧用户或第三方/后台直接添加用户未初始化账户）
+        if (!$this->db->get_row('user_info', ['user_id' => $user_id])) {
+            if (get_userdata($user_id)) {
+                $this->init_user_account($user_id);
+            }
+        }
+
         do_action('qilingshop_before_add_points', $user_id, $amount, $source);
 
         $this->db->begin_transaction();
@@ -499,6 +506,13 @@ class QilingShop_Points {
 
         if ($user_id <= 0 || $amount <= 0) {
             return false;
+        }
+
+        // 确保用户商城积分账户已存在
+        if (!$this->db->get_row('user_info', ['user_id' => $user_id])) {
+            if (get_userdata($user_id)) {
+                $this->init_user_account($user_id);
+            }
         }
 
         $use_transaction = (bool) $use_transaction;
@@ -1159,6 +1173,96 @@ class QilingShop_Points {
         ]);
 
         return !empty($existing);
+    }
+
+    /**
+     * 补签打卡（支持消耗补签卡补录漏签日期）
+     *
+     * @param int    $user_id     用户 ID.
+     * @param string $target_date 补签目标日期（默认昨日 Y-m-d）.
+     * @return array
+     */
+    public function retroactive_checkin($user_id, $target_date = '') {
+        $user_id = absint($user_id);
+        if (!$user_id) {
+            return [
+                'success' => false,
+                'message' => __('用户 ID 无效', 'qilingshop'),
+                'points'  => 0,
+            ];
+        }
+
+        if (empty($target_date)) {
+            $target_date = date('Y-m-d', strtotime('-1 day', current_time('timestamp')));
+        }
+
+        // 检查该日期是否已经签到过
+        $existing = $this->db->get_row('checkins', [
+            'user_id'      => $user_id,
+            'checkin_date' => $target_date,
+        ]);
+
+        if (!empty($existing)) {
+            return [
+                'success' => false,
+                'message' => sprintf(__('%s 已经打过卡，无需补签', 'qilingshop'), $target_date),
+                'points'  => 0,
+            ];
+        }
+
+        $user_info = $this->get_user_info($user_id);
+        $base_points = (float) get_option('qilingshop_checkin_base_points', 1);
+
+        // 连签天数恢复：如果在昨天补签，连签天数在原有连签基础上 + 1
+        $current_streak = $user_info ? (int) $user_info->consecutive_checkins : 0;
+        $consecutive_days = max(1, $current_streak + 1);
+
+        $ip_address = sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR'] ?? ''));
+
+        // 记录补签记录
+        $checkin_id = $this->db->insert('checkins', [
+            'user_id'          => $user_id,
+            'points_earned'    => $base_points,
+            'consecutive_days' => $consecutive_days,
+            'checkin_date'     => $target_date,
+            'ip_address'       => $ip_address,
+            'created_at'       => current_time('mysql'),
+        ]);
+
+        if (!$checkin_id) {
+            return [
+                'success' => false,
+                'message' => __('补签数据写入失败，请重试', 'qilingshop'),
+                'points'  => 0,
+            ];
+        }
+
+        // 更新 user_info 的连签天数与最后签到日期（若最后签到日期落后于补签日期）
+        $update_data = [
+            'consecutive_checkins' => $consecutive_days,
+        ];
+        if (empty($user_info->last_checkin_date) || $user_info->last_checkin_date < $target_date) {
+            $update_data['last_checkin_date'] = $target_date;
+        }
+
+        $this->db->update('user_info', $update_data, ['user_id' => $user_id]);
+
+        // 补发签到积分
+        $this->add_points(
+            $user_id,
+            $base_points,
+            'checkin',
+            sprintf(__('社区补签卡补录签到奖励（%s）', 'qilingshop'), $target_date)
+        );
+
+        do_action('qilingshop_after_retroactive_checkin', $user_id, $base_points, $consecutive_days, $target_date);
+
+        return [
+            'success'          => true,
+            'message'          => sprintf(__('补签成功！已续上连续打卡并补发 +%s 积分', 'qilingshop'), qilingshop_format_points($base_points)),
+            'points'           => $base_points,
+            'consecutive_days' => $consecutive_days,
+        ];
     }
 
     /**

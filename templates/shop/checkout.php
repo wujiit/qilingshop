@@ -348,7 +348,7 @@ qls_shop_public()->get_shop_header(__('结账', 'qilingshop'));
                     $first_enabled = true;
                     $points_name = function_exists('qilingshop_get_points_name') ? qilingshop_get_points_name() : __('积分', 'qilingshop');
                     
-                    // 计算纯积分购买总额 (Sum of points price for all items)
+                    // 计算纯积分购买总额
                     $total_points_amount = 0;
                     $can_pay_points = true;
                     if (!$is_group_order) {
@@ -380,8 +380,21 @@ qls_shop_public()->get_shop_header(__('结账', 'qilingshop'));
                     <?php 
                     if (get_option('qilingshop_alipay_enabled')): 
                         $alipay_f2f = get_option('qilingshop_alipay_f2fpay');
+                        $alipay_h5 = (bool) get_option('qilingshop_alipay_h5', false);
+                        $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
                     ?>
-                    <?php if ($alipay_f2f): ?>
+                    <?php if ($is_mobile && $alipay_h5): ?>
+                    <label class="qls-payment-card" data-type="cash">
+                        <input type="radio" name="payment_method" value="alipay" <?php echo $first_enabled ? 'checked' : ''; ?>>
+                        <div class="payment-card-content">
+                            <img src="<?php echo QILINGSHOP_URL; ?>static/img/zfb.png" class="payment-icon">
+                            <span class="payment-name"><?php _e('支付宝', 'qilingshop'); ?></span>
+                        </div>
+                    </label>
+                    <?php 
+                        $first_enabled = false;
+                    elseif ($alipay_f2f): 
+                    ?>
                     <label class="qls-payment-card" data-type="cash">
                         <input type="radio" name="payment_method" value="alipay_qr" <?php echo $first_enabled ? 'checked' : ''; ?>>
                         <div class="payment-card-content">
@@ -391,9 +404,7 @@ qls_shop_public()->get_shop_header(__('结账', 'qilingshop'));
                     </label>
                     <?php 
                         $first_enabled = false; 
-                    endif; 
                     ?>
-                    
                     <label class="qls-payment-card" data-type="cash">
                         <input type="radio" name="payment_method" value="alipay" <?php echo $first_enabled ? 'checked' : ''; ?>>
                         <div class="payment-card-content">
@@ -401,7 +412,15 @@ qls_shop_public()->get_shop_header(__('结账', 'qilingshop'));
                             <span class="payment-name"><?php _e('支付宝网页', 'qilingshop'); ?></span>
                         </div>
                     </label>
-                    <?php $first_enabled = false; endif; ?>
+                    <?php $first_enabled = false; else: ?>
+                    <label class="qls-payment-card" data-type="cash">
+                        <input type="radio" name="payment_method" value="alipay" <?php echo $first_enabled ? 'checked' : ''; ?>>
+                        <div class="payment-card-content">
+                            <img src="<?php echo QILINGSHOP_URL; ?>static/img/zfb.png" class="payment-icon">
+                            <span class="payment-name"><?php _e('支付宝', 'qilingshop'); ?></span>
+                        </div>
+                    </label>
+                    <?php $first_enabled = false; endif; endif; ?>
                     
                     <?php if (get_option('qilingshop_wechat_enabled')): ?>
                     <label class="qls-payment-card" data-type="cash">

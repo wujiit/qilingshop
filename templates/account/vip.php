@@ -664,9 +664,17 @@ $growth_event_labels = [
                     <?php
                     $alipay_enabled = (bool) get_option('qilingshop_alipay_enabled');
                     $alipay_f2f_enabled = (bool) get_option('qilingshop_alipay_f2fpay');
+                    $alipay_h5_enabled = (bool) get_option('qilingshop_alipay_h5', false);
+                    $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+
                     if ($alipay_enabled):
-                        if ($alipay_f2f_enabled):
+                        if ($is_mobile && $alipay_h5_enabled):
                     ?>
+                    <label class="qls-payment-option">
+                        <input type="radio" name="vip_payment_method" value="alipay">
+                        <span class="qls-payment-label"><img src="<?php echo QILINGSHOP_URL; ?>static/img/zfb.png" class="qls-payment-icon"> <?php _e('支付宝', 'qilingshop'); ?></span>
+                    </label>
+                    <?php elseif ($alipay_f2f_enabled): ?>
                     <label class="qls-payment-option">
                         <input type="radio" name="vip_payment_method" value="alipay_qr">
                         <span class="qls-payment-label"><img src="<?php echo QILINGSHOP_URL; ?>static/img/zfb.png" class="qls-payment-icon"> <?php _e('支付宝扫码', 'qilingshop'); ?></span>

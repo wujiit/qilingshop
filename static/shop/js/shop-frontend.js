@@ -432,7 +432,7 @@
                 var $card = $(this).closest('.qls-address-card');
                 var id = $card.data('id');
 
-                // Store ID on the confirm button
+                // 将当前记录 ID 绑定至确认按钮
                 $('#qls-confirm-delete-btn').data('id', id);
 
                 // Show Modal
@@ -1638,7 +1638,7 @@
             });
         },
 
-        // All Products Page - AJAX Search & Filter
+        // 全部商品页：AJAX 搜索与筛选
         initAllProductsFilter: function () {
             var self = this;
             var $container = $('.qls-all-products-page');
@@ -1649,7 +1649,7 @@
             var typingTimer;
             var doneTypingInterval = 500; // 0.5s debounce
 
-            // 1. Search Box Input (Debounced)
+            // 1. 搜索框输入防抖
             $searchInput.on('input', function () {
                 clearTimeout(typingTimer);
                 typingTimer = setTimeout(function () {
@@ -1657,7 +1657,7 @@
                 }, doneTypingInterval);
             });
 
-            // 2. Search Button Click
+            // 2. 搜索按钮点击
             $searchBtn.on('click', function () {
                 self.filterProducts(1);
             });
@@ -1963,7 +1963,7 @@
             });
         }
 
-        // Listen for payment method change to update total display
+        // 监听支付方式切换并更新合计金额 display
         $(document).on('change', 'input[name="payment_method"]', function () {
             qlsShopFrontend.updateCheckoutTotal();
         });

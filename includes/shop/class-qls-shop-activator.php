@@ -310,9 +310,7 @@ class QLS_Shop_Activator {
         
         require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
-        // =============================================
         // 商品主表
-        // =============================================
         $table_products = $prefix . 'products';
         $sql_products = "CREATE TABLE {$table_products} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -360,9 +358,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_products);
 
-        // =============================================
         // 商品SKU表
-        // =============================================
         $table_skus = $prefix . 'product_skus';
         $sql_skus = "CREATE TABLE {$table_skus} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -387,9 +383,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_skus);
 
-        // =============================================
         // 商品SKU会员价表
-        // =============================================
         $table_sku_vip_prices = $prefix . 'product_sku_vip_prices';
         $sql_sku_vip_prices = "CREATE TABLE {$table_sku_vip_prices} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -405,9 +399,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_sku_vip_prices);
 
-        // =============================================
         // 商品规格表
-        // =============================================
         $table_attributes = $prefix . 'product_attributes';
         $sql_attributes = "CREATE TABLE {$table_attributes} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -419,9 +411,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_attributes);
 
-        // =============================================
         // 商品规格值表
-        // =============================================
         $table_attr_values = $prefix . 'product_attribute_values';
         $sql_attr_values = "CREATE TABLE {$table_attr_values} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -435,9 +425,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_attr_values);
 
-        // =============================================
         // 商品分类表
-        // =============================================
         $table_categories = $prefix . 'categories';
         $sql_categories = "CREATE TABLE {$table_categories} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -458,9 +446,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_categories);
 
-        // =============================================
         // 商品特色表
-        // =============================================
         $table_tags = $prefix . 'tags';
         $sql_tags = "CREATE TABLE {$table_tags} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -471,9 +457,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_tags);
 
-        // =============================================
         // 商品标签关联表
-        // =============================================
         $table_tag_rels = $prefix . 'product_tag_relationships';
         $sql_tag_rels = "CREATE TABLE {$table_tag_rels} (
             product_id BIGINT(20) UNSIGNED NOT NULL,
@@ -483,9 +467,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_tag_rels);
 
-        // =============================================
         // 购物车表
-        // =============================================
         $table_cart = $prefix . 'cart_items';
         $sql_cart = "CREATE TABLE {$table_cart} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -506,9 +488,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_cart);
 
-        // =============================================
         // 实物订单表
-        // =============================================
         $table_orders = $prefix . 'orders';
         $sql_orders = "CREATE TABLE {$table_orders} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -566,9 +546,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_orders);
 
-        // =============================================
         // 订单元数据表
-        // =============================================
         $table_order_meta = $prefix . 'order_meta';
         $sql_order_meta = "CREATE TABLE {$table_order_meta} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -583,9 +561,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_order_meta);
 
-        // =============================================
         // 订单商品明细表
-        // =============================================
         $table_order_items = $prefix . 'order_items';
         $sql_order_items = "CREATE TABLE {$table_order_items} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -606,9 +582,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_order_items);
 
-        // =============================================
         // 发票抬头表
-        // =============================================
         $table_invoice_titles = $prefix . 'invoice_titles';
         $sql_invoice_titles = "CREATE TABLE {$table_invoice_titles} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -630,9 +604,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_invoice_titles);
 
-        // =============================================
         // 发票申请表
-        // =============================================
         $table_invoices = $prefix . 'invoices';
         $sql_invoices = "CREATE TABLE {$table_invoices} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -669,9 +641,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_invoices);
 
-        // =============================================
         // 收货地址表
-        // =============================================
         $table_addresses = $prefix . 'user_addresses';
         $sql_addresses = "CREATE TABLE {$table_addresses} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -691,9 +661,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_addresses);
 
-        // =============================================
         // 运费规则表
-        // =============================================
         $table_shipping = $prefix . 'shipping_rules';
         $sql_shipping = "CREATE TABLE {$table_shipping} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -713,9 +681,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_shipping);
 
-        // =============================================
         // 物流公司表
-        // =============================================
         $table_shipping_companies = $prefix . 'shipping_companies';
         $sql_shipping_companies = "CREATE TABLE {$table_shipping_companies} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -735,9 +701,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_shipping_companies);
 
-        // =============================================
         // 订单发货单表
-        // =============================================
         $table_shipments = $prefix . 'shipments';
         $sql_shipments = "CREATE TABLE {$table_shipments} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -773,9 +737,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_shipments);
 
-        // =============================================
         // 订单发货明细表
-        // =============================================
         $table_shipment_items = $prefix . 'shipment_items';
         $sql_shipment_items = "CREATE TABLE {$table_shipment_items} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -796,9 +758,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_shipment_items);
 
-        // =============================================
         // 电子面单模板表
-        // =============================================
         $table_waybill_templates = $prefix . 'waybill_templates';
         $sql_waybill_templates = "CREATE TABLE {$table_waybill_templates} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -824,9 +784,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_waybill_templates);
 
-        // =============================================
         // 电子面单日志表
-        // =============================================
         $table_waybill_logs = $prefix . 'waybill_logs';
         $sql_waybill_logs = "CREATE TABLE {$table_waybill_logs} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -865,9 +823,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_service_tags);
 
-        // =============================================
         // 商品参数模板表
-        // =============================================
         $table_params = $prefix . 'product_params';
         $sql_params = "CREATE TABLE {$table_params} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -882,9 +838,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_params);
 
-        // =============================================
         // 优惠券主表
-        // =============================================
         $table_coupons = $prefix . 'coupons';
         $sql_coupons = "CREATE TABLE {$table_coupons} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -927,9 +881,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_coupons);
 
-        // =============================================
         // 优惠券领取记录表
-        // =============================================
         $table_coupon_claims = $prefix . 'coupon_claims';
         $sql_coupon_claims = "CREATE TABLE {$table_coupon_claims} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -949,9 +901,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_coupon_claims);
 
-        // =============================================
         // 优惠券使用记录表
-        // =============================================
         $table_coupon_uses = $prefix . 'coupon_uses';
         $sql_coupon_uses = "CREATE TABLE {$table_coupon_uses} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -974,9 +924,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_coupon_uses);
 
-        // =============================================
         // 商品评价表
-        // =============================================
         $table_reviews = $prefix . 'reviews';
         $sql_reviews = "CREATE TABLE {$table_reviews} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1021,9 +969,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_review_likes);
 
-        // =============================================
         // 添加评价相关字段到现有表
-        // =============================================
         
         // order_items 表: 添加 is_reviewed 字段
         $table_order_items = $prefix . 'order_items';
@@ -1043,9 +989,7 @@ class QLS_Shop_Activator {
             $wpdb->query("ALTER TABLE {$table_products} ADD COLUMN avg_rating DECIMAL(2,1) NOT NULL DEFAULT 0.0");
         }
 
-        // =============================================
         // 添加虚拟商品相关字段
-        // =============================================
         
         // products 表: 添加商品类型字段
         $column_exists = $wpdb->get_results("SHOW COLUMNS FROM {$table_products} LIKE 'product_type'");
@@ -1096,9 +1040,7 @@ class QLS_Shop_Activator {
             $wpdb->query("ALTER TABLE {$table_order_items} ADD COLUMN virtual_content TEXT DEFAULT NULL COMMENT '已分配的虚拟商品内容'");
         }
 
-        // =============================================
         // 卡密库存表
-        // =============================================
         $table_cards = $prefix . 'card_inventory';
         $sql_cards = "CREATE TABLE {$table_cards} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1121,9 +1063,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_cards);
 
-        // =============================================
         // 团购规则表
-        // =============================================
         $table_group_rules = $prefix . 'group_rules';
         $sql_group_rules = "CREATE TABLE {$table_group_rules} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1146,9 +1086,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_group_rules);
 
-        // =============================================
         // 拼团实例表
-        // =============================================
         $table_groups = $prefix . 'groups';
         $sql_groups = "CREATE TABLE {$table_groups} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1172,9 +1110,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_groups);
 
-        // =============================================
         // 拼团成员表
-        // =============================================
         $table_group_members = $prefix . 'group_members';
         $sql_group_members = "CREATE TABLE {$table_group_members} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1191,9 +1127,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_group_members);
 
-        // =============================================
         // 售后退款申请表
-        // =============================================
         $table_refunds = $prefix . 'refunds';
         $sql_refunds = "CREATE TABLE {$table_refunds} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1238,9 +1172,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_refunds);
 
-        // =============================================
         // 售后退款操作日志
-        // =============================================
         $table_refund_logs = $prefix . 'refund_logs';
         $sql_refund_logs = "CREATE TABLE {$table_refund_logs} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1260,9 +1192,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_refund_logs);
 
-        // =============================================
         // 售后工单表
-        // =============================================
         $table_tickets = $prefix . 'tickets';
         $sql_tickets = "CREATE TABLE {$table_tickets} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1297,9 +1227,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_tickets);
 
-        // =============================================
         // 售后工单消息表
-        // =============================================
         $table_ticket_messages = $prefix . 'ticket_messages';
         $sql_ticket_messages = "CREATE TABLE {$table_ticket_messages} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1317,9 +1245,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_ticket_messages);
 
-        // =============================================
         // 好友助力活动配置
-        // =============================================
         $table_assist_activities = $prefix . 'assist_activities';
         $sql_assist_activities = "CREATE TABLE {$table_assist_activities} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1348,9 +1274,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_assist_activities);
 
-        // =============================================
         // 好友助力活动实例
-        // =============================================
         $table_assist_campaigns = $prefix . 'assist_campaigns';
         $sql_assist_campaigns = "CREATE TABLE {$table_assist_campaigns} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1385,9 +1309,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_assist_campaigns);
 
-        // =============================================
         // 好友助力日志
-        // =============================================
         $table_assist_logs = $prefix . 'assist_logs';
         $sql_assist_logs = "CREATE TABLE {$table_assist_logs} (
             id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -1412,9 +1334,7 @@ class QLS_Shop_Activator {
         ) {$charset_collate};";
         dbDelta($sql_assist_logs);
 
-        // =============================================
         // 订单表: 添加团购相关字段
-        // =============================================
         $table_orders = $prefix . 'orders';
         $column_exists = $wpdb->get_results("SHOW COLUMNS FROM {$table_orders} LIKE 'group_id'");
         if (empty($column_exists)) {

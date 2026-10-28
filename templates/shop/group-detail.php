@@ -96,7 +96,7 @@ if ($has_group) {
                 </div>
 
                 <?php
-                // Find current user's order in this group
+                // 查询当前用户在此团中的订单
                 $my_order_info = null;
                 if (is_user_logged_in()) {
                     $current_uid = get_current_user_id();
@@ -298,7 +298,7 @@ jQuery(document).ready(function($) {
         }, 1000);
     }
     
-    // Custom Toast Function
+    // 提示弹窗函数
     function showToast(message, type) {
         var bgColor = type === 'error' ? '#ef4444' : '#10b981';
         var icon = type === 'error' ? '❌' : '✅';

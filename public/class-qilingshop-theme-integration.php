@@ -284,7 +284,7 @@ class QilingShop_Theme_Integration {
         $cart_count = qls_cart()->get_count();
         $cart_url = qls_shop_public()->get_page_url('cart');
 
-        // Check if cart icon should be hidden
+        // 校验购物车图标是否需隐藏
         if (get_option('qls_shop_header_hide_cart_icon', false)) {
             return;
         }
@@ -359,7 +359,7 @@ class QilingShop_Theme_Integration {
              if ($fullscreen) return $fullscreen;
         }
 
-        // Additional check for shortcodes
+        // 短代码场景补充校验
         global $post;
         if ($post) {
             // 商城中心短代码

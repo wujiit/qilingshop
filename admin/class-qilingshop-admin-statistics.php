@@ -186,14 +186,14 @@ class QilingShop_Admin_Statistics {
         $period_obj = new DatePeriod(
             new DateTime($start_date),
             new DateInterval($interval_spec),
-            (new DateTime($end_date))->modify('+1 day') // include end date needs logic adjustment for month
+            (new DateTime($end_date))->modify('+1 day') // 包含结束日期
         );
         
-        // Fix DatePeriod for months to include last month correctly if not exact match
+        // 按月统计时包含完整截止月份
         if ($group_by == 'month') {
              $start_dt = new DateTime(date('Y-m-01', strtotime($start_date)));
              $end_dt = new DateTime(date('Y-m-01', strtotime($end_date)));
-             $end_dt->modify('+1 month'); // Include the end month
+             $end_dt->modify('+1 month'); // 包含截止月份
              $period_obj = new DatePeriod($start_dt, new DateInterval('P1M'), $end_dt);
         }
 
@@ -669,7 +669,7 @@ class QilingShop_Admin_Statistics {
         $this->put_export_csv_row($fp, [__('日期', 'qilingshop'), __('订单数', 'qilingshop'), __('付费用户', 'qilingshop'), __('订单收入', 'qilingshop'), __('充值金额', 'qilingshop')]);
         
         // 导出数据按实际记录输出，不额外补齐空日期。
-        // But for export, sparse data is often acceptable or better. Can refine if needed.
+        // 导出时按日期输出对应指标
         foreach ($chart_data as $date => $row) {
             $this->put_export_csv_row($fp, [
                 $date, 

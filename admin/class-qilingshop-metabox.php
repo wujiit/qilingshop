@@ -267,6 +267,13 @@ class QilingShop_Metabox {
                 </td>
             </tr>
             <tr>
+                <th><?php _e('微信小程序道具ID', 'qilingshop'); ?></th>
+                <td>
+                    <input type="text" name="qilingshop_wechat_prop_id" value="<?php echo esc_attr(get_post_meta($post->ID, '_qilingshop_wechat_prop_id', true)); ?>" class="regular-text" placeholder="留空默认：goods_<?php echo esc_attr($post->ID); ?>">
+                    <p class="description"><?php _e('若在微信小程序中使用官方虚拟支付单独购买此资源，请先在微信公众平台【虚拟支付 -> 道具管理】中添加该道具。此处填写微信道具 ID（留空默认为 goods_文章ID），微信后台价格需与该资源售价一致（以分为单位）。', 'qilingshop'); ?></p>
+                </td>
+            </tr>
+            <tr>
                 <th><?php _e('VIP 权益设置', 'qilingshop'); ?></th>
                 <td>
                     <div class="qls-metabox-flex-row">
@@ -453,6 +460,10 @@ class QilingShop_Metabox {
         // 兼容旧字段：默认用下载价，下载价为空则回退查看价
         $legacy_price = $price_download > 0 ? $price_download : $price_view;
         update_post_meta($post_id, '_qilingshop_price', $legacy_price);
+
+        if (isset($_POST['qilingshop_wechat_prop_id'])) {
+            update_post_meta($post_id, '_qilingshop_wechat_prop_id', sanitize_text_field($_POST['qilingshop_wechat_prop_id']));
+        }
 
         $vip_min_level = isset($_POST['qilingshop_vip_min_level']) ? absint($_POST['qilingshop_vip_min_level']) : 1;
         update_post_meta($post_id, '_qilingshop_vip_min_level', $vip_min_level > 0 ? $vip_min_level : 1);

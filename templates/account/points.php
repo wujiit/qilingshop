@@ -138,16 +138,68 @@ $balance_sources = ['withdraw', 'commission', 'author_commission', 'qls_group_re
                         'qilingfreetask_convert_points' => __('任务积分转余额（扣减）', 'qilingshop'),
                         'qilingfreetask_convert_cash' => __('任务积分转余额（入账）', 'qilingshop'),
                         'qilingfreetask_convert_rollback' => __('任务积分转换回滚', 'qilingshop'),
+                        // 社区业务积分变动映射
+                        'community_prop_purchase'        => __('社区道具兑换', 'qilingshop'),
+                        'community_prop_rollback'        => __('社区道具退还', 'qilingshop'),
+                        'community_bounty_publish'       => __('社区发布悬赏', 'qilingshop'),
+                        'community_bounty_reward'        => __('社区悬赏奖励', 'qilingshop'),
+                        'community_bounty_refund'        => __('社区悬赏退还', 'qilingshop'),
+                        'community_bounty_rollback'      => __('社区悬赏回滚', 'qilingshop'),
+                        'community_redpacket_publish'    => __('社区塞红包', 'qilingshop'),
+                        'community_redpacket_claim'      => __('社区抢红包', 'qilingshop'),
+                        'community_redpacket_refund'     => __('社区红包退还', 'qilingshop'),
+                        'community_redpacket_rollback'   => __('社区红包回滚', 'qilingshop'),
+                        'community_c2c_buy'              => __('社区靓号购买', 'qilingshop'),
+                        'community_c2c_buy_rollback'     => __('社区靓号购买回滚', 'qilingshop'),
+                        'community_c2c_seller_income'    => __('社区靓号出售收益', 'qilingshop'),
+                        'community_vanity_draw'          => __('社区抽取靓号', 'qilingshop'),
+                        'community_vanity_draw_rollback' => __('社区靓号抽奖回滚', 'qilingshop'),
+                        'community_vanity_recycle'       => __('社区靓号系统回收', 'qilingshop'),
+                        // 社区靓号核心业务变动映射
+                        'c2c_buy_vanity_uid'             => __('交易行购买靓号', 'qilingshop'),
+                        'c2c_sale_vanity_uid'            => __('交易行售出靓号', 'qilingshop'),
+                        'buy_vanity_uid'                 => __('官方商城兑换靓号', 'qilingshop'),
+                        'recycle_vanity_uid'             => __('官方回收靓号变现', 'qilingshop'),
+                        'buy_vanity_rollback'            => __('购买靓号退款', 'qilingshop'),
+                        'c2c_buy_rollback'               => __('交易行购买退款', 'qilingshop'),
+                        'community_level_upgrade_reward' => __('社区等级升级奖励', 'qilingshop'),
+                        'qibbs_post_publish'             => __('社区发帖奖励', 'qilingshop'),
+                        'qibbs_comment_approved'         => __('社区评论奖励', 'qilingshop'),
+                        'qibbs_best_answer'              => __('社区采纳答案奖励', 'qilingshop'),
+                        'qibbs_featured_post'            => __('社区精华推荐奖励', 'qilingshop'),
+                        'qibbs_ticket_published'         => __('社区工单公开奖励', 'qilingshop'),
+                        'community_consume'              => __('社区积分消费', 'qilingshop'),
+                        'community_reward'               => __('社区积分奖励', 'qilingshop'),
+                        // 游戏中心业务积分变动映射
+                        'game_exchange'                  => __('游戏币兑换', 'qilingshop'),
+                        'game_exchange_in'               => __('兑换游戏币', 'qilingshop'),
+                        'game_exchange_out'              => __('游戏币兑回积分', 'qilingshop'),
+                        'game_reward'                    => __('游戏奖励', 'qilingshop'),
+                        'game_lottery'                   => __('虚拟彩票', 'qilingshop'),
+                        'game_wheel'                     => __('幸运大转盘', 'qilingshop'),
+                        'game_refund'                    => __('游戏退还', 'qilingshop'),
+                        'game_consume'                   => __('游戏消费', 'qilingshop'),
                     ];
+                    $types = (array) apply_filters('qilingshop_points_log_types', $types);
                     // 优先使用 source，其次 type；并做标准化，避免历史脏值导致映射失效。
                     $log_key_raw = !empty($log->source) ? $log->source : $log->type;
                     $log_key = sanitize_key(trim((string) $log_key_raw));
                     if ($log_key === '') {
                         $log_key = trim((string) $log_key_raw);
                     }
-                    $source_label = $types[$log_key] ?? $types[(string) $log_key_raw] ?? (string) $log_key_raw;
-                    if (strpos((string) $log_key, 'qilingfreetask_') === 0 && !isset($types[$log_key])) {
-                        $source_label = __('任务积分变动', 'qilingshop');
+                    $source_label = $types[$log_key] ?? $types[(string) $log_key_raw] ?? '';
+                    if (empty($source_label)) {
+                        if (strpos((string) $log_key, 'qilingfreetask_') === 0) {
+                            $source_label = __('任务积分变动', 'qilingshop');
+                        } elseif (strpos((string) $log_key, 'community_') === 0 || strpos((string) $log_key, 'qibbs_') === 0) {
+                            $source_label = __('社区互动', 'qilingshop');
+                        } elseif (strpos((string) $log_key, 'game_') === 0 || strpos((string) $log_key, 'qlg_') === 0) {
+                            $source_label = __('游戏中心', 'qilingshop');
+                        } elseif (strpos((string) $log_key, 'c2c_') === 0 || strpos((string) $log_key, 'vanity_') !== false || strpos((string) $log_key, 'uid') !== false) {
+                            $source_label = __('社区靓号交易', 'qilingshop');
+                        } else {
+                            $source_label = (string) $log_key_raw;
+                        }
                     }
                     echo esc_html($source_label);
                     ?>

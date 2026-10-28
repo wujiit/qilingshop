@@ -35,7 +35,7 @@
         },
 
         bindEvents: function () {
-            // Buy with points
+            // 积分购买
             $(document).on('click', '.qls-download-content-tb-btn-buy[data-action="buy_with_points"], .qls-download-title-hd-btn-buy[data-action="buy_with_points"], .qls-download-sidebar-re-btn-buy[data-action="buy_with_points"]', this.buyWithPoints);
 
             // Direct pay
@@ -50,7 +50,7 @@
             // Recharge
             $(document).on('click', '.btn-recharge[data-action="recharge"]', this.recharge);
 
-            // Quick amount buttons
+            // 快捷金额按钮
             $(document).on('click', '.quick-amounts button', this.selectQuickAmount);
 
             // Amount input change
@@ -59,13 +59,13 @@
             // Secure download
             $(document).on('click', '.qls-download-content-tb-secure-download, .qls-download-title-hd-secure-download, .qls-download-sidebar-re-secure-download', this.secureDownload);
 
-            // Pancheck - cloud drive link detection
+            // 网盘链接有效性检测
             $(document).on('click', '.qls-download-content-tb-pancheck-btn, .qls-download-title-hd-pancheck-btn, .qls-download-sidebar-re-pancheck-btn', this.pancheck);
 
-            // Login Modal Trigger
+            // 登录弹窗触发
             $(document).on('click', '.qls-login-trigger', this.triggerLoginModal);
 
-            // Guest order lookup
+            // 游客订单查询
             $(document).on('submit', '.qilingshop-order-query-form', this.lookupOrder);
             $(document).on('click', '.qilingshop-order-query-copy', this.copyOrderLookupVirtualItem);
         },
@@ -104,13 +104,13 @@
             return isNaN(index) ? -1 : index;
         },
 
-        // Trigger Theme Login Modal
+        // 触发主题登录弹窗
         triggerLoginModal: function (e) {
             var $btn = $(this);
             var url = $btn.attr('href');
             var processed = false;
 
-            // 1. Try global function
+            // 1. 尝试全局函数
             if (typeof window.developerStarterShowLoginModal === 'function') {
                 if (window.developerStarterShowLoginModal('login')) {
                     e.preventDefault();
@@ -118,14 +118,14 @@
                 }
             }
 
-            // 2. Try click header button
+            // 2. 尝试点击顶部按钮
             if (!processed) {
                 var $headerBtn = $('#header-login-toggle');
 
                 if ($headerBtn.length) {
-                    // Try naive click
+                    // 尝试点击
                     $headerBtn.click();
-                    // Try native click
+                    // 尝试原生点击
                     if ($headerBtn[0]) $headerBtn[0].click();
 
                     e.preventDefault();
@@ -143,7 +143,7 @@
                     if ($overlay.length) $overlay.addClass('active');
                     $('body').css('overflow', 'hidden');
 
-                    // Reset to login view if possible (naive)
+                    // 重置为登录视图
                     $('#login-panel').show();
                     $('#register-panel').hide();
                     $('#modal-title').text(text('userLogin', '用户登录'));
@@ -155,7 +155,7 @@
 
             // 4. 兜底：跳转链接
             if (!processed) {
-                // Let the default link action proceed
+                // 保持默认跳转
             }
         },
 
@@ -164,7 +164,7 @@
             e.preventDefault();
 
             var $link = $(this);
-            var originalHtml = $link.html(); // Save original content
+            var originalHtml = $link.html(); // 保存原始内容
             var token = $link.data('token');
             var isPaid = $link.data('is-paid');
 
@@ -559,7 +559,7 @@
             // 移除 existing toast
             $('.qilingshop-toast').remove();
 
-            // Create toast element
+            // 创建提示元素
             var bgColor = type === 'error' ? 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)' :
                 type === 'warning' ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)' :
                     'linear-gradient(135deg, #10b981 0%, #059669 100%)';
@@ -595,7 +595,7 @@
                 $('.qilingshop-toast').css('transform', 'translateX(-50%) translateY(0)');
             }, 10);
 
-            // Auto dismiss after 3 seconds
+            // 3 秒后自动隐藏
             setTimeout(function () {
                 $('.qilingshop-toast').css('transform', 'translateX(-50%) translateY(-100px)');
                 setTimeout(function () {
@@ -615,7 +615,7 @@
             var upgradeFrom = $box.attr('data-upgrade-from') || '';
             var downloadIndex = QilingShop.getDownloadIndex($btn, $box);
 
-            // Show custom confirm modal instead of browser confirm
+            // 显示自定义确认弹窗
             QilingShop.showConfirmModal(
                 text('confirm', '确认购买？'),
                 formatText('pointsDeduction', { price: price, pointsName: qilingshop.pointsName || text('pointsName', '积分') }, '将扣除 {price} {pointsName}'),
@@ -632,7 +632,7 @@
                             $btn.removeClass('is-loading').prop('disabled', true).text(text('purchaseSuccess', '购买成功'));
                             $btn.removeData('qlsOriginalText');
                             QilingShop.showMessage(response.message);
-                            // Reload to show download
+                            // 刷新页面展示下载链接
                             setTimeout(function () {
                                 location.reload();
                             }, 1000);
@@ -645,7 +645,7 @@
             );
         },
 
-        // Custom confirm modal
+        // 自定义确认弹窗
         showConfirmModal: function (title, message, onConfirm) {
             var html = '<div id="qilingshop-confirm-modal" style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:99999;">' +
                 '<div style="background:#fff;padding:30px;border-radius:16px;min-width:320px;max-width:400px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.3);">' +
@@ -1274,7 +1274,7 @@
         },
 
         showQrcode: function (qrcode) {
-            // Simple modal for QR code
+            // 二维码弹窗
             var html = '<div id="qilingshop-qrcode-modal" style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:99999;">' +
                 '<div style="background:#fff;padding:30px;border-radius:10px;text-align:center;">' +
                 '<p>' + text('scanToPay', '扫码支付') + '</p>' +

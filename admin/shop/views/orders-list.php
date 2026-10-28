@@ -754,7 +754,7 @@ jQuery(function($) {
                         $('#logistics-box').hide();
                     }
 
-                    // Store current order obj for Edit usage
+                    // 缓存当前编辑订单对象
                     $('#qls-detail-modal').data('order', o);
 
                     $('#detail-loading').hide();
@@ -818,7 +818,7 @@ jQuery(function($) {
         $('#r-address').text(o.receiver_address);
         $('#r-remark').text(o.buyer_remark || '-');
         
-        // Fill Edit Form values
+        // 填充编辑表单数据
         $('#edit-order-id').val(o.id);
         $('#edit-name').val(o.receiver_name);
         $('#edit-phone').val(o.receiver_phone);
@@ -858,7 +858,7 @@ jQuery(function($) {
             data: data,
             success: function(res) {
                 if(res.success) {
-                    // Update display view manually from form values
+                    // 同步更新页面视图展示
                     var updated = {
                         receiver_name: $('#edit-name').val(),
                         receiver_phone: $('#edit-phone').val(),

@@ -1272,16 +1272,19 @@ class QilingShop_Ajax {
 
         $alipay_enabled = (bool) get_option('qilingshop_alipay_enabled');
         $alipay_f2f_enabled = (bool) get_option('qilingshop_alipay_f2fpay');
+        $alipay_h5_enabled = (bool) get_option('qilingshop_alipay_h5');
+        $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
 
         if ($gateway === 'alipay_qr') {
-            if (!$alipay_enabled || !$alipay_f2f_enabled) {
+            if (!$alipay_enabled || (!$alipay_f2f_enabled && !$alipay_h5_enabled)) {
                 return [];
             }
+            $method = ($is_mobile && $alipay_h5_enabled) ? 'wap' : 'f2f';
             return [
                 'selected' => 'alipay_qr',
                 'gateway'  => 'alipay',
                 'entry'    => 'alipay',
-                'extra'    => ['method' => 'f2f'],
+                'extra'    => ['method' => $method],
             ];
         }
 
@@ -1289,11 +1292,12 @@ class QilingShop_Ajax {
             if (!$alipay_enabled) {
                 return [];
             }
+            $method = ($is_mobile && $alipay_h5_enabled) ? 'wap' : 'page';
             return [
                 'selected' => 'alipay_page',
                 'gateway'  => 'alipay',
                 'entry'    => 'alipay',
-                'extra'    => ['method' => 'page'],
+                'extra'    => ['method' => $method],
             ];
         }
 
@@ -1302,8 +1306,12 @@ class QilingShop_Ajax {
                 return [];
             }
             $extra = [];
-            if ($alipay_f2f_enabled) {
+            if ($is_mobile && $alipay_h5_enabled) {
+                $extra['method'] = 'wap';
+            } elseif ($alipay_f2f_enabled) {
                 $extra['method'] = 'f2f';
+            } else {
+                $extra['method'] = 'page';
             }
             return [
                 'selected' => 'alipay',

@@ -141,7 +141,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                                     'dark'  => __('深色 (黑字)', 'qilingshop'),
                                 ],
                             ],
-                            // Primary Button
+                            // 主按钮
                             'btn_text' => [
                                 'type'  => 'text',
                                 'label' => __('按钮1 文字', 'qilingshop'),
@@ -159,7 +159,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                                     'ghost'   => __('透明', 'qilingshop'),
                                 ],
                             ],
-                            // Secondary Button
+                            // 次按钮
                             'btn2_text' => [
                                 'type'  => 'text',
                                 'label' => __('按钮2 文字 (可选)', 'qilingshop'),
@@ -210,7 +210,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
             return;
         }
 
-        // Extract settings
+        // 提取设置项
         $height_pc = $atts['height_pc'] ?: '500px';
         $height_mobile = $atts['height_mobile'] ?: '300px';
         $layout = $atts['layout'] ?? 'full';
@@ -220,7 +220,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
         $autoplay = ($atts['autoplay'] ?? 'yes') === 'yes';
         $interval = intval($atts['interval'] ?? 5000);
         
-        // Add body class for full-screen mode (allows theme CSS to respond)
+        // 全屏模式下添加 body class
         if ($full_screen && $layout === 'full') {
             add_filter('body_class', function($classes) {
                 $classes[] = 'qls-hero-fullscreen';
@@ -232,7 +232,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
         // 侧边栏模式跟随页面内容宽度，避免超出商城容器。
         $is_boxed = ($layout === 'boxed' || $layout === 'sidebar');
         
-        // Ensure margin values have units
+        // 补齐边距数值单位
         if (is_numeric($margin_top)) $margin_top .= 'px';
         if (is_numeric($margin_bottom)) $margin_bottom .= 'px';
         ?>
@@ -297,7 +297,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 border-radius: inherit;
             }
             
-            /* Overlay Container: Centers content/sidebar */
+            /* 遮罩容器 */
             #<?php echo $unique_id; ?> .qls-hero-overlay-container {
                 position: absolute;
                 top: 0;
@@ -451,7 +451,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 --hero-sidebar-hover: rgba(255, 255, 255, 0.11);
             }
             
-            /* Common styles */
+            /* 公共样式 */
             #<?php echo $unique_id; ?> .swiper-slide {
                 width: 100%;
                 height: 100%;
@@ -475,7 +475,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 z-index: 1;
             }
             
-            /* Hero Content Positioning */
+            /* 内容定位 */
             #<?php echo $unique_id; ?> .qls-hero-content {
                 position: absolute;
                 top: 0;
@@ -485,10 +485,10 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 z-index: 5;
                 pointer-events: none;
                 display: flex;
-                align-items: center; /* Vertical Center */
+                align-items: center; /* 垂直居中 */
             }
             
-            /* Responsive Content Width */
+            /* 响应式内容宽度 */
             #<?php echo $unique_id; ?> .qls-hero-content-inner {
                 pointer-events: auto;
                 max-width: min(540px, 40vw);
@@ -500,7 +500,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24);
             }
             
-            /* Adjust content position based on layout */
+            /* 根据布局调整内容位置 */
             /* 侧边栏显示时，左对齐文案向右留出空间 */
             <?php if ($layout === 'sidebar'): ?>
                 #<?php echo $unique_id; ?> .qls-hero-item.text-left .qls-hero-content-inner {
@@ -512,12 +512,12 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 }
             <?php endif; ?>
             
-            /* Text Alignment */
+            /* 文本对齐 */
             #<?php echo $unique_id; ?> .qls-hero-item.text-left .qls-hero-content { justify-content: flex-start; }
             #<?php echo $unique_id; ?> .qls-hero-item.text-center .qls-hero-content { justify-content: center; }
             #<?php echo $unique_id; ?> .qls-hero-item.text-right .qls-hero-content { justify-content: flex-end; }
 
-            /* Text Colors */
+            /* 文本颜色 */
             #<?php echo $unique_id; ?> .qls-hero-item.color-light .qls-hero-content {
                 color: #fff;
                 text-shadow: 0 2px 10px rgba(0,0,0,0.3);
@@ -531,7 +531,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 background: linear-gradient(150deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
                 box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
             }
-            /* Headers */
+            /* 标题样式 */
             #<?php echo $unique_id; ?> .qls-hero-title {
                 margin: 0 0 12px;
                 font-size: clamp(32px, 2.1vw, 44px);
@@ -544,7 +544,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 opacity: 0.9;
                 line-height: 1.5;
             }
-            /* Buttons */
+            /* 按钮样式 */
             #<?php echo $unique_id; ?> .qls-hero-buttons {
                 display: flex;
                 gap: 12px;
@@ -601,7 +601,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 }
             }
             
-            /* Swiper Controls */
+            /* 轮播控制组件 */
             #<?php echo $unique_id; ?> .swiper-pagination-bullet { width: 10px; height: 10px; background: rgba(255,255,255,0.5); opacity: 1; border: 2px solid transparent; }
             #<?php echo $unique_id; ?> .swiper-pagination-bullet-active { background: rgba(255,255,255,1); border-color: rgba(0,0,0,0.1); width: 24px; border-radius: 5px; }
             
@@ -611,7 +611,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
             #<?php echo $unique_id; ?> .swiper-button-next:hover { background: rgba(0,0,0,0.4); }
             #<?php echo $unique_id; ?> .swiper-button-prev::after, .swiper-button-next::after { font-size: 24px; }
             
-            /* Mobile */
+            /* 移动端适配 */
             @media (max-width: 768px) {
                 #<?php echo $unique_id; ?> .qls-hero-slider { height: var(--hero-height-m); }
                 #<?php echo $unique_id; ?> .qls-hero-sidebar { display: none; }
@@ -748,11 +748,11 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
                 if ($cat) $categories[] = $cat;
             }
         } else {
-            // Auto: get top level categories
-            $categories = qls_category()->get_tree(0); // Assuming get_tree(0) gets roots. Check qls_category implementation if needed.
+            // 自动获取顶级分类列表
+            $categories = qls_category()->get_tree(0);
         }
         
-        // Limit
+        // 数量限制
         $max = intval($atts['menu_max']) ?: 10;
         $categories = array_slice($categories, 0, $max);
 
@@ -769,7 +769,7 @@ class QLS_Module_Hero_Carousel extends QLS_Module_Base {
             if ($has_children) echo '<i class="dashicons dashicons-arrow-right-alt2"></i>';
             echo '</a>';
             
-            // Submenu
+            // 子菜单
             if ($has_children) {
                  echo '<div class="qls-sub-menu">';
                  foreach ($cat->children as $child) {

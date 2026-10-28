@@ -1898,7 +1898,11 @@ class QilingShop_Task_Center {
         );
 
         if ( $gateway === 'alipay' ) {
-            if ( $original_method === 'alipay_qr' ) {
+            $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+            $alipay_h5 = (bool) get_option('qilingshop_alipay_h5', false);
+            if ( $is_mobile && $alipay_h5 ) {
+                $args['method'] = 'wap';
+            } elseif ( $original_method === 'alipay_qr' ) {
                 $args['method'] = 'f2f';
             } elseif ( $original_method === 'alipay_page' ) {
                 $args['method'] = 'page';

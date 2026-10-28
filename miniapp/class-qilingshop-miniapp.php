@@ -1262,4 +1262,209 @@ class QilingShop_Miniapp {
 
         return $response;
     }
+
+    /**
+     * 判断是否已启用微信小程序虚拟支付（米大师 XPay）。
+     *
+     * @return bool
+     */
+    public function is_wechat_virtual_payment_enabled() {
+        return (bool) get_option('qilingshop_wechat_miniapp_xpay_enabled', false);
+    }
+
+    /**
+     * 获取微信小程序虚拟支付（米大师 XPay）基础配置。
+     *
+     * @return array|WP_Error
+     */
+    public function get_wechat_virtual_payment_config() {
+        if (!$this->is_wechat_virtual_payment_enabled()) {
+            return new WP_Error('qilingshop_xpay_disabled', '微信小程序虚拟支付未开启', ['status' => 403]);
+        }
+
+        $env = intval(get_option('qilingshop_wechat_miniapp_xpay_env', 0));
+        $offer_id = trim((string) get_option('qilingshop_wechat_miniapp_xpay_offer_id', ''));
+        $app_key = $env === 1
+            ? trim((string) get_option('qilingshop_wechat_miniapp_xpay_sandbox_app_key', ''))
+            : trim((string) get_option('qilingshop_wechat_miniapp_xpay_app_key', ''));
+
+        if ($offer_id === '' || $app_key === '') {
+            return new WP_Error('qilingshop_xpay_config_missing', '微信小程序虚拟支付配置不完整，请检查 OfferID 与 AppKey', ['status' => 500]);
+        }
+
+        return [
+            'env'      => $env,
+            'offer_id' => $offer_id,
+            'app_key'  => $app_key,
+        ];
+    }
+
+    /**
+     * 创建微信小程序虚拟支付（米大师 XPay）签名与前端调起参数。
+     *
+     * @param object $order       订单对象
+     * @param string $openid      用户 openid
+     * @param string $session_key 用户微信会话 session_key（用于计算 signature）
+     * @param array  $extra       扩展参数（goods_id, attach 等）
+     * @return array|WP_Error
+     */
+    public function create_wechat_virtual_payment($order, $openid, $session_key, $extra = []) {
+        if (!is_object($order)) {
+            return new WP_Error('qilingshop_xpay_order_invalid', '订单不存在', ['status' => 404]);
+        }
+
+        $session_key = trim((string) $session_key);
+        if ($session_key === '') {
+            return new WP_Error('qilingshop_xpay_session_key_missing', '用户登录会话凭证已失效，请重新登录小程序后再试', ['status' => 401]);
+        }
+
+        $config = $this->get_wechat_virtual_payment_config();
+        if (is_wp_error($config)) {
+            return $config;
+        }
+
+        $order_no = isset($order->order_no) ? sanitize_text_field((string) $order->order_no) : '';
+        $amount = isset($order->final_price) ? (float) $order->final_price : (isset($order->final_amount) ? (float) $order->final_amount : 0);
+        $goods_price = intval(round($amount * 100)); // 转为分
+
+        if ($order_no === '' || $goods_price <= 0) {
+            return new WP_Error('qilingshop_xpay_amount_invalid', '订单金额异常，无法发起虚拟支付', ['status' => 400]);
+        }
+
+        $extra = is_array($extra) ? $extra : [];
+        $level_id = !empty($extra['level_id']) ? intval($extra['level_id']) : 0;
+        $prop_mappings = get_option('qilingshop_wechat_prop_vip_mappings', []);
+        $mapped_pid = ($level_id > 0 && !empty($prop_mappings[$level_id])) ? sanitize_text_field((string) $prop_mappings[$level_id]) : '';
+
+        $product_id = !empty($extra['goods_id'])
+            ? sanitize_text_field((string) $extra['goods_id'])
+            : ($mapped_pid !== '' ? $mapped_pid : ($level_id > 0 ? 'vip_' . $level_id : 'order_' . $order_no));
+
+        $attach = !empty($extra['attach'])
+            ? sanitize_text_field((string) $extra['attach'])
+            : wp_json_encode(['order_no' => $order_no, 'order_type' => $order->order_type ?? 'vip']);
+
+        // 构造米大师 signData 严格 JSON 字符串
+        $sign_data_arr = [
+            'offerId'      => (string) $config['offer_id'],
+            'buyQuantity'  => 1,
+            'env'          => (int) $config['env'],
+            'currencyType' => 'CNY',
+            'productId'    => (string) $product_id,
+            'goodsPrice'   => (int) $goods_price,
+            'outTradeNo'   => (string) $order_no,
+            'attach'       => (string) $attach,
+        ];
+        $sign_data_json = wp_json_encode($sign_data_arr, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+        // 计算支付签名 paySig: HMAC-SHA256(appKey, "requestVirtualPayment&" + signData)
+        $pay_sig = hash_hmac('sha256', 'requestVirtualPayment&' . $sign_data_json, $config['app_key']);
+
+        // 计算用户态签名 signature: HMAC-SHA256(sessionKey, signData)
+        $signature = hash_hmac('sha256', $sign_data_json, $session_key);
+
+        return [
+            'method'    => 'wechat_virtual',
+            'provider'  => 'xpay',
+            'mode'      => 'short_series_goods',
+            'env'       => (int) $config['env'],
+            'order_no'  => $order_no,
+            'signData'  => $sign_data_json,
+            'paySig'    => strtolower((string) $pay_sig),
+            'signature' => strtolower((string) $signature),
+        ];
+    }
+
+    /**
+     * 处理微信小程序虚拟支付（米大师）发货通知异步回调。
+     *
+     * @param WP_REST_Request|mixed $request 请求对象
+     * @return WP_REST_Response
+     */
+    public function handle_wechat_virtual_payment_notify($request) {
+        $body = '';
+        $data = [];
+        $is_xml_request = false;
+
+        if ($request instanceof WP_REST_Request) {
+            $body = (string) $request->get_body();
+            $json = $request->get_json_params();
+            if (is_array($json) && !empty($json)) {
+                $data = $json;
+            } else {
+                $data = $request->get_params();
+            }
+        } elseif (isset($_POST) && !empty($_POST)) {
+            $data = $_POST;
+        } else {
+            $body = (string) file_get_contents('php://input');
+        }
+
+        if (empty($data) || (count($data) === 1 && isset($data['rest_route']))) {
+            if ($body !== '') {
+                $decoded = json_decode($body, true);
+                if (is_array($decoded)) {
+                    $data = $decoded;
+                } elseif (strpos($body, '<xml>') !== false || strpos($body, '<?xml') !== false) {
+                    $is_xml_request = true;
+                    libxml_use_internal_errors(true);
+                    $xml = simplexml_load_string($body, 'SimpleXMLElement', LIBXML_NOCDATA);
+                    if ($xml !== false) {
+                        $data = json_decode(wp_json_encode($xml), true) ?: [];
+                    }
+                }
+            }
+        } else if (strpos($body, '<xml>') !== false || strpos($body, '<?xml') !== false) {
+            $is_xml_request = true;
+            libxml_use_internal_errors(true);
+            $xml = simplexml_load_string($body, 'SimpleXMLElement', LIBXML_NOCDATA);
+            if ($xml !== false) {
+                $data = array_merge($data, json_decode(wp_json_encode($xml), true) ?: []);
+            }
+        }
+
+        $out_trade_no = sanitize_text_field((string) (
+            $data['out_trade_no'] ??
+            $data['outTradeNo'] ??
+            $data['OutTradeNo'] ??
+            ''
+        ));
+
+        $wx_order_id = sanitize_text_field((string) (
+            $data['order_id'] ??
+            $data['orderId'] ??
+            $data['wechat_pay_order_id'] ??
+            ($data['WeChatPayInfo']['MchOrderNo'] ?? '')
+        ));
+
+        // 如果 out_trade_no 存在于 attach 中，尝试解析
+        if ($out_trade_no === '' && !empty($data['attach'])) {
+            $attach_data = json_decode((string) $data['attach'], true);
+            if (is_array($attach_data) && !empty($attach_data['order_no'])) {
+                $out_trade_no = sanitize_text_field((string) $attach_data['order_no']);
+            }
+        }
+
+        if ($out_trade_no !== '') {
+            if (class_exists('QilingShop_Order') && method_exists('QilingShop_Order', 'instance')) {
+                QilingShop_Order::instance()->mark_paid($out_trade_no, $wx_order_id, 'wechat_virtual');
+            }
+        }
+
+        if ($is_xml_request) {
+            $xml_output = "<xml><ErrCode>0</ErrCode><ErrMsg><![CDATA[success]]></ErrMsg></xml>";
+            $response = new WP_REST_Response($xml_output, 200);
+            $response->header('Content-Type', 'application/xml; charset=utf-8');
+            return $response;
+        }
+
+        // 返回微信米大师期望的标准成功报文
+        $response = new WP_REST_Response([
+            'ErrCode' => 0,
+            'ErrMsg'  => 'success',
+        ], 200);
+        $response->header('Content-Type', 'application/json; charset=utf-8');
+
+        return $response;
+    }
 }

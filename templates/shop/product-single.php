@@ -1019,7 +1019,7 @@ foreach ((array) $product->skus as $sku) {
 }
 .qls-lightbox-close:hover { opacity: 1; }
 
-/* ==================== 商品评价响应式 ==================== */
+/* 商品评价响应式 */
 @media (max-width: 768px) {
     /* 评价统计区 */
     .qls-review-summary {

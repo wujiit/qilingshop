@@ -209,8 +209,12 @@ $total_pages = ceil($total / $per_page);
                                 }
                                 $gateway = !empty($enabled_gateways) ? $payment_manager->get_gateway_entry_slug($enabled_gateways[0]) : '';
                             }
+                            $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+                            $alipay_h5 = (bool) get_option('qilingshop_alipay_h5', false);
                             $alipay_method = '';
-                            if ($original_method === 'alipay_qr') {
+                            if ($is_mobile && $alipay_h5) {
+                                $alipay_method = 'wap';
+                            } elseif ($original_method === 'alipay_qr') {
                                 $alipay_method = 'f2f';
                             } elseif ($original_method === 'alipay_page') {
                                 $alipay_method = 'page';

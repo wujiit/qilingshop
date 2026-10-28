@@ -35,14 +35,14 @@ class QLS_Module_Category_Nav extends QLS_Module_Base {
             // Colors
             'text_color'    => '#333333',
             'bg_color'      => '#ffffff',
-            'hover_color'   => '', // Optional hover accent
+            'hover_color'   => '', // 悬浮强调色
             
             // Spacing
             'margin_top'    => '10px',
             'margin_bottom' => '10px',
             'padding_content'=> '10px',
             
-            // All Products Entry
+            // 全部商品入口
             'show_all_products'     => true,
             'all_products_name'     => __('全部商品', 'qilingshop'),
             'all_products_icon'     => '',  // 留空使用默认图标
@@ -183,7 +183,7 @@ class QLS_Module_Category_Nav extends QLS_Module_Base {
     }
 
     protected function render_content($atts) {
-        // Enqueue Module CSS (Only once)
+        // 加载模块样式（仅加载一次）
         $assets_version = function_exists('qilingshop_get_assets_version') ? qilingshop_get_assets_version() : (defined('QILINGSHOP_VERSION') ? QILINGSHOP_VERSION : '2.0.2');
 
         wp_enqueue_style(
@@ -202,7 +202,7 @@ class QLS_Module_Category_Nav extends QLS_Module_Base {
                 if ($cat && $cat->status == 1) $categories[] = $cat;
             }
         } else {
-            // Auto: Top level
+            // 默认读取顶级分类
             $raw_cats = qls_category()->get_tree(0); 
             $categories = array_filter($raw_cats, function($c){ return $c->status == 1; });
         }
@@ -234,7 +234,7 @@ class QLS_Module_Category_Nav extends QLS_Module_Base {
         // 如果没有分类且没有全部商品入口，则返回
         if (empty($categories) && !$all_products_item) return;
 
-        // 2. CSS Variables for Dynamic Styling
+        // 2. 动态样式变量
         $unique_id = 'qls-cat-nav-' . uniqid();
         
         // Prepare variables

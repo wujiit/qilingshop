@@ -68,6 +68,21 @@ class QilingShop_Admin_Payment {
         update_option('qilingshop_wechat_miniapp_client_key', sanitize_textarea_field(wp_unslash($_POST['wechat_miniapp_client_key'] ?? '')));
         update_option('qilingshop_wechat_miniapp_public_key_pem', sanitize_textarea_field(wp_unslash($_POST['wechat_miniapp_public_key_pem'] ?? '')));
 
+        // 微信小程序虚拟支付（官方虚拟支付 / 米大师 XPay）
+        update_option('qilingshop_wechat_miniapp_xpay_enabled', isset($_POST['wechat_miniapp_xpay_enabled']));
+        update_option('qilingshop_wechat_miniapp_xpay_env', intval($_POST['wechat_miniapp_xpay_env'] ?? 0));
+        update_option('qilingshop_wechat_miniapp_xpay_offer_id', sanitize_text_field($_POST['wechat_miniapp_xpay_offer_id'] ?? ''));
+        update_option('qilingshop_wechat_miniapp_xpay_app_key', sanitize_text_field($_POST['wechat_miniapp_xpay_app_key'] ?? ''));
+        update_option('qilingshop_wechat_miniapp_xpay_sandbox_app_key', sanitize_text_field($_POST['wechat_miniapp_xpay_sandbox_app_key'] ?? ''));
+
+        if (isset($_POST['wechat_prop_vip_mappings']) && is_array($_POST['wechat_prop_vip_mappings'])) {
+            $mappings = [];
+            foreach ($_POST['wechat_prop_vip_mappings'] as $lid => $pid) {
+                $mappings[intval($lid)] = sanitize_text_field($pid);
+            }
+            update_option('qilingshop_wechat_prop_vip_mappings', $mappings);
+        }
+
         // PayPal 接口
         update_option('qilingshop_paypal_enabled', isset($_POST['paypal_enabled']));
         update_option('qilingshop_paypal_client_id', sanitize_text_field($_POST['paypal_client_id'] ?? ''));
@@ -264,6 +279,81 @@ class QilingShop_Admin_Payment {
                         <td><input type="text" name="wechat_miniapp_transfer_scene_id" value="<?php echo esc_attr(get_option('qilingshop_wechat_miniapp_transfer_scene_id')); ?>" class="regular-text"><p class="description"><?php _e('微信支付转账场景编号，仅在开通对应能力时填写。', 'qilingshop'); ?></p></td>
                     </tr>
                 </table>
+
+                <h3 style="margin-top:25px;padding-top:15px;border-top:1px dashed #ddd;"><?php _e('微信小程序官方虚拟支付（道具直购）', 'qilingshop'); ?></h3>
+                <p><?php _e('对应微信公众平台（mp.weixin.qq.com）侧边栏【支付与交易 -> 虚拟支付】功能。适用于个人主体小程序收款、VIP 会员开通、虚拟数字道具、付费资源阅读及 iOS 端合规支付通道。', 'qilingshop'); ?></p>
+                <p><?php _e('发货通知推送地址（请在微信小程序后台【开发管理 -> 消息推送】或【虚拟支付】中配置）：', 'qilingshop'); ?><code><?php echo esc_html(home_url('/wp-json/qilingminiapp/v1/shop/pay/notify/wechat-virtual')); ?></code></p>
+                <table class="form-table qls-ui-form-table">
+                    <tr>
+                        <th><?php _e('启用虚拟支付', 'qilingshop'); ?></th>
+                        <td><label><input type="checkbox" name="wechat_miniapp_xpay_enabled" value="1" <?php checked(get_option('qilingshop_wechat_miniapp_xpay_enabled')); ?>> <?php _e('启用微信小程序虚拟支付', 'qilingshop'); ?></label>
+                        <p class="description"><?php _e('启用后，在小程序内购买 VIP 或虚拟商品将优先调起微信官方 wx.requestVirtualPayment 虚拟支付收银台。', 'qilingshop'); ?></p></td>
+                    </tr>
+                    <tr>
+                        <th><?php _e('环境模式', 'qilingshop'); ?></th>
+                        <td>
+                            <select name="wechat_miniapp_xpay_env">
+                                <option value="0" <?php selected(get_option('qilingshop_wechat_miniapp_xpay_env', 0), 0); ?>><?php _e('现网正式环境 (env=0)', 'qilingshop'); ?></option>
+                                <option value="1" <?php selected(get_option('qilingshop_wechat_miniapp_xpay_env', 0), 1); ?>><?php _e('沙箱测试环境 (env=1)', 'qilingshop'); ?></option>
+                            </select>
+                            <p class="description"><?php _e('正式发布上线时务必选择现网正式环境。测试阶段可先在沙箱中联调。', 'qilingshop'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><?php _e('支付账号 OfferID', 'qilingshop'); ?></th>
+                        <td><input type="text" name="wechat_miniapp_xpay_offer_id" value="<?php echo esc_attr(get_option('qilingshop_wechat_miniapp_xpay_offer_id')); ?>" class="regular-text"><p class="description"><?php _e('在微信公众平台【虚拟支付 -> 基本配置】中查看并复制分配的 OfferID。', 'qilingshop'); ?></p></td>
+                    </tr>
+                    <tr>
+                        <th><?php _e('现网 AppKey', 'qilingshop'); ?></th>
+                        <td><input type="text" name="wechat_miniapp_xpay_app_key" value="<?php echo esc_attr(get_option('qilingshop_wechat_miniapp_xpay_app_key')); ?>" class="regular-text"><p class="description"><?php _e('在微信公众平台【虚拟支付 -> 基本配置】中获取的正式支付密钥 AppKey。', 'qilingshop'); ?></p></td>
+                    </tr>
+                    <tr>
+                        <th><?php _e('沙箱 AppKey', 'qilingshop'); ?></th>
+                        <td><input type="text" name="wechat_miniapp_xpay_sandbox_app_key" value="<?php echo esc_attr(get_option('qilingshop_wechat_miniapp_xpay_sandbox_app_key')); ?>" class="regular-text"><p class="description"><?php _e('沙箱测试环境 AppKey，仅在环境模式为沙箱时生效。', 'qilingshop'); ?></p></td>
+                    </tr>
+                </table>
+
+                <div style="background:#fff;border:1px solid #ccd0d4;border-left:4px solid #0073aa;padding:14px 18px;margin:20px 0;max-width:880px;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+                    <h4 style="margin:0 0 8px 0;font-size:14px;color:#1d2327;"><?php _e('微信公众平台【虚拟支付 -> 道具管理】与商城对照表', 'qilingshop'); ?></h4>
+                    <p style="margin:0 0 10px 0;color:#555;line-height:1.6;font-size:13px;"><?php _e('微信官方虚拟支付核心规则：必须预先在微信小程序后台【虚拟支付 -> 道具管理】中添加对应道具并发布。微信服务器会强校验道具 ID 和价格，两者必须与商城完全一致。请对照下方表格在微信后台创建道具：', 'qilingshop'); ?></p>
+                    <?php
+                    $vip_levels = class_exists('QilingShop_VIP') ? QilingShop_VIP::instance()->get_levels(false) : [];
+                    $vip_mappings = get_option('qilingshop_wechat_prop_vip_mappings', []);
+                    ?>
+                    <table class="wp-list-table widefat striped" style="margin-top:8px;">
+                        <thead>
+                            <tr>
+                                <th style="width:20%;"><?php _e('VIP 等级名称', 'qilingshop'); ?></th>
+                                <th style="width:20%;"><?php _e('商城售价 (元)', 'qilingshop'); ?></th>
+                                <th style="width:25%;"><?php _e('微信后台道具单价 (分)', 'qilingshop'); ?></th>
+                                <th style="width:35%;"><?php _e('微信后台道具ID (productId)', 'qilingshop'); ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (empty($vip_levels)): ?>
+                                <tr><td colspan="4"><?php _e('暂无配置的 VIP 等级，请先在【启灵商城 -> VIP 等级】中创建。', 'qilingshop'); ?></td></tr>
+                            <?php else: ?>
+                                <?php foreach ($vip_levels as $lvl):
+                                    $lvl_id = intval($lvl->id);
+                                    $default_pid = 'vip_' . $lvl_id;
+                                    $current_pid = !empty($vip_mappings[$lvl_id]) ? $vip_mappings[$lvl_id] : $default_pid;
+                                    $price_cents = intval(round(floatval($lvl->price) * 100));
+                                ?>
+                                    <tr>
+                                        <td><strong><?php echo esc_html($lvl->level_name); ?></strong> (ID: <?php echo esc_html($lvl_id); ?>)</td>
+                                        <td>¥<?php echo number_format(floatval($lvl->price), 2); ?></td>
+                                        <td><code style="color:#d63638;font-weight:bold;"><?php echo esc_html($price_cents); ?></code> 分</td>
+                                        <td>
+                                            <input type="text" name="wechat_prop_vip_mappings[<?php echo esc_attr($lvl_id); ?>]" value="<?php echo esc_attr($current_pid); ?>" style="width:180px;" placeholder="<?php echo esc_attr($default_pid); ?>">
+                                            <span class="description"><?php _e('对应微信道具ID', 'qilingshop'); ?></span>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                    <p style="margin:10px 0 0 0;font-size:12px;color:#666;"><?php _e('提示：若在微信后台自定了道具 ID，可直接在上方修改保存；若未修改，默认使用 vip_等级ID（如 vip_1）。对于单独购买的商品，微信道具ID规则为 goods_商品ID。', 'qilingshop'); ?></p>
+                </div>
 
                 <h2>4、<?php _e('PayPal贝宝（官方接口）', 'qilingshop'); ?></h2>
                 <p><?php _e('仅支持 Orders v2 + Webhook（已移除 SOAP/IPN）。', 'qilingshop'); ?></p>

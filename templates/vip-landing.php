@@ -353,8 +353,20 @@ $points_name = qilingshop_get_points_name();
                             <?php
                             $alipay_enabled = (bool) get_option('qilingshop_alipay_enabled');
                             $alipay_f2f_enabled = (bool) get_option('qilingshop_alipay_f2fpay');
-                            if ($alipay_enabled && $alipay_f2f_enabled):
+                            $alipay_h5_enabled = (bool) get_option('qilingshop_alipay_h5', false);
+                            $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+
+                            if ($alipay_enabled):
+                                if ($is_mobile && $alipay_h5_enabled):
                             ?>
+                            <label class="qls-payment-option">
+                                <input type="radio" name="vip_payment_method" value="alipay">
+                                <span class="qls-payment-label">
+                                    <img src="<?php echo QILINGSHOP_URL; ?>static/img/zfb.png" class="qls-payment-icon" style="width:24px;height:24px;">
+                                    <?php _e('支付宝', 'qilingshop'); ?>
+                                </span>
+                            </label>
+                            <?php elseif ($alipay_f2f_enabled): ?>
                             <label class="qls-payment-option">
                                 <input type="radio" name="vip_payment_method" value="alipay_qr">
                                 <span class="qls-payment-label">
@@ -369,7 +381,7 @@ $points_name = qilingshop_get_points_name();
                                     <?php _e('支付宝网页', 'qilingshop'); ?>
                                 </span>
                             </label>
-                            <?php elseif ($alipay_enabled): ?>
+                            <?php else: ?>
                             <label class="qls-payment-option">
                                 <input type="radio" name="vip_payment_method" value="alipay">
                                 <span class="qls-payment-label">
@@ -377,7 +389,7 @@ $points_name = qilingshop_get_points_name();
                                     <?php _e('支付宝', 'qilingshop'); ?>
                                 </span>
                             </label>
-                            <?php endif; ?>
+                            <?php endif; endif; ?>
                             
                             <!-- 微信支付 -->
                             <?php if (get_option('qilingshop_wechat_enabled')): ?>

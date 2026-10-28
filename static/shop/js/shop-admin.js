@@ -852,7 +852,7 @@
                     // Update Input
                     $container.find('input[type="text"], input[type="hidden"]').val(url).trigger('change');
                     
-                    // Update Preview if exists (Category page)
+                    // 更新图片预览
                     var $preview = $container.find('.qls-media-preview');
                     if ($preview.length) {
                         $preview.html('<img src="' + url + '" alt="" style="max-width:100%; height:auto;">');

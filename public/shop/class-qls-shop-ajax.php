@@ -364,14 +364,17 @@ class QLS_Shop_Ajax {
         }
 
         $gateway = sanitize_key((string) ($order->payment_method ?? ''));
+        $is_mobile = function_exists('qilingshop_is_mobile') ? qilingshop_is_mobile() : (function_exists('wp_is_mobile') && wp_is_mobile());
+        $alipay_h5 = (bool) get_option('qilingshop_alipay_h5', false);
 
         // 扫码支付：直接进入插件扫码页，避免中间链路导致仅下单不拉起支付
         if ($gateway === 'alipay_qr') {
+            $method = ($is_mobile && $alipay_h5) ? 'wap' : 'f2f';
             return [
                 'success' => true,
                 'payment_url' => esc_url_raw(qilingshop_get_payment_entry_url('alipay', [
                     'order'  => (string) $order->order_no,
-                    'method' => 'f2f',
+                    'method' => $method,
                 ])),
                 'message' => '',
             ];
@@ -389,7 +392,7 @@ class QLS_Shop_Ajax {
         $extra = [];
 
         if ($gateway === 'alipay') {
-            $extra['method'] = 'page';
+            $extra['method'] = ($is_mobile && $alipay_h5) ? 'wap' : 'page';
         }
 
         $subject = get_option('qilingshop_fixed_order_title');

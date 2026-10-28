@@ -17,10 +17,10 @@ class QLS_Module_Product_List extends QLS_Module_Base {
     public function get_defaults() {
         return [
             // Data Source
-            'source'        => 'latest', // latest, hot, category, tags, ids
+            'source'        => 'latest', // 数据源类型
             'source_value'  => '',       // ID, slug, or comma-separated list
             'limit'         => 8,
-            'orderby'       => '',       // date, sales_count, price
+            'orderby'       => '',       // 排序方式
             'order'         => 'DESC',
             
             // Layout
@@ -199,19 +199,19 @@ class QLS_Module_Product_List extends QLS_Module_Base {
     }
 
     protected function render_content($atts) {
-        // 1. Prepare Query Arguments
+        // 1. 构建查询参数
         $args = [
             'status' => 1,
             'limit'  => intval($atts['limit']),
             'order'  => $atts['order'],
         ];
 
-        // Handle Source logic
+        // 根据数据源类型构建筛选
         switch ($atts['source']) {
             case 'hot':
                 $args['is_hot'] = 1;
                 // $args['orderby'] = 'sales_count'; 
-                // Hot is improved by also sorting by sales
+                // 热门商品结合销量排序
                 $args['orderby'] = 'sales_count'; 
                 break;
             case 'sales': // 按销量
@@ -236,31 +236,31 @@ class QLS_Module_Product_List extends QLS_Module_Base {
                 break;
             case 'latest':
             default:
-                $args['orderby'] = $atts['orderby'] ?: 'id'; // default by ID (newest)
+                $args['orderby'] = $atts['orderby'] ?: 'id'; // 默认按 ID 降序
                 break;
         }
 
-        // Fetch Products
+        // 查询商品数据
         $products = qls_product()->get_list($args);
 
         if (empty($products)) {
             return;
         }
 
-        // 2. Prepare Wrapper Classes
+        // 2. 构建外层容器类名
         $wrapper_classes = $this->get_class_names('qls-module-product-list', [
             'layout' => $atts['layout'],
             'cols'   => $atts['columns'],
             'style'  => $atts['style']
         ]);
         
-        // Add styling classes
+        // 添加样式类名
         $card_style = $atts['card_style'] ?? 'default';
         $hover_effect = $atts['hover_effect'] ?? 'scale';
         $title_style = $atts['title_style'] ?? 'default';
         $wrapper_classes .= " card-{$card_style} hover-{$hover_effect} title-{$title_style}";
         
-        // Inline styles
+        // 行内样式
         $inline_styles = [];
         if (!empty($atts['bg_color'])) {
             $inline_styles[] = "background-color: " . esc_attr($atts['bg_color']);
@@ -299,10 +299,10 @@ class QLS_Module_Product_List extends QLS_Module_Base {
         
         $more_url = '';
         if ($atts['view_more'] === 'auto') {
-            // New: Point to the specialized "All Products" page
+            // 跳转至全部商品页
             $all_products_url = qls_shop_public()->get_page_url('all_products');
             
-            // 兜底 to shop home if not created yet (though it should be)
+            // 兜底返回商城首页
             if (empty($all_products_url)) {
                  $all_products_url = qls_shop_public()->get_shop_url() . '?view=products';
             }
@@ -310,13 +310,13 @@ class QLS_Module_Product_List extends QLS_Module_Base {
             $more_url = $all_products_url;
             
             if ($atts['source'] === 'category' && !empty($atts['source_value'])) {
-                // Get slug from ID if possible
+                // 获取分类别名
                  $cat = qls_category()->get($atts['source_value']);
                  if ($cat) {
                      // /all-products/category/slug/
                      $more_url = untrailingslashit($all_products_url) . '/category/' . $cat->slug . '/';
                  } else {
-                     // 兜底 if no cat obj found (rare)
+                     // 分类未找到时的兜底处理
                      $more_url = add_query_arg('category', $atts['source_value'], $all_products_url);
                  }
                  
@@ -358,7 +358,7 @@ class QLS_Module_Product_List extends QLS_Module_Base {
     }
 
     /**
-     * Render Single Product Item
+     * 渲染单个商品卡片
      */
     private function render_product_item($product, $atts) {
         $link = qls_shop_public()->get_product_url($product);

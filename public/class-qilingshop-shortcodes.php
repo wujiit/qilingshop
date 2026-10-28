@@ -220,7 +220,7 @@ class QilingShop_Shortcodes {
                 document.getElementById('points-bonus').textContent = Math.floor(bonusPoints);
                 document.getElementById('points-total').textContent = Math.floor(totalPoints);
                 
-                // Also update old points-preview for compatibility
+                // 兼容更新旧版积分预览容器
                 var oldPreview = document.getElementById('points-preview');
                 if (oldPreview) oldPreview.textContent = Math.floor(totalPoints);
                 
@@ -228,7 +228,7 @@ class QilingShop_Shortcodes {
                     document.getElementById('points-bonus-text').style.display = 'inline';
                     document.getElementById('points-total-wrap').style.display = 'inline';
                     
-                    // Highlight matching rule
+                    // 高亮命中规则
                     document.querySelectorAll('.bonus-rule-item').forEach(function(item) {
                         item.classList.remove('active');
                         var min = parseFloat(item.dataset.min);

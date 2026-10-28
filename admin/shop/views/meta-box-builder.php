@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
                     checkEmpty();
                     idx++;
                     
-                    // Re-init sortables on new elements
+                    // 重新初始化拖拽排序
                     if($.fn.sortable) {
                         $('.qls-dsm-repeater-list').sortable({
                             axis: 'y',
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
 
     // 切换模块
     $(document).on('click', '.qls-dsm-item-header', function(e){
-        // Prevent toggling if clicking remove button
+        // 点击删除按钮时阻止折叠切换
         if($(e.target).closest('.qls-dsm-remove').length) return;
         
         // 切换状态类
@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
     // 移除模块
     $(document).on('click', '.qls-dsm-remove', function(e){
         e.preventDefault();
-        e.stopPropagation(); // Stop bubbling to header click
+        e.stopPropagation(); // 阻止事件冒泡
         if(confirm('<?php _e('确定删除此模块吗？', 'qilingshop'); ?>')){
             $(this).closest('.qls-dsm-item').remove();
             checkEmpty();
@@ -151,13 +151,13 @@ jQuery(document).ready(function($){
         e.preventDefault();
         var $btn = $(this);
         var $list = $btn.siblings('.qls-dsm-repeater-list');
-        var fields = $btn.data('fields'); // JSON object
-        var namePrefix = $btn.data('name-prefix'); // e.g. qls_modules[0][settings][slides]
+        var fields = $btn.data('fields'); // 字段配置
+        var namePrefix = $btn.data('name-prefix'); // 字段前缀
         
-        // Calculate index
+        // 计算当前索引
         var index = $list.children('.qls-dsm-repeater-item').length;
         
-        // Build HTML
+        // 构建 HTML
         var html = '<div class="qls-dsm-repeater-item"><span class="qls-dsm-repeater-remove dashicons dashicons-no-alt"></span>';
         
         $.each(fields, function(key, field){

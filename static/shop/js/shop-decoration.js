@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
             });
         },
 
-        // Sync the internal layout array order with DOM order
+        // 同步内部布局数据顺序与 DOM 节点顺序
         // 接收新模块时已写入数据，这里只同步排序。
         syncLayoutFromDOM: function () {
             const newLayout = [];
