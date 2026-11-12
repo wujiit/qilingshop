@@ -3,7 +3,7 @@
  * Plugin Name: 启灵商城
  * Plugin URI: https://www.jingxialai.com
  * Description: 启灵主题商城插件，付费资源、vip会员、实物商城等功能。
- * Version: 2.2.6
+ * Version: 2.2.7
  * Author: Summer
  * Author URI: https://www.jingxialai.com
  * Text Domain: qilingshop
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 /**
  * 插件版本号
  */
-define('QILINGSHOP_VERSION', '2.2.6');
+define('QILINGSHOP_VERSION', '2.2.7');
 
 /**
  * 插件目录路径

@@ -61,6 +61,8 @@ class QLS_Shop_Ajax {
         add_action('wp_ajax_qls_save_address', [$this, 'save_address']);
         add_action('wp_ajax_qls_get_addresses', [$this, 'get_addresses']);
         add_action('wp_ajax_qls_delete_address', [$this, 'delete_address']);
+        add_action('wp_ajax_qls_parse_address', [$this, 'parse_address']);
+        add_action('wp_ajax_nopriv_qls_parse_address', [$this, 'parse_address']);
 
         // 获取SKU信息
         add_action('wp_ajax_qls_get_sku', [$this, 'get_sku']);
@@ -917,6 +919,108 @@ class QLS_Shop_Ajax {
         }
 
         wp_send_json_success(['message' => __('删除成功', 'qilingshop')]);
+    }
+
+    /**
+     * 智能解析收货地址（调用启灵主题对接的灵简 API）
+     */
+    public function parse_address() {
+        // 限频与安全防护：单 IP 每分钟最多 20 次
+        $this->guard_public_read_request('parse_address', 20, 60);
+
+        // 功能开关检查：默认关闭，需在商城设置中开启
+        if (!get_option('qls_shop_address_parse_enabled', 0)) {
+            wp_send_json_error(['message' => __('收货地址智能识别功能未开启', 'qilingshop')]);
+        }
+
+        $text = isset($_POST['text']) ? wp_unslash($_POST['text']) : '';
+        $text = is_scalar($text) ? sanitize_textarea_field((string) $text) : '';
+        $text = trim($text);
+
+        // 字符数预检
+        $char_len = mb_strlen($text, 'UTF-8');
+        if ($char_len < 5) {
+            wp_send_json_error(['message' => __('请提供更完整的地址文本进行识别', 'qilingshop')]);
+        }
+        if ($char_len > 300) {
+            $text = mb_substr($text, 0, 300, 'UTF-8');
+        }
+
+        // 检查本地 Transient 缓存（避免重复请求和消耗第三方额度）
+        $cache_key = 'qls_addr_parse_' . md5($text);
+        $cached = get_transient($cache_key);
+        if (is_array($cached) && !empty($cached['detail'])) {
+            wp_send_json_success($cached);
+        }
+
+        // 获取灵简 API Key（优先读取启灵主题配置，回退读取数据库选项）
+        $api_key = '';
+        if (function_exists('developer_starter_get_option')) {
+            $api_key = (string) developer_starter_get_option('jingxialai_ip_api_key');
+        }
+        if (empty($api_key)) {
+            $theme_options = get_option('developer_starter_options', []);
+            if (is_array($theme_options) && !empty($theme_options['jingxialai_ip_api_key'])) {
+                $api_key = (string) $theme_options['jingxialai_ip_api_key'];
+            }
+        }
+        if (empty($api_key)) {
+            $api_key = (string) get_option('qls_address_parse_api_key', '');
+        }
+
+        if (empty($api_key)) {
+            wp_send_json_error(['message' => __('未配置灵简 API Key，请在主题高级设置中配置或手动输入', 'qilingshop')]);
+        }
+
+        // 发起第三方 API 请求
+        $api_url = 'https://api.jingxialai.com/api/address/parse';
+        $response = wp_remote_post($api_url, [
+            'timeout' => 5,
+            'headers' => [
+                'X-API-Key'    => $api_key,
+                'Content-Type' => 'application/json',
+            ],
+            'body'    => wp_json_encode(['text' => $text]),
+        ]);
+
+        if (is_wp_error($response)) {
+            wp_send_json_error(['message' => __('地址识别请求超时，请手动填写', 'qilingshop')]);
+        }
+
+        $status_code = wp_remote_retrieve_response_code($response);
+        $raw_body    = wp_remote_retrieve_body($response);
+        $result      = json_decode($raw_body, true);
+
+        if ($status_code !== 200 || !is_array($result)) {
+            $err_msg = !empty($result['msg']) ? sanitize_text_field((string) $result['msg']) : __('地址识别服务响应异常，请手动填写', 'qilingshop');
+            wp_send_json_error(['message' => $err_msg]);
+        }
+
+        if (isset($result['code']) && (int) $result['code'] !== 200) {
+            $err_msg = !empty($result['msg']) ? sanitize_text_field((string) $result['msg']) : __('未能成功解析该地址，请手动填写', 'qilingshop');
+            wp_send_json_error(['message' => $err_msg]);
+        }
+
+        $data = isset($result['data']) && is_array($result['data']) ? $result['data'] : [];
+        $parsed = [
+            'name'     => sanitize_text_field((string) ($data['name'] ?? '')),
+            'mobile'   => sanitize_text_field((string) ($data['mobile'] ?? '')),
+            'postcode' => sanitize_text_field((string) ($data['postcode'] ?? '')),
+            'province' => sanitize_text_field((string) ($data['province'] ?? '')),
+            'city'     => sanitize_text_field((string) ($data['city'] ?? '')),
+            'district' => sanitize_text_field((string) ($data['district'] ?? '')),
+            'detail'   => sanitize_text_field((string) ($data['detail'] ?? '')),
+        ];
+
+        // 如果详细地址为空，尝试用省市区拼接
+        if (empty($parsed['detail'])) {
+            $parsed['detail'] = trim($parsed['province'] . ' ' . $parsed['city'] . ' ' . $parsed['district']);
+        }
+
+        // 缓存 7 天
+        set_transient($cache_key, $parsed, DAY_IN_SECONDS * 7);
+
+        wp_send_json_success($parsed);
     }
 
     /**

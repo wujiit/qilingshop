@@ -419,6 +419,27 @@ if ($view == 'groups') {
                                 <div class="qls-modal-content">
                                     <h3><?php _e('编辑收货地址', 'qilingshop'); ?></h3>
                                     <form id="qls-center-address-form">
+                                        <?php if (get_option('qls_shop_address_parse_enabled', 0)): ?>
+                                        <!-- 智能地址识别 -->
+                                        <div class="qls-smart-address-card qls-smart-address-modal-card">
+                                            <div class="qls-smart-address-header">
+                                                <span class="qls-smart-address-badge">
+                                                    <svg class="qls-smart-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                    <?php _e('智能识别', 'qilingshop'); ?>
+                                                </span>
+                                                <span class="qls-smart-address-desc"><?php _e('粘贴整段快递地址，自动识别姓名、手机号和地址', 'qilingshop'); ?></span>
+                                            </div>
+                                            <div class="qls-smart-address-body">
+                                                <textarea class="qls-smart-address-input" id="qls-center-smart-address-text" rows="2" placeholder="<?php esc_attr_e('例如：张三 13800138000 浙江省杭州市滨江区网商路699号', 'qilingshop'); ?>"></textarea>
+                                                <div class="qls-smart-address-actions">
+                                                    <button type="button" class="qls-btn qls-btn-sm qls-btn-primary qls-smart-parse-btn" id="qls-center-btn-parse-address">
+                                                        <span class="qls-btn-label"><?php _e('一键识别填入', 'qilingshop'); ?></span>
+                                                    </button>
+                                                    <span class="qls-smart-address-msg" id="qls-center-smart-address-msg" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php endif; ?>
                                         <input type="hidden" name="address_id" value="">
                                         <div class="form-row two-col">
                                             <div class="form-group">

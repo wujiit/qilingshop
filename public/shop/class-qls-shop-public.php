@@ -1498,6 +1498,12 @@ class QLS_Shop_Public {
                 'confirm_delete_invoice_title' => __('确定删除该发票信息吗？', 'qilingshop'),
                 'enter_invoice_title' => __('请填写发票抬头', 'qilingshop'),
                 'enter_invoice_tax_no' => __('企业抬头请填写税号', 'qilingshop'),
+                'address_parse_btn' => __('一键识别填入', 'qilingshop'),
+                'address_parsing'   => __('识别中...', 'qilingshop'),
+                'address_parse_success' => __('地址已成功识别并填入', 'qilingshop'),
+                'address_parse_invalid' => __('请粘贴包含姓名、电话和地址的有效文本', 'qilingshop'),
+                'address_parse_timeout' => __('识别超时，请手动填写', 'qilingshop'),
+                'address_parse_network_error' => __('网络请求失败，请稍后重试或手动填写', 'qilingshop'),
             ],
         ]);
     }

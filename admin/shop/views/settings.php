@@ -304,6 +304,19 @@ $notice = isset($notice_map[$notice_key]) ? $notice_map[$notice_key] : null;
                     </td>
                 </tr>
                 <tr>
+                    <th><label><?php _e('收货地址智能识别', 'qilingshop'); ?></label></th>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="address_parse_enabled" value="1" <?php checked((bool) get_option('qls_shop_address_parse_enabled', 0)); ?>>
+                            <?php _e('开启收货地址智能识别（快递文本一键解析）', 'qilingshop'); ?>
+                        </label>
+                        <p class="description">
+                            <?php _e('默认关闭。开启后，前台结账页及用户中心地址管理中将展示“智能识别”输入框，支持用户一键粘贴整段快递文本并自动识别填入收件人、电话和详细地址。', 'qilingshop'); ?><br>
+                            <?php _e('该功能直接复用启灵主题高级设置中填写的“灵简IP API Key”，不消耗其他业务额度。', 'qilingshop'); ?>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
                     <th><label for="group_cron_key"><?php _e('团购兼容 Key（旧监控）', 'qilingshop'); ?></label></th>
                     <td>
                         <?php $group_cron_key = get_option('qls_group_cron_key', ''); ?>

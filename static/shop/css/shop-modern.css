@@ -5893,3 +5893,167 @@ body.qls-shop-page .qls-shop-content-wrapper {
         font-size: 12px;
     }
 }
+
+/* =========================================
+   Smart Address Recognition Box (智能地址识别)
+   ========================================= */
+.qls-smart-address-card {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: var(--qls-radius-md, 8px);
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+.qls-smart-address-card:hover,
+.qls-smart-address-card:focus-within {
+    background: #ffffff;
+    border-color: var(--qls-primary, #3b82f6);
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.08);
+}
+
+.qls-smart-address-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.qls-smart-address-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--qls-primary, #3b82f6);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.qls-smart-address-badge .qls-smart-icon {
+    display: block;
+    stroke: currentColor;
+}
+
+.qls-smart-address-desc {
+    font-size: 12px;
+    color: var(--qls-text-secondary, #64748b);
+    line-height: 1.4;
+}
+
+.qls-smart-address-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qls-smart-address-input {
+    width: 100% !important;
+    border: 1px solid var(--qls-border-color, #e2e8f0) !important;
+    border-radius: var(--qls-radius-sm, 4px) !important;
+    padding: 9px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    background: #ffffff !important;
+    color: var(--qls-text-main, #1e293b) !important;
+    resize: vertical !important;
+    min-height: 56px !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.qls-smart-address-input:focus {
+    outline: none !important;
+    border-color: var(--qls-primary, #3b82f6) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+.qls-smart-address-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.qls-smart-parse-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 7px 16px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    border-radius: var(--qls-radius-sm, 4px) !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+    transition: all 0.2s ease !important;
+    line-height: 1.4 !important;
+}
+
+.qls-smart-parse-btn:disabled {
+    opacity: 0.65 !important;
+    cursor: not-allowed !important;
+}
+
+.qls-smart-address-msg {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.qls-smart-address-msg.error {
+    color: #ef4444;
+}
+
+.qls-smart-address-msg.success {
+    color: #10b981;
+    font-weight: 500;
+}
+
+/* 高亮填充动画 */
+.qls-highlight-field {
+    animation: qlsFieldPulse 1.5s ease-out;
+}
+
+@keyframes qlsFieldPulse {
+    0% {
+        background-color: rgba(59, 130, 246, 0.15) !important;
+        border-color: var(--qls-primary, #3b82f6) !important;
+    }
+    100% {
+        background-color: transparent !important;
+    }
+}
+
+/* 暗黑模式适配 */
+body.dark .qls-smart-address-card,
+.mode-dark .qls-smart-address-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark .qls-smart-address-card:hover,
+.mode-dark .qls-smart-address-card:hover,
+body.dark .qls-smart-address-card:focus-within,
+.mode-dark .qls-smart-address-card:focus-within {
+    background: #1e293b;
+    border-color: var(--qls-primary, #3b82f6);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .qls-smart-address-desc,
+.mode-dark .qls-smart-address-desc {
+    color: #94a3b8;
+}
+
+body.dark .qls-smart-address-input,
+.mode-dark .qls-smart-address-input {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+}

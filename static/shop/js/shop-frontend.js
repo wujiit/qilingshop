@@ -28,6 +28,7 @@
             this.updateCartCount();
             this.initGroupStock();
             this.initAssistCountdown();
+            this.initSmartAddressParser();
         },
 
         bindEvents: function () {
@@ -406,6 +407,8 @@
             $('#qls-add-address-center').on('click', function () {
                 $('#qls-center-address-form')[0].reset();
                 $('#qls-center-address-form input[name="address_id"]').val('');
+                $('#qls-center-smart-address-text').val('');
+                $('#qls-center-smart-address-msg').hide();
                 $('#qls-address-modal').fadeIn();
             });
 
@@ -1936,6 +1939,155 @@
             }).fail(function () {
                 self.showToast(text('network_error', '网络异常，请稍后重试。'), 'error');
                 $btn.prop('disabled', false).text(origin);
+            });
+        },
+
+        // 智能地址识别初始化
+        initSmartAddressParser: function () {
+            var self = this;
+
+            // 1. 结账页 - 点击一键识别
+            $(document).on('click', '#qls-btn-parse-address', function (e) {
+                e.preventDefault();
+                var textVal = $('#qls-smart-address-text').val();
+                var $btn = $(this);
+                var $msg = $('#qls-smart-address-msg');
+
+                self.parseAddress(textVal, $btn, $msg, function (data) {
+                    if (data.name) {
+                        $('#receiver_name').val(data.name).addClass('qls-highlight-field');
+                    }
+                    if (data.mobile) {
+                        $('#receiver_phone').val(data.mobile).addClass('qls-highlight-field');
+                    }
+                    if (data.detail) {
+                        $('#receiver_address').val(data.detail).addClass('qls-highlight-field');
+                    }
+                    if (data.province && $('#receiver_province').length) {
+                        $('#receiver_province').val(data.province).addClass('qls-highlight-field');
+                    }
+                    if (data.city && $('#receiver_city').length) {
+                        $('#receiver_city').val(data.city).addClass('qls-highlight-field');
+                    }
+                    if (data.district && $('#receiver_district').length) {
+                        $('#receiver_district').val(data.district).addClass('qls-highlight-field');
+                    }
+
+                    setTimeout(function () {
+                        $('.qls-highlight-field').removeClass('qls-highlight-field');
+                    }, 1500);
+
+                    self.showToast('地址已成功识别并填入', 'success');
+                });
+            });
+
+            // 2. 个人中心 - 地址弹窗一键识别
+            $(document).on('click', '#qls-center-btn-parse-address', function (e) {
+                e.preventDefault();
+                var textVal = $('#qls-center-smart-address-text').val();
+                var $btn = $(this);
+                var $msg = $('#qls-center-smart-address-msg');
+                var $form = $('#qls-center-address-form');
+
+                self.parseAddress(textVal, $btn, $msg, function (data) {
+                    if (data.name) {
+                        $form.find('input[name="name"]').val(data.name).addClass('qls-highlight-field');
+                    }
+                    if (data.mobile) {
+                        $form.find('input[name="phone"]').val(data.mobile).addClass('qls-highlight-field');
+                    }
+                    if (data.detail) {
+                        $form.find('textarea[name="address"]').val(data.detail).addClass('qls-highlight-field');
+                    }
+                    if (data.province && $form.find('input[name="province"]').length) {
+                        $form.find('input[name="province"]').val(data.province).addClass('qls-highlight-field');
+                    }
+                    if (data.city && $form.find('input[name="city"]').length) {
+                        $form.find('input[name="city"]').val(data.city).addClass('qls-highlight-field');
+                    }
+                    if (data.district && $form.find('input[name="district"]').length) {
+                        $form.find('input[name="district"]').val(data.district).addClass('qls-highlight-field');
+                    }
+
+                    setTimeout(function () {
+                        $('.qls-highlight-field').removeClass('qls-highlight-field');
+                    }, 1500);
+
+                    self.showToast(text('address_parse_success', '地址已成功识别并填入'), 'success');
+                });
+            });
+        },
+
+        // 请求后端地址解析接口（防重、防抖与友好状态展示）
+        parseAddress: function (textVal, $btn, $msg, callback) {
+            var self = this;
+            var cleanText = $.trim(textVal);
+
+            if (!cleanText || cleanText.length < 5) {
+                var invalidMsg = text('address_parse_invalid', '请粘贴包含姓名、电话和地址的有效文本');
+                if ($msg && $msg.length) {
+                    $msg.text(invalidMsg).removeClass('success').addClass('error').show();
+                } else {
+                    self.showToast(invalidMsg, 'error');
+                }
+                return;
+            }
+
+            var $label = $btn.find('.qls-btn-label');
+            var originText = $label.length ? $label.text() : $btn.text();
+            var parsingText = text('address_parsing', '识别中...');
+            $btn.prop('disabled', true);
+            if ($label.length) {
+                $label.text(parsingText);
+            } else {
+                $btn.text(parsingText);
+            }
+
+            if ($msg && $msg.length) {
+                $msg.hide();
+            }
+
+            $.ajax({
+                url: qlsShop.ajaxUrl,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: 'qls_parse_address',
+                    text: cleanText,
+                    nonce: qlsShop.nonce
+                },
+                timeout: 8000
+            }).done(function (res) {
+                if (res && res.success && res.data) {
+                    if (typeof callback === 'function') {
+                        callback(res.data);
+                    }
+                    if ($msg && $msg.length) {
+                        $msg.text(text('success', '识别成功')).removeClass('error').addClass('success').show();
+                        setTimeout(function () { $msg.fadeOut(); }, 3000);
+                    }
+                } else {
+                    var errMsg = (res && res.data && res.data.message) ? res.data.message : text('error', '未能识别，请手动填写');
+                    if ($msg && $msg.length) {
+                        $msg.text(errMsg).removeClass('success').addClass('error').show();
+                    } else {
+                        self.showToast(errMsg, 'error');
+                    }
+                }
+            }).fail(function (xhr, status) {
+                var errMsg = status === 'timeout' ? text('address_parse_timeout', '识别超时，请手动填写') : text('address_parse_network_error', '网络请求失败，请稍后重试或手动填写');
+                if ($msg && $msg.length) {
+                    $msg.text(errMsg).removeClass('success').addClass('error').show();
+                } else {
+                    self.showToast(errMsg, 'error');
+                }
+            }).always(function () {
+                $btn.prop('disabled', false);
+                if ($label.length) {
+                    $label.text(originText);
+                } else {
+                    $btn.text(originText);
+                }
             });
         }
     };

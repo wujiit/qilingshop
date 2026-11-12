@@ -5650,6 +5650,7 @@ class QLS_Admin_Shop {
             'qls_shop_low_stock_threshold'      => intval($data['low_stock_threshold'] ?? 5),
             'qls_shop_points_enabled'           => !empty($data['points_enabled']),
             'qls_shop_points_rate'              => intval($data['points_rate'] ?? 10),
+            'qls_shop_address_parse_enabled'    => !empty($data['address_parse_enabled']) ? 1 : 0,
             'qls_group_cron_key'                => sanitize_text_field($data['group_cron_key'] ?? ''),
         ];
 
