@@ -5,7 +5,8 @@ msgstr ""
 "Project-Id-Version: QilingShop 2.2.6\n"
 "Report-Msgid-Bugs-To: https://qiling.dev\n"
 "POT-Creation-Date: 2026-11-12 01:50:00+0800\n"
-"PO-Revision-Date: 2026-11-12 02:08+0800\n"
+"PO-Revision-Date: 2026-11-20 15:10:43+0800\n"
+"\n"
 "Last-Translator: \n"
 "Language-Team: Qiling Dev\n"
 "Language: en_US\n"
@@ -575,7 +576,7 @@ msgid "第 %d 行：订单号、物流公司和快递单号都不能为空。"
 msgstr "Line %d: order number, shipping company, and tracking number cannot be empty."
 
 msgid "第 %d 行：格式不完整，请按“订单号,物流公司,快递单号”填写。"
-msgstr "Row %d: incomplete format. Please use \"order number, carrier, tracking number\"."
+msgstr "Line %d: Incomplete format. Please fill in as 'Order No, Logistics Company, Tracking No'."
 
 msgid "点击下载"
 msgstr "Click to download"
@@ -5301,7 +5302,7 @@ msgid "第 %1$d 行：订单 %2$s 不需要物流发货。"
 msgstr "Row %1$d: order %2$s does not require logistics shipment."
 
 msgid "第 %1$d 行：订单 %2$s 当前为“%3$s”，不是待发货状态。"
-msgstr "Row %1$d: order %2$s is currently \"%3$s\", not pending shipment."
+msgstr "Line %1$d: Order %2$s is currently '%3$s', not in awaiting shipment status."
 
 msgid "第 %1$d 行：订单 %2$s 发货失败，%3$s"
 msgstr "Row %1$d: failed to ship order %2$s, %3$s"
@@ -5808,7 +5809,7 @@ msgid "公司名称"
 msgstr "Company Name"
 
 msgid "恭喜！您参与的「%s」拼团已成功，商家即将安排发货。"
-msgstr "Congratulations! The group buying order \"%s\" you joined has succeeded. The merchant will arrange shipment soon."
+msgstr "Congratulations! Your group buy for '%s' has succeeded, and the merchant will arrange shipment shortly."
 
 msgid "共 %d 个可下载订单"
 msgstr "%d downloadable orders in total"
@@ -6911,10 +6912,10 @@ msgid "默认收货地址"
 msgstr "Default shipping address"
 
 msgid "默认为“参加更多”"
-msgstr "Default is \"Join more\""
+msgstr "Defaults to 'Join More'"
 
 msgid "默认为“获取更多”"
-msgstr "Default is \"Get more\""
+msgstr "Defaults to 'Get More'"
 
 msgid "默认显示"
 msgstr "Default display"
@@ -6962,7 +6963,7 @@ msgid "匿名用户"
 msgstr "Anonymous user"
 
 msgid "您参与的「%s」拼团未能在规定时间内成团，已自动取消。退款金额 ¥%.2f 已退回您的可提现余额。"
-msgstr "The group buying order \"%s\" you joined did not form within the required time and has been canceled automatically. The refund amount ¥%.2f has been returned to your withdrawable balance."
+msgstr "The group buy for '%s' you joined failed to form within the time limit and has been automatically cancelled. The refund amount of ¥%.2f has been returned to your withdrawable balance."
 
 msgid "您的 VIP 将于 %s 到期，剩余 %d 天。"
 msgstr "Your VIP will expire on %s, with %d days remaining."
@@ -8750,16 +8751,16 @@ msgid "显示"
 msgstr "Show"
 
 msgid "显示“参加更多”"
-msgstr "Show \"Join more\""
+msgstr "Show 'Join More'"
 
 msgid "显示“查看更多”"
-msgstr "Show \"View more\""
+msgstr "Show 'View More'"
 
 msgid "显示“更多助力”"
-msgstr "Show \"More assists\""
+msgstr "Show 'More Assists'"
 
 msgid "显示“获取更多”"
-msgstr "Show \"Get more\""
+msgstr "Show 'Get More'"
 
 msgid "显示按钮"
 msgstr "Show Button"
@@ -10253,7 +10254,7 @@ msgid "减少排序值"
 msgstr "Decrease sort value"
 
 msgid "只会修改已设置的字段，选择“不修改”的字段会保持原样。价格和库存会应用到所选商品的全部 SKU。"
-msgstr "Only configured fields will be changed. Fields set to \"Do not change\" stay as they are. Price and stock apply to all SKUs of the selected products."
+msgstr "Only set fields will be modified; fields set to 'Do Not Modify' will remain unchanged. Price and stock will apply to all SKUs of the selected products."
 
 msgid "商品状态"
 msgstr "Product status"
@@ -10265,7 +10266,7 @@ msgid "增加排序值"
 msgstr "Increase sort value"
 
 msgid "将更新已选中的 {count} 件商品，未填写或选择“不修改”的字段会保持原样。是否继续？"
-msgstr "This will update {count} selected products. Empty fields or fields set to \"Do not change\" will stay as they are. Continue?"
+msgstr "This will update {count} selected product(s). Unfilled fields or fields set to 'Do Not Modify' will remain unchanged. Do you want to continue?"
 
 msgid "已上架 %d 件商品。"
 msgstr "Published %d products."
@@ -10337,7 +10338,7 @@ msgid "追加所选标签"
 msgstr "Add selected tags"
 
 msgid "选择“替换为所选标签”且不勾选任何标签时，会清空商品服务标签。"
-msgstr "Choosing \"Replace with selected tags\" without checking any tags will clear product service tags."
+msgstr "Selecting 'Replace with Selected Tags' without checking any tags will clear product service tags."
 
 msgid "金额或百分比"
 msgstr "Amount or percentage"
@@ -10439,7 +10440,7 @@ msgid "请选择卡密商品和 SKU"
 msgstr "Select a card product and SKU"
 
 msgid "还没有可管理的卡密商品。请先创建虚拟商品，并将交付类型设为“卡号卡密”。"
-msgstr "There are no manageable card products yet. Create a virtual product first and set its delivery type to \"Card number and secret\"."
+msgstr "No card inventory products to manage yet. Please create a virtual product first and set its delivery type to 'Card & Password'."
 
 msgid "适合已有卡号卡密清单的场景，同一商品 SKU 下重复卡号会自动跳过。"
 msgstr "Use this when you already have a card list. Duplicate card numbers under the same product SKU will be skipped."
@@ -10455,13 +10456,13 @@ msgid ""
 "卡号\n"
 "卡号----卡密\n"
 "卡号,卡密\n"
-"卡号\t卡密"
+"卡号	卡密"
 msgstr ""
 "One per line. Supported formats:\n"
 "Card number\n"
 "Card number----Secret\n"
 "Card number,Secret\n"
-"Card number\tSecret"
+"Card number	Secret"
 
 msgid "买家已退货"
 msgstr "Buyer returned item(s)"
@@ -10978,56 +10979,56 @@ msgstr "VAT special invoice"
 
 #: admin/shop/class-qls-admin-shop.php:959
 msgid "— 售后工单"
-msgstr ""
+msgstr "— After-sales Tickets"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:57
 msgid "“侧边栏叠加轮播”模式：轮播全宽显示，侧边栏悬浮在内容区左侧。"
-msgstr ""
+msgstr "'Sidebar Overlay Carousel' mode: The carousel displays at full width with the sidebar floating on the left of the content area."
 
 #: includes/class-qilingshop-notifier.php:1468
 msgid "[%s] 您的售后工单有新回复"
-msgstr ""
+msgstr "[%s] New reply to your after-sales ticket"
 
 #: includes/class-qilingshop-notifier.php:1106
 msgid "[%s] 商城订单支付成功"
-msgstr ""
+msgstr "[%s] Shop order payment successful"
 
 #: includes/class-qilingshop-notifier.php:1413
 msgid "[%s] 售后工单新回复"
-msgstr ""
+msgstr "[%s] New reply on after-sales ticket"
 
 #: includes/class-qilingshop-notifier.php:1384
 msgid "[%s] 新售后工单提醒"
-msgstr ""
+msgstr "[%s] New after-sales ticket reminder"
 
 #: includes/class-qilingshop-notifier.php:188
 msgid "[%s] 资源购买成功"
-msgstr ""
+msgstr "[%s] Resource purchase successful"
 
 #: admin/shop/views/tickets.php:310
 msgid "&laquo;"
-msgstr ""
+msgstr "&laquo;"
 
 #: admin/shop/views/tickets.php:311
 msgid "&raquo;"
-msgstr ""
+msgstr "&raquo;"
 
 #: templates/account/vip.php:271
 msgid "%1$s - %2$s %3$s"
-msgstr ""
+msgstr "%1$s - %2$s %3$s"
 
 #: templates/shop/virtual-home/compact.php:55
 #: templates/shop/virtual-home/grid.php:82
 msgid "%d 人付款"
-msgstr ""
+msgstr "%d people paid"
 
 #: includes/class-qilingshop-points.php:1208
 msgid "%s 已经打过卡，无需补签"
-msgstr ""
+msgstr "%s has already checked in, no need to retro-check in"
 
 #: templates/account/vip.php:308
 msgid "+%1$s %2$s"
-msgstr ""
+msgstr "+%1$s %2$s"
 
 #: admin/class-qilingshop-admin-growth.php:728
 #: admin/class-qilingshop-admin-growth.php:729
@@ -11037,28 +11038,28 @@ msgstr "0 means unlimited"
 
 #: admin/class-qilingshop-admin-statistics.php:501
 msgid "180 天"
-msgstr ""
+msgstr "180 Days"
 
 #: admin/class-qilingshop-admin-statistics.php:499
 msgid "30 天"
-msgstr ""
+msgstr "30 Days"
 
 #: admin/class-qilingshop-admin-statistics.php:502
 msgid "365 天"
-msgstr ""
+msgstr "365 Days"
 
 #: admin/class-qilingshop-admin-statistics.php:500
 msgid "90 天"
-msgstr ""
+msgstr "90 Days"
 
 #: admin/shop/views/settings.php:26
 msgid "安全校验失败，请刷新后重试"
-msgstr ""
+msgstr "Security verification failed. Please refresh and try again."
 
 #: admin/shop/class-qls-admin-shop.php:3545
 #: public/shop/class-qls-shop-shortcodes.php:568
 msgid "安全验证失败，请刷新后重试。"
-msgstr ""
+msgstr "Security verification failed. Please refresh and try again."
 
 #: admin/class-qilingshop-admin-growth.php:724
 msgid "按金额比例"
@@ -11066,40 +11067,40 @@ msgstr "Proportional to Amount"
 
 #: admin/shop/views/settings.php:1146
 msgid "按快递鸟接口定义填写，默认 1。"
-msgstr ""
+msgstr "Fill in according to Kuaidiniao API definition, default is 1."
 
 #: includes/class-qilingshop-payment.php:924
 msgid "把商城退款方式切到“退回可提现余额”。"
-msgstr ""
+msgstr "Switch shop refund method to 'Refund to Withdrawable Balance'."
 
 #: includes/class-qilingshop-payment.php:1056
 msgid "把商城退款方式切到“原路退回”，并把小程序支付接口版本切到 v2。"
-msgstr ""
+msgstr "Switch shop refund method to 'Original Payment Method' and set miniapp payment API version to v2."
 
 #: includes/class-qilingshop-payment.php:1119
 msgid "把商城退款方式切到“原路退回”，并把小程序支付接口版本切到 v3。"
-msgstr ""
+msgstr "Switch shop refund method to 'Original Payment Method' and set miniapp payment API version to v3."
 
 #: includes/class-qilingshop-payment.php:960
 #: includes/class-qilingshop-payment.php:1002
 msgid "把商城退款方式切到“原路退回”。"
-msgstr ""
+msgstr "Switch shop refund method to 'Original Payment Method'."
 
 #: admin/class-qilingshop-admin-growth.php:389
 msgid "绑定成长等级"
-msgstr ""
+msgstr "Bind Growth Level"
 
 #: admin/shop/views/orders-list.php:715
 msgid "包裹"
-msgstr ""
+msgstr "Package"
 
 #: templates/shop/my-orders.php:218
 msgid "包裹%d:"
-msgstr ""
+msgstr "Package %d:"
 
 #: admin/shop/views/tickets.php:142
 msgid "保存处理"
-msgstr ""
+msgstr "Save Processing"
 
 #: admin/class-qilingshop-admin-growth.php:277
 msgid "保存等级"
@@ -11107,23 +11108,23 @@ msgstr "Save Level"
 
 #: admin/shop/views/settings.php:1192
 msgid "保存电子面单模板"
-msgstr ""
+msgstr "Save Electronic Waybill Template"
 
 #: admin/shop/views/settings.php:1058
 msgid "保存电子面单配置"
-msgstr "保存电子面单 Configuration"
+msgstr "Save Electronic Waybill Configuration"
 
 #: admin/class-qilingshop-admin-growth.php:412
 msgid "保存权益"
-msgstr ""
+msgstr "Save Benefits"
 
 #: admin/shop/views/settings.php:24
 msgid "保存失败，请检查填写内容"
-msgstr ""
+msgstr "Save failed, please check your input"
 
 #: admin/class-qilingshop-admin-growth.php:247
 msgid "保留历史最高等级字段用于后续展示"
-msgstr ""
+msgstr "Retain historical highest level field for future display"
 
 #: admin/class-qilingshop-admin-payment.php:119
 msgid "保留原有“退款到可提现余额”能力，同时支持第一阶段支付宝/微信原路退款。"
@@ -11131,39 +11132,39 @@ msgstr "Retain original 'refund to withdrawable balance' ability while supportin
 
 #: admin/class-qilingshop-admin-settings.php:1744
 msgid "保留原有退款到可提现余额能力，同时支持第一阶段支付宝/微信原路退款。"
-msgstr ""
+msgstr "Retain original refund to withdrawable balance while supporting Phase 1 Alipay/WeChat refund to original payment method."
 
 #: includes/class-qilingshop-payment.php:907
 msgid "保留原有退款路径，适合不支持原路退款的历史订单或第三方渠道订单。"
-msgstr ""
+msgstr "Retain original refund path, suitable for legacy orders or third-party channel orders that do not support refund to original payment method."
 
 #: admin/class-qilingshop-admin-statistics.php:497
 msgid "保留最近"
-msgstr ""
+msgstr "Keep Recent"
 
 #: admin/class-qilingshop-admin-statistics.php:423
 msgid "被下载资源数"
-msgstr ""
+msgstr "Downloaded Resources Count"
 
 #: admin/shop/views/orders-list.php:369
 msgid "本次发货商品"
-msgstr ""
+msgstr "Items to Ship This Time"
 
 #: admin/shop/views/settings.php:1267
 msgid "必填，用于物流查询接口和后续电子面单匹配。"
-msgstr ""
+msgstr "Required, used for logistics tracking API and subsequent electronic waybill matching."
 
 #: admin/class-qilingshop-admin-settings.php:1938
 msgid "必须与启灵小程序登录获取 openid 的 AppID 一致。"
-msgstr ""
+msgstr "Must match the AppID used by Qiling Mini Program login to get openid."
 
 #: admin/class-qilingshop-admin-payment.php:234
 msgid "必须与小程序登录获取 openid 的 AppID 一致"
-msgstr ""
+msgstr "Must match the AppID used by mini program login to get openid"
 
 #: admin/class-qilingshop-admin-growth.php:262
 msgid "编辑成长等级"
-msgstr ""
+msgstr "Edit Growth Level"
 
 #: admin/class-qilingshop-admin-growth.php:704
 msgid "编辑成长规则"
@@ -11171,105 +11172,105 @@ msgstr "Edit Growth Rule"
 
 #: admin/class-qilingshop-admin-growth.php:370
 msgid "编辑等级权益"
-msgstr ""
+msgstr "Edit Level Benefits"
 
 #: admin/shop/views/settings.php:1064
 msgid "编辑电子面单模板"
-msgstr ""
+msgstr "Edit Electronic Waybill Template"
 
 #: admin/shop/views/invoices.php:169
 msgid "标记已开票"
-msgstr ""
+msgstr "Mark as Invoiced"
 
 #: includes/class-qilingshop-growth-benefits.php:479
 msgid "标签颜色"
-msgstr ""
+msgstr "Tag Color"
 
 #: includes/class-qilingshop-growth-benefits.php:485
 msgid "标识文本"
-msgstr ""
+msgstr "Identification Text"
 
 #: admin/class-qilingshop-admin-settings.php:3287
 msgid "表情符号、HTML 或 icon-vip"
-msgstr ""
+msgstr "Emoji, HTML, or icon-vip"
 
 #: admin/shop/views/invoices.php:152
 msgid "驳回："
-msgstr ""
+msgstr "Rejected: "
 
 #: admin/shop/views/invoices.php:176
 msgid "驳回申请"
-msgstr ""
+msgstr "Reject Application"
 
 #: includes/class-qilingshop-points.php:1262
 msgid "补签成功！已续上连续打卡并补发 +%s 积分"
-msgstr ""
+msgstr "Retro check-in successful! Streak restored and +%s points awarded"
 
 #: includes/class-qilingshop-points.php:1235
 msgid "补签数据写入失败，请重试"
-msgstr ""
+msgstr "Failed to write retro check-in data, please try again"
 
 #: templates/shop/my-tickets.php:180 templates/shop/my-tickets.php:183
 msgid "不关联订单"
-msgstr ""
+msgstr "Do Not Associate Order"
 
 #: includes/shop/class-qls-shop-ticket.php:1186
 msgid "不能关联不属于你的订单"
-msgstr ""
+msgstr "Cannot associate an order that does not belong to you"
 
 #: payment/class-payment-wechat.php:412
 msgid "不能为空"
-msgstr ""
+msgstr "Cannot be empty"
 
 #: includes/class-qilingshop-growth-benefits.php:528
 msgid "不绕过付费和 VIP 专属限制"
-msgstr ""
+msgstr "Do not bypass paid and VIP exclusive restrictions"
 
 #: admin/shop/views/settings.php:1223
 msgid "不限"
-msgstr ""
+msgstr "Unlimited"
 
 #: admin/shop/views/settings.php:1087
 msgid "不限公司"
-msgstr ""
+msgstr "Unlimited Companies"
 
 #: admin/shop/views/orders-list.php:203 templates/shop/my-orders.php:106
 #: templates/shop/my-orders.php:206
 msgid "部分发货"
-msgstr ""
+msgstr "Partially Shipped"
 
 #: admin/shop/views/settings.php:27
 msgid "操作无效"
-msgstr ""
+msgstr "Invalid Operation"
 
 #: admin/shop/views/invoices.php:142
 msgid "查看电子发票"
-msgstr ""
+msgstr "View Electronic Invoice"
 
 #: admin/class-qilingshop-metabox.php:363
 msgid "查看更多格式"
-msgstr ""
+msgstr "View More Formats"
 
 #: includes/class-qilingshop-notifier.php:1472
 msgid "查看工单"
-msgstr ""
+msgstr "View Ticket"
 
 #: admin/shop/class-qls-admin-shop.php:162
 msgid "查看商城数据"
-msgstr ""
+msgstr "View Shop Analytics"
 
 #: templates/shop/my-orders.php:326 templates/shop/my-orders.php:337
 #: templates/shop/my-orders.php:375
 msgid "查看物流%d"
-msgstr ""
+msgstr "View Logistics %d"
 
 #: includes/class-qilingshop-notifier.php:192
 msgid "查看资源"
-msgstr ""
+msgstr "View Resource"
 
 #: admin/class-qilingshop-admin-growth.php:490
 msgid "查询流水"
-msgstr ""
+msgstr "Query Transactions"
 
 #: public/class-qilingshop-shortcodes.php:441
 msgid "查询密码"
@@ -11277,23 +11278,23 @@ msgstr "Query Password"
 
 #: admin/shop/views/settings.php:249
 msgid "查询密码有效期"
-msgstr ""
+msgstr "Query Password Validity"
 
 #: admin/shop/views/settings.php:1278
 msgid "查询手机号"
-msgstr ""
+msgstr "Query Mobile Number"
 
 #: admin/shop/views/settings.php:89
 msgid "常规商城首页继续使用 [qls_shop] 和页面装修；发卡首页请使用 [qls_shop_virtual_home]。关闭后，专用发卡首页前台将不可访问。"
-msgstr ""
+msgstr "Regular shop home continues using [qls_shop] and page decoration; card dispatch home uses [qls_shop_virtual_home]. When closed, dedicated card dispatch home will be inaccessible."
 
 #: admin/shop/class-qls-admin-shop.php:194
 msgid "常规实物商城首页请继续使用 [qls_shop] 页面进行装修。"
-msgstr ""
+msgstr "For standard physical shop home, please continue using the [qls_shop] page for decoration."
 
 #: admin/shop/views/invoices.php:155
 msgid "撤销："
-msgstr ""
+msgstr "Revoked: "
 
 #: admin/class-qilingshop-admin-growth.php:140
 msgid "成长等级"
@@ -11309,7 +11310,7 @@ msgstr "Failed to delete growth level"
 
 #: templates/account/vip.php:255
 msgid "成长等级体系"
-msgstr ""
+msgstr "Growth Level System"
 
 #: admin/class-qilingshop-admin-growth.php:59
 msgid "成长等级已保存"
@@ -11317,7 +11318,7 @@ msgstr "Growth level saved"
 
 #: includes/class-qilingshop-notifier.php:344
 msgid "成长等级已更新"
-msgstr ""
+msgstr "Growth level updated"
 
 #: admin/class-qilingshop-admin-growth.php:66
 msgid "成长等级已删除"
@@ -11333,7 +11334,7 @@ msgstr "Growth Rules"
 
 #: includes/class-qilingshop-growth-rules.php:159
 msgid "成长规则：%s"
-msgstr ""
+msgstr "Growth Rule: %s"
 
 #: admin/class-qilingshop-admin-growth.php:79
 msgid "成长规则保存失败"
@@ -11349,7 +11350,7 @@ msgstr "Growth rule saved"
 
 #: includes/class-qilingshop-growth-benefits.php:463
 msgid "成长徽章"
-msgstr ""
+msgstr "Growth Badge"
 
 #: includes/class-qilingshop-growth.php:449
 msgid "成长记录"
@@ -11365,7 +11366,7 @@ msgstr "Failed to clear growth logs"
 
 #: includes/class-qilingshop-growth-benefits.php:295
 msgid "成长权益"
-msgstr ""
+msgstr "Growth Benefits"
 
 #: admin/class-qilingshop-admin-growth.php:70
 msgid "成长权益保存失败"
@@ -11398,19 +11399,19 @@ msgstr "Growth System"
 
 #: admin/class-qilingshop-admin-growth.php:203
 msgid "成长体系当前未启用，用户侧权益不会生效。"
-msgstr ""
+msgstr "The growth system is currently disabled. User-side benefits will not take effect."
 
 #: admin/class-qilingshop-admin-growth.php:203
 msgid "成长体系已启用，用户成长值、等级和权益正在生效。"
-msgstr ""
+msgstr "The growth system is enabled. User growth points, levels, and benefits are active."
 
 #: admin/class-qilingshop-admin-growth.php:202
 msgid "成长体系运营概览"
-msgstr ""
+msgstr "Growth System Operations Overview"
 
 #: admin/class-qilingshop-admin-growth.php:208
 msgid "成长用户"
-msgstr ""
+msgstr "Growth Users"
 
 #: admin/class-qilingshop-admin-growth.php:321
 #: includes/class-qilingshop-growth.php:46 templates/account/vip.php:93
@@ -11423,16 +11424,16 @@ msgstr "Growth Points / Coefficient"
 
 #: admin/class-qilingshop-admin-growth.php:245
 msgid "成长值名称"
-msgstr ""
+msgstr "Growth Points Name"
 
 #: admin/class-qilingshop-admin-growth.php:217
 #: admin/class-qilingshop-admin-growth.php:283
 msgid "成长值区间"
-msgstr ""
+msgstr "Growth Points Range"
 
 #: admin/shop/views/invoices.php:24
 msgid "处理用户订单发票申请，支持电子发票链接、发票代码和发票号码登记。"
-msgstr ""
+msgstr "Process user order invoice requests, supporting electronic invoice links, invoice codes, and invoice number registration."
 
 #: includes/shop/class-qls-shop-ticket.php:66
 msgid "处理中"
@@ -11444,26 +11445,26 @@ msgstr "Trigger Event"
 
 #: includes/class-qilingshop-payment.php:925
 msgid "创建一笔已支付商城订单并提交售后，后台审核通过后确认退款。"
-msgstr ""
+msgstr "Create a paid shop order and submit after-sales; confirm refund after admin approval."
 
 #: includes/class-qilingshop-growth-benefits.php:552
 msgid "纯展示权益，不影响任何业务流程。"
-msgstr ""
+msgstr "Display-only benefit, does not affect any business workflows."
 
 #: admin/shop/views/settings.php:1134
 msgid "打印备注"
-msgstr ""
+msgstr "Print Note"
 
 #: admin/shop/class-qls-admin-shop.php:1771
 #: admin/shop/class-qls-admin-shop.php:1782
 #: admin/shop/class-qls-admin-shop.php:1847
 #: admin/shop/views/orders-list.php:718 admin/shop/views/orders-list.php:797
 msgid "打印电子面单"
-msgstr ""
+msgstr "Print Electronic Waybill"
 
 #: admin/shop/views/settings.php:1121
 msgid "打印机编号"
-msgstr ""
+msgstr "Printer Number"
 
 #: admin/class-qilingshop-admin-growth.php:938 templates/account/vip.php:135
 msgid "带图评价"
@@ -11471,7 +11472,7 @@ msgstr "Review with Images"
 
 #: includes/class-qilingshop-growth-rules.php:237
 msgid "带图评价成长值"
-msgstr ""
+msgstr "Growth Points for Review with Photos"
 
 #: includes/shop/class-qls-shop-ticket.php:65
 msgid "待处理"
@@ -11479,19 +11480,19 @@ msgstr "Pending"
 
 #: admin/shop/class-qls-admin-shop.php:156
 msgid "待处理订单"
-msgstr ""
+msgstr "Pending Orders"
 
 #: admin/shop/views/refunds.php:31
 msgid "待人工核对"
-msgstr ""
+msgstr "Pending Manual Verification"
 
 #: includes/class-qilingshop-payment.php:1324
 msgid "待完善项 / 说明"
-msgstr ""
+msgstr "Pending Items / Remarks"
 
 #: includes/shop/class-qls-shop-ticket.php:67
 msgid "待用户回复"
-msgstr ""
+msgstr "Waiting for User Reply"
 
 #: admin/class-qilingshop-admin-growth.php:728
 msgid "单次最高成长值"
@@ -11499,127 +11500,127 @@ msgstr "Max Points per Occurrence"
 
 #: includes/class-qilingshop-growth-benefits.php:509
 msgid "单次最高加成"
-msgstr ""
+msgstr "Max Bonus per Action"
 
 #: includes/shop/class-qls-shop-ticket.php:990
 #: templates/shop/my-tickets.php:141 templates/shop/my-tickets.php:242
 msgid "单个附件不能超过 %s"
-msgstr ""
+msgstr "Single attachment cannot exceed %s"
 
 #: admin/class-qilingshop-admin-settings.php:1776
 msgid "单个附件大小"
-msgstr ""
+msgstr "Single Attachment Size"
 
 #: admin/class-qilingshop-admin-settings.php:1779
 msgid "单个附件大小上限，范围 1-20MB。服务器自身上传限制仍会优先生效。"
-msgstr ""
+msgstr "Max size limit per attachment, range 1-20MB. Server upload limits will take precedence."
 
 #: templates/account/vip.php:269
 msgid "当前"
-msgstr ""
+msgstr "Current"
 
 #: includes/class-qilingshop-payment.php:1093
 msgid "当前 PHP 环境未启用完整 OpenSSL 能力"
-msgstr ""
+msgstr "Current PHP environment lacks complete OpenSSL capability"
 
 #: includes/shop/class-qls-coupon.php:525
 msgid "当前等级不可领取此优惠券"
-msgstr ""
+msgstr "Current level cannot claim this coupon"
 
 #: includes/class-qilingshop-growth.php:443
 msgid "当前等级权益"
-msgstr ""
+msgstr "Current Level Benefits"
 
 #: templates/shop/my-orders.php:267
 msgid "当前店铺退款策略已变更，本单按历史执行方式展示。"
-msgstr ""
+msgstr "Current store refund policy has changed. This order is displayed according to historical execution method."
 
 #: admin/shop/class-qls-admin-shop.php:3784
 msgid "当前订单未保存第三方交易号，退款时会回退使用商户订单号发起。"
-msgstr ""
+msgstr "Third-party transaction number was not saved for this order. Refund will fallback to merchant order number."
 
 #: admin/shop/class-qls-admin-shop.php:3839
 msgid "当前订单支持网页/公众号微信原路退款。"
-msgstr ""
+msgstr "This order supports WeChat refund to original payment method (Web/Official Account)."
 
 #: admin/shop/class-qls-admin-shop.php:3909
 msgid "当前订单支持微信小程序%s原路退款。"
-msgstr ""
+msgstr "This order supports WeChat Mini Program %s refund to original payment method."
 
 #: admin/shop/class-qls-admin-shop.php:3808
 msgid "当前订单支持支付宝原路退款。"
-msgstr ""
+msgstr "This order supports Alipay refund to original payment method."
 
 #: includes/shop/class-qls-shipment.php:103
 msgid "当前订单状态不可发货"
-msgstr ""
+msgstr "Current order status cannot be shipped"
 
 #: includes/shop/class-qls-shop-order.php:1925
 msgid "当前订单状态无法退款"
-msgstr ""
+msgstr "Current order status cannot be refunded"
 
 #: templates/shop/my-tickets.php:218
 msgid "当前关联订单"
-msgstr ""
+msgstr "Currently Associated Order"
 
 #: includes/class-qilingshop-payment.php:910
 msgid "当前后台退款方式不是“退回可提现余额”，验收前需要先切换。"
-msgstr ""
+msgstr "Current admin refund method is not 'Refund to Withdrawable Balance'. Please switch before acceptance testing."
 
 #: includes/class-qilingshop-payment.php:946
 #: includes/class-qilingshop-payment.php:988
 #: includes/class-qilingshop-payment.php:1036
 #: includes/class-qilingshop-payment.php:1099
 msgid "当前后台退款方式不是“原路退回”，验收前需要先切换。"
-msgstr ""
+msgstr "Current admin refund method is not 'Original Payment Method'. Please switch before acceptance testing."
 
 #: includes/class-qilingshop-payment.php:1308
 msgid "当前结果：就绪 %1$d 项，待完善 %2$d 项，环境异常 %3$d 项。"
-msgstr ""
+msgstr "Current results: %1$d ready, %2$d pending, %3$d environment anomalies."
 
 #: admin/shop/views/invoices.php:32
 msgid "当前商城发票功能已关闭，前台用户暂不能提交新的发票申请。"
-msgstr ""
+msgstr "Shop invoice feature is currently disabled. Frontend users cannot submit new invoice applications."
 
 #: includes/class-qilingshop-payment.php:1300
 msgid "当前商城退款方式为“%1$s”。此面板只做静态配置检查，不会真实发起退款；请结合“售后退款”页面做最终验收。生成时间：%2$s"
-msgstr ""
+msgstr "Current shop refund method is '%1$s'. This panel performs static checks only and does not initiate actual refunds. Please verify on the 'After-sales Refunds' page. Generated: %2$s"
 
 #: public/class-qilingshop-ajax.php:3017
 msgid "当前网盘不支持检测"
-msgstr ""
+msgstr "Current cloud drive does not support detection"
 
 #: includes/shop/class-qls-shop-ticket.php:668
 msgid "当前未开放附件上传"
-msgstr ""
+msgstr "Attachment upload is currently not open"
 
 #: admin/shop/views/tickets.php:133 includes/shop/class-qls-shop-ticket.php:232
 msgid "当前未开放附件上传。"
-msgstr ""
+msgstr "Attachment upload is currently not open."
 
 #: includes/class-qilingshop-payment.php:1042
 msgid "当前小程序支付接口版本不是 v2，如要新建订单验收 v2，请先切换到 v2。"
-msgstr ""
+msgstr "Current mini program payment API version is not v2. To create a test order for v2, please switch to v2 first."
 
 #: includes/class-qilingshop-payment.php:1105
 msgid "当前小程序支付接口版本不是 v3，如要新建订单验收 v3，请先切换到 v3。"
-msgstr ""
+msgstr "Current mini program payment API version is not v3. To create a test order for v3, please switch to v3 first."
 
 #: templates/account/vip.php:243
 msgid "当前已生效权益"
-msgstr ""
+msgstr "Currently Active Benefits"
 
 #: includes/shop/class-qls-shop-order.php:2069
 msgid "当前支付方式不支持原路退款，已自动退回可提现余额"
-msgstr ""
+msgstr "Current payment method does not support refund to original payment method. Refunded to withdrawable balance automatically."
 
 #: admin/shop/class-qls-admin-shop.php:3765
 msgid "当前支付方式不支持原路退款，执行退款时将自动退回可提现余额。"
-msgstr ""
+msgstr "Current payment method does not support refund to original payment method. Executing refund will automatically credit withdrawable balance."
 
 #: admin/shop/views/refunds.php:204
 msgid "当前执行："
-msgstr ""
+msgstr "Currently Executing: "
 
 #: public/shop/class-qls-shop-ajax.php:995
 msgid "地址识别服务响应异常，请手动填写"
@@ -11639,27 +11640,27 @@ msgstr "Address recognized and filled successfully"
 #: includes/shop/modules/class-qls-module-product-list.php:405
 #: templates/shop/all-products.php:308
 msgid "登录后查看价格"
-msgstr ""
+msgstr "Log in to view price"
 
 #: public/class-qilingshop-public.php:1213
 msgid "登录后购买"
-msgstr ""
+msgstr "Log in to purchase"
 
 #: admin/shop/views/settings.php:195
 msgid "登录后显示商城商品价格"
-msgstr ""
+msgstr "Show shop product prices after login"
 
 #: admin/class-qilingshop-admin-settings.php:922
 msgid "登录后显示虚拟资源价格"
-msgstr ""
+msgstr "Show virtual resource prices after login"
 
 #: admin/class-qilingshop-admin-statistics.php:431
 msgid "登录用户 / 游客"
-msgstr ""
+msgstr "Logged-in User / Guest"
 
 #: admin/class-qilingshop-admin-growth.php:281
 msgid "等级列表"
-msgstr "等级 List"
+msgstr "Level List"
 
 #: admin/class-qilingshop-admin-growth.php:141
 msgid "等级权益"
@@ -11667,15 +11668,15 @@ msgstr "Level Benefits"
 
 #: admin/class-qilingshop-admin-growth.php:215
 msgid "等级用户分布"
-msgstr ""
+msgstr "Level User Distribution"
 
 #: admin/shop/class-qls-admin-shop.php:4472
 msgid "第 %1$d 行：物流公司“%2$s”不存在或已停用。"
-msgstr ""
+msgstr "Line %1$d: Logistics company '%2$s' does not exist or has been disabled."
 
 #: admin/shop/views/invoices.php:167
 msgid "电子发票链接（可选）"
-msgstr ""
+msgstr "Electronic Invoice Link (Optional)"
 
 #: admin/shop/class-qls-admin-shop.php:1852
 msgid "电子面单"
@@ -11683,45 +11684,45 @@ msgstr "Electronic Waybill"
 
 #: admin/shop/class-qls-admin-shop.php:1819
 msgid "电子面单 %s"
-msgstr ""
+msgstr "Electronic Waybill %s"
 
 #: admin/shop/views/settings.php:1037
 msgid "电子面单 AppCode"
-msgstr ""
+msgstr "Electronic Waybill AppCode"
 
 #: includes/shop/class-qls-waybill.php:657
 msgid "电子面单创建失败"
-msgstr ""
+msgstr "Failed to create electronic waybill"
 
 #: admin/shop/class-qls-admin-shop.php:1712
 msgid "电子面单打印链接无效，请返回订单详情重新打开。"
-msgstr ""
+msgstr "Electronic waybill print link is invalid. Please return to order details and open again."
 
 #: admin/shop/class-qls-admin-shop.php:1716
 #: admin/shop/class-qls-admin-shop.php:5860
 msgid "电子面单服务不可用。"
-msgstr ""
+msgstr "Electronic waybill service is unavailable."
 
 #: includes/shop/class-qls-waybill.php:651
 msgid "电子面单服务返回异常，请稍后重试"
-msgstr ""
+msgstr "Electronic waybill service returned an exception, please try again later"
 
 #: includes/shop/class-qls-waybill.php:644
 msgid "电子面单服务连接失败，请稍后重试"
-msgstr ""
+msgstr "Failed to connect to electronic waybill service, please try again later"
 
 #: admin/shop/views/settings.php:1201
 msgid "电子面单模板"
-msgstr ""
+msgstr "Electronic Waybill Template"
 
 #: includes/shop/class-qls-waybill.php:91
 #: includes/shop/class-qls-waybill.php:96
 msgid "电子面单模板保存失败"
-msgstr "Failed to save 电子面单模板"
+msgstr "Failed to save electronic waybill template"
 
 #: includes/shop/class-qls-waybill.php:72
 msgid "电子面单模板表不存在"
-msgstr ""
+msgstr "Electronic waybill template table does not exist"
 
 #: admin/shop/views/settings.php:1025
 msgid "电子面单配置"
@@ -11729,32 +11730,32 @@ msgstr "Electronic Waybill Configuration"
 
 #: includes/shop/class-qls-waybill.php:392
 msgid "电子面单日志保存失败"
-msgstr "Failed to save 电子面单日志"
+msgstr "Failed to save electronic waybill log"
 
 #: includes/shop/class-qls-waybill.php:249
 #: includes/shop/class-qls-waybill.php:375
 msgid "电子面单日志表不存在"
-msgstr ""
+msgstr "Electronic waybill log table does not exist"
 
 #: admin/shop/views/orders-list.php:804
 msgid "电子面单生成失败，请稍后重试。"
-msgstr ""
+msgstr "Failed to generate electronic waybill, please try again later."
 
 #: admin/shop/views/orders-list.php:790
 msgid "电子面单生成失败。"
-msgstr ""
+msgstr "Failed to generate electronic waybill."
 
 #: admin/shop/class-qls-admin-shop.php:5864
 msgid "电子面单未启用，请先在快递物流设置中开启。"
-msgstr ""
+msgstr "Electronic waybill is not enabled. Please enable it in express logistics settings first."
 
 #: admin/class-qilingshop-admin-growth.php:321
 msgid "调整"
-msgstr ""
+msgstr "Adjust"
 
 #: admin/shop/views/invoices.php:71
 msgid "订单 / 发票"
-msgstr ""
+msgstr "Order / Invoice"
 
 #: templates/shop/checkout.php:150
 msgid "订单查询密码"
@@ -11762,229 +11763,229 @@ msgstr "Order Query Password"
 
 #: includes/shop/class-qls-shop-order.php:3011
 msgid "订单查询密码存储结构未初始化，请稍后重试"
-msgstr ""
+msgstr "Order query password storage structure not initialized, please try again later"
 
 #: includes/class-qilingshop-order.php:810
 msgid "订单处理失败，积分已退还"
-msgstr ""
+msgstr "Order processing failed, points have been refunded"
 
 #: includes/class-qilingshop-order.php:810
 msgid "订单处理失败，请联系管理员处理"
-msgstr ""
+msgstr "Order processing failed, please contact administrator"
 
 #: includes/shop/class-qls-shop-order.php:3028
 #: public/shop/class-qls-group-public.php:468
 #: public/shop/class-qls-group-public.php:622
 msgid "订单读取失败"
-msgstr ""
+msgstr "Failed to read order"
 
 #: admin/shop/class-qls-admin-shop.php:4286
 msgid "订单发货成功，电子面单已生成"
-msgstr ""
+msgstr "Order shipped successfully, electronic waybill generated"
 
 #: includes/class-qilingshop-growth-benefits.php:532
 msgid "订单高亮"
-msgstr ""
+msgstr "Order Highlight"
 
 #: includes/shop/class-qls-shop-order.php:3263
 msgid "订单工单清理失败"
-msgstr ""
+msgstr "Failed to clean up order tickets"
 
 #: includes/shop/class-qls-shop-order.php:3259
 msgid "订单工单消息清理失败"
-msgstr ""
+msgstr "Failed to clean up order ticket messages"
 
 #: includes/shop/class-qls-shop-order.php:3268
 msgid "订单关联数据清理失败：%s"
-msgstr ""
+msgstr "Failed to clean up order associated data: %s"
 
 #: includes/class-qilingshop-notifier.php:1343
 msgid "订单号：%1$s，退款已处理完成（%2$s）。"
-msgstr ""
+msgstr "Order No: %1$s, refund has been processed (%2$s)."
 
 #: public/class-qilingshop-shortcodes.php:416
 msgid "订单号（可选）"
-msgstr ""
+msgstr "Order Number (Optional)"
 
 #: includes/shop/class-qls-shop-order.php:2961
 msgid "订单金额计算异常，请重新结账"
-msgstr ""
+msgstr "Abnormal order amount calculation, please re-checkout"
 
 #: public/class-qilingshop-ajax.php:2032
 msgid "订单金额异常，请联系管理员"
-msgstr ""
+msgstr "Abnormal order amount, please contact administrator"
 
 #: admin/shop/views/orders-list.php:524 admin/shop/views/orders-list.php:531
 msgid "订单明细读取失败，请关闭后重试。"
-msgstr ""
+msgstr "Failed to read order details, please close and try again."
 
 #: includes/shop/class-qls-shop-ticket.php:1177
 msgid "订单模块不可用"
-msgstr ""
+msgstr "Order module unavailable"
 
 #: includes/shop/class-qls-shipment.php:110
 msgid "订单商品不存在"
-msgstr ""
+msgstr "Order item does not exist"
 
 #: includes/shop/class-qls-shop-order.php:2078
 msgid "订单无需退回现金金额"
-msgstr ""
+msgstr "Order does not require cash refund"
 
 #: includes/shop/class-qls-shop-order.php:2136
 #: payment/class-payment-alipay.php:309 payment/class-payment-wechat.php:90
 msgid "订单无需原路退回现金金额"
-msgstr ""
+msgstr "Order does not require cash refund to original payment method"
 
 #: admin/shop/class-qls-admin-shop.php:4276
 msgid "订单已发货，但电子面单生成失败：%s"
-msgstr ""
+msgstr "Order shipped, but electronic waybill generation failed: %s"
 
 #: admin/shop/class-qls-admin-shop.php:3773
 msgid "订单支付信息缺失，暂时无法判断原路退款能力。"
-msgstr ""
+msgstr "Order payment information is missing. Cannot determine refund capability to original payment method."
 
 #: includes/shop/class-qls-shop-ticket.php:80
 msgid "订单咨询"
-msgstr ""
+msgstr "Order Inquiry"
 
 #: admin/shop/views/settings.php:438
 msgid "独立展示实物商城中的卡号卡密类虚拟商品，需在基础设置启用后访问"
-msgstr ""
+msgstr "Independently displays card & password virtual products in physical shop; requires enabling in basic settings to access"
 
 #: payment/class-payment-wechat.php:456
 msgid "读取失败，请检查 PEM 内容或文件路径"
-msgstr ""
+msgstr "Read failed, please check PEM content or file path"
 
 #: admin/class-qilingshop-admin-payment.php:348
 #: admin/class-qilingshop-admin-settings.php:2083
 msgid "对应微信道具ID"
-msgstr ""
+msgstr "Corresponding WeChat Item ID"
 
 #: admin/class-qilingshop-admin-payment.php:284
 msgid "对应微信公众平台（mp.weixin.qq.com）侧边栏【支付与交易 -> 虚拟支付】功能。适用于个人主体小程序收款、VIP 会员开通、虚拟数字道具、付费资源阅读及 iOS 端合规支付通道。"
-msgstr ""
+msgstr "Corresponds to WeChat Official Accounts Platform (mp.weixin.qq.com) sidebar [Payment & Transactions -> Virtual Payment]. Suitable for personal mini program payments, VIP memberships, virtual props, paid resources, and iOS compliant payment channels."
 
 #: admin/class-qilingshop-admin-settings.php:2007
 msgid "对应微信公众平台后台【支付与交易 -> 虚拟支付】功能。适用于个人主体小程序收款、VIP 会员开通、虚拟数字道具、付费资源阅读及 iOS 端合规支付通道。"
-msgstr ""
+msgstr "Corresponds to WeChat Official Accounts Platform [Payment & Transactions -> Virtual Payment]. Suitable for individual mini program payments, VIP membership, virtual props, paid resource reading, and iOS compliant payments."
 
 #: public/class-qilingshop-ajax.php:336
 msgid "兑换尝试过于频繁，请稍后重试"
-msgstr ""
+msgstr "Redemption attempts too frequent, please try again later"
 
 #: templates/account/points.php:175
 msgid "兑换游戏币"
-msgstr ""
+msgstr "Exchange Game Coins"
 
 #: includes/class-qilingshop-growth-benefits.php:493
 msgid "多个 ID 用逗号分隔。"
-msgstr ""
+msgstr "Separate multiple IDs with commas."
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:91
 msgid "多个编号用半角逗号分隔，例如：1,2,3"
-msgstr ""
+msgstr "Separate multiple IDs with commas, e.g.: 1,2,3"
 
 #: templates/shop/product-single.php:360
 msgid "多规格商品请先选择规格与版本，右侧价格会实时变化。"
-msgstr ""
+msgstr "For multi-spec products, please select specification and version first; price on the right will update in real time."
 
 #: includes/class-qilingshop-growth-benefits.php:519
 msgid "额外成长值"
-msgstr ""
+msgstr "Extra Growth Points"
 
 #: includes/class-qilingshop-growth-benefits.php:525
 msgid "额外次数"
-msgstr ""
+msgstr "Extra Times"
 
 #: admin/shop/class-qls-admin-shop.php:5870
 #: includes/shop/class-qls-waybill.php:245
 #: includes/shop/class-qls-waybill.php:258
 #: includes/shop/class-qls-waybill.php:474
 msgid "发货单不存在"
-msgstr ""
+msgstr "Shipment note does not exist"
 
 #: includes/shop/class-qls-shipment.php:162
 msgid "发货单创建失败"
-msgstr ""
+msgstr "Failed to create shipment note"
 
 #: includes/shop/class-qls-waybill.php:253
 #: includes/shop/class-qls-waybill.php:469
 msgid "发货单服务不可用"
-msgstr ""
+msgstr "Shipment note service unavailable"
 
 #: includes/shop/class-qls-waybill.php:598
 msgid "发货单号或商品信息不完整，无法创建电子面单"
-msgstr ""
+msgstr "Shipment note number or product information incomplete, cannot create electronic waybill"
 
 #: includes/shop/class-qls-shipment.php:81
 #: includes/shop/class-qls-shipment.php:491
 msgid "发货单数据表不存在"
-msgstr ""
+msgstr "Shipment note data table does not exist"
 
 #: includes/shop/class-qls-shipment.php:182
 msgid "发货明细保存失败"
-msgstr "Failed to save 发货明细"
+msgstr "Failed to save shipment details"
 
 #: admin/shop/views/settings.php:1048
 msgid "发货时通过快递鸟接口创建真实电子面单。"
-msgstr ""
+msgstr "Create actual electronic waybills via Kuaidiniao API upon shipment."
 
 #: admin/shop/views/settings.php:1052
 msgid "发货时自动生成"
-msgstr ""
+msgstr "Auto-generate upon shipment"
 
 #: includes/shop/class-qls-shipment.php:193
 msgid "发货数量更新失败，请重试"
-msgstr ""
+msgstr "Failed to update shipment quantity, please try again"
 
 #: admin/class-qilingshop-admin-payment.php:285
 #: admin/class-qilingshop-admin-settings.php:2008
 msgid "发货通知推送地址（请在微信小程序后台【开发管理 -> 消息推送】或【虚拟支付】中配置）："
-msgstr ""
+msgstr "Shipment notification webhook URL (configure in WeChat Mini Program [Development -> Push Messages] or [Virtual Payment]):"
 
 #: admin/shop/views/settings.php:240
 msgid "发卡订单查询密码"
-msgstr ""
+msgstr "Card Order Query Password"
 
 #: templates/shop/shop-virtual-home.php:147
 msgid "发卡商品分类"
-msgstr ""
+msgstr "Card Product Category"
 
 #: admin/shop/views/settings.php:130
 msgid "发卡首页标题"
-msgstr ""
+msgstr "Card Dispatch Home Title"
 
 #: admin/shop/views/settings.php:93
 msgid "发卡首页风格"
-msgstr ""
+msgstr "Card Dispatch Home Style"
 
 #: admin/shop/views/settings.php:137
 msgid "发卡首页副标题"
-msgstr ""
+msgstr "Card Dispatch Home Subtitle"
 
 #: admin/shop/views/settings.php:122
 msgid "发卡首页商品数"
-msgstr ""
+msgstr "Card Dispatch Home Product Count"
 
 #: templates/shop/my-downloads.php:71
 msgid "发票"
-msgstr ""
+msgstr "Invoice"
 
 #: admin/shop/views/invoices.php:106
 msgid "发票代码："
-msgstr ""
+msgstr "Invoice Code: "
 
 #: admin/shop/views/invoices.php:165
 msgid "发票代码（可选）"
-msgstr ""
+msgstr "Invoice Code (Optional)"
 
 #: admin/shop/views/invoices.php:103
 msgid "发票号码："
-msgstr ""
+msgstr "Invoice Number: "
 
 #: admin/shop/views/invoices.php:166
 msgid "发票号码（可选）"
-msgstr ""
+msgstr "Invoice Number (Optional)"
 
 #: includes/shop/class-qls-shop-ticket.php:84
 msgid "发票问题"
@@ -12058,19 +12059,19 @@ msgstr "Invalid attachment file"
 
 #: admin/shop/class-qls-admin-shop.php:3955
 msgid "该笔历史小程序订单未记录支付版本，退款时将按当前后台配置的 %s 兜底。"
-msgstr ""
+msgstr "This historical mini program order lacks payment version record; refund will fall back to currently configured %s."
 
 #: templates/shop/my-orders.php:264
 msgid "该笔退款可能已实际退回，请先联系商家人工核对，勿重复提交。"
-msgstr ""
+msgstr "This refund may have already been returned. Please contact the merchant for manual verification first; do not resubmit."
 
 #: admin/shop/class-qls-admin-shop.php:4327
 msgid "该笔退款资金可能已实际退回，请先到对应支付平台人工核对退款记录，确认后再处理。"
-msgstr ""
+msgstr "This refund money may have already been returned. Please manually verify the refund record on the payment platform before processing."
 
 #: admin/shop/views/refunds.php:235 admin/shop/views/refunds.php:257
 msgid "该笔退款资金可能已实际退回，请先人工核对第三方平台，勿重复退款。"
-msgstr ""
+msgstr "This refund money may have already been returned. Please verify manually on the third-party platform first; do not refund repeatedly."
 
 #: admin/class-qilingshop-admin-growth.php:66
 msgid "该成长等级已有用户使用，不能删除，可改为禁用"
@@ -12078,170 +12079,170 @@ msgstr "This growth level is already in use by users and cannot be deleted, you 
 
 #: admin/shop/class-qls-admin-shop.php:3982
 msgid "该订单不支持原路退款，系统会自动尝试退回可提现余额。"
-msgstr ""
+msgstr "This order does not support refund to original payment method; system will automatically attempt refund to withdrawable balance."
 
 #: admin/shop/views/orders-list.php:594
 msgid "该订单没有可发的实体商品。"
-msgstr ""
+msgstr "This order has no physical items to ship."
 
 #: includes/shop/class-qls-shipment.php:227
 msgid "该订单没有需要发货的实体商品"
-msgstr ""
+msgstr "This order has no physical products requiring shipment"
 
 #: includes/shop/class-qls-waybill.php:489
 msgid "该发货单还没有可打印的电子面单"
-msgstr ""
+msgstr "This shipment note has no printable electronic waybill yet"
 
 #: templates/shop/my-tickets.php:130
 msgid "该工单已关闭。"
-msgstr ""
+msgstr "This ticket has been closed."
 
 #: admin/shop/views/settings.php:315
 msgid "该功能直接复用启灵主题高级设置中填写的“灵简IP API Key”，不消耗其他业务额度。"
-msgstr "This feature directly reuses the \"Lingjian IP API Key\" configured in Qiling theme advanced settings, without consuming other service quota."
+msgstr "This feature directly reuses the 'Lingjian IP API Key' from Qiling theme advanced settings, consuming no extra quotas."
 
 #: includes/class-qilingshop-growth-benefits.php:419
 msgid "该权益类型暂无额外参数。"
-msgstr ""
+msgstr "This benefit type currently has no extra parameters."
 
 #: admin/class-qilingshop-admin-statistics.php:450
 #: admin/class-qilingshop-admin-statistics.php:476
 msgid "该时间范围内暂无下载记录"
-msgstr "该时间范围内暂无下载 Records"
+msgstr "No download records found within this time range"
 
 #: includes/shop/class-qls-shop-refund.php:463
 msgid "该退款资金已处理，但本地状态收尾失败，请先人工核对，勿重复退款"
-msgstr ""
+msgstr "Refund funds processed, but local status finalization failed. Please verify manually; do not repeat refund."
 
 #: includes/class-qilingshop-growth-benefits.php:534
 msgid "高亮说明"
-msgstr ""
+msgstr "Highlight Description"
 
 #: includes/class-qilingshop-growth-benefits.php:536
 msgid "高亮颜色"
-msgstr ""
+msgstr "Highlight Color"
 
 #: includes/shop/class-qls-invoice.php:376
 msgid "个人"
-msgstr ""
+msgstr "Personal"
 
 #: includes/class-qilingshop-growth-benefits.php:469
 msgid "个人中心,评价区"
-msgstr ""
+msgstr "User Center, Review Area"
 
 #: admin/class-qilingshop-admin-settings.php:3273
 msgid "个人中心风格"
-msgstr ""
+msgstr "Account Center Style"
 
 #: includes/class-qilingshop-growth-benefits.php:484
 msgid "给后台或前台客服场景展示的身份标识。"
-msgstr ""
+msgstr "Identity badge displayed for admin or customer service scenarios."
 
 #: admin/shop/views/tickets.php:242
 msgid "工单"
-msgstr ""
+msgstr "Ticket"
 
 #: includes/class-qilingshop-notifier.php:1449
 msgid "工单 %1$s 已更新，当前状态：%2$s。"
-msgstr ""
+msgstr "Ticket %1$s updated, current status: %2$s."
 
 #: includes/shop/class-qls-shop-ticket.php:374
 #: includes/shop/class-qls-shop-ticket.php:441
 msgid "工单不存在"
-msgstr ""
+msgstr "Ticket does not exist"
 
 #: admin/shop/views/tickets.php:30
 msgid "工单不存在。"
-msgstr ""
+msgstr "Ticket does not exist."
 
 #: public/shop/class-qls-shop-shortcodes.php:492
 msgid "工单不存在或无权查看。"
-msgstr ""
+msgstr "Ticket does not exist or you lack permission to view it."
 
 #: includes/shop/class-qls-shop-ticket.php:334
 msgid "工单创建失败，请稍后重试"
-msgstr ""
+msgstr "Ticket creation failed, please try again later"
 
 #: includes/shop/class-qls-shop-ticket.php:496
 msgid "工单更新失败，请稍后重试"
-msgstr ""
+msgstr "Ticket update failed, please try again later"
 
 #: includes/class-qilingshop-notifier.php:1500
 msgid "工单号"
-msgstr ""
+msgstr "Ticket No."
 
 #: admin/shop/class-qls-admin-shop.php:3466
 #: public/shop/class-qls-shop-shortcodes.php:447
 msgid "工单模块不可用"
-msgstr ""
+msgstr "Ticket module unavailable"
 
 #: includes/shop/class-qls-shop-ticket.php:339
 msgid "工单消息写入失败，请稍后重试"
-msgstr ""
+msgstr "Failed to write ticket message, please try again later"
 
 #: admin/shop/views/tickets.php:58
 msgid "工单信息"
-msgstr ""
+msgstr "Ticket Information"
 
 #: admin/shop/class-qls-admin-shop.php:3590
 msgid "工单已更新。"
-msgstr ""
+msgstr "Ticket updated."
 
 #: includes/shop/class-qls-shop-ticket.php:382
 msgid "工单已关闭，无法继续回复"
-msgstr ""
+msgstr "Ticket is closed and cannot be replied to"
 
 #: public/shop/class-qls-shop-shortcodes.php:599
 msgid "工单已提交，我们会尽快处理。"
-msgstr ""
+msgstr "Ticket submitted, we will handle it as soon as possible."
 
 #: includes/class-qilingshop-notifier.php:1447
 msgid "工单有新回复"
-msgstr ""
+msgstr "New reply on ticket"
 
 #: includes/shop/class-qls-shop-ticket.php:407
 msgid "工单状态更新失败，请稍后重试"
-msgstr ""
+msgstr "Ticket status update failed, please try again later"
 
 #: admin/shop/views/orders-list.php:584
 msgid "共"
-msgstr ""
+msgstr "Total"
 
 #: admin/class-qilingshop-admin-growth.php:499
 msgid "共 %d 条成长流水，当前每页 %d 条。"
-msgstr ""
+msgstr "Total %d growth records, currently %d per page."
 
 #: admin/shop/views/orders-list.php:364
 msgid "勾选后会在发货成功时生成面单日志，并可在订单详情中打印。"
-msgstr ""
+msgstr "When checked, waybill log will be generated upon shipment and printable in order details."
 
 #: admin/shop/views/tickets.php:148
 msgid "沟通记录"
-msgstr "沟通 Records"
+msgstr "Communication Records"
 
 #: public/class-qilingshop-public.php:1203
 msgid "购买此项"
-msgstr ""
+msgstr "Purchase This Item"
 
 #: public/class-qilingshop-shortcodes.php:448
 msgid "购买发卡商品时设置的查询密码"
-msgstr ""
+msgstr "Query password set when purchasing card product"
 
 #: public/class-qilingshop-ajax.php:3003
 msgid "购买后可检测链接有效性"
-msgstr ""
+msgstr "Link validity can be checked after purchase"
 
 #: templates/account/points.php:163
 msgid "购买靓号退款"
-msgstr ""
+msgstr "VIP Number Purchase Refund"
 
 #: includes/shop/class-qls-shop-order.php:2819
 msgid "购物车包含无效商品或异常数量，请刷新后重试"
-msgstr ""
+msgstr "Cart contains invalid items or abnormal quantities, please refresh and try again"
 
 #: includes/shop/class-qls-shop-order.php:2873
 msgid "购物车金额或数量异常，请刷新后重试"
-msgstr ""
+msgstr "Cart amount or quantity abnormal, please refresh and try again"
 
 #: admin/class-qilingshop-admin-growth.php:723
 msgid "固定成长值"
@@ -12249,19 +12250,19 @@ msgstr "Fixed Growth Points"
 
 #: includes/shop/class-qls-shop-ticket.php:1182
 msgid "关联订单不存在"
-msgstr ""
+msgstr "Associated order does not exist"
 
 #: templates/account/points.php:162
 msgid "官方回收靓号变现"
-msgstr ""
+msgstr "Official VIP Number Buyback Monetization"
 
 #: templates/account/points.php:161
 msgid "官方商城兑换靓号"
-msgstr ""
+msgstr "Official Shop VIP Number Redemption"
 
 #: includes/shop/class-qls-shop-refund.php:516
 msgid "管理员发起最终退款"
-msgstr ""
+msgstr "Admin Initiates Final Refund"
 
 #: admin/class-qilingshop-admin-growth.php:740
 msgid "规则"
@@ -12281,208 +12282,208 @@ msgstr "Rules are disabled by default. When enabled, only growth points are awar
 
 #: admin/shop/views/orders-list.php:362
 msgid "还没有启用的电子面单模板，请先到“快递物流”设置中添加模板。"
-msgstr ""
+msgstr "No enabled electronic waybill templates yet. Please add a template in 'Express Logistics' settings first."
 
 #: includes/class-qilingshop-payment.php:926
 msgid "核对用户可提现余额增加，售后页出现“退款完成”和最近日志。"
-msgstr ""
+msgstr "Verify user withdrawable balance increased, and 'Refund Completed' with recent logs appear on after-sales page."
 
 #: includes/shop/modules/class-qls-module-product-list.php:110
 msgid "横向滑动（适合移动端）"
-msgstr ""
+msgstr "Horizontal Scroll (Recommended for Mobile)"
 
 #: admin/shop/views/tickets.php:288
 msgid "后台"
-msgstr ""
+msgstr "Backend"
 
 #: includes/class-qilingshop-growth-benefits.php:478
 msgid "后台标签"
-msgstr ""
+msgstr "Admin Tag"
 
 #: admin/shop/views/tickets.php:104 includes/class-qilingshop-notifier.php:1379
 #: includes/class-qilingshop-notifier.php:1408
 msgid "后台处理"
-msgstr ""
+msgstr "Admin Processing"
 
 #: admin/class-qilingshop-admin-growth.php:335
 #: admin/class-qilingshop-admin-growth.php:950
 msgid "后台调整"
-msgstr ""
+msgstr "Admin Adjustment"
 
 #: admin/shop/views/settings.php:1054
 msgid "后台订单发货时默认勾选生成电子面单"
-msgstr ""
+msgstr "Default to generating electronic waybill when shipping orders in admin"
 
 #: includes/class-qilingshop-growth-benefits.php:352
 msgid "后台订单高亮"
-msgstr ""
+msgstr "Admin Order Highlight"
 
 #: includes/class-qilingshop-growth-benefits.php:352
 msgid "后台订单高亮：%s"
-msgstr ""
+msgstr "Admin Order Highlight: %s"
 
 #: includes/class-qilingshop-growth-benefits.php:533
 msgid "后台订单列表展示配置，业务生效将在后续阶段接入。"
-msgstr ""
+msgstr "Admin order list display configuration; business effects will be integrated in subsequent phases."
 
 #: admin/class-qilingshop-admin-growth.php:399
 msgid "后台名称"
-msgstr ""
+msgstr "Backend Name"
 
 #: includes/class-qilingshop-payment.php:1323
 msgid "后台模式要求"
-msgstr ""
+msgstr "Admin Mode Requirements"
 
 #: includes/class-qilingshop-payment.php:962
 #: includes/class-qilingshop-payment.php:1004
 #: includes/class-qilingshop-payment.php:1058
 #: includes/class-qilingshop-payment.php:1121
 msgid "后台确认退款后，核对网关退款单号、原路状态和最近日志。"
-msgstr ""
+msgstr "After admin confirms refund, verify gateway refund number, original channel status, and recent logs."
 
 #: admin/class-qilingshop-admin-growth.php:248
 msgid "后台手动调整"
-msgstr ""
+msgstr "Admin Manual Adjustment"
 
 #: admin/class-qilingshop-admin-payment.php:293
 #: admin/class-qilingshop-admin-settings.php:2019
 msgid "环境模式"
-msgstr ""
+msgstr "Environment Mode"
 
 #: includes/class-qilingshop-payment.php:1211
 msgid "环境异常"
-msgstr ""
+msgstr "Environment Anomaly"
 
 #: includes/class-qilingshop-growth-benefits.php:465
 msgid "徽章文字"
-msgstr ""
+msgstr "Badge Text"
 
 #: includes/shop/class-qls-shop-ticket.php:391
 msgid "回复失败，请稍后重试"
-msgstr ""
+msgstr "Reply failed, please try again later"
 
 #: includes/shop/class-qls-shop-ticket.php:463
 msgid "回复写入失败，请稍后重试"
-msgstr ""
+msgstr "Failed to write reply, please try again later"
 
 #: public/shop/class-qls-shop-shortcodes.php:630
 msgid "回复已提交。"
-msgstr ""
+msgstr "Reply submitted."
 
 #: admin/shop/views/tickets.php:123 includes/class-qilingshop-notifier.php:1406
 msgid "回复用户"
-msgstr ""
+msgstr "Reply to User"
 
 #: templates/account/vip.php:208
 msgid "会员成长体系"
-msgstr ""
+msgstr "Member Growth System"
 
 #: includes/class-qilingshop-growth-benefits.php:500
 msgid "活动标识"
-msgstr ""
+msgstr "Activity Identifier"
 
 #: includes/class-qilingshop-growth-benefits.php:498
 msgid "活动参与资格"
-msgstr ""
+msgstr "Activity Eligibility"
 
 #: admin/class-qilingshop-admin-settings.php:3277
 msgid "活力珊瑚"
-msgstr ""
+msgstr "Living Coral"
 
 #: admin/shop/class-qls-admin-shop.php:1883
 msgid "货品"
-msgstr ""
+msgstr "Goods"
 
 #: admin/shop/views/settings.php:1015
 msgid "获取 API Key。"
-msgstr ""
+msgstr "Obtain API Key."
 
 #: admin/class-qilingshop-admin-settings.php:824
 msgid "获取链接"
-msgstr ""
+msgstr "Get Link"
 
 #: includes/class-qilingshop-payment.php:921
 msgid "积分资产服务未加载"
-msgstr ""
+msgstr "Points asset service not loaded"
 
 #: includes/shop/class-qls-shop-order.php:2086
 msgid "积分资产服务未加载，无法退回可提现余额"
-msgstr ""
+msgstr "Points asset service not loaded, cannot refund to withdrawable balance"
 
 #: admin/shop/class-qls-admin-shop.php:1867
 msgid "寄"
-msgstr ""
+msgstr "Sender"
 
 #: admin/shop/views/settings.php:1103
 msgid "寄件地区"
-msgstr ""
+msgstr "Sender Region"
 
 #: admin/shop/views/settings.php:1113
 msgid "寄件地址"
-msgstr ""
+msgstr "Sender Address"
 
 #: admin/shop/views/settings.php:1099
 msgid "寄件电话"
-msgstr ""
+msgstr "Sender Phone"
 
 #: admin/shop/views/settings.php:1138
 msgid "寄件公司"
-msgstr ""
+msgstr "Sender Company"
 
 #: admin/shop/views/settings.php:1095 admin/shop/views/settings.php:1207
 msgid "寄件人"
-msgstr ""
+msgstr "Sender"
 
 #: admin/shop/views/settings.php:1100
 msgid "寄件人手机号"
-msgstr ""
+msgstr "Sender Mobile"
 
 #: admin/shop/views/settings.php:1114
 msgid "寄件人详细地址"
-msgstr ""
+msgstr "Sender Detailed Address"
 
 #: admin/shop/views/settings.php:1096
 msgid "寄件人姓名"
-msgstr ""
+msgstr "Sender Name"
 
 #: includes/class-qilingshop-growth-benefits.php:506
 msgid "加成比例(%)"
-msgstr ""
+msgstr "Bonus Rate (%)"
 
 #: admin/class-qilingshop-admin-settings.php:1812
 #: admin/class-qilingshop-admin-settings.php:1861
 #: admin/class-qilingshop-admin-settings.php:2145
 #: admin/class-qilingshop-admin-settings.php:2213
 msgid "兼容旧版通知地址："
-msgstr ""
+msgstr "Compatible Legacy Notification URL: "
 
 #: templates/shop/cart.php:77 templates/shop/checkout.php:292
 msgid "减少数量"
-msgstr ""
+msgstr "Decrease Quantity"
 
 #: includes/class-qilingshop-growth-benefits.php:553
 msgid "简短文本"
-msgstr ""
+msgstr "Short Text"
 
 #: admin/class-qilingshop-admin-settings.php:1792
 msgid "建议保留 JPG/PNG/WebP 作为图片凭证格式；PDF 可用于发票、物流单据等场景。"
-msgstr ""
+msgstr "Recommend retaining JPG/PNG/WebP for image proof; PDF can be used for invoices and shipping documents."
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:106
 msgid "建议尺寸：1920x800 或更大"
-msgstr ""
+msgstr "Recommended size: 1920x800 or larger"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:111
 msgid "建议尺寸：750x600，不设置则使用电脑端图片"
-msgstr ""
+msgstr "Recommended size: 750x600, uses PC image if not set"
 
 #: admin/shop/views/settings.php:126
 msgid "建议控制在 12-36 个，前台会使用商城商品缓存。"
-msgstr ""
+msgstr "Recommend 12-36 items; frontend uses shop product cache."
 
 #: includes/class-qilingshop-payment.php:1325
 msgid "建议验收动作"
-msgstr ""
+msgstr "Recommended Acceptance Action"
 
 #: admin/class-qilingshop-admin-growth.php:721
 msgid "奖励方式"
@@ -12490,19 +12491,19 @@ msgstr "Reward Method"
 
 #: templates/account/points.php:159
 msgid "交易行购买靓号"
-msgstr ""
+msgstr "Trading House VIP Number Purchase"
 
 #: templates/account/points.php:164
 msgid "交易行购买退款"
-msgstr ""
+msgstr "Trading House Purchase Refund"
 
 #: templates/account/points.php:160
 msgid "交易行售出靓号"
-msgstr ""
+msgstr "Trading House VIP Number Sale"
 
 #: admin/class-qilingshop-admin-growth.php:210
 msgid "今日发放%s"
-msgstr ""
+msgstr "Today's Distribution: %s"
 
 #: admin/class-qilingshop-admin-growth.php:747 templates/account/vip.php:307
 msgid "金额 × %s"
@@ -12510,91 +12511,91 @@ msgstr "Amount x %s"
 
 #: admin/shop/views/tickets.php:139
 msgid "仅后台可见，可记录处理线索"
-msgstr ""
+msgstr "Visible only in admin, useful for recording handling notes"
 
 #: admin/class-qilingshop-admin-statistics.php:492
 msgid "仅删除实际点击下载产生的统计日志，不删除购买记录和用户下载权限。每次最多清理 5000 条，可重复执行。"
-msgstr ""
+msgstr "Only deletes click-download statistical logs; does not delete purchase records or download privileges. Max 5,000 logs per batch, repeatable."
 
 #: includes/shop/modules/class-qls-module-group.php:86
 msgid "仅手动模式有效，多个编号用半角逗号分隔"
-msgstr ""
+msgstr "Only valid in manual mode, separate multiple numbers with commas"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:70
 #: includes/shop/modules/class-qls-module-coupon.php:101
 msgid "仅手动模式有效，多个编号用半角逗号分隔，例如：1,2,3"
-msgstr ""
+msgstr "Only valid in manual mode, separate multiple numbers with commas, e.g.: 1,2,3"
 
 #: includes/class-qilingshop-growth-benefits.php:474
 msgid "仅提供优先级数值，具体业务模块后续接入。"
-msgstr ""
+msgstr "Provides priority value only; specific business modules will integrate later."
 
 #: includes/class-qilingshop-growth-benefits.php:528
 msgid "仅限免费/已购资源"
-msgstr ""
+msgstr "Free / Purchased Resources Only"
 
 #: admin/class-qilingshop-admin-settings.php:3280
 msgid "仅应用于启灵主题个人中心内的积分中心、VIP会员、积分订单等商城插件页面，不影响实物商城中心。"
-msgstr ""
+msgstr "Only applies to points center, VIP membership, points orders in Qiling theme account center, not affecting physical shop center."
 
 #: admin/class-qilingshop-admin-payment.php:207
 #: admin/class-qilingshop-admin-payment.php:211
 #: admin/class-qilingshop-admin-settings.php:1892
 #: admin/class-qilingshop-admin-settings.php:1897
 msgid "仅用于网页/公众号微信原路退款。可直接粘贴 PEM 内容，或填写服务器可读取的绝对路径/站内文件 URL。"
-msgstr ""
+msgstr "Only used for WeChat web/official account refund to original payment method. Paste PEM content or provide readable absolute path/URL."
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:86
 msgid "仅在“侧边栏叠加轮播”模式下有效"
-msgstr ""
+msgstr "Only valid in 'Sidebar Overlay Carousel' mode"
 
 #: admin/shop/views/settings.php:98 includes/helpers.php:1633
 msgid "精选橱窗"
-msgstr ""
+msgstr "Featured Showcase"
 
 #: includes/class-qilingshop-payment.php:1209
 msgid "就绪"
-msgstr ""
+msgstr "Ready"
 
 #: templates/account/vip.php:115
 msgid "距 %1$s 还差 %2$s %3$s"
-msgstr ""
+msgstr "%2$s %3$s needed until %1$s"
 
 #: includes/class-qilingshop-growth.php:408
 msgid "距离 %1$s 还差 %2$s %3$s"
-msgstr ""
+msgstr "%2$s %3$s needed until %1$s"
 
 #: admin/shop/views/tickets.php:89
 msgid "卡密 #%d"
-msgstr ""
+msgstr "Card Key #%d"
 
 #: includes/shop/class-qls-shop-ticket.php:82
 msgid "卡密不可用"
-msgstr ""
+msgstr "Card key unavailable"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:124
 msgid "卡片模式（图片背景）"
-msgstr ""
+msgstr "Card Mode (Image Background)"
 
 #: admin/shop/views/invoices.php:149
 msgid "开票："
-msgstr ""
+msgstr "Invoice: "
 
 #: admin/shop/views/invoices.php:168
 msgid "开票备注（可选）"
-msgstr ""
+msgstr "Invoice Note (Optional)"
 
 #: admin/shop/views/settings.php:197
 msgid "开启后，实物商品列表、商品详情和虚拟卡密商城列表中的价格仅登录用户可见。"
-msgstr ""
+msgstr "When enabled, prices in physical product lists, product details, and card dispatch shop are visible to logged-in users only."
 
 #: admin/class-qilingshop-admin-settings.php:924
 msgid "开启后，未登录用户只能看到登录提示，登录后才显示该资源的积分、人民币和会员价格。"
-msgstr ""
+msgstr "When enabled, guest users see login prompt only; resource points, CNY, and VIP prices display after login."
 
 #: admin/shop/views/settings.php:244
 msgid "开启后游客购买卡号卡密类虚拟商品时需设置查询密码，可在订单查询页用手机号/邮箱 + 查询密码查单"
-msgstr ""
+msgstr "When enabled, guests must set a query password when buying card products, allowing order queries via phone/email + password"
 
 #: admin/shop/views/settings.php:311
 msgid "开启收货地址智能识别（快递文本一键解析）"
@@ -12602,60 +12603,60 @@ msgstr "Enable smart address recognition (one-click courier text parsing)"
 
 #: admin/class-qilingshop-admin-growth.php:479
 msgid "开始日期"
-msgstr ""
+msgstr "Start Date"
 
 #: admin/shop/views/orders-list.php:584
 msgid "可发"
-msgstr ""
+msgstr "Shippable"
 
 #: includes/class-qilingshop-growth-benefits.php:327
 msgid "可领取成长专属优惠券：%s"
-msgstr ""
+msgstr "Eligible for growth exclusive coupon: %s"
 
 #: includes/class-qilingshop-growth-benefits.php:325
 msgid "可领取后台配置的成长专属优惠券"
-msgstr ""
+msgstr "Eligible to claim growth exclusive coupons configured in admin"
 
 #: public/class-qilingshop-shortcodes.php:458
 msgid "可使用“订单号 + 联系方式”，或“联系方式 + 查询密码”查询发卡游客订单。账号订单请登录后到个人中心查看。"
-msgstr ""
+msgstr "Query guest card orders using 'Order No + Contact' or 'Contact + Query Password'. Logged-in users should view orders in User Center."
 
 #: admin/shop/views/settings.php:1122
 msgid "可选，给第三方打印服务使用"
-msgstr ""
+msgstr "Optional, for third-party printing service"
 
 #: admin/shop/views/orders-list.php:326
 msgid "可选择本次要发出的商品和数量；不拆单时保持默认全选即可。"
-msgstr ""
+msgstr "Select items and quantities to ship this time; keep default select-all if not splitting shipment."
 
 #: includes/class-qilingshop-notifier.php:1462 templates/shop/my-tickets.php:93
 msgid "客服"
-msgstr ""
+msgstr "Customer Service"
 
 #: includes/class-qilingshop-growth-benefits.php:483
 msgid "客服标识"
-msgstr ""
+msgstr "Customer Service Badge"
 
 #: includes/class-qilingshop-notifier.php:1461
 msgid "客服已回复工单"
-msgstr ""
+msgstr "Customer service has replied to ticket"
 
 #: admin/class-qilingshop-admin-settings.php:1766
 msgid "控制前台售后工单和后台客服回复的附件上传限制。图片会进行扩展名、MIME 和图片内容真实性校验。"
-msgstr ""
+msgstr "Controls attachment upload limits for frontend tickets and admin replies. Images undergo extension, MIME, and authenticity checks."
 
 #: admin/class-qilingshop-admin-growth.php:333
 msgid "扣减"
-msgstr ""
+msgstr "Deduct"
 
 #: templates/shop/virtual-home/compact.php:52
 #: templates/shop/virtual-home/grid.php:79
 msgid "库存 %d"
-msgstr ""
+msgstr "Stock: %d"
 
 #: admin/shop/views/settings.php:1155
 msgid "快递产品类型"
-msgstr ""
+msgstr "Express Product Type"
 
 #: admin/shop/views/settings.php:1084 admin/shop/views/settings.php:1206
 msgid "快递公司"
@@ -12663,20 +12664,20 @@ msgstr "Shipping Company"
 
 #: includes/shop/class-qls-waybill.php:586
 msgid "快递公司编码或收寄件信息不完整，请检查订单和电子面单模板"
-msgstr ""
+msgstr "Express company code or address info incomplete. Please check order and electronic waybill template."
 
 #: admin/shop/views/settings.php:1046 admin/shop/views/settings.php:1079
 #: includes/shop/class-qls-waybill.php:217
 msgid "快递鸟电子面单"
-msgstr ""
+msgstr "Kuaidiniao Electronic Waybill"
 
 #: admin/shop/views/settings.php:1040
 msgid "快递鸟电子面单接口使用的 AppCode，可与物流查询 AppCode 分开配置。"
-msgstr ""
+msgstr "AppCode used for Kuaidiniao waybill API, configurable separately from tracking AppCode."
 
 #: includes/shop/class-qls-waybill.php:309
 msgid "快递鸟未返回有效的电子面单号"
-msgstr ""
+msgstr "Kuaidiniao did not return a valid electronic waybill number"
 
 #: admin/class-qilingshop-admin-growth.php:731
 msgid "扩展配置 JSON"
@@ -12685,60 +12686,60 @@ msgstr "Extended Config JSON"
 #: admin/class-qilingshop-admin-growth.php:477
 #: admin/class-qilingshop-admin-growth.php:529
 msgid "来源ID"
-msgstr ""
+msgstr "Source ID"
 
 #: admin/class-qilingshop-admin-growth.php:209
 msgid "累计%s"
-msgstr ""
+msgstr "Cumulative %s"
 
 #: includes/class-qilingshop-growth-benefits.php:516
 msgid "礼包说明"
-msgstr ""
+msgstr "Gift Pack Description"
 
 #: templates/account/vip.php:235
 msgid "历史最高"
-msgstr ""
+msgstr "All-time High"
 
 #: templates/shop/partials/account-header.php:51
 msgid "历史最高：%s"
-msgstr ""
+msgstr "All-time High: %s"
 
 #: admin/class-qilingshop-admin-growth.php:247
 msgid "历史最高等级"
-msgstr ""
+msgstr "Historical Highest Level"
 
 #: includes/class-qilingshop-growth.php:421
 msgid "历史最高等级：%s"
-msgstr ""
+msgstr "Historical Highest Level: %s"
 
 #: includes/class-qilingshop-growth-benefits.php:547
 msgid "立即查看"
-msgstr ""
+msgstr "View Now"
 
 #: includes/shop/modules/class-qls-module-product-list.php:175
 msgid "例如：#f5f5f5、透明"
-msgstr ""
+msgstr "e.g.: #f5f5f5, transparent"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:72
 msgid "例如：0、20px、-60px，负值可覆盖上方元素"
-msgstr ""
+msgstr "e.g.: 0, 20px, -60px (negative values can overlay elements above)"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:77
 msgid "例如：0、30px"
-msgstr ""
+msgstr "e.g.: 0, 30px"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:67
 msgid "例如：300px、40vh"
-msgstr ""
+msgstr "e.g.: 300px, 40vh"
 
 #: includes/shop/modules/class-qls-module-product-list.php:180
 #: includes/shop/modules/class-qls-module-product-list.php:185
 msgid "例如：30px、2rem"
-msgstr ""
+msgstr "e.g.: 30px, 2rem"
 
 #: includes/class-qilingshop-growth-benefits.php:466
 msgid "例如：核心用户"
-msgstr ""
+msgstr "e.g.: Core User"
 
 #: templates/shop/checkout.php:196 templates/shop/shop-center.php:433
 msgid "例如：张三 13800138000 浙江省杭州市滨江区网商路699号"
@@ -12746,19 +12747,19 @@ msgstr "e.g.: John Doe 13800138000 No.699 Wangshang Road, Binjiang District, Han
 
 #: includes/class-qilingshop-growth-benefits.php:554
 msgid "例如：专属客服通道"
-msgstr ""
+msgstr "e.g.: VIP Support Channel"
 
 #: public/class-qilingshop-ajax.php:2316
 msgid "联系方式或查询密码不匹配"
-msgstr ""
+msgstr "Contact info or query password does not match"
 
 #: admin/class-qilingshop-admin-settings.php:828
 msgid "链接文案"
-msgstr ""
+msgstr "Link Text"
 
 #: admin/shop/views/settings.php:1009
 msgid "灵简 API Key"
-msgstr ""
+msgstr "Lingjian API Key"
 
 #: admin/class-qilingshop-admin-growth.php:713
 msgid "流水来源"
@@ -12766,52 +12767,52 @@ msgstr "Log Source"
 
 #: includes/class-qilingshop-growth-benefits.php:510
 msgid "留空表示全部"
-msgstr ""
+msgstr "Leave blank for all"
 
 #: admin/class-qilingshop-admin-growth.php:271
 msgid "留空表示无上限"
-msgstr ""
+msgstr "Leave blank for no upper limit"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:103
 msgid "留空自动获取全部商品页面"
-msgstr ""
+msgstr "Leave blank to auto-fetch all products page"
 
 #: admin/shop/class-qls-admin-shop.php:4348
 msgid "买家已退货，请先在“售后退款”页面确认收货后再执行退款。"
-msgstr ""
+msgstr "Buyer has returned goods. Please confirm receipt on the 'After-sales Refunds' page before issuing refund."
 
 #: templates/shop/my-tickets.php:223
 msgid "没有匹配的订单"
-msgstr ""
+msgstr "No matching orders found"
 
 #: admin/shop/views/invoices.php:86
 msgid "没有找到匹配的发票申请"
-msgstr ""
+msgstr "No matching invoice requests found"
 
 #: admin/class-qilingshop-admin-settings.php:833
 msgid "没有注册码？"
-msgstr ""
+msgstr "No registration code?"
 
 #: admin/class-qilingshop-admin-settings.php:1772
 msgid "每次提交或回复最多可上传的附件数量。填 0 表示关闭工单附件上传。"
-msgstr ""
+msgstr "Max attachments per submission or reply. Enter 0 to disable ticket attachments."
 
 #: public/shop/class-qls-review-ajax.php:395
 #: public/shop/class-qls-review-ajax.php:480
 msgid "每个订单最多上传%d张评价图片"
-msgstr ""
+msgstr "Max %d review images allowed per order"
 
 #: includes/class-qilingshop-growth-benefits.php:494
 msgid "每人领取次数"
-msgstr ""
+msgstr "Claims per Person"
 
 #: includes/class-qilingshop-growth-benefits.php:348
 msgid "每日 VIP 免费下载次数 +%d"
-msgstr ""
+msgstr "Daily VIP Free Downloads +%d"
 
 #: includes/class-qilingshop-growth-benefits.php:523
 msgid "每日额外下载次数"
-msgstr ""
+msgstr "Daily Extra Downloads"
 
 #: admin/class-qilingshop-admin-growth.php:933 templates/account/vip.php:130
 msgid "每日访问"
@@ -12819,7 +12820,7 @@ msgstr "Daily Visit"
 
 #: includes/class-qilingshop-growth-rules.php:176
 msgid "每日访问成长值"
-msgstr ""
+msgstr "Daily Visit Growth Points"
 
 #: admin/class-qilingshop-admin-growth.php:729
 msgid "每日最高成长值"
@@ -12827,11 +12828,11 @@ msgstr "Max Daily Points"
 
 #: admin/shop/views/settings.php:1504
 msgid "每项包含：图标图片链接、标题、描述。全部留空的行不会保存。"
-msgstr ""
+msgstr "Each item contains: icon image URL, title, description. Blank rows will not be saved."
 
 #: public/class-qilingshop-submit-integration.php:277
 msgid "每行一个，支持名称、链接和提取码的多种组合"
-msgstr ""
+msgstr "One per line, supports various combinations of name, URL, and extraction code"
 
 #: admin/class-qilingshop-admin-growth.php:730
 msgid "每月最高成长值"
@@ -12839,23 +12840,23 @@ msgstr "Max Monthly Points"
 
 #: admin/shop/class-qls-admin-shop.php:3681
 msgid "免费订单"
-msgstr ""
+msgstr "Free Order"
 
 #: admin/shop/views/settings.php:1117
 msgid "面单规格"
-msgstr ""
+msgstr "Waybill Size"
 
 #: admin/shop/class-qls-admin-shop.php:1856
 msgid "面单号"
-msgstr ""
+msgstr "Waybill Number"
 
 #: templates/shop/my-tickets.php:235
 msgid "描述订单、资源、卡密、物流或发票相关问题"
-msgstr ""
+msgstr "Describe issues related to orders, resources, card keys, shipping, or invoices"
 
 #: admin/shop/views/settings.php:1205
 msgid "模板"
-msgstr ""
+msgstr "Template"
 
 #: admin/shop/views/settings.php:1073
 msgid "模板名称"
@@ -12863,11 +12864,11 @@ msgstr "Template Name"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:93
 msgid "默认：全部商品"
-msgstr ""
+msgstr "Default: All Products"
 
 #: admin/shop/views/settings.php:1284
 msgid "默认公司"
-msgstr ""
+msgstr "Default Company"
 
 #: admin/shop/views/settings.php:314
 msgid "默认关闭。开启后，前台结账页及用户中心地址管理中将展示“智能识别”输入框，支持用户一键粘贴整段快递文本并自动识别填入收件人、电话和详细地址。"
@@ -12875,134 +12876,134 @@ msgstr "Disabled by default. When enabled, a smart recognition input box will be
 
 #: admin/shop/views/settings.php:1177
 msgid "默认模板"
-msgstr ""
+msgstr "Default Template"
 
 #: includes/class-qilingshop-growth-benefits.php:524
 msgid "默认只作为配置，不会绕过现有资源和 VIP 权限。"
-msgstr ""
+msgstr "Serves as configuration only by default; will not bypass existing resource and VIP permissions."
 
 #: admin/shop/views/settings.php:1125
 msgid "默认重量"
-msgstr ""
+msgstr "Default Weight"
 
 #: admin/shop/views/tickets.php:138 admin/shop/views/tickets.php:168
 msgid "内部备注"
-msgstr ""
+msgstr "Internal Note"
 
 #: includes/shop/class-qls-shop-ticket.php:470
 msgid "内部备注写入失败，请稍后重试"
-msgstr ""
+msgstr "Failed to write internal note, please try again later"
 
 #: includes/class-qilingshop-notifier.php:345
 msgid "您的成长等级已更新为：%s。"
-msgstr ""
+msgstr "Your growth level has been updated to: %s."
 
 #: includes/class-qilingshop-notifier.php:1107
 msgid "您的商城订单已支付成功，请查看以下订单信息。"
-msgstr ""
+msgstr "Your shop order payment succeeded. Please check the order details below."
 
 #: includes/class-qilingshop-notifier.php:1469
 msgid "您的售后工单已有客服回复，请查看以下信息。"
-msgstr ""
+msgstr "Customer service has replied to your ticket. Please check the details below."
 
 #: includes/class-qilingshop-notifier.php:189
 msgid "您的资源订单已支付完成，请查看以下订单信息。"
-msgstr ""
+msgstr "Your resource order payment completed. Please check the order details below."
 
 #: qilingshop.php:167
 msgid "您没有权限访问此页面。"
-msgstr ""
+msgstr "You do not have permission to access this page."
 
 #: includes/class-qilingshop-order.php:947
 #: public/class-qilingshop-ajax.php:1949
 msgid "您已购买该下载项，无需重复购买"
-msgstr ""
+msgstr "You have already purchased this download item; no need to repurchase"
 
 #: includes/class-qilingshop-growth-benefits.php:499
 msgid "配置活动资格标识，业务生效将在后续阶段接入。"
-msgstr ""
+msgstr "Configure activity eligibility identifier; business rules will integrate in later phases."
 
 #: includes/class-qilingshop-growth-benefits.php:490
 msgid "配置可领取的优惠券 ID，业务生效将在后续阶段接入。"
-msgstr ""
+msgstr "Configure claimable coupon IDs; business integration will follow in next stage."
 
 #: admin/class-qilingshop-admin-resource-bulk.php:44
 msgid "批量取消 VIP 免费"
-msgstr ""
+msgstr "Batch Cancel VIP Free"
 
 #: admin/class-qilingshop-admin-resource-bulk.php:43
 msgid "批量设置 VIP 免费下载"
-msgstr ""
+msgstr "Batch Set VIP Free Download"
 
 #: includes/class-qilingshop-growth-rules.php:233
 msgid "评价成长值"
-msgstr ""
+msgstr "Growth Points for Review"
 
 #: public/shop/class-qls-review-ajax.php:390
 msgid "评价图片上传已关闭"
-msgstr ""
+msgstr "Review image upload is disabled"
 
 #: admin/class-qilingshop-admin-statistics.php:482
 msgid "普通下载"
-msgstr ""
+msgstr "Standard Download"
 
 #: templates/shop/my-tickets.php:184
 msgid "普通咨询或无法确认订单时选择"
-msgstr ""
+msgstr "Select for general inquiries or when order cannot be confirmed"
 
 #: includes/shop/class-qls-shop-ticket.php:85
 #: includes/shop/class-qls-shop-ticket.php:131
 msgid "其他问题"
-msgstr ""
+msgstr "Other Issues"
 
 #: includes/shop/class-qls-invoice.php:375
 msgid "企业"
-msgstr ""
+msgstr "Enterprise"
 
 #: qilingshop.php:175
 msgid "启灵商城当前未授权，商城业务功能已停止加载。"
-msgstr ""
+msgstr "QilingShop is currently unauthorized. Shop business functions have stopped loading."
 
 #: admin/shop/class-qls-admin-shop.php:75
 msgid "启灵商城概览"
-msgstr ""
+msgstr "QilingShop Overview"
 
 #: qilingshop.php:151
 msgid "启灵商城授权"
-msgstr ""
+msgstr "QilingShop License"
 
 #: payment/paypal-return.php:30
 msgid "启灵商城未授权，暂时无法处理支付结果。"
-msgstr ""
+msgstr "QilingShop is unauthorized; cannot process payment results at this time."
 
 #: payment/alipay.php:34 payment/alipay_page.php:32 payment/epay.php:31
 #: payment/paypal.php:30 payment/stripe.php:35
 msgid "启灵商城未授权，暂时无法使用支付功能。"
-msgstr ""
+msgstr "QilingShop is unauthorized; payment functions are temporarily unavailable."
 
 #: admin/class-qilingshop-admin-settings.php:674
 msgid "启灵商城已通过当前启灵主题授权验证，可以正常使用全部功能。"
-msgstr ""
+msgstr "QilingShop has passed verification with the current Qiling theme license; all features are fully active."
 
 #: qilingshop.php:173
 msgid "启灵商城正版授权"
-msgstr ""
+msgstr "QilingShop Genuine License"
 
 #: admin/class-qilingshop-admin-growth.php:244
 msgid "启用成长体系"
-msgstr ""
+msgstr "Enable Growth System"
 
 #: admin/shop/views/settings.php:1031
 msgid "启用电子面单"
-msgstr ""
+msgstr "Enable Electronic Waybills"
 
 #: admin/shop/views/settings.php:87
 msgid "启用独立虚拟发卡首页"
-msgstr ""
+msgstr "Enable Standalone Virtual Card Home"
 
 #: admin/shop/views/settings.php:77
 msgid "启用发卡首页"
-msgstr ""
+msgstr "Enable Card Dispatch Home"
 
 #: admin/class-qilingshop-admin-growth.php:733
 msgid "启用该规则"
@@ -13015,122 +13016,122 @@ msgstr "Enable Rule"
 #: admin/class-qilingshop-admin-payment.php:290
 #: admin/class-qilingshop-admin-settings.php:2015
 msgid "启用后，在小程序内购买 VIP 或虚拟商品将优先调起微信官方 wx.requestVirtualPayment 虚拟支付收银台。"
-msgstr ""
+msgstr "When enabled, buying VIP or virtual goods in mini program prioritizes official wx.requestVirtualPayment cashier."
 
 #: admin/class-qilingshop-admin-payment.php:289
 #: admin/class-qilingshop-admin-settings.php:2014
 msgid "启用微信小程序虚拟支付"
-msgstr ""
+msgstr "Enable WeChat Mini Program Virtual Payment"
 
 #: admin/class-qilingshop-admin-payment.php:230
 #: admin/class-qilingshop-admin-settings.php:1932
 msgid "启用微信小程序支付"
-msgstr ""
+msgstr "Enable WeChat Mini Program Payment"
 
 #: admin/class-qilingshop-admin-payment.php:288
 #: admin/class-qilingshop-admin-settings.php:2011
 msgid "启用虚拟支付"
-msgstr ""
+msgstr "Enable Virtual Payment"
 
 #: includes/class-qilingshop-growth-rules.php:185
 msgid "签到成长值"
-msgstr ""
+msgstr "Check-in Growth Points"
 
 #: admin/class-qilingshop-admin-growth.php:403
 msgid "前台展示标题"
-msgstr ""
+msgstr "Frontend Display Title"
 
 #: admin/class-qilingshop-admin-growth.php:404
 msgid "前台展示说明"
-msgstr ""
+msgstr "Frontend Display Description"
 
 #: includes/class-qilingshop-growth-benefits.php:541
 msgid "前台展示一个自定义权益链接。"
-msgstr ""
+msgstr "Displays a custom benefit link on the frontend."
 
 #: includes/class-qilingshop-payment.php:1314
 msgid "前往售后退款页"
-msgstr ""
+msgstr "Go to After-sales Refunds Page"
 
 #: qilingshop.php:187
 msgid "前往正版授权"
-msgstr ""
+msgstr "Go to Genuine License"
 
 #: admin/class-qilingshop-admin-growth.php:381
 msgid "切换权益类型"
-msgstr ""
+msgstr "Switch Benefit Type"
 
 #: admin/class-qilingshop-admin-growth.php:544
 msgid "清理成长流水"
-msgstr ""
+msgstr "Clean Growth Records"
 
 #: admin/class-qilingshop-admin-growth.php:552
 msgid "清理当前筛选流水"
-msgstr ""
+msgstr "Clean Currently Filtered Records"
 
 #: admin/class-qilingshop-admin-statistics.php:505
 msgid "清理过期下载日志"
-msgstr ""
+msgstr "Clean Expired Download Logs"
 
 #: admin/class-qilingshop-admin-growth.php:545
 msgid "清理会删除当前筛选条件匹配的成长流水记录，不会改变用户当前成长值和等级。请至少设置一个筛选条件后再执行。"
-msgstr ""
+msgstr "Cleanup deletes growth records matching filter criteria without affecting user points or levels. Set at least one filter before running."
 
 #: admin/shop/views/orders-list.php:95
 msgid "清理已取消"
-msgstr ""
+msgstr "Clean Cancelled"
 
 #: admin/shop/views/orders-list.php:100
 msgid "清理已完成"
-msgstr ""
+msgstr "Clean Completed"
 
 #: admin/shop/class-qls-admin-shop.php:5610 admin/shop/views/settings.php:97
 #: includes/helpers.php:1629 templates/shop/shop-virtual-home.php:11
 msgid "清爽列表"
-msgstr "清爽 List"
+msgstr "Clean List"
 
 #: admin/class-qilingshop-admin-settings.php:3275
 msgid "清新多彩（默认）"
-msgstr ""
+msgstr "Fresh & Colorful (Default)"
 
 #: public/shop/class-qls-shop-shortcodes.php:442
 msgid "请<a href=\"%s\">登录</a>后查看工单"
-msgstr ""
+msgstr "Please <a href=\"%s\">log in</a> to view support tickets"
 
 #: admin/class-qilingshop-admin-payment.php:225
 #: admin/class-qilingshop-admin-settings.php:1925
 msgid "请按微信支付商户平台提供的参数填写，支持 v2 / v3 两套配置。"
-msgstr ""
+msgstr "Please fill in according to WeChat Pay Merchant Platform; supports both v2 and v3 configurations."
 
 #: admin/shop/class-qls-admin-shop.php:3986
 msgid "请检查对应支付渠道配置是否完整后重试。"
-msgstr ""
+msgstr "Please check if the payment channel configuration is complete and try again."
 
 #: templates/shop/virtual-home/compact.php:11
 #: templates/shop/virtual-home/grid.php:51
 msgid "请稍后再来，或调整搜索条件。"
-msgstr ""
+msgstr "Please check back later or adjust your search criteria."
 
 #: public/shop/class-qls-shop-ajax.php:599
 #: public/shop/class-qls-shop-public.php:1477
 msgid "请设置4-64位订单查询密码"
-msgstr ""
+msgstr "Please set a 4-64 character order query password"
 
 #: public/class-qilingshop-ajax.php:2289
 msgid "请输入订单号，或填写查询密码"
-msgstr "Please enter 订单号，或填写查询密码"
+msgstr "Please enter the order number or query password"
 
 #: admin/shop/views/settings.php:1011
 msgid "请输入灵简平台生成的 API Key"
-msgstr "Please enter 灵简平台生成的 api key"
+msgstr "Please enter the API Key generated by Lingjian platform"
 
 #: public/class-qilingshop-public.php:362
 msgid "请输入手机号/邮箱，并填写订单号或查询密码"
-msgstr "Please enter 手机号/邮箱，并填写订单号或查询密码"
+msgstr "Please enter mobile number/email, and order number or query password"
 
 #: public/class-qilingshop-ajax.php:2285
 msgid "请输入手机号或邮箱"
-msgstr "Please enter 手机号或邮箱"
+msgstr "Please enter mobile number or email"
 
 #: public/shop/class-qls-shop-ajax.php:943
 msgid "请提供更完整的地址文本进行识别"
@@ -13142,11 +13143,11 @@ msgstr "Please enter ticket title"
 
 #: includes/shop/class-qls-shop-ticket.php:453
 msgid "请填写回复、内部备注或调整状态"
-msgstr "Please enter 回复、内部备注或调整状态"
+msgstr "Please enter a reply, internal note, or adjust the status"
 
 #: includes/shop/class-qls-shop-ticket.php:369
 msgid "请填写回复内容"
-msgstr "Please enter 回复内容"
+msgstr "Please enter reply content"
 
 #: includes/shop/class-qls-waybill.php:515
 msgid "请填写模板名称"
@@ -13154,27 +13155,27 @@ msgstr "Please enter template name"
 
 #: includes/shop/class-qls-shop-ticket.php:279
 msgid "请填写问题说明"
-msgstr "Please enter 问题说明"
+msgstr "Please enter the issue description"
 
 #: includes/shop/class-qls-shipment.php:91
 msgid "请填写物流单号"
-msgstr "Please enter 物流单号"
+msgstr "Please enter tracking number"
 
 #: admin/shop/views/orders-list.php:610
 msgid "请填写物流单号，或勾选生成电子面单。"
-msgstr "Please enter 物流单号，或勾选生成电子面单。"
+msgstr "Please enter the tracking number or check to generate an e-waybill."
 
 #: includes/shop/class-qls-shipping-company.php:349
 msgid "请填写物流公司编码"
-msgstr "Please enter 物流公司编码"
+msgstr "Please enter logistics company code"
 
 #: includes/shop/class-qls-shipping-company.php:342
 msgid "请填写物流公司名称"
-msgstr "Please enter 物流公司名称"
+msgstr "Please enter logistics company name"
 
 #: includes/shop/class-qls-shop-ticket.php:253
 msgid "请先登录后提交工单"
-msgstr ""
+msgstr "Please log in before submitting a ticket"
 
 #: admin/class-qilingshop-admin-growth.php:99
 msgid "请先勾选确认清理成长流水"
@@ -13186,40 +13187,40 @@ msgstr "Please select growth logs to delete"
 
 #: includes/shop/class-qls-waybill.php:569
 msgid "请先配置快递鸟电子面单 AppCode"
-msgstr ""
+msgstr "Please configure Kuaidiniao Electronic Waybill AppCode first"
 
 #: public/shop/class-qls-review-ajax.php:142 templates/shop/my-orders.php:2246
 msgid "请先选择要评价的商品"
-msgstr ""
+msgstr "Please select the product to review first"
 
 #: admin/shop/class-qls-admin-shop.php:4244
 msgid "请先在“快递物流”设置中配置可用的电子面单模板。"
-msgstr ""
+msgstr "Please configure an available electronic waybill template in 'Express Logistics' settings first."
 
 #: admin/shop/class-qls-admin-shop.php:4356
 msgid "请先在“售后退款”页面审核通过后再执行退款（当前状态：%s）。"
-msgstr ""
+msgstr "Please approve on 'After-sales Refunds' page before executing refund (Current status: %s)."
 
 #: admin/shop/class-qls-admin-shop.php:4250
 msgid "请选择本次要发货的商品。"
-msgstr "Please select 本次要发货的商品。"
+msgstr "Please select the items to be shipped this time."
 
 #: includes/shop/class-qls-waybill.php:268
 #: includes/shop/class-qls-waybill.php:494
 msgid "请选择可用的电子面单模板"
-msgstr "Please select 可用的电子面单模板"
+msgstr "Please select an available electronic waybill template"
 
 #: includes/shop/class-qls-shipment.php:88
 msgid "请选择物流公司"
-msgstr "Please select 物流公司"
+msgstr "Please select a logistics company"
 
 #: admin/shop/views/settings.php:28
 msgid "请选择要操作的项目"
-msgstr "Please select 要操作的项目"
+msgstr "Please select the items to operate"
 
 #: includes/shop/class-qls-shipment.php:77
 msgid "请选择要发货的商品"
-msgstr "Please select 要发货的商品"
+msgstr "Please select items to ship"
 
 #: public/shop/class-qls-shop-public.php:1504
 msgid "请粘贴包含姓名、电话和地址的有效文本"
@@ -13231,43 +13232,43 @@ msgstr "Please set at least one filter condition before cleaning up to avoid del
 
 #: admin/shop/views/orders-list.php:620
 msgid "请至少选择一个要发货的商品。"
-msgstr ""
+msgstr "Please select at least one item to ship."
 
 #: admin/class-qilingshop-admin-resource-bulk.php:1008
 msgid "取消 VIP 免费"
-msgstr ""
+msgstr "Cancel VIP Free"
 
 #: admin/shop/views/orders-list.php:233
 msgid "去确认收货"
-msgstr ""
+msgstr "Confirm Receipt"
 
 #: admin/shop/views/orders-list.php:235
 msgid "去确认退款"
-msgstr ""
+msgstr "Confirm Refund"
 
 #: admin/shop/views/orders-list.php:231
 msgid "去审核"
-msgstr ""
+msgstr "Go to Audit"
 
 #: templates/shop/my-downloads.php:89
 msgid "去我的订单"
-msgstr ""
+msgstr "Go to My Orders"
 
 #: admin/class-qilingshop-admin-growth.php:419
 msgid "全部等级"
-msgstr ""
+msgstr "All Levels"
 
 #: admin/class-qilingshop-admin-growth.php:423
 msgid "权益"
-msgstr ""
+msgstr "Benefits"
 
 #: admin/class-qilingshop-admin-growth.php:371
 msgid "权益不会写死到某个等级，保存后只对所选成长等级生效。业务模块后续通过统一接口读取这些配置。"
-msgstr ""
+msgstr "Benefits are not hardcoded to a level; they take effect for selected growth levels after saving. Business modules read these via a unified interface."
 
 #: admin/class-qilingshop-admin-growth.php:407
 msgid "权益参数"
-msgstr ""
+msgstr "Benefit Parameters"
 
 #: admin/class-qilingshop-admin-growth.php:397
 msgid "权益类型"
@@ -13275,80 +13276,80 @@ msgstr "Benefit Type"
 
 #: admin/class-qilingshop-admin-growth.php:416
 msgid "权益列表"
-msgstr "权益 List"
+msgstr "Benefits List"
 
 #: admin/class-qilingshop-admin-growth.php:217
 msgid "权益数"
-msgstr ""
+msgstr "Benefit Count"
 
 #: admin/class-qilingshop-admin-growth.php:402
 #: includes/class-qilingshop-growth-benefits.php:64
 msgid "权益值"
-msgstr ""
+msgstr "Benefit Value"
 
 #: includes/class-qilingshop-payment.php:1333
 msgid "缺少："
-msgstr ""
+msgstr "Missing: "
 
 #: payment/class-payment-alipay.php:296 payment/class-payment-wechat.php:77
 msgid "缺少退款单号"
-msgstr ""
+msgstr "Missing refund order number"
 
 #: payment/class-payment-wechat.php:81
 msgid "缺少微信交易号或商户订单号"
-msgstr ""
+msgstr "Missing WeChat transaction number or merchant order number"
 
 #: payment/class-payment-alipay.php:300
 msgid "缺少支付宝交易号或商户订单号"
-msgstr ""
+msgstr "Missing Alipay transaction number or merchant order number"
 
 #: admin/class-qilingshop-admin-statistics.php:493
 msgid "确定清理所选保留周期以前的下载统计日志吗？此操作无法撤销。"
-msgstr ""
+msgstr "Are you sure you want to clean download stats logs prior to the retention period? This cannot be undone."
 
 #: admin/class-qilingshop-admin-growth.php:293
 msgid "确定删除该成长等级吗？"
-msgstr ""
+msgstr "Are you sure you want to delete this growth level?"
 
 #: admin/class-qilingshop-admin-growth.php:434
 msgid "确定删除该成长权益吗？"
-msgstr ""
+msgstr "Are you sure you want to delete this growth benefit?"
 
 #: admin/shop/views/orders-list.php:92
 msgid "确定要清理已取消订单吗？每次最多清理 500 条，此操作无法撤销。"
-msgstr ""
+msgstr "Are you sure you want to clean cancelled orders? Max 500 per batch, cannot be undone."
 
 #: admin/shop/views/orders-list.php:97
 msgid "确定要清理已完成订单吗？订单记录删除后无法恢复，每次最多清理 500 条。"
-msgstr ""
+msgstr "Are you sure you want to clean completed orders? Deleted orders cannot be restored, max 500 per batch."
 
 #: admin/class-qilingshop-admin-growth.php:551
 msgid "确认按当前筛选条件清理成长流水"
-msgstr ""
+msgstr "Confirm cleaning growth records by current filter criteria"
 
 #: includes/shop/class-qls-shop-refund.php:651
 msgid "确认退款成功"
-msgstr ""
+msgstr "Refund confirmed successfully"
 
 #: templates/shop/virtual-home/grid.php:61
 msgid "热卖卡密"
-msgstr ""
+msgstr "Hot Card Keys"
 
 #: includes/shop/modules/class-qls-module-product-list.php:130
 msgid "热门"
-msgstr ""
+msgstr "Popular"
 
 #: includes/class-qilingshop-growth-rules.php:254
 msgid "任务成长值：%s"
-msgstr ""
+msgstr "Task Growth Points: %s"
 
 #: includes/class-qilingshop-growth-benefits.php:332
 msgid "任务成长值额外加成 %s%%"
-msgstr ""
+msgstr "Task Growth Points Extra Bonus %s%%"
 
 #: includes/class-qilingshop-growth-benefits.php:504
 msgid "任务成长值加成"
-msgstr ""
+msgstr "Task Growth Points Bonus"
 
 #: admin/class-qilingshop-admin-growth.php:940 templates/account/vip.php:137
 msgid "任务完成"
@@ -13356,56 +13357,58 @@ msgstr "Task Completion"
 
 #: admin/shop/views/settings.php:1074
 msgid "如：默认电子面单"
-msgstr ""
+msgstr "e.g.: Default Electronic Waybill"
 
 #: admin/shop/views/settings.php:1273
 msgid ""
 "如：顺丰\n"
 "顺丰快递"
 msgstr ""
+"e.g.: SF Express\n"
+"SF"
 
 #: templates/account/vip.php:298
 msgid "如何获得成长值"
-msgstr ""
+msgstr "How to Earn Growth Points"
 
 #: admin/shop/views/refunds.php:211
 msgid "如切换到“原路退回”，该订单可走第三方支付原路退款。"
-msgstr ""
+msgstr "If switched to 'Original Payment Method', this order can refund via third-party payment gateway."
 
 #: templates/shop/my-downloads.php:81
 msgid "如需发票，可前往我的订单提交申请。"
-msgstr ""
+msgstr "If you need an invoice, you can submit a request in My Orders."
 
 #: admin/class-qilingshop-metabox.php:273
 msgid "若在微信小程序中使用官方虚拟支付单独购买此资源，请先在微信公众平台【虚拟支付 -> 道具管理】中添加该道具。此处填写微信道具 ID（留空默认为 goods_文章ID），微信后台价格需与该资源售价一致（以分为单位）。"
-msgstr ""
+msgstr "If using official virtual payment in WeChat Mini Program to purchase this resource, add the prop in WeChat Platform [Virtual Payment -> Prop Management] first. Enter Prop ID here (defaults to goods_PostID); WeChat price must match resource price in cents."
 
 #: admin/class-qilingshop-admin-payment.php:311
 #: admin/class-qilingshop-admin-settings.php:2043
 msgid "沙箱 AppKey"
-msgstr ""
+msgstr "Sandbox AppKey"
 
 #: admin/class-qilingshop-admin-payment.php:297
 #: admin/class-qilingshop-admin-settings.php:2023
 msgid "沙箱测试环境 (env=1)"
-msgstr ""
+msgstr "Sandbox Test Environment (env=1)"
 
 #: admin/class-qilingshop-admin-payment.php:312
 #: admin/class-qilingshop-admin-settings.php:2046
 msgid "沙箱测试环境 AppKey，仅在环境模式为沙箱时生效。"
-msgstr ""
+msgstr "Sandbox AppKey, only takes effect when environment mode is sandbox."
 
 #: admin/class-qilingshop-admin-growth.php:539
 msgid "删除选中流水"
-msgstr ""
+msgstr "Delete Selected Records"
 
 #: public/class-qilingshop-ajax.php:2801 public/class-qilingshop-ajax.php:2880
 msgid "商城地址服务不可用"
-msgstr ""
+msgstr "Shop address service unavailable"
 
 #: includes/class-qilingshop-growth-rules.php:226
 msgid "商城订单成长值：%s"
-msgstr ""
+msgstr "Shop Order Growth Points: %s"
 
 #: admin/class-qilingshop-admin-growth.php:936 templates/account/vip.php:133
 msgid "商城订单支付"
@@ -13414,7 +13417,7 @@ msgstr "Shop Order Payment"
 #: admin/class-qilingshop-admin-payment.php:327
 #: admin/class-qilingshop-admin-settings.php:2062
 msgid "商城售价 (元)"
-msgstr ""
+msgstr "Shop Price (CNY)"
 
 #: admin/class-qilingshop-admin-payment.php:122
 #: admin/class-qilingshop-admin-settings.php:1747
@@ -13423,15 +13426,15 @@ msgstr "Shop Refund Method"
 
 #: admin/class-qilingshop-admin-settings.php:1743
 msgid "商城退款设置"
-msgstr "商城退款 Settings"
+msgstr "Shop Refund Settings"
 
 #: public/shop/class-qls-shop-shortcodes.php:69
 msgid "商城维护中"
-msgstr ""
+msgstr "Shop Under Maintenance"
 
 #: qilingshop.php:180
 msgid "商城与启灵主题共用授权，请先完成启灵主题正版授权。"
-msgstr ""
+msgstr "QilingShop shares license with Qiling theme. Please complete theme authorization first."
 
 #: admin/class-qilingshop-admin-payment.php:210
 #: admin/class-qilingshop-admin-payment.php:266
@@ -13439,12 +13442,12 @@ msgstr ""
 #: admin/class-qilingshop-admin-settings.php:1974
 #: admin/shop/class-qls-admin-shop.php:3827
 msgid "商户 API 私钥"
-msgstr ""
+msgstr "Merchant API Private Key"
 
 #: admin/class-qilingshop-admin-payment.php:267
 #: admin/class-qilingshop-admin-settings.php:1976
 msgid "商户 API 私钥。可直接粘贴 PEM 内容，或填写服务器可读取的绝对路径/站内文件地址。"
-msgstr ""
+msgstr "Merchant API Private Key. Paste PEM content or provide a readable server path/URL."
 
 #: admin/class-qilingshop-admin-payment.php:206
 #: admin/class-qilingshop-admin-payment.php:262
@@ -13452,246 +13455,246 @@ msgstr ""
 #: admin/class-qilingshop-admin-settings.php:1969
 #: admin/shop/class-qls-admin-shop.php:3824
 msgid "商户 API 证书"
-msgstr ""
+msgstr "Merchant API Certificate"
 
 #: admin/class-qilingshop-admin-payment.php:263
 #: admin/class-qilingshop-admin-settings.php:1971
 msgid "商户 API 证书。可直接粘贴 PEM 内容，或填写服务器可读取的绝对路径/站内文件地址。"
-msgstr ""
+msgstr "Merchant API Certificate. Paste PEM content or provide a readable server path/URL."
 
 #: admin/class-qilingshop-admin-payment.php:259
 #: admin/class-qilingshop-admin-settings.php:1966
 msgid "商户 API 证书序列号。"
-msgstr ""
+msgstr "Merchant API Certificate Serial Number."
 
 #: admin/class-qilingshop-admin-payment.php:258
 #: admin/class-qilingshop-admin-settings.php:1964
 #: admin/shop/class-qls-admin-shop.php:3870
 #: includes/class-qilingshop-payment.php:1077
 msgid "商户证书序列号"
-msgstr ""
+msgstr "Merchant Certificate Serial Number"
 
 #: admin/shop/views/refunds.php:28
 msgid "商家确认收货"
-msgstr ""
+msgstr "Merchant Confirms Receipt"
 
 #: includes/shop/class-qls-shipment.php:120
 msgid "商品「%s」发货数量不正确"
-msgstr ""
+msgstr "Shipment quantity for product '%s' is incorrect"
 
 #: admin/shop/views/tickets.php:78
 msgid "商品/资源"
-msgstr ""
+msgstr "Product / Resource"
 
 #: admin/shop/views/settings.php:191
 msgid "商品价格显示"
-msgstr ""
+msgstr "Product Price Display"
 
 #: includes/shop/class-qls-shop-order.php:2834
 msgid "商品价格异常，请联系管理员"
-msgstr ""
+msgstr "Abnormal product price, please contact administrator"
 
 #: includes/shop/class-qls-cart.php:478
 msgid "商品数量必须大于等于1"
-msgstr ""
+msgstr "Product quantity must be at least 1"
 
 #: includes/shop/class-qls-cart.php:330 includes/shop/class-qls-cart.php:819
 msgid "商品数量异常，请删除后重新添加"
-msgstr ""
+msgstr "Abnormal product quantity, please delete and re-add"
 
 #: admin/class-qilingshop-admin-settings.php:3276
 msgid "商务蓝灰"
-msgstr ""
+msgstr "Business Blue Gray"
 
 #: admin/shop/views/refunds.php:206
 msgid "上次执行："
-msgstr ""
+msgstr "Last Run: "
 
 #: admin/class-qilingshop-admin-resource-bulk.php:1007
 msgid "设为 VIP 免费下载"
-msgstr ""
+msgstr "Set as VIP Free Download"
 
 #: admin/shop/views/settings.php:1178
 msgid "设为默认电子面单模板"
-msgstr ""
+msgstr "Set as Default Electronic Waybill Template"
 
 #: admin/shop/views/settings.php:1286
 msgid "设为默认物流公司"
-msgstr ""
+msgstr "Set as Default Logistics Company"
 
 #: includes/class-qilingshop-points.php:1255
 msgid "社区补签卡补录签到奖励（%s）"
-msgstr ""
+msgstr "Community retro check-in card reward (%s)"
 
 #: templates/account/points.php:168
 msgid "社区采纳答案奖励"
-msgstr ""
+msgstr "Community Accepted Answer Reward"
 
 #: templates/account/points.php:155
 msgid "社区抽取靓号"
-msgstr ""
+msgstr "Community VIP Number Draw"
 
 #: templates/account/points.php:142
 msgid "社区道具兑换"
-msgstr ""
+msgstr "Community Prop Exchange"
 
 #: templates/account/points.php:143
 msgid "社区道具退还"
-msgstr ""
+msgstr "Community Prop Refund"
 
 #: templates/account/points.php:165
 msgid "社区等级升级奖励"
-msgstr ""
+msgstr "Community Level Upgrade Reward"
 
 #: templates/account/points.php:144
 msgid "社区发布悬赏"
-msgstr ""
+msgstr "Community Bounty Post"
 
 #: templates/account/points.php:166
 msgid "社区发帖奖励"
-msgstr ""
+msgstr "Community Post Reward"
 
 #: templates/account/points.php:170
 msgid "社区工单公开奖励"
-msgstr ""
+msgstr "Community Public Ticket Reward"
 
 #: templates/account/points.php:151
 msgid "社区红包回滚"
-msgstr ""
+msgstr "Community Red Packet Rollback"
 
 #: templates/account/points.php:150
 msgid "社区红包退还"
-msgstr ""
+msgstr "Community Red Packet Refund"
 
 #: templates/account/points.php:195
 msgid "社区互动"
-msgstr ""
+msgstr "Community Interaction"
 
 #: templates/account/points.php:172
 msgid "社区积分奖励"
-msgstr ""
+msgstr "Community Points Reward"
 
 #: templates/account/points.php:171
 msgid "社区积分消费"
-msgstr ""
+msgstr "Community Points Consumption"
 
 #: templates/account/points.php:169
 msgid "社区精华推荐奖励"
-msgstr ""
+msgstr "Community Featured Post Reward"
 
 #: templates/account/points.php:156
 msgid "社区靓号抽奖回滚"
-msgstr ""
+msgstr "Community VIP Number Draw Rollback"
 
 #: templates/account/points.php:154
 msgid "社区靓号出售收益"
-msgstr ""
+msgstr "Community VIP Number Sale Revenue"
 
 #: templates/account/points.php:152
 msgid "社区靓号购买"
-msgstr ""
+msgstr "Community VIP Number Purchase"
 
 #: templates/account/points.php:153
 msgid "社区靓号购买回滚"
-msgstr ""
+msgstr "Community VIP Number Purchase Rollback"
 
 #: templates/account/points.php:199
 msgid "社区靓号交易"
-msgstr ""
+msgstr "Community VIP Number Trade"
 
 #: templates/account/points.php:157
 msgid "社区靓号系统回收"
-msgstr ""
+msgstr "Community VIP Number System Buyback"
 
 #: templates/account/points.php:167
 msgid "社区评论奖励"
-msgstr ""
+msgstr "Community Comment Reward"
 
 #: templates/account/points.php:149
 msgid "社区抢红包"
-msgstr ""
+msgstr "Community Red Packet Grab"
 
 #: templates/account/points.php:148
 msgid "社区塞红包"
-msgstr ""
+msgstr "Community Red Packet Creation"
 
 #: templates/account/points.php:147
 msgid "社区悬赏回滚"
-msgstr ""
+msgstr "Community Bounty Rollback"
 
 #: templates/account/points.php:145
 msgid "社区悬赏奖励"
-msgstr ""
+msgstr "Community Bounty Reward"
 
 #: templates/account/points.php:146
 msgid "社区悬赏退还"
-msgstr ""
+msgstr "Community Bounty Refund"
 
 #: admin/shop/views/invoices.php:147
 msgid "申请："
-msgstr ""
+msgstr "Apply: "
 
 #: admin/shop/views/invoices.php:101
 msgid "申请编号：%d"
-msgstr ""
+msgstr "Application ID: %d"
 
 #: templates/account/vip.php:230
 msgid "升级还差"
-msgstr ""
+msgstr "Needed to Upgrade"
 
 #: includes/class-qilingshop-growth-benefits.php:338
 msgid "升级生日券 #%d"
-msgstr ""
+msgstr "Upgrade Birthday Coupon #%d"
 
 #: includes/class-qilingshop-growth-benefits.php:518
 msgid "升级优惠券 ID"
-msgstr ""
+msgstr "Upgrade Coupon ID"
 
 #: admin/shop/views/orders-list.php:351 admin/shop/views/orders-list.php:720
 #: admin/shop/views/orders-list.php:791 admin/shop/views/orders-list.php:805
 msgid "生成电子面单"
-msgstr ""
+msgstr "Generate Electronic Waybill"
 
 #: admin/shop/views/orders-list.php:344
 msgid "生成电子面单时可留空，系统会自动生成面单号。"
-msgstr ""
+msgstr "Can leave blank when generating electronic waybill; system auto-generates tracking number."
 
 #: admin/shop/class-qls-admin-shop.php:1898
 msgid "生成时间：%s"
-msgstr ""
+msgstr "Generated Time: %s"
 
 #: admin/shop/views/orders-list.php:778
 msgid "生成中..."
-msgstr ""
+msgstr "Generating..."
 
 #: includes/class-qilingshop-growth-benefits.php:515
 msgid "生日场景扩展配置，业务生效将在后续阶段接入。"
-msgstr ""
+msgstr "Birthday scenario extended configuration; business logic will integrate in future stages."
 
 #: includes/class-qilingshop-growth-benefits.php:341
 msgid "生日额外成长值 %s"
-msgstr ""
+msgstr "Birthday Extra Growth Points %s"
 
 #: includes/class-qilingshop-growth-benefits.php:343
 #: includes/class-qilingshop-growth-benefits.php:514
 msgid "生日礼包升级"
-msgstr ""
+msgstr "Birthday Gift Pack Upgrade"
 
 #: includes/class-qilingshop-task-center.php:2319
 msgid "生日礼包升级成长值"
-msgstr ""
+msgstr "Birthday Gift Pack Upgrade Growth Points"
 
 #: templates/shop/my-orders.php:258
 msgid "失败原因:"
-msgstr ""
+msgstr "Failure Reason: "
 
 #: admin/shop/views/refunds.php:179
 msgid "失败原因："
-msgstr ""
+msgstr "Failure Reason: "
 
 #: includes/shop/class-qls-shop-refund.php:1202
 msgid "失败原因：%s"
-msgstr ""
+msgstr "Failure Reason: %s"
 
 #: public/shop/class-qls-shop-public.php:1505
 msgid "识别超时，请手动填写"
@@ -13703,35 +13706,35 @@ msgstr "Recognizing..."
 
 #: admin/class-qilingshop-admin-statistics.php:419
 msgid "实际下载次数"
-msgstr ""
+msgstr "Actual Download Count"
 
 #: public/shop/class-qls-shop-shortcodes.php:69
 msgid "实物商城暂时关闭，请稍后再来。"
-msgstr ""
+msgstr "Physical shop is temporarily closed, please come back later."
 
 #: admin/shop/class-qls-admin-shop.php:4351
 msgid "实物商品需先完成售后流程后再退款（当前状态：%s）。"
-msgstr ""
+msgstr "Physical products must complete after-sales return process before refunding (Current status: %s)."
 
 #: admin/shop/views/orders-list.php:354
 msgid "使用默认模板"
-msgstr ""
+msgstr "Use Default Template"
 
 #: public/class-qilingshop-submit-integration.php:277
 msgid "示例：百度网盘: https://pan.baidu.com/xxx 提取码: abc1"
-msgstr ""
+msgstr "e.g.: Baidu Netdisk: https://pan.baidu.com/xxx Code: abc1"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:116
 msgid "视频文件格式为 MP4，设置后优先显示视频"
-msgstr ""
+msgstr "Video format is MP4; prioritizes video over images when set"
 
 #: includes/class-qilingshop-growth-benefits.php:510
 msgid "适用任务类型"
-msgstr ""
+msgstr "Applicable Task Types"
 
 #: admin/shop/class-qls-admin-shop.php:1862
 msgid "收"
-msgstr ""
+msgstr "Recipient"
 
 #: admin/shop/views/settings.php:307
 msgid "收货地址智能识别"
@@ -13743,28 +13746,28 @@ msgstr "Smart address recognition is not enabled"
 
 #: includes/shop/modules/class-qls-module-new-user-zone.php:97
 msgid "手动模式有效，多个编号用半角逗号分隔，例如：12,35,68"
-msgstr ""
+msgstr "Only valid in manual mode, separate numbers with commas, e.g.: 12,35,68"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:64
 #: includes/shop/modules/class-qls-module-hero-carousel.php:84
 msgid "手动指定分类"
-msgstr ""
+msgstr "Manually Specify Category"
 
 #: includes/shop/modules/class-qls-module-coupon.php:95
 msgid "手动指定优惠券"
-msgstr ""
+msgstr "Manually Specify Coupon"
 
 #: admin/shop/views/invoices.php:127
 msgid "手机："
-msgstr ""
+msgstr "Phone: "
 
 #: admin/shop/views/orders-list.php:207
 msgid "售后：%s"
-msgstr ""
+msgstr "After-sales: %s"
 
 #: includes/class-qilingshop-notifier.php:1320
 msgid "售后单号"
-msgstr ""
+msgstr "After-sales No."
 
 #: admin/shop/class-qls-admin-shop.php:958 admin/shop/views/tickets.php:24
 #: includes/class-qls-shop-page-manager.php:147
@@ -13775,99 +13778,99 @@ msgstr "After-sales Tickets"
 
 #: admin/class-qilingshop-admin-settings.php:1765
 msgid "售后工单附件设置"
-msgstr "售后工单附件 Settings"
+msgstr "After-sales Ticket Attachment Settings"
 
 #: admin/class-qilingshop-admin-settings.php:2990
 msgid "售后工单客服回复"
-msgstr ""
+msgstr "Customer Service Reply on Ticket"
 
 #: includes/class-qilingshop-notifier.php:1383
 msgid "售后工单提醒"
-msgstr ""
+msgstr "After-sales Ticket Reminder"
 
 #: admin/class-qilingshop-admin-settings.php:2978
 msgid "售后工单已提交"
-msgstr ""
+msgstr "After-sales Ticket Submitted"
 
 #: admin/class-qilingshop-admin-settings.php:2984
 msgid "售后工单用户追问"
-msgstr ""
+msgstr "User Follow-up on Ticket"
 
 #: includes/class-qilingshop-notifier.php:1412
 msgid "售后工单有新回复"
-msgstr ""
+msgstr "New Reply on After-sales Ticket"
 
 #: admin/shop/views/orders-list.php:209
 msgid "售后记录待同步"
-msgstr ""
+msgstr "After-sales records pending sync"
 
 #: includes/class-qilingshop-growth-benefits.php:473
 msgid "售后优先级"
-msgstr ""
+msgstr "After-sales Priority"
 
 #: admin/shop/views/settings.php:159
 msgid "输入表情符号（🛒）或启灵阿里图标（如 icon-cart）"
-msgstr ""
+msgstr "Enter emoji (🛒) or Qiling iconfont class (e.g. icon-cart)"
 
 #: public/class-qilingshop-shortcodes.php:401
 msgid "输入购买时填写的手机号或邮箱，可通过订单号或查询密码查询游客订单。"
-msgstr ""
+msgstr "Enter phone or email provided during purchase to query guest orders via order number or password."
 
 #: templates/shop/my-tickets.php:136
 msgid "输入回复内容"
-msgstr ""
+msgstr "Enter reply content"
 
 #: admin/shop/class-qls-admin-shop.php:161
 msgid "数据按已支付订单统计"
-msgstr ""
+msgstr "Data statistics based on paid orders"
 
 #: admin/shop/class-qls-admin-shop.php:1877
 msgid "数量/重量"
-msgstr ""
+msgstr "Quantity / Weight"
 
 #: admin/shop/views/invoices.php:117
 msgid "税号："
-msgstr ""
+msgstr "Tax ID: "
 
 #: includes/class-qilingshop-payment.php:1298
 msgid "说明："
-msgstr ""
+msgstr "Description: "
 
 #: admin/class-qilingshop-admin-growth.php:478
 msgid "说明关键词"
-msgstr ""
+msgstr "Description Keywords"
 
 #: admin/shop/views/invoices.php:59
 msgid "搜索订单号、抬头、税号、邮箱、手机号..."
-msgstr ""
+msgstr "Search order no, invoice title, tax ID, email, phone..."
 
 #: templates/shop/my-tickets.php:178
 msgid "搜索订单号或状态"
-msgstr ""
+msgstr "Search order number or status"
 
 #: admin/shop/views/tickets.php:235
 msgid "搜索工单号、标题、说明"
-msgstr ""
+msgstr "Search ticket number, title, description"
 
 #: templates/shop/shop-virtual-home.php:142
 msgid "搜索卡密商品"
-msgstr ""
+msgstr "Search card key products"
 
 #: admin/class-qilingshop-admin-growth.php:317
 msgid "搜索用户"
-msgstr ""
+msgstr "Search Users"
 
 #: admin/shop/class-qls-admin-shop.php:5743
 msgid "所有页面已存在或已按短代码复用"
-msgstr ""
+msgstr "All pages already exist or reused via shortcodes"
 
 #: includes/shop/modules/class-qls-module-product-list.php:394
 msgid "特惠"
-msgstr ""
+msgstr "Special Offer"
 
 #: admin/class-qilingshop-admin-growth.php:336
 msgid "提交"
-msgstr ""
+msgstr "Submit"
 
 #: templates/shop/my-orders.php:473 templates/shop/my-tickets.php:155
 #: templates/shop/my-tickets.php:251
@@ -13877,48 +13880,48 @@ msgstr "Submit Ticket"
 #: admin/class-qilingshop-admin-payment.php:355
 #: admin/class-qilingshop-admin-settings.php:2090
 msgid "提示：若在微信后台自定了道具 ID，可直接在上方修改保存；若未修改，默认使用 vip_等级ID（如 vip_1）。对于单独购买的商品，微信道具ID规则为 goods_商品ID。"
-msgstr ""
+msgstr "Tip: If custom Prop IDs were configured in WeChat admin, update and save above; otherwise defaults to vip_LevelID (e.g. vip_1). For single items, rule is goods_ProductID."
 
 #: admin/shop/views/settings.php:1168
 msgid "体积"
-msgstr ""
+msgstr "Volume"
 
 #: admin/shop/views/settings.php:253
 msgid "天后失效，仅影响游客发卡订单的手机号/邮箱 + 查询密码查询方式"
-msgstr ""
+msgstr "Days until expiration; only affects guest card orders queried via phone/email + password"
 
 #: admin/shop/views/settings.php:1064
 msgid "添加电子面单模板"
-msgstr ""
+msgstr "Add Electronic Waybill Template"
 
 #: includes/shop/modules/class-qls-module-product-list.php:72
 msgid "填 \"auto\" 表示自动生成，“none” 表示不显示，或填写具体链接"
-msgstr ""
+msgstr "Enter \"auto\" for auto-generation, \"none\" to hide, or enter a specific URL"
 
 #: admin/shop/views/tickets.php:124
 msgid "填写给用户看的回复内容"
-msgstr ""
+msgstr "Enter reply content visible to users"
 
 #: admin/class-qilingshop-admin-settings.php:835
 msgid "填写后，启灵主题注册页和注册弹窗会在注册码输入框下方显示获取入口。留空链接则不显示。"
-msgstr ""
+msgstr "When filled, Qiling registration page and popup will display access link below code input. Leave blank to hide."
 
 #: includes/class-qilingshop-growth-benefits.php:557
 msgid "填写前台展示给用户的权益说明。"
-msgstr ""
+msgstr "Enter benefit description displayed to users on the frontend."
 
 #: includes/shop/class-qls-waybill.php:218
 msgid "通过阿里云市场快递鸟接口创建真实电子面单。"
-msgstr ""
+msgstr "Create genuine electronic waybills via Kuaidiniao API on Alibaba Cloud Marketplace."
 
 #: admin/class-qilingshop-admin-growth.php:272
 #: admin/class-qilingshop-admin-growth.php:405
 msgid "图标 URL"
-msgstr ""
+msgstr "Icon URL"
 
 #: includes/shop/class-qls-shop-ticket.php:1014
 msgid "图片附件真实性校验失败"
-msgstr ""
+msgstr "Image attachment authenticity verification failed"
 
 #: admin/shop/class-qls-admin-shop.php:3661
 #: includes/class-qilingshop-notifier.php:2300
@@ -13926,72 +13929,72 @@ msgstr ""
 #: includes/class-qilingshop-payment.php:1198
 #: includes/shop/class-qls-shop-refund.php:1226
 msgid "退回可提现余额"
-msgstr ""
+msgstr "Refund to Withdrawable Balance"
 
 #: admin/class-qilingshop-admin-payment.php:125
 #: admin/class-qilingshop-admin-settings.php:1750
 msgid "退回可提现余额（默认）"
-msgstr ""
+msgstr "Refund to Withdrawable Balance (Default)"
 
 #: admin/shop/class-qls-admin-shop.php:4139
 #: admin/shop/class-qls-admin-shop.php:4380
 msgid "退款成功，已按原支付方式退回"
-msgstr ""
+msgstr "Refund successful, returned via original payment method"
 
 #: admin/shop/class-qls-admin-shop.php:4140
 #: admin/shop/class-qls-admin-shop.php:4381
 msgid "退款成功，已退回可提现余额"
-msgstr ""
+msgstr "Refund successful, returned to withdrawable balance"
 
 #: admin/shop/class-qls-admin-shop.php:3716
 #: includes/class-qilingshop-notifier.php:2319
 #: includes/shop/class-qls-shop-refund.php:1242
 msgid "退款处理中"
-msgstr ""
+msgstr "Refund Processing"
 
 #: admin/shop/views/refunds.php:237 admin/shop/views/refunds.php:259
 msgid "退款处理中，请稍后刷新。"
-msgstr ""
+msgstr "Refund processing, please refresh later."
 
 #: admin/shop/class-qls-admin-shop.php:4337
 msgid "退款处理中，请稍后刷新再查看。"
-msgstr ""
+msgstr "Refund processing, please refresh and check again later."
 
 #: includes/shop/class-qls-shop-order.php:1895
 msgid "退款处理中，请稍后重试"
-msgstr ""
+msgstr "Refund processing, please try again later"
 
 #: includes/shop/class-qls-shop-refund.php:1190
 msgid "退款单号：%s"
-msgstr ""
+msgstr "Refund No.: %s"
 
 #: includes/class-qilingshop-notifier.php:1351
 msgid "退款单号：%s。"
-msgstr ""
+msgstr "Refund No.: %s."
 
 #: includes/shop/class-qls-shop-order.php:2102
 msgid "退款到可提现余额失败，请稍后重试"
-msgstr ""
+msgstr "Failed to refund to withdrawable balance, please try again later"
 
 #: includes/class-qilingshop-payment.php:862
 msgid "退款返回结果异常"
-msgstr ""
+msgstr "Abnormal refund response"
 
 #: includes/class-qilingshop-notifier.php:1318
 msgid "退款方式"
-msgstr ""
+msgstr "Refund Method"
 
 #: templates/shop/my-orders.php:246
 msgid "退款方式:"
-msgstr ""
+msgstr "Refund Method:"
 
 #: admin/shop/views/refunds.php:109
 msgid "退款方式："
-msgstr ""
+msgstr "Refund Method: "
 
 #: includes/shop/class-qls-shop-refund.php:1175
 msgid "退款方式：%s"
-msgstr ""
+msgstr "Refund Method: %s"
 
 #: admin/class-qilingshop-admin-payment.php:118
 msgid "退款设置"
@@ -13999,71 +14002,71 @@ msgstr "Refund Settings"
 
 #: admin/shop/views/refunds.php:30 includes/class-qilingshop-payment.php:875
 msgid "退款失败"
-msgstr ""
+msgstr "Refund Failed"
 
 #: admin/shop/views/refunds.php:111
 msgid "退款通道："
-msgstr ""
+msgstr "Refund Gateway: "
 
 #: admin/shop/views/refunds.php:32
 msgid "退款完成"
-msgstr ""
+msgstr "Refund Completed"
 
 #: includes/class-qilingshop-payment.php:1295
 msgid "退款验收自检"
-msgstr ""
+msgstr "Refund Acceptance Self-Check"
 
 #: includes/class-qilingshop-payment.php:875
 msgid "退款已提交"
-msgstr ""
+msgstr "Refund Submitted"
 
 #: templates/shop/my-orders.php:261
 msgid "退款正在处理中，请稍后刷新查看。"
-msgstr ""
+msgstr "Refund is being processed, please refresh later to check."
 
 #: includes/shop/class-qls-shop-refund.php:582
 msgid "退款资金已处理，但本地状态收尾失败"
-msgstr ""
+msgstr "Refund funds processed, but local status finalization failed"
 
 #: includes/shop/class-qls-shop-order.php:1955
 msgid "退款资金已处理，但订单本地状态收尾失败，请先人工核对，勿重复退款"
-msgstr ""
+msgstr "Refund funds processed, but order local status update failed. Please verify manually; do not repeat refund"
 
 #: includes/class-qilingshop-notifier.php:1326
 msgid "网关退款单号"
-msgstr ""
+msgstr "Gateway Refund No."
 
 #: templates/shop/my-orders.php:252
 msgid "网关退款单号:"
-msgstr ""
+msgstr "Gateway Refund No.:"
 
 #: admin/shop/views/refunds.php:173
 msgid "网关退款单号："
-msgstr ""
+msgstr "Gateway Refund No.: "
 
 #: includes/shop/class-qls-shop-refund.php:1198
 msgid "网关退款单号：%s"
-msgstr ""
+msgstr "Gateway Refund No.: %s"
 
 #: includes/class-qilingshop-notifier.php:1329
 msgid "网关退款时间"
-msgstr ""
+msgstr "Gateway Refund Time"
 
 #: templates/shop/my-orders.php:255
 msgid "网关退款时间:"
-msgstr ""
+msgstr "Gateway Refund Time:"
 
 #: admin/shop/views/refunds.php:176
 msgid "网关退款时间："
-msgstr ""
+msgstr "Gateway Refund Time: "
 
 #: includes/shop/class-qls-shop-refund.php:1207
 msgid "网关摘要：%s"
-msgstr ""
+msgstr "Gateway Summary: %s"
 
 #: includes/shop/class-qls-shop-refund.php:1194
 msgid "网关状态：%s"
-msgstr ""
+msgstr "Gateway Status: %s"
 
 #: public/shop/class-qls-shop-public.php:1506
 msgid "网络请求失败，请稍后重试或手动填写"
@@ -14071,184 +14074,184 @@ msgstr "Network request failed, please try again later or fill manually"
 
 #: admin/shop/class-qls-admin-shop.php:3832
 msgid "网页/公众号微信退款配置不完整：%s。"
-msgstr ""
+msgstr "WeChat Web/Official Account refund configuration incomplete: %s."
 
 #: includes/class-qilingshop-payment.php:995
 msgid "网页/公众号微信原路退款"
-msgstr ""
+msgstr "WeChat Web/Official Account Refund to Original Channel"
 
 #: includes/class-qilingshop-payment.php:968
 msgid "网页/公众号微信支付入口未启用"
-msgstr ""
+msgstr "WeChat Web/Official Account payment entrance is not enabled"
 
 #: admin/class-qilingshop-admin-payment.php:317
 #: admin/class-qilingshop-admin-settings.php:2052
 msgid "微信公众平台【虚拟支付 -> 道具管理】与商城对照表"
-msgstr ""
+msgstr "WeChat Platform [Virtual Payment -> Prop Management] & Shop Cross-reference Table"
 
 #: admin/class-qilingshop-admin-payment.php:318
 #: admin/class-qilingshop-admin-settings.php:2053
 msgid "微信官方虚拟支付核心规则：必须预先在微信小程序后台【虚拟支付 -> 道具管理】中添加对应道具并发布。微信服务器会强校验道具 ID 和价格，两者必须与商城完全一致。请对照下方表格在微信后台创建道具："
-msgstr ""
+msgstr "WeChat Official Virtual Payment Core Rule: You must pre-add and publish props in WeChat Mini Program [Virtual Payment -> Prop Management]. WeChat servers strictly validate Prop ID and price; both must match the shop identically. Create props in WeChat admin using the table below:"
 
 #: admin/class-qilingshop-admin-payment.php:328
 #: admin/class-qilingshop-admin-settings.php:2063
 msgid "微信后台道具单价 (分)"
-msgstr ""
+msgstr "WeChat Prop Unit Price (Cents)"
 
 #: admin/class-qilingshop-admin-payment.php:329
 #: admin/class-qilingshop-admin-settings.php:2064
 msgid "微信后台道具ID (productId)"
-msgstr ""
+msgstr "WeChat Prop ID (productId)"
 
 #: payment/wechat.php:81
 msgid "微信接口返回格式异常"
-msgstr ""
+msgstr "Abnormal format returned by WeChat API"
 
 #: payment/wechat.php:76
 msgid "微信接口请求失败"
-msgstr ""
+msgstr "WeChat API request failed"
 
 #: payment/class-payment-wechat.php:100
 msgid "微信商户 API 私钥"
-msgstr ""
+msgstr "WeChat Merchant API Private Key"
 
 #: payment/class-payment-wechat.php:95
 msgid "微信商户 API 证书"
-msgstr ""
+msgstr "WeChat Merchant API Certificate"
 
 #: payment/class-payment-wechat.php:73
 msgid "微信退款配置不完整"
-msgstr ""
+msgstr "WeChat refund configuration is incomplete"
 
 #: payment/class-payment-wechat.php:138 payment/class-payment-wechat.php:396
 msgid "微信退款请求失败"
-msgstr ""
+msgstr "WeChat refund request failed"
 
 #: payment/class-payment-wechat.php:147
 msgid "微信退款失败"
-msgstr ""
+msgstr "WeChat refund failed"
 
 #: admin/shop/class-qls-admin-shop.php:3899
 msgid "微信小程序%s退款配置不完整：%s。"
-msgstr ""
+msgstr "WeChat Mini Program %s refund configuration incomplete: %s."
 
 #: admin/class-qilingshop-metabox.php:270
 msgid "微信小程序道具ID"
-msgstr ""
+msgstr "WeChat Mini Program Prop ID"
 
 #: admin/class-qilingshop-admin-payment.php:283
 #: admin/class-qilingshop-admin-settings.php:2006
 msgid "微信小程序官方虚拟支付（道具直购）"
-msgstr ""
+msgstr "WeChat Mini Program Official Virtual Payment (In-App Purchases)"
 
 #: admin/shop/class-qls-admin-shop.php:3702
 msgid "微信小程序原路退款"
-msgstr ""
+msgstr "WeChat Mini Program Refund to Original Channel"
 
 #: includes/class-qilingshop-payment.php:1049
 msgid "微信小程序原路退款 V2"
-msgstr ""
+msgstr "WeChat Mini Program Refund to Original Channel V2"
 
 #: includes/class-qilingshop-payment.php:1112
 msgid "微信小程序原路退款 V3"
-msgstr ""
+msgstr "WeChat Mini Program Refund to Original Channel V3"
 
 #: admin/class-qilingshop-admin-settings.php:1923
 #: admin/shop/class-qls-admin-shop.php:3678
 #: includes/shop/class-qls-shop-refund.php:1266
 msgid "微信小程序支付"
-msgstr ""
+msgstr "WeChat Mini Program Payment"
 
 #: admin/class-qilingshop-admin-payment.php:223
 msgid "微信小程序支付（官方接口）"
-msgstr ""
+msgstr "WeChat Mini Program Payment (Official API)"
 
 #: includes/shop/class-qls-shop-order.php:2185
 msgid "微信小程序支付服务未加载，无法发起原路退款"
-msgstr ""
+msgstr "WeChat Mini Program payment service not loaded, cannot initiate refund to original channel"
 
 #: includes/shop/class-qls-shop-order.php:2194
 msgid "微信小程序支付服务未就绪，无法发起原路退款"
-msgstr ""
+msgstr "WeChat Mini Program payment service not ready, cannot initiate refund to original channel"
 
 #: includes/class-qilingshop-payment.php:1016
 #: includes/class-qilingshop-payment.php:1065
 msgid "微信小程序支付入口未启用"
-msgstr ""
+msgstr "WeChat Mini Program payment entrance is not enabled"
 
 #: admin/shop/class-qls-admin-shop.php:3701
 msgid "微信原路退款"
-msgstr ""
+msgstr "WeChat Refund to Original Channel"
 
 #: payment/class-payment-wechat.php:157
 msgid "微信原路退款成功"
-msgstr ""
+msgstr "WeChat refund to original channel succeeded"
 
 #: admin/class-qilingshop-admin-payment.php:255
 #: admin/class-qilingshop-admin-settings.php:1961
 msgid "微信支付 APIv3 密钥。"
-msgstr ""
+msgstr "WeChat Pay APIv3 Key."
 
 #: admin/class-qilingshop-admin-payment.php:251
 #: admin/class-qilingshop-admin-settings.php:1956
 msgid "微信支付 v2 API 密钥。"
-msgstr ""
+msgstr "WeChat Pay v2 API Key."
 
 #: payment/wechat.php:113
 msgid "微信支付接口请求失败"
-msgstr ""
+msgstr "WeChat Pay API request failed"
 
 #: admin/class-qilingshop-admin-payment.php:270
 #: admin/class-qilingshop-admin-settings.php:1979
 #: admin/shop/class-qls-admin-shop.php:3879
 #: includes/class-qilingshop-payment.php:1086
 msgid "微信支付平台公钥 ID"
-msgstr ""
+msgstr "WeChat Pay Platform Public Key ID"
 
 #: admin/class-qilingshop-admin-payment.php:271
 #: admin/class-qilingshop-admin-settings.php:1981
 msgid "微信支付平台公钥 ID。"
-msgstr ""
+msgstr "WeChat Pay Platform Public Key ID."
 
 #: admin/class-qilingshop-admin-payment.php:274
 #: admin/class-qilingshop-admin-settings.php:1984
 #: admin/shop/class-qls-admin-shop.php:3882
 #: includes/class-qilingshop-payment.php:1089
 msgid "微信支付平台公钥 PEM"
-msgstr ""
+msgstr "WeChat Pay Platform Public Key PEM"
 
 #: admin/class-qilingshop-admin-payment.php:275
 #: admin/class-qilingshop-admin-settings.php:1986
 msgid "微信支付平台公钥 PEM。可直接粘贴 PEM 内容，或填写服务器可读取的绝对路径/站内文件地址。"
-msgstr ""
+msgstr "WeChat Pay Platform Public Key PEM. Paste PEM content or provide a readable server path/URL."
 
 #: admin/class-qilingshop-admin-payment.php:279
 #: admin/class-qilingshop-admin-settings.php:1991
 msgid "微信支付转账场景编号，仅在开通对应能力时填写。"
-msgstr ""
+msgstr "WeChat Pay transfer scene ID, only filled when corresponding capability is enabled."
 
 #: public/class-qilingshop-public.php:1200 templates/download-page.php:150
 msgid "未购买此下载项"
-msgstr ""
+msgstr "Not purchased this download item"
 
 #: admin/shop/views/tickets.php:278
 msgid "未关联"
-msgstr ""
+msgstr "Unlinked"
 
 #: admin/shop/views/tickets.php:73
 msgid "未关联订单"
-msgstr ""
+msgstr "No Associated Order"
 
 #: admin/shop/class-qls-admin-shop.php:3686
 #: includes/class-qilingshop-notifier.php:1309
 #: includes/shop/class-qls-shop-refund.php:1273
 msgid "未记录"
-msgstr "未 Records"
+msgstr "Not recorded"
 
 #: qilingshop.php:181
 msgid "未检测到启灵主题授权组件，请先启用启灵主题并完成正版授权。"
-msgstr ""
+msgstr "Qiling theme license component not detected. Please enable Qiling theme and complete authorization first."
 
 #: public/shop/class-qls-shop-ajax.php:1000
 msgid "未能成功解析该地址，请手动填写"
@@ -14260,43 +14263,43 @@ msgstr "Lingjian API Key not configured. Please configure in theme advanced sett
 
 #: includes/shop/class-qls-shop-logistics.php:64
 msgid "未配置有效的灵简 API Key"
-msgstr ""
+msgstr "No valid Lingjian API Key configured"
 
 #: templates/shop/my-tickets.php:146 templates/shop/my-tickets.php:247
 msgid "未选择文件"
-msgstr ""
+msgstr "No file chosen"
 
 #: admin/class-qilingshop-admin-growth.php:428
 msgid "未知等级"
-msgstr ""
+msgstr "Unknown Level"
 
 #: admin/shop/views/tickets.php:91
 msgid "未指定"
-msgstr ""
+msgstr "Unspecified"
 
 #: templates/shop/my-tickets.php:162
 msgid "问题类型"
-msgstr ""
+msgstr "Issue Type"
 
 #: templates/shop/my-tickets.php:234
 msgid "问题说明"
-msgstr ""
+msgstr "Issue Description"
 
 #: templates/shop/my-tickets.php:92
 msgid "我"
-msgstr ""
+msgstr "Me"
 
 #: includes/class-qilingshop-payment.php:1350
 msgid "无额外说明"
-msgstr ""
+msgstr "No additional remarks"
 
 #: payment/class-payment-wechat.php:489
 msgid "无法创建微信退款临时证书文件"
-msgstr ""
+msgstr "Cannot create WeChat refund temporary certificate file"
 
 #: payment/class-payment-wechat.php:495
 msgid "无法写入微信退款临时证书文件"
-msgstr ""
+msgstr "Cannot write WeChat refund temporary certificate file"
 
 #: admin/class-qilingshop-admin-growth.php:130
 msgid "无权访问"
@@ -14304,114 +14307,114 @@ msgstr "Access Denied"
 
 #: includes/shop/class-qls-shop-ticket.php:378
 msgid "无权回复该工单"
-msgstr ""
+msgstr "No permission to reply to this ticket"
 
 #: admin/class-qilingshop-admin-growth.php:225
 #: admin/class-qilingshop-admin-growth.php:289 templates/account/vip.php:263
 msgid "无上限"
-msgstr ""
+msgstr "No Upper Limit"
 
 #: admin/shop/class-qls-admin-shop.php:3553
 #: public/shop/class-qls-shop-shortcodes.php:635
 msgid "无效的工单操作。"
-msgstr ""
+msgstr "Invalid ticket operation."
 
 #: includes/shop/class-qls-shop-logistics.php:93
 msgid "物流服务连接失败，请稍后重试"
-msgstr ""
+msgstr "Logistics service connection failed, please try again later"
 
 #: includes/shop/class-qls-shop-logistics.php:118
 msgid "物流服务暂不可用，请稍后重试"
-msgstr ""
+msgstr "Logistics service temporarily unavailable, please try again later"
 
 #: includes/shop/class-qls-shipping-company.php:197
 msgid "物流公司保存失败"
-msgstr "Failed to save 物流公司"
+msgstr "Failed to save logistics company"
 
 #: includes/shop/class-qls-shipping-company.php:215
 msgid "物流公司不存在"
-msgstr ""
+msgstr "Logistics company does not exist"
 
 #: admin/shop/class-qls-admin-shop.php:4228
 msgid "物流公司不存在或已停用，请先在快递物流设置中维护。"
-msgstr ""
+msgstr "Logistics company does not exist or is disabled; maintain it in express logistics settings first."
 
 #: includes/shop/class-qls-shipping-company.php:183
 msgid "物流公司数据表不存在"
-msgstr ""
+msgstr "Logistics company data table does not exist"
 
 #: admin/shop/views/settings.php:1280
 msgid "物流轨迹查询通常需要收件人手机号"
-msgstr ""
+msgstr "Tracking query usually requires recipient's phone number"
 
 #: includes/shop/class-qls-shop-ticket.php:83
 msgid "物流问题"
-msgstr ""
+msgstr "Logistics Issues"
 
 #: admin/shop/views/tickets.php:160
 msgid "系统/后台"
-msgstr ""
+msgstr "System / Admin"
 
 #: admin/shop/class-qls-admin-shop.php:3984
 msgid "系统将自动改为退回可提现余额，请重试。"
-msgstr ""
+msgstr "System will automatically switch to refunding withdrawable balance, please try again."
 
 #: templates/account/vip.php:226
 msgid "下一等级"
-msgstr ""
+msgstr "Next Level"
 
 #: includes/class-qilingshop-growth.php:445
 msgid "下一等级权益：%s"
-msgstr ""
+msgstr "Next Level Benefits: %s"
 
 #: admin/class-qilingshop-admin-statistics.php:317
 #: admin/class-qilingshop-admin-statistics.php:443
 #: admin/class-qilingshop-admin-statistics.php:572
 msgid "下载次数"
-msgstr ""
+msgstr "Download Count"
 
 #: admin/class-qilingshop-admin-statistics.php:491
 msgid "下载日志清理"
-msgstr ""
+msgstr "Download Log Cleanup"
 
 #: admin/class-qilingshop-admin-statistics.php:54
 msgid "下载日志清理失败，请稍后重试"
-msgstr ""
+msgstr "Failed to clean download logs, please try again later"
 
 #: admin/class-qilingshop-admin-statistics.php:471
 msgid "下载项 / IP"
-msgstr ""
+msgstr "Download Item / IP"
 
 #: includes/class-qilingshop-order.php:1339
 msgid "下载项 %d（含查看）"
-msgstr ""
+msgstr "Download Item %d (including views)"
 
 #: includes/class-qilingshop-order.php:678
 #: public/class-qilingshop-ajax.php:1930
 msgid "下载项不存在"
-msgstr ""
+msgstr "Download item does not exist"
 
 #: admin/class-qilingshop-admin-statistics.php:469
 msgid "下载者"
-msgstr ""
+msgstr "Downloader"
 
 #: admin/shop/views/settings.php:182
 msgid "显示库存"
-msgstr ""
+msgstr "Show Stock"
 
 #: admin/class-qilingshop-admin-payment.php:307
 #: admin/class-qilingshop-admin-settings.php:2036
 msgid "现网 AppKey"
-msgstr ""
+msgstr "Production AppKey"
 
 #: admin/class-qilingshop-admin-payment.php:296
 #: admin/class-qilingshop-admin-settings.php:2022
 msgid "现网正式环境 (env=0)"
-msgstr ""
+msgstr "Production Live Environment (env=0)"
 
 #: includes/class-qilingshop-growth-benefits.php:557
 msgid "详细内容"
-msgstr ""
+msgstr "Details"
 
 #: admin/class-qilingshop-admin-payment.php:233
 #: admin/class-qilingshop-admin-settings.php:1936
@@ -14419,25 +14422,25 @@ msgstr ""
 #: includes/class-qilingshop-payment.php:1019
 #: includes/class-qilingshop-payment.php:1068
 msgid "小程序 AppID"
-msgstr ""
+msgstr "Mini Program AppID"
 
 #: admin/class-qilingshop-admin-payment.php:224
 #: admin/class-qilingshop-admin-settings.php:1924
 msgid "小程序商城专用支付方式，独立于上方网页/公众号微信支付配置。"
-msgstr ""
+msgstr "Dedicated payment method for Mini Program shop, independent of Web/Official Account WeChat Pay settings above."
 
 #: admin/shop/class-qls-admin-shop.php:3856
 msgid "小程序支付开关"
-msgstr ""
+msgstr "Mini Program Payment Toggle"
 
 #: includes/shop/modules/class-qls-module-product-list.php:131
 #: includes/shop/modules/class-qls-module-product-list.php:392
 msgid "新品"
-msgstr ""
+msgstr "New Arrival"
 
 #: admin/class-qilingshop-admin-growth.php:262
 msgid "新增成长等级"
-msgstr ""
+msgstr "Add Growth Level"
 
 #: admin/class-qilingshop-admin-growth.php:704
 msgid "新增成长规则"
@@ -14449,7 +14452,7 @@ msgstr "Add Level"
 
 #: admin/class-qilingshop-admin-growth.php:370
 msgid "新增等级权益"
-msgstr ""
+msgstr "Add Level Benefit"
 
 #: admin/class-qilingshop-admin-growth.php:734
 msgid "新增规则"
@@ -14461,81 +14464,81 @@ msgstr "Add Benefit"
 
 #: templates/account/points.php:179
 msgid "幸运大转盘"
-msgstr ""
+msgstr "Lucky Wheel"
 
 #: templates/account/points.php:178
 msgid "虚拟彩票"
-msgstr ""
+msgstr "Virtual Lottery"
 
 #: admin/shop/class-qls-admin-shop.php:5621 admin/shop/views/settings.php:133
 #: includes/class-qls-shop-page-manager.php:66
 #: templates/shop/shop-virtual-home.php:102
 #: templates/shop/shop-virtual-home.php:105
 msgid "虚拟发卡"
-msgstr ""
+msgstr "Virtual Card Dispatch"
 
 #: admin/shop/views/settings.php:436
 #: public/shop/class-qls-shop-shortcodes.php:93
 msgid "虚拟发卡首页"
-msgstr ""
+msgstr "Virtual Card Dispatch Home"
 
 #: admin/shop/class-qls-admin-shop.php:193
 msgid "虚拟发卡首页使用专用模板，不支持商城自定义装修。"
-msgstr ""
+msgstr "Virtual card dispatch home uses a dedicated template and does not support custom shop decoration."
 
 #: public/shop/class-qls-shop-public.php:657
 #: public/shop/class-qls-shop-public.php:663
 #: public/shop/class-qls-shop-shortcodes.php:113
 msgid "虚拟发卡首页已关闭"
-msgstr ""
+msgstr "Virtual card dispatch home is disabled"
 
 #: includes/shop/class-qls-shipment.php:114
 msgid "虚拟商品不需要物流发货"
-msgstr ""
+msgstr "Virtual products do not require physical shipping"
 
 #: admin/class-qilingshop-admin-settings.php:913
 msgid "虚拟资源仅支持 WordPress 文章和页面，不读取主题注册的服务、案例、团队、软件等内容类型。"
-msgstr ""
+msgstr "Virtual resources only support WordPress posts and pages; does not read theme-registered custom post types like services, portfolios, teams, software."
 
 #: admin/shop/views/settings.php:1323
 msgid "需手机号"
-msgstr ""
+msgstr "Phone Number Required"
 
 #: templates/shop/my-tickets.php:143
 msgid "选择附件"
-msgstr ""
+msgstr "Select Attachment"
 
 #: templates/shop/my-tickets.php:244
 msgid "选择图片或附件"
-msgstr ""
+msgstr "Select Image or Attachment"
 
 #: admin/class-qilingshop-admin-growth.php:273
 msgid "颜色"
-msgstr ""
+msgstr "Color"
 
 #: includes/class-qilingshop-payment.php:1321
 msgid "验收场景"
-msgstr ""
+msgstr "Acceptance Scenario"
 
 #: includes/class-qilingshop-payment.php:996
 msgid "验证网页端微信支付订单能否走 v2 退款。"
-msgstr ""
+msgstr "Verify if web WeChat Pay orders can execute v2 refund."
 
 #: includes/class-qilingshop-payment.php:1050
 msgid "验证小程序 v2 支付订单能否走双向证书退款。"
-msgstr ""
+msgstr "Verify if mini program v2 payment orders can execute mutual certificate refund."
 
 #: includes/class-qilingshop-payment.php:1113
 msgid "验证小程序 v3 支付订单能否走 APIv3 退款。"
-msgstr ""
+msgstr "Verify if mini program v3 payment orders can execute APIv3 refund."
 
 #: includes/class-qilingshop-payment.php:918
 msgid "验证原有退款能力是否保持正常。"
-msgstr ""
+msgstr "Verify if original refund capabilities remain functional."
 
 #: includes/class-qilingshop-payment.php:954
 msgid "验证支付宝支付订单能否走原路退回。"
-msgstr ""
+msgstr "Verify if Alipay orders can execute refund to original payment method."
 
 #: admin/class-qilingshop-admin-growth.php:939 templates/account/vip.php:136
 msgid "邀请注册"
@@ -14543,16 +14546,16 @@ msgstr "Invite Registration"
 
 #: includes/class-qilingshop-growth-rules.php:246
 msgid "邀请注册成长值"
-msgstr ""
+msgstr "Growth Points for Inviting Registrations"
 
 #: public/shop/class-qls-shop-public.php:658
 #: public/shop/class-qls-shop-shortcodes.php:114
 msgid "页面不可访问"
-msgstr ""
+msgstr "Page inaccessible"
 
 #: admin/shop/class-qls-admin-shop.php:5733
 msgid "页面创建失败：%s"
-msgstr ""
+msgstr "Failed to create page: %s"
 
 #: public/shop/class-qls-shop-public.php:1501 templates/shop/checkout.php:199
 #: templates/shop/shop-center.php:436
@@ -14561,15 +14564,15 @@ msgstr "Smart Parse & Fill"
 
 #: templates/shop/my-tickets.php:230
 msgid "一句话描述问题"
-msgstr ""
+msgstr "Briefly describe the issue in one sentence"
 
 #: admin/shop/views/settings.php:1274
 msgid "一行一个，也支持用逗号分隔。批量发货或物流识别时可以匹配这些别名。"
-msgstr ""
+msgstr "One per line, also supports comma separation. Matches aliases during batch shipping or carrier recognition."
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:110
 msgid "移动端图片（可选）"
-msgstr ""
+msgstr "Mobile Image (Optional)"
 
 #: admin/class-qilingshop-admin-growth.php:106
 msgid "已按当前筛选条件清理 %d 条成长流水"
@@ -14577,31 +14580,31 @@ msgstr "Cleaned up %d growth logs by current filter"
 
 #: public/shop/class-qls-shop-ajax.php:1437
 msgid "已撤销发票申请"
-msgstr ""
+msgstr "Cancelled invoice request"
 
 #: templates/account/vip.php:105
 msgid "已达最高成长等级"
-msgstr ""
+msgstr "Reached highest growth level"
 
 #: includes/class-qilingshop-growth.php:398
 msgid "已达最高等级"
-msgstr ""
+msgstr "Reached Highest Level"
 
 #: admin/shop/views/orders-list.php:584
 msgid "已发"
-msgstr ""
+msgstr "Shipped"
 
 #: admin/shop/views/orders-list.php:151
 msgid "已发 %d 个包裹"
-msgstr ""
+msgstr "%d package(s) shipped"
 
 #: admin/shop/views/orders-list.php:692
 msgid "已发:"
-msgstr ""
+msgstr "Shipped: "
 
 #: includes/shop/class-qls-shop-ticket.php:68
 msgid "已解决"
-msgstr ""
+msgstr "Resolved"
 
 #: admin/shop/views/invoices.php:12 includes/shop/class-qls-invoice.php:338
 msgid "已开票"
@@ -14609,19 +14612,19 @@ msgstr "Invoiced"
 
 #: admin/class-qilingshop-admin-growth.php:211
 msgid "已配置权益"
-msgstr ""
+msgstr "Configured Benefits"
 
 #: admin/shop/class-qls-admin-shop.php:4169
 msgid "已清理 %d 个已取消订单"
-msgstr ""
+msgstr "%d cancelled order(s) cleaned"
 
 #: admin/shop/class-qls-admin-shop.php:4175
 msgid "已清理 %d 个已完成订单"
-msgstr ""
+msgstr "%d completed order(s) cleaned"
 
 #: admin/class-qilingshop-admin-statistics.php:55
 msgid "已清理 %d 条下载行为日志，购买下载权限未受影响。"
-msgstr ""
+msgstr "%d download action log(s) cleaned; user purchase and download permissions remain unaffected."
 
 #: admin/class-qilingshop-admin-growth.php:93
 msgid "已删除 %d 条成长流水"
@@ -14629,37 +14632,37 @@ msgstr "Deleted %d growth logs"
 
 #: admin/shop/views/orders-list.php:800
 msgid "已生成电子面单"
-msgstr ""
+msgstr "Electronic waybill generated"
 
 #: includes/class-qilingshop-growth.php:475
 msgid "已生效权益"
-msgstr ""
+msgstr "Active Benefits"
 
 #: templates/shop/virtual-home/compact.php:72
 #: templates/shop/virtual-home/grid.php:88
 msgid "已售罄"
-msgstr ""
+msgstr "Sold Out"
 
 #: includes/shop/class-qls-shop-order.php:2117
 msgid "已退回可提现余额"
-msgstr ""
+msgstr "Refunded to withdrawable balance"
 
 #: admin/class-qilingshop-admin-resource-bulk.php:297
 msgid "已重建 %d 篇文章，正在继续处理下一批，请勿关闭页面。"
-msgstr ""
+msgstr "Rebuilt %d post(s), continuing to next batch, please do not close this page."
 
 #: admin/shop/class-qls-admin-shop.php:3790
 #: includes/class-qilingshop-payment.php:935
 msgid "应用 AppID"
-msgstr ""
+msgstr "Application AppID"
 
 #: includes/class-qilingshop-points.php:1190
 msgid "用户 ID 无效"
-msgstr ""
+msgstr "Invalid User ID"
 
 #: includes/class-qilingshop-notifier.php:1405
 msgid "用户补充工单回复"
-msgstr ""
+msgstr "User Follow-up Reply on Ticket"
 
 #: admin/class-qilingshop-admin-growth.php:144
 msgid "用户成长"
@@ -14684,127 +14687,127 @@ msgstr "User growth value adjusted"
 #: admin/class-qilingshop-admin-growth.php:217
 #: admin/class-qilingshop-admin-statistics.php:444
 msgid "用户数"
-msgstr ""
+msgstr "User Count"
 
 #: includes/class-qilingshop-notifier.php:1377
 msgid "用户提交新工单"
-msgstr ""
+msgstr "User Submitted New Ticket"
 
 #: admin/shop/views/invoices.php:87
 msgid "用户在订单中心提交申请后，会出现在这里等待处理。"
-msgstr ""
+msgstr "After users submit requests in the order center, they will appear here pending processing."
 
 #: admin/class-qilingshop-admin-growth.php:475
 msgid "用户ID/用户名/邮箱"
-msgstr ""
+msgstr "User ID / Username / Email"
 
 #: includes/class-qilingshop-payment.php:1003
 msgid "用网页/公众号微信创建一笔已支付商城订单并提交售后。"
-msgstr ""
+msgstr "Create a paid shop order via WeChat Web/Official Account and submit after-sales."
 
 #: includes/class-qilingshop-payment.php:1057
 #: includes/class-qilingshop-payment.php:1120
 msgid "用微信小程序创建一笔已支付商城订单并提交售后。"
-msgstr ""
+msgstr "Create a paid shop order via WeChat Mini Program and submit after-sales."
 
 #: templates/shop/checkout.php:153
 msgid "用于后续通过联系方式查询订单"
-msgstr ""
+msgstr "Used for subsequent order queries via contact information"
 
 #: includes/class-qilingshop-growth-benefits.php:464
 msgid "用于前台展示身份徽章，不改变业务权限。"
-msgstr ""
+msgstr "Used for displaying identity badge on frontend, does not alter business permissions."
 
 #: includes/class-qilingshop-payment.php:961
 msgid "用支付宝创建一笔已支付商城订单并提交售后。"
-msgstr ""
+msgstr "Create a paid shop order via Alipay and submit after-sales."
 
 #: includes/class-qilingshop-growth-benefits.php:493
 msgid "优惠券 ID"
-msgstr ""
+msgstr "Coupon ID"
 
 #: includes/class-qilingshop-growth-benefits.php:489
 msgid "优惠券领取资格"
-msgstr ""
+msgstr "Coupon Claim Eligibility"
 
 #: includes/shop/class-qls-coupon.php:637
 msgid "优惠券已被待支付订单占用"
-msgstr ""
+msgstr "Coupon is occupied by a pending payment order"
 
 #: includes/shop/class-qls-shop-order.php:3042
 #: public/class-qilingshop-ajax.php:1575 public/class-qilingshop-ajax.php:1615
 #: public/class-qilingshop-ajax.php:1750 public/class-qilingshop-ajax.php:2048
 msgid "优惠券已被使用或占用，请重新选择优惠券"
-msgstr ""
+msgstr "Coupon has been used or occupied, please select another coupon"
 
 #: includes/class-qilingshop-growth-benefits.php:475
 msgid "优先级数值"
-msgstr ""
+msgstr "Priority Value"
 
 #: admin/shop/views/invoices.php:124
 msgid "邮箱："
-msgstr ""
+msgstr "Email: "
 
 #: public/class-qilingshop-shortcodes.php:396
 msgid "游客查单"
-msgstr ""
+msgstr "Guest Order Lookup"
 
 #: templates/account/points.php:174
 msgid "游戏币兑换"
-msgstr ""
+msgstr "Game Coin Exchange"
 
 #: templates/account/points.php:176
 msgid "游戏币兑回积分"
-msgstr ""
+msgstr "Game Coins to Points"
 
 #: templates/account/points.php:177
 msgid "游戏奖励"
-msgstr ""
+msgstr "Game Reward"
 
 #: templates/account/points.php:180
 msgid "游戏退还"
-msgstr ""
+msgstr "Game Refund"
 
 #: templates/account/points.php:181
 msgid "游戏消费"
-msgstr ""
+msgstr "Game Consumption"
 
 #: templates/account/points.php:197
 msgid "游戏中心"
-msgstr ""
+msgstr "Game Center"
 
 #: admin/shop/class-qls-admin-shop.php:152
 msgid "有效订单"
-msgstr ""
+msgstr "Valid Orders"
 
 #: admin/shop/class-qls-admin-shop.php:3680
 #: includes/shop/class-qls-shop-refund.php:1268
 msgid "余额支付"
-msgstr ""
+msgstr "Balance Payment"
 
 #: admin/shop/class-qls-admin-shop.php:3720
 #: includes/class-qilingshop-notifier.php:2323
 #: includes/shop/class-qls-shop-refund.php:1246
 msgid "原路不支持，已自动退回可提现余额"
-msgstr ""
+msgstr "Original channel unsupported; automatically refunded to withdrawable balance"
 
 #: admin/shop/class-qls-admin-shop.php:3658
 #: includes/class-qilingshop-notifier.php:2297
 #: includes/class-qilingshop-payment.php:1197
 #: includes/shop/class-qls-shop-refund.php:1225
 msgid "原路退回"
-msgstr ""
+msgstr "Refund to Original Payment Method"
 
 #: admin/class-qilingshop-admin-payment.php:126
 #: admin/class-qilingshop-admin-settings.php:1751
 msgid "原路退回（仅支付宝/微信）"
-msgstr ""
+msgstr "Refund to Original Payment Method (Alipay/WeChat only)"
 
 #: admin/shop/class-qls-admin-shop.php:3717
 #: includes/class-qilingshop-notifier.php:2320
 #: includes/shop/class-qls-shop-refund.php:1243
 msgid "原路退款成功"
-msgstr ""
+msgstr "Refund to original payment method succeeded"
 
 #: admin/shop/class-qls-admin-shop.php:3718
 #: includes/class-qilingshop-notifier.php:2321
@@ -14812,121 +14815,121 @@ msgstr ""
 #: includes/shop/class-qls-shop-order.php:2228
 #: includes/shop/class-qls-shop-refund.php:1244
 msgid "原路退款失败"
-msgstr ""
+msgstr "Refund to original payment method failed"
 
 #: includes/shop/class-qls-shop-order.php:2249
 msgid "原路退款已提交"
-msgstr ""
+msgstr "Refund to original payment method submitted"
 
 #: includes/class-qilingshop-notifier.php:1323
 msgid "原路状态"
-msgstr ""
+msgstr "Original Channel Status"
 
 #: templates/shop/my-orders.php:249
 msgid "原路状态:"
-msgstr ""
+msgstr "Original Channel Status:"
 
 #: admin/shop/views/refunds.php:170
 msgid "原路状态："
-msgstr ""
+msgstr "Original Channel Status: "
 
 #: includes/class-qilingshop-notifier.php:1348
 msgid "原路状态：%s。"
-msgstr ""
+msgstr "Original Channel Status: %s."
 
 #: admin/shop/views/settings.php:1151
 msgid "月结号"
-msgstr ""
+msgstr "Monthly Account Number"
 
 #: admin/shop/views/settings.php:1033
 msgid "允许发货时生成和打印电子面单"
-msgstr ""
+msgstr "Allow generating and printing electronic waybill upon shipment"
 
 #: admin/class-qilingshop-admin-settings.php:1783
 msgid "允许附件类型"
-msgstr ""
+msgstr "Allowed Attachment Types"
 
 #: admin/class-qilingshop-admin-growth.php:248
 msgid "允许管理员手动调整成长值"
-msgstr ""
+msgstr "Allow administrator to manually adjust growth points"
 
 #: admin/shop/views/settings.php:186
 msgid "在前台显示商品库存"
-msgstr ""
+msgstr "Display product stock on frontend"
 
 #: admin/class-qilingshop-admin-payment.php:304
 #: admin/class-qilingshop-admin-settings.php:2032
 msgid "在微信公众平台【虚拟支付 -> 基本配置】中查看并复制分配的 OfferID。"
-msgstr ""
+msgstr "View and copy assigned OfferID in WeChat Platform [Virtual Payment -> Basic Configuration]."
 
 #: admin/class-qilingshop-admin-payment.php:308
 #: admin/class-qilingshop-admin-settings.php:2039
 msgid "在微信公众平台【虚拟支付 -> 基本配置】中获取的正式支付密钥 AppKey。"
-msgstr ""
+msgstr "Production payment secret key AppKey obtained in WeChat Platform [Virtual Payment -> Basic Configuration]."
 
 #: admin/class-qilingshop-admin-growth.php:246
 msgid "在用户中心展示成长等级和进度"
-msgstr ""
+msgstr "Display growth level and progress in user center"
 
 #: includes/class-qilingshop-growth.php:451 templates/account/vip.php:338
 msgid "暂无成长记录"
-msgstr "暂无成长 Records"
+msgstr "No growth records yet"
 
 #: admin/class-qilingshop-admin-growth.php:327
 #: includes/class-qilingshop-growth.php:394 templates/account/vip.php:101
 #: templates/shop/partials/account-header.php:49
 msgid "暂无等级"
-msgstr ""
+msgstr "No Levels Yet"
 
 #: admin/shop/views/settings.php:1215
 msgid "暂无电子面单模板"
-msgstr ""
+msgstr "No electronic waybill templates yet"
 
 #: admin/shop/views/invoices.php:86
 msgid "暂无发票申请"
-msgstr ""
+msgstr "No invoice requests yet"
 
 #: admin/class-qilingshop-admin-growth.php:535
 msgid "暂无符合条件的成长流水"
-msgstr ""
+msgstr "No matching growth records found"
 
 #: admin/shop/views/tickets.php:255 templates/shop/my-tickets.php:270
 msgid "暂无工单"
-msgstr ""
+msgstr "No Tickets Yet"
 
 #: templates/shop/my-tickets.php:84
 msgid "暂无沟通记录"
-msgstr "暂无沟通 Records"
+msgstr "No communication records yet"
 
 #: templates/shop/virtual-home/compact.php:10
 #: templates/shop/virtual-home/grid.php:50
 msgid "暂无可售卡密商品"
-msgstr ""
+msgstr "No card key products available for sale"
 
 #: admin/class-qilingshop-admin-payment.php:334
 #: admin/class-qilingshop-admin-settings.php:2069
 msgid "暂无配置的 VIP 等级，请先在【启灵商城 -> VIP 等级】中创建。"
-msgstr ""
+msgstr "No VIP levels configured yet. Please create one in [QilingShop -> VIP Levels] first."
 
 #: templates/account/vip.php:288
 msgid "暂无权益配置"
-msgstr "暂无权益 Configuration"
+msgstr "No benefits configured"
 
 #: admin/shop/views/tickets.php:150
 msgid "暂无消息。"
-msgstr ""
+msgstr "No messages yet."
 
 #: includes/class-qilingshop-growth.php:497
 msgid "暂无已配置权益"
-msgstr ""
+msgstr "No configured benefits yet"
 
 #: templates/account/vip.php:318
 msgid "暂无已启用的成长规则"
-msgstr "暂无已启用的成长 Rules"
+msgstr "No enabled growth rules yet"
 
 #: templates/shop/cart.php:79 templates/shop/checkout.php:294
 msgid "增加数量"
-msgstr ""
+msgstr "Increase Quantity"
 
 #: templates/shop/checkout.php:193 templates/shop/shop-center.php:430
 msgid "粘贴整段快递地址，自动识别姓名、手机号和地址"
@@ -14934,135 +14937,135 @@ msgstr "Paste raw courier address to auto-recognize name, phone, and address"
 
 #: admin/shop/class-qls-admin-shop.php:3988
 msgid "这笔退款可能已经实际打款，请先到对应支付平台核对退款记录。"
-msgstr ""
+msgstr "This refund may have already been disbursed. Please verify the refund record on the payment platform first."
 
 #: admin/class-qilingshop-admin-settings.php:673 qilingshop.php:669
 msgid "正版授权"
-msgstr ""
+msgstr "Genuine License"
 
 #: admin/class-qilingshop-admin-payment.php:299
 #: admin/class-qilingshop-admin-settings.php:2025
 msgid "正式发布上线时务必选择现网正式环境。测试阶段可先在沙箱中联调。"
-msgstr ""
+msgstr "Be sure to select Production environment when officially launching. Use Sandbox for debugging during testing."
 
 #: admin/shop/views/orders-list.php:370 admin/shop/views/orders-list.php:508
 msgid "正在读取可发商品..."
-msgstr ""
+msgstr "Reading shippable items..."
 
 #: admin/class-qilingshop-admin-resource-bulk.php:306
 #: admin/class-qilingshop-admin-resource-bulk.php:319
 msgid "正在重建资源标记"
-msgstr ""
+msgstr "Rebuilding resource tags"
 
 #: admin/class-qilingshop-admin-settings.php:3288
 msgid "支持表情符号、HTML 图标片段、启灵阿里图标 icon-xxx，显示在网站顶部菜单栏。"
-msgstr ""
+msgstr "Supports emojis, HTML icon snippets, Qiling iconfont icon-xxx; displayed in top site navbar."
 
 #: admin/shop/views/settings.php:811
 msgid "支持表情符号、HTML 图标片段、启灵阿里图标 icon-xxx；旧的 dashicons-xxx 也会兼容显示。"
-msgstr ""
+msgstr "Supports emojis, HTML icon snippets, Qiling iconfont icon-xxx; legacy dashicons-xxx are also supported."
 
 #: public/class-qilingshop-submit-integration.php:279
 msgid "支持格式：<code>仅链接</code>、<code>链接,提取码</code>、<code>名称,链接,提取码</code>、<code>名称: 链接 提取码: 密码</code>"
-msgstr ""
+msgstr "Supported formats: <code>URL Only</code>, <code>URL,Code</code>, <code>Name,URL,Code</code>, <code>Name: URL Code: Password</code>"
 
 #: templates/shop/my-downloads.php:80
 msgid "支持申请发票"
-msgstr ""
+msgstr "Supports Invoice Request"
 
 #: includes/shop/modules/class-qls-module-hero-carousel.php:62
 msgid "支持像素或视窗高度，例如：500px、80vh、100vh"
-msgstr ""
+msgstr "Supports pixels or viewport height, e.g.: 500px, 80vh, 100vh"
 
 #: admin/class-qilingshop-metabox.php:361
 msgid "支持站内路径、外部链接，以及名称、链接、提取码组合格式。示例：/wp-content/uploads/your-file.zip 或 百度网盘,https://pan.baidu.com/xxx,abc1"
-msgstr ""
+msgstr "Supports local paths, external links, and Name,URL,Code combinations. e.g.: /wp-content/uploads/your-file.zip or Baidu Netdisk,https://pan.baidu.com/xxx,abc1"
 
 #: admin/shop/views/refunds.php:107
 msgid "支付版本："
-msgstr ""
+msgstr "Payment Version: "
 
 #: includes/shop/class-qls-shop-refund.php:1185
 msgid "支付版本：%s"
-msgstr ""
+msgstr "Payment Version: %s"
 
 #: payment/class-payment-alipay.php:206
 msgid "支付宝签名失败，请检查 RSA2 私钥配置"
-msgstr "支付宝签名失败，请检查 RSA2 私钥 Configuration"
+msgstr "Alipay signature failed. Please check RSA2 private key configuration"
 
 #: payment/class-payment-alipay.php:351
 msgid "支付宝退款接口调用失败"
-msgstr ""
+msgstr "Alipay refund API invocation failed"
 
 #: payment/class-payment-alipay.php:292
 msgid "支付宝退款配置不完整"
-msgstr ""
+msgstr "Alipay refund configuration is incomplete"
 
 #: admin/shop/class-qls-admin-shop.php:3801
 msgid "支付宝退款配置不完整：%s。"
-msgstr ""
+msgstr "Alipay refund configuration incomplete: %s."
 
 #: payment/class-payment-alipay.php:341
 msgid "支付宝退款签名失败，请检查 RSA2 私钥格式"
-msgstr ""
+msgstr "Alipay refund signature failed, please check RSA2 private key format"
 
 #: payment/class-payment-alipay.php:361
 msgid "支付宝退款失败"
-msgstr ""
+msgstr "Alipay refund failed"
 
 #: admin/shop/class-qls-admin-shop.php:3700
 #: includes/class-qilingshop-payment.php:953
 msgid "支付宝原路退款"
-msgstr ""
+msgstr "Alipay Refund to Original Channel"
 
 #: payment/class-payment-alipay.php:371
 msgid "支付宝原路退款成功"
-msgstr ""
+msgstr "Alipay refund to original channel succeeded"
 
 #: includes/class-qilingshop-payment.php:932
 msgid "支付宝支付入口未启用"
-msgstr ""
+msgstr "Alipay payment entrance is not enabled"
 
 #: admin/shop/views/refunds.php:105
 msgid "支付方式："
-msgstr ""
+msgstr "Payment Method: "
 
 #: includes/shop/class-qls-shop-refund.php:1179
 msgid "支付方式：%s"
-msgstr ""
+msgstr "Payment Method: %s"
 
 #: includes/shop/class-qls-shop-order.php:2204
 msgid "支付服务未加载，无法发起原路退款"
-msgstr ""
+msgstr "Payment service not loaded, cannot initiate refund to original channel"
 
 #: templates/shop/checkout.php:154
 msgid "支付后可在订单查询页用手机号/邮箱 + 查询密码查看订单和卡密。"
-msgstr ""
+msgstr "After payment, query order and card keys on Order Query page using phone/email + query password."
 
 #: includes/class-qilingshop-payment.php:634
 msgid "支付入口不存在"
-msgstr ""
+msgstr "Payment entrance does not exist"
 
 #: admin/class-qilingshop-admin-payment.php:303
 #: admin/class-qilingshop-admin-settings.php:2029
 msgid "支付账号 OfferID"
-msgstr ""
+msgstr "Payment Account OfferID"
 
 #: public/class-qilingshop-public.php:1208
 msgid "直接支付 %s"
-msgstr ""
+msgstr "Direct Payment %s"
 
 #: admin/class-qilingshop-admin-settings.php:1753
 msgid "只影响商城最终确认退款时的现金退款方式；售后申请、审核、退货流程保持不变。"
-msgstr ""
+msgstr "Only affects cash refund method upon final confirmation; after-sales request, review, and return workflows remain unchanged."
 
 #: admin/class-qilingshop-admin-payment.php:128
 msgid "只影响商城最终确认退款时的现金退款去向；售后申请、审核、退货流程保持不变。"
-msgstr ""
+msgstr "Only affects cash refund destination upon final confirmation; after-sales request, review, and return workflows remain unchanged."
 
 #: includes/class-qilingshop-growth-benefits.php:505
 msgid "只用于成长值加成，不影响积分奖励。"
-msgstr ""
+msgstr "Only used for growth points bonus; does not affect points rewards."
 
 #: templates/shop/checkout.php:191 templates/shop/shop-center.php:428
 msgid "智能识别"
@@ -15070,59 +15073,59 @@ msgstr "Smart Recognition"
 
 #: admin/class-qilingshop-admin-growth.php:342
 msgid "重算等级"
-msgstr ""
+msgstr "Recalculate Levels"
 
 #: admin/shop/views/settings.php:118
 msgid "主题或子主题可通过 qls_shop_virtual_home_styles 注册新风格，并在 qilingshop/shop/virtual-home/ 下提供模板。"
-msgstr ""
+msgstr "Themes or child themes can register new styles via qls_shop_virtual_home_styles and provide templates under qilingshop/shop/virtual-home/."
 
 #: admin/class-qilingshop-admin-settings.php:1811
 #: admin/class-qilingshop-admin-settings.php:1860
 #: admin/class-qilingshop-admin-settings.php:2144
 #: admin/class-qilingshop-admin-settings.php:2212
 msgid "主异步通知地址："
-msgstr ""
+msgstr "Primary Asynchronous Notification URL: "
 
 #: includes/shop/class-qls-assist.php:1510
 msgid "助力订单处理未完成，请稍后重试"
-msgstr ""
+msgstr "Assist order processing incomplete, please try again later"
 
 #: includes/shop/class-qls-assist.php:1469
 #: includes/shop/class-qls-assist.php:1667
 msgid "助力订单自动完成失败，请稍后重试"
-msgstr ""
+msgstr "Failed to auto-complete assist order, please try again later"
 
 #: admin/class-qilingshop-admin-settings.php:829 includes/helpers.php:1317
 #: includes/helpers.php:1321
 msgid "注册码获取"
-msgstr ""
+msgstr "Registration Code Access"
 
 #: includes/class-qilingshop-growth-benefits.php:545
 msgid "专属权益入口"
-msgstr ""
+msgstr "Exclusive Benefit Portal"
 
 #: includes/class-qilingshop-growth-benefits.php:555
 msgid "专属权益说明"
-msgstr ""
+msgstr "Exclusive Benefit Description"
 
 #: admin/class-qilingshop-admin-payment.php:278
 #: admin/class-qilingshop-admin-settings.php:1989
 msgid "转账场景 ID"
-msgstr ""
+msgstr "Transfer Scene ID"
 
 #: includes/class-qilingshop-growth-benefits.php:491
 msgid "资格说明"
-msgstr ""
+msgstr "Eligibility Description"
 
 #: admin/shop/class-qls-admin-shop.php:3719
 #: includes/class-qilingshop-notifier.php:2322
 #: includes/shop/class-qls-shop-refund.php:1245
 msgid "资金已退回，但本地状态收尾失败"
-msgstr ""
+msgstr "Funds returned, but local status finalization failed"
 
 #: includes/class-qilingshop-growth-rules.php:208
 msgid "资源订单成长值：%s"
-msgstr ""
+msgstr "Resource Order Growth Points: %s"
 
 #: admin/class-qilingshop-admin-growth.php:935 templates/account/vip.php:132
 msgid "资源订单支付"
@@ -15131,57 +15134,57 @@ msgstr "Resource Order Payment"
 #: includes/class-qilingshop-order.php:718
 #: public/class-qilingshop-ajax.php:1989
 msgid "资源价格配置异常，请联系管理员"
-msgstr ""
+msgstr "Resource price configuration abnormal, please contact administrator"
 
 #: admin/class-qilingshop-admin-settings.php:917
 msgid "资源价格显示"
-msgstr ""
+msgstr "Resource Price Display"
 
 #: includes/shop/class-qls-shop-ticket.php:81
 msgid "资源失效"
-msgstr ""
+msgstr "Resource Expired"
 
 #: admin/class-qilingshop-admin-statistics.php:438
 msgid "资源下载排行"
-msgstr ""
+msgstr "Resource Download Rankings"
 
 #: admin/class-qilingshop-admin-statistics.php:416
 msgid "资源下载统计（%s 至 %s）"
-msgstr ""
+msgstr "Resource Download Statistics (%s to %s)"
 
 #: admin/shop/views/settings.php:160
 msgid "自定义顶部菜单购物车图标。支持表情符号、HTML 图标片段、启灵阿里图标 icon-xxx，留空显示默认图标。"
-msgstr ""
+msgstr "Customize top menu cart icon. Supports emojis, HTML icon snippets, Qiling iconfont icon-xxx; leave blank for default."
 
 #: admin/class-qilingshop-admin-settings.php:3350
 msgid "自定义积分中心的快捷功能入口（留空则不显示该项）。图标支持表情符号、HTML 图标片段、启灵阿里图标 icon-xxx。"
-msgstr ""
+msgstr "Custom shortcut entrances for Points Center (leave blank to hide). Icons support emojis, HTML snippets, Qiling iconfont."
 
 #: includes/class-qilingshop-growth-benefits.php:360
 #: includes/class-qilingshop-growth-benefits.php:540
 msgid "自定义链接"
-msgstr ""
+msgstr "Custom Link"
 
 #: includes/class-qilingshop-growth-benefits.php:358
 msgid "自定义链接：%1$s（%2$s）"
-msgstr ""
+msgstr "Custom Link: %1$s (%2$s)"
 
 #: includes/class-qilingshop-growth-benefits.php:360
 msgid "自定义链接：%s"
-msgstr ""
+msgstr "Custom Link: %s"
 
 #: includes/class-qilingshop-growth-benefits.php:368
 #: includes/class-qilingshop-growth-benefits.php:551
 msgid "自定义文本"
-msgstr ""
+msgstr "Custom Text"
 
 #: includes/class-qilingshop-growth-benefits.php:365
 msgid "自定义文本：%s"
-msgstr ""
+msgstr "Custom Text: %s"
 
 #: admin/shop/views/tickets.php:113
 msgid "自动处理（回复后待用户回复）"
-msgstr ""
+msgstr "Auto-process (Waiting for user reply after reply)"
 
 #: templates/shop/virtual-home/compact.php:50
 #: templates/shop/virtual-home/grid.php:61
@@ -15190,126 +15193,126 @@ msgstr "Automatic Delivery"
 
 #: admin/shop/views/settings.php:140 templates/shop/shop-virtual-home.php:103
 msgid "自动发货，支付后查看卡密信息"
-msgstr ""
+msgstr "Auto-dispatch: View card key info after payment"
 
 #: includes/shop/modules/class-qls-module-category-nav.php:63
 #: includes/shop/modules/class-qls-module-hero-carousel.php:83
 msgid "自动获取一级分类"
-msgstr ""
+msgstr "Auto-fetch top-level categories"
 
 #: includes/shop/modules/class-qls-module-product-list.php:128
 msgid "自动显示热门、新品、折扣"
-msgstr ""
+msgstr "Auto-display popular, new, and discounted items"
 
 #: admin/class-qilingshop-admin-settings.php:3278
 msgid "自然青绿"
-msgstr ""
+msgstr "Natural Green"
 
 #: admin/class-qilingshop-admin-settings.php:1769
 msgid "最大上传数量"
-msgstr ""
+msgstr "Maximum Upload Quantity"
 
 #: admin/class-qilingshop-admin-growth.php:270
 msgid "最低成长值"
-msgstr ""
+msgstr "Minimum Growth Points"
 
 #: includes/shop/class-qls-shop-ticket.php:236
 msgid "最多 %1$d 个，单个不超过 %2$s，支持：%3$s。"
-msgstr ""
+msgstr "Max %1$d files, up to %2$s each, supported: %3$s."
 
 #: admin/shop/views/tickets.php:21 templates/shop/my-tickets.php:27
 msgid "最多 3 个，单个不超过 5MB，支持 JPG、PNG、WebP、PDF。"
-msgstr ""
+msgstr "Max 3 files, up to 5MB each, supports JPG, PNG, WebP, PDF."
 
 #: includes/shop/class-qls-shop-ticket.php:675
 #: templates/shop/my-tickets.php:141 templates/shop/my-tickets.php:242
 msgid "最多只能上传 %d 个附件"
-msgstr ""
+msgstr "Can only upload up to %d attachments"
 
 #: admin/class-qilingshop-admin-growth.php:271
 msgid "最高成长值"
-msgstr ""
+msgstr "Maximum Growth Points"
 
 #: templates/account/vip.php:227
 msgid "最高等级"
-msgstr ""
+msgstr "Highest Level"
 
 #: admin/shop/views/tickets.php:96 admin/shop/views/tickets.php:247
 msgid "最后回复"
-msgstr ""
+msgstr "Last Reply"
 
 #: templates/account/vip.php:323
 msgid "最近成长记录"
-msgstr "最近成长 Records"
+msgstr "Recent Growth Records"
 
 #: admin/shop/views/refunds.php:185
 msgid "最近日志："
-msgstr ""
+msgstr "Recent Logs: "
 
 #: admin/class-qilingshop-admin-statistics.php:463
 msgid "最近下载明细"
-msgstr ""
+msgstr "Recent Download Details"
 
 #: includes/shop/class-qls-shop-refund.php:583
 msgid "最终退款失败"
-msgstr ""
+msgstr "Final refund failed"
 
 #: admin/shop/class-qls-admin-shop.php:3821
 #: includes/class-qilingshop-payment.php:977
 msgid "API 密钥"
-msgstr ""
+msgstr "API Key"
 
 #: admin/class-qilingshop-admin-payment.php:254
 #: admin/class-qilingshop-admin-settings.php:1959
 #: admin/shop/class-qls-admin-shop.php:3867
 #: includes/class-qilingshop-payment.php:1074
 msgid "APIv3 密钥"
-msgstr ""
+msgstr "APIv3 Key"
 
 #: admin/shop/class-qls-admin-shop.php:3818
 #: includes/class-qilingshop-payment.php:974
 msgid "AppID"
-msgstr ""
+msgstr "AppID"
 
 #: includes/shop/class-qls-shop-ticket.php:142
 msgid "JPG/JPEG 图片"
-msgstr ""
+msgstr "JPG/JPEG Image"
 
 #: includes/class-qilingshop-payment.php:649
 msgid "PayPal 返回处理入口不存在"
-msgstr ""
+msgstr "PayPal return processing entry does not exist"
 
 #: admin/shop/views/tickets.php:189 templates/shop/my-tickets.php:117
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: includes/shop/class-qls-shop-ticket.php:154
 msgid "PDF 文件"
-msgstr ""
+msgstr "PDF File"
 
 #: includes/shop/class-qls-shop-ticket.php:146
 msgid "PNG 图片"
-msgstr ""
+msgstr "PNG Image"
 
 #: admin/class-qilingshop-admin-payment.php:244
 #: admin/class-qilingshop-admin-settings.php:1948
 msgid "v2（旧版密钥）"
-msgstr ""
+msgstr "v2 (Legacy Key)"
 
 #: admin/class-qilingshop-admin-payment.php:245
 #: admin/class-qilingshop-admin-settings.php:1949
 msgid "v3（新版密钥）"
-msgstr ""
+msgstr "v3 (New Key)"
 
 #: admin/class-qilingshop-admin-payment.php:326
 #: admin/class-qilingshop-admin-settings.php:2061
 msgid "VIP 等级名称"
-msgstr ""
+msgstr "VIP Level Name"
 
 #: admin/class-qilingshop-admin-statistics.php:427
 msgid "VIP 免费下载"
-msgstr ""
+msgstr "VIP Free Download"
 
 #: includes/shop/class-qls-shop-ticket.php:150
 msgid "WebP 图片"
-msgstr ""
+msgstr "WebP Image"
