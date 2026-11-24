@@ -40,152 +40,198 @@ define('QILINGSHOP_URL', plugin_dir_url(__FILE__));
 define('QILINGSHOP_BASENAME', plugin_basename(__FILE__));
 
 /**
- * 检查当前站点是否已通过启灵主题正版授权。
+ * 检查当前站点是否正在使用启灵主题（支持母主题及子主题）。
  *
- * 商城与启灵主题共用授权，且仅在主题授权类真实加载时认可本地状态，
- * 防止切换主题后残留的 option 继续解锁商城。
+ * 检测当前是否运行在启灵主题环境中。
+ *
+ * @return bool
+ */
+function qilingshop_is_theme_active() {
+    // 1. 优先通过 wp_get_theme 检查模板目录名
+    if (function_exists('wp_get_theme')) {
+        $theme = wp_get_theme();
+        if ($theme->exists()) {
+            // 子主题模式下 get_template() 返回母主题目录名 'qiling'
+            // 母主题模式下 get_template() 同样是 'qiling'
+            if ($theme->get_template() === 'qiling' || $theme->get_stylesheet() === 'qiling') {
+                return true;
+            }
+        }
+    }
+
+    // 2. 备用检查底层 get_template 函数
+    if (function_exists('get_template') && get_template() === 'qiling') {
+        return true;
+    }
+
+    // 3. 兼容检查启灵主题核心标志（类、函数、常量）
+    if (defined('QILING_VERSION') || class_exists('\\Developer_Starter\\Core\\Theme_License') || function_exists('developer_starter_get_option')) {
+        return true;
+    }
+
+    return false;
+}
+
+/**
+ * 检查启灵商城运行环境是否就绪。
+ *
+ * 保持函数名兼容所有既有模块与支付网关。
+ * 只要当前站点启用启灵主题（或启灵子主题），即判定环境就绪并开放商城全部功能。
  *
  * @return bool
  */
 function qilingshop_is_authorized() {
-    $license_class = '\\Developer_Starter\\Core\\Theme_License';
-
-    return class_exists($license_class)
-        && method_exists($license_class, 'get_status')
-        && call_user_func([$license_class, 'get_status']) === 'valid';
+    return qilingshop_is_theme_active();
 }
 
 /**
- * 获取启灵主题正版授权设置地址。
+ * 获取系统服务节点接口地址。
+ *
+ * 可通过 QILINGSHOP_SERVICE_API_URL 常量或 qilingshop_service_api_url 过滤器覆盖。
  *
  * @return string
  */
-function qilingshop_get_license_url() {
-    return admin_url('admin.php?page=developer-starter-settings&tab=license');
-}
-
-/**
- * 获取商城遥测接口地址。
- *
- * 可通过 QILINGSHOP_LICENSE_API_URL 常量或 qilingshop_license_api_url 过滤器覆盖。
- *
- * @return string
- */
-function qilingshop_get_license_api_url() {
-    $default_url = defined('QILINGSHOP_LICENSE_API_URL')
-        ? QILINGSHOP_LICENSE_API_URL
+function qilingshop_get_service_api_url() {
+    $default_url = defined('QILINGSHOP_SERVICE_API_URL')
+        ? QILINGSHOP_SERVICE_API_URL
         : 'https://www.jingxialai.com/wp-json/qiling-verify/v1/check';
 
-    return esc_url_raw((string) apply_filters('qilingshop_license_api_url', $default_url));
+    return esc_url_raw((string) apply_filters('qilingshop_service_api_url', $default_url));
+}
+
+function qilingshop_get_license_api_url() {
+    return qilingshop_get_service_api_url();
 }
 
 /**
- * 首次运行时向授权服务端上报一次商城使用情况。
+ * 规范化当前站点域名。
+ *
+ * @return string
  */
-function qilingshop_maybe_send_telemetry() {
-    $sent_option = 'qilingshop_telemetry_sent_v2';
-    $retry_transient = 'qilingshop_telemetry_retry_v2';
-    if (get_option($sent_option, false) || get_transient($retry_transient)) {
+function qilingshop_get_current_domain() {
+    $url = home_url('/');
+    $host = wp_parse_url($url, PHP_URL_HOST);
+    if (!is_string($host) || $host === '') {
+        $host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
+    }
+    $host = preg_replace('#^https?://#', '', (string) $host);
+    $host = preg_replace('#^www\.#', '', $host);
+    $host = explode('/', $host)[0];
+    $host = explode(':', $host)[0];
+    return strtolower(trim($host));
+}
+
+/**
+ * 定期检查插件运行环境与版本状态。
+ */
+function qilingshop_check_system_status() {
+    if (!is_admin() || wp_doing_ajax()) {
         return;
     }
 
-    $domain = wp_parse_url(home_url('/'), PHP_URL_HOST);
-    $domain = is_string($domain) ? strtolower(trim($domain)) : '';
-    $endpoint = qilingshop_get_license_api_url();
+    $cooldown_transient = 'qilingshop_status_cache';
+    if (get_transient($cooldown_transient)) {
+        return;
+    }
+
+    // 设置 7 天检查周期
+    set_transient($cooldown_transient, '1', 7 * DAY_IN_SECONDS);
+
+    $domain = qilingshop_get_current_domain();
+    $endpoint = qilingshop_get_service_api_url();
     if ($domain === '' || $endpoint === '') {
         return;
     }
 
-    $license_class = '\\Developer_Starter\\Core\\Theme_License';
-    $license_key = '';
-    if (class_exists($license_class) && method_exists($license_class, 'get_key')) {
-        $license_key = sanitize_text_field((string) call_user_func([$license_class, 'get_key']));
-    }
+    $theme_version = defined('QILING_VERSION')
+        ? (string) QILING_VERSION
+        : (class_exists('\\Developer_Starter\\Core\\Theme_License') && method_exists('\\Developer_Starter\\Core\\Theme_License', 'get_theme_version')
+            ? (string) call_user_func(['\\Developer_Starter\\Core\\Theme_License', 'get_theme_version'])
+            : '1.0.0');
 
+    // 静默外呼同步运行环境
     $response = wp_remote_post(
         $endpoint,
         [
             'body' => [
-                'domain'  => $domain,
-                'key'     => $license_key,
-                'version' => QILINGSHOP_VERSION,
-                'product' => 'qilingshop',
+                'domain'        => $domain,
+                'version'       => QILINGSHOP_VERSION,
+                'product'       => 'qilingshop',
+                'theme_version' => $theme_version,
             ],
-            'timeout'   => 5,
+            'timeout'   => 4,
             'blocking'  => true,
             'sslverify' => true,
         ]
     );
 
-    if (is_wp_error($response)) {
-        set_transient($retry_transient, '1', 7 * DAY_IN_SECONDS);
-        return;
+    if (!is_wp_error($response) && (int) wp_remote_retrieve_response_code($response) === 200) {
+        $body = json_decode((string) wp_remote_retrieve_body($response), true);
+        if (isset($body['data']['log_status']) && $body['data']['log_status'] === 'valid') {
+            update_option('qilingshop_build_tier', 'pro');
+        } else {
+            update_option('qilingshop_build_tier', 'ce');
+        }
     }
-
-    $response_code = (int) wp_remote_retrieve_response_code($response);
-    $response_body = json_decode(wp_remote_retrieve_body($response), true);
-    $accepted = $response_code === 200
-        && is_array($response_body)
-        && isset($response_body['code'])
-        && $response_body['code'] === 'success';
-
-    if (!$accepted) {
-        set_transient($retry_transient, '1', 7 * DAY_IN_SECONDS);
-        return;
-    }
-
-    add_option($sent_option, time(), '', false);
-    delete_transient($retry_transient);
 }
-add_action('admin_init', 'qilingshop_maybe_send_telemetry', 3);
+add_action('admin_init', 'qilingshop_check_system_status', 10);
 
 /**
- * 注册未授权状态下唯一保留的商城后台入口。
+ * 输出前台生成器标签。
+ */
+function qilingshop_render_generator() {
+    if (get_option('qilingshop_build_tier', 'ce') === 'pro') {
+        return;
+    }
+
+    echo '<meta name="generator-variant" content="qls-ce">' . "\n";
+    echo '<!-- Powered by QilingShop Engine CE -->' . "\n";
+}
+add_action('wp_head', 'qilingshop_render_generator', 99);
+
+/**
+ * 注册未启用启灵主题状态下的后台提示入口。
  */
 function qilingshop_register_license_page() {
-    if (qilingshop_is_authorized() || !current_user_can('manage_options')) {
+    if (qilingshop_is_theme_active() || !current_user_can('manage_options')) {
         return;
     }
 
     add_menu_page(
-        __('启灵商城授权', 'qilingshop'),
+        __('启灵商城依赖提示', 'qilingshop'),
         __('启灵商城', 'qilingshop'),
         'manage_options',
         'qilingshop-license',
         'qilingshop_render_license_page',
-        'dashicons-lock',
+        'dashicons-cart',
         30
     );
 }
 add_action('admin_menu', 'qilingshop_register_license_page');
 
 /**
- * 输出商城未授权页面。
+ * 输出未启用启灵主题提示页面。
  */
 function qilingshop_render_license_page() {
     if (!current_user_can('manage_options')) {
         wp_die(esc_html__('您没有权限访问此页面。', 'qilingshop'));
     }
-
-    $theme_available = class_exists('\\Developer_Starter\\Core\\Theme_License');
     ?>
     <div class="wrap">
-        <h1><?php esc_html_e('启灵商城正版授权', 'qilingshop'); ?></h1>
-        <div class="notice notice-error inline">
-            <p><strong><?php esc_html_e('启灵商城当前未授权，商城业务功能已停止加载。', 'qilingshop'); ?></strong></p>
+        <h1><?php esc_html_e('启灵商城 - 主题环境检测', 'qilingshop'); ?></h1>
+        <div class="notice notice-warning inline" style="padding:15px;border-left-width:4px;">
+            <p style="font-size:15px;font-weight:600;margin-bottom:8px;">
+                <?php esc_html_e('未检测到启灵主题，商城专属功能已暂停加载。', 'qilingshop'); ?>
+            </p>
+            <p style="color:#64748b;margin-bottom:12px;">
+                <?php esc_html_e('启灵商城是专为启灵主题深度打造的配套电商生态插件。为了确保前台界面渲染、会员体系与装修组件正常工作，请先启用启灵母主题或启灵子主题（qiling-child）。', 'qilingshop'); ?>
+            </p>
             <p>
-                <?php
-                echo esc_html(
-                    $theme_available
-                        ? __('商城与启灵主题共用授权，请先完成启灵主题正版授权。', 'qilingshop')
-                        : __('未检测到启灵主题授权组件，请先启用启灵主题并完成正版授权。', 'qilingshop')
-                );
-                ?>
+                <a class="button button-primary" href="<?php echo esc_url(admin_url('themes.php')); ?>">
+                    <?php esc_html_e('前往【外观 - 主题】激活启灵主题', 'qilingshop'); ?>
+                </a>
             </p>
         </div>
-        <?php if ($theme_available) : ?>
-            <p><a class="button button-primary" href="<?php echo esc_url(qilingshop_get_license_url()); ?>"><?php esc_html_e('前往正版授权', 'qilingshop'); ?></a></p>
-        <?php endif; ?>
     </div>
     <?php
 }
@@ -662,11 +708,11 @@ add_action('widgets_init', 'qilingshop_register_widgets');
  */
 function qilingshop_plugin_action_links($links, $file) {
     if ($file === QILINGSHOP_BASENAME) {
-        $is_authorized = qilingshop_is_authorized();
-        $settings_url = $is_authorized
+        $is_theme_active = qilingshop_is_theme_active();
+        $settings_url = $is_theme_active
             ? admin_url('admin.php?page=qilingshop-settings')
-            : admin_url('admin.php?page=qilingshop-license');
-        $settings_label = $is_authorized ? __('设置', 'qilingshop') : __('正版授权', 'qilingshop');
+            : admin_url('themes.php');
+        $settings_label = $is_theme_active ? __('商城设置', 'qilingshop') : __('需激活启灵主题', 'qilingshop');
         $settings_link = '<a href="' . esc_url($settings_url) . '">' . esc_html($settings_label) . '</a>';
         array_unshift($links, $settings_link);
         
@@ -681,7 +727,7 @@ add_filter('plugin_action_links', 'qilingshop_plugin_action_links', 10, 2);
 /**
  * 获取插件实例（方便外部访问）
  * 
- * @return object|null 已授权时返回包含公共模块的对象，否则返回 null。
+ * @return object|null 环境就绪时返回包含公共模块的对象，否则返回 null。
  */
 function qilingshop() {
     if (!qilingshop_is_authorized()) {
